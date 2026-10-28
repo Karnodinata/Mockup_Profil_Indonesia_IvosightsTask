@@ -657,6 +657,190 @@
   <!-- 1. TAB DECK INVESTASI -->
   <div class="tabpane" id="tab-investasi" role="tabpanel" aria-labelledby="tab-btn-investasi">
     <section class="inv-hero" id="invHero"></section>
+
+    <section class="card" style="margin-bottom:14px" id="section-bkpm-investasi">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:16px;flex-wrap:wrap">
+        <div class="bkpm-badge-01">01</div>
+        <div style="flex:1;min-width:260px">
+          <h2 class="card-title" style="font-size:18px;margin-bottom:2px">Realisasi Investasi Berdasarkan Sektor Usaha</h2>
+          <p class="card-desc" style="margin-bottom:0">Distribusi nilai investasi berdasarkan sektor usaha pada kabupaten/kota terpilih.</p>
+        </div>
+      </div>
+
+      <!-- Filter Toolbar (Provinsi, Kab/Kota, Jenis Investasi) -->
+      <div class="bkpm-filter-toolbar">
+        <div class="bkpm-filter-col" style="min-width:200px">
+          <label for="bkpmProvSelect" class="bkpm-filter-label">Provinsi</label>
+          <select id="bkpmProvSelect" class="feature-select" style="width:100%" aria-label="Pilih Provinsi Investasi"></select>
+        </div>
+        <div class="bkpm-filter-col" style="min-width:220px">
+          <label for="bkpmCitySelect" class="bkpm-filter-label">Kabupaten/Kota</label>
+          <select id="bkpmCitySelect" class="feature-select" style="width:100%" aria-label="Pilih Kabupaten/Kota Investasi"></select>
+        </div>
+        <div class="bkpm-filter-col">
+          <label class="bkpm-filter-label">Jenis Investasi</label>
+          <div class="bkpm-btn-group" role="group" aria-label="Filter Jenis Investasi">
+            <button type="button" class="bkpm-btn active" data-type="Semua" id="btnBkpmSemua">Semua</button>
+            <button type="button" class="bkpm-btn" data-type="PMA" id="btnBkpmPma">PMA</button>
+            <button type="button" class="bkpm-btn" data-type="PMDN" id="btnBkpmPmdn">PMDN</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Layout: 2 Kolom (Kiri: Chart + Tabel, Kanan: 3 Sidebar Cards) -->
+      <div class="bkpm-main-grid">
+        <!-- Kolom Kiri -->
+        <div style="display:flex;flex-direction:column;gap:16px;min-width:0">
+          <!-- Card Chart -->
+          <div class="bkpm-chart-card">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;flex-wrap:wrap;gap:8px">
+              <div style="display:flex;align-items:center;gap:8px">
+                <span style="font-size:16px;color:#2563eb">📊</span>
+                <h3 style="font-size:13.5px;font-weight:700;margin:0;color:var(--text)" id="bkpmChartTitle">Realisasi Investasi Berdasarkan Sektor Usaha</h3>
+              </div>
+              <div class="bkpm-scale-pill" title="Skala sumbu Y dinamis menyesuaikan nilai puncak">
+                <span>📊 Skala: dalam Rupiah (<span id="bkpmScaleUnit">M = Miliar</span>)</span>
+                <span style="cursor:help;color:var(--muted)">ⓘ</span>
+              </div>
+            </div>
+
+            <!-- Scrollable Chart Area -->
+            <div class="bkpm-chart-scroll-wrap" id="bkpmChartScrollWrap">
+              <div class="bkpm-chart-canvas-container" id="bkpmChartCanvasContainer">
+                <svg id="bkpmBarSvg" style="width:100%;height:270px;overflow:visible"></svg>
+              </div>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:6px;font-size:11px;color:var(--muted)">
+              <span>Geser secara horizontal jika bar melebihi layar. Klik batang untuk inspect rincian.</span>
+              <button type="button" class="btn" id="btnBkpmResetZoom" style="padding:2px 8px;font-size:11px;height:auto">Reset Zoom</button>
+            </div>
+          </div>
+
+          <!-- Card Tabel Ilustrasi -->
+          <div class="bkpm-table-card">
+            <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px">
+              <span style="font-size:16px;color:#2563eb">📑</span>
+              <h3 style="font-size:13.5px;font-weight:700;margin:0;color:var(--text)" id="bkpmTableTitle">Data Realisasi Investasi – Kabupaten/Kota</h3>
+            </div>
+            <div class="bkpm-table-scroll-wrap">
+              <table class="bkpm-table" id="bkpmTable">
+                <thead>
+                  <tr>
+                    <th>Sektor Usaha</th>
+                    <th style="text-align:right">PMA (Rp)</th>
+                    <th style="text-align:right">PMDN (Rp)</th>
+                    <th style="text-align:right">Total Investasi (Rp)</th>
+                  </tr>
+                </thead>
+                <tbody id="bkpmTableBody"></tbody>
+              </table>
+            </div>
+            <div class="src" style="margin-top:10px;padding-top:6px">
+              <b>Sumber Data:</b> Data Resmi Kementerian Investasi/BKPM RI 2025 (PMA &amp; PMDN Triwulan I–IV terkonversi Rp).
+            </div>
+          </div>
+        </div>
+
+        <!-- Kolom Kanan: 3 Sidebar Cards -->
+        <div class="bkpm-sidebar-col">
+          <!-- Card 1: Ringkasan -->
+          <div class="bkpm-summary-card">
+            <div class="bkpm-card-head">
+              <div class="bkpm-card-icon" style="background:#fef3c7;color:#d97706">🏆</div>
+              <h3 class="bkpm-card-h3">Ringkasan</h3>
+            </div>
+            <div class="bkpm-kv-list">
+              <div class="bkpm-kv-row">
+                <span class="bkpm-k">Sektor Tertinggi</span>
+                <span class="bkpm-v" id="bkpmTopSektor">–</span>
+              </div>
+              <div class="bkpm-kv-row">
+                <span class="bkpm-k">Nilai Tertinggi</span>
+                <span class="bkpm-v mono" id="bkpmTopNilai">Rp0</span>
+              </div>
+              <div class="bkpm-kv-row">
+                <span class="bkpm-k">Jumlah Sektor Tampil</span>
+                <span class="bkpm-v mono" id="bkpmCountSektor">0</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Filter Aktif -->
+          <div class="bkpm-summary-card">
+            <div class="bkpm-card-head">
+              <div class="bkpm-card-icon" style="background:#e0f2fe;color:#0284c7">🌪️</div>
+              <h3 class="bkpm-card-h3">Filter Aktif</h3>
+            </div>
+            <div class="bkpm-kv-list">
+              <div class="bkpm-kv-row">
+                <span class="bkpm-k">Provinsi</span>
+                <span class="bkpm-v" id="bkpmActiveProv">–</span>
+              </div>
+              <div class="bkpm-kv-row">
+                <span class="bkpm-k">Kabupaten/Kota</span>
+                <span class="bkpm-v" id="bkpmActiveCity">–</span>
+              </div>
+              <div class="bkpm-kv-row">
+                <span class="bkpm-k">Jenis Investasi</span>
+                <span class="bkpm-v mono" id="bkpmActiveType" style="color:#2563eb">Semua</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Detail Sektor -->
+          <div class="bkpm-summary-card" id="bkpmDetailSektorCard">
+            <div class="bkpm-card-head">
+              <div class="bkpm-card-icon" style="background:#e0e7ff;color:#4f46e5">📋</div>
+              <h3 class="bkpm-card-h3">Detail Sektor</h3>
+            </div>
+            <div class="bkpm-kv-list">
+              <div class="bkpm-kv-row">
+                <span class="bkpm-k">Sektor Usaha</span>
+                <span class="bkpm-v" id="bkpmDetailSektorName">Pilih / Sorot Sektor</span>
+              </div>
+              <div class="bkpm-kv-row">
+                <span class="bkpm-k">PMA</span>
+                <span class="bkpm-v mono" id="bkpmDetailPma">Rp0</span>
+              </div>
+              <div class="bkpm-kv-row">
+                <span class="bkpm-k">PMDN</span>
+                <span class="bkpm-v mono" id="bkpmDetailPmdn">Rp0</span>
+              </div>
+              <div class="bkpm-kv-row" style="border-top:1px dashed var(--line);padding-top:6px;margin-top:2px">
+                <span class="bkpm-k" style="font-weight:700">Total Investasi</span>
+                <span class="bkpm-v mono" id="bkpmDetailTotal" style="color:#2563eb">Rp0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" style="margin-bottom:14px">
+      <div style="display:flex;justify-content:space-between;align-items:baseline">
+        <div>
+          <h2 class="card-title">Indeks Daya Tarik Investasi — 6 Pilar</h2>
+          <p class="card-desc">Skor 0–100 dari kalkulasi indikator kunci tiap pilar spasial &amp; ekonomi.</p>
+        </div>
+        <span class="total-chip" id="invIdxChip"></span>
+      </div>
+      <div class="inv-pillars" id="invPillars"></div>
+      <div class="src" id="srcInvPillar"></div>
+    </section>
+    <section class="grid-2">
+      <div class="card">
+        <h2 class="card-title">Angka kunci untuk investor</h2>
+        <div class="inv-metrics" id="invMetrics"></div>
+      </div>
+      <div class="card">
+        <h2 class="card-title">Sinyal peluang sektor</h2>
+        <div class="inv-sectors" id="invSectors"></div>
+      </div>
+    </section>
+    <section class="card">
+      <h2 class="card-title">Tesis investasi</h2>
+      <div class="inv-thesis" id="invThesis" style="display:grid;grid-template-columns:1fr 1fr;gap:14px"></div>
+    </section>
     <section class="card" style="margin-bottom:14px">
       <div style="display:flex;justify-content:space-between;align-items:baseline">
         <div>
@@ -764,6 +948,231 @@
         <div class="elev-note" id="rainNote"></div>
         <div class="src" id="srcRain"></div>
       </div>
+    </section>
+    <!-- 2.5 PERSEBARAN BANDARA DI INDONESIA (Spesifikasi Mockup 9) -->
+    <section class="card" style="margin-top:14px">
+      <div class="feature-controls-row">
+        <div>
+          <h2 class="card-title" style="margin:0 0 4px">Persebaran Bandara di Indonesia</h2>
+          <p class="card-desc" style="margin:0">Pilih provinsi untuk melihat persebaran bandara dan konektivitas udara wilayah.</p>
+        </div>
+        <div class="feature-filter-group">
+          <div>
+            <label for="bandaraProvSelect" style="display:block;font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;margin-bottom:2px">Pilih Provinsi</label>
+            <select id="bandaraProvSelect" class="feature-select" aria-label="Pilih Provinsi Bandara"></select>
+          </div>
+          <div class="feature-counter-badge">
+            <div class="feature-counter-icon">✈</div>
+            <div>
+              <div class="feature-counter-val" id="bandaraCount">0</div>
+              <div class="feature-counter-lbl" id="bandaraCountLbl">Bandara Tercatat</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-split-layout">
+        <!-- Peta Interaktif Persebaran Bandara -->
+        <div style="position:relative">
+          <div id="bandaraMap" class="feature-map-canvas"></div>
+          <div class="feature-map-legend">
+            <div class="feature-legend-item">
+              <span class="legend-dot" style="background:#2563eb"></span>
+              <span id="legendBandaraCount">Bandara (0)</span>
+            </div>
+            <div class="feature-legend-item">
+              <span class="legend-dot" style="background:#0d9488"></span>
+              <span>Kluster Bandara</span>
+            </div>
+          </div>
+          <div style="font-size:11px;color:var(--muted);margin-top:8px;display:flex;align-items:center;gap:6px">
+            <span style="display:inline-block;width:14px;height:14px;border-radius:50%;background:var(--merah-bg);color:var(--teal);text-align:center;line-height:14px;font-size:10px;font-weight:700">i</span>
+            <span>Klik pada titik bandara di peta untuk melihat informasi detail bandara dan akses lokasi.</span>
+          </div>
+        </div>
+
+        <!-- Detail Bandara Panel -->
+        <div class="feature-detail-panel" id="bandaraDetailPanel">
+          <div class="feature-panel-header">
+            <h3 class="feature-panel-title">Detail Bandara</h3>
+            <button type="button" class="feature-panel-close" id="btnBandaraReset" title="Reset Pilihan Bandara">✕</button>
+          </div>
+
+          <div id="bandaraEmptyState" style="text-align:center;padding:24px 12px;color:var(--muted)">
+            <div style="font-size:32px;margin-bottom:8px;opacity:0.6">🛫</div>
+            <div style="font-weight:600;font-size:13px;color:var(--text)">Pilih Bandara di Peta</div>
+            <div style="font-size:11.5px;margin-top:4px">Klik salah satu pin biru pada peta untuk memuat spesifikasi dan rute akses.</div>
+          </div>
+
+          <div id="bandaraDetailContent" style="display:none;flex-direction:column;gap:12px">
+            <!-- Header Nama Bandara -->
+            <div>
+              <div style="font-size:16px;font-weight:800;color:var(--text);line-height:1.2" id="bdNama">Nama Bandara</div>
+              <div style="font-size:11.5px;color:var(--muted);margin-top:3px" id="bdLokasi">Kabupaten, Provinsi</div>
+            </div>
+
+            <!-- Grid Kode & Tipe -->
+            <div class="airport-spec-grid">
+              <div class="airport-spec-item">
+                <div class="airport-spec-label">Kode IATA</div>
+                <div class="airport-spec-value" id="bdIata">–</div>
+              </div>
+              <div class="airport-spec-item">
+                <div class="airport-spec-label">Kode ICAO</div>
+                <div class="airport-spec-value" id="bdIcao">–</div>
+              </div>
+              <div class="airport-spec-item">
+                <div class="airport-spec-label">Tipe Penerbangan</div>
+                <div class="airport-spec-value" id="bdTipe">–</div>
+              </div>
+              <div class="airport-spec-item">
+                <div class="airport-spec-label">Kelas Bandara</div>
+                <div class="airport-spec-value" id="bdKelas">–</div>
+              </div>
+              <div class="airport-spec-item">
+                <div class="airport-spec-label">Pengelola</div>
+                <div class="airport-spec-value" id="bdPengelola">–</div>
+              </div>
+              <div class="airport-spec-item">
+                <div class="airport-spec-label">Status TKBN</div>
+                <div class="airport-spec-value" id="bdTkbn">–</div>
+              </div>
+            </div>
+
+            <!-- Mini Static Map Preview & External GMaps Link -->
+            <div style="border:1px solid var(--line);border-radius:6px;overflow:hidden;background:var(--surface)">
+              <div id="bdMiniMap" style="width:100%;height:130px;background:#e2e8f0"></div>
+              <div style="padding:10px;display:flex;flex-direction:column;gap:8px">
+                <div style="display:flex;justify-content:space-between;align-items:center;font-size:11.5px">
+                  <span style="color:var(--muted)">Ke Pusat Kab/Kota</span>
+                  <span style="font-family:var(--mono);font-weight:700;color:var(--text)" id="bdJarakPusat">~16.7 km</span>
+                </div>
+                <a id="bdGmapsLink" href="#" target="_blank" rel="noopener noreferrer" class="btn" style="display:flex;align-items:center;justify-content:center;gap:6px;background:var(--merah);color:#ffffff;border-color:var(--merah);text-decoration:none;padding:7px;border-radius:6px;font-size:12px;font-weight:600">
+                  <span>Buka di Google Maps</span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Keterangan & Deskripsi -->
+            <div style="border-top:1px solid var(--line-soft);padding-top:10px">
+              <div style="font-size:11px;font-weight:700;text-transform:uppercase;color:var(--muted-2);margin-bottom:4px">Tentang Bandara</div>
+              <p style="font-size:11.5px;color:var(--muted);line-height:1.45;margin:0" id="bdDeskripsi">Bandara melayani konektivitas transportasi udara regional dan nasional.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="src" style="margin-top:12px"><b>Sumber Data:</b> Direktorat Jenderal Perhubungan Udara (Kemenhub RI) · Data Informasi Bandara Indonesia Terdaftar.</div>
+    </section>
+
+    <!-- 2.6 KUALITAS INFRASTRUKTUR JALAN (Spesifikasi Mockup 14) -->
+    <section class="card" style="margin-top:14px" id="section-jalan">
+      <!-- Title & Controls -->
+      <div class="feature-controls-row">
+        <div>
+          <div style="display:flex;align-items:center;gap:8px">
+            <span style="display:grid;place-items:center;width:24px;height:24px;border-radius:6px;background:#ecfdf5;color:#059669;font-size:13px">🛣️</span>
+            <h2 class="card-title" style="margin:0">Kualitas Kondisi Jalan Kabupaten/Kota</h2>
+          </div>
+          <p class="card-desc" style="margin:4px 0 0">Proporsi panjang jalan kewenangan daerah berdasarkan kondisi Baik, Sedang, dan Rusak untuk analisis aksesibilitas dan potensi investasi wilayah.</p>
+        </div>
+        <div class="feature-filter-group">
+          <div>
+            <label for="jalanPeerSelect" style="display:block;font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;margin-bottom:2px">Kelompok Pembanding (Peer)</label>
+            <select id="jalanPeerSelect" class="feature-select" aria-label="Pilih Kelompok Pembanding Jalan">
+              <option value="provinsi">Wilayah Se-Provinsi</option>
+              <option value="tetangga">Wilayah Berbatasan (Tetangga)</option>
+              <option value="top10">Top 10 Jalan Terpanjang</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ringkasan 4 Kartu KPI Wilayah Terpilih -->
+      <div class="jalan-kpi-grid">
+        <div class="jalan-kpi-card">
+          <div class="jalan-kpi-lbl">Total Panjang Jalan</div>
+          <div class="jalan-kpi-val" id="jalanValTotal">0 <span class="jalan-kpi-unit">km</span></div>
+          <div class="jalan-kpi-sub" id="jalanSubTotal">Kewenangan Pemerintah Daerah</div>
+        </div>
+        <div class="jalan-kpi-card baik">
+          <div class="jalan-kpi-lbl">Kondisi Baik</div>
+          <div class="jalan-kpi-val" id="jalanValBaik">0 <span class="jalan-kpi-unit">km</span></div>
+          <div class="jalan-kpi-sub" id="jalanSubBaik">0% dari total panjang jalan</div>
+        </div>
+        <div class="jalan-kpi-card sedang">
+          <div class="jalan-kpi-lbl">Kondisi Sedang</div>
+          <div class="jalan-kpi-val" id="jalanValSedang">0 <span class="jalan-kpi-unit">km</span></div>
+          <div class="jalan-kpi-sub" id="jalanSubSedang">0% dari total panjang jalan</div>
+        </div>
+        <div class="jalan-kpi-card rusak">
+          <div class="jalan-kpi-lbl">Kondisi Rusak</div>
+          <div class="jalan-kpi-val" id="jalanValRusak">0 <span class="jalan-kpi-unit">km</span></div>
+          <div class="jalan-kpi-sub" id="jalanSubRusak">0% dari total panjang jalan</div>
+        </div>
+      </div>
+
+      <!-- Layout 100% Stacked Bar Chart & Insight Panel -->
+      <div class="jalan-main-layout">
+        <!-- 100% Stacked Bar Chart Container -->
+        <div class="jalan-chart-box">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;flex-wrap:wrap;gap:8px">
+            <div style="font-size:12.5px;font-weight:700;color:var(--text)" id="jalanChartTitle">Komparasi 100% Kondisi Jalan Wilayah</div>
+            <!-- Legend -->
+            <div class="jalan-legend">
+              <span class="jalan-legend-item"><span class="jalan-legend-dot baik"></span> Baik</span>
+              <span class="jalan-legend-item"><span class="jalan-legend-dot sedang"></span> Sedang</span>
+              <span class="jalan-legend-item"><span class="jalan-legend-dot rusak"></span> Rusak</span>
+            </div>
+          </div>
+
+          <!-- Axis Header 0% - 25% - 50% - 75% - 100% -->
+          <div class="jalan-axis-header">
+            <span>0%</span>
+            <span>25%</span>
+            <span>50%</span>
+            <span>75%</span>
+            <span>100%</span>
+          </div>
+
+          <!-- Stacked Bars List -->
+          <div class="jalan-bars-container" id="jalanBarsContainer">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+
+        <!-- Interpretasi & Insight Aksesibilitas Wilayah -->
+        <div class="jalan-insight-box">
+          <div style="display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line-soft);padding-bottom:10px">
+            <h3 style="font-size:13.5px;font-weight:700;margin:0;color:var(--text)">Analisis Aksesibilitas Jalan</h3>
+            <span class="status-pill" id="jalanStatusBadge">Cukup Mantap</span>
+          </div>
+
+          <div style="padding-top:12px;display:flex;flex-direction:column;gap:12px">
+            <div>
+              <div style="font-size:10.5px;font-weight:700;text-transform:uppercase;color:var(--muted-2);margin-bottom:4px">Indeks Kemantapan Jalan</div>
+              <div style="display:flex;align-items:baseline;gap:6px">
+                <span style="font-family:var(--mono);font-size:24px;font-weight:800;color:var(--text)" id="jalanKemantapanVal">0%</span>
+                <span style="font-size:11.5px;color:var(--muted)">(Jalan Mantap: Baik + Sedang)</span>
+              </div>
+            </div>
+
+            <div>
+              <div style="font-size:10.5px;font-weight:700;text-transform:uppercase;color:var(--muted-2);margin-bottom:4px">Evaluasi Dampak Investasi</div>
+              <p style="font-size:12px;color:var(--muted);line-height:1.55;margin:0" id="jalanInsightDesc">
+                Analisis proporsi jalan untuk kelancaran arus barang dan penumpang.
+              </p>
+            </div>
+
+            <div style="background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:10px;font-size:11.5px;color:var(--muted)">
+              <div style="font-weight:700;color:var(--text);margin-bottom:3px">💡 Rekomendasi Kebijakan:</div>
+              <div id="jalanRekomendasiText">Fokus alokasi pemeliharaan berkala pada ruas jalan penghubung pusat produksi dan pasar komoditas.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="src" style="margin-top:14px"><b>Sumber Data:</b> Badan Pusat Statistik (BPS) &amp; Kementerian PUPR RI (Statistik Transportasi Darat) · Data Indikatif Mockup Panjang Jalan Menurut Kondisi (km).</div>
     </section>
   </div>
 
@@ -1000,6 +1409,147 @@
       </div>
     </section>
 
+    <!-- 8.5 STATUS KEADAAN DARURAT BENCANA (Spesifikasi Mockup 10) -->
+    <section class="card" style="margin-top:14px">
+      <!-- Title & Filters -->
+      <div class="feature-controls-row">
+        <div>
+          <div style="display:flex;align-items:center;gap:8px">
+            <span style="display:grid;place-items:center;width:24px;height:24px;border-radius:6px;background:#fee2e2;color:#ef4444;font-size:13px">🛡</span>
+            <h2 class="card-title" style="margin:0">Status Keadaan Darurat Bencana</h2>
+          </div>
+          <p class="card-desc" style="margin:4px 0 0">Pantau penetapan status keadaan darurat bencana di wilayah terpilih.</p>
+        </div>
+        <div class="feature-filter-group">
+          <div>
+            <label for="daruratProvSelect" style="display:block;font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;margin-bottom:2px">Provinsi</label>
+            <select id="daruratProvSelect" class="feature-select" aria-label="Filter Provinsi Darurat"></select>
+          </div>
+          <div>
+            <label for="daruratCitySelect" style="display:block;font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;margin-bottom:2px">Kabupaten/Kota</label>
+            <select id="daruratCitySelect" class="feature-select" aria-label="Filter Kab/Kota Darurat"></select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ringkasan Info Bencana (3 Mini Cards) -->
+      <div class="darurat-summary-grid">
+        <div class="darurat-stat-card">
+          <div class="darurat-stat-icon" style="background:var(--merah-bg);color:var(--teal)">📋</div>
+          <div>
+            <div class="darurat-stat-val" id="daruratStatSk">0</div>
+            <div class="darurat-stat-lbl">Jumlah Penetapan di Wilayah Terpilih</div>
+          </div>
+        </div>
+        <div class="darurat-stat-card">
+          <div class="darurat-stat-icon" style="background:#e0e7ff;color:#4f46e5">⚡</div>
+          <div>
+            <div class="darurat-stat-val" id="daruratStatJenis">0</div>
+            <div class="darurat-stat-lbl">Jenis Bencana Tercatat</div>
+          </div>
+        </div>
+        <div class="darurat-stat-card">
+          <div class="darurat-stat-icon" style="background:#fef3c7;color:#d97706">🚨</div>
+          <div>
+            <div class="darurat-stat-val" style="font-size:18px" id="daruratStatStatus">–</div>
+            <div class="darurat-stat-lbl">Status Terbaru Ditetapkan</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Layout: Heatmap & Side Detail -->
+      <div class="feature-split-layout">
+        <!-- Heatmap Jenis Bencana per Bulan (Jan-Des) -->
+        <div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+            <h3 style="font-size:13px;font-weight:700;color:var(--text);margin:0">Catatan Penetapan Menurut Jenis Bencana dan Bulan</h3>
+            <span style="font-size:11px;color:var(--muted);font-family:var(--mono)">Tahun 2025</span>
+          </div>
+
+          <div class="heatmap-scroll-wrap">
+            <table class="darurat-heatmap-table" id="daruratHeatmapTable">
+              <!-- Rendered dynamically -->
+            </table>
+          </div>
+
+          <!-- Heatmap Legend -->
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-top:10px;font-size:11px;color:var(--muted);flex-wrap:wrap;gap:8px">
+            <div>Warna lebih pekat menunjukkan lebih banyak catatan penetapan.</div>
+            <div style="display:flex;align-items:center;gap:10px">
+              <span style="display:inline-flex;align-items:center;gap:4px"><span style="width:12px;height:12px;background:#f1f5f9;border-radius:2px;display:inline-block"></span> 0 Catatan</span>
+              <span style="display:inline-flex;align-items:center;gap:4px"><span style="width:12px;height:12px;background:#fee2e2;border-radius:2px;display:inline-block"></span> 1 Catatan</span>
+              <span style="display:inline-flex;align-items:center;gap:4px"><span style="width:12px;height:12px;background:#fca5a5;border-radius:2px;display:inline-block"></span> 2–3 Catatan</span>
+              <span style="display:inline-flex;align-items:center;gap:4px"><span style="width:12px;height:12px;background:#ef4444;border-radius:2px;display:inline-block"></span> &gt;3 Catatan</span>
+            </div>
+          </div>
+
+          <!-- Tabel List SK Terkait -->
+          <div style="margin-top:16px;border-top:1px solid var(--line-soft);padding-top:14px">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+              <h4 style="font-size:12.5px;font-weight:700;margin:0" id="daruratTableTitle">Daftar Dokumen Penetapan SK Darurat</h4>
+              <span id="daruratTableCount" style="font-family:var(--mono);font-size:11px;color:var(--muted)">0 Dokumen SK</span>
+            </div>
+            <div style="max-height:200px;overflow-y:auto;border:1px solid var(--line);border-radius:6px">
+              <table style="width:100%;border-collapse:collapse;font-size:12px;text-align:left" id="daruratSkTable"></table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Detail Penetapan Panel (Kanan) -->
+        <div class="feature-detail-panel" id="daruratDetailPanel">
+          <div class="feature-panel-header">
+            <h3 class="feature-panel-title">Detail Penetapan</h3>
+            <button type="button" class="feature-panel-close" id="btnDaruratReset" title="Reset Pilihan SK">✕</button>
+          </div>
+
+          <div id="daruratEmptyState" style="text-align:center;padding:24px 12px;color:var(--muted)">
+            <div style="font-size:32px;margin-bottom:8px;opacity:0.6">📜</div>
+            <div style="font-weight:600;font-size:13px;color:var(--text)">Pilih Sel Heatmap atau Dokumen SK</div>
+            <div style="font-size:11.5px;margin-top:4px">Klik sel bulan bencana pada heatmap atau baris tabel untuk meninjau rincian hukum SK.</div>
+          </div>
+
+          <div id="daruratDetailContent" style="display:none;flex-direction:column;gap:12px">
+            <div style="display:flex;gap:6px;flex-wrap:wrap">
+              <span class="status-pill siaga" id="ddStatusBadge">Siaga Darurat</span>
+              <span class="status-pill" style="background:var(--surface);color:var(--text);border:1px solid var(--line)" id="ddSkalaBadge">Skala Kabupaten</span>
+            </div>
+
+            <div>
+              <div style="font-size:16px;font-weight:800;color:var(--text);line-height:1.2;font-family:var(--mono)" id="ddNoSk">318/KPTS/2024</div>
+              <div style="font-size:11.5px;color:var(--muted);margin-top:4px" id="ddWilayah">Gunungkidul · DI Yogyakarta</div>
+            </div>
+
+            <div style="display:flex;flex-direction:column;gap:8px;border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);padding:10px 0;font-size:11.5px">
+              <div style="display:flex;justify-content:space-between">
+                <span style="color:var(--muted)">Klasifikasi Bencana</span>
+                <span style="font-weight:600;color:var(--text)" id="ddKlasifikasi">Hidrometeorologi</span>
+              </div>
+              <div style="display:flex;justify-content:space-between">
+                <span style="color:var(--muted)">Periode Berlaku</span>
+                <span style="font-family:var(--mono);font-weight:600;color:var(--text)" id="ddPeriode">3 Jan – 31 Mar 2025</span>
+              </div>
+              <div style="display:flex;justify-content:space-between">
+                <span style="color:var(--muted)">Keterangan Status</span>
+                <span style="font-weight:600;color:var(--text)" id="ddKeterangan">Perpanjangan Siaga Darurat</span>
+              </div>
+            </div>
+
+            <div>
+              <div style="font-size:11px;font-weight:700;text-transform:uppercase;color:var(--muted-2);margin-bottom:6px">Jenis Bencana Tercakup</div>
+              <div id="ddJenisChips" style="display:flex;flex-wrap:wrap;gap:4px"></div>
+            </div>
+
+            <a id="ddDocLink" href="#" target="_blank" rel="noopener noreferrer" class="btn" style="display:flex;align-items:center;justify-content:center;gap:6px;background:var(--merah);color:#ffffff;border-color:var(--merah);text-decoration:none;padding:8px;border-radius:6px;font-size:12px;font-weight:600;margin-top:6px">
+              <span>Lihat Dokumen SK</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="src" style="margin-top:14px"><b>Sumber Data:</b> Badan Nasional Penanggulangan Bencana (BNPB) · Kompilasi Data Status Keadaan Darurat Bencana Seluruh Indonesia Tahun 2025.</div>
+    </section>
+
     <div class="src" id="srcSosial" style="margin-top:14px"></div>
   </div>
 
@@ -1031,6 +1581,8 @@
 <div class="toast" id="toast" data-on="0"></div>
 
 <!-- Modal Dialog Detail Faskes & Layanan Kesehatan -->
+<div id="bkpmTooltip" class="bkpm-floating-tooltip"></div>
+
 <div id="sosModal" class="tani-modal-backdrop" hidden>
   <div class="tani-modal-box" role="dialog" aria-modal="true" aria-labelledby="sosModalTitle">
     <div class="tani-modal-header">
@@ -1060,6 +1612,10 @@
 <script src="assets/js/data/pertanian-data.js"></script>
 <script src="assets/js/data/sosial-data.js"></script>
 <script src="assets/js/data/fase1-layanan-data.js?v=1.0"></script>
+<script src="assets/js/data/bandara-data.js"></script>
+<script src="assets/js/data/darurat-data.js"></script>
+<script src="assets/js/data/jalan-data.js"></script>
+<script src="assets/js/data/investasi-sektor-data.js"></script>
 <script src="assets/js/core/Profil.js?cb=20261028_145200"></script>
 </body>
 </html>

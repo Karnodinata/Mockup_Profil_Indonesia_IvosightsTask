@@ -1,0 +1,598 @@
+ICAO,IATA,nama_bandar_udara,provinsi,kabupaten,penggunaan,kelas,pengelola,TKBN
+WITT,BTJ,Sultan Iskandar Muda,ACEH,KABUPATEN ACEH BESAR,Internasional,Non Kelas,PT. Angkasa Pura Indonesia,Ya
+WITC,MEQ,Cut Nyak Dhien Nagan Raya,ACEH,KABUPATEN NAGAN RAYA,Domestik,Kelas II,UPT Ditjen Hubud,Ya
+WITN,SBG,Maimun Saleh,ACEH,KOTA SABANG,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WIMT,TPK,Teuku Cut Ali,ACEH,KABUPATEN ACEH SELATAN,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WIML,LKI,Lasikin,ACEH,KABUPATEN SIMEULUE,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WIMA,LSW,Malikussaleh,ACEH,KABUPATEN ACEH UTARA,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WIMU,LSR,Alas Lauser,ACEH,KABUPATEN ACEH TENGGARA,Domestik,Satpel BU,UPT Ditjen Hubud,Ya
+WIMI,FSH,Syekh Hamzah Fansuri,ACEH,KABUPATEN ACEH SINGKIL,Domestik,Satpel BU,UPT Ditjen Hubud,Ya
+WIMG,GYO,Blangkejeren,ACEH,KABUPATEN GAYO LUES,Domestik,Satpel BU,UPT Ditjen Hubud,Ya
+WITK,TXE,Rembele,ACEH,KABUPATEN BENER MERIAH,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WITL,LSX,Lhoksukon,ACEH,KABUPATEN ACEH UTARA,Domestik,Non Kelas,Swasta,Tidak
+WIME,AEG,Aek Godang,SUMATERA UTARA,KABUPATEN PADANG LAWAS UTARA,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WIMP,SIW,Sibisa,SUMATERA UTARA,KABUPATEN TOBA,Domestik,Satpel BU,UPT Ditjen Hubud,Ya
+WIMN,DTB,Raja Sisingamangaraja XII,SUMATERA UTARA,KABUPATEN TAPANULI UTARA,Internasional,Non Kelas,PT. Angkasa Pura Indonesia,Ya
+WIMS,FLZ,Dr. Ferdinand Lumban Tobing,SUMATERA UTARA,KABUPATEN TAPANULI TENGAH,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WIMF,JHN,Jenderal Besar Abdul Haris Nasution,SUMATERA UTARA,KABUPATEN MANDAILING NATAL,Domestik,Satpel BU,UPT Ditjen Hubud,Ya
+WIMO,LXD,Lasondre,SUMATERA UTARA,KABUPATEN NIAS SELATAN,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WIMM,KNO,Kualanamu Internasional,SUMATERA UTARA,KABUPATEN DELI SERDANG,Internasional,Non Kelas,PT. Angkasa Pura Indonesia,Ya
+WIMB,GNS,Binaka,SUMATERA UTARA,KOTA GUNUNGSITOLI,Domestik,Kelas II,UPT Ditjen Hubud,Ya
+WIEB,RKI,Mentawai,SUMATERA BARAT,KABUPATEN KEPULAUAN MENTAWAI,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WIEE,PDG,Minangkabau,SUMATERA BARAT,KABUPATEN PADANG PARIAMAN,Internasional,Non Kelas,PT. Angkasa Pura Indonesia,Ya
+WIBB,PKU,Sultan Syarif Kasim II,RIAU,KOTA PEKANBARU,Internasional,Non Kelas,PT. Angkasa Pura Indonesia,Ya
+WIBJ,RGT,Japura,RIAU,KABUPATEN INDRAGIRI HULU,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WIBG,PPR,Tuanku Tambusai,RIAU,KABUPATEN ROKAN HULU,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WIBD,DUM,Pinang Kampai,RIAU,KOTA DUMAI,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WIBL,RPL,Sultan Syarif Haroen Setia Negara,RIAU,KABUPATEN PELALAWAN,Domestik,Non Kelas,Swasta,Tidak
+WIJJ,DJB,Sultan Thaha,JAMBI,KOTA JAMBI,Domestik,Non Kelas,PT. Angkasa Pura Indonesia,Ya
+WIJI,KRC,Depati Parbo,JAMBI,KABUPATEN KERINCI,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WIJB,BUU,Muara Bungo,JAMBI,KABUPATEN BUNGO,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WIPB,LLJ,Silampari,SUMATERA SELATAN,KOTA LUBUK LINGGAU,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WIPP,PLM,Sultan Mahmud Badaruddin II,SUMATERA SELATAN,KOTA PALEMBANG,Internasional,Non Kelas,PT. Angkasa Pura Indonesia,Ya
+WIPY,PXA,Atung Bungsu,SUMATERA SELATAN,KOTA PAGAR ALAM,Domestik,Satpel BU,UPT Ditjen Hubud,Ya
+WIGG,BKS,Fatmawati Soekarno,BENGKULU,KOTA BENGKULU,Domestik,Non Kelas,PT. Angkasa Pura Indonesia,Ya
+WIGM,MPC,Mukomuko,BENGKULU,KABUPATEN MUKO MUKO,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WIGE,ENG,Enggano,BENGKULU,KABUPATEN BENGKULU UTARA,Domestik,Satpel BU,UPT Ditjen Hubud,Ya
+WILL,TKG,Radin Inten II,LAMPUNG,KABUPATEN LAMPUNG SELATAN,Internasional,Non Kelas,PT. Angkasa Pura Indonesia,Ya
+WIPO,WTX,Gatot Soebroto,LAMPUNG,KABUPATEN WAY KANAN,Domestik,Satpel BU,UPT Ditjen Hubud,Ya
+WILP,TFY,Muhammad Taufiq Kiemas,LAMPUNG,KABUPATEN PESISIR BARAT,Domestik,Satpel BU,UPT Ditjen Hubud,Ya
+WILM,AKQ,Astra Ksetra,LAMPUNG,KABUPATEN TULANG BAWANG,Domestik,Non Kelas,TNI,Tidak
+WILG,-,Gunung Batin,LAMPUNG,KABUPATEN LAMPUNG TENGAH,Domestik,Non Kelas,Swasta,Tidak
+WILB,-,Tamling,LAMPUNG,KABUPATEN PESISIR BARAT,Domestik,Non Kelas,Swasta,Tidak
+WILW,-,Way Jepara,LAMPUNG,KABUPATEN LAMPUNG TIMUR,Domestik,Non Kelas,Swasta,Tidak
+WIKK,PGK,Depati Amir,KEPULAUAN BANGKA BELITUNG,KABUPATEN BANGKA TENGAH,Domestik,Non Kelas,PT. Angkasa Pura Indonesia,Ya
+WIKT,TJQ,H. A. S. Hanandjoeddin,KEPULAUAN BANGKA BELITUNG,KABUPATEN BELITUNG,Internasional,Non Kelas,PT. Angkasa Pura Indonesia,Ya
+WIDD,BTH,Hang Nadim,KEPULAUAN RIAU,KOTA BATAM,Internasional,Non Kelas,PT. Angkasa Pura Indonesia,Ya
+WIDS,SIQ,Dabo,KEPULAUAN RIAU,KABUPATEN LINGGA,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WIDT,TJB,Raja Haji Abdullah,KEPULAUAN RIAU,KABUPATEN KARIMUN,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WIDN,TNJ,Raja Haji Fisabilillah,KEPULAUAN RIAU,KOTA TANJUNG PINANG,Internasional,Non Kelas,PT. Angkasa Pura Indonesia,Ya
+WIDO,NTX,Ranai,KEPULAUAN RIAU,KABUPATEN NATUNA,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WIDL,LMU,Letung,KEPULAUAN RIAU,KABUPATEN KEPULAUAN ANAMBAS,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WIDB,TBX,Tambelan,KEPULAUAN RIAU,KABUPATEN BINTAN,Domestik,Satpel BU,UPT Ditjen Hubud,Ya
+WIDM,MWK,Matak,KEPULAUAN RIAU,KABUPATEN KEPULAUAN ANAMBAS,Domestik,Non Kelas,Swasta,Tidak
+WIHH,HLP,Halim Perdana Kusuma,DKI JAKARTA,KOTA ADMINISTRASI JAKARTA TIMUR,Internasional,Non Kelas,PT. Angkasa Pura Indonesia,Ya
+WIHC,-,Wiladatika,DKI JAKARTA,KOTA ADMINISTRASI JAKARTA TIMUR,Domestik,Non Kelas,Swasta,Tidak
+WICD,CBN,Cakrabhuwana,JAWA BARAT,KOTA CIREBON,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WICN,CJN,Nusawiru,JAWA BARAT,KABUPATEN PANGANDARAN,Domestik,Non Kelas,UPT Daerah / Pemda,Ya
+WICC,BDO,Husein Sastranegara,JAWA BARAT,KOTA BANDUNG,Domestik,Non Kelas,PT. Angkasa Pura Indonesia,Ya
+WICM,TSY,Wiriadinata,JAWA BARAT,KOTA TASIKMALAYA,Domestik,Satpel BU,UPT Ditjen Hubud,Ya
+WICA,KJT,Kertajati,JAWA BARAT,KABUPATEN MAJALENGKA,Internasional,Non Kelas,PT. Angkasa Pura Indonesia,Ya
+WIHJ,-,Atang Sendjaja,JAWA BARAT,KABUPATEN BOGOR,Domestik,Non Kelas,TNI,Tidak
+WICK,-,Sulaiman,JAWA BARAT,KABUPATEN BANDUNG,Domestik,Non Kelas,TNI,Tidak
+WAHL,CXP,Tunggul Wulung,JAWA TENGAH,KABUPATEN CILACAP,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAHU,KWB,Dewadaru,JAWA TENGAH,KABUPATEN JEPARA,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAHQ,SOC,Adi Soemarmo,JAWA TENGAH,KABUPATEN BOYOLALI,Internasional,Non Kelas,PT. Angkasa Pura Indonesia,Ya
+WAHS,SRG,Jenderal Ahmad Yani,JAWA TENGAH,KOTA SEMARANG,Internasional,Non Kelas,PT. Angkasa Pura Indonesia,Ya
+WAHP,PWL,Jenderal Besar Soedirman,JAWA TENGAH,KABUPATEN PURBALINGGA,Domestik,Non Kelas,PT. Angkasa Pura Indonesia,Ya
+WARC,CPF,Ngloram,JAWA TENGAH,KABUPATEN BLORA,Domestik,Satpel BU,UPT Ditjen Hubud,Ya
+WAHH,JOG,Adisutjipto,DAERAH ISTIMEWA YOGYAKARTA,KABUPATEN SLEMAN,Domestik,Non Kelas,PT. Angkasa Pura Indonesia,Ya
+WAHI,YIA,Yogyakarta,DAERAH ISTIMEWA YOGYAKARTA,KABUPATEN KULON PROGO,Internasional,Non Kelas,PT. Angkasa Pura Indonesia,Ya
+WART,SUP,Trunojoyo,JAWA TIMUR,KABUPATEN SUMENEP,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WADY,BWX,Banyuwangi,JAWA TIMUR,KABUPATEN BANYUWANGI,Internasional,Non Kelas,PT. Angkasa Pura Indonesia,Ya
+WARA,MLG,Abdulrachman Saleh,JAWA TIMUR,KABUPATEN MALANG,Domestik,Non Kelas,UPT Daerah / Pemda,Ya
+WARR,SUB,Juanda,JAWA TIMUR,KABUPATEN SIDOARJO,Internasional,Non Kelas,PT. Angkasa Pura Indonesia,Ya
+WARE,JBB,Noto Hadinegoro,JAWA TIMUR,KABUPATEN JEMBER,Domestik,Non Kelas,UPT Daerah / Pemda,Ya
+WARW,BXW,Harun Thohir,JAWA TIMUR,KABUPATEN GRESIK,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WARD,DHX,Dhoho,JAWA TIMUR,KABUPATEN KEDIRI,Internasional,Non Kelas,PT. Angkasa Pura Indonesia,Ya
+WARP,-,Pagerungan,JAWA TIMUR,KABUPATEN SUMENEP,Domestik,Non Kelas,Swasta,Tidak
+WIRR,RTO,Budiarto,BANTEN,KABUPATEN TANGERANG,Domestik,Non Kelas,UPT Ditjen Hubud,Ya
+WIII,CGK,Soekarno Hatta,BANTEN,KOTA TANGERANG,Internasional,Non Kelas,PT. Angkasa Pura Indonesia,Ya
+WIHI,-,Salakanagara Tanjung Lesung,BANTEN,KABUPATEN PANDEGLANG,Domestik,Non Kelas,Swasta,Tidak
+WIHP,PCB,Pondok Cabe,BANTEN,KOTA TANGERANG SELATAN,Domestik,Non Kelas,BUMN,Tidak
+WADD,DPS,I Gusti Ngurah Rai,BALI,KABUPATEN BADUNG,Internasional,Non Kelas,PT. Angkasa Pura Indonesia,Ya
+WADE,-,Letkol Wisnu,BALI,KABUPATEN BULELENG,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WADB,BMU,Sultan Muhammad Salahuddin,NUSA TENGGARA BARAT,KABUPATEN BIMA,Domestik,Kelas II,UPT Ditjen Hubud,Ya
+WADS,SWQ,Sultan Muhammad Kaharuddin,NUSA TENGGARA BARAT,KABUPATEN SUMBAWA,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WADL,LOP,Zainuddin Abdul Madjid,NUSA TENGGARA BARAT,KABUPATEN LOMBOK TENGAH,Internasional,Non Kelas,PT. Angkasa Pura Indonesia,Ya
+WADT,PNW,Amman Mineral Poto Tano,NUSA TENGGARA BARAT,KABUPATEN SUMBAWA BARAT,Domestik,Non Kelas,Swasta,Tidak
+WATK,TMC,Lede Kalumbang,NUSA TENGGARA TIMUR,KABUPATEN SUMBA BARAT DAYA,Domestik,Kelas II,UPT Ditjen Hubud,Ya
+WATE,ENE,H. Hasan Aroeboesman,NUSA TENGGARA TIMUR,KABUPATEN ENDE,Domestik,Kelas II,UPT Ditjen Hubud,Ya
+WATR,RTI,David Constantijn Saudale,NUSA TENGGARA TIMUR,KABUPATEN ROTE NDAO,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WATU,WGP,Umbu Mehang Kunda,NUSA TENGGARA TIMUR,KABUPATEN SUMBA TIMUR,Domestik,Kelas II,UPT Ditjen Hubud,Ya
+WATO,LBJ,Komodo,NUSA TENGGARA TIMUR,KABUPATEN MANGGARAI BARAT,Internasional,Kelas II,UPT Ditjen Hubud,Ya
+WATG,RTG,Frans Sales Lega,NUSA TENGGARA TIMUR,KABUPATEN MANGGARAI,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WATA,ABU,A. A. Bere Tallo,NUSA TENGGARA TIMUR,KABUPATEN BELU,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WATM,ARD,Mali,NUSA TENGGARA TIMUR,KABUPATEN ALOR,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WATL,LKA,Gewayantana,NUSA TENGGARA TIMUR,KABUPATEN FLORES TIMUR,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WATB,BJW,Soa,NUSA TENGGARA TIMUR,KABUPATEN NGADA,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WATS,SAU,Tardamu,NUSA TENGGARA TIMUR,KABUPATEN SABU RAIJUA,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WATC,MOF,Fransiskus Xaverius Seda,NUSA TENGGARA TIMUR,KABUPATEN SIKKA,Domestik,Kelas II,UPT Ditjen Hubud,Ya
+WATT,KOE,El Tari,NUSA TENGGARA TIMUR,KOTA KUPANG,Internasional,Non Kelas,PT. Angkasa Pura Indonesia,Ya
+WATW,LWE,Wunopito,NUSA TENGGARA TIMUR,KABUPATEN LEMBATA,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WATP,AXO,Kabir,NUSA TENGGARA TIMUR,KABUPATEN ALOR,Domestik,Satpel BU,UPT Ditjen Hubud,Ya
+WATI,-,Flores,NUSA TENGGARA TIMUR,KABUPATEN NAGEKEO,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WATF,-,Maskolen,NUSA TENGGARA TIMUR,KABUPATEN TIMOR TENGAH SELATAN,Domestik,Non Kelas,Missionaris,Tidak
+WATH,-,Minia,NUSA TENGGARA TIMUR,KABUPATEN SABU RAIJUA,Domestik,Non Kelas,Swasta,Tidak
+WIOS,SQG,Tebelian,KALIMANTAN BARAT,KABUPATEN SINTANG,Domestik,Kelas II,UPT Ditjen Hubud,Ya
+WIOP,PSU,Pangsuma,KALIMANTAN BARAT,KABUPATEN KAPUAS HULU,Domestik,Kelas II,UPT Ditjen Hubud,Ya
+WIOG,NPO,Nangapinoh,KALIMANTAN BARAT,KABUPATEN MELAWI,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WIOK,KTG,Rahadi Oesman,KALIMANTAN BARAT,KABUPATEN KETAPANG,Domestik,Kelas II,UPT Ditjen Hubud,Ya
+WIOO,PNK,Supadio,KALIMANTAN BARAT,KABUPATEN KUBU RAYA,Internasional,Non Kelas,PT. Angkasa Pura Indonesia,Ya
+WIOH,-,Liku,KALIMANTAN BARAT,KABUPATEN SAMBAS,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WIOD,SKJ,Singkawang,KALIMANTAN BARAT,KOTA SINGKAWANG,Domestik,Satpel BU,UPT Ditjen Hubud,Ya
+WIOI,-,Sanggoledo,KALIMANTAN BARAT,KABUPATEN BENGKAYANG,Domestik,Non Kelas,TNI,Tidak
+WIFJ,-,Pelaik,KALIMANTAN BARAT,KABUPATEN SINTANG,Domestik,Non Kelas,Missionaris,Tidak
+WISA,-,Smart Semelagi,KALIMANTAN BARAT,KOTA SINGKAWANG,Domestik,Non Kelas,Swasta,Tidak
+WIAR,-,Beringin,KALIMANTAN BARAT,KABUPATEN SINTANG,Domestik,Non Kelas,Missionaris,Tidak
+WION,-,Ambalau,KALIMANTAN BARAT,KABUPATEN SINTANG,Domestik,Non Kelas,Missionaris,Tidak
+WIOX,-,Andong,KALIMANTAN BARAT,KABUPATEN SINTANG,Domestik,Non Kelas,Missionaris,Tidak
+WIOQ,-,Anik,KALIMANTAN BARAT,KABUPATEN LANDAK,Domestik,Non Kelas,Missionaris,Tidak
+WIOV,-,Babang,KALIMANTAN BARAT,KABUPATEN BENGKAYANG,Domestik,Non Kelas,Missionaris,Tidak
+WIOW,-,Baitani,KALIMANTAN BARAT,KABUPATEN SINTANG,Domestik,Non Kelas,Missionaris,Tidak
+WIAB,-,Balai Agas,KALIMANTAN BARAT,KABUPATEN MELAWI,Domestik,Non Kelas,Missionaris,Tidak
+WIAC,-,Balai Sepuak,KALIMANTAN BARAT,KABUPATEN SEKADAU,Domestik,Non Kelas,Missionaris,Tidak
+WIAD,-,Beginci Laut,KALIMANTAN BARAT,KABUPATEN SEKADAU,Domestik,Non Kelas,Missionaris,Tidak
+WIAE,-,Belongka,KALIMANTAN BARAT,KABUPATEN KAPUAS HULU,Domestik,Non Kelas,Missionaris,Tidak
+WIOB,-,Bengkayang,KALIMANTAN BARAT,KABUPATEN BENGKAYANG,Domestik,Non Kelas,Missionaris,Tidak
+WIAF,-,Bentiang,KALIMANTAN BARAT,KABUPATEN LANDAK,Domestik,Non Kelas,Missionaris,Tidak
+WIAG,-,Bethel,KALIMANTAN BARAT,KABUPATEN KUBU RAYA,Domestik,Non Kelas,Missionaris,Tidak
+WIAH,-,Bethesda,KALIMANTAN BARAT,KABUPATEN SANGGAU,Domestik,Non Kelas,Missionaris,Tidak
+WIAI,-,Darit,KALIMANTAN BARAT,KABUPATEN LANDAK,Domestik,Non Kelas,Missionaris,Tidak
+WIAJ,-,Endoya,KALIMANTAN BARAT,KABUPATEN SANGGAU,Domestik,Non Kelas,Missionaris,Tidak
+WIAK,-,Galela,KALIMANTAN BARAT,KABUPATEN SEKADAU,Domestik,Non Kelas,Missionaris,Tidak
+WIAL,-,Gerai,KALIMANTAN BARAT,KABUPATEN SEKADAU,Domestik,Non Kelas,Missionaris,Tidak
+WIAM,-,Gilgal,KALIMANTAN BARAT,KABUPATEN SEKADAU,Domestik,Non Kelas,Missionaris,Tidak
+WIAN,-,Hebron,KALIMANTAN BARAT,KABUPATEN SINTANG,Domestik,Non Kelas,Missionaris,Tidak
+WIAO,-,Hulu Tayan,KALIMANTAN BARAT,KABUPATEN SANGGAU,Domestik,Non Kelas,Missionaris,Tidak
+WIAP,-,Krapah,KALIMANTAN BARAT,KABUPATEN SINTANG,Domestik,Non Kelas,Missionaris,Tidak
+WIAQ,-,Kuala Randau,KALIMANTAN BARAT,KABUPATEN KETAPANG,Domestik,Non Kelas,Missionaris,Tidak
+WIAS,-,Lokok,KALIMANTAN BARAT,KABUPATEN BENGKAYANG,Domestik,Non Kelas,Missionaris,Tidak
+WIAT,-,Lumar,KALIMANTAN BARAT,KABUPATEN BENGKAYANG,Domestik,Non Kelas,Missionaris,Tidak
+WIAU,-,Madya Raya,KALIMANTAN BARAT,KABUPATEN MELAWI,Domestik,Non Kelas,Missionaris,Tidak
+WIAV,-,Maranatha,KALIMANTAN BARAT,KABUPATEN SEKADAU,Domestik,Non Kelas,Missionaris,Tidak
+WIAW,-,Menjalin,KALIMANTAN BARAT,KABUPATEN LANDAK,Domestik,Non Kelas,Missionaris,Tidak
+WIAX,-,Nanga Erak,KALIMANTAN BARAT,KABUPATEN KAPUAS HULU,Domestik,Non Kelas,Missionaris,Tidak
+WIFA,-,Nanga Lebang,KALIMANTAN BARAT,KABUPATEN SINTANG,Domestik,Non Kelas,Missionaris,Tidak
+WIFB,-,Nanga Mawong,KALIMANTAN BARAT,KABUPATEN MELAWI,Domestik,Non Kelas,Missionaris,Tidak
+-,-,Nanga Merakai,KALIMANTAN BARAT,KABUPATEN SINTANG,Domestik,Non Kelas,Missionaris,Tidak
+WIFD,-,Nanga Nyabu,KALIMANTAN BARAT,KABUPATEN KAPUAS HULU,Domestik,Non Kelas,Missionaris,Tidak
+WIFE,-,Nanga Pinoh II,KALIMANTAN BARAT,KABUPATEN MELAWI,Domestik,Non Kelas,UPT Ditjen Hubud,Tidak
+WIFH,-,Nanga Raun,KALIMANTAN BARAT,KABUPATEN KAPUAS HULU,Domestik,Non Kelas,Missionaris,Tidak
+WIFG,-,Nanga Sepatu,KALIMANTAN BARAT,KABUPATEN SINTANG,Domestik,Non Kelas,Missionaris,Tidak
+WIFI,-,Pare,KALIMANTAN BARAT,KABUPATEN LANDAK,Domestik,Non Kelas,Missionaris,Tidak
+WIFK,-,Peniel,KALIMANTAN BARAT,KABUPATEN SEKADAU,Domestik,Non Kelas,Missionaris,Tidak
+WIFL,-,Riam Batu,KALIMANTAN BARAT,KABUPATEN KETAPANG,Domestik,Non Kelas,Missionaris,Tidak
+WIFM,-,Riam Sejawak,KALIMANTAN BARAT,KABUPATEN SINTANG,Domestik,Non Kelas,Missionaris,Tidak
+WIFN,-,Ribang Rabing,KALIMANTAN BARAT,KABUPATEN MELAWI,Domestik,Non Kelas,Missionaris,Tidak
+WIFO,-,Sebadu,KALIMANTAN BARAT,KABUPATEN LANDAK,Domestik,Non Kelas,Missionaris,Tidak
+WIFP,-,Sebah,KALIMANTAN BARAT,KABUPATEN LANDAK,Domestik,Non Kelas,Missionaris,Tidak
+WIFQ,-,Seluk Betung,KALIMANTAN BARAT,KABUPATEN SEKADAU,Domestik,Non Kelas,Missionaris,Tidak
+WIFR,-,Semadai,KALIMANTAN BARAT,KABUPATEN SINTANG,Domestik,Non Kelas,Missionaris,Tidak
+WIFS,-,Serimbu,KALIMANTAN BARAT,KABUPATEN LANDAK,Domestik,Non Kelas,Missionaris,Tidak
+WIFT,-,Serukam,KALIMANTAN BARAT,KABUPATEN BENGKAYANG,Domestik,Non Kelas,Missionaris,Tidak
+WIFU,-,Siduk,KALIMANTAN BARAT,KABUPATEN KETAPANG,Domestik,Non Kelas,Missionaris,Tidak
+WIFV,-,Siloam,KALIMANTAN BARAT,KABUPATEN SANGGAU,Domestik,Non Kelas,Missionaris,Tidak
+WIFW,-,Siloh,KALIMANTAN BARAT,KABUPATEN SEKADAU,Domestik,Non Kelas,Missionaris,Tidak
+WIOA,-,Sirang,KALIMANTAN BARAT,KABUPATEN SEKADAU,Domestik,Non Kelas,Missionaris,Tidak
+WIOT,-,Sungai Dampak,KALIMANTAN BARAT,KABUPATEN MELAWI,Domestik,Non Kelas,Missionaris,Tidak
+WIOU,-,Sungai Kunyit,KALIMANTAN BARAT,KOTA PONTIANAK,Domestik,Non Kelas,Missionaris,Tidak
+WIOF,-,Sungai Tontang,KALIMANTAN BARAT,KABUPATEN KETAPANG,Domestik,Non Kelas,Missionaris,Tidak
+WIOY,-,Suti,KALIMANTAN BARAT,KABUPATEN BENGKAYANG,Domestik,Non Kelas,Missionaris,Tidak
+WIOE,-,Tanjung Beringin,KALIMANTAN BARAT,KABUPATEN MELAWI,Domestik,Non Kelas,Missionaris,Tidak
+WIOL,-,Tanjung Lokang,KALIMANTAN BARAT,KABUPATEN KAPUAS HULU,Domestik,Non Kelas,Missionaris,Tidak
+WIOC,-,Tanjung Maju,KALIMANTAN BARAT,KABUPATEN KETAPANG,Domestik,Non Kelas,Missionaris,Tidak
+WIOR,-,Tanjung Rimba,KALIMANTAN BARAT,KABUPATEN KETAPANG,Domestik,Non Kelas,Missionaris,Tidak
+WIQB,-,Tembaga,KALIMANTAN BARAT,KABUPATEN SEKADAU,Domestik,Non Kelas,Missionaris,Tidak
+WIQC,-,Tempunak,KALIMANTAN BARAT,KABUPATEN SINTANG,Domestik,Non Kelas,Missionaris,Tidak
+WIQD,-,Teratai,KALIMANTAN BARAT,KABUPATEN SANGGAU,Domestik,Non Kelas,Missionaris,Tidak
+WIQE,-,Ulak Muid,KALIMANTAN BARAT,KABUPATEN MELAWI,Domestik,Non Kelas,Missionaris,Tidak
+WAGG,PKY,Tjilik Riwut,KALIMANTAN TENGAH,KOTA PALANGKARAYA,Domestik,Non Kelas,PT. Angkasa Pura Indonesia,Ya
+WAGI,PKN,Iskandar,KALIMANTAN TENGAH,KABUPATEN KOTAWARINGIN BARAT,Domestik,Kelas II,UPT Ditjen Hubud,Ya
+WAGM,NGG,Sanggu,KALIMANTAN TENGAH,KABUPATEN BARITO SELATAN,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAGB,HMS,Haji Muhammad Sidik,KALIMANTAN TENGAH,KABUPATEN BARITO UTARA,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAGF,KLP,Kuala Pembuang,KALIMANTAN TENGAH,KABUPATEN SERUYAN,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAGT,TBM,Tumbang Samba,KALIMANTAN TENGAH,KABUPATEN KATINGAN,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAGA,GXM,Kuala Kurun,KALIMANTAN TENGAH,KABUPATEN GUNUNG MAS,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAGS,SMQ,H. Asan,KALIMANTAN TENGAH,KABUPATEN KOTAWARINGIN TIMUR,Domestik,Kelas II,UPT Ditjen Hubud,Ya
+WAGP,-,Purukcahu,KALIMANTAN TENGAH,KABUPATEN MURUNG RAYA,Domestik,Non Kelas,Swasta,Tidak
+WAOO,BDJ,Syamsudin Noor,KALIMANTAN SELATAN,KOTA BANJARBARU,Internasional,Non Kelas,PT. Angkasa Pura Indonesia,Ya
+WAON,TJG,Warukin,KALIMANTAN SELATAN,KABUPATEN TABALONG,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WAOK,KBU,Gusti Sjamsir Alam,KALIMANTAN SELATAN,KABUPATEN KOTABARU,Domestik,Kelas II,UPT Ditjen Hubud,Ya
+WAOC,BTW,Bersujud,KALIMANTAN SELATAN,KABUPATEN TANAH BUMBU,Domestik,Non Kelas,UPT Daerah / Pemda,Ya
+WAOH,-,Kota Baru,KALIMANTAN SELATAN,KABUPATEN KOTABARU,Domestik,Non Kelas,Swasta,Tidak
+WAOG,-,Sebuku,KALIMANTAN SELATAN,KABUPATEN KOTABARU,Domestik,Non Kelas,Swasta,Tidak
+WALL,BPN,Sultan Aji Muhammad Sulaiman,KALIMANTAN TIMUR,KOTA BALIKPAPAN,Internasional,Non Kelas,PT. Angkasa Pura Indonesia,Ya
+WALS,AAP,Aji Pangeran Tumenggung Pranoto,KALIMANTAN TIMUR,KOTA SAMARINDA,Internasional,Kelas I,UPT Ditjen Hubud,Ya
+WALJ,DTD,Datah Dawai,KALIMANTAN TIMUR,KABUPATEN MAHAKAM ULU,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WALE,GHS,Melalan Melak,KALIMANTAN TIMUR,KABUPATEN KUTAI BARAT,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAQT,BEJ,Kalimarau,KALIMANTAN TIMUR,KABUPATEN BERAU,Domestik,Kelas I,UPT Ditjen Hubud,Ya
+WALW,-,Muara Wahau,KALIMANTAN TIMUR,KABUPATEN KUTAI TIMUR,Domestik,Non Kelas,UPT Daerah / Pemda,Ya
+WALB,-,Tanjung Bara,KALIMANTAN TIMUR,KABUPATEN KUTAI TIMUR,Domestik,Non Kelas,Swasta,Tidak
+WALC,BXT,LNG Badak,KALIMANTAN TIMUR,KOTA BONTANG,Domestik,Non Kelas,Swasta,Tidak
+WAGL,-,Long Apari,KALIMANTAN TIMUR,KABUPATEN MAHAKAM ULU,Domestik,Non Kelas,Swasta,Tidak
+WAQC,RTU,Maratua,KALIMANTAN TIMUR,KABUPATEN BERAU,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+-,-,Uyang Lahai,KALIMANTAN TIMUR,KABUPATEN KUTAI TIMUR,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WALK,-,Internasional Nusantara,KALIMANTAN TIMUR,KABUPATEN PENAJAM PASER UTARA,Domestik,Kelas I,UPT Ditjen Hubud,Tidak
+WALQ,-,Pujungan,KALIMANTAN TIMUR,KABUPATEN KUTAI KARTANEGARA,Domestik,Non Kelas,Swasta,Tidak
+WAGD,-,Datah Bilang,KALIMANTAN TIMUR,KABUPATEN MAHAKAM ULU,Domestik,Non Kelas,Swasta,Tidak
+WALP,-,Gemar Baru,KALIMANTAN TIMUR,KABUPATEN KUTAI TIMUR,Domestik,Non Kelas,Missionaris,Tidak
+WALR,-,Kaburau,KALIMANTAN TIMUR,KABUPATEN BERAU,Domestik,Non Kelas,Swasta,Tidak
+WAOF,-,Long Lees,KALIMANTAN TIMUR,KABUPATEN KUTAI TIMUR,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WAOE,-,Long Segar,KALIMANTAN TIMUR,KABUPATEN KUTAI TIMUR,Domestik,Non Kelas,Swasta,Tidak
+WALF,-,Ma Bengkal,KALIMANTAN TIMUR,KABUPATEN KUTAI TIMUR,Domestik,Non Kelas,Swasta,Tidak
+WAQK,-,Mangkajang,KALIMANTAN TIMUR,KABUPATEN BERAU,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WAGO,-,Rantau Sentosa,KALIMANTAN TIMUR,KABUPATEN KUTAI TIMUR,Domestik,Non Kelas,Missionaris,Tidak
+WALA,SGQ,Sangkimah,KALIMANTAN TIMUR,KABUPATEN KUTAI TIMUR,Domestik,Non Kelas,BUMN,Tidak
+WALU,-,Sangkulirang,KALIMANTAN TIMUR,KABUPATEN KUTAI TIMUR,Domestik,Non Kelas,Swasta,Tidak
+WAGR,-,Tabang,KALIMANTAN TIMUR,KABUPATEN KUTAI KARTANEGARA,Domestik,Non Kelas,Missionaris,Tidak
+WALD,-,Talisayam,KALIMANTAN TIMUR,KABUPATEN BERAU,Domestik,Non Kelas,Swasta,Tidak
+WALT,TSX,Tanjung Santan,KALIMANTAN TIMUR,KABUPATEN KUTAI KARTANEGARA,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WAGU,-,Byan,KALIMANTAN TIMUR,KABUPATEN KUTAI KARTANEGARA,Domestik,Non Kelas,Swasta,Tidak
+WAQQ,TRK,Juwata,KALIMANTAN UTARA,KOTA TARAKAN,Internasional,Kelas I Utama,UPT Ditjen Hubud,Ya
+WAQA,NNX,Nunukan,KALIMANTAN UTARA,KABUPATEN NUNUKAN,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAQJ,LBW,Yuvai Semaring,KALIMANTAN UTARA,KABUPATEN NUNUKAN,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAQD,TJS,Tanjung Harapan,KALIMANTAN UTARA,KABUPATEN BULUNGAN,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAQM,LNU,Kol. Robert Atty Bessing,KALIMANTAN UTARA,KABUPATEN MALINAU,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAQL,LPU,Long Apung,KALIMANTAN UTARA,KABUPATEN MALINAU,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAQU,-,Long Layu,KALIMANTAN UTARA,KABUPATEN NUNUKAN,Domestik,Non Kelas,BUMN,Ya
+WAQG,-,Binuang,KALIMANTAN UTARA,KABUPATEN NUNUKAN,Domestik,Non Kelas,UPT Daerah / Pemda,Ya
+WAGN,-,Patra,KALIMANTAN UTARA,KABUPATEN NUNUKAN,Domestik,Non Kelas,Missionaris,Tidak
+WAEA,-,Mahak Baru,KALIMANTAN UTARA,KABUPATEN MALINAU,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WAQW,-,Long Sule,KALIMANTAN UTARA,KABUPATEN MALINAU,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WAQV,-,Long Pujungan,KALIMANTAN UTARA,KABUPATEN MALINAU,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WAQE,-,Long Alango,KALIMANTAN UTARA,KABUPATEN MALINAU,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WALO,-,Datah Dian,KALIMANTAN UTARA,KABUPATEN MALINAU,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WAQN,-,Apa Uping,KALIMANTAN UTARA,KABUPATEN MALINAU,Domestik,Non Kelas,BUMN,Tidak
+WALG,-,Bayan Kara,KALIMANTAN UTARA,KABUPATEN BULUNGAN,Domestik,Non Kelas,Swasta,Tidak
+WALI,-,Berian Baru,KALIMANTAN UTARA,KABUPATEN NUNUKAN,Domestik,Non Kelas,Missionaris,Tidak
+WAQB,BYQ,Bunyu,KALIMANTAN UTARA,KABUPATEN BULUNGAN,Domestik,Non Kelas,BUMN,Tidak
+WALV,-,Kampung Baru,KALIMANTAN UTARA,KABUPATEN NUNUKAN,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WALX,-,Kurid,KALIMANTAN UTARA,KABUPATEN NUNUKAN,Domestik,Non Kelas,Swasta,Tidak
+WALM,-,Lembudud,KALIMANTAN UTARA,KABUPATEN NUNUKAN,Domestik,Non Kelas,BUMN,Tidak
+WAQR,-,Long Aran,KALIMANTAN UTARA,KABUPATEN MALINAU,Domestik,Non Kelas,Swasta,Tidak
+WAOJ,-,Long Banal,KALIMANTAN UTARA,KABUPATEN MALINAU,Domestik,Non Kelas,BUMN,Tidak
+WAQI,-,Long Bia,KALIMANTAN UTARA,KABUPATEN BULUNGAN,Domestik,Non Kelas,BUMN,Tidak
+WAQS,-,Long Lebusan,KALIMANTAN UTARA,KABUPATEN MALINAU,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WALN,-,Long Nawang,KALIMANTAN UTARA,KABUPATEN MALINAU,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WAQP,-,Long Pala,KALIMANTAN UTARA,KABUPATEN MALINAU,Domestik,Non Kelas,Swasta,Tidak
+WAQH,-,Long Rungan,KALIMANTAN UTARA,KABUPATEN NUNUKAN,Domestik,Non Kelas,BUMN,Tidak
+WAOS,-,Long Seibarang,KALIMANTAN UTARA,KABUPATEN MALINAU,Domestik,Non Kelas,Missionaris,Tidak
+WAQF,-,Long Umung,KALIMANTAN UTARA,KABUPATEN NUNUKAN,Domestik,Non Kelas,Missionaris,Tidak
+WAOM,-,Mt. Moro,KALIMANTAN UTARA,KABUPATEN NUNUKAN,Domestik,Non Kelas,Missionaris,Tidak
+WAEC,-,Nian Baru,KALIMANTAN UTARA,KABUPATEN MALINAU,Domestik,Non Kelas,Missionaris,Tidak
+WAQY,-,Pa Upan,KALIMANTAN UTARA,KABUPATEN NUNUKAN,Domestik,Non Kelas,Missionaris,Tidak
+WAQX,-,Pulau Sapi,KALIMANTAN UTARA,KABUPATEN MALINAU,Domestik,Non Kelas,Missionaris,Tidak
+WAGQ,-,Sungai Barang,KALIMANTAN UTARA,KABUPATEN MALINAU,Domestik,Non Kelas,Missionaris,Tidak
+WAMM,MDC,Sam Ratulangi,SULAWESI UTARA,KOTA MANADO,Internasional,Non Kelas,PT. Angkasa Pura Indonesia,Ya
+WAMN,MNA,Melonguane,SULAWESI UTARA,KABUPATEN KEPULAUAN TALAUD,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAMH,NAH,Naha,SULAWESI UTARA,KABUPATEN KEPULAUAN SANGIHE,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAMS,IAX,Miangas,SULAWESI UTARA,KABUPATEN KEPULAUAN TALAUD,Domestik,Satpel BU,UPT Ditjen Hubud,Ya
+WAMO,BRG,Sitaro,SULAWESI UTARA,KABUPATEN KEPULAUAN SIAU TAGULANDANG BIARO,Domestik,Satpel BU,UPT Ditjen Hubud,Ya
+WAMI,LKM,Bolaang Mongondow,SULAWESI UTARA,KABUPATEN BOLAANG MONGONDOW,Domestik,Satpel BU,UPT Ditjen Hubud,Ya
+WAFF,PLW,Mutiara Sis Al-Jufri,SULAWESI TENGAH,KOTA PALU,Internasional,Kelas I,UPT Ditjen Hubud,Ya
+WAFW,LUW,Syukuran Aminuddin Amir,SULAWESI TENGAH,KABUPATEN BANGGAI,Domestik,Kelas II,UPT Ditjen Hubud,Ya
+WAFP,PSJ,Kasiguncu,SULAWESI TENGAH,KABUPATEN POSO,Domestik,Kelas II,UPT Ditjen Hubud,Ya
+WAFY,UOL,Pogogul,SULAWESI TENGAH,KABUPATEN BUOL,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAFL,TLI,Sultan Bantilan,SULAWESI TENGAH,KABUPATEN TOLI TOLI,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAFO,MOH,Morowali,SULAWESI TENGAH,KABUPATEN MOROWALI,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAFU,OJU,Tanjung Api,SULAWESI TENGAH,KABUPATEN TOJO UNA UNA,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAMP,MWS,Indonesia Morowali Industrial Park (IMIP),SULAWESI TENGAH,KABUPATEN MOROWALI,Domestik,Non Kelas,Swasta,Tidak
+WAFQ,BQR,Maulana Prins Mandapar,SULAWESI TENGAH,KABUPATEN BANGGAI LAUT,Domestik,Satpel BU,UPT Ditjen Hubud,Ya
+WAFV,-,Beteleme,SULAWESI TENGAH,KABUPATEN MOROWALI UTARA,Domestik,Non Kelas,Missionaris,Tidak
+WAFX,-,Pendolo,SULAWESI TENGAH,KABUPATEN MOROWALI UTARA,Domestik,Non Kelas,Missionaris,Tidak
+WAFR,-,Talipan,SULAWESI TENGAH,KABUPATEN MOROWALI UTARA,Domestik,Non Kelas,Missionaris,Tidak
+WAFC,-,Tentena,SULAWESI TENGAH,KABUPATEN POSO,Domestik,Non Kelas,Missionaris,Tidak
+WAMT,-,Tinombo,SULAWESI TENGAH,KABUPATEN PARIGI MOUTONG,Domestik,Non Kelas,Missionaris,Tidak
+WAEF,-,Uebone,SULAWESI TENGAH,KABUPATEN TOJO UNA UNA,Domestik,Non Kelas,Missionaris,Tidak
+WAMK,-,Uetangko,SULAWESI TENGAH,KABUPATEN TOJO UNA UNA,Domestik,Non Kelas,Missionaris,Tidak
+WAMW,-,Watusongo,SULAWESI TENGAH,KABUPATEN TOJO UNA UNA,Domestik,Non Kelas,Missionaris,Tidak
+WAMU,-,Wuasa,SULAWESI TENGAH,KABUPATEN POSO,Domestik,Non Kelas,Missionaris,Tidak
+WAFB,TRT,Toraja,SULAWESI SELATAN,KABUPATEN TANA TORAJA,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAFM,MXB,Andi Jemma,SULAWESI SELATAN,KABUPATEN LUWU UTARA,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAWH,KSR,H. Aroeppala,SULAWESI SELATAN,KABUPATEN KEPULAUAN SELAYAR,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAFN,WKO,Seko,SULAWESI SELATAN,KABUPATEN LUWU UTARA,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAFK,RPI,Rampi,SULAWESI SELATAN,KABUPATEN LUWU UTARA,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAAA,UPG,Sultan Hasanuddin,SULAWESI SELATAN,KABUPATEN MAROS,Internasional,Non Kelas,PT. Angkasa Pura Indonesia,Ya
+WAFD,LLO,Lagaligo,SULAWESI SELATAN,KABUPATEN LUWU,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAWN,APD,Arung Palakka,SULAWESI SELATAN,KABUPATEN BONE,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAWS,SQR,Sorowako,SULAWESI SELATAN,KABUPATEN LUWU TIMUR,Domestik,Non Kelas,Swasta,Tidak
+WAWW,KDI,Haluoleo,SULAWESI TENGGARA,KABUPATEN KONAWE SELATAN,Domestik,Kelas I,UPT Ditjen Hubud,Ya
+WAWR,RAQ,Sugimanuru,SULAWESI TENGGARA,KABUPATEN MUNA BARAT,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAWB,BUW,Betoambari,SULAWESI TENGGARA,KOTA BAU BAU,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAWP,KXB,Sangia Nibandera,SULAWESI TENGGARA,KABUPATEN KOLAKA,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAWD,WNI,Matahora,SULAWESI TENGGARA,KABUPATEN WAKATOBI,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAWC,TQQ,Maranggo,SULAWESI TENGGARA,KABUPATEN WAKATOBI,Domestik,Non Kelas,Swasta,Tidak
+WAMG,GTO,Djalaluddin,GORONTALO,KABUPATEN GORONTALO,Domestik,Kelas I,UPT Ditjen Hubud,Ya
+WAFZ,PWX,Panua Pohuwato,GORONTALO,KABUPATEN POHUWATO,Domestik,Satpel BU,UPT Ditjen Hubud,Ya
+WAFJ,MJU,Tampa Padang,SULAWESI BARAT,KABUPATEN MAMUJU,Domestik,Kelas II,UPT Ditjen Hubud,Ya
+WAFS,-,Sumarorong,SULAWESI BARAT,KABUPATEN MAMASA,Domestik,Satpel BU,UPT Ditjen Hubud,Ya
+WAPA,AHI,Amahai,MALUKU,KABUPATEN MALUKU TENGAH,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAPF,LUV,Karel Sadsuitubun,MALUKU,KABUPATEN MALUKU TENGGARA,Domestik,Kelas II,UPT Ditjen Hubud,Ya
+WAPC,NDA,Bandaneira,MALUKU,KABUPATEN MALUKU TENGAH,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAPD,DOB,Dobo,MALUKU,KABUPATEN KEPULAUAN ARU,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAPV,WBA,Wahai,MALUKU,KABUPATEN MALUKU TENGAH,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAPO,LRC,Larat,MALUKU,KABUPATEN KEPULAUAN TANIMBAR,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAPG,NRE,Namrole,MALUKU,KABUPATEN BURU SELATAN,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WATQ,KXS,John Becker,MALUKU,KABUPATEN MALUKU BARAT DAYA,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAPU,KFR,Kufar,MALUKU,KABUPATEN SERAM BAGIAN TIMUR,Domestik,Satpel BU,UPT Ditjen Hubud,Ya
+WAPN,NAM,Namniwel,MALUKU,KABUPATEN BURU,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAPS,SXK,Mathilda Batlayeri,MALUKU,KABUPATEN KEPULAUAN TANIMBAR,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAPB,-,Bula,MALUKU,KABUPATEN SERAM BAGIAN TIMUR,Domestik,Non Kelas,Swasta,Tidak
+WAPM,JIO,Jos Orno Imsula,MALUKU,KABUPATEN MALUKU BARAT DAYA,Domestik,Satpel BU,UPT Ditjen Hubud,Ya
+WAPR,-,Namlea,MALUKU,KABUPATEN BURU,Domestik,Non Kelas,TNI,Tidak
+WAPP,AMQ,Pattimura,MALUKU,KOTA AMBON,Internasional,Non Kelas,PT. Angkasa Pura Indonesia,Ya
+WAEK,KAZ,Kuabang,MALUKU UTARA,KABUPATEN HALMAHERA UTARA,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAEL,LAH,Oesman Sadik,MALUKU UTARA,KABUPATEN HALMAHERA SELATAN,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAES,SQN,Emalamo,MALUKU UTARA,KABUPATEN KEPULAUAN SULA,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAEG,GLX,Gamar Malamo,MALUKU UTARA,KABUPATEN HALMAHERA UTARA,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAEE,TTE,Sultan Babullah,MALUKU UTARA,KOTA TERNATE,Domestik,Kelas II,UPT Ditjen Hubud,Ya
+WAEM,PGQ,Buli,MALUKU UTARA,KABUPATEN HALMAHERA TIMUR,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAEW,OTI,Pitu,MALUKU UTARA,KABUPATEN PULAU MOROTAI,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAEJ,GEB,Gebe,MALUKU UTARA,KABUPATEN HALMAHERA TENGAH,Domestik,Satpel BU,UPT Ditjen Hubud,Ya
+WAEO,MAL,Falabisahaya,MALUKU UTARA,KABUPATEN KEPULAUAN SULA,Domestik,Non Kelas,Swasta,Tidak
+WAEH,WDB,Weda Bay,MALUKU UTARA,KABUPATEN HALMAHERA TENGAH,Domestik,Non Kelas,Swasta,Tidak
+WAEB,-,Marimoi,MALUKU UTARA,KABUPATEN HALMAHERA UTARA,Domestik,Non Kelas,Swasta,Tidak
+WAJJ,DJJ,Sentani,PAPUA,KABUPATEN JAYAPURA,Internasional,Non Kelas,PT. Angkasa Pura Indonesia,Ya
+WABF,FOO,Numfor,PAPUA,KABUPATEN BIAK NUMFOR,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAJI,ZRM,Mararena,PAPUA,KABUPATEN SARMI,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAJM,-,Molof,PAPUA,KABUPATEN KEEROM,Domestik,Non Kelas,UPT Daerah / Pemda,Ya
+WAJC,DRH,Dabra,PAPUA,KABUPATEN MAMBERAMO RAYA,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAJS,SEH,Senggeh,PAPUA,KABUPATEN KEEROM,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WABB,BIK,Frans Kaisiepo,PAPUA,KABUPATEN BIAK NUMFOR,Internasional,Non Kelas,PT. Angkasa Pura Indonesia,Ya
+WAVZ,-,Taiyeve,PAPUA,KABUPATEN MAMBERAMO RAYA,Domestik,Non Kelas,Missionaris,Ya
+WABO,ZRI,Stevanus Rumbewas,PAPUA,KABUPATEN KEPULAUAN YAPEN,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WABG,-,Kasonaweja,PAPUA,KABUPATEN MAMBERAMO RAYA,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+-,-,Dou,PAPUA,KABUPATEN MAMBERAMO RAYA,Domestik,Non Kelas,Swasta,Tidak
+WREX,-,Doyo Baru,PAPUA,KABUPATEN JAYAPURA,Domestik,Non Kelas,Missionaris,Tidak
+WREA,-,Amgotro,PAPUA,KABUPATEN KEEROM,Domestik,Non Kelas,Missionaris,Tidak
+WREF,-,Aurimi,PAPUA,KABUPATEN SARMI,Domestik,Non Kelas,Missionaris,Tidak
+WREH,-,Aurina,PAPUA,KABUPATEN JAYAPURA,Domestik,Non Kelas,Missionaris,Tidak
+WABN,-,Bareri,PAPUA,KABUPATEN MAMBERAMO RAYA,Domestik,Non Kelas,Missionaris,Tidak
+WRHT,-,Baso,PAPUA,KABUPATEN MAMBERAMO RAYA,Domestik,Non Kelas,Missionaris,Tidak
+WREK,-,Bataf,PAPUA,KABUPATEN SARMI,Domestik,Non Kelas,UPT Ditjen Hubud,Tidak
+WREL,-,Begowre,PAPUA,KABUPATEN KEEROM,Domestik,Non Kelas,Missionaris,Tidak
+WABK,-,Biri,PAPUA,KABUPATEN MAMBERAMO RAYA,Domestik,Non Kelas,Missionaris,Tidak
+WREC,-,Bonggo,PAPUA,KABUPATEN SARMI,Domestik,Non Kelas,UPT Ditjen Hubud,Tidak
+WABP,-,Burumeso,PAPUA,KABUPATEN MAMBERAMO RAYA,Domestik,Non Kelas,Missionaris,Tidak
+WABQ,-,Danau Bira,PAPUA,KABUPATEN MAMBERAMO RAYA,Domestik,Non Kelas,Swasta,Tidak
+WRFH,-,Eri,PAPUA,KABUPATEN MAMBERAMO RAYA,Domestik,Non Kelas,Missionaris,Tidak
+WRFJ,-,Foao,PAPUA,KABUPATEN SARMI,Domestik,Non Kelas,Missionaris,Tidak
+WRFP,-,Guay,PAPUA,KABUPATEN JAYAPURA,Domestik,Non Kelas,UPT Ditjen Hubud,Tidak
+WRFR,-,Haya,PAPUA,KABUPATEN MAMBERAMO RAYA,Domestik,Non Kelas,Missionaris,Tidak
+WRPQ,-,Holmes,PAPUA,KABUPATEN SARMI,Domestik,Non Kelas,Missionaris,Tidak
+WRFT,-,Hulu Atas,PAPUA,KABUPATEN JAYAPURA,Domestik,Non Kelas,Missionaris,Tidak
+WRGA,-,Kaiy,PAPUA,KABUPATEN MAMBERAMO RAYA,Domestik,Non Kelas,Missionaris,Tidak
+WRGD,-,Kaure,PAPUA,KABUPATEN KEEROM,Domestik,Non Kelas,Missionaris,Tidak
+WAUD,-,Keder,PAPUA,KABUPATEN SARMI,Domestik,Non Kelas,Missionaris,Tidak
+WABL,-,Kustera,PAPUA,KABUPATEN MAMBERAMO RAYA,Domestik,Non Kelas,Missionaris,Tidak
+WRPO,-,Kwerba,PAPUA,KABUPATEN MAMBERAMO RAYA,Domestik,Non Kelas,Missionaris,Tidak
+WRHE,-,Merem,PAPUA,KABUPATEN JAYAPURA,Domestik,Non Kelas,Missionaris,Tidak
+WRHF,-,Muasai,PAPUA,KABUPATEN SARMI,Domestik,Non Kelas,UPT Ditjen Hubud,Tidak
+WRHG,-,Mudiay,PAPUA,KABUPATEN MAMBERAMO RAYA,Domestik,Non Kelas,Missionaris,Tidak
+WRHH,-,Munukania,PAPUA,KABUPATEN SARMI,Domestik,Non Kelas,Missionaris,Tidak
+WRQO,-,Noiadi,PAPUA,KABUPATEN MAMBERAMO RAYA,Domestik,Non Kelas,Missionaris,Tidak
+WRLS,-,Obogwy,PAPUA,KABUPATEN MAMBERAMO RAYA,Domestik,Non Kelas,Missionaris,Tidak
+WRHO,-,Pagai,PAPUA,KABUPATEN JAYAPURA,Domestik,Non Kelas,Missionaris,Tidak
+WRHP,-,Papasena,PAPUA,KABUPATEN MAMBERAMO RAYA,Domestik,Non Kelas,Missionaris,Tidak
+WRLU,-,Ros Bori,PAPUA,KABUPATEN KEPULAUAN YAPEN,Domestik,Non Kelas,Missionaris,Tidak
+WRIG,-,Samanente,PAPUA,KABUPATEN SARMI,Domestik,Non Kelas,Missionaris,Tidak
+WRIL,-,Sikari,PAPUA,KABUPATEN MAMBERAMO RAYA,Domestik,Non Kelas,Missionaris,Tidak
+WRIQ,-,Somanente,PAPUA,KABUPATEN SARMI,Domestik,Non Kelas,Missionaris,Tidak
+WRIU,-,Takar,PAPUA,KABUPATEN SARMI,Domestik,Non Kelas,Missionaris,Tidak
+WRLW,-,Tayayi,PAPUA,KABUPATEN MAMBERAMO RAYA,Domestik,Non Kelas,Missionaris,Tidak
+WRJG,-,Ures,PAPUA,KABUPATEN JAYAPURA,Domestik,Non Kelas,Missionaris,Tidak
+WRSJ,-,Waff,PAPUA,KABUPATEN SARMI,Domestik,Non Kelas,Missionaris,Tidak
+WAJD,-,Wakde,PAPUA,KABUPATEN SARMI,Domestik,Non Kelas,UPT Ditjen Hubud,Tidak
+WRJM,-,Wamariri,PAPUA,KABUPATEN SARMI,Domestik,Non Kelas,Missionaris,Tidak
+WRLV,-,Wapoga,PAPUA,KABUPATEN WAROPEN,Domestik,Non Kelas,Missionaris,Tidak
+WAYW,-,Waren,PAPUA,KABUPATEN WAROPEN,Domestik,Non Kelas,UPT Ditjen Hubud,Tidak
+WASK,KNG,Utarom,PAPUA BARAT,KABUPATEN KAIMANA,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAUU,MKW,Rendani,PAPUA BARAT,KABUPATEN MANOKWARI,Domestik,Kelas II,UPT Ditjen Hubud,Ya
+WAUB,NTI,Bintuni,PAPUA BARAT,KABUPATEN TELUK BINTUNI,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAUW,WSR,Wasior,PAPUA BARAT,KABUPATEN TELUK WONDAMA,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WASO,BXB,Babo,PAPUA BARAT,KABUPATEN TELUK BINTUNI,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAUA,AGD,Anggi,PAPUA BARAT,KABUPATEN PEGUNUNGAN ARFAK,Domestik,Satpel BU,UPT Ditjen Hubud,Ya
+WASC,RSK,Abresso,PAPUA BARAT,KABUPATEN MANOKWARI SELATAN,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WAUM,RDE,Merdey,PAPUA BARAT,KABUPATEN TELUK BINTUNI,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WASF,FKQ,Siboru,PAPUA BARAT,KABUPATEN FAK FAK,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WASR,-,Fruata,PAPUA BARAT,KABUPATEN TELUK BINTUNI,Domestik,Non Kelas,Swasta,Tidak
+WASJ,-,Gusimawa,PAPUA BARAT,KABUPATEN KAIMANA,Domestik,Non Kelas,Swasta,Tidak
+WRLK,-,Iray,PAPUA BARAT,KABUPATEN PEGUNUNGAN ARFAK,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WRLL,-,Karas,PAPUA BARAT,KABUPATEN FAK FAK,Domestik,Non Kelas,Missionaris,Tidak
+WAUL,-,Lobo,PAPUA BARAT,KABUPATEN KAIMANA,Domestik,Non Kelas,Swasta,Tidak
+WRRP,-,Mayado,PAPUA BARAT,KABUPATEN TELUK BINTUNI,Domestik,Non Kelas,Missionaris,Tidak
+WAUI,-,Merdey,PAPUA BARAT,KABUPATEN TELUK BINTUNI,Domestik,Non Kelas,Missionaris,Tidak
+WAUO,-,Mokwan,PAPUA BARAT,KABUPATEN PEGUNUNGAN ARFAK,Domestik,Non Kelas,Missionaris,Tidak
+WRHK,-,Nenei,PAPUA BARAT,KABUPATEN MANOKWARI SELATAN,Domestik,Non Kelas,Missionaris,Tidak
+WAKK,MKQ,Mopah,PAPUA SELATAN,KABUPATEN MERAUKE,Internasional,Kelas I,UPT Ditjen Hubud,Ya
+WAKT,TMH,Tanah Merah,PAPUA SELATAN,KABUPATEN BOVEN DIGOEL,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAKD,MDP,Mindiptanah,PAPUA SELATAN,KABUPATEN BOVEN DIGOEL,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAKP,KEI,Kepi,PAPUA SELATAN,KABUPATEN MAPPI,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAKQ,ZEG,Senggo,PAPUA SELATAN,KABUPATEN MAPPI,Domestik,Satpel BU,UPT Ditjen Hubud,Ya
+WAKJ,KMM,Kimaam,PAPUA SELATAN,KABUPATEN MERAUKE,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAKO,OKQ,Okaba,PAPUA SELATAN,KABUPATEN MERAUKE,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAKL,BXQ,Bomakia,PAPUA SELATAN,KABUPATEN BOVEN DIGOEL,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAKG,EWE,Ewer,PAPUA SELATAN,KABUPATEN ASMAT,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAKE,BXD,Bade,PAPUA SELATAN,KABUPATEN MAPPI,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAKM,KCD,Kamur,PAPUA SELATAN,KABUPATEN ASMAT,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAVM,-,Manggelum,PAPUA SELATAN,KABUPATEN BOVEN DIGOEL,Domestik,Satpel BU,UPT Ditjen Hubud,Ya
+WAKC,-,Yaniruma,PAPUA SELATAN,KABUPATEN BOVEN DIGOEL,Domestik,Non Kelas,UPT Daerah / Pemda,Ya
+WAKB,-,Aboge,PAPUA SELATAN,KABUPATEN MAPPI,Domestik,Non Kelas,Swasta,Tidak
+WAKY,-,Koroway Batu,PAPUA SELATAN,KABUPATEN BOVEN DIGOEL,Domestik,Satpel BU,UPT Ditjen Hubud,Ya
+WAKW,-,Wanam Merauke,PAPUA SELATAN,KABUPATEN MERAUKE,Domestik,Non Kelas,Swasta,Tidak
+WAKS,-,Amazu,PAPUA SELATAN,KABUPATEN MAPPI,Domestik,Non Kelas,Swasta,Tidak
+WRMA,-,Basiem,PAPUA SELATAN,KABUPATEN ASMAT,Domestik,Non Kelas,Missionaris,Tidak
+WRMB,-,Butiptiri,PAPUA SELATAN,KABUPATEN BOVEN DIGOEL,Domestik,Non Kelas,Missionaris,Tidak
+WRMC,-,Buyuem,PAPUA SELATAN,KABUPATEN ASMAT,Domestik,Non Kelas,Missionaris,Tidak
+WRMF,-,Kouh,PAPUA SELATAN,KABUPATEN BOVEN DIGOEL,Domestik,Non Kelas,Missionaris,Tidak
+WRMH,-,Miaro,PAPUA SELATAN,KABUPATEN MAPPI,Domestik,Non Kelas,Missionaris,Tidak
+WRMI,MUF,Muting,PAPUA SELATAN,KABUPATEN MERAUKE,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WRIN,-,Siru,PAPUA SELATAN,KABUPATEN ASMAT,Domestik,Non Kelas,Missionaris,Tidak
+WRMJ,-,Yaosakor,PAPUA SELATAN,KABUPATEN ASMAT,Domestik,Non Kelas,Missionaris,Tidak
+WAVA,LII,Mulia,PAPUA TENGAH,KABUPATEN PUNCAK JAYA,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WRLB,-,Dagai,PAPUA TENGAH,KABUPATEN PUNCAK JAYA,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WAYL,ILA,Ilaga,PAPUA TENGAH,KABUPATEN PUNCAK,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAYK,KOX,Kokonao,PAPUA TENGAH,KABUPATEN MIMIKA,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WABA,WET,Waghete,PAPUA TENGAH,KABUPATEN DEIYAI,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WABD,ONI,Moanamani,PAPUA TENGAH,KABUPATEN DOGIYAI,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAYE,EWI,Enarotali,PAPUA TENGAH,KABUPATEN PANIAI,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAYG,IMU,Akimuga,PAPUA TENGAH,KABUPATEN MIMIKA,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAVO,-,Beoga,PAPUA TENGAH,KABUPATEN PUNCAK,Domestik,Non Kelas,UPT Daerah / Pemda,Ya
+WAYJ,-,Jila,PAPUA TENGAH,KABUPATEN MIMIKA,Domestik,Non Kelas,UPT Daerah / Pemda,Ya
+WAYN,-,Jita,PAPUA TENGAH,KABUPATEN MIMIKA,Domestik,Non Kelas,UPT Daerah / Pemda,Ya
+WAYP,-,Potowai Buru,PAPUA TENGAH,KABUPATEN MIMIKA,Domestik,Non Kelas,UPT Daerah / Pemda,Ya
+WAYM,-,Kebo,PAPUA TENGAH,KABUPATEN PANIAI,Domestik,Non Kelas,Swasta,Ya
+WAYI,-,Bilai,PAPUA TENGAH,KABUPATEN INTAN JAYA,Domestik,Non Kelas,UPT Daerah / Pemda,Ya
+WAYB,UGU,Bilorai,PAPUA TENGAH,KABUPATEN INTAN JAYA,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAVC,IUL,Illu,PAPUA TENGAH,KABUPATEN PUNCAK JAYA,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WRLG,-,Faowi,PAPUA TENGAH,KABUPATEN PUNCAK JAYA,Domestik,Non Kelas,UPT Daerah / Pemda,Ya
+WABS,NKD,Sinak,PAPUA TENGAH,KABUPATEN PUNCAK,Domestik,Satpel BU,UPT Ditjen Hubud,Ya
+WAYY,TIM,Mozes Kilangin,PAPUA TENGAH,KABUPATEN MIMIKA,Domestik,Kelas II,UPT Ditjen Hubud,Ya
+-,-,Aboyaga,PAPUA TENGAH,KABUPATEN DOGIYAI,Domestik,Non Kelas,UPT Daerah / Pemda,Ya
+-,-,Tsinga,PAPUA TENGAH,KABUPATEN MIMIKA,Domestik,Non Kelas,Missionaris,Ya
+WAYA,-,Alama,PAPUA TENGAH,KABUPATEN MIMIKA,Domestik,Non Kelas,UPT Daerah / Pemda,Ya
+WAYU,-,Wangbe,PAPUA TENGAH,KABUPATEN PUNCAK,Domestik,Non Kelas,UPT Daerah / Pemda,Ya
+WABE,-,Duma,PAPUA TENGAH,KABUPATEN PANIAI,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+-,-,Kapiraya,PAPUA TENGAH,KABUPATEN DEIYAI,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+-,-,Agandugume,PAPUA TENGAH,KABUPATEN PUNCAK,Domestik,Satpel BU,UPT Ditjen Hubud,Tidak
+WABI,NBX,Douw Aturure,PAPUA TENGAH,KABUPATEN NABIRE,Domestik,Kelas II,UPT Ditjen Hubud,Ya
+WAYS,-,Pogapa,PAPUA TENGAH,KABUPATEN INTAN JAYA,Domestik,Non Kelas,Swasta,Tidak
+-,-,Bina,PAPUA TENGAH,KABUPATEN PUNCAK,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WABR,-,Daufo,PAPUA TENGAH,KABUPATEN PUNCAK,Domestik,Non Kelas,Swasta,Tidak
+WABX,-,Apogomacida,PAPUA TENGAH,KABUPATEN DOGIYAI,Domestik,Non Kelas,Missionaris,Tidak
+WRLA,-,Bugalaga,PAPUA TENGAH,KABUPATEN INTAN JAYA,Domestik,Non Kelas,Missionaris,Tidak
+WABV,-,Derapos,PAPUA TENGAH,KABUPATEN PUNCAK,Domestik,Non Kelas,Swasta,Tidak
+WRLD,-,Eaopoto,PAPUA TENGAH,KABUPATEN PANIAI,Domestik,Non Kelas,Missionaris,Tidak
+WRLF,-,Epamani,PAPUA TENGAH,KABUPATEN NABIRE,Domestik,Non Kelas,Missionaris,Tidak
+WRLH,-,Hitadipa,PAPUA TENGAH,KABUPATEN PUNCAK,Domestik,Non Kelas,Missionaris,Tidak
+WRLI,-,Illaga III,PAPUA TENGAH,KABUPATEN PUNCAK,Domestik,Non Kelas,Missionaris,Tidak
+WRLJ,-,Iratoi,PAPUA TENGAH,KABUPATEN PUNCAK,Domestik,Non Kelas,Missionaris,Tidak
+WRLM,-,Kegata,PAPUA TENGAH,KABUPATEN DOGIYAI,Domestik,Non Kelas,Missionaris,Tidak
+WRLN,-,Komopa,PAPUA TENGAH,KABUPATEN PANIAI,Domestik,Non Kelas,Missionaris,Tidak
+WRLO,-,Korodesi,PAPUA TENGAH,KABUPATEN PUNCAK,Domestik,Non Kelas,Missionaris,Tidak
+WRLQ,-,Lumo,PAPUA TENGAH,KABUPATEN PUNCAK JAYA,Domestik,Non Kelas,Missionaris,Tidak
+WRPS,-,Magoda,PAPUA TENGAH,KABUPATEN DOGIYAI,Domestik,Non Kelas,Missionaris,Tidak
+WRLR,-,Modio,PAPUA TENGAH,KABUPATEN DOGIYAI,Domestik,Non Kelas,Missionaris,Tidak
+WABC,-,Siriwo,PAPUA TENGAH,KABUPATEN NABIRE,Domestik,Non Kelas,Swasta,Tidak
+WRLX,-,Tigi,PAPUA TENGAH,KABUPATEN DEIYAI,Domestik,Non Kelas,Missionaris,Tidak
+WRLY,-,Timepa,PAPUA TENGAH,KABUPATEN DOGIYAI,Domestik,Non Kelas,Missionaris,Tidak
+WRJC,-,Tinggi Nambut,PAPUA TENGAH,KABUPATEN PUNCAK JAYA,Domestik,Non Kelas,Missionaris,Tidak
+WRNA,-,Turimo,PAPUA TENGAH,KABUPATEN PUNCAK JAYA,Domestik,Non Kelas,Missionaris,Tidak
+WRNB,-,Weri,PAPUA TENGAH,KABUPATEN PUNCAK JAYA,Domestik,Non Kelas,Missionaris,Tidak
+WAVB,BUI,Bokondini,PAPUA PEGUNUNGAN,KABUPATEN TOLIKARA,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAVT,TMY,Tiom,PAPUA PEGUNUNGAN,KABUPATEN LANNY JAYA,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAJO,OKL,Oksibil,PAPUA PEGUNUNGAN,KABUPATEN PEGUNUNGAN BINTANG,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WABM,BXM,Batom,PAPUA PEGUNUNGAN,KABUPATEN PEGUNUNGAN BINTANG,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAJK,KWR,Kiwirok,PAPUA PEGUNUNGAN,KABUPATEN PEGUNUNGAN BINTANG,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAVE,ELR,Elelim,PAPUA PEGUNUNGAN,KABUPATEN YALIMO,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAVG,KBF,Karubaga,PAPUA PEGUNUNGAN,KABUPATEN TOLIKARA,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAVL,LLN,Kelila,PAPUA PEGUNUNGAN,KABUPATEN MAMBERAMO TENGAH,Domestik,Non Kelas,UPT Daerah / Pemda,Ya
+WAVV,WMX,Wamena,PAPUA PEGUNUNGAN,KABUPATEN JAYAWIJAYA,Domestik,Kelas I,UPT Ditjen Hubud,Ya
+WAVD,DEX,Nop Goliat Dekai,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Kelas II,UPT Ditjen Hubud,Ya
+-,-,Aboy,PAPUA PEGUNUNGAN,KABUPATEN PEGUNUNGAN BINTANG,Domestik,Non Kelas,UPT Ditjen Hubud,Ya
+WAVR,AAS,Apalapsili,PAPUA PEGUNUNGAN,KABUPATEN YALIMO,Domestik,Non Kelas,UPT Daerah / Pemda,Ya
+WAVK,-,Kobakma,PAPUA PEGUNUNGAN,KABUPATEN MAMBERAMO TENGAH,Domestik,Satpel BU,UPT Ditjen Hubud,Ya
+WAYC,-,Kenyam,PAPUA PEGUNUNGAN,KABUPATEN NDUGA,Domestik,Non Kelas,UPT Daerah / Pemda,Ya
+WAYH,-,Mapanduma,PAPUA PEGUNUNGAN,KABUPATEN NDUGA,Domestik,Non Kelas,UPT Daerah / Pemda,Ya
+WAVU,-,Seradala,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,TNI,Tidak
+WRGP,-,Koropun,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Satpel BU,UPT Ditjen Hubud,Tidak
+WAJY,-,Borme,PAPUA PEGUNUNGAN,KABUPATEN PEGUNUNGAN BINTANG,Domestik,Non Kelas,UPT Daerah / Pemda,Ya
+WAYQ,-,Paro,PAPUA PEGUNUNGAN,KABUPATEN NDUGA,Domestik,Non Kelas,UPT Daerah / Pemda,Ya
+-,-,Mugi,PAPUA PEGUNUNGAN,KABUPATEN NDUGA,Domestik,Non Kelas,UPT Daerah / Pemda,Ya
+-,-,Teraplu,PAPUA PEGUNUNGAN,KABUPATEN PEGUNUNGAN BINTANG,Domestik,Non Kelas,UPT Ditjen Hubud,Ya
+WAJH,-,Bime,PAPUA PEGUNUNGAN,KABUPATEN PEGUNUNGAN BINTANG,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WAJF,-,Ambisibil,PAPUA PEGUNUNGAN,KABUPATEN PEGUNUNGAN BINTANG,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WAVN,-,Angguruk,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WAVI,-,Ninia,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+-,-,Pasema,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WAVJ,-,Silimo,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+-,-,Sobaham,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Satpel BU,UPT Ditjen Hubud,Tidak
+-,-,Luban,PAPUA PEGUNUNGAN,KABUPATEN PEGUNUNGAN BINTANG,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WAJQ,-,Okbab,PAPUA PEGUNUNGAN,KABUPATEN PEGUNUNGAN BINTANG,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WAJP,-,Oklip,PAPUA PEGUNUNGAN,KABUPATEN PEGUNUNGAN BINTANG,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WAJW,-,Okyap,PAPUA PEGUNUNGAN,KABUPATEN PEGUNUNGAN BINTANG,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+-,-,Kilmit,PAPUA PEGUNUNGAN,KABUPATEN NDUGA,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WAVS,-,Mamit,PAPUA PEGUNUNGAN,KABUPATEN TOLIKARA,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WAJV,-,Iwur,PAPUA PEGUNUNGAN,KABUPATEN PEGUNUNGAN BINTANG,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WRHI,-,Nalca,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WAVP,-,Holuwon,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WRJK,-,Walerek,PAPUA PEGUNUNGAN,KABUPATEN YALIMO,Domestik,Non Kelas,Missionaris,Tidak
+-,-,Taria,PAPUA PEGUNUNGAN,KABUPATEN MAMBERAMO TENGAH,Domestik,Satpel BU,UPT Ditjen Hubud,Tidak
+-,-,Wari,PAPUA PEGUNUNGAN,KABUPATEN TOLIKARA,Domestik,Non Kelas,Masyarakat,Tidak
+-,-,Poik,PAPUA PEGUNUNGAN,KABUPATEN YALIMO,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WRGC,-,Kanggime,PAPUA PEGUNUNGAN,KABUPATEN TOLIKARA,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+-,-,Balinggama,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+-,-,Denema,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+-,-,Kweapbel,PAPUA PEGUNUNGAN,KABUPATEN JAYAWIJAYA,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+-,-,Gingginem,PAPUA PEGUNUNGAN,KABUPATEN JAYAWIJAYA,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+-,-,Bikgunulingge,PAPUA PEGUNUNGAN,KABUPATEN JAYAWIJAYA,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+-,-,Enggolok,PAPUA PEGUNUNGAN,KABUPATEN JAYAWIJAYA,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+-,-,Diphikin,PAPUA PEGUNUNGAN,KABUPATEN PEGUNUNGAN BINTANG,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WRIP,-,Soba,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+-,-,Oakbisik,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+-,-,Banga,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+-,-,Ipdeheik,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+-,-,Eyub,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WRIJ,-,Sela,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WRHL,-,Nipsan,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+-,-,Paima,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+-,-,Amuma,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+-,-,Lolat,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+-,-,Aniek,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+-,-,Sinokla,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+-,-,Dagi Baru,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+-,-,Hogio,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+-,-,Pasikni,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WRGO,-,Kono,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+-,-,Kemligin,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+-,-,Fenteheik,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+-,-,Duram,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WRJL,-,Walma,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,Missionaris,Tidak
+WREN,-,Bomela,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+-,-,Soholuna,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WRHA,-,Langda,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+-,-,Bisek,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+-,-,Una,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+-,-,Helareki,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+-,-,Liruk,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WRGQ,-,Kosorek,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WRFB,-,Eipomek,PAPUA PEGUNUNGAN,KABUPATEN PEGUNUNGAN BINTANG,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WRGS,-,Kwelamdua,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WAVW,-,Hasan,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,Missionaris,Tidak
+WRIE,-,Prongkoli,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,Missionaris,Tidak
+WRIF,-,Pul Damat,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+-,-,Sumtamon,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WRKA,-,Yogosem,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WRET,-,Dimba,PAPUA PEGUNUNGAN,KABUPATEN LANNY JAYA,Domestik,Non Kelas,Missionaris,Tidak
+WRFC,-,Emdomen,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,Missionaris,Tidak
+WRFE,-,Proyam,PAPUA PEGUNUNGAN,KABUPATEN MAMBERAMO TENGAH,Domestik,Non Kelas,UPT Daerah / Pemda,Tidak
+WRFL,-,Geyarek,PAPUA PEGUNUNGAN,KABUPATEN NDUGA,Domestik,Non Kelas,Missionaris,Tidak
+WRFU,-,Ibele,PAPUA PEGUNUNGAN,KABUPATEN JAYAWIJAYA,Domestik,Non Kelas,Missionaris,Tidak
+WRFV,-,Ilugwa,PAPUA PEGUNUNGAN,KABUPATEN MAMBERAMO TENGAH,Domestik,Non Kelas,Missionaris,Tidak
+WRGG,-,Keneyan,PAPUA PEGUNUNGAN,KABUPATEN NDUGA,Domestik,Non Kelas,Missionaris,Tidak
+WRGK,-,Kiwi,PAPUA PEGUNUNGAN,KABUPATEN PEGUNUNGAN BINTANG,Domestik,Non Kelas,Missionaris,Tidak
+WRGT,-,Kwiyawagi,PAPUA PEGUNUNGAN,KABUPATEN LANNY JAYA,Domestik,Non Kelas,Missionaris,Tidak
+WRGX,-,Lamditma,PAPUA PEGUNUNGAN,KABUPATEN YALIMO,Domestik,Non Kelas,Missionaris,Tidak
+WRHC,-,Makki,PAPUA PEGUNUNGAN,KABUPATEN LANNY JAYA,Domestik,Non Kelas,Missionaris,Tidak
+WRHD,-,Mbuwa,PAPUA PEGUNUNGAN,KABUPATEN NDUGA,Domestik,Non Kelas,Missionaris,Tidak
+-,-,Nongme,PAPUA PEGUNUNGAN,KABUPATEN PEGUNUNGAN BINTANG,Domestik,Non Kelas,Swasta,Tidak
+WRLT,-,Omban,PAPUA PEGUNUNGAN,KABUPATEN PEGUNUNGAN BINTANG,Domestik,Non Kelas,Missionaris,Tidak
+WRHQ,-,Pasina,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,Missionaris,Tidak
+WRHR,-,Passvaley,PAPUA PEGUNUNGAN,KABUPATEN YALIMO,Domestik,Non Kelas,Missionaris,Tidak
+WRHS,-,Pelimo,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,Missionaris,Tidak
+WRHV,-,Piramid,PAPUA PEGUNUNGAN,KABUPATEN JAYAWIJAYA,Domestik,Non Kelas,Missionaris,Tidak
+WRIB,-,Pitriver,PAPUA PEGUNUNGAN,KABUPATEN LANNY JAYA,Domestik,Non Kelas,Missionaris,Tidak
+WRIC,-,Poga,PAPUA PEGUNUNGAN,KABUPATEN LANNY JAYA,Domestik,Non Kelas,Missionaris,Tidak
+WRID,-,Polimo,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,Missionaris,Tidak
+WRIH,-,Sape,PAPUA PEGUNUNGAN,KABUPATEN PEGUNUNGAN BINTANG,Domestik,Non Kelas,Missionaris,Tidak
+WRIR,-,Sukubatom,PAPUA PEGUNUNGAN,KABUPATEN PEGUNUNGAN BINTANG,Domestik,Non Kelas,Missionaris,Tidak
+WRIS,-,Sumo,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,Missionaris,Tidak
+WRIW,-,Tangma,PAPUA PEGUNUNGAN,KABUPATEN YAHUKIMO,Domestik,Non Kelas,Missionaris,Tidak
+WRJO,-,Wandama,PAPUA PEGUNUNGAN,KABUPATEN NDUGA,Domestik,Non Kelas,Missionaris,Tidak
+WRJQ,-,Wogi,PAPUA PEGUNUNGAN,KABUPATEN JAYAWIJAYA,Domestik,Non Kelas,Missionaris,Tidak
+WRJR,-,Wolo,PAPUA PEGUNUNGAN,KABUPATEN JAYAWIJAYA,Domestik,Non Kelas,Missionaris,Tidak
+WRJS,-,Wunin,PAPUA PEGUNUNGAN,KABUPATEN TOLIKARA,Domestik,Non Kelas,Missionaris,Tidak
+WRJU,-,Yapil,PAPUA PEGUNUNGAN,KABUPATEN PEGUNUNGAN BINTANG,Domestik,Non Kelas,Missionaris,Tidak
+WRJV,-,Yigi,PAPUA PEGUNUNGAN,KABUPATEN NDUGA,Domestik,Non Kelas,Missionaris,Tidak
+WREP,-,Yugwa,PAPUA PEGUNUNGAN,KABUPATEN LANNY JAYA,Domestik,Non Kelas,Missionaris,Tidak
+WAUK,KEQ,Kebar,PAPUA BARAT DAYA,KABUPATEN TAMBRAUW,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WASS,SOQ,Domine Eduard Osok,PAPUA BARAT DAYA,KOTA SORONG,Internasional,Kelas I,UPT Ditjen Hubud,Ya
+WASI,INX,Inanwatan,PAPUA BARAT DAYA,KABUPATEN SORONG SELATAN,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WAST,TXM,Teminabuan,PAPUA BARAT DAYA,KABUPATEN SORONG SELATAN,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WASA,AYW,Ayawasi,PAPUA BARAT DAYA,KABUPATEN MAYBRAT,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WASU,KBX,Kambuaya,PAPUA BARAT DAYA,KABUPATEN MAYBRAT,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+WASN,RJM,Marinda,PAPUA BARAT DAYA,KABUPATEN RAJA AMPAT,Domestik,Kelas III,UPT Ditjen Hubud,Ya
+-,-,Kabare,PAPUA BARAT DAYA,KABUPATEN RAJA AMPAT,Domestik,Non Kelas,UPT Daerah / Pemda,Ya
+WASW,-,Suswa,PAPUA BARAT DAYA,KABUPATEN MAYBRAT,Domestik,Non Kelas,Missionaris,Tidak
+WAUS,-,Synopi,PAPUA BARAT DAYA,KABUPATEN TAMBRAUW,Domestik,Non Kelas,Swasta,Tidak

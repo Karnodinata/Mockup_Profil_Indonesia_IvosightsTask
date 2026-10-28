@@ -446,6 +446,18 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => {
                 initMap();
                 if (map) map.invalidateSize();
+                if (window.bandaraMapInstance) {
+                    window.bandaraMapInstance.invalidateSize();
+                    if (typeof window.recenterBandaraMap === 'function') {
+                        window.recenterBandaraMap();
+                    }
+                }
+            }, 100);
+        } else if (idx === 7) {
+            setTimeout(() => {
+                if (typeof window.recheckDaruratView === 'function') {
+                    window.recheckDaruratView();
+                }
             }, 100);
         }
 
@@ -507,6 +519,12 @@ document.addEventListener('DOMContentLoaded', () => {
     renderUhhBenchmark(r);
     renderLollipopGap(r);
     renderLayananDasar(r);
+
+    // Render Fase 2 & Fase 4 Widgets (BKPM Investasi, Bandara, Darurat Bencana, Kondisi Jalan)
+    try { renderInvestasiSektor(r); } catch (e) { console.error('renderInvestasiSektor error:', e); }
+    try { renderBandara(r); } catch (e) { console.error('renderBandara error:', e); }
+    try { renderDarurat(r); } catch (e) { console.error('renderDarurat error:', e); }
+    try { renderJalan(r); } catch (e) { console.error('renderJalan error:', e); }
 
     // Restore active tab from URL query param / sessionStorage, or default to Wilayah Tab (index 1)
     const urlTab = urlParams.get('tab');
@@ -3158,4 +3176,1277 @@ function renderLayananDasar(r) {
             </div>
         </div>
     `;
+}
+
+/* ============================================================
+   FEATURE 9: PERSEBARAN BANDARA DI INDONESIA
+   Spesifikasi: Kemenhub Ditjen Hubud Dataset
+   ============================================================ */
+function renderBandara(r) {
+    const provSelect = document.getElementById('bandaraProvSelect');
+    const countEl = document.getElementById('bandaraCount');
+    const countLblEl = document.getElementById('bandaraCountLbl');
+    const legendCountEl = document.getElementById('legendBandaraCount');
+    const mapContainer = document.getElementById('bandaraMap');
+    const emptyState = document.getElementById('bandaraEmptyState');
+    const detailContent = document.getElementById('bandaraDetailContent');
+    const btnReset = document.getElementById('btnBandaraReset');
+
+    if (!provSelect || !mapContainer || typeof window.BANDARA_DATA === 'undefined') return;
+
+    const allBandara = window.BANDARA_DATA || [];
+
+    // 1. Ekstrak daftar provinsi unik dari data bandara
+    const provList = [...new Set(allBandara.map(b => b.provinsi).filter(Boolean))].sort((a, b) => a.localeCompare(b, 'id'));
+    
+    // Default initial provinsi: cocokkan dengan provinsi profil aktif
+    let currentProv = (r && r.prov ? r.prov.toUpperCase() : 'ACEH');
+    // Jika tidak ada di provList, fallback ke ACEH
+    if (!provList.includes(currentProv)) {
+        currentProv = provList.find(p => p.includes(currentProv) || currentProv.includes(p)) || 'ACEH';
+    }
+
+    provSelect.innerHTML = provList.map(p => `
+        <option value="${escapeHtml(p)}" ${p === currentProv ? 'selected' : ''}>${escapeHtml(p)}</option>
+    `).join('');
+
+    // Inisialisasi Map Leaflet untuk Bandara
+    let bMap = window.bandaraMapInstance;
+    if (!bMap) {
+        bMap = L.map('bandaraMap', {
+            zoomControl: true,
+            scrollWheelZoom: true,
+            attributionControl: false
+        }).setView([4.5, 96.5], 7);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+            maxZoom: 18,
+            attribution: '&copy; OpenStreetMap'
+        }).addTo(bMap);
+
+        window.bandaraMapInstance = bMap;
+    }
+
+    let markersLayer = L.layerGroup().addTo(bMap);
+    let miniMapInstance = null;
+    let currentBounds = [];
+
+    function selectBandara(item, marker) {
+        if (!item) return;
+        if (emptyState) emptyState.style.display = 'none';
+        if (detailContent) detailContent.style.display = 'flex';
+
+        // Update Text Fields
+        const bdNama = document.getElementById('bdNama');
+        const bdLokasi = document.getElementById('bdLokasi');
+        const bdIata = document.getElementById('bdIata');
+        const bdIcao = document.getElementById('bdIcao');
+        const bdTipe = document.getElementById('bdTipe');
+        const bdKelas = document.getElementById('bdKelas');
+        const bdPengelola = document.getElementById('bdPengelola');
+        const bdTkbn = document.getElementById('bdTkbn');
+        const bdJarak = document.getElementById('bdJarakPusat');
+        const bdGmaps = document.getElementById('bdGmapsLink');
+        const bdDesc = document.getElementById('bdDeskripsi');
+
+        if (bdNama) bdNama.textContent = item.nama_bandar_udara;
+        if (bdLokasi) bdLokasi.textContent = `${item.kabupaten || ''}, ${item.provinsi || ''}`;
+        if (bdIata) bdIata.textContent = item.IATA && item.IATA !== '-' ? item.IATA : '–';
+        if (bdIcao) bdIcao.textContent = item.ICAO && item.ICAO !== '-' ? item.ICAO : '–';
+        if (bdTipe) bdTipe.textContent = item.penggunaan || 'Domestik';
+        if (bdKelas) bdKelas.textContent = item.kelas || 'Non Kelas';
+        if (bdPengelola) bdPengelola.textContent = item.pengelola || 'Kemenhub';
+        if (bdTkbn) bdTkbn.textContent = item.TKBN || 'Tidak';
+
+        // Distance estimation
+        const distKm = (item.lat && item.lng && r.lat && r.lng)
+            ? (haversineDistance(item.lat, item.lng, r.lat, r.lng)).toFixed(1)
+            : '16.7';
+        if (bdJarak) bdJarak.textContent = `~${distKm} km`;
+
+        if (bdGmaps) {
+            bdGmaps.href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(item.nama_bandar_udara + ' ' + (item.kabupaten || ''))}`;
+        }
+
+        if (bdDesc) {
+            bdDesc.textContent = `Bandar Udara ${item.nama_bandar_udara} merupakan infrastruktur transportasi udara di ${item.kabupaten}, ${item.provinsi} yang melayani penerbangan ${item.penggunaan ? item.penggunaan.toLowerCase() : 'domestik'} di bawah kewenangan ${item.pengelola}.`;
+        }
+
+        // Mini Map Update
+        const miniMapEl = document.getElementById('bdMiniMap');
+        if (miniMapEl && typeof item.lat === 'number' && typeof item.lng === 'number' && !isNaN(item.lat) && !isNaN(item.lng)) {
+            try {
+                if (!miniMapInstance) {
+                    miniMapInstance = L.map('bdMiniMap', {
+                        zoomControl: false,
+                        attributionControl: false,
+                        dragging: false,
+                        touchZoom: false,
+                        scrollWheelZoom: false,
+                        doubleClickZoom: false
+                    }).setView([item.lat, item.lng], 13);
+
+                    L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+                        maxZoom: 18,
+                        attribution: '&copy; OpenStreetMap'
+                    }).addTo(miniMapInstance);
+                } else {
+                    miniMapInstance.setView([item.lat, item.lng], 13);
+                }
+
+                if (miniMapInstance._miniMarker) miniMapInstance.removeLayer(miniMapInstance._miniMarker);
+                miniMapInstance._miniMarker = L.circleMarker([item.lat, item.lng], {
+                    radius: 7,
+                    fillColor: '#2563eb',
+                    fillOpacity: 1,
+                    color: '#ffffff',
+                    weight: 2
+                }).addTo(miniMapInstance);
+
+                setTimeout(() => {
+                    if (miniMapInstance) miniMapInstance.invalidateSize();
+                }, 100);
+            } catch (err) {
+                console.warn('MiniMap render error:', err);
+            }
+        }
+
+        // Fly to on main map (hanya jika diklik langsung oleh pengguna via pin di peta)
+        if (marker && bMap && typeof item.lat === 'number' && typeof item.lng === 'number' && !isNaN(item.lat) && !isNaN(item.lng)) {
+            try {
+                const z = (typeof bMap.getZoom === 'function' && typeof bMap.getZoom() === 'number' && !isNaN(bMap.getZoom())) ? bMap.getZoom() : 9;
+                bMap.flyTo([item.lat, item.lng], Math.max(z, 9), { duration: 0.6 });
+            } catch (err) {
+                console.warn('bMap flyTo error:', err);
+            }
+        }
+    }
+
+    function haversineDistance(lat1, lon1, lat2, lon2) {
+        const R = 6371; // km
+        const dLat = (lat2 - lat1) * Math.PI / 180;
+        const dLon = (lon2 - lon1) * Math.PI / 180;
+        const a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+                  Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+                  Math.sin(dLon / 2) * Math.sin(dLon / 2);
+        const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+        return R * c;
+    }
+
+    function updateBandaraView(chosenProv) {
+        markersLayer.clearLayers();
+        const filtered = allBandara.filter(b => b.provinsi && b.provinsi.toUpperCase() === chosenProv.toUpperCase());
+
+        if (countEl) countEl.textContent = filtered.length;
+        if (countLblEl) countLblEl.textContent = `di Provinsi ${chosenProv}`;
+        if (legendCountEl) legendCountEl.textContent = `Bandara (${filtered.length})`;
+
+        const bounds = [];
+
+        filtered.forEach(item => {
+            if (typeof item.lat === 'number' && typeof item.lng === 'number' && !isNaN(item.lat) && !isNaN(item.lng)) {
+                const latLng = [item.lat, item.lng];
+                bounds.push(latLng);
+
+                // Custom SVG Plane Marker Icon
+                const isInter = (item.penggunaan || '').toLowerCase().includes('internasional');
+                const markerColor = isInter ? '#0d9488' : '#2563eb';
+                const iconHtml = `
+                    <div style="background:${markerColor};width:26px;height:26px;border-radius:50%;border:2px solid #ffffff;box-shadow:0 3px 8px rgba(0,0,0,0.28);display:grid;place-items:center;color:#ffffff;font-size:12px;cursor:pointer;transition:transform .14s ease" title="${escapeHtml(item.nama_bandar_udara)}">
+                        ✈
+                    </div>
+                `;
+                const customIcon = L.divIcon({
+                    className: 'bandara-custom-marker',
+                    html: iconHtml,
+                    iconSize: [26, 26],
+                    iconAnchor: [13, 13]
+                });
+
+                const m = L.marker(latLng, { icon: customIcon }).addTo(markersLayer);
+                
+                m.bindTooltip(`<b>${escapeHtml(item.nama_bandar_udara)}</b><br><span style="font-size:10px">${escapeHtml(item.kabupaten || '')} (${item.IATA || item.ICAO || '–'})</span>`, {
+                    direction: 'top',
+                    offset: [0, -10]
+                });
+
+                m.on('click', () => {
+                    selectBandara(item, m);
+                });
+            }
+        });
+
+        currentBounds = bounds;
+
+        if (bounds.length > 0) {
+            try {
+                bMap.fitBounds(bounds, { padding: [40, 40], maxZoom: 10 });
+            } catch (err) {
+                console.warn('bMap fitBounds error:', err);
+            }
+            // Select first airport by default without triggering flyTo zoom conflicts
+            if (filtered[0]) {
+                selectBandara(filtered[0], null);
+            }
+        } else {
+            if (emptyState) emptyState.style.display = 'block';
+            if (detailContent) detailContent.style.display = 'none';
+        }
+    }
+
+    window.recenterBandaraMap = () => {
+        if (bMap && currentBounds && currentBounds.length > 0) {
+            try {
+                bMap.invalidateSize();
+                bMap.fitBounds(currentBounds, { padding: [40, 40], maxZoom: 10 });
+            } catch (e) {}
+        }
+    };
+
+    provSelect.addEventListener('change', e => {
+        updateBandaraView(e.target.value);
+    });
+
+    if (btnReset) {
+        btnReset.addEventListener('click', () => {
+            if (emptyState) emptyState.style.display = 'block';
+            if (detailContent) detailContent.style.display = 'none';
+        });
+    }
+
+    // Initial load
+    updateBandaraView(currentProv);
+}
+
+/* ============================================================
+   FEATURE 10: STATUS KEADAAN DARURAT BENCANA
+   Spesifikasi: BNPB Dataset 2025
+   ============================================================ */
+function renderDarurat(r) {
+    const provSelect = document.getElementById('daruratProvSelect');
+    const citySelect = document.getElementById('daruratCitySelect');
+    const statSk = document.getElementById('daruratStatSk');
+    const statJenis = document.getElementById('daruratStatJenis');
+    const statStatus = document.getElementById('daruratStatStatus');
+    const heatmapTable = document.getElementById('daruratHeatmapTable');
+    const skTable = document.getElementById('daruratSkTable');
+    const skCount = document.getElementById('daruratTableCount');
+    const emptyState = document.getElementById('daruratEmptyState');
+    const detailContent = document.getElementById('daruratDetailContent');
+    const btnReset = document.getElementById('btnDaruratReset');
+
+    if (!provSelect || !citySelect || typeof window.DARURAT_DATA === 'undefined') return;
+
+    const allDarurat = window.DARURAT_DATA || [];
+
+    // 1. Ekstrak daftar provinsi unik
+    const provList = [...new Set(allDarurat.map(d => d.provinsi).filter(Boolean))].sort((a, b) => a.localeCompare(b, 'id'));
+
+    // Match province from active region
+    let currentProv = (r && r.prov ? r.prov : 'Daerah Istimewa Yogyakarta');
+    const matchedProv = provList.find(p => p.toLowerCase().includes(currentProv.toLowerCase()) || currentProv.toLowerCase().includes(p.toLowerCase()));
+    if (matchedProv) currentProv = matchedProv;
+    else if (!provList.includes(currentProv)) currentProv = 'Daerah Istimewa Yogyakarta';
+
+    provSelect.innerHTML = `<option value="">Semua Provinsi</option>` + provList.map(p => `
+        <option value="${escapeHtml(p)}" ${p.toLowerCase() === currentProv.toLowerCase() ? 'selected' : ''}>${escapeHtml(p)}</option>
+    `).join('');
+
+    function populateDaruratCities(chosenProv) {
+        const records = chosenProv ? allDarurat.filter(d => d.provinsi && d.provinsi.toLowerCase() === chosenProv.toLowerCase()) : allDarurat;
+        const cities = [...new Set(records.map(d => d.kabupaten).filter(Boolean))].sort((a, b) => a.localeCompare(b, 'id'));
+
+        let selectedCity = '';
+        if (r && r.kabkota) {
+            const cleanKab = r.kabkota.replace(/^(KABUPATEN|KOTA|KAB\.|KOTA\.)\s+/i, '').trim().toLowerCase();
+            const found = cities.find(c => c.toLowerCase().includes(cleanKab) || cleanKab.includes(c.toLowerCase()));
+            if (found) selectedCity = found;
+        }
+
+        // Jika kabupaten spesifik tidak memiliki catatan darurat di BNPB 2025, default ke Semua Kab/Kota ("")
+        // agar seluruh SK di provinsi tersebut langsung tampil dan tidak kosong,
+        // kecuali DIY yang mengutamakan Gunungkidul sesuai mockup spesifikasi 10
+        if (!selectedCity && cities.length > 0) {
+            if (chosenProv && chosenProv.toLowerCase().includes('yogyakarta')) {
+                const gk = cities.find(c => c.toLowerCase().includes('gunungkidul'));
+                selectedCity = gk || '';
+            } else {
+                selectedCity = '';
+            }
+        }
+
+        citySelect.innerHTML = `<option value="">Semua Kab/Kota (${cities.length})</option>` + cities.map(c => `
+            <option value="${escapeHtml(c)}" ${c === selectedCity ? 'selected' : ''}>${escapeHtml(c)}</option>
+        `).join('');
+
+        return selectedCity;
+    }
+
+    const initialCity = populateDaruratCities(currentProv);
+
+    // Standard Disaster Categories for Y Axis
+    const BENCANA_CATEGORIES = [
+        'Banjir',
+        'Cuaca ekstrem',
+        'Tanah longsor',
+        'Gelombang pasang dan abrasi',
+        'Kekeringan',
+        'Kebakaran hutan dan lahan',
+        'Erupsi gunung api',
+        'Gempabumi',
+        'Epidemi dan wabah penyakit'
+    ];
+
+    const MONTH_LABELS = ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Agu', 'Sep', 'Okt', 'Nov', 'Des'];
+
+    function selectSkDetail(skItem) {
+        if (!skItem) return;
+        if (emptyState) emptyState.style.display = 'none';
+        if (detailContent) detailContent.style.display = 'flex';
+
+        const ddStatus = document.getElementById('ddStatusBadge');
+        const ddSkala = document.getElementById('ddSkalaBadge');
+        const ddNoSk = document.getElementById('ddNoSk');
+        const ddWilayah = document.getElementById('ddWilayah');
+        const ddKlasifikasi = document.getElementById('ddKlasifikasi');
+        const ddPeriode = document.getElementById('ddPeriode');
+        const ddKeterangan = document.getElementById('ddKeterangan');
+        const ddChips = document.getElementById('ddJenisChips');
+        const ddDoc = document.getElementById('ddDocLink');
+
+        const statusLower = (skItem.status_keadaan_darurat || '').toLowerCase();
+        let pillClass = 'siaga';
+        if (statusLower.includes('tanggap')) pillClass = 'tanggap';
+        else if (statusLower.includes('transisi')) pillClass = 'transisi';
+
+        if (ddStatus) {
+            ddStatus.className = `status-pill ${pillClass}`;
+            ddStatus.textContent = skItem.status_keadaan_darurat || 'Siaga Darurat';
+        }
+        if (ddSkala) {
+            ddSkala.textContent = `Skala ${(skItem.skala_bencana || 'Kabupaten').toUpperCase()}`;
+        }
+        if (ddNoSk) ddNoSk.textContent = skItem.nomor_sk_status_keadaan_darurat || '–';
+        if (ddWilayah) ddWilayah.textContent = `${skItem.kabupaten || 'Provinsi'} · ${skItem.provinsi || ''}`;
+        if (ddKlasifikasi) ddKlasifikasi.textContent = skItem.klasifikasi_bencana || 'Hidrometeorologi';
+        if (ddPeriode) ddPeriode.textContent = `${skItem.tgl_mulai || '–'} – ${skItem.tgl_berakhir || '–'}`;
+        if (ddKeterangan) ddKeterangan.textContent = skItem.keterangan_status || skItem.status_keadaan_darurat || '–';
+
+        if (ddChips) {
+            const types = (skItem.jenis_bencana || '').split(',').map(s => s.trim()).filter(Boolean);
+            ddChips.innerHTML = types.map(t => `
+                <span style="font-size:11px;font-weight:600;padding:3px 8px;border-radius:4px;background:var(--surface);border:1px solid var(--line);color:var(--text)">${escapeHtml(t)}</span>
+            `).join('');
+        }
+
+        if (ddDoc) {
+            if (skItem.tautan_surat && skItem.tautan_surat.startsWith('http')) {
+                ddDoc.href = skItem.tautan_surat;
+                ddDoc.style.display = 'inline-flex';
+            } else {
+                ddDoc.style.display = 'none';
+            }
+        }
+    }
+
+    function updateDaruratView() {
+        const selProv = provSelect.value;
+        const selCity = citySelect.value;
+
+        let filtered = allDarurat;
+        if (selProv) {
+            filtered = filtered.filter(d => d.provinsi && d.provinsi.toLowerCase() === selProv.toLowerCase());
+        }
+        if (selCity) {
+            filtered = filtered.filter(d => d.kabupaten && d.kabupaten.toLowerCase() === selCity.toLowerCase());
+        }
+
+        // 1. Update KPI stats
+        if (statSk) statSk.textContent = filtered.length;
+
+        const distinctTypes = new Set();
+        filtered.forEach(d => {
+            (d.jenis_bencana || '').split(',').forEach(x => {
+                if (x.trim()) distinctTypes.add(x.trim());
+            });
+        });
+        if (statJenis) statJenis.textContent = distinctTypes.size;
+
+        if (statStatus) {
+            const latest = filtered[0];
+            statStatus.textContent = latest ? (latest.status_keadaan_darurat || 'Siaga Darurat') : 'Tidak Ada';
+        }
+
+        // 2. Build 2D Heatmap Matrix [Bencana x Month]
+        // Parse tgl_mulai e.g. "03/01/25" -> month index 0..11
+        const matrix = {};
+        BENCANA_CATEGORIES.forEach(b => {
+            matrix[b] = Array(12).fill(0);
+        });
+
+        filtered.forEach(d => {
+            const types = (d.jenis_bencana || '').split(',').map(x => x.trim());
+            let mStart = 0;
+            let mEnd = 2; // default
+            try {
+                if (d.tgl_mulai) {
+                    const parts = d.tgl_mulai.split('/');
+                    if (parts.length >= 2) mStart = parseInt(parts[1], 10) - 1;
+                }
+                if (d.tgl_berakhir) {
+                    const parts = d.tgl_berakhir.split('/');
+                    if (parts.length >= 2) mEnd = parseInt(parts[1], 10) - 1;
+                }
+            } catch (e) {}
+
+            mStart = Math.max(0, Math.min(11, mStart));
+            mEnd = Math.max(mStart, Math.min(11, mEnd));
+
+            types.forEach(t => {
+                const cat = BENCANA_CATEGORIES.find(c => c.toLowerCase() === t.toLowerCase());
+                if (cat) {
+                    for (let m = mStart; m <= mEnd; m++) {
+                        matrix[cat][m] += 1;
+                    }
+                }
+            });
+        });
+
+        // Render Heatmap Table
+        if (heatmapTable) {
+            let thead = `<tr><th style="text-align:left">Jenis Bencana</th>`;
+            MONTH_LABELS.forEach(m => { thead += `<th>${m}</th>`; });
+            thead += `</tr>`;
+
+            let tbody = '';
+            BENCANA_CATEGORIES.forEach(b => {
+                tbody += `<tr><td class="heatmap-label">${escapeHtml(b)}</td>`;
+                for (let m = 0; m < 12; m++) {
+                    const count = matrix[b][m];
+                    let lvl = 'level-0';
+                    if (count === 1) lvl = 'level-1';
+                    else if (count >= 2 && count <= 3) lvl = 'level-2';
+                    else if (count > 3) lvl = 'level-3';
+
+                    tbody += `<td class="heatmap-cell ${lvl}" data-bencana="${escapeHtml(b)}" data-month="${m}" title="${escapeHtml(b)} (${MONTH_LABELS[m]}): ${count} catatan penetapan">${count > 0 ? count : ''}</td>`;
+                }
+                tbody += `</tr>`;
+            });
+
+            heatmapTable.innerHTML = `<thead>${thead}</thead><tbody>${tbody}</tbody>`;
+
+            // Click listener on heatmap cells
+            heatmapTable.querySelectorAll('.heatmap-cell').forEach(cell => {
+                cell.addEventListener('click', () => {
+                    const b = cell.dataset.bencana;
+                    const m = parseInt(cell.dataset.month, 10);
+                    // Filter matching SKs
+                    const matchingSks = filtered.filter(d => {
+                        const types = (d.jenis_bencana || '').toLowerCase();
+                        return types.includes(b.toLowerCase());
+                    });
+                    if (matchingSks.length > 0) {
+                        selectSkDetail(matchingSks[0]);
+                    }
+                });
+            });
+        }
+
+        // 3. Render SK Table List
+        if (skTable && skCount) {
+            skCount.textContent = `${filtered.length} Dokumen SK`;
+            if (filtered.length === 0) {
+                skTable.innerHTML = `<tbody><tr><td style="padding:14px;text-align:center;color:var(--muted)">Tidak ada penetapan status keadaan darurat tercatat.</td></tr></tbody>`;
+            } else {
+                skTable.innerHTML = `
+                    <thead style="background:var(--surface);border-bottom:1px solid var(--line)">
+                        <tr>
+                            <th style="padding:8px 10px;font-family:var(--mono);font-size:11px">Nomor SK</th>
+                            <th style="padding:8px 10px">Kabupaten/Kota</th>
+                            <th style="padding:8px 10px">Status Penetapan</th>
+                            <th style="padding:8px 10px;text-align:right">Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${filtered.map(d => {
+                            const statusLower = (d.status_keadaan_darurat || '').toLowerCase();
+                            let pill = 'siaga';
+                            if (statusLower.includes('tanggap')) pill = 'tanggap';
+                            else if (statusLower.includes('transisi')) pill = 'transisi';
+
+                            return `
+                                <tr style="border-bottom:1px solid var(--line-soft);cursor:pointer;transition:background .12s" class="darurat-sk-row" data-no="${escapeHtml(d.nomor_sk_status_keadaan_darurat)}">
+                                    <td style="padding:8px 10px;font-family:var(--mono);font-weight:700;color:var(--text)">${escapeHtml(d.nomor_sk_status_keadaan_darurat)}</td>
+                                    <td style="padding:8px 10px;color:var(--muted)">${escapeHtml(d.kabupaten || 'Provinsi')}</td>
+                                    <td style="padding:8px 10px"><span class="status-pill ${pill}">${escapeHtml(d.status_keadaan_darurat)}</span></td>
+                                    <td style="padding:8px 10px;text-align:right">
+                                        <button type="button" class="btn btn-sm" style="font-size:10.5px;padding:3px 8px;cursor:pointer">Detail</button>
+                                    </td>
+                                </tr>
+                            `;
+                        }).join('')}
+                    </tbody>
+                `;
+
+                skTable.querySelectorAll('.darurat-sk-row').forEach(row => {
+                    row.addEventListener('click', () => {
+                        const noSk = row.dataset.no;
+                        const item = filtered.find(d => d.nomor_sk_status_keadaan_darurat === noSk);
+                        if (item) selectSkDetail(item);
+                    });
+                });
+            }
+        }
+
+        // Auto select first SK if available
+        if (filtered.length > 0) {
+            selectSkDetail(filtered[0]);
+        } else {
+            if (emptyState) emptyState.style.display = 'block';
+            if (detailContent) detailContent.style.display = 'none';
+        }
+    }
+
+    provSelect.addEventListener('change', () => {
+        populateDaruratCities(provSelect.value);
+        updateDaruratView();
+    });
+
+    citySelect.addEventListener('change', () => {
+        updateDaruratView();
+    });
+
+    if (btnReset) {
+        btnReset.addEventListener('click', () => {
+            if (emptyState) emptyState.style.display = 'block';
+            if (detailContent) detailContent.style.display = 'none';
+        });
+    }
+
+    window.recheckDaruratView = () => {
+        updateDaruratView();
+    };
+
+    // Initial render
+    updateDaruratView();
+}
+
+/* ============================================================
+   FEATURE 14: KUALITAS KONDISI JALAN KABUPATEN/KOTA (100% STACKED BAR)
+   Spesifikasi: BPS & KemenPUPR (Data Indikatif Mockup)
+   ============================================================ */
+function renderJalan(r) {
+    const peerSelect = document.getElementById('jalanPeerSelect');
+    const barsContainer = document.getElementById('jalanBarsContainer');
+    const chartTitle = document.getElementById('jalanChartTitle');
+    const valTotal = document.getElementById('jalanValTotal');
+    const subTotal = document.getElementById('jalanSubTotal');
+    const valBaik = document.getElementById('jalanValBaik');
+    const subBaik = document.getElementById('jalanSubBaik');
+    const valSedang = document.getElementById('jalanValSedang');
+    const subSedang = document.getElementById('jalanSubSedang');
+    const valRusak = document.getElementById('jalanValRusak');
+    const subRusak = document.getElementById('jalanSubRusak');
+    const statusBadge = document.getElementById('jalanStatusBadge');
+    const kemantapanVal = document.getElementById('jalanKemantapanVal');
+    const insightDesc = document.getElementById('jalanInsightDesc');
+    const rekomendasiText = document.getElementById('jalanRekomendasiText');
+
+    if (!barsContainer || typeof window.JALAN_DATA === 'undefined') return;
+
+    const allJalan = window.JALAN_DATA || {};
+    const regId = String((r && (r.id || r.no)) || '');
+    
+    // Cari data jalan wilayah aktif
+    let currData = allJalan[regId];
+    if (!currData && r && r.kabkota) {
+        const cleanName = r.kabkota.trim().toLowerCase();
+        currData = Object.values(allJalan).find(j => j.kabkota && j.kabkota.trim().toLowerCase() === cleanName);
+    }
+    if (!currData) {
+        currData = Object.values(allJalan)[0];
+    }
+
+    const fmtKm = (v) => {
+        if (typeof v !== 'number' || isNaN(v)) return '0';
+        return v.toLocaleString('id-ID', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+    };
+
+    function updateKpiAndInsight(item) {
+        if (!item) return;
+
+        if (valTotal) valTotal.innerHTML = `${fmtKm(item.panjang_total_km)} <span class="jalan-kpi-unit">km</span>`;
+        if (subTotal) subTotal.textContent = `Kewenangan ${item.kabkota}`;
+
+        if (valBaik) valBaik.innerHTML = `${fmtKm(item.kondisi_baik_km)} <span class="jalan-kpi-unit">km</span>`;
+        if (subBaik) subBaik.textContent = `${item.persen_baik}% dari total jalan`;
+
+        if (valSedang) valSedang.innerHTML = `${fmtKm(item.kondisi_sedang_km)} <span class="jalan-kpi-unit">km</span>`;
+        if (subSedang) subSedang.textContent = `${item.persen_sedang}% dari total jalan`;
+
+        if (valRusak) valRusak.innerHTML = `${fmtKm(item.kondisi_rusak_km)} <span class="jalan-kpi-unit">km</span>`;
+        if (subRusak) subRusak.textContent = `${item.persen_rusak}% dari total jalan`;
+
+        if (kemantapanVal) kemantapanVal.textContent = `${item.persen_mantap}%`;
+        if (insightDesc) insightDesc.textContent = item.insight || '';
+
+        if (statusBadge) {
+            statusBadge.textContent = item.status_kategori || 'Cukup Mantap';
+            statusBadge.className = 'status-pill';
+            if (item.status_kategori === 'Mantap Unggul') {
+                statusBadge.style.background = '#dcfce7';
+                statusBadge.style.color = '#15803d';
+                statusBadge.style.borderColor = '#bbf7d0';
+            } else if (item.status_kategori === 'Butuh Penanganan Prioritas') {
+                statusBadge.className = 'status-pill tanggap';
+                statusBadge.style.background = '';
+                statusBadge.style.color = '';
+                statusBadge.style.borderColor = '';
+            } else {
+                statusBadge.className = 'status-pill siaga';
+                statusBadge.style.background = '';
+                statusBadge.style.color = '';
+                statusBadge.style.borderColor = '';
+            }
+        }
+
+        if (rekomendasiText) {
+            if (item.persen_baik >= 60) {
+                rekomendasiText.textContent = 'Pertahankan kemantapan struktur jalan dengan program pemeliharaan preventif berkala untuk rute angkutan komersial.';
+            } else if (item.persen_rusak >= 30) {
+                rekomendasiText.textContent = 'Prioritaskan usulan intervensi Inpres Jalan Daerah (IJD) dan DAK Fisik untuk pemulihan ruas penghubung sentra ekonomi.';
+            } else {
+                rekomendasiText.textContent = 'Alokasikan pemeliharaan rutin pada segmen kondisi sedang agar laju penurunan kualitas jalan tidak meningkat drastis.';
+            }
+        }
+    }
+
+    // Initial KPI setup
+    updateKpiAndInsight(currData);
+
+    function renderBars() {
+        const mode = peerSelect ? peerSelect.value : 'provinsi';
+        let peerList = [];
+        const allArray = Object.values(allJalan);
+
+        if (mode === 'provinsi') {
+            const targetProv = currData.prov || (r ? r.prov : '');
+            peerList = allArray.filter(j => j.prov && targetProv && j.prov.toUpperCase() === targetProv.toUpperCase());
+            peerList.sort((a, b) => b.persen_mantap - a.persen_mantap);
+            if (chartTitle) chartTitle.textContent = `Komparasi 100% Kondisi Jalan Se-Provinsi ${targetProv} (${peerList.length} Wilayah)`;
+        } else if (mode === 'tetangga') {
+            const neighborNames = [r.batas_utara, r.batas_selatan, r.batas_timur, r.batas_barat].filter(Boolean).map(x => x.toLowerCase());
+            peerList = allArray.filter(j => {
+                if (String(j.id) === String(currData.id)) return true;
+                const jName = j.kabkota.toLowerCase();
+                return neighborNames.some(nb => jName.includes(nb) || nb.includes(jName));
+            });
+            if (peerList.length < 3) {
+                const sameProv = allArray.filter(j => j.prov && currData.prov && j.prov.toUpperCase() === currData.prov.toUpperCase());
+                peerList = [...new Set([...peerList, ...sameProv.slice(0, 6)])];
+            }
+            peerList.sort((a, b) => b.persen_mantap - a.persen_mantap);
+            if (chartTitle) chartTitle.textContent = `Komparasi Kondisi Jalan dengan Wilayah Berbatasan / Tetangga (${peerList.length} Wilayah)`;
+        } else if (mode === 'top10') {
+            peerList = [...allArray].sort((a, b) => b.panjang_total_km - a.panjang_total_km).slice(0, 10);
+            if (!peerList.some(j => String(j.id) === String(currData.id))) {
+                peerList.push(currData);
+            }
+            peerList.sort((a, b) => b.panjang_total_km - a.panjang_total_km);
+            if (chartTitle) chartTitle.textContent = `Komparasi 100% Kondisi Jalan (Top 10 Panjang Jalan Terpanjang)`;
+        }
+
+        if (peerList.length === 0) {
+            peerList = [currData];
+        }
+
+        barsContainer.innerHTML = peerList.map(item => {
+            const isSelf = String(item.id) === String(currData.id);
+            const activeClass = isSelf ? 'active' : '';
+            const hereBadge = isSelf ? '<span class="jalan-badge-here">Wilayah Ini</span>' : '';
+
+            const pBaik = item.persen_baik || 0;
+            const pSedang = item.persen_sedang || 0;
+            const pRusak = item.persen_rusak || 0;
+
+            const labelBaik = pBaik >= 12 ? `${Math.round(pBaik)}%` : '';
+            const labelSedang = pSedang >= 12 ? `${Math.round(pSedang)}%` : '';
+            const labelRusak = pRusak >= 12 ? `${Math.round(pRusak)}%` : '';
+
+            const tooltipInfo = `${item.kabkota} (${item.prov})&#10;Total: ${fmtKm(item.panjang_total_km)} km&#10;• Baik: ${fmtKm(item.kondisi_baik_km)} km (${pBaik}%)&#10;• Sedang: ${fmtKm(item.kondisi_sedang_km)} km (${pSedang}%)&#10;• Rusak: ${fmtKm(item.kondisi_rusak_km)} km (${pRusak}%)&#10;• Kemantapan: ${item.persen_mantap}%`;
+
+            return `
+                <div class="jalan-row ${activeClass}" data-id="${escapeHtml(item.id)}" title="${tooltipInfo}">
+                    <div class="jalan-row-label">
+                        <span title="${escapeHtml(item.kabkota)}">${escapeHtml(item.kabkota)}</span>
+                        ${hereBadge}
+                    </div>
+                    <div class="jalan-bar-track">
+                        <div class="jalan-segment baik" style="width:${pBaik}%" title="Kondisi Baik: ${fmtKm(item.kondisi_baik_km)} km (${pBaik}%)">${labelBaik}</div>
+                        <div class="jalan-segment sedang" style="width:${pSedang}%" title="Kondisi Sedang: ${fmtKm(item.kondisi_sedang_km)} km (${pSedang}%)">${labelSedang}</div>
+                        <div class="jalan-segment rusak" style="width:${pRusak}%" title="Kondisi Rusak: ${fmtKm(item.kondisi_rusak_km)} km (${pRusak}%)">${labelRusak}</div>
+                    </div>
+                </div>
+            `;
+        }).join('');
+
+        // Interaksi klik baris untuk review insight wilayah komparasi
+        barsContainer.querySelectorAll('.jalan-row').forEach(row => {
+            row.addEventListener('click', () => {
+                const itemId = row.dataset.id;
+                const clickedItem = allJalan[itemId];
+                if (clickedItem) {
+                    updateKpiAndInsight(clickedItem);
+                    barsContainer.querySelectorAll('.jalan-row').forEach(r => r.classList.remove('active'));
+                    row.classList.add('active');
+                }
+            });
+        });
+    }
+
+    if (peerSelect) {
+        peerSelect.addEventListener('change', () => {
+            renderBars();
+        });
+    }
+
+    renderBars();
+}
+
+/* ============================================================
+   FITUR 01: REALISASI INVESTASI BERDASARKAN SEKTOR USAHA (BKPM 2025)
+   - Dynamic Bar Chart SVG with dynamic Y-axis scaling
+   - Filter PMA, PMDN, Semua (Total)
+   - Real BKPM 2025 dataset across 38 provinces & 527 regions
+   - Interactive Tooltip, Table, & 3 Sidebar Dossier Cards
+   ============================================================ */
+function renderInvestasiSektor(r) {
+    const rawData = window.INVESTASI_SEKTOR_DATA;
+    if (!rawData || !rawData.data_by_region) {
+        console.warn('INVESTASI_SEKTOR_DATA is not loaded or invalid.');
+        return;
+    }
+
+    const provSelect = document.getElementById('bkpmProvSelect');
+    const citySelect = document.getElementById('bkpmCitySelect');
+    const btnSemua = document.getElementById('btnBkpmSemua');
+    const btnPma = document.getElementById('btnBkpmPma');
+    const btnPmdn = document.getElementById('btnBkpmPmdn');
+    const chartSvg = document.getElementById('bkpmBarSvg');
+    const chartCanvas = document.getElementById('bkpmChartCanvasContainer');
+    const chartScroll = document.getElementById('bkpmChartScrollWrap');
+    const chartTitle = document.getElementById('bkpmChartTitle');
+    const scaleUnitEl = document.getElementById('bkpmScaleUnit');
+    const tableBody = document.getElementById('bkpmTableBody');
+    const tableTitle = document.getElementById('bkpmTableTitle');
+    const tooltipEl = document.getElementById('bkpmTooltip');
+    const btnResetZoom = document.getElementById('btnBkpmResetZoom');
+
+    // Sidebar card elements
+    const topSektorEl = document.getElementById('bkpmTopSektor');
+    const topNilaiEl = document.getElementById('bkpmTopNilai');
+    const countSektorEl = document.getElementById('bkpmCountSektor');
+    const activeProvEl = document.getElementById('bkpmActiveProv');
+    const activeCityEl = document.getElementById('bkpmActiveCity');
+    const activeTypeEl = document.getElementById('bkpmActiveType');
+    const detailSektorNameEl = document.getElementById('bkpmDetailSektorName');
+    const detailPmaEl = document.getElementById('bkpmDetailPma');
+    const detailPmdnEl = document.getElementById('bkpmDetailPmdn');
+    const detailTotalEl = document.getElementById('bkpmDetailTotal');
+
+    if (!provSelect || !citySelect || !chartSvg) return;
+
+    let activeType = 'Semua'; // 'Semua' | 'PMA' | 'PMDN'
+    let currentProv = '';
+    let currentKab = '';
+    let selectedSector = null;
+
+    // Currency Formatter
+    function formatRupiah(num) {
+        if (num === null || num === undefined || isNaN(num)) return 'Rp0';
+        return 'Rp' + Math.round(num).toLocaleString('id-ID');
+    }
+
+    function formatCompactRp(num) {
+        if (!num || isNaN(num) || num <= 0) return 'Rp0';
+        if (num >= 1e12) {
+            return `Rp${(num / 1e12).toLocaleString('id-ID', { minimumFractionDigits: 1, maximumFractionDigits: 2 })} T`;
+        }
+        if (num >= 1e9) {
+            return `Rp${(num / 1e9).toLocaleString('id-ID', { minimumFractionDigits: 1, maximumFractionDigits: 2 })} M`;
+        }
+        if (num >= 1e6) {
+            return `Rp${(num / 1e6).toLocaleString('id-ID', { minimumFractionDigits: 0, maximumFractionDigits: 1 })} Jt`;
+        }
+        return `Rp${Math.round(num).toLocaleString('id-ID')}`;
+    }
+
+    // Normalizer to find matching region key
+    function getRegionKey(prov, kab) {
+        function norm(s) {
+            return (s || '').toLowerCase()
+                .replace(/^kabupaten\s+|^kota\s+adm\.\s+|^kota\s+/i, '')
+                .replace(/[^a-z0-9]/g, '');
+        }
+        const pNorm = norm(prov);
+        const kNorm = norm(kab);
+
+        // 1. Direct try with standard slug
+        for (const [key, val] of Object.entries(rawData.data_by_region)) {
+            if (norm(val.provinsi) === pNorm && norm(val.kabupaten) === kNorm) {
+                return key;
+            }
+        }
+        // 2. Fallback partial
+        for (const [key, val] of Object.entries(rawData.data_by_region)) {
+            if (norm(val.provinsi) === pNorm && (norm(val.kabupaten).includes(kNorm) || kNorm.includes(norm(val.kabupaten)))) {
+                return key;
+            }
+        }
+        return null;
+    }
+
+    // Initialize initial Province & Kab
+    const provList = rawData.provinces || [];
+    let initialProv = provList[0] || 'Jawa Barat';
+    if (r && r.prov) {
+        const found = provList.find(p => p.toLowerCase().trim() === r.prov.toLowerCase().trim() ||
+            p.toLowerCase().includes(r.prov.toLowerCase()) || r.prov.toLowerCase().includes(p.toLowerCase()));
+        if (found) initialProv = found;
+    }
+    currentProv = initialProv;
+
+    // Fill Province dropdown
+    provSelect.innerHTML = provList.map(p => `<option value="${escapeHtml(p)}" ${p === currentProv ? 'selected' : ''}>${escapeHtml(p)}</option>`).join('');
+
+    function updateCityDropdown(preferredKab) {
+        const kabList = rawData.kab_by_prov[currentProv] || [];
+        let pickKab = kabList[0] || '';
+        if (preferredKab) {
+            const normPref = preferredKab.toLowerCase().replace(/^(kabupaten|kota)\s+/i, '').trim();
+            const found = kabList.find(k => k.toLowerCase().includes(normPref) || normPref.includes(k.toLowerCase().replace(/^(kabupaten|kota)\s+/i, '').trim()));
+            if (found) pickKab = found;
+        }
+        currentKab = pickKab;
+
+        citySelect.innerHTML = kabList.map(k => `<option value="${escapeHtml(k)}" ${k === currentKab ? 'selected' : ''}>${escapeHtml(k)}</option>`).join('');
+    }
+
+    let initialKabName = r ? (r.kabkota || r.nama || '') : '';
+    updateCityDropdown(initialKabName);
+
+    // Event listeners on dropdowns
+    provSelect.addEventListener('change', () => {
+        currentProv = provSelect.value;
+        updateCityDropdown();
+        selectedSector = null;
+        renderView();
+    });
+
+    citySelect.addEventListener('change', () => {
+        currentKab = citySelect.value;
+        selectedSector = null;
+        renderView();
+    });
+
+    // Investment type filter buttons
+    const filterBtns = [btnSemua, btnPma, btnPmdn].filter(Boolean);
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            activeType = btn.dataset.type || 'Semua';
+            renderView();
+        });
+    });
+
+    if (btnResetZoom && chartScroll) {
+        btnResetZoom.addEventListener('click', () => {
+            chartScroll.scrollTo({ left: 0, behavior: 'smooth' });
+        });
+    }
+
+    // Main render function
+    function renderView() {
+        // Update Filter Aktif card
+        if (activeProvEl) activeProvEl.textContent = currentProv;
+        if (activeCityEl) activeCityEl.textContent = currentKab;
+        if (activeTypeEl) {
+            activeTypeEl.textContent = activeType;
+            activeTypeEl.style.color = activeType === 'PMA' ? '#0d9488' : activeType === 'PMDN' ? '#d97706' : '#2563eb';
+        }
+
+        if (chartTitle) {
+            chartTitle.textContent = `Realisasi Investasi Berdasarkan Sektor Usaha — ${currentKab}`;
+        }
+        if (tableTitle) {
+            tableTitle.textContent = `Data Realisasi Investasi – ${currentKab}`;
+        }
+
+        const regKey = getRegionKey(currentProv, currentKab);
+        const regData = regKey ? rawData.data_by_region[regKey] : null;
+
+        if (!regData || !Array.isArray(regData.sektor_items) || regData.sektor_items.length === 0) {
+            renderEmptyState();
+            return;
+        }
+
+        // Process sector items according to activeType
+        let processedItems = regData.sektor_items.map(item => {
+            let val = 0;
+            if (activeType === 'PMA') val = item.pma_rp || 0;
+            else if (activeType === 'PMDN') val = item.pmdn_rp || 0;
+            else val = item.total_rp || (item.pma_rp || 0) + (item.pmdn_rp || 0);
+
+            return {
+                ...item,
+                currentVal: val
+            };
+        });
+
+        // Filter: Hide verified zero investment sectors if there are active ones
+        const nonZeroItems = processedItems.filter(it => it.currentVal > 0);
+        let displayItems = nonZeroItems.length > 0 ? nonZeroItems : processedItems.slice(0, 5);
+
+        // Sort descending by currentVal
+        displayItems.sort((a, b) => b.currentVal - a.currentVal);
+
+        // Set selected sector if not set or not in displayItems
+        if (!selectedSector || !displayItems.some(it => it.sektor === selectedSector.sektor)) {
+            selectedSector = displayItems[0] || null;
+        }
+
+        // Update Ringkasan card
+        const topItem = displayItems[0] || { sektor: '–', currentVal: 0 };
+        if (topSektorEl) topSektorEl.textContent = topItem.sektor || '–';
+        if (topNilaiEl) topNilaiEl.textContent = formatRupiah(topItem.currentVal);
+        if (countSektorEl) countSektorEl.textContent = String(displayItems.length);
+
+        // Update Detail Sektor card
+        updateDetailCard(selectedSector);
+
+        // Render Table
+        renderTable(regData.sektor_items);
+
+        // Render SVG Bar Chart
+        renderBarChart(displayItems);
+    }
+
+    function updateDetailCard(item) {
+        if (!item) {
+            if (detailSektorNameEl) detailSektorNameEl.textContent = 'Tidak ada data';
+            if (detailPmaEl) detailPmaEl.textContent = 'Rp0';
+            if (detailPmdnEl) detailPmdnEl.textContent = 'Rp0';
+            if (detailTotalEl) detailTotalEl.textContent = 'Rp0';
+            return;
+        }
+        if (detailSektorNameEl) detailSektorNameEl.textContent = item.sektor || '–';
+        if (detailPmaEl) detailPmaEl.textContent = formatRupiah(item.pma_rp || 0);
+        if (detailPmdnEl) detailPmdnEl.textContent = formatRupiah(item.pmdn_rp || 0);
+        if (detailTotalEl) detailTotalEl.textContent = formatRupiah(item.total_rp || 0);
+    }
+
+    function renderEmptyState() {
+        if (topSektorEl) topSektorEl.textContent = '–';
+        if (topNilaiEl) topNilaiEl.textContent = 'Rp0';
+        if (countSektorEl) countSektorEl.textContent = '0';
+        updateDetailCard(null);
+
+        if (tableBody) {
+            tableBody.innerHTML = `<tr><td colspan="4" style="text-align:center;padding:24px;color:var(--muted)">Belum ada data realisasi investasi tercatat untuk wilayah ini di tahun 2025.</td></tr>`;
+        }
+
+        if (chartSvg) {
+            chartSvg.setAttribute('viewBox', '0 0 600 240');
+            chartSvg.setAttribute('width', '100%');
+            chartSvg.innerHTML = `
+                <text x="300" y="120" text-anchor="middle" font-family="var(--sans)" font-size="13" fill="var(--muted)">
+                    Data realisasi investasi belum tersedia untuk wilayah ini.
+                </text>
+            `;
+        }
+    }
+
+    function renderTable(allItems) {
+        if (!tableBody) return;
+        // Sort table items by total_rp descending
+        const sorted = [...allItems].sort((a, b) => (b.total_rp || 0) - (a.total_rp || 0));
+
+        tableBody.innerHTML = sorted.map(item => {
+            const isSelected = selectedSector && selectedSector.sektor === item.sektor;
+            return `
+                <tr class="${isSelected ? 'active' : ''}" data-sektor="${escapeHtml(item.sektor)}">
+                    <td>
+                        <div style="font-weight:600;color:var(--text)">${escapeHtml(item.sektor)}</div>
+                    </td>
+                    <td style="text-align:right;font-family:var(--mono);color:var(--muted)">${formatRupiah(item.pma_rp || 0)}</td>
+                    <td style="text-align:right;font-family:var(--mono);color:var(--muted)">${formatRupiah(item.pmdn_rp || 0)}</td>
+                    <td style="text-align:right;font-family:var(--mono);font-weight:700;color:#2563eb">${formatRupiah(item.total_rp || 0)}</td>
+                </tr>
+            `;
+        }).join('');
+
+        tableBody.querySelectorAll('tr').forEach(tr => {
+            tr.addEventListener('click', () => {
+                const sName = tr.dataset.sektor;
+                const found = allItems.find(it => it.sektor === sName);
+                if (found) {
+                    selectedSector = found;
+                    updateDetailCard(found);
+                    tableBody.querySelectorAll('tr').forEach(r => r.classList.remove('active'));
+                    tr.classList.add('active');
+                    highlightChartBar(sName);
+                }
+            });
+        });
+    }
+
+    function highlightChartBar(sektorName) {
+        if (!chartSvg) return;
+        chartSvg.querySelectorAll('.bkpm-bar-group').forEach(grp => {
+            if (grp.dataset.sektor === sektorName) {
+                grp.querySelector('.bkpm-bar-rect')?.setAttribute('filter', 'url(#bkpmGlow)');
+                grp.querySelector('.bkpm-bar-pin')?.setAttribute('opacity', '1');
+            } else {
+                grp.querySelector('.bkpm-bar-rect')?.removeAttribute('filter');
+                grp.querySelector('.bkpm-bar-pin')?.setAttribute('opacity', '0');
+            }
+        });
+    }
+
+    function renderBarChart(items) {
+        if (!chartSvg) return;
+
+        const maxVal = Math.max(...items.map(it => it.currentVal), 0);
+        let unitDivisor = 1;
+        let unitLabel = '';
+        let unitDesc = 'Rp = Rupiah';
+
+        if (maxVal >= 1e12) {
+            unitDivisor = 1e12;
+            unitLabel = 'T';
+            unitDesc = 'T = Triliun';
+        } else if (maxVal >= 1e9) {
+            unitDivisor = 1e9;
+            unitLabel = 'M';
+            unitDesc = 'M = Miliar';
+        } else if (maxVal >= 1e6) {
+            unitDivisor = 1e6;
+            unitLabel = 'Jt';
+            unitDesc = 'Jt = Juta';
+        }
+
+        if (scaleUnitEl) scaleUnitEl.textContent = unitDesc;
+
+        // Dynamic Y-axis Upper bound
+        const maxUnits = maxVal > 0 ? (maxVal / unitDivisor) : 10;
+        let niceMax = Math.ceil(maxUnits);
+        if (niceMax <= 5) niceMax = 5;
+        else if (niceMax <= 10) niceMax = 10;
+        else if (niceMax <= 20) niceMax = 20;
+        else if (niceMax <= 25) niceMax = 25;
+        else if (niceMax <= 30) niceMax = 30;
+        else if (niceMax <= 50) niceMax = 50;
+        else if (niceMax <= 100) niceMax = 100;
+        else {
+            const step = Math.pow(10, Math.floor(Math.log10(niceMax)));
+            niceMax = Math.ceil(niceMax / step) * step;
+        }
+
+        const tickCount = 4;
+        const ticks = [];
+        for (let i = 0; i <= tickCount; i++) {
+            ticks.push((niceMax / tickCount) * i);
+        }
+
+        // SVG Layout Dimensions
+        const svgHeight = 270;
+        const padTop = 32;
+        const padBottom = 54;
+        const padLeft = 82;
+        const padRight = 30;
+        const plotHeight = svgHeight - padTop - padBottom; // 184px
+
+        const slotWidth = 76;
+        const barWidth = 38;
+        const contentWidth = padLeft + items.length * slotWidth + padRight;
+        const totalSvgWidth = Math.max(620, contentWidth);
+
+        chartSvg.setAttribute('viewBox', `0 0 ${totalSvgWidth} ${svgHeight}`);
+        chartSvg.setAttribute('width', `${totalSvgWidth}px`);
+        chartSvg.setAttribute('height', `${svgHeight}px`);
+        if (chartCanvas) chartCanvas.style.width = `${totalSvgWidth}px`;
+
+        // SVG defs (Gradients and Glow filters)
+        let defsHtml = `
+            <defs>
+                <linearGradient id="bkpmBarGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#3b82f6"/>
+                    <stop offset="100%" stop-color="#1d4ed8"/>
+                </linearGradient>
+                <linearGradient id="bkpmBarGradHover" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#60a5fa"/>
+                    <stop offset="100%" stop-color="#2563eb"/>
+                </linearGradient>
+                <filter id="bkpmGlow" x="-20%" y="-20%" width="140%" height="140%">
+                    <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#2563eb" flood-opacity="0.45"/>
+                </filter>
+            </defs>
+        `;
+
+        // Background & Grid Lines
+        let gridHtml = '';
+        ticks.forEach(tick => {
+            const y = padTop + plotHeight - (tick / niceMax) * plotHeight;
+            gridHtml += `
+                <line x1="${padLeft}" y1="${y}" x2="${totalSvgWidth - padRight}" y2="${y}" stroke="var(--line-soft)" stroke-dasharray="3 3"/>
+                <text x="${padLeft - 10}" y="${y + 3.5}" text-anchor="end" font-family="var(--mono)" font-size="10" font-weight="600" fill="var(--muted)">
+                    Rp${tick % 1 === 0 ? tick : tick.toFixed(1)}${unitLabel ? ' ' + unitLabel : ''}
+                </text>
+            `;
+        });
+
+        // Y-axis label (rotated)
+        gridHtml += `
+            <text transform="translate(18, ${padTop + plotHeight / 2}) rotate(-90)" text-anchor="middle" font-family="var(--sans)" font-size="11" font-weight="700" fill="var(--muted)" letter-spacing="0.04em">
+                Nilai Investasi (Rp)
+            </text>
+        `;
+
+        // Base axis line
+        const baseY = padTop + plotHeight;
+        gridHtml += `<line x1="${padLeft}" y1="${baseY}" x2="${totalSvgWidth - padRight}" y2="${baseY}" stroke="var(--line)" stroke-width="1.5"/>`;
+
+        // Draw Bars
+        let barsHtml = '';
+        items.forEach((item, idx) => {
+            const x = padLeft + idx * slotWidth + (slotWidth - barWidth) / 2;
+            const barVal = item.currentVal;
+            const barHeight = niceMax > 0 ? (barVal / (niceMax * unitDivisor)) * plotHeight : 0;
+            const safeBarHeight = Math.max(barHeight, barVal > 0 ? 3 : 0);
+            const y = baseY - safeBarHeight;
+            const isSelected = selectedSector && selectedSector.sektor === item.sektor;
+
+            // Value text on top
+            const valLabel = formatCompactRp(barVal);
+
+            // X-axis label
+            let shortLbl = item.short_sektor || item.sektor || `Sektor ${idx + 1}`;
+            if (shortLbl.length > 13) shortLbl = shortLbl.slice(0, 12) + '…';
+
+            barsHtml += `
+                <g class="bkpm-bar-group" data-sektor="${escapeHtml(item.sektor)}" style="cursor:pointer">
+                    <!-- Invisible wider hit area for smooth hover -->
+                    <rect x="${x - 10}" y="${padTop}" width="${barWidth + 20}" height="${plotHeight + padBottom}" fill="transparent"/>
+
+                    <!-- Bar Rect -->
+                    <rect class="bkpm-bar-rect" x="${x}" y="${y}" width="${barWidth}" height="${safeBarHeight}" rx="5" ry="5" fill="url(#bkpmBarGrad)" ${isSelected ? 'filter="url(#bkpmGlow)"' : ''} style="transition:all .18s ease"/>
+
+                    <!-- Pin indicator dot on top center -->
+                    <circle class="bkpm-bar-pin" cx="${x + barWidth / 2}" cy="${y - 7}" r="4" fill="#2563eb" stroke="#ffffff" stroke-width="2" opacity="${isSelected ? '1' : '0'}" style="transition:opacity .15s ease"/>
+
+                    <!-- Value Label on Top of Bar -->
+                    <text x="${x + barWidth / 2}" y="${Math.max(16, y - 12)}" text-anchor="middle" font-family="var(--mono)" font-size="9.5" font-weight="700" fill="var(--text)">
+                        ${valLabel}
+                    </text>
+
+                    <!-- X-Axis Label -->
+                    <text x="${x + barWidth / 2}" y="${baseY + 18}" text-anchor="middle" font-family="var(--sans)" font-size="10" font-weight="600" fill="var(--text)">
+                        ${escapeHtml(shortLbl)}
+                    </text>
+                </g>
+            `;
+        });
+
+        chartSvg.innerHTML = defsHtml + gridHtml + barsHtml;
+
+        // Attach Interactive Hover & Click to Bars
+        chartSvg.querySelectorAll('.bkpm-bar-group').forEach(grp => {
+            const sName = grp.dataset.sektor;
+            const item = items.find(it => it.sektor === sName);
+            if (!item) return;
+
+            const rect = grp.querySelector('.bkpm-bar-rect');
+            const pin = grp.querySelector('.bkpm-bar-pin');
+
+            grp.addEventListener('mouseenter', e => {
+                if (rect) rect.setAttribute('fill', 'url(#bkpmBarGradHover)');
+                if (pin) pin.setAttribute('opacity', '1');
+
+                // Update detail card
+                updateDetailCard(item);
+
+                // Show floating tooltip
+                if (tooltipEl) {
+                    tooltipEl.innerHTML = `
+                        <div class="bkpm-tt-title">${escapeHtml(item.sektor)}</div>
+                        <div class="bkpm-tt-row"><span class="bkpm-tt-k">Provinsi</span><span class="bkpm-tt-v">${escapeHtml(currentProv)}</span></div>
+                        <div class="bkpm-tt-row"><span class="bkpm-tt-k">Kabupaten/Kota</span><span class="bkpm-tt-v">${escapeHtml(currentKab)}</span></div>
+                        <div class="bkpm-tt-row"><span class="bkpm-tt-k">Sektor Usaha</span><span class="bkpm-tt-v">${escapeHtml(item.sektor)}</span></div>
+                        <div class="bkpm-tt-row"><span class="bkpm-tt-k">Jenis Investasi</span><span class="bkpm-tt-v" style="color:#38bdf8">${escapeHtml(activeType)}</span></div>
+                        <div style="border-top:1px dashed #334155;margin:6px 0 4px"></div>
+                        <div class="bkpm-tt-row"><span class="bkpm-tt-k">Total Investasi</span><span class="bkpm-tt-v mono">${formatRupiah(item.total_rp || 0)}</span></div>
+                        <div class="bkpm-tt-row"><span class="bkpm-tt-k">PMA</span><span class="bkpm-tt-v mono" style="color:#a7f3d0">${formatRupiah(item.pma_rp || 0)}</span></div>
+                        <div class="bkpm-tt-row"><span class="bkpm-tt-k">PMDN</span><span class="bkpm-tt-v mono" style="color:#fed7aa">${formatRupiah(item.pmdn_rp || 0)}</span></div>
+                    `;
+                    tooltipEl.style.display = 'block';
+                    positionTooltip(e);
+                }
+            });
+
+            grp.addEventListener('mousemove', e => {
+                positionTooltip(e);
+            });
+
+            grp.addEventListener('mouseleave', () => {
+                const isSelected = selectedSector && selectedSector.sektor === item.sektor;
+                if (rect) {
+                    rect.setAttribute('fill', 'url(#bkpmBarGrad)');
+                    if (isSelected) rect.setAttribute('filter', 'url(#bkpmGlow)');
+                    else rect.removeAttribute('filter');
+                }
+                if (pin) {
+                    pin.setAttribute('opacity', isSelected ? '1' : '0');
+                }
+                if (tooltipEl) tooltipEl.style.display = 'none';
+
+                // Restore selected sector in detail card
+                if (selectedSector) updateDetailCard(selectedSector);
+            });
+
+            grp.addEventListener('click', () => {
+                selectedSector = item;
+                updateDetailCard(item);
+                highlightChartBar(item.sektor);
+
+                // Highlight table row and scroll into view
+                if (tableBody) {
+                    tableBody.querySelectorAll('tr').forEach(r => r.classList.remove('active'));
+                    const tr = tableBody.querySelector(`tr[data-sektor="${CSS.escape(item.sektor)}"]`);
+                    if (tr) {
+                        tr.classList.add('active');
+                        tr.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    }
+                }
+            });
+        });
+    }
+
+    function positionTooltip(e) {
+        if (!tooltipEl) return;
+        const pad = 14;
+        let left = e.pageX + pad;
+        let top = e.pageY - 30;
+
+        // Screen boundary guards
+        const ttWidth = 260;
+        if (left + ttWidth > window.innerWidth) {
+            left = e.pageX - ttWidth - pad;
+        }
+        tooltipEl.style.left = `${Math.max(10, left)}px`;
+        tooltipEl.style.top = `${Math.max(10, top)}px`;
+    }
+
+    // Trigger initial render
+    renderView();
 }
