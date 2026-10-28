@@ -3258,18 +3258,45 @@ function renderBandara(r) {
         if (bdPengelola) bdPengelola.textContent = item.pengelola || 'Kemenhub';
         if (bdTkbn) bdTkbn.textContent = item.TKBN || 'Tidak';
 
+        // Check if item is local to active region
+        const cleanTargetKab = (r && r.kabkota ? r.kabkota : '')
+            .toUpperCase()
+            .replace(/^(KABUPATEN|KOTA)\s+/, '')
+            .trim();
+        const itemKab = (item && item.kabupaten ? item.kabupaten : '')
+            .toUpperCase()
+            .replace(/^(KABUPATEN|KOTA)\s+/, '')
+            .trim();
+        const isLocal = cleanTargetKab && itemKab && (cleanTargetKab === itemKab || itemKab.includes(cleanTargetKab) || cleanTargetKab.includes(itemKab));
+
         // Distance estimation
         const distKm = (item.lat && item.lng && r.lat && r.lng)
             ? (haversineDistance(item.lat, item.lng, r.lat, r.lng)).toFixed(1)
             : '16.7';
         if (bdJarak) bdJarak.textContent = `~${distKm} km`;
 
+        // Update Scope Badge
+        const bdBadge = document.getElementById('bdScopeBadge');
+        if (bdBadge) {
+            if (isLocal) {
+                bdBadge.className = 'status-pill bandara-badge-local';
+                bdBadge.textContent = '✓ Bandara Wilayah Ini';
+            } else {
+                bdBadge.className = 'status-pill bandara-badge-nearest';
+                bdBadge.textContent = `✈ Bandara Regional (~${distKm} km)`;
+            }
+        }
+
         if (bdGmaps) {
             bdGmaps.href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(item.nama_bandar_udara + ' ' + (item.kabupaten || ''))}`;
         }
 
         if (bdDesc) {
-            bdDesc.textContent = `Bandar Udara ${item.nama_bandar_udara} merupakan infrastruktur transportasi udara di ${item.kabupaten}, ${item.provinsi} yang melayani penerbangan ${item.penggunaan ? item.penggunaan.toLowerCase() : 'domestik'} di bawah kewenangan ${item.pengelola}.`;
+            if (isLocal) {
+                bdDesc.textContent = `Bandar Udara ${item.nama_bandar_udara} merupakan infrastruktur transportasi udara utama di ${item.kabupaten}, ${item.provinsi} yang melayani penerbangan ${item.penggunaan ? item.penggunaan.toLowerCase() : 'domestik'} di bawah kewenangan ${item.pengelola}.`;
+            } else {
+                bdDesc.textContent = `Wilayah ${r.kabkota || 'ini'} tidak memiliki bandara komersial sendiri. Akses penerbangan udara terdekat dilayani oleh Bandar Udara ${item.nama_bandar_udara} di ${item.kabupaten}, ${item.provinsi} dengan estimasi jarak udara ~${distKm} km.`;
+            }
         }
 
         // Mini Map Update
@@ -3343,29 +3370,41 @@ function renderBandara(r) {
 
         const bounds = [];
 
+        const cleanTargetKab = (r && r.kabkota ? r.kabkota : '')
+            .toUpperCase()
+            .replace(/^(KABUPATEN|KOTA)\s+/, '')
+            .trim();
+
         filtered.forEach(item => {
             if (typeof item.lat === 'number' && typeof item.lng === 'number' && !isNaN(item.lat) && !isNaN(item.lng)) {
                 const latLng = [item.lat, item.lng];
                 bounds.push(latLng);
 
+                const itemKab = (item.kabupaten || '').toUpperCase().replace(/^(KABUPATEN|KOTA)\s+/, '').trim();
+                const isItemLocal = cleanTargetKab && itemKab && (cleanTargetKab === itemKab || itemKab.includes(cleanTargetKab) || cleanTargetKab.includes(itemKab));
+
                 // Custom SVG Plane Marker Icon
                 const isInter = (item.penggunaan || '').toLowerCase().includes('internasional');
-                const markerColor = isInter ? '#0d9488' : '#2563eb';
+                const markerColor = isItemLocal ? '#0d9488' : (isInter ? '#0284c7' : '#2563eb');
+                const markerSize = isItemLocal ? 28 : 26;
+                const markerBorder = isItemLocal ? '2.5px solid #ffffff' : '2px solid #ffffff';
+                const markerShadow = isItemLocal ? '0 3px 10px rgba(13,148,136,0.5)' : '0 3px 8px rgba(0,0,0,0.28)';
+
                 const iconHtml = `
-                    <div style="background:${markerColor};width:26px;height:26px;border-radius:50%;border:2px solid #ffffff;box-shadow:0 3px 8px rgba(0,0,0,0.28);display:grid;place-items:center;color:#ffffff;font-size:12px;cursor:pointer;transition:transform .14s ease" title="${escapeHtml(item.nama_bandar_udara)}">
+                    <div style="background:${markerColor};width:${markerSize}px;height:${markerSize}px;border-radius:50%;border:${markerBorder};box-shadow:${markerShadow};display:grid;place-items:center;color:#ffffff;font-size:12px;cursor:pointer;transition:transform .14s ease" title="${escapeHtml(item.nama_bandar_udara)}${isItemLocal ? ' (Bandara Wilayah Ini)' : ''}">
                         ✈
                     </div>
                 `;
                 const customIcon = L.divIcon({
                     className: 'bandara-custom-marker',
                     html: iconHtml,
-                    iconSize: [26, 26],
-                    iconAnchor: [13, 13]
+                    iconSize: [markerSize, markerSize],
+                    iconAnchor: [markerSize / 2, markerSize / 2]
                 });
 
                 const m = L.marker(latLng, { icon: customIcon }).addTo(markersLayer);
                 
-                m.bindTooltip(`<b>${escapeHtml(item.nama_bandar_udara)}</b><br><span style="font-size:10px">${escapeHtml(item.kabupaten || '')} (${item.IATA || item.ICAO || '–'})</span>`, {
+                m.bindTooltip(`<b>${escapeHtml(item.nama_bandar_udara)}</b>${isItemLocal ? ' <span style="color:#0d9488;font-weight:700">(Wilayah Ini)</span>' : ''}<br><span style="font-size:10px">${escapeHtml(item.kabupaten || '')} (${item.IATA || item.ICAO || '–'})</span>`, {
                     direction: 'top',
                     offset: [0, -10]
                 });
@@ -3384,9 +3423,33 @@ function renderBandara(r) {
             } catch (err) {
                 console.warn('bMap fitBounds error:', err);
             }
-            // Select first airport by default without triggering flyTo zoom conflicts
-            if (filtered[0]) {
-                selectBandara(filtered[0], null);
+            
+            // Smart Local-First Selection:
+            // 1. Prioritaskan bandara lokal di dalam batas kabupaten/kota aktif
+            let targetBandara = filtered.find(b => {
+                const bKab = (b.kabupaten || '').toUpperCase().replace(/^(KABUPATEN|KOTA)\s+/, '').trim();
+                return cleanTargetKab && bKab && (cleanTargetKab === bKab || bKab.includes(cleanTargetKab) || cleanTargetKab.includes(bKab));
+            });
+
+            // 2. Fallback: jika daerah tidak memiliki bandara sendiri, cari bandara dengan jarak haversine terdekat
+            if (!targetBandara && r && typeof r.lat === 'number' && typeof r.lng === 'number' && !isNaN(r.lat) && !isNaN(r.lng)) {
+                let minDist = Infinity;
+                filtered.forEach(b => {
+                    if (typeof b.lat === 'number' && typeof b.lng === 'number' && !isNaN(b.lat) && !isNaN(b.lng)) {
+                        const d = haversineDistance(b.lat, b.lng, r.lat, r.lng);
+                        if (d < minDist) {
+                            minDist = d;
+                            targetBandara = b;
+                        }
+                    }
+                });
+            }
+
+            // 3. Fallback akhir ke elemen pertama array
+            if (!targetBandara) targetBandara = filtered[0];
+
+            if (targetBandara) {
+                selectBandara(targetBandara, null);
             }
         } else {
             if (emptyState) emptyState.style.display = 'block';

@@ -4240,5 +4240,17 @@ button:active,
     background: rgba(37, 99, 235, 0.08);
 }
 
+/* Badge Status Cakupan Bandara (Chart 9.0) */
+.bandara-badge-local {
+    background: #ecfdf5 !important;
+    color: #065f46 !important;
+    border: 1px solid #a7f3d0 !important;
+}
+.bandara-badge-nearest {
+    background: #eff6ff !important;
+    color: #1e40af !important;
+    border: 1px solid #bfdbfe !important;
+}
+
 
 
