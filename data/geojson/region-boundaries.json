@@ -166,11 +166,6 @@
         "name": "Samudera Indonesia",
         "type": "water",
         "badge": "Perairan / Laut"
-      },
-      {
-        "name": "Aceh Selatan",
-        "type": "water",
-        "badge": "Perairan / Laut"
       }
     ]
   },
@@ -219,9 +214,9 @@
     "name": "ACEH TENGGARA",
     "prov": "ACEH",
     "u": "Gayo Lues",
-    "s": "Subussalam, Aceh Selatan dan Tanah Karo",
+    "s": "Subussalam",
     "t": "Langkat",
-    "b": "Aceh Selatan dan Subussalam",
+    "b": "Aceh Selatan",
     "e": null,
     "borders": [
       {
@@ -253,16 +248,6 @@
         "name": "Kabupaten Langkat",
         "type": "kabupaten",
         "badge": "Kabupaten"
-      },
-      {
-        "name": "Subussalam, Aceh Selatan dan Tanah Karo",
-        "type": "water",
-        "badge": "Perairan / Laut"
-      },
-      {
-        "name": "Aceh Selatan dan Subussalam",
-        "type": "water",
-        "badge": "Perairan / Laut"
       }
     ]
   },
@@ -511,9 +496,9 @@
     "name": "GAYO LUES",
     "prov": "ACEH",
     "u": "Kabupaten Aceh Tengah",
-    "s": "Kabupaten Aceh Selatan, Aceh Tenggara dan Aceh Barat Daya",
+    "s": "Kabupaten Aceh Selatan",
     "t": "Kabupaten Aceh Tamiang",
-    "b": "Kabupaten Aceh Barat Daya, Kabupaten Nagan Raya dan Kabupaten Aceh Selatan",
+    "b": "Kabupaten Aceh Barat Daya",
     "e": null,
     "borders": [
       {
@@ -555,16 +540,6 @@
         "name": "Kabupaten Aceh Selatan",
         "type": "kabupaten",
         "badge": "Kabupaten"
-      },
-      {
-        "name": "Kabupaten Aceh Selatan, Aceh Tenggara dan Aceh Barat Daya",
-        "type": "water",
-        "badge": "Perairan / Laut"
-      },
-      {
-        "name": "Kabupaten Aceh Barat Daya, Kabupaten Nagan Raya dan Kabupaten Aceh Selatan",
-        "type": "water",
-        "badge": "Perairan / Laut"
       }
     ]
   },
@@ -882,9 +857,9 @@
         "badge": "Kabupaten"
       },
       {
-        "name": "Kabupaten Aceh Selatan",
-        "type": "water",
-        "badge": "Perairan / Laut"
+        "name": "Kabupaten Simalungun",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
       }
     ]
   },
@@ -957,6 +932,16 @@
         "name": "Kabupaten Pakpak Barat",
         "type": "kabupaten",
         "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Tapanuli Utara",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Toba Samosir",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
       }
     ]
   },
@@ -1003,6 +988,11 @@
         "name": "Kabupaten Tapanuli Selatan",
         "type": "kabupaten",
         "badge": "Kabupaten"
+      },
+      {
+        "name": "Kota Padangsidimpuan",
+        "type": "kota",
+        "badge": "Kota"
       }
     ]
   },
@@ -1012,7 +1002,7 @@
     "u": "Kabupaten Padang Lawas Utara",
     "s": "Kabupaten Pasaman",
     "t": "Kabupaten Rokan Hulu",
-    "b": "Kabupaten Mandailing Natal dan Kabupaten Tapanuli Selatan",
+    "b": "Kabupaten Mandailing Natal",
     "e": null,
     "borders": [
       {
@@ -1039,11 +1029,6 @@
         "name": "Kabupaten Tapanuli Selatan",
         "type": "kabupaten",
         "badge": "Kabupaten"
-      },
-      {
-        "name": "Kabupaten Mandailing Natal dan Kabupaten Tapanuli Selatan",
-        "type": "water",
-        "badge": "Perairan / Laut"
       }
     ]
   },
@@ -1070,6 +1055,11 @@
         "name": "Kabupaten Padang Lawas Utara",
         "type": "kabupaten",
         "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Rokan Hulu",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
       }
     ]
   },
@@ -1084,6 +1074,11 @@
     "borders": [
       {
         "name": "Kabupaten Tapanuli Selatan",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Padang Lawas Utara",
         "type": "kabupaten",
         "badge": "Kabupaten"
       }
@@ -1128,7 +1123,7 @@
   "32": {
     "name": "MANDAILING NATAL",
     "prov": "SUMATERA UTARA",
-    "u": "Kabupaten Tapanuli Selatan dan Padang Lawas",
+    "u": "Kabupaten Tapanuli Selatan",
     "s": "Provinsi Sumatera Barat",
     "t": "Provinsi Sumatera Barat",
     "b": "Samudera Hindia",
@@ -1153,11 +1148,6 @@
         "name": "Kabupaten Tapanuli Selatan",
         "type": "kabupaten",
         "badge": "Kabupaten"
-      },
-      {
-        "name": "Kabupaten Tapanuli Selatan dan Padang Lawas",
-        "type": "water",
-        "badge": "Perairan / Laut"
       },
       {
         "name": "Samudera Hindia",
@@ -1296,6 +1286,11 @@
         "name": "Kabupaten Toba Samosir",
         "type": "kabupaten",
         "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Samosir",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
       }
     ]
   },
@@ -1307,13 +1302,54 @@
     "t": "Kabupaten Labuhan Batu",
     "b": "Danau Toba",
     "e": null,
-    "borders": []
+    "borders": [
+      {
+        "name": "Kabupaten Asahan",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Labuhanbatu Utara",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Lake Toba",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Simalungun",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Tapanuli Utara",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Samosir",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Humbang Hasundutan",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Danau Toba",
+        "type": "water",
+        "badge": "Perairan / Laut"
+      }
+    ]
   },
   "37": {
     "name": "LABUHANBATU",
     "prov": "SUMATERA UTARA",
     "u": "Selat Malaka dan Kabupaten Labuhanbatu Utara",
-    "s": "Kabupaten Labuhanbatu Selatan dan Padang Lawas Utara",
+    "s": "Kabupaten Labuhanbatu Selatan",
     "t": "Provinsi Riau",
     "b": "Kabupaten Labuhanbatu Utara",
     "e": null,
@@ -1340,11 +1376,6 @@
       },
       {
         "name": "Selat Malaka dan Kabupaten Labuhanbatu Utara",
-        "type": "water",
-        "badge": "Perairan / Laut"
-      },
-      {
-        "name": "Kabupaten Labuhanbatu Selatan dan Padang Lawas Utara",
         "type": "water",
         "badge": "Perairan / Laut"
       }
@@ -1437,6 +1468,11 @@
       },
       {
         "name": "Kabupaten Toba Samosir",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Dairi",
         "type": "kabupaten",
         "badge": "Kabupaten"
       }
@@ -1603,6 +1639,11 @@
         "name": "Kabupaten Tapanuli Utara",
         "type": "kabupaten",
         "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Toba Samosir",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
       }
     ]
   },
@@ -1614,7 +1655,38 @@
     "t": "Kabupaten Samosir",
     "b": "Kabupaten Aceh Singkil",
     "e": null,
-    "borders": []
+    "borders": [
+      {
+        "name": "Kabupaten Aceh Singkil",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kota Subulussalam",
+        "type": "kota",
+        "badge": "Kota"
+      },
+      {
+        "name": "Kabupaten Dairi",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Humbang Hasundutan",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Samosir",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Tapanuli Tengah",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      }
+    ]
   },
   "45": {
     "name": "SERDANG BEDAGAI",
@@ -1880,11 +1952,6 @@
         "badge": "Kabupaten"
       },
       {
-        "name": "Kabupaten Nias Barat Selatan",
-        "type": "water",
-        "badge": "Perairan / Laut"
-      },
-      {
         "name": "Samudera Hindia",
         "type": "water",
         "badge": "Perairan / Laut"
@@ -1971,6 +2038,11 @@
         "name": "Kabupaten Solok",
         "type": "kabupaten",
         "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Bungo",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
       }
     ]
   },
@@ -1980,7 +2052,7 @@
     "u": "Provinsi Riau",
     "s": "Provinsi Jambi",
     "t": "Provinsi Jambi",
-    "b": "Kabupaten Solok dan Solok Selatan",
+    "b": "Kabupaten Solok",
     "e": null,
     "borders": [
       {
@@ -2017,11 +2089,6 @@
         "name": "Kabupaten Kerinci",
         "type": "kabupaten",
         "badge": "Kabupaten"
-      },
-      {
-        "name": "Kabupaten Solok dan Solok Selatan",
-        "type": "water",
-        "badge": "Perairan / Laut"
       }
     ]
   },
@@ -2077,7 +2144,7 @@
     "prov": "SUMATERA BARAT",
     "u": "Kota Padang",
     "s": "Provinsi Bengkulu",
-    "t": "Kabupaten Solok, Solok Selatan, & Kerinci",
+    "t": "Kabupaten Solok",
     "b": "Samudera Hindia",
     "e": null,
     "borders": [
@@ -2112,11 +2179,6 @@
         "badge": "Kabupaten"
       },
       {
-        "name": "Kabupaten Solok, Solok Selatan, & Kerinci",
-        "type": "water",
-        "badge": "Perairan / Laut"
-      },
-      {
         "name": "Samudera Hindia",
         "type": "water",
         "badge": "Perairan / Laut"
@@ -2129,7 +2191,7 @@
     "u": "Kabupaten Tanah Datar",
     "s": "Kabupaten Solok Selatan",
     "t": "Kota Sawahlunto",
-    "b": "Padang dan Kabupaten Pesisir Selatan",
+    "b": "Kota Padang",
     "e": "KOTA SOLOK",
     "borders": [
       {
@@ -2181,11 +2243,6 @@
         "name": "Kabupaten Tanah Datar",
         "type": "kabupaten",
         "badge": "Kabupaten"
-      },
-      {
-        "name": "Padang dan Kabupaten Pesisir Selatan",
-        "type": "water",
-        "badge": "Perairan / Laut"
       }
     ]
   },
@@ -2319,6 +2376,11 @@
         "name": "Kabupaten Tanah Datar",
         "type": "kabupaten",
         "badge": "Kabupaten"
+      },
+      {
+        "name": "Kota Padang Panjang",
+        "type": "kota",
+        "badge": "Kota"
       },
       {
         "name": "Samudera Indonesia dan Kota Pariaman",
@@ -2547,6 +2609,11 @@
         "badge": "Kabupaten"
       },
       {
+        "name": "Kota Sawahlunto",
+        "type": "kota",
+        "badge": "Kota"
+      },
+      {
         "name": "Samudra Hindia",
         "type": "water",
         "badge": "Perairan / Samudra"
@@ -2576,6 +2643,11 @@
         "name": "Kabupaten Tanah Datar",
         "type": "kabupaten",
         "badge": "Kabupaten"
+      },
+      {
+        "name": "Kota Solok",
+        "type": "kota",
+        "badge": "Kota"
       }
     ]
   },
@@ -2590,6 +2662,11 @@
     "borders": [
       {
         "name": "Kabupaten Tanah Datar",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Padang Pariaman",
         "type": "kabupaten",
         "badge": "Kabupaten"
       }
@@ -2638,6 +2715,11 @@
     "borders": [
       {
         "name": "Kabupaten Bengkalis",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Siak",
         "type": "kabupaten",
         "badge": "Kabupaten"
       },
@@ -2830,6 +2912,11 @@
         "name": "Kabupaten Rokan Hulu",
         "type": "kabupaten",
         "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Kepulauan Meranti",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
       }
     ]
   },
@@ -2925,6 +3012,11 @@
       },
       {
         "name": "Kabupaten Siak",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Labuhanbatu Selatan",
         "type": "kabupaten",
         "badge": "Kabupaten"
       }
@@ -3216,7 +3308,7 @@
     "name": "BATANG HARI",
     "prov": "JAMBI",
     "u": "Kabupaten Tebo",
-    "s": "Kabupaten Sarolangun, Kabupaten Muaro Jambi, dan Provinsi Sumatera Selatan",
+    "s": "Kabupaten Sarolangun",
     "t": "Kabupaten Muaro Jambi",
     "b": "Kabupaten Tebo",
     "e": null,
@@ -3245,11 +3337,6 @@
         "name": "Kabupaten Musi Banyuasin",
         "type": "kabupaten",
         "badge": "Kabupaten"
-      },
-      {
-        "name": "Kabupaten Sarolangun, Kabupaten Muaro Jambi, dan Provinsi Sumatera Selatan",
-        "type": "water",
-        "badge": "Perairan / Laut"
       }
     ]
   },
@@ -3291,11 +3378,6 @@
         "name": "Kabupaten Musi Banyuasin",
         "type": "kabupaten",
         "badge": "Kabupaten"
-      },
-      {
-        "name": "Provinsi Sumatera Selatan",
-        "type": "water",
-        "badge": "Perairan / Laut"
       }
     ]
   },
@@ -3303,18 +3385,28 @@
     "name": "TANJUNG JABUNG TIMUR",
     "prov": "JAMBI",
     "u": "Laut China Selatan",
-    "s": "Provinsi Sumatera Selatan dan Kabupaten Muaro Jambi",
+    "s": "Provinsi Sumatera Selatan",
     "t": "Laut China Selatan",
     "b": "Kabupaten Muaro Jambi",
     "e": null,
     "borders": [
       {
-        "name": "Laut China Selatan",
-        "type": "water",
-        "badge": "Perairan / Laut"
+        "name": "Kabupaten Muaro Jambi",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
       },
       {
-        "name": "Provinsi Sumatera Selatan dan Kabupaten Muaro Jambi",
+        "name": "Kabupaten Tanjung Jabung B",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Banyu Asin",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Laut China Selatan",
         "type": "water",
         "badge": "Perairan / Laut"
       }
@@ -3329,6 +3421,31 @@
     "b": "Kabupaten Tebo",
     "e": null,
     "borders": [
+      {
+        "name": "Kabupaten Batang Hari",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Muaro Jambi",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Tanjung Jabung T",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Tebo",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Indragiri Hilir",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
       {
         "name": "Selat Berhala dan Kabupaten Tanjung Jabung Timur",
         "type": "water",
@@ -3420,6 +3537,11 @@
         "name": "Kabupaten Dharmasraya",
         "type": "kabupaten",
         "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Solok Selatan",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
       }
     ]
   },
@@ -3455,6 +3577,11 @@
       },
       {
         "name": "Kabupaten Pesisir Selatan",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Mukomuko",
         "type": "kabupaten",
         "badge": "Kabupaten"
       }
@@ -3628,6 +3755,11 @@
         "badge": "Kabupaten"
       },
       {
+        "name": "Kota Palembang",
+        "type": "kota",
+        "badge": "Kota"
+      },
+      {
         "name": "Selat Bangka dan Laut Jawa",
         "type": "water",
         "badge": "Perairan / Laut"
@@ -3638,7 +3770,7 @@
     "name": "MUARA ENIM",
     "prov": "SUMATERA SELATAN",
     "u": "Kota Palembang",
-    "s": "Ogan Komering Ulu dan Ogan Komerung Ulu Selatan",
+    "s": "Ogan Komering Ulu",
     "t": "Kabupaten Ogan Ilir",
     "b": "Kabupaten Musi Rawas",
     "e": null,
@@ -3699,9 +3831,9 @@
         "badge": "Kota"
       },
       {
-        "name": "Ogan Komering Ulu dan Ogan Komerung Ulu Selatan",
-        "type": "water",
-        "badge": "Perairan / Laut"
+        "name": "Kabupaten Bengkulu Selatan",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
       }
     ]
   },
@@ -3709,7 +3841,7 @@
     "name": "LAHAT",
     "prov": "SUMATERA SELATAN",
     "u": "Kabupaten Muara Enim",
-    "s": "Pagaralam dan Kab. Bengkulu Selatan Prov. Bengkulu",
+    "s": "Kota Pagaralam",
     "t": "Kabupaten Muara Enim",
     "b": "Kabupaten Empat Lawang",
     "e": null,
@@ -3748,11 +3880,6 @@
         "name": "Kabupaten Kaur",
         "type": "kabupaten",
         "badge": "Kabupaten"
-      },
-      {
-        "name": "Pagaralam dan Kab. Bengkulu Selatan Prov. Bengkulu",
-        "type": "water",
-        "badge": "Perairan / Laut"
       }
     ]
   },
@@ -3905,7 +4032,7 @@
     "u": "Kabupaten Ogan Komering Ulu",
     "s": "Kabupaten Lampung Barat",
     "t": "Kabupaten Ogan Komering Ulu Timur",
-    "b": "Bengkulu Selatan Prov. Bengkulu, Kab. Muara Enim",
+    "b": "Kabupaten Bengkulu Selatan Prov. Bengkulu",
     "e": null,
     "borders": [
       {
@@ -3937,11 +4064,6 @@
         "name": "Kabupaten Ogan Komering Ulu Timur",
         "type": "kabupaten",
         "badge": "Kabupaten"
-      },
-      {
-        "name": "Bengkulu Selatan Prov. Bengkulu, Kab. Muara Enim",
-        "type": "water",
-        "badge": "Perairan / Laut"
       }
     ]
   },
@@ -3949,7 +4071,7 @@
     "name": "OGAN KOMERING ULU TIMUR",
     "prov": "SUMATERA SELATAN",
     "u": "Kabupaten Ogan Komering Ilir",
-    "s": "Ogan Komering Ulu Selatan",
+    "s": "Kabupaten Ogan Komering Ulu Selatan",
     "t": "Kabupaten Ogan Komering Ilir",
     "b": "Kabupaten Ogan Komering Ulu",
     "e": null,
@@ -3978,11 +4100,6 @@
         "name": "Kabupaten Ogan Komering Ulu Selatan",
         "type": "kabupaten",
         "badge": "Kabupaten"
-      },
-      {
-        "name": "Ogan Komering Ulu Selatan",
-        "type": "water",
-        "badge": "Perairan / Laut"
       }
     ]
   },
@@ -3994,7 +4111,73 @@
     "t": "Kabupaten Muara Enim",
     "b": "Kabupaten Musi Rawas",
     "e": null,
-    "borders": []
+    "borders": [
+      {
+        "name": "Kabupaten Kaur",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Banyu Asin",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Lahat",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Musi Banyuasin",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Musi Rawas",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Ogan Ilir",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Ogan Komering Ulu",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Ogan Komering Ulu Selatan",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kota Palembang",
+        "type": "kota",
+        "badge": "Kota"
+      },
+      {
+        "name": "Kota Prabumulih",
+        "type": "kota",
+        "badge": "Kota"
+      },
+      {
+        "name": "Kota Pagar Alam",
+        "type": "kota",
+        "badge": "Kota"
+      },
+      {
+        "name": "Kabupaten Bengkulu Selatan",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Muara Enim",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      }
+    ]
   },
   "111": {
     "name": "MUSI RAWAS UTARA",
@@ -4004,7 +4187,58 @@
     "t": "Kabupaten Musi Banyuasin",
     "b": "Prov. Bengkulu",
     "e": null,
-    "borders": []
+    "borders": [
+      {
+        "name": "Kabupaten Lebong",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Rejang Lebong",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Merangin",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Sarolangun",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Empat Lawang",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Lahat",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kota Lubuklinggau",
+        "type": "kota",
+        "badge": "Kota"
+      },
+      {
+        "name": "Kabupaten Muara Enim",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Musi Banyuasin",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Musi Rawas",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      }
+    ]
   },
   "112": {
     "name": "KOTA PALEMBANG",
@@ -4027,6 +4261,11 @@
       },
       {
         "name": "Kabupaten Ogan Ilir",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Ogan Komering Ilir",
         "type": "kabupaten",
         "badge": "Kabupaten"
       }
@@ -4140,6 +4379,11 @@
         "badge": "Kota"
       },
       {
+        "name": "Kabupaten Muara Enim",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
         "name": "Samudra Hindia",
         "type": "water",
         "badge": "Perairan / Samudra"
@@ -4201,9 +4445,9 @@
     "name": "BENGKULU UTARA",
     "prov": "BENGKULU",
     "u": "Kota Bengkulu",
-    "s": "Samudra Hindia",
+    "s": "Kabupaten Lampung Barat",
     "t": "Kota Bengkulu",
-    "b": "Kawasan Barat Prov. BENGKULU",
+    "b": null,
     "e": null,
     "borders": [
       {
@@ -4358,6 +4602,11 @@
         "name": "Kabupaten Pesisir Selatan",
         "type": "kabupaten",
         "badge": "Kabupaten"
+      },
+      {
+        "name": "Kota Sungai Penuh",
+        "type": "kota",
+        "badge": "Kota"
       },
       {
         "name": "Samudra Hindia",
@@ -4960,6 +5209,11 @@
         "badge": "Kabupaten"
       },
       {
+        "name": "Kota Metro",
+        "type": "kota",
+        "badge": "Kota"
+      },
+      {
         "name": "Samudra Hindia",
         "type": "water",
         "badge": "Perairan / Samudra"
@@ -5015,16 +5269,51 @@
   "138": {
     "name": "PESISIR BARAT",
     "prov": "LAMPUNG",
-    "u": "Laut/Perairan Utara Prov. LAMPUNG",
-    "s": "Samudra Hindia",
-    "t": "Kawasan Timur Prov. LAMPUNG",
-    "b": "Kawasan Barat Prov. LAMPUNG",
+    "u": "Kabupaten Ogan Komering Ulu Selatan",
+    "s": "Kabupaten Pandeglang",
+    "t": "Kabupaten Tanggamus",
+    "b": "Kabupaten Kaur",
     "e": null,
     "borders": [
+      {
+        "name": "Kabupaten Kaur",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Lampung Tengah",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Lampung Utara",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Tanggamus",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Way Kanan",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Ogan Komering Ulu Selatan",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
       {
         "name": "Samudra Hindia",
         "type": "water",
         "badge": "Perairan / Samudra"
+      },
+      {
+        "name": "Kabupaten Lampung Barat",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
       }
     ]
   },
@@ -5079,6 +5368,11 @@
         "badge": "Kabupaten"
       },
       {
+        "name": "Kabupaten Pesawaran",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
         "name": "Samudra Hindia",
         "type": "water",
         "badge": "Perairan / Samudra"
@@ -5088,7 +5382,7 @@
   "141": {
     "name": "BANGKA",
     "prov": "KEPULAUAN BANGKA BELITUNG",
-    "u": "Laut/Perairan Utara Prov. KEPULAUAN BANGKA BELITUNG",
+    "u": "Kabupaten Lingga",
     "s": "Kota Pangkalpinang",
     "t": "Kota Pangkalpinang",
     "b": "Kabupaten Bangka Barat",
@@ -5188,9 +5482,9 @@
   "146": {
     "name": "BELITUNG TIMUR",
     "prov": "KEPULAUAN BANGKA BELITUNG",
-    "u": "Laut/Perairan Utara Prov. KEPULAUAN BANGKA BELITUNG",
+    "u": "Kabupaten Kayong Utara",
     "s": "Laut/Perairan Selatan Prov. KEPULAUAN BANGKA BELITUNG",
-    "t": "Kawasan Timur Prov. KEPULAUAN BANGKA BELITUNG",
+    "t": "Kabupaten Kayong Utara",
     "b": "Kabupaten Belitung",
     "e": null,
     "borders": [
@@ -5230,14 +5524,35 @@
     "t": "Kota Batam",
     "b": "Kabupaten Kepulauan Meranti",
     "e": null,
-    "borders": []
+    "borders": [
+      {
+        "name": "Kota Batam",
+        "type": "kota",
+        "badge": "Kota"
+      },
+      {
+        "name": "Kota Tanjungpinang",
+        "type": "kota",
+        "badge": "Kota"
+      },
+      {
+        "name": "Kabupaten Kepulauan Meranti",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Selat Malaka",
+        "type": "water",
+        "badge": "Perairan / Selat"
+      }
+    ]
   },
   "149": {
     "name": "BINTAN",
     "prov": "KEPULAUAN RIAU",
-    "u": "Laut/Perairan Utara Prov. KEPULAUAN RIAU",
+    "u": "Kabupaten Kepulauan Anambas",
     "s": "Kabupaten Lingga",
-    "t": "Kawasan Timur Prov. KEPULAUAN RIAU",
+    "t": null,
     "b": "Kota Tanjungpinang",
     "e": null,
     "borders": [
@@ -5252,11 +5567,27 @@
     "name": "NATUNA",
     "prov": "KEPULAUAN RIAU",
     "u": "Laut/Perairan Utara Prov. KEPULAUAN RIAU",
-    "s": "Laut/Perairan Selatan Prov. KEPULAUAN RIAU",
-    "t": "Kawasan Timur Prov. KEPULAUAN RIAU",
-    "b": "Kawasan Barat Prov. KEPULAUAN RIAU",
+    "s": "Kabupaten Sambas",
+    "t": null,
+    "b": "Kabupaten Kepulauan Anambas",
     "e": null,
-    "borders": []
+    "borders": [
+      {
+        "name": "Kabupaten Kepulauan Anambas",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Laut Natuna Utara",
+        "type": "water",
+        "badge": "Perairan / Laut"
+      },
+      {
+        "name": "Laut Natuna",
+        "type": "water",
+        "badge": "Perairan / Laut"
+      }
+    ]
   },
   "151": {
     "name": "LINGGA",
@@ -5266,17 +5597,49 @@
     "t": "Kabupaten Bintan",
     "b": "Kabupaten Tanjung Jabung T",
     "e": null,
-    "borders": []
+    "borders": [
+      {
+        "name": "Kota Tanjungpinang",
+        "type": "kota",
+        "badge": "Kota"
+      },
+      {
+        "name": "Kota Batam",
+        "type": "kota",
+        "badge": "Kota"
+      },
+      {
+        "name": "Laut Natuna",
+        "type": "water",
+        "badge": "Perairan / Laut"
+      }
+    ]
   },
   "152": {
     "name": "KEPULAUAN ANAMBAS",
     "prov": "KEPULAUAN RIAU",
     "u": "Laut/Perairan Utara Prov. KEPULAUAN RIAU",
-    "s": "Laut/Perairan Selatan Prov. KEPULAUAN RIAU",
-    "t": "Kawasan Timur Prov. KEPULAUAN RIAU",
-    "b": "Kawasan Barat Prov. KEPULAUAN RIAU",
+    "s": "Kabupaten Bintan",
+    "t": "Kabupaten Natuna",
+    "b": null,
     "e": null,
-    "borders": []
+    "borders": [
+      {
+        "name": "Kabupaten Natuna",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Laut Natuna Utara",
+        "type": "water",
+        "badge": "Perairan / Laut"
+      },
+      {
+        "name": "Laut Natuna",
+        "type": "water",
+        "badge": "Perairan / Laut"
+      }
+    ]
   },
   "153": {
     "name": "KOTA BATAM",
@@ -5286,7 +5649,28 @@
     "t": "Kota Tanjungpinang",
     "b": "Kabupaten Karimun",
     "e": null,
-    "borders": []
+    "borders": [
+      {
+        "name": "Kota Tanjungpinang",
+        "type": "kota",
+        "badge": "Kota"
+      },
+      {
+        "name": "Kabupaten Bintan",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Karimun",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Selat Singapura",
+        "type": "water",
+        "badge": "Perairan / Selat"
+      }
+    ]
   },
   "154": {
     "name": "KOTA TANJUNG PINANG",
@@ -5309,8 +5693,8 @@
     "prov": "DKI JAKARTA",
     "u": "Laut Jawa",
     "s": "Laut/Perairan Selatan Prov. DKI JAKARTA",
-    "t": "Kawasan Timur Prov. DKI JAKARTA",
-    "b": "Kawasan Barat Prov. DKI JAKARTA",
+    "t": null,
+    "b": null,
     "e": null,
     "borders": [
       {
@@ -5406,6 +5790,11 @@
         "badge": "Kabupaten"
       },
       {
+        "name": "Kabupaten Bogor",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
         "name": "Laut Jawa",
         "type": "water",
         "badge": "Perairan / Laut"
@@ -5483,6 +5872,11 @@
         "badge": "Kota"
       },
       {
+        "name": "Kota Tangerang Selatan",
+        "type": "kota",
+        "badge": "Kota"
+      },
+      {
         "name": "Laut Jawa",
         "type": "water",
         "badge": "Perairan / Laut"
@@ -5525,6 +5919,11 @@
       },
       {
         "name": "Kota Bekasi",
+        "type": "kota",
+        "badge": "Kota"
+      },
+      {
+        "name": "Kota Tangerang",
         "type": "kota",
         "badge": "Kota"
       },
@@ -5626,6 +6025,16 @@
         "badge": "Kabupaten"
       },
       {
+        "name": "Kota Bandung",
+        "type": "kota",
+        "badge": "Kota"
+      },
+      {
+        "name": "Kabupaten Bandung Barat",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
         "name": "Samudra Hindia",
         "type": "water",
         "badge": "Perairan / Samudra"
@@ -5673,6 +6082,11 @@
       },
       {
         "name": "Kabupaten Waduk Cirata",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Sumedang",
         "type": "kabupaten",
         "badge": "Kabupaten"
       },
@@ -5770,6 +6184,21 @@
       },
       {
         "name": "Kabupaten Sukabumi",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Purwakarta",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kota Jakarta Timur",
+        "type": "kota",
+        "badge": "Kota"
+      },
+      {
+        "name": "Kabupaten Serang",
         "type": "kabupaten",
         "badge": "Kabupaten"
       },
@@ -6086,6 +6515,11 @@
         "badge": "Kabupaten"
       },
       {
+        "name": "Kota Cirebon",
+        "type": "kota",
+        "badge": "Kota"
+      },
+      {
         "name": "Samudra Hindia",
         "type": "water",
         "badge": "Perairan / Samudra"
@@ -6250,6 +6684,11 @@
         "badge": "Kabupaten"
       },
       {
+        "name": "Kabupaten Bogor",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
         "name": "Samudra Hindia",
         "type": "water",
         "badge": "Perairan / Samudra"
@@ -6259,7 +6698,7 @@
   "177": {
     "name": "KARAWANG",
     "prov": "JAWA BARAT",
-    "u": "Laut Jawa",
+    "u": "Kabupaten Lampung Timur",
     "s": "Kabupaten Purwakarta",
     "t": "Kabupaten Subang",
     "b": "Kabupaten Bekasi",
@@ -6341,16 +6780,51 @@
   "179": {
     "name": "PANGANDARAN",
     "prov": "JAWA BARAT",
-    "u": "Laut Jawa",
+    "u": "Kota Banjar",
     "s": "Samudra Hindia",
-    "t": "Kawasan Timur Prov. JAWA BARAT",
-    "b": "Kawasan Barat Prov. JAWA BARAT",
+    "t": "Kota Banjar",
+    "b": "Kota Tasikmalaya",
     "e": null,
     "borders": [
+      {
+        "name": "Kota Banjar",
+        "type": "kota",
+        "badge": "Kota"
+      },
+      {
+        "name": "Kota Tasikmalaya",
+        "type": "kota",
+        "badge": "Kota"
+      },
+      {
+        "name": "Kabupaten Kuningan",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Majalengka",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Tasikmalaya",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Cilacap",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
       {
         "name": "Samudra Hindia",
         "type": "water",
         "badge": "Perairan / Samudra"
+      },
+      {
+        "name": "Kabupaten Ciamis",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
       }
     ]
   },
@@ -6421,6 +6895,11 @@
         "badge": "Kota"
       },
       {
+        "name": "Kabupaten Sumedang",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
         "name": "Samudra Hindia",
         "type": "water",
         "badge": "Perairan / Samudra"
@@ -6438,6 +6917,11 @@
     "borders": [
       {
         "name": "Kabupaten Cirebon",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Kuningan",
         "type": "kabupaten",
         "badge": "Kabupaten"
       },
@@ -6766,6 +7250,11 @@
         "badge": "Kabupaten"
       },
       {
+        "name": "Kabupaten Pati",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
         "name": "Samudra Hindia",
         "type": "water",
         "badge": "Perairan / Samudra"
@@ -7057,6 +7546,11 @@
         "badge": "Kabupaten"
       },
       {
+        "name": "Kabupaten Temanggung",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
         "name": "Samudra Hindia",
         "type": "water",
         "badge": "Perairan / Samudra"
@@ -7300,6 +7794,11 @@
         "name": "Kabupaten Sleman",
         "type": "kabupaten",
         "badge": "Kabupaten"
+      },
+      {
+        "name": "Kota Salatiga",
+        "type": "kota",
+        "badge": "Kota"
       },
       {
         "name": "Samudra Hindia",
@@ -7568,6 +8067,11 @@
         "badge": "Kabupaten"
       },
       {
+        "name": "Kabupaten Demak",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
         "name": "Kabupaten Jepara dan Laut Jawa",
         "type": "water",
         "badge": "Perairan / Laut"
@@ -7632,6 +8136,11 @@
     "borders": [
       {
         "name": "Kabupaten Semarang",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Boyolali",
         "type": "kabupaten",
         "badge": "Kabupaten"
       }
@@ -7760,6 +8269,16 @@
         "badge": "Kabupaten"
       },
       {
+        "name": "Kabupaten Batang",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Banjarnegara",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
         "name": "Samudra Hindia",
         "type": "water",
         "badge": "Perairan / Samudra"
@@ -7843,6 +8362,11 @@
       },
       {
         "name": "Kabupaten Wonosobo",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Temanggung",
         "type": "kabupaten",
         "badge": "Kabupaten"
       },
@@ -8222,6 +8746,11 @@
         "badge": "Kabupaten"
       },
       {
+        "name": "Kabupaten Buleleng",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
         "name": "Samudra Hindia",
         "type": "water",
         "badge": "Perairan / Samudra"
@@ -8302,6 +8831,16 @@
         "name": "Kabupaten Nganjuk",
         "type": "kabupaten",
         "badge": "Kabupaten"
+      },
+      {
+        "name": "Kota Batu",
+        "type": "kota",
+        "badge": "Kota"
+      },
+      {
+        "name": "Kota Mojokerto",
+        "type": "kota",
+        "badge": "Kota"
       },
       {
         "name": "Samudra Hindia",
@@ -8586,6 +9125,11 @@
         "badge": "Kabupaten"
       },
       {
+        "name": "Kabupaten Kediri",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
         "name": "Samudra Hindia",
         "type": "water",
         "badge": "Perairan / Samudra"
@@ -8658,6 +9202,11 @@
         "badge": "Kabupaten"
       },
       {
+        "name": "Kota Blitar",
+        "type": "kota",
+        "badge": "Kota"
+      },
+      {
         "name": "Samudra Hindia",
         "type": "water",
         "badge": "Perairan / Samudra"
@@ -8692,6 +9241,11 @@
         "name": "Kabupaten Tulungagung",
         "type": "kabupaten",
         "badge": "Kabupaten"
+      },
+      {
+        "name": "Kota Batu",
+        "type": "kota",
+        "badge": "Kota"
       },
       {
         "name": "Samudra Hindia",
@@ -8736,6 +9290,16 @@
       },
       {
         "name": "Kabupaten Tulungagung",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Mojokerto",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Ponorogo",
         "type": "kabupaten",
         "badge": "Kabupaten"
       },
@@ -8832,6 +9396,11 @@
         "badge": "Kabupaten"
       },
       {
+        "name": "Kabupaten Pasuruan",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
         "name": "Samudra Hindia",
         "type": "water",
         "badge": "Perairan / Samudra"
@@ -8868,6 +9437,11 @@
         "badge": "Kabupaten"
       },
       {
+        "name": "Kabupaten Situbondo",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
         "name": "Samudra Hindia",
         "type": "water",
         "badge": "Perairan / Samudra"
@@ -8895,6 +9469,11 @@
       },
       {
         "name": "Kabupaten Probolinggo",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Jember",
         "type": "kabupaten",
         "badge": "Kabupaten"
       },
@@ -8996,6 +9575,11 @@
         "badge": "Kabupaten"
       },
       {
+        "name": "Kabupaten Lumajang",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
         "name": "Samudra Hindia",
         "type": "water",
         "badge": "Perairan / Samudra"
@@ -9028,6 +9612,11 @@
       },
       {
         "name": "Kota Surabaya",
+        "type": "kota",
+        "badge": "Kota"
+      },
+      {
+        "name": "Kota Mojokerto",
         "type": "kota",
         "badge": "Kota"
       },
@@ -9088,6 +9677,11 @@
         "badge": "Kabupaten"
       },
       {
+        "name": "Kabupaten Kediri",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
         "name": "Samudra Hindia",
         "type": "water",
         "badge": "Perairan / Samudra"
@@ -9139,6 +9733,11 @@
         "badge": "Kabupaten"
       },
       {
+        "name": "Kota Kediri",
+        "type": "kota",
+        "badge": "Kota"
+      },
+      {
         "name": "Samudra Hindia",
         "type": "water",
         "badge": "Perairan / Samudra"
@@ -9156,6 +9755,11 @@
     "borders": [
       {
         "name": "Kabupaten Kediri",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Nganjuk",
         "type": "kabupaten",
         "badge": "Kabupaten"
       },
@@ -9181,6 +9785,11 @@
         "badge": "Kabupaten"
       },
       {
+        "name": "Kabupaten Tulungagung",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
         "name": "Samudra Hindia",
         "type": "water",
         "badge": "Perairan / Samudra"
@@ -9200,6 +9809,11 @@
         "name": "Kabupaten Malang",
         "type": "kabupaten",
         "badge": "Kabupaten"
+      },
+      {
+        "name": "Kota Batu",
+        "type": "kota",
+        "badge": "Kota"
       },
       {
         "name": "Samudra Hindia",
@@ -9408,6 +10022,11 @@
         "badge": "Kota"
       },
       {
+        "name": "Kabupaten Bangkalan",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
         "name": "Samudra Hindia",
         "type": "water",
         "badge": "Perairan / Samudra"
@@ -9425,6 +10044,16 @@
     "borders": [
       {
         "name": "Kabupaten Mojokerto",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Sidoarjo",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Jombang",
         "type": "kabupaten",
         "badge": "Kabupaten"
       },
@@ -9486,6 +10115,21 @@
         "badge": "Kabupaten"
       },
       {
+        "name": "Kota Malang",
+        "type": "kota",
+        "badge": "Kota"
+      },
+      {
+        "name": "Kabupaten Jombang",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Blitar",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
         "name": "Samudra Hindia",
         "type": "water",
         "badge": "Perairan / Samudra"
@@ -9503,6 +10147,11 @@
     "borders": [
       {
         "name": "Kabupaten Sampang",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Gresik",
         "type": "kabupaten",
         "badge": "Kabupaten"
       },
@@ -9713,6 +10362,11 @@
         "badge": "Kabupaten"
       },
       {
+        "name": "Kabupaten Bogor",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
         "name": "Samudra Hindia",
         "type": "water",
         "badge": "Perairan / Samudra"
@@ -9745,6 +10399,11 @@
       },
       {
         "name": "Kota Jakarta Selatan",
+        "type": "kota",
+        "badge": "Kota"
+      },
+      {
+        "name": "Kota Jakarta Utara",
         "type": "kota",
         "badge": "Kota"
       },
@@ -9832,6 +10491,11 @@
         "badge": "Kota"
       },
       {
+        "name": "Kota Jakarta Barat",
+        "type": "kota",
+        "badge": "Kota"
+      },
+      {
         "name": "Samudra Hindia",
         "type": "water",
         "badge": "Perairan / Samudra"
@@ -9885,6 +10549,11 @@
       },
       {
         "name": "Kabupaten Jembrana",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Gianyar",
         "type": "kabupaten",
         "badge": "Kabupaten"
       },
@@ -9962,6 +10631,11 @@
       },
       {
         "name": "Kabupaten Klungkung",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Tabanan",
         "type": "kabupaten",
         "badge": "Kabupaten"
       },
@@ -10110,6 +10784,11 @@
         "badge": "Kabupaten"
       },
       {
+        "name": "Kabupaten Banyuwangi",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
         "name": "Samudra Hindia",
         "type": "water",
         "badge": "Perairan / Samudra"
@@ -10196,6 +10875,11 @@
         "name": "Kabupaten Lombok Utara",
         "type": "kabupaten",
         "badge": "Kabupaten"
+      },
+      {
+        "name": "Kota Mataram",
+        "type": "kota",
+        "badge": "Kota"
       },
       {
         "name": "Samudra Hindia",
@@ -10332,7 +11016,7 @@
   "290": {
     "name": "LOMBOK UTARA",
     "prov": "NUSA TENGGARA BARAT",
-    "u": "Laut/Perairan Utara Prov. NUSA TENGGARA BARAT",
+    "u": "Kabupaten Sumenep",
     "s": "Kabupaten Lombok Tengah",
     "t": "Kabupaten Lombok Timur",
     "b": "Kota Mataram",
@@ -10375,6 +11059,11 @@
         "badge": "Kabupaten"
       },
       {
+        "name": "Kabupaten Lombok Tengah",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
         "name": "Samudra Hindia",
         "type": "water",
         "badge": "Perairan / Samudra"
@@ -10405,8 +11094,8 @@
   "293": {
     "name": "SIKKA",
     "prov": "NUSA TENGGARA TIMUR",
-    "u": "Laut/Perairan Utara Prov. NUSA TENGGARA TIMUR",
-    "s": "Samudra Hindia",
+    "u": "Kabupaten Kepulauan Selayar",
+    "s": "Kabupaten Sabu Raijua",
     "t": "Kabupaten Flores Timur",
     "b": "Kabupaten Ende",
     "e": null,
@@ -10431,7 +11120,7 @@
   "294": {
     "name": "ENDE",
     "prov": "NUSA TENGGARA TIMUR",
-    "u": "Laut/Perairan Utara Prov. NUSA TENGGARA TIMUR",
+    "u": "Kabupaten Kepulauan Selayar",
     "s": "Kabupaten Sabu Raijua",
     "t": "Kabupaten Sikka",
     "b": "Kabupaten Nagekeo",
@@ -10469,6 +11158,11 @@
         "badge": "Kabupaten"
       },
       {
+        "name": "Kabupaten Sumba Tengah",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
         "name": "Samudra Hindia",
         "type": "water",
         "badge": "Perairan / Samudra"
@@ -10494,16 +11188,31 @@
   "297": {
     "name": "MALAKA",
     "prov": "NUSA TENGGARA TIMUR",
-    "u": "Laut/Perairan Utara Prov. NUSA TENGGARA TIMUR",
-    "s": "Samudra Hindia",
-    "t": "Kawasan Timur Prov. NUSA TENGGARA TIMUR",
-    "b": "Kawasan Barat Prov. NUSA TENGGARA TIMUR",
+    "u": "Kabupaten Alor",
+    "s": "Kabupaten Timor Tengah Selatan",
+    "t": null,
+    "b": "Kabupaten Timor Tengah Utara",
     "e": null,
     "borders": [
+      {
+        "name": "Kabupaten Timor Tengah Selatan",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Timor Tengah Utara",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
       {
         "name": "Samudra Hindia",
         "type": "water",
         "badge": "Perairan / Samudra"
+      },
+      {
+        "name": "Kabupaten Belu",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
       }
     ]
   },
@@ -10622,7 +11331,7 @@
     "u": "Ambenu (Timor Leste) dan Laut Sewu",
     "s": "Kabupaten Timor Tengah Selatan",
     "t": "Kabupaten Belu",
-    "b": "Kabupaten Kupang dan Timor Tengah Selatan",
+    "b": "Kabupaten Kupang",
     "e": null,
     "borders": [
       {
@@ -10642,11 +11351,6 @@
       },
       {
         "name": "Ambenu (Timor Leste) dan Laut Sewu",
-        "type": "water",
-        "badge": "Perairan / Laut"
-      },
-      {
-        "name": "Kabupaten Kupang dan Timor Tengah Selatan",
         "type": "water",
         "badge": "Perairan / Laut"
       }
@@ -10754,7 +11458,7 @@
   "307": {
     "name": "NGADA",
     "prov": "NUSA TENGGARA TIMUR",
-    "u": "Laut/Perairan Utara Prov. NUSA TENGGARA TIMUR",
+    "u": "Kabupaten Kepulauan Selayar",
     "s": "Kabupaten Sumba Timur",
     "t": "Kabupaten Nagekeo",
     "b": "Kabupaten Manggarai Timur",
@@ -10780,7 +11484,7 @@
   "308": {
     "name": "MANGGARAI",
     "prov": "NUSA TENGGARA TIMUR",
-    "u": "Laut/Perairan Utara Prov. NUSA TENGGARA TIMUR",
+    "u": "Kabupaten Kepulauan Selayar",
     "s": "Kabupaten Sumba Timur",
     "t": "Kabupaten Manggarai Timur",
     "b": "Kabupaten Manggarai Barat",
@@ -10822,7 +11526,7 @@
   "310": {
     "name": "MANGGARAI BARAT",
     "prov": "NUSA TENGGARA TIMUR",
-    "u": "Laut/Perairan Utara Prov. NUSA TENGGARA TIMUR",
+    "u": "Kabupaten Kepulauan Selayar",
     "s": "Kabupaten Sumba Tengah",
     "t": "Kabupaten Manggarai",
     "b": "Kota Bima",
@@ -10860,6 +11564,11 @@
         "badge": "Kabupaten"
       },
       {
+        "name": "Kabupaten Sumba Barat Daya",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
         "name": "Samudra Hindia",
         "type": "water",
         "badge": "Perairan / Samudra"
@@ -10869,7 +11578,7 @@
   "312": {
     "name": "NAGEKEO",
     "prov": "NUSA TENGGARA TIMUR",
-    "u": "Laut/Perairan Utara Prov. NUSA TENGGARA TIMUR",
+    "u": "Kabupaten Kepulauan Selayar",
     "s": "Kabupaten Sumba Timur",
     "t": "Kabupaten Ende",
     "b": "Kabupaten Ngada",
@@ -10916,7 +11625,7 @@
   "314": {
     "name": "MANGGARAI TIMUR",
     "prov": "NUSA TENGGARA TIMUR",
-    "u": "Laut/Perairan Utara Prov. NUSA TENGGARA TIMUR",
+    "u": "Kabupaten Kepulauan Selayar",
     "s": "Kabupaten Sumba Timur",
     "t": "Kabupaten Ngada",
     "b": "Kabupaten Manggarai",
@@ -10981,7 +11690,7 @@
     "u": "Kabupaten Kubu Raya",
     "s": "Kabupaten Sukamara",
     "t": "Kabupaten Ketapang",
-    "b": "Kawasan Barat Prov. KALIMANTAN BARAT",
+    "b": "Kabupaten Belitung Timur",
     "e": null,
     "borders": [
       {
@@ -10999,10 +11708,10 @@
   "317": {
     "name": "SAMBAS",
     "prov": "KALIMANTAN BARAT",
-    "u": "Laut/Perairan Utara Prov. KALIMANTAN BARAT",
+    "u": "Kabupaten Natuna",
     "s": "Kabupaten Bengkayang",
     "t": "Kabupaten Sanggau",
-    "b": "Kawasan Barat Prov. KALIMANTAN BARAT",
+    "b": null,
     "e": null,
     "borders": [
       {
@@ -11087,12 +11796,33 @@
   "320": {
     "name": "MEMPAWAH",
     "prov": "KALIMANTAN BARAT",
-    "u": "Laut/Perairan Utara Prov. KALIMANTAN BARAT",
-    "s": "Laut/Perairan Selatan Prov. KALIMANTAN BARAT",
-    "t": "Kawasan Timur Prov. KALIMANTAN BARAT",
-    "b": "Kawasan Barat Prov. KALIMANTAN BARAT",
+    "u": "Kota Singkawang",
+    "s": "Kota Pontianak",
+    "t": "Kabupaten Landak",
+    "b": null,
     "e": null,
-    "borders": []
+    "borders": [
+      {
+        "name": "Kabupaten Bengkayang",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kota Pontianak",
+        "type": "kota",
+        "badge": "Kota"
+      },
+      {
+        "name": "Kabupaten Kubu Raya",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Landak",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      }
+    ]
   },
   "321": {
     "name": "SANGGAU",
@@ -11181,6 +11911,11 @@
       },
       {
         "name": "Kabupaten Sukamara",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Seruyan",
         "type": "kabupaten",
         "badge": "Kabupaten"
       }
@@ -11295,7 +12030,7 @@
     "u": "Kota Pontianak",
     "s": "Kabupaten Kayong Utara",
     "t": "Kabupaten Sanggau",
-    "b": "Kawasan Barat Prov. KALIMANTAN BARAT",
+    "b": null,
     "e": null,
     "borders": [
       {
@@ -11336,7 +12071,7 @@
     "u": "Kabupaten Pontianak",
     "s": "Kabupaten Kubu Raya",
     "t": "Kabupaten Landak",
-    "b": "Kawasan Barat Prov. KALIMANTAN BARAT",
+    "b": null,
     "e": null,
     "borders": [
       {
@@ -11357,7 +12092,7 @@
     "u": "Kabupaten Sambas",
     "s": "Kabupaten Pontianak",
     "t": "Kabupaten Bengkayang",
-    "b": "Kawasan Barat Prov. KALIMANTAN BARAT",
+    "b": null,
     "e": null,
     "borders": [
       {
@@ -11448,7 +12183,7 @@
     "name": "KOTAWARINGIN BARAT",
     "prov": "KALIMANTAN TENGAH",
     "u": "Kabupaten Seruyan",
-    "s": "Laut/Perairan Selatan Prov. KALIMANTAN TENGAH",
+    "s": "Laut Jawa",
     "t": "Kabupaten Seruyan",
     "b": "Kabupaten Sukamara",
     "e": null,
@@ -11474,7 +12209,7 @@
     "name": "KOTAWARINGIN TIMUR",
     "prov": "KALIMANTAN TENGAH",
     "u": "Kabupaten Katingan",
-    "s": "Laut/Perairan Selatan Prov. KALIMANTAN TENGAH",
+    "s": "Kota Banjar Baru",
     "t": "Kabupaten Katingan",
     "b": "Kabupaten Seruyan",
     "e": null,
@@ -11529,6 +12264,11 @@
         "name": "Kabupaten Pulang Pisau",
         "type": "kabupaten",
         "badge": "Kabupaten"
+      },
+      {
+        "name": "Kota Palangka Raya",
+        "type": "kota",
+        "badge": "Kota"
       }
     ]
   },
@@ -11628,7 +12368,7 @@
     "name": "SUKAMARA",
     "prov": "KALIMANTAN TENGAH",
     "u": "Kabupaten Lamandau",
-    "s": "Laut/Perairan Selatan Prov. KALIMANTAN TENGAH",
+    "s": "Laut Jawa",
     "t": "Kota Kotawaringin Barat",
     "b": "Kabupaten Kayong Utara",
     "e": null,
@@ -11717,6 +12457,11 @@
       },
       {
         "name": "Kabupaten Lamandau",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Ketapang",
         "type": "kabupaten",
         "badge": "Kabupaten"
       }
@@ -11858,6 +12603,11 @@
         "name": "Kabupaten Pulang Pisau",
         "type": "kabupaten",
         "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Kapuas",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
       }
     ]
   },
@@ -11865,7 +12615,7 @@
     "name": "TANAH BUMBU",
     "prov": "KALIMANTAN SELATAN",
     "u": "Kota Baru",
-    "s": "Laut/Perairan Selatan Prov. KALIMANTAN SELATAN",
+    "s": "Laut Jawa",
     "t": "Kota Baru",
     "b": "Kabupaten Banjar",
     "e": null,
@@ -11927,7 +12677,7 @@
     "name": "TANAH LAUT",
     "prov": "KALIMANTAN SELATAN",
     "u": "Kota Banjar Baru",
-    "s": "Laut/Perairan Selatan Prov. KALIMANTAN SELATAN",
+    "s": "Laut Jawa",
     "t": "Kabupaten Tanah Bumbu",
     "b": "Kota Banjarmasin",
     "e": null,
@@ -11952,12 +12702,53 @@
   "346": {
     "name": "KOTABARU",
     "prov": "KALIMANTAN SELATAN",
-    "u": "Laut/Perairan Utara Prov. KALIMANTAN SELATAN",
-    "s": "Laut/Perairan Selatan Prov. KALIMANTAN SELATAN",
-    "t": "Kawasan Timur Prov. KALIMANTAN SELATAN",
-    "b": "Kawasan Barat Prov. KALIMANTAN SELATAN",
+    "u": "Kabupaten Paser",
+    "s": "Laut Jawa",
+    "t": "Selat Makassar",
+    "b": "Kabupaten Tanah Bumbu & Kabupaten Banjar",
     "e": null,
-    "borders": []
+    "borders": [
+      {
+        "name": "Kabupaten Tanah Bumbu",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Paser",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Balangan",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Banjar",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Hulu Sungai Tengah",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Hulu Sungai Selatan",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Selat Makassar",
+        "type": "water",
+        "badge": "Perairan / Selat"
+      },
+      {
+        "name": "Laut Jawa",
+        "type": "water",
+        "badge": "Perairan / Laut"
+      }
+    ]
   },
   "347": {
     "name": "BANJAR",
@@ -12306,12 +13097,53 @@
   "356": {
     "name": "MAHAKAM ULU",
     "prov": "KALIMANTAN TIMUR",
-    "u": "Laut/Perairan Utara Prov. KALIMANTAN TIMUR",
-    "s": "Laut/Perairan Selatan Prov. KALIMANTAN TIMUR",
-    "t": "Kawasan Timur Prov. KALIMANTAN TIMUR",
-    "b": "Kawasan Barat Prov. KALIMANTAN TIMUR",
+    "u": "Kabupaten Malinau",
+    "s": "Kabupaten Barito Utara",
+    "t": "Kabupaten Kutai Kartanegara",
+    "b": "Kabupaten Murung Raya",
     "e": null,
-    "borders": []
+    "borders": [
+      {
+        "name": "Kabupaten Kapuas Hulu",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Barito Utara",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Murung Raya",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Kutai Kartanegara",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Paser",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Penajam Paser Utara",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Malinau",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Kutai Barat",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      }
+    ]
   },
   "357": {
     "name": "PASER",
@@ -12357,7 +13189,7 @@
   "358": {
     "name": "KUTAI BARAT",
     "prov": "KALIMANTAN TIMUR",
-    "u": "Laut/Perairan Utara Prov. KALIMANTAN TIMUR",
+    "u": "Kabupaten Malinau",
     "s": "Kabupaten Barito Utara",
     "t": "Kabupaten Kutai Kartanegara",
     "b": "Kabupaten Murung Raya",
@@ -12451,7 +13283,7 @@
     "prov": "KALIMANTAN TIMUR",
     "u": "Kabupaten Berau",
     "s": "Kota Bontang",
-    "t": "Kawasan Timur Prov. KALIMANTAN TIMUR",
+    "t": "Selat Makassar",
     "b": "Kabupaten Kutai Kartanegara",
     "e": null,
     "borders": [
@@ -12482,7 +13314,7 @@
     "prov": "KALIMANTAN TIMUR",
     "u": "Kabupaten Bulungan",
     "s": "Kabupaten Kutai Timur",
-    "t": "Kawasan Timur Prov. KALIMANTAN TIMUR",
+    "t": "Selat Makassar",
     "b": "Kabupaten Kutai Kartanegara",
     "e": null,
     "borders": [
@@ -12539,7 +13371,7 @@
     "prov": "KALIMANTAN TIMUR",
     "u": "Kota Samarinda",
     "s": "Kabupaten Paser",
-    "t": "Kawasan Timur Prov. KALIMANTAN TIMUR",
+    "t": "Selat Makassar",
     "b": "Kabupaten Penajam Paser Utara",
     "e": null,
     "borders": [
@@ -12560,7 +13392,7 @@
     "prov": "KALIMANTAN TIMUR",
     "u": "Kota Bontang",
     "s": "Kota Balikpapan",
-    "t": "Kawasan Timur Prov. KALIMANTAN TIMUR",
+    "t": "Selat Makassar",
     "b": "Kabupaten Penajam Paser Utara",
     "e": null,
     "borders": [
@@ -12576,7 +13408,7 @@
     "prov": "KALIMANTAN TIMUR",
     "u": "Kabupaten Kutai Timur",
     "s": "Kota Samarinda",
-    "t": "Kawasan Timur Prov. KALIMANTAN TIMUR",
+    "t": "Kabupaten Donggala",
     "b": "Kabupaten Kutai Kartanegara",
     "e": null,
     "borders": [
@@ -12596,9 +13428,9 @@
     "name": "MALINAU",
     "prov": "KALIMANTAN UTARA",
     "u": "Kabupaten Nunukan",
-    "s": "Laut/Perairan Selatan Prov. KALIMANTAN UTARA",
+    "s": "Kabupaten Kutai Barat",
     "t": "Kabupaten Bulungan",
-    "b": "Kawasan Barat Prov. KALIMANTAN UTARA",
+    "b": null,
     "e": null,
     "borders": [
       {
@@ -12661,6 +13493,11 @@
         "name": "Kabupaten Tana Tidung",
         "type": "kabupaten",
         "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Tarakan",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
       }
     ]
   },
@@ -12714,18 +13551,34 @@
   "370": {
     "name": "KOTA TARAKAN",
     "prov": "KALIMANTAN UTARA",
-    "u": "Laut/Perairan Utara Prov. KALIMANTAN UTARA",
-    "s": "Laut/Perairan Selatan Prov. KALIMANTAN UTARA",
-    "t": "Kawasan Timur Prov. KALIMANTAN UTARA",
-    "b": "Kawasan Barat Prov. KALIMANTAN UTARA",
+    "u": "Kabupaten Tana Tidung",
+    "s": "Kabupaten Bulungan",
+    "t": "Selat Makassar",
+    "b": "Kabupaten Tana Tidung",
     "e": null,
-    "borders": []
+    "borders": [
+      {
+        "name": "Kabupaten Bulungan",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Nunukan",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Laut Sulawesi",
+        "type": "water",
+        "badge": "Perairan / Laut"
+      }
+    ]
   },
   "371": {
     "name": "BOLAANG MONGONDOW SELATAN",
     "prov": "SULAWESI UTARA",
     "u": "Kabupaten Bolaang Mongondow",
-    "s": "Laut/Perairan Selatan Prov. SULAWESI UTARA",
+    "s": "Kabupaten Banggai",
     "t": "Kota Kotamobagu",
     "b": "Kabupaten Bolaang Mongondow Utara",
     "e": null,
@@ -12866,19 +13719,51 @@
     "u": "Laut/Perairan Utara Prov. SULAWESI UTARA",
     "s": "Kabupaten Siau Tagulandang Biaro",
     "t": "Kabupaten Kepulauan Talaud",
-    "b": "Kawasan Barat Prov. SULAWESI UTARA",
+    "b": null,
     "e": null,
-    "borders": []
+    "borders": [
+      {
+        "name": "Kabupaten Kepulauan Siau Tagulandang Biaro",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Laut Sulawesi",
+        "type": "water",
+        "badge": "Perairan / Laut"
+      },
+      {
+        "name": "Laut Maluku",
+        "type": "water",
+        "badge": "Perairan / Laut"
+      }
+    ]
   },
   "376": {
     "name": "KEPULAUAN TALAUD",
     "prov": "SULAWESI UTARA",
     "u": "Laut/Perairan Utara Prov. SULAWESI UTARA",
-    "s": "Laut/Perairan Selatan Prov. SULAWESI UTARA",
-    "t": "Kawasan Timur Prov. SULAWESI UTARA",
+    "s": "Kabupaten Siau Tagulandang Biaro",
+    "t": "Kabupaten Pulau Morotai",
     "b": "Kabupaten Kepulauan Sangihe",
     "e": null,
-    "borders": []
+    "borders": [
+      {
+        "name": "Kabupaten Kepulauan Sangihe",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Samudra Pasifik",
+        "type": "water",
+        "badge": "Perairan / Samudra"
+      },
+      {
+        "name": "Laut Maluku",
+        "type": "water",
+        "badge": "Perairan / Laut"
+      }
+    ]
   },
   "377": {
     "name": "MINAHASA SELATAN",
@@ -12908,6 +13793,11 @@
         "name": "Kabupaten Minahasa Tenggara",
         "type": "kabupaten",
         "badge": "Kabupaten"
+      },
+      {
+        "name": "Kota Tomohon",
+        "type": "kota",
+        "badge": "Kota"
       }
     ]
   },
@@ -12934,6 +13824,11 @@
         "name": "Kabupaten Minahasa",
         "type": "kabupaten",
         "badge": "Kabupaten"
+      },
+      {
+        "name": "Kota Tomohon",
+        "type": "kota",
+        "badge": "Kota"
       }
     ]
   },
@@ -12973,10 +13868,26 @@
     "prov": "SULAWESI UTARA",
     "u": "Kabupaten Kepulauan Sangihe",
     "s": "Kabupaten Minahasa Utara",
-    "t": "Kawasan Timur Prov. SULAWESI UTARA",
+    "t": "Kabupaten Kepulauan Talaud",
     "b": "Kabupaten Minahasa Selatan",
     "e": null,
-    "borders": []
+    "borders": [
+      {
+        "name": "Kabupaten Kepulauan Sangihe",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Minahasa Utara",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Laut Sulawesi",
+        "type": "water",
+        "badge": "Perairan / Laut"
+      }
+    ]
   },
   "381": {
     "name": "MINAHASA TENGGARA",
@@ -13030,7 +13941,7 @@
     "prov": "SULAWESI UTARA",
     "u": "Kabupaten Minahasa Utara",
     "s": "Kabupaten Minahasa",
-    "t": "Kawasan Timur Prov. SULAWESI UTARA",
+    "t": "Kota Ternate",
     "b": "Kabupaten Minahasa Utara",
     "e": null,
     "borders": [
@@ -13052,6 +13963,16 @@
     "borders": [
       {
         "name": "Kabupaten Minahasa",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Minahasa Utara",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Minahasa Selatan",
         "type": "kabupaten",
         "badge": "Kabupaten"
       }
@@ -13127,19 +14048,25 @@
   "387": {
     "name": "BANGGAI LAUT",
     "prov": "SULAWESI TENGAH",
-    "u": "Laut/Perairan Utara Prov. SULAWESI TENGAH",
-    "s": "Laut/Perairan Selatan Prov. SULAWESI TENGAH",
-    "t": "Kawasan Timur Prov. SULAWESI TENGAH",
-    "b": "Kawasan Barat Prov. SULAWESI TENGAH",
+    "u": "Kabupaten Banggai",
+    "s": "Kabupaten Morowali",
+    "t": "Kabupaten Kepulauan Sula",
+    "b": "Kabupaten Banggai",
     "e": null,
-    "borders": []
+    "borders": [
+      {
+        "name": "Kabupaten Banggai Kepulauan",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      }
+    ]
   },
   "388": {
     "name": "BANGGAI KEPULAUAN",
     "prov": "SULAWESI TENGAH",
     "u": "Kabupaten Banggai",
     "s": "Kabupaten Morowali",
-    "t": "Kawasan Timur Prov. SULAWESI TENGAH",
+    "t": "Kabupaten Kepulauan Sula",
     "b": "Kabupaten Banggai",
     "e": null,
     "borders": []
@@ -13253,7 +14180,7 @@
     "u": "Kabupaten Toli-Toli",
     "s": "Kota Palu",
     "t": "Kabupaten Parigi Moutong",
-    "b": "Kawasan Barat Prov. SULAWESI TENGAH",
+    "b": "Kota Bontang",
     "e": null,
     "borders": [
       {
@@ -13415,12 +14342,48 @@
   "397": {
     "name": "MOROWALI UTARA",
     "prov": "SULAWESI TENGAH",
-    "u": "Laut/Perairan Utara Prov. SULAWESI TENGAH",
-    "s": "Laut/Perairan Selatan Prov. SULAWESI TENGAH",
-    "t": "Kawasan Timur Prov. SULAWESI TENGAH",
-    "b": "Kawasan Barat Prov. SULAWESI TENGAH",
+    "u": "Kabupaten Banggai",
+    "s": "Kabupaten Konawe Utara",
+    "t": "Kabupaten Banggai Kepulauan",
+    "b": "Kabupaten Luwu Timur",
     "e": null,
-    "borders": []
+    "borders": [
+      {
+        "name": "Kabupaten Luwu Timur",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Banggai",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Poso",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Tojo Una-Una",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Konawe",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Konawe Utara",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Morowali",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      }
+    ]
   },
   "398": {
     "name": "KOTA PALU",
@@ -13479,6 +14442,11 @@
       },
       {
         "name": "Kabupaten Soppeng",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Maros",
         "type": "kabupaten",
         "badge": "Kabupaten"
       }
@@ -13621,11 +14589,27 @@
     "name": "KEPULAUAN SELAYAR",
     "prov": "SULAWESI SELATAN",
     "u": "Kabupaten Bulukumba",
-    "s": "Laut/Perairan Selatan Prov. SULAWESI SELATAN",
+    "s": "Kabupaten Manggarai Timur",
     "t": "Kabupaten Buton",
     "b": "Kabupaten Bulukumba",
     "e": null,
-    "borders": []
+    "borders": [
+      {
+        "name": "Kabupaten Bulukumba",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Bantaeng",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Laut Flores",
+        "type": "water",
+        "badge": "Perairan / Laut"
+      }
+    ]
   },
   "404": {
     "name": "BULUKUMBA",
@@ -13643,6 +14627,11 @@
       },
       {
         "name": "Kabupaten Sinjai",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Gowa",
         "type": "kabupaten",
         "badge": "Kabupaten"
       }
@@ -13702,6 +14691,11 @@
         "name": "Kabupaten Takalar",
         "type": "kabupaten",
         "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Sinjai",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
       }
     ]
   },
@@ -13711,7 +14705,7 @@
     "u": "Kota Makassar",
     "s": "Kabupaten Jeneponto",
     "t": "Kabupaten Gowa",
-    "b": "Kawasan Barat Prov. SULAWESI SELATAN",
+    "b": null,
     "e": null,
     "borders": [
       {
@@ -13774,6 +14768,11 @@
         "name": "Kabupaten Takalar",
         "type": "kabupaten",
         "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Bulukumba",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
       }
     ]
   },
@@ -13803,6 +14802,11 @@
       },
       {
         "name": "Kabupaten Bantaeng",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Jeneponto",
         "type": "kabupaten",
         "badge": "Kabupaten"
       }
@@ -13836,6 +14840,11 @@
         "name": "Kabupaten Pangkajene Dan Kepulauan",
         "type": "kabupaten",
         "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Barru",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
       }
     ]
   },
@@ -13845,7 +14854,7 @@
     "u": "Kabupaten Barru",
     "s": "Kabupaten Maros",
     "t": "Kabupaten Bone",
-    "b": "Kawasan Barat Prov. SULAWESI SELATAN",
+    "b": null,
     "e": null,
     "borders": [
       {
@@ -14092,7 +15101,7 @@
     "u": "Kabupaten Maros",
     "s": "Kabupaten Takalar",
     "t": "Kabupaten Gowa",
-    "b": "Kawasan Barat Prov. SULAWESI SELATAN",
+    "b": null,
     "e": null,
     "borders": [
       {
@@ -14265,12 +15274,43 @@
   "424": {
     "name": "KOLAKA TIMUR",
     "prov": "SULAWESI TENGGARA",
-    "u": "Laut/Perairan Utara Prov. SULAWESI TENGGARA",
-    "s": "Laut/Perairan Selatan Prov. SULAWESI TENGGARA",
-    "t": "Kawasan Timur Prov. SULAWESI TENGGARA",
-    "b": "Kawasan Barat Prov. SULAWESI TENGGARA",
+    "u": "Kabupaten Konawe Utara",
+    "s": "Kabupaten Bombana",
+    "t": "Kabupaten Konawe Utara",
+    "b": "Kabupaten Kolaka Utara",
     "e": null,
-    "borders": []
+    "borders": [
+      {
+        "name": "Kabupaten Bombana",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Kolaka Utara",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Konawe",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Konawe Selatan",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Konawe Utara",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Kolaka",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      }
+    ]
   },
   "425": {
     "name": "BUTON",
@@ -14468,10 +15508,31 @@
     "prov": "SULAWESI TENGGARA",
     "u": "Kabupaten Buton Utara",
     "s": "Laut/Perairan Selatan Prov. SULAWESI TENGGARA",
-    "t": "Kawasan Timur Prov. SULAWESI TENGGARA",
+    "t": null,
     "b": "Kota Bau-Bau",
     "e": null,
-    "borders": []
+    "borders": [
+      {
+        "name": "Kabupaten Buton",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Buton Selatan",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Laut Banda",
+        "type": "water",
+        "badge": "Perairan / Laut"
+      },
+      {
+        "name": "Laut Flores",
+        "type": "water",
+        "badge": "Perairan / Laut"
+      }
+    ]
   },
   "432": {
     "name": "KOLAKA UTARA",
@@ -14528,42 +15589,151 @@
   "434": {
     "name": "KONAWE KEPULAUAN",
     "prov": "SULAWESI TENGGARA",
-    "u": "Laut/Perairan Utara Prov. SULAWESI TENGGARA",
-    "s": "Laut/Perairan Selatan Prov. SULAWESI TENGGARA",
-    "t": "Kawasan Timur Prov. SULAWESI TENGGARA",
-    "b": "Kawasan Barat Prov. SULAWESI TENGGARA",
+    "u": "Kabupaten Morowali",
+    "s": "Kota Kendari",
+    "t": "Kabupaten Buton Utara",
+    "b": "Kabupaten Konawe Utara",
     "e": null,
-    "borders": []
+    "borders": [
+      {
+        "name": "Kabupaten Luwu Timur",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Morowali",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kota Kendari",
+        "type": "kota",
+        "badge": "Kota"
+      },
+      {
+        "name": "Kabupaten Kolaka",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Kolaka Utara",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Konawe Selatan",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Konawe Utara",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Konawe",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      }
+    ]
   },
   "435": {
     "name": "MUNA BARAT",
     "prov": "SULAWESI TENGGARA",
-    "u": "Laut/Perairan Utara Prov. SULAWESI TENGGARA",
-    "s": "Laut/Perairan Selatan Prov. SULAWESI TENGGARA",
-    "t": "Kawasan Timur Prov. SULAWESI TENGGARA",
-    "b": "Kawasan Barat Prov. SULAWESI TENGGARA",
+    "u": "Kabupaten Konawe Selatan",
+    "s": "Kabupaten Buton",
+    "t": "Kabupaten Buton Utara",
+    "b": "Kabupaten Bombana",
     "e": null,
-    "borders": []
+    "borders": [
+      {
+        "name": "Kabupaten Buton",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Buton Utara",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Muna",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      }
+    ]
   },
   "436": {
     "name": "BUTON TENGAH",
     "prov": "SULAWESI TENGGARA",
-    "u": "Laut/Perairan Utara Prov. SULAWESI TENGGARA",
-    "s": "Laut/Perairan Selatan Prov. SULAWESI TENGGARA",
-    "t": "Kawasan Timur Prov. SULAWESI TENGGARA",
-    "b": "Kawasan Barat Prov. SULAWESI TENGGARA",
+    "u": "Kabupaten Muna",
+    "s": "Kabupaten Kepulauan Selayar",
+    "t": "Kota Bau-Bau",
+    "b": "Kabupaten Bombana",
     "e": null,
-    "borders": []
+    "borders": [
+      {
+        "name": "Kota Bau-Bau",
+        "type": "kota",
+        "badge": "Kota"
+      },
+      {
+        "name": "Kabupaten Bombana",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Buton Utara",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Muna",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Buton",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      }
+    ]
   },
   "437": {
     "name": "BUTON SELATAN",
     "prov": "SULAWESI TENGGARA",
-    "u": "Laut/Perairan Utara Prov. SULAWESI TENGGARA",
-    "s": "Laut/Perairan Selatan Prov. SULAWESI TENGGARA",
-    "t": "Kawasan Timur Prov. SULAWESI TENGGARA",
-    "b": "Kawasan Barat Prov. SULAWESI TENGGARA",
+    "u": "Kabupaten Muna",
+    "s": "Kabupaten Kepulauan Selayar",
+    "t": "Kota Bau-Bau",
+    "b": "Kabupaten Bombana",
     "e": null,
-    "borders": []
+    "borders": [
+      {
+        "name": "Kota Bau-Bau",
+        "type": "kota",
+        "badge": "Kota"
+      },
+      {
+        "name": "Kabupaten Bombana",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Buton Utara",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Muna",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Buton",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      }
+    ]
   },
   "438": {
     "name": "KOTA KENDARI",
@@ -14728,6 +15898,11 @@
         "name": "Kabupaten Bolaang Mongondow Utara",
         "type": "kabupaten",
         "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Danau Limboto",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
       }
     ]
   },
@@ -14804,7 +15979,7 @@
     "u": "Kabupaten Mamasa",
     "s": "Kota Parepare",
     "t": "Kabupaten Polewali Mandar",
-    "b": "Kawasan Barat Prov. SULAWESI BARAT",
+    "b": null,
     "e": null,
     "borders": [
       {
@@ -14892,7 +16067,7 @@
     "u": "Kabupaten Mamuju Utara",
     "s": "Kabupaten Mamasa",
     "t": "Kabupaten Luwu Utara",
-    "b": "Kawasan Barat Prov. SULAWESI BARAT",
+    "b": null,
     "e": null,
     "borders": [
       {
@@ -14935,37 +16110,94 @@
   "450": {
     "name": "PASANGKAYU",
     "prov": "SULAWESI BARAT",
-    "u": "Laut/Perairan Utara Prov. SULAWESI BARAT",
-    "s": "Laut/Perairan Selatan Prov. SULAWESI BARAT",
-    "t": "Kawasan Timur Prov. SULAWESI BARAT",
-    "b": "Kawasan Barat Prov. SULAWESI BARAT",
+    "u": "Kota Palu",
+    "s": "Kabupaten Mamuju",
+    "t": "Kabupaten Sigi",
+    "b": null,
     "e": null,
-    "borders": []
+    "borders": [
+      {
+        "name": "Kabupaten Mamuju",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Donggala",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Sigi",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      }
+    ]
   },
   "451": {
     "name": "MAMUJU TENGAH",
     "prov": "SULAWESI BARAT",
-    "u": "Laut/Perairan Utara Prov. SULAWESI BARAT",
-    "s": "Laut/Perairan Selatan Prov. SULAWESI BARAT",
-    "t": "Kawasan Timur Prov. SULAWESI BARAT",
-    "b": "Kawasan Barat Prov. SULAWESI BARAT",
+    "u": "Kabupaten Mamuju Utara",
+    "s": "Kabupaten Mamasa",
+    "t": "Kabupaten Luwu Utara",
+    "b": null,
     "e": null,
-    "borders": []
+    "borders": [
+      {
+        "name": "Kabupaten Majene",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Mamasa",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Mamuju Utara",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Luwu Utara",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Tana Toraja",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Toraja Utara",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Sigi",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Mamuju",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      }
+    ]
   },
   "452": {
     "name": "KEPULAUAN TANIMBAR",
     "prov": "MALUKU",
-    "u": "Laut/Perairan Utara Prov. MALUKU",
+    "u": "Kota Tual",
     "s": "Laut/Perairan Selatan Prov. MALUKU",
-    "t": "Kawasan Timur Prov. MALUKU",
-    "b": "Kawasan Barat Prov. MALUKU",
+    "t": null,
+    "b": null,
     "e": null,
     "borders": []
   },
   "453": {
     "name": "MALUKU TENGGARA",
     "prov": "MALUKU",
-    "u": "Laut/Perairan Utara Prov. MALUKU",
+    "u": "Kabupaten Kaimana",
     "s": "Laut/Perairan Selatan Prov. MALUKU",
     "t": "Kabupaten Kepulauan Aru",
     "b": "Kota Tual",
@@ -15023,12 +16255,23 @@
   "456": {
     "name": "KEPULAUAN ARU",
     "prov": "MALUKU",
-    "u": "Laut/Perairan Utara Prov. MALUKU",
+    "u": "Kabupaten Dogiyai",
     "s": "Laut/Perairan Selatan Prov. MALUKU",
-    "t": "Kawasan Timur Prov. MALUKU",
+    "t": "Kabupaten Mimika",
     "b": "Kabupaten Maluku Tenggara",
     "e": null,
-    "borders": []
+    "borders": [
+      {
+        "name": "Kabupaten Maluku Tenggara",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Laut Arafura",
+        "type": "water",
+        "badge": "Perairan / Laut"
+      }
+    ]
   },
   "457": {
     "name": "SERAM BAGIAN BARAT",
@@ -15049,9 +16292,9 @@
   "458": {
     "name": "SERAM BAGIAN TIMUR",
     "prov": "MALUKU",
-    "u": "Laut/Perairan Utara Prov. MALUKU",
+    "u": "Kabupaten Sorong Selatan",
     "s": "Laut/Perairan Selatan Prov. MALUKU",
-    "t": "Kawasan Timur Prov. MALUKU",
+    "t": "Kabupaten Fakfak",
     "b": "Kabupaten Maluku Tengah",
     "e": null,
     "borders": [
@@ -15067,8 +16310,8 @@
     "prov": "MALUKU",
     "u": "Laut/Perairan Utara Prov. MALUKU",
     "s": "Laut/Perairan Selatan Prov. MALUKU",
-    "t": "Kawasan Timur Prov. MALUKU",
-    "b": "Kawasan Barat Prov. MALUKU",
+    "t": null,
+    "b": null,
     "e": null,
     "borders": []
   },
@@ -15078,7 +16321,7 @@
     "u": "Kabupaten Buru",
     "s": "Laut/Perairan Selatan Prov. MALUKU",
     "t": "Kota Ambon",
-    "b": "Kawasan Barat Prov. MALUKU",
+    "b": "Kabupaten Kepulauan Sula",
     "e": null,
     "borders": [
       {
@@ -15107,10 +16350,10 @@
   "462": {
     "name": "KOTA TUAL",
     "prov": "MALUKU",
-    "u": "Laut/Perairan Utara Prov. MALUKU",
-    "s": "Laut/Perairan Selatan Prov. MALUKU",
+    "u": "Kabupaten Fakfak",
+    "s": "Kabupaten Maluku Tenggara Barat",
     "t": "Kabupaten Maluku Tenggara",
-    "b": "Kawasan Barat Prov. MALUKU",
+    "b": null,
     "e": null,
     "borders": [
       {
@@ -15126,7 +16369,7 @@
     "u": "Kabupaten Halmahera Utara",
     "s": "Kota Ternate",
     "t": "Kabupaten Halmahera Utara",
-    "b": "Kawasan Barat Prov. MALUKU UTARA",
+    "b": "Kota Bitung",
     "e": null,
     "borders": [
       {
@@ -15151,7 +16394,7 @@
     "prov": "MALUKU UTARA",
     "u": "Kabupaten Halmahera Timur",
     "s": "Kabupaten Halmahera Selatan",
-    "t": "Kawasan Timur Prov. MALUKU UTARA",
+    "t": "Kabupaten Raja Ampat",
     "b": "Kota Tidore Kepulauan",
     "e": null,
     "borders": [
@@ -15178,9 +16421,25 @@
     "u": "Laut/Perairan Utara Prov. MALUKU UTARA",
     "s": "Kabupaten Buru",
     "t": "Kabupaten Buru",
-    "b": "Kawasan Barat Prov. MALUKU UTARA",
+    "b": "Kabupaten Banggai Kepulauan",
     "e": null,
-    "borders": []
+    "borders": [
+      {
+        "name": "Kabupaten Pulau Taliabu",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Laut Banda",
+        "type": "water",
+        "badge": "Perairan / Laut"
+      },
+      {
+        "name": "Laut Maluku",
+        "type": "water",
+        "badge": "Perairan / Laut"
+      }
+    ]
   },
   "466": {
     "name": "HALMAHERA SELATAN",
@@ -15188,7 +16447,7 @@
     "u": "Kota Tidore Kepulauan",
     "s": "Laut/Perairan Selatan Prov. MALUKU UTARA",
     "t": "Kabupaten Halmahera Tengah",
-    "b": "Kawasan Barat Prov. MALUKU UTARA",
+    "b": null,
     "e": null,
     "borders": [
       {
@@ -15229,7 +16488,7 @@
     "prov": "MALUKU UTARA",
     "u": "Kabupaten Halmahera Utara",
     "s": "Kabupaten Halmahera Tengah",
-    "t": "Kawasan Timur Prov. MALUKU UTARA",
+    "t": null,
     "b": "Kabupaten Halmahera Utara",
     "e": null,
     "borders": [
@@ -15258,22 +16517,44 @@
   "469": {
     "name": "PULAU MOROTAI",
     "prov": "MALUKU UTARA",
-    "u": "Laut/Perairan Utara Prov. MALUKU UTARA",
+    "u": "Kabupaten Kepulauan Talaud",
     "s": "Kabupaten Halmahera Utara",
-    "t": "Kawasan Timur Prov. MALUKU UTARA",
+    "t": null,
     "b": "Kabupaten Halmahera Utara",
     "e": null,
-    "borders": []
+    "borders": [
+      {
+        "name": "Kabupaten Halmahera Utara",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Samudra Pasifik",
+        "type": "water",
+        "badge": "Perairan / Samudra"
+      },
+      {
+        "name": "Laut Halmahera",
+        "type": "water",
+        "badge": "Perairan / Laut"
+      }
+    ]
   },
   "470": {
     "name": "PULAU TALIABU",
     "prov": "MALUKU UTARA",
     "u": "Laut/Perairan Utara Prov. MALUKU UTARA",
-    "s": "Laut/Perairan Selatan Prov. MALUKU UTARA",
-    "t": "Kawasan Timur Prov. MALUKU UTARA",
-    "b": "Kawasan Barat Prov. MALUKU UTARA",
+    "s": "Kabupaten Buru",
+    "t": "Kabupaten Buru",
+    "b": "Kabupaten Banggai Kepulauan",
     "e": null,
-    "borders": []
+    "borders": [
+      {
+        "name": "Kabupaten Kepulauan Sula",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      }
+    ]
   },
   "471": {
     "name": "KOTA TERNATE",
@@ -15281,9 +16562,25 @@
     "u": "Kabupaten Halmahera Barat",
     "s": "Kota Tidore Kepulauan",
     "t": "Kota Tidore Kepulauan",
-    "b": "Kawasan Barat Prov. MALUKU UTARA",
+    "b": "Kota Bitung",
     "e": null,
-    "borders": []
+    "borders": [
+      {
+        "name": "Kota Tidore Kepulauan",
+        "type": "kota",
+        "badge": "Kota"
+      },
+      {
+        "name": "Kabupaten Halmahera Barat",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Laut Maluku",
+        "type": "water",
+        "badge": "Perairan / Laut"
+      }
+    ]
   },
   "472": {
     "name": "KOTA TIDORE KEPULAUAN",
@@ -15319,20 +16616,46 @@
   "473": {
     "name": "MANOKWARI SELATAN",
     "prov": "PAPUA BARAT",
-    "u": "Laut/Perairan Utara Prov. PAPUA BARAT",
-    "s": "Laut/Perairan Selatan Prov. PAPUA BARAT",
-    "t": "Kawasan Timur Prov. PAPUA BARAT",
-    "b": "Kawasan Barat Prov. PAPUA BARAT",
+    "u": "Kabupaten Tambrauw",
+    "s": "Kabupaten Teluk Bintuni",
+    "t": "Kabupaten Teluk Wondama",
+    "b": "Kabupaten Maybrat",
     "e": null,
-    "borders": []
+    "borders": [
+      {
+        "name": "Kabupaten Maybrat",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Tambrauw",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Teluk Bintuni",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Teluk Wondama",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Manokwari",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      }
+    ]
   },
   "474": {
     "name": "FAKFAK",
     "prov": "PAPUA BARAT",
     "u": "Kabupaten Teluk Bintuni",
-    "s": "Laut/Perairan Selatan Prov. PAPUA BARAT",
+    "s": "Kota Tual",
     "t": "Kabupaten Kaimana",
-    "b": "Kawasan Barat Prov. PAPUA BARAT",
+    "b": "Kabupaten Seram Bagian Timur",
     "e": null,
     "borders": [
       {
@@ -15351,7 +16674,7 @@
     "name": "KAIMANA",
     "prov": "PAPUA BARAT",
     "u": "Kabupaten Teluk Wondama",
-    "s": "Laut/Perairan Selatan Prov. PAPUA BARAT",
+    "s": "Kabupaten Maluku Tenggara",
     "t": "Kabupaten Nabire",
     "b": "Kabupaten Fakfak",
     "e": null,
@@ -15494,20 +16817,46 @@
   "479": {
     "name": "PEGUNUNGAN ARFAK",
     "prov": "PAPUA BARAT",
-    "u": "Laut/Perairan Utara Prov. PAPUA BARAT",
-    "s": "Laut/Perairan Selatan Prov. PAPUA BARAT",
-    "t": "Kawasan Timur Prov. PAPUA BARAT",
-    "b": "Kawasan Barat Prov. PAPUA BARAT",
+    "u": "Kabupaten Tambrauw",
+    "s": "Kabupaten Teluk Bintuni",
+    "t": "Kabupaten Teluk Wondama",
+    "b": "Kabupaten Maybrat",
     "e": null,
-    "borders": []
+    "borders": [
+      {
+        "name": "Kabupaten Maybrat",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Tambrauw",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Teluk Bintuni",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Teluk Wondama",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Manokwari",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      }
+    ]
   },
   "480": {
     "name": "RAJA AMPAT",
     "prov": "PAPUA BARAT DAYA",
-    "u": "Laut/Perairan Utara Prov. PAPUA BARAT DAYA",
+    "u": "Kabupaten Halmahera Tengah",
     "s": "Laut/Perairan Selatan Prov. PAPUA BARAT DAYA",
     "t": "Kota Sorong",
-    "b": "Kawasan Barat Prov. PAPUA BARAT DAYA",
+    "b": "Kabupaten Halmahera Tengah",
     "e": null,
     "borders": [
       {
@@ -15662,7 +17011,7 @@
     "prov": "PAPUA",
     "u": "Kota Jayapura",
     "s": "Kabupaten Pegunungan Bintang",
-    "t": "Kawasan Timur Prov. PAPUA",
+    "t": null,
     "b": "Kabupaten Jayapura",
     "e": null,
     "borders": [
@@ -15688,8 +17037,8 @@
     "prov": "PAPUA",
     "u": "Laut/Perairan Utara Prov. PAPUA",
     "s": "Kabupaten Biak Numfor",
-    "t": "Kawasan Timur Prov. PAPUA",
-    "b": "Kawasan Barat Prov. PAPUA",
+    "t": null,
+    "b": "Kabupaten Manokwari",
     "e": null,
     "borders": [
       {
@@ -15753,15 +17102,31 @@
     "t": "Kabupaten Waropen",
     "b": "Kabupaten Teluk Wondama",
     "e": null,
-    "borders": []
+    "borders": [
+      {
+        "name": "Kabupaten Biak Numfor",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Kabupaten Waropen",
+        "type": "kabupaten",
+        "badge": "Kabupaten"
+      },
+      {
+        "name": "Teluk Cenderawasih",
+        "type": "water",
+        "badge": "Perairan / Teluk"
+      }
+    ]
   },
   "490": {
     "name": "BIAK NUMFOR",
     "prov": "PAPUA",
     "u": "Kabupaten Supiori",
     "s": "Kabupaten Kepulauan Yapen",
-    "t": "Kawasan Timur Prov. PAPUA",
-    "b": "Kawasan Barat Prov. PAPUA",
+    "t": "Kabupaten Waropen",
+    "b": "Kabupaten Teluk Wondama",
     "e": null,
     "borders": [
       {
@@ -15776,7 +17141,7 @@
     "prov": "PAPUA",
     "u": "Laut/Perairan Utara Prov. PAPUA",
     "s": "Kabupaten Keerom",
-    "t": "Kawasan Timur Prov. PAPUA",
+    "t": null,
     "b": "Kabupaten Jayapura",
     "e": null,
     "borders": [
@@ -15900,8 +17265,8 @@
     "prov": "PAPUA SELATAN",
     "u": "Kabupaten Mappi",
     "s": "Laut/Perairan Selatan Prov. PAPUA SELATAN",
-    "t": "Kawasan Timur Prov. PAPUA SELATAN",
-    "b": "Kawasan Barat Prov. PAPUA SELATAN",
+    "t": null,
+    "b": null,
     "e": null,
     "borders": [
       {
@@ -15921,7 +17286,7 @@
     "prov": "PAPUA SELATAN",
     "u": "Kabupaten Pegunungan Bintang",
     "s": "Kabupaten Merauke",
-    "t": "Kawasan Timur Prov. PAPUA SELATAN",
+    "t": null,
     "b": "Kabupaten Mappi",
     "e": null,
     "borders": [
@@ -15984,7 +17349,7 @@
     "u": "Kabupaten Nduga",
     "s": "Kabupaten Mappi",
     "t": "Kabupaten Mappi",
-    "b": "Kawasan Barat Prov. PAPUA SELATAN",
+    "b": "Kabupaten Puncak",
     "e": null,
     "borders": [
       {
@@ -16018,7 +17383,7 @@
     "name": "MIMIKA",
     "prov": "PAPUA TENGAH",
     "u": "Kabupaten Deiyai",
-    "s": "Laut/Perairan Selatan Prov. PAPUA TENGAH",
+    "s": "Kabupaten Kepulauan Aru",
     "t": "Kabupaten Puncak",
     "b": "Kabupaten Dogiyai",
     "e": null,
@@ -16609,7 +17974,7 @@
     "prov": "PAPUA PEGUNUNGAN",
     "u": "Kabupaten Keerom",
     "s": "Kabupaten Boven Digoel",
-    "t": "Kawasan Timur Prov. PAPUA PEGUNUNGAN",
+    "t": null,
     "b": "Kabupaten Yahukimo",
     "e": null,
     "borders": [

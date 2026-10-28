@@ -149,18 +149,17 @@ document.addEventListener('DOMContentLoaded', () => {
         center: [-1.2, 117.5],
         zoom: 5,
         minZoom: 4,
-        maxZoom: 19,
+        maxZoom: 16,
         zoomControl: false,
-        attributionControl: true
+        attributionControl: false
     });
 
     L.control.zoom({ position: 'bottomright' }).addTo(map);
 
-    // OSM Humanitarian HOT tile layer: clean, detailed, no API key watermark, no localhost 403 blocks
-    L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
-        subdomains: ['a', 'b', 'c'],
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles courtesy of <a href="https://www.hotosm.org/" target="_blank">Humanitarian OpenStreetMap Team</a>',
-        maxZoom: 19
+    // Esri World Dark Gray Canvas: 100% Watermark-free, zero API key required, sleek dark slate GIS theme
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+        maxZoom: 16,
+        attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ'
     }).addTo(map);
 
     const markersLayer = L.layerGroup().addTo(map);
@@ -501,7 +500,17 @@ document.addEventListener('DOMContentLoaded', () => {
         if (profilCitySelect) {
             profilCitySelect.addEventListener('change', (e) => {
                 const cityId = e.target.value;
-                if (!cityId) return;
+                if (!cityId) {
+                    // Jika user memilih "Semua Kab/Kota", kembalikan kamera ke batas provinsi aktif jika ada
+                    if (filterProv && allGeoJsonFeatures.length > 0) {
+                        const provFeatures = allGeoJsonFeatures.filter(f => f.properties && sameProvName(f.properties.COUNTRY, filterProv));
+                        if (provFeatures.length > 0) {
+                            const tempLayer = L.geoJSON(provFeatures);
+                            map.flyToBounds(tempLayer.getBounds(), { padding: [40, 40], duration: 1.0 });
+                        }
+                    }
+                    return;
+                }
                 const target = REGION_DATA.find(d => String(d.id || d.no) === String(cityId));
                 if (target) {
                     const sInp = document.getElementById('searchInput');
@@ -633,6 +642,16 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             syncHeaderFilterCities(filterProv);
             applyFilters();
+
+            if (filterProv && allGeoJsonFeatures.length > 0) {
+                const provFeatures = allGeoJsonFeatures.filter(f => f.properties && sameProvName(f.properties.COUNTRY, filterProv));
+                if (provFeatures.length > 0) {
+                    const tempLayer = L.geoJSON(provFeatures);
+                    map.flyToBounds(tempLayer.getBounds(), { padding: [40, 40], duration: 1.0 });
+                }
+            } else if (!filterProv) {
+                map.flyTo([-1.2, 117.5], 5, { duration: 1.0 });
+            }
         });
     }
 
@@ -940,9 +959,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // --- RENDER POLIGON KABUPATEN/KOTA (GEOJSON AVAILABLE) ---
         if (allGeoJsonFeatures.length > 0) {
-            const displayFeatures = filterProv
-                ? allGeoJsonFeatures.filter(f => f.properties && sameProvName(f.properties.COUNTRY, filterProv))
-                : allGeoJsonFeatures;
+            // Selalu render seluruh 514 poligon agar saat zoom-out seluruh arsiran wilayah Indonesia tetap utuh dan aktif (paritas dengan fitur Search)
+            const displayFeatures = allGeoJsonFeatures;
 
             if (displayFeatures.length > 0) {
                 const geoLayer = L.geoJSON(displayFeatures, {
@@ -959,7 +977,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                         return {
                             fillColor: fillColor,
-                            weight: filterProv ? 1.0 : 0.4,
+                            weight: 0.4,
                             opacity: 0.85,
                             color: '#ffffff',
                             fillOpacity: 0.40,
@@ -978,22 +996,42 @@ document.addEventListener('DOMContentLoaded', () => {
                         const classification = val !== null ? m.classify(val) : '';
 
                         layer.bindTooltip(`
-                            <div style="font-family: var(--font-sans); font-size: 12px; line-height: 1.4;">
-                                <div style="font-size: 10px; text-transform: uppercase; color: #525c6e; letter-spacing: .03em; font-weight:600;">PROVINSI ${escapeHtml(provName)}</div>
-                                <strong style="color: #1f242e; font-size: 13.5px; font-weight:700;">${escapeHtml(fullName)}</strong>
-                                <div style="color: #cf1e2e; font-weight: 700; margin-top: 3px;">${m.label}: ${valDisplay}</div>
-                                ${classification ? `<div style="font-size: 10.5px; color: #525c6e; margin-top: 1px;">Kategori: <b>${classification}</b></div>` : ''}
+                            <div class="map-hud-tooltip">
+                                <div class="hud-eyebrow">PROVINSI ${escapeHtml(provName)}</div>
+                                <div class="hud-title">${escapeHtml(fullName)}</div>
+                                <div class="hud-stat-primary">
+                                    <span class="hud-metric-label">${escapeHtml(m.label)}</span>
+                                    <span class="hud-metric-val">${valDisplay}</span>
+                                </div>
+                                ${classification ? `
+                                    <div class="hud-badge-row">
+                                        <span class="hud-badge">${escapeHtml(classification)}</span>
+                                    </div>
+                                ` : ''}
+                                <div class="hud-divider"></div>
+                                <div class="hud-meta-list">
+                                    <div class="hud-meta-item">
+                                        <span class="hud-meta-label">Total Penduduk</span>
+                                        <span class="hud-meta-val">${regData && regData.penduduk ? formatNumber(regData.penduduk) + ' jiwa' : '–'}</span>
+                                    </div>
+                                    <div class="hud-meta-item">
+                                        <span class="hud-meta-label">Capaian IPM</span>
+                                        <span class="hud-meta-val">${regData && regData.ipm_total ? Number(regData.ipm_total).toFixed(2) : '–'}</span>
+                                    </div>
+                                </div>
                             </div>
                         `, {
-                            direction: 'top',
-                            offset: [0, -6],
-                            opacity: 1
+                            sticky: true,
+                            direction: 'auto',
+                            offset: [15, 12],
+                            opacity: 1,
+                            className: 'leaflet-dark-hud'
                         });
 
                         layer.on({
                             mouseover: (e) => {
                                 const l = e.target;
-                                l.setStyle({ weight: 2.5, color: '#dadde4ff', fillOpacity: 0.65 });
+                                l.setStyle({ weight: 2.2, color: '#5eead4', fillOpacity: 0.65 });
                                 if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
                                     l.bringToFront();
                                 }
@@ -1010,9 +1048,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 }).addTo(geojsonLayerGroup);
 
-                if (filterProv) {
-                    map.flyToBounds(geoLayer.getBounds(), { padding: [40, 40], duration: 1.0 });
-                }
+                // (Kamera navigasi dikendalikan terisolasi oleh event listener filter dropdown)
                 return;
             }
         }
@@ -1047,16 +1083,24 @@ document.addEventListener('DOMContentLoaded', () => {
             const classification = val !== null ? m.classify(val) : '';
 
             marker.bindTooltip(`
-                <div style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 12px; line-height: 1.4;">
-                    <div style="font-size: 10px; text-transform: uppercase; color: #525c6e; letter-spacing: .03em; font-weight:600;">PROVINSI ${escapeHtml(region.prov || '')}</div>
-                    <strong style="color: #1f242e; font-size: 13.5px; font-weight:700;">${escapeHtml(region.kabkota || '')}</strong>
-                    <div style="color: #cf1e2e; font-weight: 700; margin-top: 3px;">${m.label}: ${valDisplay}</div>
-                    ${classification ? `<div style="font-size: 10.5px; color: #525c6e; margin-top: 1px;">Kategori: <b>${classification}</b></div>` : ''}
+                <div class="map-hud-tooltip">
+                    <div class="hud-eyebrow">PROVINSI ${escapeHtml(region.prov || '')}</div>
+                    <div class="hud-title">${escapeHtml(region.kabkota || '')}</div>
+                    <div class="hud-stat-primary">
+                        <span class="hud-metric-label">${escapeHtml(m.label)}</span>
+                        <span class="hud-metric-val">${valDisplay}</span>
+                    </div>
+                    ${classification ? `
+                        <div class="hud-badge-row">
+                            <span class="hud-badge">${escapeHtml(classification)}</span>
+                        </div>
+                    ` : ''}
                 </div>
             `, {
                 direction: 'top',
-                offset: [0, -6],
-                opacity: 1
+                offset: [0, -10],
+                opacity: 1,
+                className: 'leaflet-dark-hud'
             });
 
             marker.on('click', () => {
@@ -1313,6 +1357,45 @@ document.addEventListener('DOMContentLoaded', () => {
             if (region.prov && profilProvSelect) {
                 profilProvSelect.value = region.prov;
                 syncHeaderFilterCities(region.prov, regId);
+            }
+
+            // Auto-zoom to selected region with asymmetrical padding (keeps polygon centered in visible map area left of the 380px drawer)
+            try {
+                let targetBounds = null;
+                if (geojsonLayerGroup) {
+                    geojsonLayerGroup.eachLayer(l => {
+                        if (typeof l.eachLayer === 'function') {
+                            l.eachLayer(sub => {
+                                const p = sub.feature?.properties || {};
+                                const matchName = (p.NAME_1 || '').trim().toLowerCase();
+                                const targetName = (region.kabkota || '').trim().toLowerCase();
+                                const cleanTarget = targetName.replace(/^(kabupaten|kota)\s+/i, '');
+                                if (cleanTarget && (matchName.includes(cleanTarget) || cleanTarget.includes(matchName))) {
+                                    targetBounds = sub.getBounds();
+                                }
+                            });
+                        }
+                    });
+                }
+
+                const drawerPadding = {
+                    paddingTopLeft: [60, 60],
+                    paddingBottomRight: [440, 60],
+                    maxZoom: 10,
+                    duration: 1.1
+                };
+
+                if (targetBounds && targetBounds.isValid()) {
+                    map.flyToBounds(targetBounds, drawerPadding);
+                } else if (typeof region.lat === 'number' && typeof region.lng === 'number' && !isNaN(region.lat) && !isNaN(region.lng)) {
+                    const ptBounds = L.latLngBounds(
+                        [region.lat - 0.05, region.lng - 0.05],
+                        [region.lat + 0.05, region.lng + 0.05]
+                    );
+                    map.flyToBounds(ptBounds, drawerPadding);
+                }
+            } catch (zoomErr) {
+                console.warn('Auto-zoom region error:', zoomErr);
             }
         }
 

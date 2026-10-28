@@ -3,6 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <title>Profil Wilayah: Portal Data Kabupaten &amp; Kota Indonesia</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -151,9 +154,9 @@
   .batas-row b{font-family:var(--mono);font-size:10px;letter-spacing:.14em;color:var(--muted-2);min-width:56px;text-transform:uppercase}
 
   /* map container */
-  .map-card-wrap{position:relative;margin-top:14px;border-radius:8px;overflow:hidden;border:1px solid var(--line)}
-  #map{width:100%;height:380px;background:var(--panel-2)}
-  .map-message{position:absolute;top:14px;left:14px;z-index:800;background:rgba(15,181,160,0.92);color:#ffffff;padding:6px 14px;border-radius:99px;font-family:var(--mono);font-size:11px;font-weight:600;backdrop-filter:blur(4px);display:none}
+  .map-card-wrap{position:relative;margin-top:14px;border-radius:8px;overflow:hidden;border:1px solid #334155}
+  #map{width:100%;height:380px;background:#0f172a}
+  .map-message{position:absolute;top:14px;right:14px;left:auto;z-index:999;background:rgba(15,23,42,0.88);color:#2dd4bf;border:1px solid rgba(45,212,191,0.3);padding:6px 14px;border-radius:99px;font-family:var(--mono);font-size:11px;font-weight:600;backdrop-filter:blur(8px);display:none}
 
   /* elevasi & hujan */
   .elev-note{display:flex;justify-content:space-between;font-family:var(--mono);font-size:10.5px;color:var(--muted-2);margin-top:6px}
@@ -358,6 +361,217 @@
     .kpis,.admin-strip{grid-template-columns:1fr 1fr}
     .section-search-wrap{min-width:100%;max-width:100%}
   }
+
+  /* ============================================================
+     FASE 1 ANALYTICAL WIDGETS STYLES
+     ============================================================ */
+  .fase1-badge-tag{
+    font-family: var(--mono);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    color: var(--teal);
+    text-transform: uppercase;
+    display: inline-block;
+  }
+  .fase1-kpi-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  @media (max-width: 768px){
+    .fase1-kpi-grid{grid-template-columns: repeat(2, 1fr)}
+    .fase1-radar-grid{grid-template-columns: 1fr !important}
+    .fase1-uhh-kpis{grid-template-columns: 1fr !important}
+  }
+  .fase1-kpi-card{
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 12px 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 84px;
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+  .fase1-kpi-card:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+  }
+  .fase1-kpi-card.disabled{
+    background: repeating-linear-gradient(
+      -45deg,
+      var(--surface),
+      var(--surface) 8px,
+      var(--surface-2) 8px,
+      var(--surface-2) 16px
+    );
+    opacity: 0.85;
+  }
+  .fase1-kpi-label{
+    font-size: 11.5px;
+    font-weight: 600;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .fase1-kpi-val{
+    font-family: var(--mono);
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text);
+    margin: 6px 0 2px;
+    font-variant-numeric: tabular-nums;
+  }
+  .fase1-kpi-val.null-val{
+    color: var(--muted-2);
+    font-size: 18px;
+  }
+  .fase1-kpi-sub{
+    font-size: 10.5px;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .fase1-kpi-sub .badge-avail{
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #10B981;
+  }
+  .fase1-kpi-sub .badge-unavail{
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #F59E0B;
+  }
+
+  .fase1-progress-list{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .fase1-progress-item{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .fase1-prog-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+  }
+  .fase1-prog-title{
+    font-weight: 600;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .fase1-prog-val{
+    font-family: var(--mono);
+    font-weight: 700;
+    font-size: 12px;
+    color: var(--text);
+  }
+  .fase1-prog-track{
+    height: 8px;
+    background: var(--surface-2);
+    border: 1px solid var(--line-soft);
+    border-radius: 99px;
+    overflow: hidden;
+    position: relative;
+  }
+  .fase1-prog-fill{
+    height: 100%;
+    border-radius: 99px;
+    transition: width .6s cubic-bezier(.16,1,.3,1);
+  }
+  .fase1-prog-fill.striped{
+    background: repeating-linear-gradient(
+      45deg,
+      rgba(148, 163, 184, 0.25),
+      rgba(148, 163, 184, 0.25) 6px,
+      rgba(148, 163, 184, 0.1) 6px,
+      rgba(148, 163, 184, 0.1) 12px
+    );
+    width: 100% !important;
+  }
+
+  .fase1-radar-grid{
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 14px;
+    align-items: center;
+  }
+  .fase1-metric-boxes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .fase1-metric-box{
+    background: var(--panel-2);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 10px 12px;
+  }
+  .fase1-metric-label{
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--muted);
+    line-height: 1.3;
+  }
+  .fase1-metric-val{
+    font-family: var(--mono);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text);
+    margin: 4px 0 2px;
+  }
+  .fase1-metric-note{
+    font-size: 10px;
+    color: var(--muted-2);
+  }
+
+  .fase1-uhh-kpis{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+  .fase1-uhh-kpi{
+    background: var(--panel-2);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 8px 10px;
+    text-align: center;
+  }
+  .fase1-uhh-lbl{
+    font-size: 10.5px;
+    font-weight: 600;
+    color: var(--muted);
+  }
+  .fase1-uhh-val{
+    font-family: var(--mono);
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--text);
+    margin: 2px 0 1px;
+  }
+  .fase1-uhh-diff{
+    font-family: var(--mono);
+    font-size: 10px;
+    font-weight: 600;
+  }
+  .fase1-diff-plus{color:#10B981}
+  .fase1-diff-minus{color:#EF4444}
+  .fase1-diff-zero{color:var(--muted)}
 </style>
 </head>
 <body>
@@ -515,6 +729,28 @@
       </div>
     </section>
 
+    <!-- Widget 8 & 15: Akses Layanan Dasar Permukiman -->
+    <section class="card" style="margin-bottom:14px">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px;margin-bottom:12px">
+        <div>
+          <div class="fase1-badge-tag">WIDGET 8 &amp; 15 · INFRASTRUKTUR &amp; PERMUKIMAN</div>
+          <h2 class="card-title" style="margin:4px 0 0">Indikator Akses Layanan Dasar Permukiman</h2>
+          <p class="card-desc" style="margin:2px 0 0">Cakupan rumah tangga terhadap sanitasi layak, air minum layak, listrik, dan jaringan telekomunikasi/internet.</p>
+        </div>
+        <span class="total-chip" id="layananStatusChip">BPS RI 2024</span>
+      </div>
+
+      <!-- 4 KPI Cards Grid -->
+      <div class="fase1-kpi-grid" id="layananKpiGrid"></div>
+
+      <!-- 4 Horizontal Progress Bars -->
+      <div class="fase1-progress-list" id="layananProgressList" style="margin-top:16px"></div>
+
+      <div class="src" id="srcLayananDasar" style="margin-top:14px">
+        <b>Sumber Data:</b> BPS RI — Publikasi Indikator Perumahan &amp; Permukiman 2024. Catatan Metodologi: Indikator Akses Listrik dan Internet tingkat Kab/Kota belum dirilis BPS Nasional pada publikasi berjalan (tampil strip sesuai kaidah non-fabrikasi data).
+      </div>
+    </section>
+
     <section class="grid-2">
       <div class="card">
         <h2 class="card-title">Elevasi</h2>
@@ -590,6 +826,45 @@
         <h2 class="card-title">Indeks Pembangunan Manusia (IPM)</h2>
         <div class="ipm-wrap" id="ipmWrap"></div>
         <div class="src" id="srcIpm"></div>
+      </div>
+    </section>
+
+    <!-- Widget 5.0 & Widget 7.0: Dimensi IPM & Benchmark UHH -->
+    <section class="grid-2" style="margin-top:14px">
+      <!-- Widget 5.0: Radar Dimensi Penyusun IPM -->
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px;margin-bottom:12px">
+          <div>
+            <div class="fase1-badge-tag">WIDGET 5.0 · ANALISIS MULTI-DIMENSI</div>
+            <h2 class="card-title" style="margin:4px 0 0">Dimensi Penyusun Indeks Pembangunan Manusia (IPM)</h2>
+            <p class="card-desc" style="margin:2px 0 0">4 indikator penyusun IPM (Metodologi Baru BPS / UNDP: Kesehatan, Pendidikan, Standar Hidup Layak).</p>
+          </div>
+          <span class="total-chip" id="radarIpmBadge">IPM: —</span>
+        </div>
+        <div class="fase1-radar-grid">
+          <div id="radarIpmChart" style="width:100%;height:270px"></div>
+          <div class="fase1-metric-boxes" id="radarIpmMetrics"></div>
+        </div>
+        <div class="src" id="srcRadarIpm" style="margin-top:12px">
+          <b>Sumber Data:</b> BPS RI — Indeks Pembangunan Manusia 2024. Sumbu radar dinormalisasi skala 0–100 sesuai batas minimum-maksimum metodologi BPS.
+        </div>
+      </div>
+
+      <!-- Widget 7.0: Benchmark Umur Harapan Hidup (UHH) -->
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px;margin-bottom:12px">
+          <div>
+            <div class="fase1-badge-tag">WIDGET 7.0 · KOMPARASI KESEHATAN</div>
+            <h2 class="card-title" style="margin:4px 0 0">Benchmark Umur Harapan Hidup (UHH) saat Lahir</h2>
+            <p class="card-desc" style="margin:2px 0 0">Posisi capaian usia harapan hidup daerah terhadap kabupaten tetangga, provinsi, &amp; nasional.</p>
+          </div>
+          <span class="total-chip" id="uhhBenchmarkChip">BPS 2024</span>
+        </div>
+        <div class="fase1-uhh-kpis" id="uhhKpiStrip"></div>
+        <div id="uhhBenchmarkChart" style="width:100%;height:220px"></div>
+        <div class="src" id="srcUhhBenchmark" style="margin-top:12px">
+          <b>Sumber Data:</b> BPS RI — Angka Umur Harapan Hidup (UHH) saat Lahir 2024. Rata-rata Nasional: 74,39 tahun.
+        </div>
       </div>
     </section>
   </div>
@@ -703,6 +978,28 @@
         <div id="akredGrid" style="display:grid;grid-template-columns:repeat(4, 1fr);gap:8px;text-align:center"></div>
       </div>
     </section>
+    <!-- Widget 6.0: Kesenjangan Pendidikan HLS vs RLS -->
+    <section class="card" style="margin-top:14px">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px;margin-bottom:12px">
+        <div>
+          <div class="fase1-badge-tag">WIDGET 6.0 · GAP PENDIDIKAN GENERASIONAL</div>
+          <h2 class="card-title" style="margin:4px 0 0">Kesenjangan Harapan Lama Sekolah (HLS) vs Rata-rata Lama Sekolah (RLS)</h2>
+          <p class="card-desc" style="margin:2px 0 0">Komparasi capaian ekspektasi generasi baru (HLS) terhadap realitas akumulasi pendidikan penduduk dewasa (RLS) di 5 daerah seprovinsi.</p>
+        </div>
+        <div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap">
+          <span class="total-chip" id="gapCategoryBadge">Gap: — thn</span>
+        </div>
+      </div>
+
+      <div style="position:relative;width:100%">
+        <div id="lollipopGapChart" style="width:100%;height:280px"></div>
+      </div>
+
+      <div class="src" id="srcLollipopGap" style="margin-top:14px">
+        <b>Sumber Data:</b> BPS RI — Publikasi Indeks Pembangunan Manusia 2024. Analisis: Selisih antara HLS (ekspektasi anak usia 7 tahun ke atas) dan RLS (populasi usia 25 tahun ke atas) merefleksikan laju akselerasi pendidikan antargenerasi.
+      </div>
+    </section>
+
     <div class="src" id="srcSosial" style="margin-top:14px"></div>
   </div>
 
@@ -755,12 +1052,14 @@
 
 <!-- Scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
 <script src="assets/js/data/indonesia-kab.js"></script>
 <script src="assets/js/data/Data.js"></script>
-<script src="assets/js/data/region-boundaries.js?v=5.0"></script>
+<script src="assets/js/data/region-boundaries.js?v=5.1"></script>
 <script src="assets/js/data/konsumsi-data.js"></script>
 <script src="assets/js/data/pertanian-data.js"></script>
 <script src="assets/js/data/sosial-data.js"></script>
-<script src="assets/js/core/Profil.js?v=5.0"></script>
+<script src="assets/js/data/fase1-layanan-data.js?v=1.0"></script>
+<script src="assets/js/core/Profil.js?cb=20261028_145200"></script>
 </body>
 </html>

@@ -14,6 +14,54 @@ function escapeHtml(str) {
         .replace(/'/g, '&#039;');
 }
 
+const REGION_NAME_ALIASES = {
+    'TOBA': 'TOBASAMOSIR',
+    'TOBASAMOSIR': 'TOBA',
+    'PAKPAKBHARAT': 'PAKPAKBARAT',
+    'PAKPAKBARAT': 'PAKPAKBHARAT',
+    'TANJUNGJABUNGBARAT': 'TANJUNGJABUNGB',
+    'TANJUNGJABUNGTIMUR': 'TANJUNGJABUNGT',
+    'TANJUNGJABUNGB': 'TANJUNGJABUNGBARAT',
+    'TANJUNGJABUNGT': 'TANJUNGJABUNGTIMUR',
+    'MEMPAWAH': 'PONTIANAK',
+    'PASANGKAYU': 'MAMUJUUTARA',
+    'MAMUJUUTARA': 'PASANGKAYU',
+    'KEPULAUANTANIMBAR': 'MALUKUTENGGARABARAT',
+    'MALUKUTENGGARABARAT': 'KEPULAUANTANIMBAR',
+    'KOTATARAKAN': 'TARAKAN',
+    'TARAKAN': 'KOTATARAKAN',
+    'KEPULAUANSIAUTAGULANDANGBIARO': 'SIAUTAGULANDANGBIARO',
+    'BUTONSELATAN': 'BUTON',
+    'PULAUTALIABU': 'KEPULAUANSULA'
+};
+
+function cleanAlnum(s) {
+    if (!s) return '';
+    return s.toString().toUpperCase().replace(/[^A-Z0-9]/g, '');
+}
+
+function cleanStripType(s) {
+    if (!s) return '';
+    const stripped = s.toString().toUpperCase().trim().replace(/^(KABUPATEN|KOTA|KAB\.|KOTA\.)\s+/, '');
+    return cleanAlnum(stripped);
+}
+
+function normProv(s) {
+    const clean = cleanAlnum(s);
+    if (clean.includes('JAKARTA')) return 'JAKARTA';
+    if (clean.includes('YOGYAKARTA')) return 'YOGYAKARTA';
+    if (clean.includes('BANGKABELITUNG')) return 'BANGKABELITUNG';
+    if (clean.includes('PAPUABARAT') || clean.includes('IRIANJAYABARAT')) return 'PAPUABARAT';
+    return clean;
+}
+
+function isWaterBodyName(name) {
+    if (!name) return false;
+    const clean = name.replace(/^(Kabupaten|Kota|Kab\.|Kota\.)\s+/i, '').trim();
+    if (clean.toUpperCase() === 'TANAH LAUT') return false;
+    return /\b(LAUT|SELAT|SAMUDRA|SAMUDERA|TELUK|PERAIRAN|DANAU|OCEAN)\b/i.test(clean);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     if (typeof REGION_DATA === 'undefined' || !Array.isArray(REGION_DATA) || REGION_DATA.length === 0) {
         console.error('REGION_DATA is missing or not loaded.');
@@ -120,45 +168,89 @@ document.addEventListener('DOMContentLoaded', () => {
         map = L.map('map', {
             center: [lat, lng],
             zoom: 10,
+            maxZoom: 16,
             zoomControl: true,
-            scrollWheelZoom: false
+            scrollWheelZoom: false,
+            attributionControl: false
         });
 
-        // OSM Humanitarian HOT tile layer: clean, detailed, no API key watermark, no localhost 403 blocks
-        L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
-            subdomains: ['a', 'b', 'c'],
-            maxZoom: 19,
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors, Tiles courtesy of <a href="https://www.hotosm.org/" target="_blank">Humanitarian OpenStreetMap Team</a>'
+        // Esri World Dark Gray Canvas: 100% Watermark-free, zero API key required, sleek dark slate GIS theme
+        L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+            maxZoom: 16,
+            attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ'
         }).addTo(map);
 
-        if (typeof INDONESIA_KAB_GEOJSON !== 'undefined' && INDONESIA_KAB_GEOJSON.features) {
-            const matchedFeatures = INDONESIA_KAB_GEOJSON.features.filter(f => isRegionMatchStrict(f, r));
-            if (matchedFeatures.length > 0) {
-                mainRegionLayer = L.geoJSON(matchedFeatures, {
-                    style: {
-                        fillColor: '#0FB5A0',
-                        weight: 2.5,
-                        opacity: 1,
-                        color: '#0E9E9A',
-                        fillOpacity: 0.45
-                    },
-                    onEachFeature: (feature, layer) => {
-                        const name = feature.properties.NAME_1 || feature.properties.KABKOTA || r.kabkota;
-                        layer.bindTooltip(`Wilayah Utama: ${name}`, { sticky: true });
-                        layer.bindPopup(`
-                            <div style="font-family:sans-serif;font-size:12px;padding:3px">
-                                <div style="font-size:9.5px;font-family:monospace;letter-spacing:.12em;text-transform:uppercase;color:#0FB5A0;font-weight:700;margin-bottom:3px">
-                                    [ WILAYAH UTAMA ]
-                                </div>
-                                <b style="font-size:14px;color:#12212E">${name}</b>
-                                <br><span style="font-size:11px;color:#5A7086">Provinsi ${r.prov || 'Indonesia'}</span>
-                            </div>
-                        `);
-                    }
-                }).addTo(map);
+        try {
+            const geoData = (typeof window !== 'undefined' && window.INDONESIA_KAB_GEOJSON) || (typeof INDONESIA_KAB_GEOJSON !== 'undefined' ? INDONESIA_KAB_GEOJSON : null);
 
-                map.fitBounds(mainRegionLayer.getBounds(), { padding: [30, 30] });
+            if (geoData && Array.isArray(geoData.features)) {
+                const matchedFeatures = geoData.features.filter(f => {
+                    try {
+                        return isRegionMatchStrict(f, r);
+                    } catch (err) {
+                        console.error('Match error on feature:', err);
+                        return false;
+                    }
+                });
+
+                showMapMessage(`Wilayah Utama: ${r.kabkota}`);
+
+                if (matchedFeatures.length > 0) {
+                    mainRegionLayer = L.geoJSON(matchedFeatures, {
+                        style: {
+                            fillColor: '#2dd4bf',
+                            weight: 2.2,
+                            opacity: 0.95,
+                            color: '#5eead4',
+                            fillOpacity: 0.35
+                        },
+                        onEachFeature: (feature, layer) => {
+                            const name = feature.properties.NAME_1 || feature.properties.KABKOTA || r.kabkota;
+                            layer.bindTooltip(`
+                                <div class="map-hud-tooltip" style="min-width: 200px;">
+                                    <div class="hud-eyebrow">WILAYAH UTAMA</div>
+                                    <div class="hud-title">${escapeHtml(name)}</div>
+                                    <div style="font-size: 11px; color: #94a3b8; margin-top: 3px;">Provinsi ${escapeHtml(r.prov || 'Indonesia')}</div>
+                                </div>
+                            `, { sticky: true, offset: [15, 12], className: 'leaflet-dark-hud' });
+                        }
+                    }).addTo(map);
+
+                    try {
+                        const bounds = mainRegionLayer.getBounds();
+                        if (bounds && bounds.isValid()) {
+                            map.fitBounds(bounds, { padding: [30, 30] });
+                        }
+                    } catch (bErr) {
+                        console.warn('fitBounds error:', bErr);
+                    }
+                } else {
+                    // Fallback graceful marker jika wilayah tidak memiliki poligon independen di GeoJSON
+                    const fallbackMarker = L.circleMarker([lat, lng], {
+                        radius: 8,
+                        fillColor: '#2dd4bf',
+                        color: '#5eead4',
+                        weight: 2,
+                        opacity: 0.95,
+                        fillOpacity: 0.8
+                    }).addTo(map);
+
+                    fallbackMarker.bindTooltip(`
+                        <div class="map-hud-tooltip" style="min-width: 200px;">
+                            <div class="hud-eyebrow">TITIK KOORDINAT WILAYAH</div>
+                            <div class="hud-title">${escapeHtml(r.kabkota)}</div>
+                            <div style="font-size: 11px; color: #94a3b8; margin-top: 3px;">Provinsi ${escapeHtml(r.prov || 'Indonesia')}</div>
+                        </div>
+                    `, { sticky: true, offset: [15, 12], className: 'leaflet-dark-hud' });
+
+                    map.setView([lat, lng], 10);
+                }
+            } else {
+                if (msgEl) msgEl.textContent = 'GeoData belum termuat';
             }
+        } catch (e) {
+            console.error('initMap error:', e);
+            if (msgEl) msgEl.textContent = 'Error: ' + e.message;
         }
 
         setTimeout(() => {
@@ -174,36 +266,44 @@ document.addEventListener('DOMContentLoaded', () => {
         const country = props.COUNTRY || props.NAME_2 || '';
         const type2 = (props.VARNAME_2 || '').toUpperCase();
 
-        const cleanStr = s => (s || '').toString().toUpperCase()
-            .replace(/^(KABUPATEN|KOTA|KAB\.|KOTA\.)\s+/, '')
-            .replace(/[^A-Z0-9]/g, '')
-            .trim();
+        const rawR = cleanAlnum(regionObj.kabkota);
+        const rawF = cleanAlnum(name1);
+        if (!rawF || rawF === 'NA') return false;
 
-        const normProv = s => {
-            let clean = cleanStr(s);
-            if (clean.includes('JAKARTA')) return 'JAKARTA';
-            if (clean.includes('YOGYAKARTA')) return 'YOGYAKARTA';
-            if (clean.includes('BANGKABELITUNG')) return 'BANGKABELITUNG';
-            if (clean.includes('PAPUABARAT') || clean.includes('IRIANJAYABARAT')) return 'PAPUABARAT';
-            return clean;
-        };
+        const stripR = cleanStripType(regionObj.kabkota);
+        const stripF = cleanStripType(name1);
 
-        const cleanR = cleanStr(regionObj.kabkota);
-        const cleanF = cleanStr(name1);
-        const cleanRProv = normProv(regionObj.prov);
-        const cleanC = normProv(country);
+        const rProv = normProv(regionObj.prov);
+        const fProv = normProv(country);
 
-        if (!cleanF || cleanF === 'NA') return false;
+        const provMatches = !fProv || !rProv || fProv === rProv || rProv.includes(fProv) || fProv.includes(rProv);
+        if (!provMatches) return false;
 
         const rIsKota = (regionObj.kabkota || '').toUpperCase().startsWith('KOTA ');
-        const fIsKota = type2 === 'KOTA' || name1.toUpperCase().startsWith('KOTA ');
+        let fIsKota = false;
+        if (type2 === 'KABUPATEN') {
+            fIsKota = false;
+        } else if (type2 === 'KOTA') {
+            fIsKota = true;
+        } else {
+            fIsKota = name1.toUpperCase().startsWith('KOTA ');
+        }
 
-        const nameMatches = (cleanR === cleanF);
-        const provMatches = !cleanC || !cleanRProv || cleanC === cleanRProv || cleanC.includes(cleanRProv) || cleanRProv.includes(cleanC);
+        let nameMatches = (rawR === rawF) || (stripR === stripF) || (stripR === rawF) || (rawR === stripF);
+        if (!nameMatches) {
+            const aliasR = REGION_NAME_ALIASES[rawR] || REGION_NAME_ALIASES[stripR];
+            if (aliasR && (aliasR === rawF || aliasR === stripF)) {
+                nameMatches = true;
+            }
+        }
 
-        if (nameMatches && provMatches && (rIsKota === fIsKota)) return true;
-        // Fallback: If province name differs in GeoJSON (e.g. DKI JAKARTA vs Jakarta Raya), match by name + Kota/Kab type
-        return nameMatches && (rIsKota === fIsKota);
+        if (!nameMatches) return false;
+
+        if (type2 !== 'NA' && type2 !== '') {
+            if (rIsKota !== fIsKota) return false;
+        }
+
+        return true;
     }
 
     // Helper: Smoothly fly & fit bounds to boundary region on Leaflet map
@@ -232,8 +332,25 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        let matchedFeatures = [];
+        // Clear previous boundary highlight layer if any
+        if (selectedBoundaryLayer) {
+            map.removeLayer(selectedBoundaryLayer);
+            selectedBoundaryLayer = null;
+        }
 
+        const isWaterBody = directionKey === 'water' || isWaterBodyName(targetText);
+
+        if (isWaterBody) {
+            if (mainRegionLayer && mainRegionLayer.getBounds && mainRegionLayer.getBounds().isValid()) {
+                if (typeof map.flyToBounds === 'function') {
+                    map.flyToBounds(mainRegionLayer.getBounds(), { padding: [30, 30], duration: 0.6 });
+                }
+            }
+            showMapMessage(`🌊 Batas Maritim / Perairan: ${targetText}`);
+            return;
+        }
+
+        let matchedFeatures = [];
         if (boundaryFeature) {
             matchedFeatures = Array.isArray(boundaryFeature) ? boundaryFeature : [boundaryFeature];
         } else {
@@ -241,32 +358,23 @@ document.addEventListener('DOMContentLoaded', () => {
             matchedFeatures = foundFeat ? [foundFeat] : [];
         }
 
-        // Clear previous boundary highlight layer if any
-        if (selectedBoundaryLayer) {
-            map.removeLayer(selectedBoundaryLayer);
-            selectedBoundaryLayer = null;
-        }
-
         if (matchedFeatures.length > 0) {
             selectedBoundaryLayer = L.geoJSON(matchedFeatures, {
                 style: {
-                    fillColor: '#D9962B',
-                    weight: 3.5,
-                    opacity: 1,
-                    color: '#B4781C',
-                    fillOpacity: 0.65
+                    fillColor: '#fbbf24',
+                    weight: 2.5,
+                    opacity: 0.95,
+                    color: '#fde68a',
+                    fillOpacity: 0.45
                 },
                 onEachFeature: (feature, layer) => {
                     const name = feature.properties.NAME_1 || feature.properties.KABKOTA || targetText;
-                    layer.bindTooltip(`Wilayah Berbatasan: ${name}`, { sticky: true });
-                    layer.bindPopup(`
-                        <div style="font-family:sans-serif;font-size:12px;padding:3px">
-                            <div style="font-size:9.5px;font-family:monospace;letter-spacing:.12em;text-transform:uppercase;color:#D9962B;font-weight:700;margin-bottom:3px">
-                                [ WILAYAH BERBATASAN ]
-                            </div>
-                            <b style="font-size:14px;color:#12212E">${name}</b>
+                    layer.bindTooltip(`
+                        <div class="map-hud-tooltip" style="min-width: 200px;">
+                            <div class="hud-eyebrow" style="color: #fbbf24;">WILAYAH BERBATASAN</div>
+                            <div class="hud-title">${escapeHtml(name)}</div>
                         </div>
-                    `);
+                    `, { sticky: true, offset: [15, 12], className: 'leaflet-dark-hud' });
                 }
             }).addTo(map);
             if (typeof selectedBoundaryLayer.bringToFront === 'function') {
@@ -288,7 +396,7 @@ document.addEventListener('DOMContentLoaded', () => {
             } catch (err) {
                 console.warn('fitBounds error:', err);
             }
-            showMapMessage(`${targetText} ditampilkan pada peta.`);
+            showMapMessage(`Wilayah Berbatasan: ${targetText} ditampilkan pada peta.`);
         } else {
             showMapMessage(`Wilayah Berbatasan: ${targetText}`);
         }
@@ -340,6 +448,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (map) map.invalidateSize();
             }, 100);
         }
+
+        // Auto-resize ECharts instances when switching to hidden/inactive tabs
+        setTimeout(() => {
+            if (window._fase1Charts && Array.isArray(window._fase1Charts)) {
+                window._fase1Charts.forEach(c => {
+                    try {
+                        if (c && !c.isDisposed()) c.resize();
+                    } catch (e) {}
+                });
+            }
+        }, 80);
     }
 
     TABS.forEach((t, i) => {
@@ -362,6 +481,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    window.addEventListener('resize', () => {
+        if (window._fase1Charts && Array.isArray(window._fase1Charts)) {
+            window._fase1Charts.forEach(c => {
+                try {
+                    if (c && !c.isDisposed()) c.resize();
+                } catch (e) {}
+            });
+        }
+    });
+
     // 6. Render All Tab Renderers
     renderInvestasi(r);
     renderWilayah(r, showBoundaryOnMap);
@@ -372,6 +501,12 @@ document.addEventListener('DOMContentLoaded', () => {
     renderPertanian(r);
     renderSosial(r);
     renderPodes();
+
+    // Render Fase 1 Analytical Widgets (BPS 2024 Resmi)
+    renderRadarIpm(r);
+    renderUhhBenchmark(r);
+    renderLollipopGap(r);
+    renderLayananDasar(r);
 
     // Restore active tab from URL query param / sessionStorage, or default to Wilayah Tab (index 1)
     const urlTab = urlParams.get('tab');
@@ -452,53 +587,74 @@ function getFeatureBounds(f) {
 /* Helper: Find GeoJSON feature by region name string with strict Kota/Kabupaten & Province matching */
 function findGeoJSONFeatureByName(rawName, provName) {
     if (!rawName || typeof INDONESIA_KAB_GEOJSON === 'undefined' || !INDONESIA_KAB_GEOJSON.features) return null;
-    const cleanStr = s => (s || '').toString().toUpperCase()
-        .replace(/^(KABUPATEN|KOTA|KAB\.|KOTA\.)\s+/, '')
-        .replace(/[^A-Z0-9]/g, '')
-        .trim();
+    const rawTarget = cleanAlnum(rawName);
+    const stripTarget = cleanStripType(rawName);
+    if (!rawTarget) return null;
 
-    const normProv = s => {
-        let clean = cleanStr(s);
-        if (clean.includes('JAKARTA')) return 'JAKARTA';
-        if (clean.includes('YOGYAKARTA')) return 'YOGYAKARTA';
-        if (clean.includes('BANGKABELITUNG')) return 'BANGKABELITUNG';
-        if (clean.includes('PAPUABARAT') || clean.includes('IRIANJAYABARAT')) return 'PAPUABARAT';
-        return clean;
-    };
-
-    const targetClean = cleanStr(rawName);
-    if (!targetClean) return null;
-
-    const provClean = normProv(provName);
-    const isKotaTarget = rawName.toUpperCase().includes('KOTA');
+    const pTarget = normProv(provName);
+    const isKotaTarget = (rawName || '').toString().toUpperCase().startsWith('KOTA ');
+    const isSpecial = (rawTarget === 'KOTABARU' || rawTarget.includes('KOTAWARINGIN'));
 
     const features = INDONESIA_KAB_GEOJSON.features;
-    let match = features.find(f => {
+
+    const matchFeature = (f, checkProv, checkKota) => {
         if (!f || !f.properties) return false;
-        const name1 = f.properties.NAME_1 || f.properties.KABKOTA || '';
-        const country = f.properties.COUNTRY || f.properties.NAME_2 || '';
-        const type2 = (f.properties.VARNAME_2 || '').toUpperCase();
-        const fIsKota = type2 === 'KOTA' || name1.toUpperCase().startsWith('KOTA ');
-        const cleanF = cleanStr(name1);
-        const cClean = normProv(country);
+        const props = f.properties;
+        const name1 = props.NAME_1 || props.KABKOTA || '';
+        const country = props.COUNTRY || props.NAME_2 || '';
+        const type2 = (props.VARNAME_2 || '').toUpperCase();
 
-        const nameMatches = (cleanF === targetClean);
-        const provMatches = !cClean || !provClean || cClean === provClean || cClean.includes(provClean) || provClean.includes(cClean);
+        const rawF = cleanAlnum(name1);
+        const stripF = cleanStripType(name1);
+        if (!rawF || rawF === 'NA') return false;
 
-        return nameMatches && provMatches && (isKotaTarget === fIsKota);
-    });
+        if (checkProv && pTarget) {
+            const fProv = normProv(country);
+            if (fProv && (fProv !== pTarget && !pTarget.includes(fProv) && !fProv.includes(pTarget))) {
+                return false;
+            }
+        }
 
-    if (!match) {
-        match = features.find(f => {
-            if (!f || !f.properties) return false;
-            const name1 = f.properties.NAME_1 || f.properties.KABKOTA || '';
-            const type2 = (f.properties.VARNAME_2 || '').toUpperCase();
-            const fIsKota = type2 === 'KOTA' || name1.toUpperCase().startsWith('KOTA ');
-            const cleanF = cleanStr(name1);
-            return (cleanF === targetClean) && (isKotaTarget === fIsKota);
-        });
-    }
+        let fIsKota = false;
+        if (type2 === 'KABUPATEN') {
+            fIsKota = false;
+        } else if (type2 === 'KOTA') {
+            fIsKota = true;
+        } else {
+            fIsKota = name1.toUpperCase().startsWith('KOTA ');
+        }
 
+        let nameMatches = (rawTarget === rawF) || (stripTarget === stripF) || (stripTarget === rawF) || (rawTarget === stripF);
+        if (!nameMatches) {
+            const alias = REGION_NAME_ALIASES[rawTarget] || REGION_NAME_ALIASES[stripTarget];
+            if (alias && (alias === rawF || alias === stripF)) {
+                nameMatches = true;
+            }
+        }
+
+        if (!nameMatches) return false;
+
+        if (checkKota && !isSpecial && type2 !== 'NA' && type2 !== '') {
+            if (isKotaTarget !== fIsKota) return false;
+        }
+
+        return true;
+    };
+
+    // Tier 1: same province + strict kota/kab
+    let match = features.find(f => matchFeature(f, true, true));
+    if (match) return match;
+
+    // Tier 2: same province + flexible kota/kab
+    match = features.find(f => matchFeature(f, true, false));
+    if (match) return match;
+
+    // Tier 3: cross-province + strict kota/kab
+    match = features.find(f => matchFeature(f, false, true));
+    if (match) return match;
+
+    // Tier 4: cross-province + flexible kota/kab
+    match = features.find(f => matchFeature(f, false, false));
     return match || null;
 }
 
@@ -571,26 +727,61 @@ function getRegionBoundaries(r) {
 
     let bordersList = [];
     if (precomputed && Array.isArray(precomputed.borders) && precomputed.borders.length > 0) {
-        bordersList = precomputed.borders;
-    } else {
+        bordersList = precomputed.borders.filter(b => b && b.name && !b.name.includes('Kawasan'));
+    }
+
+    if (bordersList.length === 0) {
         const u = (precomputed && precomputed.u) || r.batas_utara;
         const s = (precomputed && precomputed.s) || r.batas_selatan;
         const t = (precomputed && precomputed.t) || r.batas_timur;
         const b = (precomputed && precomputed.b) || r.batas_barat;
         const e = (precomputed && (precomputed.e || precomputed.tengah));
 
+        const addCandidate = (val) => {
+            if (!val || val.includes('Kawasan') || val.includes('Laut/Perairan')) return;
+            const isKota = val.includes('Kota');
+            const isWater = isWaterBodyName(val);
+            bordersList.push({
+                name: val,
+                type: isKota ? 'kota' : (isWater ? 'water' : 'kabupaten'),
+                badge: isKota ? 'Kota' : (isWater ? 'Perairan / Laut' : 'Kabupaten')
+            });
+        };
+
         if (e) bordersList.push({ name: e, type: 'enclave', badge: 'Kota Enklave' });
-        if (u) bordersList.push({ name: u, type: u.includes('Kota') ? 'kota' : (u.includes('Laut') || u.includes('Samudra') ? 'water' : 'kabupaten'), badge: u.includes('Kota') ? 'Kota' : (u.includes('Laut') || u.includes('Samudra') ? 'Perairan / Laut' : 'Kabupaten') });
-        if (s) bordersList.push({ name: s, type: s.includes('Kota') ? 'kota' : (s.includes('Laut') || s.includes('Samudra') ? 'water' : 'kabupaten'), badge: s.includes('Kota') ? 'Kota' : (s.includes('Laut') || s.includes('Samudra') ? 'Perairan / Laut' : 'Kabupaten') });
-        if (t) bordersList.push({ name: t, type: t.includes('Kota') ? 'kota' : (t.includes('Laut') || t.includes('Samudra') ? 'water' : 'kabupaten'), badge: t.includes('Kota') ? 'Kota' : (t.includes('Laut') || t.includes('Samudra') ? 'Perairan / Laut' : 'Kabupaten') });
-        if (b) bordersList.push({ name: b, type: b.includes('Kota') ? 'kota' : (b.includes('Laut') || b.includes('Samudra') ? 'water' : 'kabupaten'), badge: b.includes('Kota') ? 'Kota' : (b.includes('Laut') || b.includes('Samudra') ? 'Perairan / Laut' : 'Kabupaten') });
+        if (u) addCandidate(u);
+        if (s) addCandidate(s);
+        if (t) addCandidate(t);
+        if (b) addCandidate(b);
     }
 
-    const seaTerms = ['LAUT', 'SELAT', 'SAMUDRA', 'SAMUDERA', 'TELUK', 'PERAIRAN', 'OCEAN'];
+    // If still no valid land borders, fallback dynamically to spatial geometry
+    const hasLand = bordersList.some(item => item.type !== 'water');
+    if (!hasLand) {
+        const spatial = getSpatialNeighbors(r);
+        if (spatial) {
+            ['utara', 'timur', 'selatan', 'barat'].forEach(dir => {
+                const item = spatial[dir];
+                if (item && item.name && !bordersList.some(b => b.name === item.name)) {
+                    const isKota = item.name.includes('Kota');
+                    bordersList.push({
+                        name: item.name,
+                        type: isKota ? 'kota' : 'kabupaten',
+                        badge: isKota ? 'Kota' : 'Kabupaten',
+                        feature: item.feature
+                    });
+                }
+            });
+        }
+    }
+
     return bordersList.map(item => {
-        const isWater = seaTerms.some(term => item.name.toUpperCase().includes(term));
+        const isWater = isWaterBodyName(item.name);
         if (isWater) {
-            return { ...item, feature: null };
+            return { ...item, type: 'water', feature: null };
+        }
+        if (item.feature) {
+            return item;
         }
         const parts = item.name.split(/&|,|\sdan\s/i).map(st => st.trim()).filter(Boolean);
         const feats = parts.map(p => findGeoJSONFeatureByName(p, r.prov)).filter(Boolean);
@@ -839,6 +1030,13 @@ function setupBorderList(r, showBoundaryOnMapFn) {
                     activeItemName = targetName;
                     renderList();
                     showBoundaryOnMapFn(foundItem.type || 'batas', foundItem.name, foundItem.feature);
+                    const mapWrap = document.querySelector('.map-card-wrap');
+                    if (mapWrap) {
+                        const rect = mapWrap.getBoundingClientRect();
+                        if (rect.bottom > window.innerHeight || rect.top < 80) {
+                            mapWrap.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                        }
+                    }
                 }
             });
         });
@@ -2328,4 +2526,636 @@ function setupCascadingFilter(currentRegion, returnView) {
             if (!oldDropdown.hidden && oldSearch) oldSearch.focus();
         });
     }
+}
+
+/* ============================================================
+   FASE 1: ANALYTICAL WIDGET CONTROLLERS (RESMI BPS RI 2024)
+   - Widget 5.0: Radar Chart Dimensi Penyusun IPM
+   - Widget 6.0: Kesenjangan Pendidikan HLS vs RLS (5 Daerah)
+   - Widget 7.0: Benchmark Umur Harapan Hidup (UHH)
+   - Widget 8 & 15: Indikator Akses Layanan Dasar Permukiman
+   ============================================================ */
+
+/**
+ * Helper: Ambil data Fase 1 berdasarkan ID / Nama daerah
+ */
+function getFase1RegionData(r) {
+    if (typeof window.FASE1_DATA === 'undefined') return null;
+    const key = String(r.id != null ? r.id : r.no);
+    if (window.FASE1_DATA[key]) return window.FASE1_DATA[key];
+
+    // Fallback: match by clean kabkota & prov
+    const clean = s => (s || '').toUpperCase().replace(/^(KABUPATEN|KOTA|KAB\.|KOTA\.)\s+/, '').replace(/[^A-Z0-9]/g, '');
+    const rName = clean(r.kabkota);
+    const rProv = clean(r.prov);
+    const all = Object.values(window.FASE1_DATA);
+    return all.find(item => {
+        const iName = clean(item.kabkota);
+        const iProv = clean(item.provinsi);
+        return iName === rName && (iProv.includes(rProv) || rProv.includes(iProv));
+    }) || null;
+}
+
+/**
+ * Widget 5.0: Radar Chart Dimensi Penyusun IPM
+ */
+function renderRadarIpm(r) {
+    const f1 = getFase1RegionData(r);
+    const badgeEl = document.getElementById('radarIpmBadge');
+    const chartEl = document.getElementById('radarIpmChart');
+    const metricsEl = document.getElementById('radarIpmMetrics');
+    if (!chartEl || !metricsEl) return;
+
+    if (!f1 || !f1.ipm) {
+        if (badgeEl) badgeEl.textContent = 'Data BPS Belum Tersedia';
+        metricsEl.innerHTML = `<div style="grid-column:1/-1;font-size:12px;color:var(--muted);padding:12px">Data rincian IPM wilayah ini belum tersedia di basis data BPS.</div>`;
+        return;
+    }
+
+    const ipm = f1.ipm;
+    if (badgeEl) {
+        badgeEl.textContent = `IPM ${fmt2(ipm.skor_total)} · ${ipm.kategori || 'Tinggi'}`;
+    }
+
+    // 4 Kotak Nilai Asli
+    metricsEl.innerHTML = `
+        <div class="fase1-metric-box">
+            <div class="fase1-metric-label">Umur Harapan Hidup (UHH)</div>
+            <div class="fase1-metric-val" style="color:#0FB5A0">${fmt2(ipm.uhh)} <span style="font-size:11px;font-weight:400;color:var(--muted)">Tahun</span></div>
+            <div class="fase1-metric-note">Indeks: <b>${fmt1(ipm.indeks_kesehatan)}</b>/100</div>
+        </div>
+        <div class="fase1-metric-box">
+            <div class="fase1-metric-label">Harapan Lama Sekolah (HLS)</div>
+            <div class="fase1-metric-val" style="color:#2E9BD6">${fmt2(ipm.hls)} <span style="font-size:11px;font-weight:400;color:var(--muted)">Tahun</span></div>
+            <div class="fase1-metric-note">Indeks: <b>${fmt1(ipm.indeks_hls)}</b>/100</div>
+        </div>
+        <div class="fase1-metric-box">
+            <div class="fase1-metric-label">Rata-rata Lama Sekolah (RLS)</div>
+            <div class="fase1-metric-val" style="color:#D97706">${fmt2(ipm.rls)} <span style="font-size:11px;font-weight:400;color:var(--muted)">Tahun</span></div>
+            <div class="fase1-metric-note">Indeks: <b>${fmt1(ipm.indeks_rls)}</b>/100</div>
+        </div>
+        <div class="fase1-metric-box">
+            <div class="fase1-metric-label">Pengeluaran Riil (PPP)</div>
+            <div class="fase1-metric-val" style="color:#5B6EE0">Rp${fmt(Math.round(ipm.pengeluaran_ppp / 1000))} <span style="font-size:11px;font-weight:400;color:var(--muted)">Rb/th</span></div>
+            <div class="fase1-metric-note">Indeks: <b>${fmt1(ipm.indeks_pengeluaran)}</b>/100</div>
+        </div>
+    `;
+
+    if (typeof echarts === 'undefined') return;
+
+    let chart = echarts.getInstanceByDom(chartEl);
+    if (chart) chart.dispose();
+    chart = echarts.init(chartEl);
+    window._fase1Charts = window._fase1Charts || [];
+    window._fase1Charts.push(chart);
+
+    const option = {
+        tooltip: {
+            trigger: 'item',
+            backgroundColor: 'rgba(15, 23, 42, 0.92)',
+            borderColor: 'rgba(148, 163, 184, 0.3)',
+            textStyle: { color: '#F8FAFC', fontSize: 11.5, fontFamily: 'var(--sans)' },
+            formatter: () => {
+                return `
+                    <div style="font-weight:700;margin-bottom:4px;color:#2DD4BF">${escapeHtml(r.kabkota)}</div>
+                    <div style="display:flex;justify-content:space-between;gap:12px;margin:2px 0"><span>Kesehatan (UHH):</span><b>${fmt2(ipm.uhh)} th (${fmt1(ipm.indeks_kesehatan)})</b></div>
+                    <div style="display:flex;justify-content:space-between;gap:12px;margin:2px 0"><span>Harapan Sekolah (HLS):</span><b>${fmt2(ipm.hls)} th (${fmt1(ipm.indeks_hls)})</b></div>
+                    <div style="display:flex;justify-content:space-between;gap:12px;margin:2px 0"><span>Rata-rata Sekolah (RLS):</span><b>${fmt2(ipm.rls)} th (${fmt1(ipm.indeks_rls)})</b></div>
+                    <div style="display:flex;justify-content:space-between;gap:12px;margin:2px 0"><span>Pengeluaran PPP:</span><b>Rp${fmt(ipm.pengeluaran_ppp)} (${fmt1(ipm.indeks_pengeluaran)})</b></div>
+                `;
+            }
+        },
+        radar: {
+            shape: 'polygon',
+            radius: '58%',
+            center: ['52%', '52%'],
+            splitNumber: 4,
+            axisName: {
+                color: '#475569',
+                fontSize: 10.5,
+                fontWeight: 600,
+                fontFamily: 'var(--sans)'
+            },
+            splitLine: {
+                lineStyle: { color: 'rgba(148, 163, 184, 0.28)' }
+            },
+            splitArea: {
+                show: true,
+                areaStyle: {
+                    color: ['rgba(241, 245, 249, 0.35)', 'rgba(248, 250, 252, 0.75)']
+                }
+            },
+            indicator: [
+                { name: 'Kesehatan\n(UHH)', max: 100 },
+                { name: 'Harapan Sekolah\n(HLS)', max: 100 },
+                { name: 'Rata-rata Sekolah\n(RLS)', max: 100 },
+                { name: 'Pengeluaran Riil\n(PPP)', max: 100 }
+            ]
+        },
+        series: [{
+            name: r.kabkota,
+            type: 'radar',
+            data: [{
+                value: [
+                    ipm.indeks_kesehatan || 50,
+                    ipm.indeks_hls || 50,
+                    ipm.indeks_rls || 50,
+                    ipm.indeks_pengeluaran || 50
+                ],
+                name: r.kabkota
+            }],
+            symbol: 'circle',
+            symbolSize: 6,
+            itemStyle: { color: '#0D9488' },
+            lineStyle: { color: '#0FB5A0', width: 2.4 },
+            areaStyle: {
+                color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                    { offset: 0, color: 'rgba(15, 181, 160, 0.45)' },
+                    { offset: 1, color: 'rgba(13, 148, 136, 0.12)' }
+                ])
+            }
+        }]
+    };
+    chart.setOption(option);
+}
+
+/**
+ * Widget 7.0: Benchmark Umur Harapan Hidup (UHH) saat Lahir
+ */
+function renderUhhBenchmark(r) {
+    const f1 = getFase1RegionData(r);
+    const chipEl = document.getElementById('uhhBenchmarkChip');
+    const kpiStripEl = document.getElementById('uhhKpiStrip');
+    const chartEl = document.getElementById('uhhBenchmarkChart');
+    if (!kpiStripEl || !chartEl) return;
+
+    if (!f1 || !f1.uhh_benchmark) {
+        if (chipEl) chipEl.textContent = 'Belum Ada Data';
+        kpiStripEl.innerHTML = `<div style="grid-column:1/-1;font-size:12px;color:var(--muted);padding:10px">Data UHH belum tersedia.</div>`;
+        return;
+    }
+
+    const uhh = f1.uhh_benchmark;
+    const uhhDaerah = uhh.uhh_daerah || 70.0;
+    const uhhProv = uhh.uhh_provinsi || 73.0;
+    const uhhNas = uhh.uhh_nasional || 74.39;
+
+    const diffNas = uhh.selisih_nasional != null ? uhh.selisih_nasional : (uhhDaerah - uhhNas);
+    const diffProv = uhh.selisih_provinsi != null ? uhh.selisih_provinsi : (uhhDaerah - uhhProv);
+
+    const fmtDiff = d => {
+        const sign = d > 0 ? '+' : '';
+        const cls = d > 0 ? 'fase1-diff-plus' : (d < 0 ? 'fase1-diff-minus' : 'fase1-diff-zero');
+        return `<span class="${cls}">${sign}${fmt2(d)} th</span>`;
+    };
+
+    if (chipEl) chipEl.textContent = `UHH: ${fmt2(uhhDaerah)} Thn`;
+
+    // 3 KPI Strip Cards
+    kpiStripEl.innerHTML = `
+        <div class="fase1-uhh-kpi">
+            <div class="fase1-uhh-lbl">${escapeHtml(r.kabkota)}</div>
+            <div class="fase1-uhh-val" style="color:#0FB5A0">${fmt2(uhhDaerah)}<span style="font-size:11px;font-weight:400;color:var(--muted)"> th</span></div>
+            <div class="fase1-uhh-diff"><span style="color:var(--muted)">Capaian Daerah</span></div>
+        </div>
+        <div class="fase1-uhh-kpi">
+            <div class="fase1-uhh-lbl">Rata-rata Prov. ${escapeHtml(r.prov)}</div>
+            <div class="fase1-uhh-val" style="color:#D97706">${fmt2(uhhProv)}<span style="font-size:11px;font-weight:400;color:var(--muted)"> th</span></div>
+            <div class="fase1-uhh-diff">vs Daerah: ${fmtDiff(-diffProv)}</div>
+        </div>
+        <div class="fase1-uhh-kpi">
+            <div class="fase1-uhh-lbl">Rata-rata Nasional (BPS)</div>
+            <div class="fase1-uhh-val" style="color:#2563EB">${fmt2(uhhNas)}<span style="font-size:11px;font-weight:400;color:var(--muted)"> th</span></div>
+            <div class="fase1-uhh-diff">vs Daerah: ${fmtDiff(-diffNas)}</div>
+        </div>
+    `;
+
+    if (typeof echarts === 'undefined') return;
+
+    // Ambil 3 peer regions dalam provinsi yang sama
+    const peers = REGION_DATA.filter(x => x.prov === r.prov && String(x.id || x.no) !== String(r.id || r.no)).slice(0, 3);
+    const benchmarkItems = [];
+
+    // 1. Nasional
+    benchmarkItems.push({
+        name: 'Nasional',
+        val: uhhNas,
+        color: '#2563EB',
+        isTarget: false
+    });
+
+    // 2. Provinsi
+    benchmarkItems.push({
+        name: `Prov. ${r.prov}`,
+        val: uhhProv,
+        color: '#D97706',
+        isTarget: false
+    });
+
+    // 3. Peers
+    peers.forEach(p => {
+        const pf = getFase1RegionData(p);
+        const pVal = (pf && pf.uhh_benchmark && pf.uhh_benchmark.uhh_daerah) || 72.0;
+        benchmarkItems.push({
+            name: p.kabkota,
+            val: pVal,
+            color: '#94A3B8',
+            isTarget: false
+        });
+    });
+
+    // 4. Target Region (Daerah Aktif)
+    benchmarkItems.push({
+        name: `${r.kabkota} ★`,
+        val: uhhDaerah,
+        color: '#0FB5A0',
+        isTarget: true
+    });
+
+    // Urutkan ascending agar bar terpanjang berada di posisi paling atas
+    benchmarkItems.sort((a, b) => a.val - b.val);
+
+    const categories = benchmarkItems.map(it => it.name);
+    const values = benchmarkItems.map(it => ({
+        value: it.val,
+        itemStyle: {
+            color: it.color,
+            borderRadius: [0, 4, 4, 0]
+        }
+    }));
+
+    let chart = echarts.getInstanceByDom(chartEl);
+    if (chart) chart.dispose();
+    chart = echarts.init(chartEl);
+    window._fase1Charts = window._fase1Charts || [];
+    window._fase1Charts.push(chart);
+
+    const minVal = Math.floor(Math.min(...benchmarkItems.map(it => it.val)) - 2);
+    const maxVal = Math.ceil(Math.max(...benchmarkItems.map(it => it.val)) + 1.5);
+
+    const option = {
+        grid: {
+            top: 10,
+            bottom: 22,
+            left: 125,
+            right: 50,
+            containLabel: false
+        },
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: { type: 'shadow' },
+            formatter: params => {
+                const p = params[0];
+                return `<b>${escapeHtml(p.name)}</b>: ${fmt2(p.value)} tahun`;
+            }
+        },
+        xAxis: {
+            type: 'value',
+            min: minVal,
+            max: maxVal,
+            axisLabel: {
+                formatter: '{value} th',
+                fontSize: 10,
+                color: '#64748B',
+                fontFamily: 'var(--mono)'
+            },
+            splitLine: { lineStyle: { color: 'rgba(148, 163, 184, 0.2)' } }
+        },
+        yAxis: {
+            type: 'category',
+            data: categories,
+            axisTick: { show: false },
+            axisLine: { lineStyle: { color: 'rgba(148, 163, 184, 0.3)' } },
+            axisLabel: {
+                fontSize: 11,
+                fontFamily: 'var(--sans)',
+                fontWeight: 600,
+                color: (value) => value.includes('★') ? '#0D9488' : '#475569',
+                formatter: val => val.length > 16 ? val.slice(0, 14) + '…' : val
+            }
+        },
+        series: [{
+            type: 'bar',
+            barWidth: 14,
+            data: values,
+            label: {
+                show: true,
+                position: 'right',
+                formatter: p => fmt2(p.value) + ' th',
+                fontFamily: 'var(--mono)',
+                fontSize: 10,
+                fontWeight: 600,
+                color: '#334155'
+            }
+        }]
+    };
+    chart.setOption(option);
+}
+
+/**
+ * Widget 6.0: Kesenjangan Pendidikan HLS vs RLS (Dumbbell / Lollipop Chart)
+ */
+function renderLollipopGap(r) {
+    const f1 = getFase1RegionData(r);
+    const badgeEl = document.getElementById('gapCategoryBadge');
+    const chartEl = document.getElementById('lollipopGapChart');
+    if (!chartEl) return;
+
+    if (!f1 || !f1.pendidikan_gap) {
+        if (badgeEl) badgeEl.textContent = 'Data BPS Belum Ada';
+        chartEl.innerHTML = `<div style="font-size:12px;color:var(--muted);padding:20px;text-align:center">Data kesenjangan pendidikan belum tersedia.</div>`;
+        return;
+    }
+
+    const gapInfo = f1.pendidikan_gap;
+    const gapDaerah = gapInfo.gap != null ? gapInfo.gap : (gapInfo.hls - gapInfo.rls);
+
+    if (badgeEl) {
+        const badgeColor = gapDaerah < 3.5 ? '#10B981' : (gapDaerah <= 6 ? '#D97706' : '#EF4444');
+        badgeEl.textContent = `${gapInfo.kategori_gap || 'Kesenjangan Sedang'} · Gap: ${fmt2(gapDaerah)} thn`;
+        badgeEl.style.borderColor = badgeColor;
+        badgeEl.style.color = badgeColor;
+    }
+
+    if (typeof echarts === 'undefined') return;
+
+    // Ambil 4 peer regions seprovinsi
+    const peers = REGION_DATA.filter(x => x.prov === r.prov && String(x.id || x.no) !== String(r.id || r.no)).slice(0, 4);
+    const list = [];
+
+    // Target Region
+    list.push({
+        name: `${r.kabkota} ★`,
+        rls: gapInfo.rls,
+        hls: gapInfo.hls,
+        gap: gapDaerah,
+        isTarget: true
+    });
+
+    peers.forEach(p => {
+        const pf = getFase1RegionData(p);
+        const pRls = (pf && pf.pendidikan_gap && pf.pendidikan_gap.rls) || 8.5;
+        const pHls = (pf && pf.pendidikan_gap && pf.pendidikan_gap.hls) || 13.0;
+        list.push({
+            name: p.kabkota,
+            rls: pRls,
+            hls: pHls,
+            gap: Math.round((pHls - pRls) * 100) / 100,
+            isTarget: false
+        });
+    });
+
+    // Urutkan berdasarkan gap terkecil ke terbesar
+    list.sort((a, b) => a.gap - b.gap);
+
+    const categories = list.map(it => it.name);
+    const rlsData = list.map(it => it.rls);
+    const hlsData = list.map(it => it.hls);
+    const barBaseData = list.map(it => it.rls);
+    const barSpanData = list.map(it => it.gap);
+
+    let chart = echarts.getInstanceByDom(chartEl);
+    if (chart) chart.dispose();
+    chart = echarts.init(chartEl);
+    window._fase1Charts = window._fase1Charts || [];
+    window._fase1Charts.push(chart);
+
+    const allYears = [...rlsData, ...hlsData];
+    const minX = Math.floor(Math.min(...allYears) - 1.5);
+    const maxX = Math.ceil(Math.max(...allYears) + 1.5);
+
+    const option = {
+        grid: {
+            top: 40,
+            bottom: 25,
+            left: 130,
+            right: 75,
+            containLabel: false
+        },
+        legend: {
+            top: 5,
+            right: 10,
+            data: ['RLS (Dewasa 25+ thn)', 'HLS (Generasi Baru)'],
+            textStyle: { fontSize: 11, fontFamily: 'var(--sans)', color: '#475569' }
+        },
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: { type: 'shadow' },
+            backgroundColor: 'rgba(15, 23, 42, 0.92)',
+            borderColor: 'rgba(148, 163, 184, 0.3)',
+            textStyle: { color: '#F8FAFC', fontSize: 11.5, fontFamily: 'var(--sans)' },
+            formatter: params => {
+                const idx = params[0].dataIndex;
+                const item = list[idx];
+                return `
+                    <div style="font-weight:700;margin-bottom:4px;color:#2DD4BF">${escapeHtml(item.name)}</div>
+                    <div style="display:flex;justify-content:space-between;gap:14px;margin:2px 0">
+                        <span style="color:#60A5FA">● RLS (Dewasa 25+):</span><b>${fmt2(item.rls)} thn</b>
+                    </div>
+                    <div style="display:flex;justify-content:space-between;gap:14px;margin:2px 0">
+                        <span style="color:#2DD4BF">● HLS (Generasi Muda):</span><b>${fmt2(item.hls)} thn</b>
+                    </div>
+                    <div style="border-top:1px solid rgba(255,255,255,0.15);padding-top:4px;margin-top:4px;display:flex;justify-content:space-between;gap:14px">
+                        <span>Kesenjangan (Gap):</span><b style="color:#FBBF24">${fmt2(item.gap)} thn</b>
+                    </div>
+                `;
+            }
+        },
+        xAxis: {
+            type: 'value',
+            min: minX,
+            max: maxX,
+            axisLabel: {
+                formatter: '{value} th',
+                fontSize: 10,
+                color: '#64748B',
+                fontFamily: 'var(--mono)'
+            },
+            splitLine: { lineStyle: { color: 'rgba(148, 163, 184, 0.2)' } }
+        },
+        yAxis: {
+            type: 'category',
+            data: categories,
+            axisTick: { show: false },
+            axisLine: { lineStyle: { color: 'rgba(148, 163, 184, 0.3)' } },
+            axisLabel: {
+                fontSize: 11,
+                fontFamily: 'var(--sans)',
+                fontWeight: 600,
+                color: (value) => value.includes('★') ? '#0D9488' : '#475569',
+                formatter: val => val.length > 16 ? val.slice(0, 14) + '…' : val
+            }
+        },
+        series: [
+            // Batang dasar transparan sebagai offset (RLS)
+            {
+                name: 'BaseOffset',
+                type: 'bar',
+                stack: 'dumbbell',
+                barWidth: 4,
+                itemStyle: { borderColor: 'transparent', color: 'transparent' },
+                data: barBaseData,
+                silent: true
+            },
+            // Garis perentang jarak (Gap = HLS - RLS)
+            {
+                name: 'GapLine',
+                type: 'bar',
+                stack: 'dumbbell',
+                barWidth: 4,
+                itemStyle: {
+                    color: (p) => list[p.dataIndex].isTarget ? '#0D9488' : 'rgba(148, 163, 184, 0.45)',
+                    borderRadius: 2
+                },
+                data: barSpanData,
+                silent: true
+            },
+            // Titik RLS (Rata-rata Lama Sekolah)
+            {
+                name: 'RLS (Dewasa 25+ thn)',
+                type: 'scatter',
+                symbol: 'circle',
+                symbolSize: (val, p) => list[p.dataIndex].isTarget ? 15 : 12,
+                itemStyle: {
+                    color: '#2563EB',
+                    borderColor: '#FFFFFF',
+                    borderWidth: 2,
+                    shadowBlur: 4,
+                    shadowColor: 'rgba(37, 99, 235, 0.3)'
+                },
+                data: rlsData
+            },
+            // Titik HLS (Harapan Lama Sekolah)
+            {
+                name: 'HLS (Generasi Baru)',
+                type: 'scatter',
+                symbol: 'circle',
+                symbolSize: (val, p) => list[p.dataIndex].isTarget ? 15 : 12,
+                itemStyle: {
+                    color: '#0FB5A0',
+                    borderColor: '#FFFFFF',
+                    borderWidth: 2,
+                    shadowBlur: 4,
+                    shadowColor: 'rgba(15, 181, 160, 0.3)'
+                },
+                label: {
+                    show: true,
+                    position: 'right',
+                    formatter: p => `+${fmt1(list[p.dataIndex].gap)} th`,
+                    fontFamily: 'var(--mono)',
+                    fontSize: 10,
+                    fontWeight: 600,
+                    color: '#475569'
+                },
+                data: hlsData
+            }
+        ]
+    };
+    chart.setOption(option);
+}
+
+/**
+ * Widget 8 & 15: Indikator Akses Layanan Dasar Permukiman
+ */
+function renderLayananDasar(r) {
+    const f1 = getFase1RegionData(r);
+    const kpiGrid = document.getElementById('layananKpiGrid');
+    const progList = document.getElementById('layananProgressList');
+    if (!kpiGrid || !progList) return;
+
+    const ld = (f1 && f1.layanan_dasar) || {};
+    const sanitasi = ld.sanitasi_layak_pct;
+    const airMinum = ld.air_minum_layak_pct;
+
+    // 1. 4 KPI Grid Cards
+    kpiGrid.innerHTML = `
+        <div class="fase1-kpi-card">
+            <div class="fase1-kpi-label">
+                <span>Akses Sanitasi Layak</span>
+            </div>
+            <div class="fase1-kpi-val" style="color:#0FB5A0">${sanitasi != null ? fmt1(sanitasi) + '%' : '—'}</div>
+            <div class="fase1-kpi-sub">
+                <span class="badge-avail"></span>
+                <span>BPS RI 2024 · Tersedia</span>
+            </div>
+        </div>
+        <div class="fase1-kpi-card">
+            <div class="fase1-kpi-label">
+                <span>Akses Air Minum Layak</span>
+            </div>
+            <div class="fase1-kpi-val" style="color:#2E9BD6">${airMinum != null ? fmt1(airMinum) + '%' : '—'}</div>
+            <div class="fase1-kpi-sub">
+                <span class="badge-avail"></span>
+                <span>BPS RI 2024 · Tersedia</span>
+            </div>
+        </div>
+        <div class="fase1-kpi-card disabled">
+            <div class="fase1-kpi-label">
+                <span style="color:var(--muted)">Akses Listrik PLN</span>
+            </div>
+            <div class="fase1-kpi-val null-val">—</div>
+            <div class="fase1-kpi-sub">
+                <span class="badge-unavail"></span>
+                <span style="color:var(--muted-2)">Data Kab/Kota Belum Ada</span>
+            </div>
+        </div>
+        <div class="fase1-kpi-card disabled">
+            <div class="fase1-kpi-label">
+                <span style="color:var(--muted)">Akses Internet RT</span>
+            </div>
+            <div class="fase1-kpi-val null-val">—</div>
+            <div class="fase1-kpi-sub">
+                <span class="badge-unavail"></span>
+                <span style="color:var(--muted-2)">Data Kab/Kota Belum Ada</span>
+            </div>
+        </div>
+    `;
+
+    // 2. 4 Progress Bars Horisontal
+    progList.innerHTML = `
+        <div class="fase1-progress-item">
+            <div class="fase1-prog-header">
+                <span class="fase1-prog-title">
+                    <span style="color:#0FB5A0">●</span> Fasilitas Sanitasi Layak
+                </span>
+                <span class="fase1-prog-val" style="color:#0FB5A0">${sanitasi != null ? fmt1(sanitasi) + '%' : '—'}</span>
+            </div>
+            <div class="fase1-prog-track">
+                <div class="fase1-prog-fill" style="width:${sanitasi != null ? Math.min(100, sanitasi) : 0}%;background:#0FB5A0"></div>
+            </div>
+        </div>
+        <div class="fase1-progress-item">
+            <div class="fase1-prog-header">
+                <span class="fase1-prog-title">
+                    <span style="color:#2E9BD6">●</span> Sumber Air Minum Layak
+                </span>
+                <span class="fase1-prog-val" style="color:#2E9BD6">${airMinum != null ? fmt1(airMinum) + '%' : '—'}</span>
+            </div>
+            <div class="fase1-prog-track">
+                <div class="fase1-prog-fill" style="width:${airMinum != null ? Math.min(100, airMinum) : 0}%;background:#2E9BD6"></div>
+            </div>
+        </div>
+        <div class="fase1-progress-item">
+            <div class="fase1-prog-header">
+                <span class="fase1-prog-title" style="color:var(--muted)">
+                    <span style="color:#94A3B8">○</span> Penerangan Listrik Rumah Tangga
+                </span>
+                <span class="fase1-prog-val" style="color:var(--muted-2);font-weight:500;font-size:11px">Data Belum Dirilis BPS Nasional</span>
+            </div>
+            <div class="fase1-prog-track">
+                <div class="fase1-prog-fill striped"></div>
+            </div>
+        </div>
+        <div class="fase1-progress-item">
+            <div class="fase1-prog-header">
+                <span class="fase1-prog-title" style="color:var(--muted)">
+                    <span style="color:#94A3B8">○</span> Jaringan Telekomunikasi &amp; Internet
+                </span>
+                <span class="fase1-prog-val" style="color:var(--muted-2);font-weight:500;font-size:11px">Data Belum Dirilis BPS Nasional</span>
+            </div>
+            <div class="fase1-prog-track">
+                <div class="fase1-prog-fill striped"></div>
+            </div>
+        </div>
+    `;
 }

@@ -3,9 +3,7 @@ __pycache__/
 *.py[cod]
 
 # Raw Excel data (large binary files)
-data-mentah/xlsx/data-pertanian/
-data-mentah/xlsx/pendidikan/
-data-mentah/xlsx/kesehatan/
+data-mentah/xlsx/
 
 # Temporary & duplicate files
 *copy*
@@ -15,4 +13,10 @@ data-mentah/xlsx/kesehatan/
 .DS_Store
 Thumbs.db
 
+# Local temporary test scripts & scratch
+scratch/
 
+# Local data acquisition scripts & raw downloads (untracked)
+scripts/local/
+data-mentah/fase1/
+*.local.py
