@@ -3101,6 +3101,17 @@ function renderLayananDasar(r) {
     const ld = (f1 && f1.layanan_dasar) || {};
     const sanitasi = ld.sanitasi_layak_pct;
     const airMinum = ld.air_minum_layak_pct;
+    const listrik = ld.listrik_pct;
+    const listrikPln = ld.listrik_pln_pct;
+    const internet = ld.internet_pct;
+    const internet4g = ld.internet_4g_desa_pct;
+
+    const listrikSub = listrik != null
+        ? `BPS PODES 2024 · PLN ${listrikPln != null ? fmt1(listrikPln) + '%' : fmt1(listrik) + '%'}`
+        : 'Data Kab/Kota Belum Ada';
+    const internetSub = internet != null
+        ? `BPS PODES 2024 · 4G/5G ${internet4g != null ? fmt1(internet4g) + '% Desa' : 'Tersedia'}`
+        : 'Data Kab/Kota Belum Ada';
 
     // 1. 4 KPI Grid Cards
     kpiGrid.innerHTML = `
@@ -3124,24 +3135,24 @@ function renderLayananDasar(r) {
                 <span>BPS RI 2024 · Tersedia</span>
             </div>
         </div>
-        <div class="fase1-kpi-card disabled">
+        <div class="fase1-kpi-card ${listrik == null ? 'disabled' : ''}">
             <div class="fase1-kpi-label">
-                <span style="color:var(--muted)">Akses Listrik PLN</span>
+                <span>Akses Listrik (PLN &amp; Non-PLN)</span>
             </div>
-            <div class="fase1-kpi-val null-val">—</div>
+            <div class="fase1-kpi-val ${listrik == null ? 'null-val' : ''}" style="${listrik != null ? 'color:#F59E0B' : ''}">${listrik != null ? fmt1(listrik) + '%' : '—'}</div>
             <div class="fase1-kpi-sub">
-                <span class="badge-unavail"></span>
-                <span style="color:var(--muted-2)">Data Kab/Kota Belum Ada</span>
+                <span class="${listrik != null ? 'badge-avail' : 'badge-unavail'}"></span>
+                <span>${listrikSub}</span>
             </div>
         </div>
-        <div class="fase1-kpi-card disabled">
+        <div class="fase1-kpi-card ${internet == null ? 'disabled' : ''}">
             <div class="fase1-kpi-label">
-                <span style="color:var(--muted)">Akses Internet RT</span>
+                <span>Akses Jaringan Internet</span>
             </div>
-            <div class="fase1-kpi-val null-val">—</div>
+            <div class="fase1-kpi-val ${internet == null ? 'null-val' : ''}" style="${internet != null ? 'color:#8B5CF6' : ''}">${internet != null ? fmt1(internet) + '%' : '—'}</div>
             <div class="fase1-kpi-sub">
-                <span class="badge-unavail"></span>
-                <span style="color:var(--muted-2)">Data Kab/Kota Belum Ada</span>
+                <span class="${internet != null ? 'badge-avail' : 'badge-unavail'}"></span>
+                <span>${internetSub}</span>
             </div>
         </div>
     `;
@@ -3172,24 +3183,24 @@ function renderLayananDasar(r) {
         </div>
         <div class="fase1-progress-item">
             <div class="fase1-prog-header">
-                <span class="fase1-prog-title" style="color:var(--muted)">
-                    <span style="color:#94A3B8">○</span> Penerangan Listrik Rumah Tangga
+                <span class="fase1-prog-title">
+                    <span style="color:#F59E0B">●</span> Penerangan Listrik Rumah Tangga
                 </span>
-                <span class="fase1-prog-val" style="color:var(--muted-2);font-weight:500;font-size:11px">Data Belum Dirilis BPS Nasional</span>
+                <span class="fase1-prog-val" style="color:#F59E0B">${listrik != null ? fmt1(listrik) + '%' : '—'}</span>
             </div>
             <div class="fase1-prog-track">
-                <div class="fase1-prog-fill striped"></div>
+                <div class="fase1-prog-fill ${listrik == null ? 'striped' : ''}" style="${listrik != null ? `width:${Math.min(100, listrik)}%;background:#F59E0B` : ''}"></div>
             </div>
         </div>
         <div class="fase1-progress-item">
             <div class="fase1-prog-header">
-                <span class="fase1-prog-title" style="color:var(--muted)">
-                    <span style="color:#94A3B8">○</span> Jaringan Telekomunikasi &amp; Internet
+                <span class="fase1-prog-title">
+                    <span style="color:#8B5CF6">●</span> Jaringan Telekomunikasi &amp; Internet
                 </span>
-                <span class="fase1-prog-val" style="color:var(--muted-2);font-weight:500;font-size:11px">Data Belum Dirilis BPS Nasional</span>
+                <span class="fase1-prog-val" style="color:#8B5CF6">${internet != null ? fmt1(internet) + '%' : '—'}</span>
             </div>
             <div class="fase1-prog-track">
-                <div class="fase1-prog-fill striped"></div>
+                <div class="fase1-prog-fill ${internet == null ? 'striped' : ''}" style="${internet != null ? `width:${Math.min(100, internet)}%;background:#8B5CF6` : ''}"></div>
             </div>
         </div>
     `;
