@@ -4254,3 +4254,711 @@ button:active,
 
 
 
+
+
+/* ============================================================
+   FITUR 02: PETA POSISI INVESTASI KABUPATEN/KOTA (KUADRAN BKPM)
+   ============================================================ */
+.bkpm-badge-02, .bkpm-badge-03 {
+    width: 38px;
+    height: 38px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
+    color: #ffffff;
+    font-family: var(--mono);
+    font-size: 18px;
+    font-weight: 800;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.28);
+    flex-shrink: 0;
+}
+
+.bkpm-badge-04 {
+    width: 38px;
+    height: 38px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
+    color: #ffffff;
+    font-family: var(--mono);
+    font-size: 18px;
+    font-weight: 800;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.28);
+    flex-shrink: 0;
+}
+
+
+.bkpm-toolbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: auto;
+}
+.bkpm-action-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    font-size: 11.5px;
+    font-weight: 600;
+    color: var(--text);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all .15s ease;
+}
+.bkpm-action-btn:hover {
+    background: var(--hover);
+    border-color: #2563eb;
+    color: #2563eb;
+}
+
+.bkpm-quad-grid {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 16px;
+    align-items: start;
+    margin-bottom: 16px;
+}
+@media (max-width: 992px) {
+    .bkpm-quad-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.bkpm-quad-canvas-card {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+.bkpm-quad-svg-container {
+    width: 100%;
+    min-height: 380px;
+    position: relative;
+}
+
+.bkpm-white-tooltip {
+    position: absolute;
+    z-index: 1000;
+    background: #ffffff;
+    color: var(--text);
+    border: 1px solid var(--line-strong);
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 11.5px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    pointer-events: none;
+    display: none;
+    width: 240px;
+    line-height: 1.45;
+}
+.bkpm-white-tooltip .tt-title {
+    font-weight: 800;
+    font-size: 13px;
+    color: #0f172a;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 4px;
+    margin-bottom: 6px;
+}
+.bkpm-white-tooltip .tt-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 2px;
+}
+.bkpm-white-tooltip .tt-k {
+    color: var(--muted);
+}
+.bkpm-white-tooltip .tt-v {
+    font-weight: 600;
+    color: var(--text);
+    text-align: right;
+}
+
+/* Legend cards */
+.bkpm-legend-card {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.bkpm-legend-title {
+    font-size: 12.5px;
+    font-weight: 700;
+    color: var(--text);
+    margin: 0;
+}
+.bkpm-legend-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+.bkpm-quad-badge {
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 10.5px;
+    font-weight: 700;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+.bkpm-quad-badge.q1 { background: #dcfce7; color: #15803d; border: 1px solid #bbf7d0; }
+.bkpm-quad-badge.q2 { background: #dbeafe; color: #1e40af; border: 1px solid #bfdbfe; }
+.bkpm-quad-badge.q3 { background: #ffedd5; color: #c2410c; border: 1px solid #fed7aa; }
+.bkpm-quad-badge.q4 { background: #f3e8ff; color: #7e22ce; border: 1px solid #e9d5ff; }
+
+.bkpm-legend-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+.bkpm-legend-h4 {
+    font-size: 11.5px;
+    font-weight: 700;
+    color: var(--text);
+    margin: 0;
+}
+.bkpm-legend-sub {
+    font-size: 10px;
+    color: var(--muted);
+    line-height: 1.35;
+}
+
+.bkpm-bubble-legend-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 4px 0;
+}
+.bkpm-bubble-icon {
+    border-radius: 50%;
+    background: rgba(59, 130, 246, 0.65);
+    border: 2px solid #2563eb;
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+}
+
+/* Kuadran Table */
+.kuadran-pill {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 99px;
+    font-size: 10.5px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+.kuadran-pill.q1 { background: #dcfce7; color: #15803d; }
+.kuadran-pill.q2 { background: #dbeafe; color: #1e40af; }
+.kuadran-pill.q3 { background: #ffedd5; color: #c2410c; }
+.kuadran-pill.q4 { background: #f3e8ff; color: #7e22ce; }
+
+/* ============================================================
+   FITUR 03: PERINGKAT KABUPATEN/KOTA BERDASARKAN INVESTASI
+   ============================================================ */
+.bkpm-ranking-grid {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 16px;
+    align-items: start;
+}
+@media (max-width: 992px) {
+    .bkpm-ranking-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.bkpm-ranking-list-card {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 16px;
+}
+.bkpm-ranking-scroll {
+    max-height: 480px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    padding-right: 4px;
+}
+
+.bkpm-rank-row {
+    display: grid;
+    grid-template-columns: 36px 140px 1fr 70px;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--line-soft);
+    border-radius: 6px;
+    transition: background .12s ease;
+    cursor: pointer;
+}
+.bkpm-rank-row:hover {
+    background: var(--surface);
+}
+.bkpm-rank-row.rank-1-row {
+    background: rgba(245, 158, 11, 0.06);
+}
+.bkpm-rank-row.active {
+    background: rgba(37, 99, 235, 0.08);
+    border-color: rgba(37, 99, 235, 0.25);
+}
+
+.bkpm-rank-badge {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 12px;
+    font-weight: 800;
+    font-family: var(--mono);
+}
+.bkpm-rank-badge.top-1 { background: #f59e0b; color: #ffffff; box-shadow: 0 2px 6px rgba(245, 158, 11, 0.35); }
+.bkpm-rank-badge.top-2 { background: #94a3b8; color: #ffffff; }
+.bkpm-rank-badge.top-3 { background: #d97706; color: #ffffff; }
+.bkpm-rank-badge.top-n { background: #e2e8f0; color: #64748b; font-weight: 700; }
+
+.bkpm-rank-name {
+    font-weight: 700;
+    font-size: 13px;
+    color: var(--text);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.bkpm-rank-bar-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+}
+.bkpm-rank-bar-track {
+    flex: 1;
+    height: 14px;
+    background: var(--surface-2);
+    border-radius: 99px;
+    overflow: hidden;
+    position: relative;
+}
+.bkpm-rank-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #3b82f6 0%, #2563eb 100%);
+    border-radius: 99px;
+    transition: width .4s cubic-bezier(.22,1,.36,1);
+}
+.bkpm-rank-val-text {
+    font-family: var(--mono);
+    font-size: 11.5px;
+    font-weight: 700;
+    color: var(--text);
+    white-space: nowrap;
+    min-width: 65px;
+    text-align: right;
+}
+
+.bkpm-btn-lihat {
+    font-size: 11px;
+    font-weight: 700;
+    color: #2563eb;
+    background: rgba(37, 99, 235, 0.08);
+    border: 1px solid rgba(37, 99, 235, 0.2);
+    border-radius: 4px;
+    padding: 3px 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: all .12s ease;
+}
+.bkpm-btn-lihat:hover {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+.bkpm-rank-search-wrap {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    min-width: 180px;
+    max-width: 240px;
+}
+.bkpm-rank-search-input {
+    width: 100%;
+    padding: 6px 10px 6px 28px;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    font-size: 12px;
+    background: var(--surface);
+    color: var(--text);
+    outline: none;
+    transition: border-color .15s ease;
+}
+.bkpm-rank-search-input:focus {
+    border-color: #2563eb;
+    background: var(--panel);
+}
+
+
+/* ============================================================
+   WIDGET 11: PETA KONDISI KEMISKINAN KABUPATEN/KOTA (SCATTER PLOT)
+   ============================================================ */
+.kemiskinan-layout {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 16px;
+    align-items: start;
+}
+@media (max-width: 1024px) {
+    .kemiskinan-layout {
+        grid-template-columns: 1fr;
+    }
+}
+.kemiskinan-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 10px 14px;
+}
+.kemiskinan-chips-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    flex-wrap: wrap;
+}
+.kemiskinan-chip {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 6px 12px;
+    flex: 1;
+    min-width: 120px;
+}
+.kemiskinan-chip-icon {
+    font-size: 16px;
+    width: 28px;
+    height: 28px;
+    display: grid;
+    place-items: center;
+    border-radius: 6px;
+    background: #eff6ff;
+    color: #2563eb;
+    font-weight: 700;
+}
+.kemiskinan-chip-lbl {
+    font-size: 10px;
+    color: var(--muted);
+    font-weight: 600;
+    line-height: 1.1;
+}
+.kemiskinan-chip-val {
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--text);
+    font-family: var(--mono);
+    line-height: 1.2;
+}
+.kemiskinan-chip-sub {
+    font-size: 9.5px;
+    color: var(--muted-2);
+}
+.kemiskinan-sidebar-col {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.kemiskinan-sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--line);
+}
+.kemiskinan-sidebar-avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #2563eb;
+    color: #ffffff;
+    display: grid;
+    place-items: center;
+    font-size: 15px;
+}
+.kemiskinan-sidebar-title {
+    font-size: 14px;
+    font-weight: 800;
+    margin: 0 0 2px;
+    color: var(--text);
+}
+.kemiskinan-kpi-box {
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 8px 10px;
+    text-align: center;
+}
+.kemiskinan-kpi-icon {
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+.kemiskinan-kpi-lbl {
+    font-size: 10px;
+    color: var(--muted);
+}
+.kemiskinan-kpi-val {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--text);
+    font-family: var(--mono);
+}
+.kemiskinan-kpi-sub {
+    font-size: 9px;
+    color: var(--muted-2);
+}
+.kemiskinan-insight-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 10px 12px;
+}
+.kemiskinan-policy-card {
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 6px;
+    padding: 10px 12px;
+}
+.kemiskinan-info-list {
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 10px 12px;
+    font-size: 11.5px;
+}
+.km-info-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5px 0;
+}
+.km-info-k {
+    color: var(--muted);
+}
+.km-info-v {
+    font-weight: 600;
+    color: var(--text);
+}
+
+/* ============================================================
+   WIDGET 13: PDRB ADHB MENURUT LAPANGAN USAHA (PAIRED BAR)
+   ============================================================ */
+.pdrb-kpi-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid var(--line);
+    background: var(--panel);
+}
+.pdrb-kpi-card.top-growth {
+    background: #f0fdf4;
+    border-color: #bbf7d0;
+}
+.pdrb-kpi-card.avg-growth {
+    background: #eff6ff;
+    border-color: #bfdbfe;
+}
+.pdrb-kpi-card.low-growth {
+    background: #fef2f2;
+    border-color: #fecaca;
+}
+.pdrb-kpi-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    display: grid;
+    place-items: center;
+    font-size: 16px;
+    font-weight: 800;
+}
+.top-growth .pdrb-kpi-icon { background: #dcfce7; color: #15803d; }
+.avg-growth .pdrb-kpi-icon { background: #dbeafe; color: #1d4ed8; }
+.low-growth .pdrb-kpi-icon { background: #fee2e2; color: #b91c1c; }
+
+.pdrb-kpi-lbl {
+    font-size: 10.5px;
+    font-weight: 600;
+    color: var(--muted);
+}
+.pdrb-kpi-val {
+    font-size: 14.5px;
+    font-weight: 800;
+    color: var(--text);
+    margin: 1px 0;
+}
+.pdrb-kpi-sub {
+    font-size: 9.5px;
+    color: var(--muted-2);
+}
+
+/* ============================================================
+   WIDGET 16-17: EKOSISTEM INDUSTRI & PERDAGANGAN (TREEMAP)
+   ============================================================ */
+.ekosistem-kpi-wisatawan {
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 6px 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 110px;
+}
+.eko-wis-lbl {
+    font-size: 10px;
+    color: var(--muted);
+    font-weight: 600;
+}
+.eko-wis-val {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--text);
+    font-family: var(--mono);
+    line-height: 1.1;
+}
+
+/* ============================================================
+   WIDGET 21: INDUSTRI BESAR DAN SEDANG (KBLI)
+   ============================================================ */
+.ind-kpi-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--line);
+    background: var(--panel);
+}
+.ind-kpi-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    font-size: 18px;
+}
+.ind-kpi-lbl {
+    font-size: 10.5px;
+    color: var(--muted);
+    font-weight: 600;
+}
+.ind-kpi-val {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--text);
+    font-family: var(--mono);
+}
+.ind-kpi-sub {
+    font-size: 9.5px;
+    color: var(--muted-2);
+}
+.ind-main-grid {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 16px;
+    align-items: start;
+}
+@media (max-width: 1024px) {
+    .ind-main-grid {
+        grid-template-columns: 1fr;
+    }
+}
+.ind-detail-panel {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 16px;
+}
+.ind-panel-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    background: #f1f5f9;
+    color: #334155;
+    display: grid;
+    place-items: center;
+    font-size: 16px;
+}
+.ind-sub-list {
+    margin: 0;
+    padding-left: 18px;
+    font-size: 11px;
+    color: var(--text-sec);
+    line-height: 1.6;
+}
+.ind-metric-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11.5px;
+}
+.ind-metric-row .k {
+    color: var(--muted);
+}
+.ind-bar-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    padding: 6px 8px;
+    border-radius: 6px;
+    transition: background 0.15s;
+}
+.ind-bar-item:hover, .ind-bar-item.active {
+    background: #f8fafc;
+}
+.ind-bar-avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    color: #ffffff;
+    display: grid;
+    place-items: center;
+    font-size: 15px;
+    flex-shrink: 0;
+}
+.ind-bar-track {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.ind-bar-fill {
+    height: 22px;
+    border-radius: 4px;
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.ind-bar-val {
+    font-size: 11px;
+    font-weight: 700;
+    font-family: var(--mono);
+    color: var(--text);
+    white-space: nowrap;
+}

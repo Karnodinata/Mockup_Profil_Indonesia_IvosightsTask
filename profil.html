@@ -816,32 +816,440 @@
       </div>
     </section>
 
-    <section class="card" style="margin-bottom:14px">
-      <div style="display:flex;justify-content:space-between;align-items:baseline">
-        <div>
-          <h2 class="card-title">Indeks Daya Tarik Investasi — 6 Pilar</h2>
-          <p class="card-desc">Skor 0–100 dari kalkulasi indikator kunci tiap pilar spasial &amp; ekonomi.</p>
+        <!-- 02 PETA POSISI INVESTASI KABUPATEN/KOTA DALAM PROVINSI (KUADRAN BKPM) -->
+    <section class="card" style="margin-bottom:14px" id="section-bkpm-kuadran">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:16px;flex-wrap:wrap">
+        <div class="bkpm-badge-02">02</div>
+        <div style="flex:1;min-width:260px">
+          <h2 class="card-title" style="font-size:18px;margin-bottom:2px">Peta Posisi Investasi Kabupaten/Kota dalam Provinsi</h2>
+          <p class="card-desc" style="margin-bottom:0">Posisi kabupaten/kota berdasarkan proporsi PMA dan total realisasi investasi (PMA + PMDN).</p>
         </div>
-        <span class="total-chip" id="invIdxChip"></span>
       </div>
-      <div class="inv-pillars" id="invPillars"></div>
-      <div class="src" id="srcInvPillar"></div>
-    </section>
-    <section class="grid-2">
-      <div class="card">
-        <h2 class="card-title">Angka kunci untuk investor</h2>
-        <div class="inv-metrics" id="invMetrics"></div>
+
+      <!-- Toolbar: Pilih Provinsi & Controls -->
+      <div class="bkpm-filter-toolbar" style="align-items:center">
+        <div class="bkpm-filter-col" style="min-width:240px">
+          <label for="bkpmQuadProvSelect" class="bkpm-filter-label">Pilih Provinsi</label>
+          <select id="bkpmQuadProvSelect" class="feature-select" style="width:100%" aria-label="Pilih Provinsi Kuadran"></select>
+        </div>
+        <div class="bkpm-toolbar-actions">
+          <button type="button" class="bkpm-action-btn" id="btnQuadZoom" title="Perbesar Area Kuadran">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            <span>Zoom</span>
+          </button>
+          <button type="button" class="bkpm-action-btn" id="btnQuadReset" title="Reset Tampilan">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+            <span>Reset</span>
+          </button>
+          <button type="button" class="bkpm-action-btn" id="btnQuadDownload" title="Unduh Data / Gambar">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span>Unduh</span>
+          </button>
+        </div>
       </div>
-      <div class="card">
-        <h2 class="card-title">Sinyal peluang sektor</h2>
-        <div class="inv-sectors" id="invSectors"></div>
+
+      <!-- Grid Scatter Canvas & Sidebar Legend -->
+      <div class="bkpm-quad-grid">
+        <!-- Scatter Plot Canvas Card -->
+        <div class="bkpm-quad-canvas-card">
+          <div class="bkpm-quad-svg-container" id="bkpmQuadContainer">
+            <svg id="bkpmQuadSvg" viewBox="0 0 680 400" style="width:100%;height:auto;overflow:visible"></svg>
+            <div id="bkpmQuadTooltip" class="bkpm-white-tooltip"></div>
+          </div>
+        </div>
+
+        <!-- Sidebar Legend Cards (Interpretasi Kuadran & Keterangan Ukuran Bubble) -->
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <!-- Card 1: Interpretasi Kuadran -->
+          <div class="bkpm-legend-card">
+            <h3 class="bkpm-legend-title">Interpretasi Kuadran</h3>
+            
+            <div class="bkpm-legend-item">
+              <span class="bkpm-quad-badge q1">Kuadran I</span>
+              <div class="bkpm-legend-desc">
+                <h4 class="bkpm-legend-h4">Investasi Tinggi, PMA Dominan</h4>
+                <span class="bkpm-legend-sub">Total investasi di atas median, proporsi PMA &gt; 50%.</span>
+              </div>
+            </div>
+
+            <div class="bkpm-legend-item">
+              <span class="bkpm-quad-badge q2">Kuadran II</span>
+              <div class="bkpm-legend-desc">
+                <h4 class="bkpm-legend-h4">Investasi Tinggi, PMDN Dominan</h4>
+                <span class="bkpm-legend-sub">Total investasi di atas median, proporsi PMA &lt; 50%.</span>
+              </div>
+            </div>
+
+            <div class="bkpm-legend-item">
+              <span class="bkpm-quad-badge q3">Kuadran III</span>
+              <div class="bkpm-legend-desc">
+                <h4 class="bkpm-legend-h4">Investasi Rendah, PMDN Dominan</h4>
+                <span class="bkpm-legend-sub">Total investasi di bawah median, proporsi PMA &lt; 50%.</span>
+              </div>
+            </div>
+
+            <div class="bkpm-legend-item">
+              <span class="bkpm-quad-badge q4">Kuadran IV</span>
+              <div class="bkpm-legend-desc">
+                <h4 class="bkpm-legend-h4">Investasi Rendah, PMA Dominan</h4>
+                <span class="bkpm-legend-sub">Total investasi di bawah median, proporsi PMA &gt; 50%.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Keterangan Ukuran Bubble -->
+          <div class="bkpm-legend-card">
+            <h3 class="bkpm-legend-title">Keterangan Ukuran Bubble</h3>
+            
+            <div class="bkpm-bubble-legend-row">
+              <div class="bkpm-bubble-icon" style="width:26px;height:26px"></div>
+              <div class="bkpm-legend-desc">
+                <h4 class="bkpm-legend-h4">Besar</h4>
+                <span class="bkpm-legend-sub" id="bubbleLabelBesar">Total investasi tinggi (&ge; Rp1,5 T)</span>
+              </div>
+            </div>
+
+            <div class="bkpm-bubble-legend-row">
+              <div class="bkpm-bubble-icon" style="width:18px;height:18px"></div>
+              <div class="bkpm-legend-desc">
+                <h4 class="bkpm-legend-h4">Menengah</h4>
+                <span class="bkpm-legend-sub" id="bubbleLabelMenengah">Total investasi sedang (Rp500 M &ndash; Rp1,5 T)</span>
+              </div>
+            </div>
+
+            <div class="bkpm-bubble-legend-row">
+              <div class="bkpm-bubble-icon" style="width:12px;height:12px"></div>
+              <div class="bkpm-legend-desc">
+                <h4 class="bkpm-legend-h4">Kecil</h4>
+                <span class="bkpm-legend-sub" id="bubbleLabelKecil">Total investasi rendah (&lt; Rp500 M)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Data Tabel Bawah -->
+      <div class="bkpm-table-card">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px">
+          <span style="font-size:16px;color:#2563eb">📑</span>
+          <h3 style="font-size:13.5px;font-weight:700;margin:0;color:var(--text)" id="bkpmQuadTableTitle">Data Realisasi – Provinsi</h3>
+        </div>
+        <div class="bkpm-table-scroll-wrap" style="max-height:300px">
+          <table class="bkpm-table" id="bkpmQuadTable">
+            <thead>
+              <tr>
+                <th style="cursor:pointer" data-sort="kabupaten">Kabupaten/Kota ↕</th>
+                <th style="cursor:pointer;text-align:right" data-sort="pma">PMA (Rp) ↕</th>
+                <th style="cursor:pointer;text-align:right" data-sort="pmdn">PMDN (Rp) ↕</th>
+                <th style="cursor:pointer;text-align:right" data-sort="total">Total Investasi (Rp) ↕</th>
+                <th style="cursor:pointer;text-align:right" data-sort="proporsi">Proporsi PMA (%) ↕</th>
+                <th style="cursor:pointer;text-align:center" data-sort="kuadran">Kuadran ↕</th>
+              </tr>
+            </thead>
+            <tbody id="bkpmQuadTableBody"></tbody>
+          </table>
+        </div>
+        <div class="src" style="margin-top:10px;padding-top:6px">
+          <b>Sumber Data:</b> Data Resmi Kementerian Investasi/BKPM RI 2025. Batas kuadran dihitung otomatis berdasarkan median realisasi investasi provinsi.
+        </div>
       </div>
     </section>
-    <section class="card">
-      <h2 class="card-title">Tesis investasi</h2>
-      <div class="inv-thesis" id="invThesis" style="display:grid;grid-template-columns:1fr 1fr;gap:14px"></div>
+
+    <!-- 03 PERINGKAT KABUPATEN/KOTA BERDASARKAN REALISASI INVESTASI -->
+    <section class="card" style="margin-bottom:14px" id="section-bkpm-ranking">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:16px;flex-wrap:wrap">
+        <div class="bkpm-badge-03">03</div>
+        <div style="flex:1;min-width:260px">
+          <h2 class="card-title" style="font-size:18px;margin-bottom:2px">Peringkat Kabupaten/Kota Berdasarkan Realisasi Investasi</h2>
+          <p class="card-desc" style="margin-bottom:0">Daftar peringkat kabupaten/kota dalam satu provinsi berdasarkan nilai realisasi investasi.</p>
+        </div>
+      </div>
+
+      <!-- Toolbar: Provinsi, Filter Jenis Investasi, Search Box -->
+      <div class="bkpm-filter-toolbar" style="align-items:center;justify-content:space-between">
+        <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+          <div class="bkpm-filter-col" style="min-width:220px">
+            <label for="bkpmRankProvSelect" class="bkpm-filter-label">Pilih Provinsi</label>
+            <select id="bkpmRankProvSelect" class="feature-select" style="width:100%" aria-label="Pilih Provinsi Peringkat"></select>
+          </div>
+          <div class="bkpm-filter-col">
+            <label class="bkpm-filter-label">Jenis Investasi</label>
+            <div class="bkpm-btn-group" role="group" aria-label="Filter Jenis Investasi Ranking">
+              <button type="button" class="bkpm-btn active" data-type="Semua" id="btnRankSemua">Semua</button>
+              <button type="button" class="bkpm-btn" data-type="PMA" id="btnRankPma">PMA</button>
+              <button type="button" class="bkpm-btn" data-type="PMDN" id="btnRankPmdn">PMDN</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="bkpm-rank-search-wrap">
+          <span style="position:absolute;left:8px;color:var(--muted);pointer-events:none">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </span>
+          <input type="search" id="bkpmRankSearchInput" class="bkpm-rank-search-input" placeholder="Cari kabupaten/kota…" autocomplete="off">
+        </div>
+      </div>
+
+      <!-- Main Layout: Left Ranking List, Right 3 Summary Cards -->
+      <div class="bkpm-ranking-grid">
+        <!-- Ranking List Table Card -->
+        <div class="bkpm-ranking-list-card">
+          <div style="display:grid;grid-template-columns:36px 140px 1fr 70px;gap:12px;padding:6px 12px;border-bottom:1px solid var(--line);font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;margin-bottom:6px">
+            <div>Rank</div>
+            <div>Kabupaten/Kota</div>
+            <div>Nilai Investasi</div>
+            <div style="text-align:center">Detail</div>
+          </div>
+          <div class="bkpm-ranking-scroll" id="bkpmRankingListContainer"></div>
+          <div style="font-size:11px;color:var(--muted);margin-top:10px;padding-top:6px;border-top:1px dashed var(--line-soft)">
+            ⓘ Nilai investasi terkonversi Rupiah dari data resmi BKPM RI Triwulan I–IV 2025.
+          </div>
+        </div>
+
+        <!-- Sidebar Right Cards -->
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <!-- Card 1: Ringkasan -->
+          <div class="bkpm-summary-card">
+            <div class="bkpm-card-head">
+              <div class="bkpm-card-icon" style="background:#e0f2fe;color:#0284c7">📊</div>
+              <h3 class="bkpm-card-h3">Ringkasan</h3>
+            </div>
+            <div class="bkpm-kv-list">
+              <div class="bkpm-kv-row">
+                <span class="bkpm-k">Wilayah Teratas</span>
+                <span class="bkpm-v" id="bkpmRankTopWilayah">–</span>
+              </div>
+              <div class="bkpm-kv-row">
+                <span class="bkpm-k">Nilai Tertinggi</span>
+                <span class="bkpm-v mono" id="bkpmRankTopNilai">Rp0</span>
+              </div>
+              <div class="bkpm-kv-row">
+                <span class="bkpm-k">Total Wilayah</span>
+                <span class="bkpm-v mono" id="bkpmRankTotalWilayah">0</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Filter Aktif -->
+          <div class="bkpm-summary-card">
+            <div class="bkpm-card-head">
+              <div class="bkpm-card-icon" style="background:#e0e7ff;color:#4f46e5">🌪️</div>
+              <h3 class="bkpm-card-h3">Filter Aktif</h3>
+            </div>
+            <div class="bkpm-kv-list">
+              <div class="bkpm-kv-row">
+                <span class="bkpm-k">Provinsi</span>
+                <span class="bkpm-v" id="bkpmRankActiveProv">–</span>
+              </div>
+              <div class="bkpm-kv-row">
+                <span class="bkpm-k">Jenis Investasi</span>
+                <span class="bkpm-v mono" id="bkpmRankActiveType" style="color:#2563eb">Semua</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Detail Wilayah -->
+          <div class="bkpm-summary-card" id="bkpmRankDetailCard">
+            <div class="bkpm-card-head">
+              <div class="bkpm-card-icon" style="background:#dbeafe;color:#2563eb">🏢</div>
+              <h3 class="bkpm-card-h3">Detail Wilayah</h3>
+            </div>
+            <div class="bkpm-kv-list">
+              <div class="bkpm-kv-row" style="align-items:center">
+                <div style="width:32px;height:32px;border-radius:6px;background:var(--surface);border:1px solid var(--line);display:grid;place-items:center;font-size:16px" id="bkpmRankDetailIcon">📍</div>
+                <div style="flex:1;min-width:0">
+                  <div style="font-weight:700;font-size:13px;color:var(--text)" id="bkpmRankDetailTitle">Pilih Wilayah</div>
+                  <div style="font-size:10.5px;color:var(--muted)" id="bkpmRankDetailSub">Kabupaten / Kota</div>
+                </div>
+              </div>
+              <div class="bkpm-kv-row" style="margin-top:6px">
+                <span class="bkpm-k">PMA</span>
+                <span class="bkpm-v mono" id="bkpmRankDetailPma">Rp0</span>
+              </div>
+              <div class="bkpm-kv-row">
+                <span class="bkpm-k">PMDN</span>
+                <span class="bkpm-v mono" id="bkpmRankDetailPmdn">Rp0</span>
+              </div>
+              <div class="bkpm-kv-row" style="border-top:1px dashed var(--line);padding-top:6px;margin-top:2px">
+                <span class="bkpm-k" style="font-weight:700">Total</span>
+                <span class="bkpm-v mono" id="bkpmRankDetailTotal" style="color:#2563eb">Rp0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="card" style="margin-bottom:14px">
+
+    <!-- 04 PETA POSISI PASAR TENAGA KERJA KABUPATEN/KOTA DALAM PROVINSI -->
+    <section class="card" style="margin-bottom:14px" id="section-bkpm-naker">
+      <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:16px;flex-wrap:wrap">
+        <div class="bkpm-badge-04">04</div>
+        <div style="flex:1;min-width:260px">
+          <h2 class="card-title" style="font-size:18px;margin-bottom:2px">Peta Posisi Pasar Tenaga Kerja Kabupaten/Kota dalam Provinsi</h2>
+          <p class="card-desc" style="margin-bottom:0">Posisi kabupaten/kota berdasarkan Upah Minimum Kabupaten/Kota (UMK) dan Tingkat Pengangguran Terbuka (TPT).</p>
+        </div>
+      </div>
+
+      <!-- Toolbar: Pilih Provinsi & Controls -->
+      <div class="bkpm-filter-toolbar" style="align-items:center">
+        <div class="bkpm-filter-col" style="min-width:240px">
+          <label for="bkpmNakerProvSelect" class="bkpm-filter-label">Pilih Provinsi</label>
+          <select id="bkpmNakerProvSelect" class="feature-select" style="width:100%" aria-label="Pilih Provinsi Pasar Tenaga Kerja"></select>
+        </div>
+        <div class="bkpm-toolbar-actions">
+          <button type="button" class="bkpm-action-btn" id="btnNakerZoom" title="Perbesar Area Kuadran">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            <span>Zoom</span>
+          </button>
+          <button type="button" class="bkpm-action-btn" id="btnNakerReset" title="Reset Tampilan">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+            <span>Reset</span>
+          </button>
+          <button type="button" class="bkpm-action-btn" id="btnNakerDownload" title="Unduh Data / Gambar">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span>Unduh</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Grid Scatter Canvas & Sidebar Legend -->
+      <div class="bkpm-quad-grid">
+        <!-- Scatter Plot Canvas Card -->
+        <div class="bkpm-quad-canvas-card">
+          <div class="bkpm-quad-svg-container" id="bkpmNakerContainer">
+            <svg id="bkpmNakerSvg" viewBox="0 0 680 400" style="width:100%;height:auto;overflow:visible"></svg>
+            <div id="bkpmNakerTooltip" class="bkpm-white-tooltip"></div>
+          </div>
+        </div>
+
+        <!-- Sidebar Legend Cards (Ringkasan Provinsi, Interpretasi Kuadran, Keterangan Ukuran Bubble) -->
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <!-- Card 1: Ringkasan Provinsi -->
+          <div class="bkpm-legend-card">
+            <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px">
+              <div class="bkpm-sidebar-icon">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
+              </div>
+              <h3 class="bkpm-legend-title" style="margin:0">Ringkasan Provinsi</h3>
+            </div>
+            
+            <div class="bkpm-summary-row">
+              <span class="bkpm-summary-label">Median UMK:</span>
+              <span class="bkpm-summary-val" id="nakerMedianUmk">Rp0</span>
+            </div>
+            <div class="bkpm-summary-row">
+              <span class="bkpm-summary-label">Median TPT:</span>
+              <span class="bkpm-summary-val" id="nakerMedianTpt">0,00%</span>
+            </div>
+            <div class="bkpm-summary-row">
+              <span class="bkpm-summary-label">Total Wilayah:</span>
+              <span class="bkpm-summary-val" id="nakerTotalWilayah">0 Kab/Kota</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Interpretasi Kuadran -->
+          <div class="bkpm-legend-card">
+            <h3 class="bkpm-legend-title">Interpretasi Kuadran</h3>
+            
+            <div class="bkpm-legend-item">
+              <span class="bkpm-quad-badge q1">Kuadran I</span>
+              <div class="bkpm-legend-desc">
+                <h4 class="bkpm-legend-h4">UMK Tinggi, TPT Tinggi</h4>
+                <span class="bkpm-legend-sub">Standar upah lebih tinggi, penyerapan kerja belum optimal.</span>
+              </div>
+            </div>
+
+            <div class="bkpm-legend-item">
+              <span class="bkpm-quad-badge q2">Kuadran II</span>
+              <div class="bkpm-legend-desc">
+                <h4 class="bkpm-legend-h4">UMK Rendah, TPT Tinggi</h4>
+                <span class="bkpm-legend-sub">Standar upah lebih rendah, menghadapi tantangan pengangguran.</span>
+              </div>
+            </div>
+
+            <div class="bkpm-legend-item">
+              <span class="bkpm-quad-badge q3">Kuadran III</span>
+              <div class="bkpm-legend-desc">
+                <h4 class="bkpm-legend-h4">UMK Rendah, TPT Rendah</h4>
+                <span class="bkpm-legend-sub">Standar upah lebih rendah, proporsi pengangguran relatif kecil.</span>
+              </div>
+            </div>
+
+            <div class="bkpm-legend-item">
+              <span class="bkpm-quad-badge q4">Kuadran IV</span>
+              <div class="bkpm-legend-desc">
+                <h4 class="bkpm-legend-h4">UMK Tinggi, TPT Rendah</h4>
+                <span class="bkpm-legend-sub">Standar upah lebih tinggi, penyerapan tenaga kerja tinggi.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Keterangan Ukuran Bubble -->
+          <div class="bkpm-legend-card">
+            <h3 class="bkpm-legend-title">Keterangan Ukuran Bubble</h3>
+            
+            <div class="bkpm-bubble-legend-row">
+              <div class="bkpm-bubble-icon" style="width:26px;height:26px"></div>
+              <div class="bkpm-legend-desc">
+                <h4 class="bkpm-legend-h4">Besar</h4>
+                <span class="bkpm-legend-sub" id="nakerBubbleBesar">Angkatan kerja &ge; 1,5 Juta</span>
+              </div>
+            </div>
+
+            <div class="bkpm-bubble-legend-row">
+              <div class="bkpm-bubble-icon" style="width:18px;height:18px"></div>
+              <div class="bkpm-legend-desc">
+                <h4 class="bkpm-legend-h4">Menengah</h4>
+                <span class="bkpm-legend-sub" id="nakerBubbleMenengah">Angkatan kerja 500 Ribu &ndash; 1,5 Juta</span>
+              </div>
+            </div>
+
+            <div class="bkpm-bubble-legend-row">
+              <div class="bkpm-bubble-icon" style="width:12px;height:12px"></div>
+              <div class="bkpm-legend-desc">
+                <h4 class="bkpm-legend-h4">Kecil</h4>
+                <span class="bkpm-legend-sub" id="nakerBubbleKecil">Angkatan kerja &lt; 500 Ribu</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Data Tabel Bawah -->
+      <div class="bkpm-table-card">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:12px;flex-wrap:wrap">
+          <div style="display:flex;align-items:center;gap:8px">
+            <span style="font-size:16px;color:#2563eb">💼</span>
+            <h3 style="font-size:13.5px;font-weight:700;margin:0;color:var(--text)" id="bkpmNakerTableTitle">Data Pasar Tenaga Kerja – Provinsi</h3>
+          </div>
+          <div class="bkpm-search-box" style="margin:0;max-width:240px">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="bkpm-search-icon"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input type="text" id="bkpmNakerSearchInput" class="bkpm-search-input" placeholder="Cari kabupaten/kota...">
+          </div>
+        </div>
+        <div class="bkpm-table-scroll-wrap" style="max-height:300px">
+          <table class="bkpm-table" id="bkpmNakerTable">
+            <thead>
+              <tr>
+                <th style="cursor:pointer" data-sort="kabupaten">Kabupaten/Kota ↕</th>
+                <th style="cursor:pointer;text-align:right" data-sort="umk">Upah Minimum (Rp) ↕</th>
+                <th style="cursor:pointer;text-align:center" data-sort="jenis">Jenis Upah ↕</th>
+                <th style="cursor:pointer;text-align:right" data-sort="tpt">TPT (%) ↕</th>
+                <th style="cursor:pointer;text-align:right" data-sort="ak">Angkatan Kerja ↕</th>
+                <th style="cursor:pointer;text-align:center" data-sort="kuadran">Kuadran ↕</th>
+              </tr>
+            </thead>
+            <tbody id="bkpmNakerTableBody"></tbody>
+          </table>
+        </div>
+        <div class="src" style="margin-top:10px;padding-top:6px">
+          <b>Sumber Data:</b> Permenaker No. 5 Tahun 2025 / Keputusan Gubernur UMK 2025 &amp; BPS Sakernas 2025. Sumbu X dinamis menyesuaikan rentang upah provinsi, sumbu Y dinamis dengan batas bawah 0%. Batas kuadran dihitung otomatis berdasarkan median upah minimum dan median TPT provinsi.
+        </div>
+      </div>
+    </section>
+
+
+<section class="card" style="margin-bottom:14px">
       <div style="display:flex;justify-content:space-between;align-items:baseline">
         <div>
           <h2 class="card-title">Indeks Daya Tarik Investasi — 6 Pilar</h2>
@@ -1285,19 +1693,391 @@
   <div class="tabpane" id="tab-ekonomi" role="tabpanel" aria-labelledby="tab-btn-ekonomi" hidden>
     <section class="kpis" id="ekoKpis"></section>
 
-    <section class="grid-3">
-      <div class="card">
-        <div style="display:flex;justify-content:space-between;align-items:baseline">
-          <h2 class="card-title">PDRB menurut lapangan usaha (17 Sektor)</h2>
-          <span class="total-chip" id="pdrbTotal"></span>
+    <!-- ============================================================ -->
+    <!-- BAGIAN 11: PETA KONDISI KEMISKINAN KABUPATEN/KOTA -->
+    <!-- ============================================================ -->
+    <section class="card" style="margin-bottom:14px" id="section-kemiskinan">
+      <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:16px;flex-wrap:wrap;gap:12px">
+        <div>
+          <h2 class="card-title" style="font-size:18px;margin-bottom:2px">Peta Kondisi Kemiskinan Kabupaten/Kota</h2>
+          <p class="card-desc" style="margin-bottom:0">Analisis hubungan persentase penduduk miskin dan Indeks Kedalaman Kemiskinan (P1) untuk menentukan prioritas penanganan.</p>
         </div>
-        <svg id="pdrbBar" viewBox="0 0 480 560" style="width:100%;height:auto" role="img" aria-label="PDRB per lapangan usaha"></svg>
-        <div class="src" id="srcPdrb"></div>
       </div>
-      <div class="card">
-        <h2 class="card-title">Kemiskinan &amp; Rasio Gini</h2>
-        <div id="miskinWrap"></div>
-        <div class="src" id="srcMiskin"></div>
+
+      <div class="kemiskinan-layout">
+        <!-- Sisi Kiri: Filter & Scatter Plot -->
+        <div class="kemiskinan-main-col">
+          <!-- Toolbar & 3 KPI Chips -->
+          <div class="kemiskinan-toolbar">
+            <div class="bkpm-filter-col" style="min-width:180px">
+              <label for="kemiskinanProvSelect" class="bkpm-filter-label">Provinsi</label>
+              <select id="kemiskinanProvSelect" class="feature-select" style="width:100%" aria-label="Pilih Provinsi Kemiskinan"></select>
+            </div>
+            
+            <div class="kemiskinan-chips-row">
+              <div class="kemiskinan-chip">
+                <span class="kemiskinan-chip-icon">🏢</span>
+                <div>
+                  <div class="kemiskinan-chip-lbl">Kabupaten/Kota</div>
+                  <div class="kemiskinan-chip-val" id="kmStatKabCount">0</div>
+                  <div class="kemiskinan-chip-sub">Wilayah dianalisis</div>
+                </div>
+              </div>
+
+              <div class="kemiskinan-chip">
+                <span class="kemiskinan-chip-icon">%</span>
+                <div>
+                  <div class="kemiskinan-chip-lbl">Median Penduduk Miskin</div>
+                  <div class="kemiskinan-chip-val" id="kmStatMedMiskin">0%</div>
+                  <div class="kemiskinan-chip-sub">Median provinsi</div>
+                </div>
+              </div>
+
+              <div class="kemiskinan-chip">
+                <span class="kemiskinan-chip-icon">📈</span>
+                <div>
+                  <div class="kemiskinan-chip-lbl">Median P1</div>
+                  <div class="kemiskinan-chip-val" id="kmStatMedP1">0,00</div>
+                  <div class="kemiskinan-chip-sub">Median provinsi</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Canvas Card Scatter Plot -->
+          <div class="bkpm-quad-canvas-card" style="margin-top:12px">
+            <div class="bkpm-quad-svg-container" id="kemiskinanContainer" style="min-height:420px">
+              <svg id="kemiskinanSvg" viewBox="0 0 680 430" style="width:100%;height:auto;overflow:visible"></svg>
+              <div id="kemiskinanTooltip" class="bkpm-white-tooltip"></div>
+            </div>
+
+            <!-- Scatter Plot Legend Footer -->
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:10px;padding-top:10px;border-top:1px solid var(--line);font-size:11px;color:var(--muted);flex-wrap:wrap;gap:8px">
+              <div style="display:flex;align-items:center;gap:14px">
+                <span><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#2563eb;margin-right:4px"></span> <b>Titik</b> = Kabupaten/Kota</span>
+                <span><span style="display:inline-block;width:14px;border-top:2px dashed #3b82f6;margin-right:4px;vertical-align:middle"></span> <b>Garis putus-putus</b> = Median provinsi</span>
+              </div>
+              <div class="src" style="margin:0;padding:0">Sumber: BPS RI / Susenas 2024–2025</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sisi Kanan: Detail Wilayah Terpilih -->
+        <div class="kemiskinan-sidebar-col" id="kmDetailPanel">
+          <div class="kemiskinan-sidebar-header">
+            <div style="display:flex;align-items:center;gap:10px">
+              <div class="kemiskinan-sidebar-avatar">🏢</div>
+              <div>
+                <h3 class="kemiskinan-sidebar-title" id="kmDetailKab">Pilih Wilayah</h3>
+                <span class="bkpm-quad-badge q2" id="kmDetailBadge">Kuadran</span>
+              </div>
+            </div>
+            <button type="button" class="feature-panel-close" id="btnKmReset" title="Reset Pilihan Wilayah">✕</button>
+          </div>
+
+          <!-- 2 KPI Boxes -->
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px">
+            <div class="kemiskinan-kpi-box">
+              <div class="kemiskinan-kpi-icon">👥</div>
+              <div class="kemiskinan-kpi-lbl">Penduduk miskin</div>
+              <div class="kemiskinan-kpi-val" id="kmDetailPct">0%</div>
+              <div class="kemiskinan-kpi-sub">Persentase</div>
+            </div>
+
+            <div class="kemiskinan-kpi-box">
+              <div class="kemiskinan-kpi-icon">📈</div>
+              <div class="kemiskinan-kpi-lbl">Indeks P1</div>
+              <div class="kemiskinan-kpi-val" id="kmDetailP1">0,00</div>
+              <div class="kemiskinan-kpi-sub">Indeks</div>
+            </div>
+          </div>
+
+          <!-- Insight Pemda -->
+          <div class="kemiskinan-insight-card">
+            <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+              <span style="font-size:16px">💡</span>
+              <h4 style="font-size:12.5px;font-weight:700;margin:0;color:var(--text)">Insight untuk Pemda</h4>
+            </div>
+            <p style="font-size:12px;color:var(--text-sec);line-height:1.5;margin:0" id="kmDetailInsight">
+              Pilih salah satu titik kabupaten/kota pada scatter plot untuk melihat evaluasi kedalaman kemiskinan dan karakteristik beban pengeluaran masyarakat miskin.
+            </p>
+          </div>
+
+          <!-- Arah Kebijakan -->
+          <div class="kemiskinan-policy-card">
+            <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+              <span style="font-size:16px">🎯</span>
+              <h4 style="font-size:12.5px;font-weight:700;margin:0;color:#1e40af">Arah kebijakan</h4>
+            </div>
+            <p style="font-size:12px;color:#1e3a8a;line-height:1.5;margin:0" id="kmDetailPolicy">
+              Rekomendasi prioritas program penanganan kemiskinan akan dihitung berdasarkan kombinasi kuadran persentase miskin dan indeks P1.
+            </p>
+          </div>
+
+          <!-- Informasi Tambahan -->
+          <div class="kemiskinan-info-list">
+            <div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;margin-bottom:8px">Informasi Tambahan</div>
+            <div class="km-info-row"><span class="km-info-k">Provinsi:</span><span class="km-info-v" id="kmInfoProv">–</span></div>
+            <div class="km-info-row"><span class="km-info-k">Kabupaten/Kota:</span><span class="km-info-v" id="kmInfoKab">–</span></div>
+            <div class="km-info-row"><span class="km-info-k">Posisi Kuadran:</span><span class="km-info-v" id="kmInfoPosisi">–</span></div>
+            <div class="km-info-row"><span class="km-info-k">Sumber Data:</span><span class="km-info-v">BPS, Susenas</span></div>
+            <div class="km-info-row"><span class="km-info-k">Tahun Data:</span><span class="km-info-v">2025</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- BAGIAN 13: PERKEMBANGAN PDRB ADHB MENURUT LAPANGAN USAHA -->
+    <!-- ============================================================ -->
+    <section class="card" style="margin-bottom:14px" id="section-pdrb-sektor">
+      <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap;gap:12px">
+        <div>
+          <h2 class="card-title" style="font-size:18px;margin-bottom:2px">Perkembangan PDRB ADHB menurut Lapangan Usaha</h2>
+          <p class="card-desc" style="margin-bottom:0">Membandingkan nilai PDRB ADHB setiap sektor antara tahun 2024 dan 2025 · Satuan: Miliar Rupiah</p>
+        </div>
+        <div style="font-size:11px;color:var(--muted);font-family:var(--mono)" id="pdrbUpdatedBadge">
+          Data diperbarui: Rilis Resmi BPS 2025
+        </div>
+      </div>
+
+      <!-- Filters Toolbar -->
+      <div class="bkpm-filter-toolbar" style="align-items:center;margin-bottom:14px">
+        <div class="bkpm-filter-col" style="min-width:180px">
+          <label for="pdrbProvSelect" class="bkpm-filter-label">Provinsi</label>
+          <select id="pdrbProvSelect" class="feature-select" style="width:100%" aria-label="Pilih Provinsi PDRB"></select>
+        </div>
+        <div class="bkpm-filter-col" style="min-width:200px">
+          <label for="pdrbKabSelect" class="bkpm-filter-label">Kabupaten/Kota</label>
+          <select id="pdrbKabSelect" class="feature-select" style="width:100%" aria-label="Pilih Kabupaten/Kota PDRB"></select>
+        </div>
+        <div class="bkpm-toolbar-actions">
+          <button type="button" class="bkpm-action-btn" id="btnPdrbDownload" title="Unduh Data PDRB">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span>Unduh Data</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- 3 Summary KPI Cards -->
+      <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));gap:12px;margin-bottom:16px">
+        <!-- Top Growth -->
+        <div class="pdrb-kpi-card top-growth">
+          <div class="pdrb-kpi-icon">↗</div>
+          <div>
+            <div class="pdrb-kpi-lbl">Pertumbuhan Tertinggi</div>
+            <div class="pdrb-kpi-val" id="pdrbTopSektor">–</div>
+            <div class="pdrb-kpi-sub">(dari tahun 2024 ke 2025)</div>
+          </div>
+        </div>
+
+        <!-- Average Growth -->
+        <div class="pdrb-kpi-card avg-growth">
+          <div class="pdrb-kpi-icon">📊</div>
+          <div>
+            <div class="pdrb-kpi-lbl">Rata-rata Pertumbuhan Sektor</div>
+            <div class="pdrb-kpi-val" id="pdrbAvgGrowth">+0,00%</div>
+            <div class="pdrb-kpi-sub">(dari tahun 2024 ke 2025)</div>
+          </div>
+        </div>
+
+        <!-- Lowest Growth -->
+        <div class="pdrb-kpi-card low-growth">
+          <div class="pdrb-kpi-icon">↘</div>
+          <div>
+            <div class="pdrb-kpi-lbl">Pertumbuhan Terendah</div>
+            <div class="pdrb-kpi-val" id="pdrbLowSektor">–</div>
+            <div class="pdrb-kpi-sub">(dari tahun 2024 ke 2025)</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Paired Bar Chart Canvas Card -->
+      <div class="bkpm-quad-canvas-card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+          <div style="font-size:12.5px;font-weight:700;color:var(--text)" id="pdrbChartSubtitle">
+            Nilai PDRB ADHB menurut Lapangan Usaha (2024 vs 2025)
+          </div>
+          <!-- Legend -->
+          <div style="display:flex;align-items:center;gap:12px;font-size:11px">
+            <span style="display:flex;align-items:center;gap:5px"><span style="display:inline-block;width:12px;height:12px;background:#93c5fd;border-radius:2px"></span> Tahun 2024</span>
+            <span style="display:flex;align-items:center;gap:5px"><span style="display:inline-block;width:12px;height:12px;background:#1d4ed8;border-radius:2px"></span> Tahun 2025</span>
+          </div>
+        </div>
+
+        <div style="width:100%;min-height:360px;position:relative" id="pdrbSvgContainer">
+          <svg id="pdrbSvg" viewBox="0 0 880 380" style="width:100%;height:auto;overflow:visible"></svg>
+          <div id="pdrbTooltip" class="bkpm-white-tooltip"></div>
+        </div>
+
+        <div class="src" style="margin-top:12px">
+          <b>Keterangan:</b> Klik atau arahkan kursor pada batang untuk melihat detail nilai dan pertumbuhan sektor. Nilai ditampilkan dalam Miliar Rupiah.
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- BAGIAN 16-17: EKOSISTEM INDUSTRI & PERDAGANGAN -->
+    <!-- ============================================================ -->
+    <section class="card" style="margin-bottom:14px" id="section-ekosistem">
+      <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap;gap:12px">
+        <div>
+          <h2 class="card-title" style="font-size:18px;margin-bottom:2px">Ekosistem Industri &amp; Perdagangan</h2>
+          <p class="card-desc" style="margin-bottom:0">Ringkasan unit fasilitas usaha, akomodasi, dan perdagangan per tahun untuk mengukur kesiapan pasar dan potensi bisnis lokal.</p>
+        </div>
+      </div>
+
+      <!-- Toolbar: Filter Tahun & KPI Wisatawan -->
+      <div class="bkpm-filter-toolbar" style="align-items:center;margin-bottom:14px">
+        <div class="bkpm-filter-col" style="min-width:140px">
+          <label for="ekoYearSelect" class="bkpm-filter-label">Pilih Tahun:</label>
+          <select id="ekoYearSelect" class="feature-select" style="width:100%" aria-label="Pilih Tahun Ekosistem">
+            <option value="2025" selected>2025</option>
+            <option value="2024">2024</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+          </select>
+        </div>
+
+        <div class="ekosistem-kpi-wisatawan">
+          <div class="eko-wis-lbl">Wisatawan</div>
+          <div class="eko-wis-val" id="ekoWisatawanVal">1,2 Jt</div>
+        </div>
+      </div>
+
+      <!-- Treemap Container -->
+      <div class="bkpm-quad-canvas-card" style="padding:16px">
+        <div id="ekoTreemapContainer" style="width:100%;height:380px;position:relative">
+          <svg id="ekoTreemapSvg" viewBox="0 0 880 380" style="width:100%;height:100%;overflow:visible"></svg>
+          <div id="ekoTreemapTooltip" class="bkpm-white-tooltip"></div>
+        </div>
+
+        <!-- Legend Categories -->
+        <div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:14px;padding-top:10px;border-top:1px solid var(--line);font-size:11.5px">
+          <span style="display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:12px;height:12px;background:#fca5a5;border-radius:3px"></span> Restoran</span>
+          <span style="display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:12px;height:12px;background:#93c5fd;border-radius:3px"></span> Minimarket</span>
+          <span style="display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:12px;height:12px;background:#c4b5fd;border-radius:3px"></span> Industri</span>
+          <span style="display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:12px;height:12px;background:#6ee7b7;border-radius:3px"></span> Hotel (tooltip: jumlah kamar)</span>
+          <span style="display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:12px;height:12px;background:#bef264;border-radius:3px"></span> Koperasi</span>
+          <span style="display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:12px;height:12px;background:#fcd34d;border-radius:3px"></span> Pasar</span>
+          <span style="display:flex;align-items:center;gap:6px"><span style="display:inline-block;width:12px;height:12px;background:#fbcfe8;border-radius:3px"></span> Bank</span>
+        </div>
+
+        <div class="src" style="margin-top:10px">
+          <b>Keterangan:</b> Luas blok = jumlah unit per kategori fasilitas. Arahkan kursor ke blok untuk melihat rincian unit dan jumlah kamar hotel.
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- BAGIAN 21: INDUSTRI BESAR DAN SEDANG -->
+    <!-- ============================================================ -->
+    <section class="card" style="margin-bottom:14px" id="section-industri">
+      <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap;gap:12px">
+        <div>
+          <h2 class="card-title" style="font-size:18px;margin-bottom:2px">Industri Besar dan Sedang</h2>
+          <p class="card-desc" style="margin-bottom:0">Nilai output, biaya input, dan nilai tambah industri manufaktur berdasarkan klasifikasi KBLI 2-digit.</p>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+          <div class="bkpm-filter-col" style="min-width:140px">
+            <select id="indYearSelect" class="feature-select" aria-label="Tahun Industri">
+              <option value="2025" selected>2025</option>
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 KPI Cards -->
+      <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));gap:12px;margin-bottom:16px">
+        <div class="ind-kpi-card output">
+          <div class="ind-kpi-icon" style="background:#dbeafe;color:#1d4ed8">🏭</div>
+          <div>
+            <div class="ind-kpi-lbl">Total Nilai Output</div>
+            <div class="ind-kpi-val" id="indKpiOutput">Rp 0</div>
+            <div class="ind-kpi-sub">Seluruh klasifikasi industri (20)</div>
+          </div>
+        </div>
+
+        <div class="ind-kpi-card input">
+          <div class="ind-kpi-icon" style="background:#ccfbf1;color:#0f766e">👛</div>
+          <div>
+            <div class="ind-kpi-lbl">Total Biaya Input</div>
+            <div class="ind-kpi-val" id="indKpiInput">Rp 0</div>
+            <div class="ind-kpi-sub">Seluruh klasifikasi industri (20)</div>
+          </div>
+        </div>
+
+        <div class="ind-kpi-card added">
+          <div class="ind-kpi-icon" style="background:#f3e8ff;color:#7e22ce">📈</div>
+          <div>
+            <div class="ind-kpi-lbl">Total Nilai Tambah</div>
+            <div class="ind-kpi-val" id="indKpiAdded">Rp 0</div>
+            <div class="ind-kpi-sub">Menurut BPS (harga pasar)</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Layout: Horizontal Bar Chart + Right Detail Card -->
+      <div class="ind-main-grid">
+        <!-- Horizontal Bar Chart -->
+        <div class="bkpm-quad-canvas-card">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;flex-wrap:wrap;gap:8px">
+            <div>
+              <div style="font-size:13.5px;font-weight:700;color:var(--text)">Nilai Tambah Menurut Kelompok Industri</div>
+              <div style="font-size:11px;color:var(--muted)" id="indChartSub">Kelompok industri dengan nilai tambah terbesar</div>
+            </div>
+            <!-- Toggle Top 5 vs Semua -->
+            <div class="bkpm-btn-group" id="indFilterGroup">
+              <button type="button" class="bkpm-toggle-btn active" data-filter="top5">Top 5</button>
+              <button type="button" class="bkpm-toggle-btn" data-filter="semua">Semua (5)</button>
+            </div>
+          </div>
+
+          <!-- Bar Chart Container -->
+          <div id="indBarsContainer" style="display:flex;flex-direction:column;gap:12px;padding:10px 0"></div>
+
+          <!-- Axis Scale Footer -->
+          <div style="display:flex;justify-content:space-between;padding-top:10px;margin-top:10px;border-top:1px solid var(--line);font-size:10.5px;color:var(--muted);font-family:var(--mono)" id="indAxisFooter">
+            <span>0</span>
+            <span>5</span>
+            <span>10</span>
+            <span>15</span>
+            <span>20</span>
+            <span>25</span>
+          </div>
+          <div style="text-align:center;font-size:11px;font-weight:700;color:var(--muted);margin-top:2px">
+            Nilai Tambah (Triliun Rupiah)
+          </div>
+        </div>
+
+        <!-- Right Detail Card -->
+        <div class="ind-detail-panel" id="indDetailPanel">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">
+            <div class="ind-panel-icon" id="indDetailIcon">⚙️</div>
+            <div>
+              <h4 style="font-size:13px;font-weight:700;margin:0;color:var(--text);line-height:1.2" id="indDetailTitle">Logam, Elektronik &amp; Mesin</h4>
+              <span style="font-size:10.5px;color:var(--muted);font-family:var(--mono)" id="indDetailKode">KBLI 24–30, 32</span>
+            </div>
+          </div>
+
+          <div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;margin-bottom:6px">Rincian Klasifikasi Industri:</div>
+          <ul class="ind-sub-list" id="indDetailSubList"></ul>
+
+          <div style="margin-top:14px;padding-top:10px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:6px">
+            <div class="ind-metric-row"><span class="k">Total Nilai Output:</span><span class="v mono" id="indDetailOut">Rp 0 T</span></div>
+            <div class="ind-metric-row"><span class="k">Total Biaya Input:</span><span class="v mono" id="indDetailIn">Rp 0 T</span></div>
+            <div class="ind-metric-row"><span class="k">Total Nilai Tambah:</span><span class="v mono" style="color:#2563eb;font-weight:700" id="indDetailVa">Rp 0 T</span></div>
+          </div>
+
+          <div class="src" style="margin-top:12px;font-size:10px">
+            Data merupakan agregasi dari klasifikasi industri yang termasuk dalam kelompok ini.
+          </div>
+        </div>
       </div>
     </section>
   </div>
@@ -1619,6 +2399,11 @@
 <script src="assets/js/data/darurat-data.js"></script>
 <script src="assets/js/data/jalan-data.js"></script>
 <script src="assets/js/data/investasi-sektor-data.js"></script>
-<script src="assets/js/core/Profil.js?cb=20261028_145200"></script>
+  <script src="assets/js/data/pasar-kerja-data.js"></script>
+  <script src="assets/js/data/kemiskinan-data.js"></script>
+  <script src="assets/js/data/pdrb-sektor-data.js"></script>
+  <script src="assets/js/data/ekosistem-usaha-data.js"></script>
+  <script src="assets/js/data/industri-besar-sedang-data.js"></script>
+<script src="assets/js/core/Profil.js?v=bkpm-v2"></script>
 </body>
 </html>

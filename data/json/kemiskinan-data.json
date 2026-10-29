@@ -1,0 +1,5468 @@
+{
+  "provinces": [
+    "Aceh",
+    "Bali",
+    "Banten",
+    "Bengkulu",
+    "Daerah Istimewa Yogyakarta",
+    "Daerah Khusus Ibukota Jakarta",
+    "Gorontalo",
+    "Jambi",
+    "Jawa Barat",
+    "Jawa Tengah",
+    "Jawa Timur",
+    "Kalimantan Barat",
+    "Kalimantan Selatan",
+    "Kalimantan Tengah",
+    "Kalimantan Timur",
+    "Kalimantan Utara",
+    "Kepulauan Bangka Belitung",
+    "Kepulauan Riau",
+    "Lampung",
+    "Maluku",
+    "Maluku Utara",
+    "Nusa Tenggara Barat",
+    "Nusa Tenggara Timur",
+    "Papua",
+    "Papua Barat",
+    "Papua Barat Daya",
+    "Papua Pegunungan",
+    "Papua Selatan",
+    "Papua Tengah",
+    "Riau",
+    "Sulawesi Barat",
+    "Sulawesi Selatan",
+    "Sulawesi Tengah",
+    "Sulawesi Tenggara",
+    "Sulawesi Utara",
+    "Sumatera Barat",
+    "Sumatera Selatan",
+    "Sumatera Utara"
+  ],
+  "kab_by_prov": {
+    "Aceh": [
+      "Kabupaten Aceh Barat",
+      "Kabupaten Aceh Barat Daya",
+      "Kabupaten Aceh Besar",
+      "Kabupaten Aceh Jaya",
+      "Kabupaten Aceh Selatan",
+      "Kabupaten Aceh Singkil",
+      "Kabupaten Aceh Tamiang",
+      "Kabupaten Aceh Tengah",
+      "Kabupaten Aceh Tenggara",
+      "Kabupaten Aceh Timur",
+      "Kabupaten Aceh Utara",
+      "Kabupaten Bener Meriah",
+      "Kabupaten Bireuen",
+      "Kabupaten Gayo Lues",
+      "Kabupaten Nagan Raya",
+      "Kabupaten Pidie",
+      "Kabupaten Pidie Jaya",
+      "Kabupaten Simeulue",
+      "Kota Banda Aceh",
+      "Kota Langsa",
+      "Kota Lhokseumawe",
+      "Kota Sabang",
+      "Kota Subulussalam"
+    ],
+    "Bali": [
+      "Kabupaten Badung",
+      "Kabupaten Bangli",
+      "Kabupaten Buleleng",
+      "Kabupaten Gianyar",
+      "Kabupaten Jembrana",
+      "Kabupaten Karangasem",
+      "Kabupaten Klungkung",
+      "Kabupaten Tabanan",
+      "Kota Denpasar"
+    ],
+    "Banten": [
+      "Kabupaten Lebak",
+      "Kabupaten Pandeglang",
+      "Kabupaten Serang",
+      "Kabupaten Tangerang",
+      "Kota Cilegon",
+      "Kota Serang",
+      "Kota Tangerang",
+      "Kota Tangerang Selatan"
+    ],
+    "Bengkulu": [
+      "Kabupaten Bengkulu Selatan",
+      "Kabupaten Bengkulu Tengah",
+      "Kabupaten Bengkulu Utara",
+      "Kabupaten Kaur",
+      "Kabupaten Kepahiang",
+      "Kabupaten Lebong",
+      "Kabupaten Mukomuko",
+      "Kabupaten Rejang Lebong",
+      "Kabupaten Seluma",
+      "Kota Bengkulu"
+    ],
+    "Daerah Istimewa Yogyakarta": [
+      "Kabupaten Bantul",
+      "Kabupaten Gunung Kidul",
+      "Kabupaten Kulon Progo",
+      "Kabupaten Sleman",
+      "Kota Yogyakarta"
+    ],
+    "Daerah Khusus Ibukota Jakarta": [
+      "Kota Adm. Jakarta Barat",
+      "Kota Adm. Jakarta Pusat",
+      "Kota Adm. Jakarta Selatan",
+      "Kota Adm. Jakarta Timur",
+      "Kota Adm. Jakarta Utara",
+      "Kota Adm. Kepulauan Seribu"
+    ],
+    "Gorontalo": [
+      "Kabupaten Boalemo",
+      "Kabupaten Bone Bolango",
+      "Kabupaten Gorontalo",
+      "Kabupaten Gorontalo Utara",
+      "Kabupaten Pohuwato",
+      "Kota Gorontalo"
+    ],
+    "Jambi": [
+      "Kabupaten Batang Hari",
+      "Kabupaten Bungo",
+      "Kabupaten Kerinci",
+      "Kabupaten Merangin",
+      "Kabupaten Muaro Jambi",
+      "Kabupaten Sarolangun",
+      "Kabupaten Tanjung Jabung Barat",
+      "Kabupaten Tanjung Jabung Timur",
+      "Kabupaten Tebo",
+      "Kota Jambi",
+      "Kota Sungai Penuh"
+    ],
+    "Jawa Barat": [
+      "Kabupaten Bandung",
+      "Kabupaten Bandung Barat",
+      "Kabupaten Bekasi",
+      "Kabupaten Bogor",
+      "Kabupaten Ciamis",
+      "Kabupaten Cianjur",
+      "Kabupaten Cirebon",
+      "Kabupaten Garut",
+      "Kabupaten Indramayu",
+      "Kabupaten Karawang",
+      "Kabupaten Kuningan",
+      "Kabupaten Majalengka",
+      "Kabupaten Pangandaran",
+      "Kabupaten Purwakarta",
+      "Kabupaten Subang",
+      "Kabupaten Sukabumi",
+      "Kabupaten Sumedang",
+      "Kabupaten Tasikmalaya",
+      "Kota Bandung",
+      "Kota Banjar",
+      "Kota Bekasi",
+      "Kota Bogor",
+      "Kota Cimahi",
+      "Kota Cirebon",
+      "Kota Depok",
+      "Kota Sukabumi",
+      "Kota Tasikmalaya"
+    ],
+    "Jawa Tengah": [
+      "Kabupaten Banjarnegara",
+      "Kabupaten Banyumas",
+      "Kabupaten Batang",
+      "Kabupaten Blora",
+      "Kabupaten Boyolali",
+      "Kabupaten Brebes",
+      "Kabupaten Cilacap",
+      "Kabupaten Demak",
+      "Kabupaten Grobogan",
+      "Kabupaten Jepara",
+      "Kabupaten Karanganyar",
+      "Kabupaten Kebumen",
+      "Kabupaten Kendal",
+      "Kabupaten Klaten",
+      "Kabupaten Kudus",
+      "Kabupaten Magelang",
+      "Kabupaten Pati",
+      "Kabupaten Pekalongan",
+      "Kabupaten Pemalang",
+      "Kabupaten Purbalingga",
+      "Kabupaten Purworejo",
+      "Kabupaten Rembang",
+      "Kabupaten Semarang",
+      "Kabupaten Sragen",
+      "Kabupaten Sukoharjo",
+      "Kabupaten Tegal",
+      "Kabupaten Temanggung",
+      "Kabupaten Wonogiri",
+      "Kabupaten Wonosobo",
+      "Kota Magelang",
+      "Kota Pekalongan",
+      "Kota Salatiga",
+      "Kota Semarang",
+      "Kota Surakarta",
+      "Kota Tegal"
+    ],
+    "Jawa Timur": [
+      "Kabupaten Bangkalan",
+      "Kabupaten Banyuwangi",
+      "Kabupaten Blitar",
+      "Kabupaten Bojonegoro",
+      "Kabupaten Bondowoso",
+      "Kabupaten Gresik",
+      "Kabupaten Jember",
+      "Kabupaten Jombang",
+      "Kabupaten Kediri",
+      "Kabupaten Lamongan",
+      "Kabupaten Lumajang",
+      "Kabupaten Madiun",
+      "Kabupaten Magetan",
+      "Kabupaten Malang",
+      "Kabupaten Mojokerto",
+      "Kabupaten Nganjuk",
+      "Kabupaten Ngawi",
+      "Kabupaten Pacitan",
+      "Kabupaten Pamekasan",
+      "Kabupaten Pasuruan",
+      "Kabupaten Ponorogo",
+      "Kabupaten Probolinggo",
+      "Kabupaten Sampang",
+      "Kabupaten Sidoarjo",
+      "Kabupaten Situbondo",
+      "Kabupaten Sumenep",
+      "Kabupaten Trenggalek",
+      "Kabupaten Tuban",
+      "Kabupaten Tulungagung",
+      "Kota Batu",
+      "Kota Blitar",
+      "Kota Kediri",
+      "Kota Madiun",
+      "Kota Malang",
+      "Kota Mojokerto",
+      "Kota Pasuruan",
+      "Kota Probolinggo",
+      "Kota Surabaya"
+    ],
+    "Kalimantan Barat": [
+      "Kabupaten Bengkayang",
+      "Kabupaten Kapuas Hulu",
+      "Kabupaten Kayong Utara",
+      "Kabupaten Ketapang",
+      "Kabupaten Kubu Raya",
+      "Kabupaten Landak",
+      "Kabupaten Melawi",
+      "Kabupaten Mempawah",
+      "Kabupaten Sambas",
+      "Kabupaten Sanggau",
+      "Kabupaten Sekadau",
+      "Kabupaten Sintang",
+      "Kota Pontianak",
+      "Kota Singkawang"
+    ],
+    "Kalimantan Selatan": [
+      "Kabupaten Balangan",
+      "Kabupaten Banjar",
+      "Kabupaten Barito Kuala",
+      "Kabupaten Hulu Sungai Selatan",
+      "Kabupaten Hulu Sungai Tengah",
+      "Kabupaten Hulu Sungai Utara",
+      "Kabupaten Kotabaru",
+      "Kabupaten Tabalong",
+      "Kabupaten Tanah Bumbu",
+      "Kabupaten Tanah Laut",
+      "Kabupaten Tapin",
+      "Kota Banjar Baru",
+      "Kota Banjarmasin"
+    ],
+    "Kalimantan Tengah": [
+      "Kabupaten Barito Selatan",
+      "Kabupaten Barito Timur",
+      "Kabupaten Barito Utara",
+      "Kabupaten Gunung Mas",
+      "Kabupaten Kapuas",
+      "Kabupaten Katingan",
+      "Kabupaten Kotawaringin Barat",
+      "Kabupaten Kotawaringin Timur",
+      "Kabupaten Lamandau",
+      "Kabupaten Murung Raya",
+      "Kabupaten Pulang Pisau",
+      "Kabupaten Seruyan",
+      "Kabupaten Sukamara",
+      "Kota Palangkaraya"
+    ],
+    "Kalimantan Timur": [
+      "Kabupaten Berau",
+      "Kabupaten Kutai Barat",
+      "Kabupaten Kutai Kartanegara",
+      "Kabupaten Kutai Timur",
+      "Kabupaten Mahakam Hulu",
+      "Kabupaten Paser",
+      "Kabupaten Penajam Paser Utara",
+      "Kota Balikpapan",
+      "Kota Bontang",
+      "Kota Samarinda"
+    ],
+    "Kepulauan Bangka Belitung": [
+      "Kabupaten Bangka",
+      "Kabupaten Bangka Barat",
+      "Kabupaten Bangka Selatan",
+      "Kabupaten Bangka Tengah",
+      "Kabupaten Belitung",
+      "Kabupaten Belitung Timur",
+      "Kota Pangkal Pinang"
+    ],
+    "Kepulauan Riau": [
+      "Kabupaten Bintan",
+      "Kabupaten Karimun",
+      "Kabupaten Kepulauan Anambas",
+      "Kabupaten Lingga",
+      "Kabupaten Natuna",
+      "Kota Batam",
+      "Kota Tanjung Pinang"
+    ],
+    "Lampung": [
+      "Kabupaten Lampung Barat",
+      "Kabupaten Lampung Selatan",
+      "Kabupaten Lampung Tengah",
+      "Kabupaten Lampung Timur",
+      "Kabupaten Lampung Utara",
+      "Kabupaten Mesuji",
+      "Kabupaten Pesawaran",
+      "Kabupaten Pesisir Barat",
+      "Kabupaten Pringsewu",
+      "Kabupaten Tanggamus",
+      "Kabupaten Tulang Bawang",
+      "Kabupaten Tulang Bawang Barat",
+      "Kabupaten Way Kanan",
+      "Kota Bandar Lampung",
+      "Kota Metro"
+    ],
+    "Maluku": [
+      "Kabupaten Buru",
+      "Kabupaten Buru Selatan",
+      "Kabupaten Kepulauan Aru",
+      "Kabupaten Kepulauan Tanimbar",
+      "Kabupaten Maluku Barat Daya",
+      "Kabupaten Maluku Tengah",
+      "Kabupaten Maluku Tenggara",
+      "Kabupaten Seram Bagian Barat",
+      "Kabupaten Seram Bagian Timur",
+      "Kota Ambon",
+      "Kota Tual"
+    ],
+    "Maluku Utara": [
+      "Kabupaten Halmahera Barat",
+      "Kabupaten Halmahera Selatan",
+      "Kabupaten Halmahera Tengah",
+      "Kabupaten Halmahera Timur",
+      "Kabupaten Halmahera Utara",
+      "Kabupaten Kepulauan Sula",
+      "Kabupaten Pulau Morotai",
+      "Kabupaten Pulau Taliabu",
+      "Kota Ternate",
+      "Kota Tidore Kepulauan"
+    ],
+    "Nusa Tenggara Barat": [
+      "Kabupaten Bima",
+      "Kabupaten Dompu",
+      "Kabupaten Lombok Barat",
+      "Kabupaten Lombok Tengah",
+      "Kabupaten Lombok Timur",
+      "Kabupaten Lombok Utara",
+      "Kabupaten Sumbawa",
+      "Kabupaten Sumbawa Barat",
+      "Kota Bima",
+      "Kota Mataram"
+    ],
+    "Nusa Tenggara Timur": [
+      "Kabupaten Alor",
+      "Kabupaten Belu",
+      "Kabupaten Ende",
+      "Kabupaten Flores Timur",
+      "Kabupaten Kupang",
+      "Kabupaten Lembata",
+      "Kabupaten Malaka",
+      "Kabupaten Manggarai",
+      "Kabupaten Manggarai Barat",
+      "Kabupaten Manggarai Timur",
+      "Kabupaten Nagekeo",
+      "Kabupaten Ngada",
+      "Kabupaten Rote Ndao",
+      "Kabupaten Sabu Raijua",
+      "Kabupaten Sikka",
+      "Kabupaten Sumba Barat",
+      "Kabupaten Sumba Barat Daya",
+      "Kabupaten Sumba Tengah",
+      "Kabupaten Sumba Timur",
+      "Kabupaten Timor Tengah Selatan",
+      "Kabupaten Timor Tengah Utara",
+      "Kota Kupang"
+    ],
+    "Papua": [
+      "Kabupaten Asmat",
+      "Kabupaten Biak Numfor",
+      "Kabupaten Boven Digoel",
+      "Kabupaten Deiyai",
+      "Kabupaten Dogiyai",
+      "Kabupaten Jayapura",
+      "Kabupaten Jayawijaya",
+      "Kabupaten Keerom",
+      "Kabupaten Kepulauan Yapen",
+      "Kabupaten Mamberamo Raya",
+      "Kabupaten Mappi",
+      "Kabupaten Merauke",
+      "Kabupaten Mimika",
+      "Kabupaten Nabire",
+      "Kabupaten Paniai",
+      "Kabupaten Pegunungan Bintang",
+      "Kabupaten Sarmi",
+      "Kabupaten Supiori",
+      "Kabupaten Waropen",
+      "Kabupaten Yahukimo",
+      "Kota Jayapura"
+    ],
+    "Papua Barat": [
+      "Kabupaten Fak Fak",
+      "Kabupaten Kaimana",
+      "Kabupaten Manokwari",
+      "Kabupaten Manokwari Selatan",
+      "Kabupaten Pegunungan Arfak",
+      "Kabupaten Raja Ampat",
+      "Kabupaten Sorong",
+      "Kabupaten Teluk Bintuni",
+      "Kabupaten Teluk Wondama",
+      "Kota Sorong"
+    ],
+    "Papua Barat Daya": [
+      "Kabupaten Maybrat",
+      "Kabupaten Raja Ampat",
+      "Kabupaten Sorong",
+      "Kabupaten Sorong Selatan",
+      "Kabupaten Tambrauw",
+      "Kota Sorong"
+    ],
+    "Papua Tengah": [
+      "Kabupaten Deiyai",
+      "Kabupaten Dogiyai",
+      "Kabupaten Intan Jaya",
+      "Kabupaten Mimika",
+      "Kabupaten Nabire",
+      "Kabupaten Paniai",
+      "Kabupaten Puncak",
+      "Kabupaten Puncak Jaya"
+    ],
+    "Riau": [
+      "Kabupaten Bengkalis",
+      "Kabupaten Indragiri Hilir",
+      "Kabupaten Indragiri Hulu",
+      "Kabupaten Kampar",
+      "Kabupaten Kepulauan Meranti",
+      "Kabupaten Kuantan Singingi",
+      "Kabupaten Pelalawan",
+      "Kabupaten Rokan Hilir",
+      "Kabupaten Rokan Hulu",
+      "Kabupaten Siak",
+      "Kota Dumai",
+      "Kota Pekanbaru"
+    ],
+    "Sulawesi Barat": [
+      "Kabupaten Majene",
+      "Kabupaten Mamasa",
+      "Kabupaten Mamuju",
+      "Kabupaten Mamuju Tengah",
+      "Kabupaten Pasangkayu",
+      "Kabupaten Polewali Mandar"
+    ],
+    "Sulawesi Selatan": [
+      "Kabupaten Bantaeng",
+      "Kabupaten Barru",
+      "Kabupaten Bone",
+      "Kabupaten Bulukumba",
+      "Kabupaten Enrekang",
+      "Kabupaten Gowa",
+      "Kabupaten Jeneponto",
+      "Kabupaten Luwu",
+      "Kabupaten Luwu Timur",
+      "Kabupaten Luwu Utara",
+      "Kabupaten Maros",
+      "Kabupaten Pangkajene Kepulauan",
+      "Kabupaten Pinrang",
+      "Kabupaten Selayar",
+      "Kabupaten Sidenreng Rappang",
+      "Kabupaten Sinjai",
+      "Kabupaten Soppeng",
+      "Kabupaten Takalar",
+      "Kabupaten Tana Toraja",
+      "Kabupaten Toraja Utara",
+      "Kabupaten Wajo",
+      "Kota Makassar",
+      "Kota Palopo",
+      "Kota Pare-pare"
+    ],
+    "Sulawesi Tengah": [
+      "Kabupaten Banggai",
+      "Kabupaten Banggai Kepulauan",
+      "Kabupaten Banggai Laut",
+      "Kabupaten Buol",
+      "Kabupaten Donggala",
+      "Kabupaten Morowali",
+      "Kabupaten Morowali Utara",
+      "Kabupaten Parigi Moutong",
+      "Kabupaten Poso",
+      "Kabupaten Sigi",
+      "Kabupaten Tajo Una-una",
+      "Kabupaten Toli Toli",
+      "Kota Palu"
+    ],
+    "Sulawesi Tenggara": [
+      "Kabupaten Bombana",
+      "Kabupaten Buton",
+      "Kabupaten Buton Selatan",
+      "Kabupaten Buton Tengah",
+      "Kabupaten Buton Utara",
+      "Kabupaten Kolaka",
+      "Kabupaten Kolaka Timur",
+      "Kabupaten Kolaka Utara",
+      "Kabupaten Konawe",
+      "Kabupaten Konawe Kepulauan",
+      "Kabupaten Konawe Selatan",
+      "Kabupaten Konawe Utara",
+      "Kabupaten Muna",
+      "Kabupaten Muna Barat",
+      "Kabupaten Wakatobi",
+      "Kota Bau-bau",
+      "Kota Kendari"
+    ],
+    "Sulawesi Utara": [
+      "Kabupaten Bolaang Mongondow",
+      "Kabupaten Bolaang Mongondow Selatan",
+      "Kabupaten Bolaang Mongondow Timur",
+      "Kabupaten Bolaang Mongondow Utara",
+      "Kabupaten Kepulauan Sangihe",
+      "Kabupaten Kepulauan Talaud",
+      "Kabupaten Minahasa",
+      "Kabupaten Minahasa Selatan",
+      "Kabupaten Minahasa Tenggara",
+      "Kabupaten Minahasa Utara",
+      "Kabupaten Siau Tagulandang Biaro",
+      "Kota Bitung",
+      "Kota Kotamobagu",
+      "Kota Manado",
+      "Kota Tomohon"
+    ],
+    "Sumatera Barat": [
+      "Kabupaten Agam",
+      "Kabupaten Dharmasraya",
+      "Kabupaten Kepulauan Mentawai",
+      "Kabupaten Lima Puluh Kota",
+      "Kabupaten Padang Pariaman",
+      "Kabupaten Pasaman",
+      "Kabupaten Pasaman Barat",
+      "Kabupaten Pesisir Selatan",
+      "Kabupaten Sijunjung",
+      "Kabupaten Solok",
+      "Kabupaten Solok Selatan",
+      "Kabupaten Tanah Datar",
+      "Kota Bukittinggi",
+      "Kota Padang",
+      "Kota Padang Panjang",
+      "Kota Pariaman",
+      "Kota Payakumbuh",
+      "Kota Sawah Lunto",
+      "Kota Solok"
+    ],
+    "Sumatera Selatan": [
+      "Kabupaten Banyuasin",
+      "Kabupaten Empat Lawang",
+      "Kabupaten Lahat",
+      "Kabupaten Muara Enim",
+      "Kabupaten Musi Banyuasin",
+      "Kabupaten Musi Rawas",
+      "Kabupaten Musi Rawas Utara",
+      "Kabupaten Ogan Ilir",
+      "Kabupaten Ogan Komering Ilir",
+      "Kabupaten Ogan Komering Ulu",
+      "Kabupaten Ogan Komering Ulu Selatan",
+      "Kabupaten Ogan Komering Ulu Timur",
+      "Kabupaten Penukal Abab Lematang Ilir",
+      "Kota Lubuk Linggau",
+      "Kota Pagar Alam",
+      "Kota Palembang",
+      "Kota Prabumulih"
+    ],
+    "Sumatera Utara": [
+      "Kabupaten Asahan",
+      "Kabupaten Batu Bara",
+      "Kabupaten Dairi",
+      "Kabupaten Deli Serdang",
+      "Kabupaten Humbang Hasundutan",
+      "Kabupaten Karo",
+      "Kabupaten Labuhan Batu",
+      "Kabupaten Labuhanbatu Selatan",
+      "Kabupaten Labuhanbatu Utara",
+      "Kabupaten Langkat",
+      "Kabupaten Mandailing Natal",
+      "Kabupaten Nias",
+      "Kabupaten Nias Barat",
+      "Kabupaten Nias Selatan",
+      "Kabupaten Nias Utara",
+      "Kabupaten Padang Lawas",
+      "Kabupaten Padang Lawas Utara",
+      "Kabupaten Pakpak Bharat",
+      "Kabupaten Samosir",
+      "Kabupaten Serdang Bedagai",
+      "Kabupaten Simalungun",
+      "Kabupaten Tapanuli Selatan",
+      "Kabupaten Tapanuli Tengah",
+      "Kabupaten Tapanuli Utara",
+      "Kabupaten Toba Samosir",
+      "Kota Binjai",
+      "Kota Gunung Sitoli",
+      "Kota Medan",
+      "Kota Padang Sidempuan",
+      "Kota Pematang Siantar",
+      "Kota Sibolga",
+      "Kota Tanjung Balai",
+      "Kota Tebing Tinggi"
+    ],
+    "Papua Selatan": [
+      "Kabupaten Asmat",
+      "Kabupaten Boven Digoel",
+      "Kabupaten Mappi",
+      "Kabupaten Merauke"
+    ],
+    "Kalimantan Utara": [
+      "Kabupaten Bulungan",
+      "Kabupaten Malinau",
+      "Kabupaten Nunukan",
+      "Kabupaten Tana Tidung",
+      "Kota Tarakan"
+    ],
+    "Papua Pegunungan": [
+      "Kabupaten Jayawijaya",
+      "Kabupaten Lanny Jaya",
+      "Kabupaten Nduga",
+      "Kabupaten Pegunungan Bintang",
+      "Kabupaten Yahukimo",
+      "Kabupaten Yalimo"
+    ]
+  },
+  "data_by_prov": {
+    "Aceh": [
+      {
+        "kabkota": "Kabupaten Aceh Barat",
+        "provinsi": "Aceh",
+        "persentase_miskin": 15.5,
+        "p1": 2.45,
+        "penduduk": 210738,
+        "garis_kemiskinan": 652009,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Aceh Barat Daya",
+        "provinsi": "Aceh",
+        "persentase_miskin": 13.3,
+        "p1": 1.97,
+        "penduduk": 163464,
+        "garis_kemiskinan": 525947,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Aceh Besar",
+        "provinsi": "Aceh",
+        "persentase_miskin": 11.05,
+        "p1": 1.9,
+        "penduduk": 439753,
+        "garis_kemiskinan": 598160,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Aceh Jaya",
+        "provinsi": "Aceh",
+        "persentase_miskin": 10.4,
+        "p1": 1.62,
+        "penduduk": 102242,
+        "garis_kemiskinan": 542092,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Aceh Selatan",
+        "provinsi": "Aceh",
+        "persentase_miskin": 9.89,
+        "p1": 1.55,
+        "penduduk": 246901,
+        "garis_kemiskinan": 538174,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Aceh Singkil",
+        "provinsi": "Aceh",
+        "persentase_miskin": 17.07,
+        "p1": 3.24,
+        "penduduk": 140432,
+        "garis_kemiskinan": 619322,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Aceh Tamiang",
+        "provinsi": "Aceh",
+        "persentase_miskin": 12.17,
+        "p1": 1.53,
+        "penduduk": 316534,
+        "garis_kemiskinan": 583294,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Aceh Tengah",
+        "provinsi": "Aceh",
+        "persentase_miskin": 14.27,
+        "p1": 2.37,
+        "penduduk": 232425,
+        "garis_kemiskinan": 636315,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Aceh Tenggara",
+        "provinsi": "Aceh",
+        "persentase_miskin": 9.78,
+        "p1": 1.04,
+        "penduduk": 241328,
+        "garis_kemiskinan": 502074,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Aceh Timur",
+        "provinsi": "Aceh",
+        "persentase_miskin": 11.24,
+        "p1": 1.02,
+        "penduduk": 454431,
+        "garis_kemiskinan": 564943,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Aceh Utara",
+        "provinsi": "Aceh",
+        "persentase_miskin": 14.27,
+        "p1": 2.06,
+        "penduduk": 645802,
+        "garis_kemiskinan": 483719,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Bener Meriah",
+        "provinsi": "Aceh",
+        "persentase_miskin": 16.2,
+        "p1": 3.08,
+        "penduduk": 177600,
+        "garis_kemiskinan": 602421,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Bireuen",
+        "provinsi": "Aceh",
+        "persentase_miskin": 10.3,
+        "p1": 1.17,
+        "penduduk": 470358,
+        "garis_kemiskinan": 503866,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Gayo Lues",
+        "provinsi": "Aceh",
+        "persentase_miskin": 16.77,
+        "p1": 1.81,
+        "penduduk": 110542,
+        "garis_kemiskinan": 567201,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Nagan Raya",
+        "provinsi": "Aceh",
+        "persentase_miskin": 15.42,
+        "p1": 2.34,
+        "penduduk": 180440,
+        "garis_kemiskinan": 642820,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Pidie",
+        "provinsi": "Aceh",
+        "persentase_miskin": 16.46,
+        "p1": 1.99,
+        "penduduk": 461254,
+        "garis_kemiskinan": 618445,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Pidie Jaya",
+        "provinsi": "Aceh",
+        "persentase_miskin": 16.12,
+        "p1": 2.43,
+        "penduduk": 170580,
+        "garis_kemiskinan": 610755,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Simeulue",
+        "provinsi": "Aceh",
+        "persentase_miskin": 16.87,
+        "p1": 2.23,
+        "penduduk": 101604,
+        "garis_kemiskinan": 586505,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Banda Aceh",
+        "provinsi": "Aceh",
+        "persentase_miskin": 5.45,
+        "p1": 0.71,
+        "penduduk": 270795,
+        "garis_kemiskinan": 872944,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Langsa",
+        "provinsi": "Aceh",
+        "persentase_miskin": 8.59,
+        "p1": 1.44,
+        "penduduk": 204203,
+        "garis_kemiskinan": 554363,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Lhokseumawe",
+        "provinsi": "Aceh",
+        "persentase_miskin": 9.01,
+        "p1": 1.37,
+        "penduduk": 206394,
+        "garis_kemiskinan": 529671,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Sabang",
+        "provinsi": "Aceh",
+        "persentase_miskin": 12.75,
+        "p1": 2.01,
+        "penduduk": 44610,
+        "garis_kemiskinan": 736956,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Subulussalam",
+        "provinsi": "Aceh",
+        "persentase_miskin": 13.88,
+        "p1": 2.79,
+        "penduduk": 103499,
+        "garis_kemiskinan": 514372,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      }
+    ],
+    "Bali": [
+      {
+        "kabkota": "Kabupaten Badung",
+        "provinsi": "Bali",
+        "persentase_miskin": 3.83,
+        "p1": 0.26,
+        "penduduk": 578791,
+        "garis_kemiskinan": 515000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Bangli",
+        "provinsi": "Bali",
+        "persentase_miskin": 5.03,
+        "p1": 0.62,
+        "penduduk": 263972,
+        "garis_kemiskinan": 560000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Buleleng",
+        "provinsi": "Bali",
+        "persentase_miskin": 3.83,
+        "p1": 0.47,
+        "penduduk": 825944,
+        "garis_kemiskinan": 485000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Gianyar",
+        "provinsi": "Bali",
+        "persentase_miskin": 4.23,
+        "p1": 0.57,
+        "penduduk": 533046,
+        "garis_kemiskinan": 530000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Jembrana",
+        "provinsi": "Bali",
+        "persentase_miskin": 5.03,
+        "p1": 0.46,
+        "penduduk": 329703,
+        "garis_kemiskinan": 485000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Karangasem",
+        "provinsi": "Bali",
+        "persentase_miskin": 5.43,
+        "p1": 0.52,
+        "penduduk": 506755,
+        "garis_kemiskinan": 575000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Klungkung",
+        "provinsi": "Bali",
+        "persentase_miskin": 4.63,
+        "p1": 0.84,
+        "penduduk": 210360,
+        "garis_kemiskinan": 545000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Tabanan",
+        "provinsi": "Bali",
+        "persentase_miskin": 5.43,
+        "p1": 0.66,
+        "penduduk": 470510,
+        "garis_kemiskinan": 500000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Denpasar",
+        "provinsi": "Bali",
+        "persentase_miskin": 2.3,
+        "p1": 0.16,
+        "penduduk": 769162,
+        "garis_kemiskinan": 500000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      }
+    ],
+    "Banten": [
+      {
+        "kabkota": "Kabupaten Lebak",
+        "provinsi": "Banten",
+        "persentase_miskin": 6.41,
+        "p1": 1.01,
+        "penduduk": 1478091,
+        "garis_kemiskinan": 565000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Pandeglang",
+        "provinsi": "Banten",
+        "persentase_miskin": 6.01,
+        "p1": 0.99,
+        "penduduk": 1350503,
+        "garis_kemiskinan": 655000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Serang",
+        "provinsi": "Banten",
+        "persentase_miskin": 3.37,
+        "p1": 0.74,
+        "penduduk": 756145,
+        "garis_kemiskinan": 640000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Tangerang",
+        "provinsi": "Banten",
+        "persentase_miskin": 5.6,
+        "p1": 0.69,
+        "penduduk": 1979289,
+        "garis_kemiskinan": 610000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Cilegon",
+        "provinsi": "Banten",
+        "persentase_miskin": 2.97,
+        "p1": 0.44,
+        "penduduk": 464999,
+        "garis_kemiskinan": 625000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Serang",
+        "provinsi": "Banten",
+        "persentase_miskin": 3.37,
+        "p1": 0.74,
+        "penduduk": 756145,
+        "garis_kemiskinan": 640000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Tangerang",
+        "provinsi": "Banten",
+        "persentase_miskin": 5.6,
+        "p1": 0.69,
+        "penduduk": 1979289,
+        "garis_kemiskinan": 610000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Tangerang Selatan",
+        "provinsi": "Banten",
+        "persentase_miskin": 2.5,
+        "p1": 0.26,
+        "penduduk": 1405035,
+        "garis_kemiskinan": 655000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      }
+    ],
+    "Bengkulu": [
+      {
+        "kabkota": "Kabupaten Bengkulu Selatan",
+        "provinsi": "Bengkulu",
+        "persentase_miskin": 15.79,
+        "p1": 2.57,
+        "penduduk": 176907,
+        "garis_kemiskinan": 610000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Bengkulu Tengah",
+        "provinsi": "Bengkulu",
+        "persentase_miskin": 16.99,
+        "p1": 1.55,
+        "penduduk": 125675,
+        "garis_kemiskinan": 625000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Bengkulu Utara",
+        "provinsi": "Bengkulu",
+        "persentase_miskin": 16.59,
+        "p1": 1.09,
+        "penduduk": 316824,
+        "garis_kemiskinan": 640000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Kaur",
+        "provinsi": "Bengkulu",
+        "persentase_miskin": 16.99,
+        "p1": 2.61,
+        "penduduk": 135779,
+        "garis_kemiskinan": 655000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Kepahiang",
+        "provinsi": "Bengkulu",
+        "persentase_miskin": 16.59,
+        "p1": 0.93,
+        "penduduk": 159639,
+        "garis_kemiskinan": 610000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Lebong",
+        "provinsi": "Bengkulu",
+        "persentase_miskin": 16.19,
+        "p1": 1.56,
+        "penduduk": 114499,
+        "garis_kemiskinan": 595000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Mukomuko",
+        "provinsi": "Bengkulu",
+        "persentase_miskin": 15.79,
+        "p1": 1.54,
+        "penduduk": 207380,
+        "garis_kemiskinan": 580000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Rejang Lebong",
+        "provinsi": "Bengkulu",
+        "persentase_miskin": 16.19,
+        "p1": 1.82,
+        "penduduk": 294879,
+        "garis_kemiskinan": 625000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Seluma",
+        "provinsi": "Bengkulu",
+        "persentase_miskin": 17.39,
+        "p1": 3.5,
+        "penduduk": 222168,
+        "garis_kemiskinan": 565000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Bengkulu",
+        "provinsi": "Bengkulu",
+        "persentase_miskin": 10.09,
+        "p1": 1.83,
+        "penduduk": 409591,
+        "garis_kemiskinan": 640000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      }
+    ],
+    "Daerah Istimewa Yogyakarta": [
+      {
+        "kabkota": "Kabupaten Bantul",
+        "provinsi": "Daerah Istimewa Yogyakarta",
+        "persentase_miskin": 12.85,
+        "p1": 1.28,
+        "penduduk": 1033465,
+        "garis_kemiskinan": 605000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Gunung Kidul",
+        "provinsi": "Daerah Istimewa Yogyakarta",
+        "persentase_miskin": 8.0,
+        "p1": 1.99,
+        "penduduk": 250000,
+        "garis_kemiskinan": 520000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Kulon Progo",
+        "provinsi": "Daerah Istimewa Yogyakarta",
+        "persentase_miskin": 12.45,
+        "p1": 1.81,
+        "penduduk": 449501,
+        "garis_kemiskinan": 590000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Sleman",
+        "provinsi": "Daerah Istimewa Yogyakarta",
+        "persentase_miskin": 11.65,
+        "p1": 0.76,
+        "penduduk": 1190034,
+        "garis_kemiskinan": 530000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Yogyakarta",
+        "provinsi": "Daerah Istimewa Yogyakarta",
+        "persentase_miskin": 6.5,
+        "p1": 0.61,
+        "penduduk": 375660,
+        "garis_kemiskinan": 545000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      }
+    ],
+    "Daerah Khusus Ibukota Jakarta": [
+      {
+        "kabkota": "Kota Adm. Jakarta Barat",
+        "provinsi": "Daerah Khusus Ibukota Jakarta",
+        "persentase_miskin": 10.6,
+        "p1": 0.66,
+        "penduduk": 250000,
+        "garis_kemiskinan": 520000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Adm. Jakarta Pusat",
+        "provinsi": "Daerah Khusus Ibukota Jakarta",
+        "persentase_miskin": 4.7,
+        "p1": 0.66,
+        "penduduk": 250000,
+        "garis_kemiskinan": 520000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Adm. Jakarta Selatan",
+        "provinsi": "Daerah Khusus Ibukota Jakarta",
+        "persentase_miskin": 12.4,
+        "p1": 1.31,
+        "penduduk": 250000,
+        "garis_kemiskinan": 520000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Adm. Jakarta Timur",
+        "provinsi": "Daerah Khusus Ibukota Jakarta",
+        "persentase_miskin": 9.5,
+        "p1": 1.88,
+        "penduduk": 250000,
+        "garis_kemiskinan": 520000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Adm. Jakarta Utara",
+        "provinsi": "Daerah Khusus Ibukota Jakarta",
+        "persentase_miskin": 4.9,
+        "p1": 1.95,
+        "penduduk": 250000,
+        "garis_kemiskinan": 520000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Adm. Kepulauan Seribu",
+        "provinsi": "Daerah Khusus Ibukota Jakarta",
+        "persentase_miskin": 12.5,
+        "p1": 1.57,
+        "penduduk": 250000,
+        "garis_kemiskinan": 520000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      }
+    ],
+    "Gorontalo": [
+      {
+        "kabkota": "Kabupaten Boalemo",
+        "provinsi": "Gorontalo",
+        "persentase_miskin": 17.97,
+        "p1": 3.48,
+        "penduduk": 157072,
+        "garis_kemiskinan": 470000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Bone Bolango",
+        "provinsi": "Gorontalo",
+        "persentase_miskin": 17.17,
+        "p1": 1.92,
+        "penduduk": 174793,
+        "garis_kemiskinan": 410000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Gorontalo",
+        "provinsi": "Gorontalo",
+        "persentase_miskin": 10.42,
+        "p1": 0.44,
+        "penduduk": 212514,
+        "garis_kemiskinan": 440000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Gorontalo Utara",
+        "provinsi": "Gorontalo",
+        "persentase_miskin": 17.56,
+        "p1": 2.61,
+        "penduduk": 136881,
+        "garis_kemiskinan": 425000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Pohuwato",
+        "provinsi": "Gorontalo",
+        "persentase_miskin": 16.76,
+        "p1": 1.93,
+        "penduduk": 157527,
+        "garis_kemiskinan": 395000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Gorontalo",
+        "provinsi": "Gorontalo",
+        "persentase_miskin": 10.42,
+        "p1": 0.44,
+        "penduduk": 212514,
+        "garis_kemiskinan": 440000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      }
+    ],
+    "Jambi": [
+      {
+        "kabkota": "Kabupaten Batang Hari",
+        "provinsi": "Jambi",
+        "persentase_miskin": 8.3,
+        "p1": 1.32,
+        "penduduk": 323914,
+        "garis_kemiskinan": 622440,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Bungo",
+        "provinsi": "Jambi",
+        "persentase_miskin": 5.2,
+        "p1": 0.7,
+        "penduduk": 390852,
+        "garis_kemiskinan": 619464,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Kerinci",
+        "provinsi": "Jambi",
+        "persentase_miskin": 7.5,
+        "p1": 0.79,
+        "penduduk": 259640,
+        "garis_kemiskinan": 617362,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Merangin",
+        "provinsi": "Jambi",
+        "persentase_miskin": 8.1,
+        "p1": 1.6,
+        "penduduk": 383224,
+        "garis_kemiskinan": 629000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Muaro Jambi",
+        "provinsi": "Jambi",
+        "persentase_miskin": 4.3,
+        "p1": 0.39,
+        "penduduk": 435795,
+        "garis_kemiskinan": 633575,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Sarolangun",
+        "provinsi": "Jambi",
+        "persentase_miskin": 8.7,
+        "p1": 1.18,
+        "penduduk": 314735,
+        "garis_kemiskinan": 625401,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Tanjung Jabung Barat",
+        "provinsi": "Jambi",
+        "persentase_miskin": 9.7,
+        "p1": 1.01,
+        "penduduk": 344131,
+        "garis_kemiskinan": 586789,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Tanjung Jabung Timur",
+        "provinsi": "Jambi",
+        "persentase_miskin": 10.0,
+        "p1": 1.4,
+        "penduduk": 243255,
+        "garis_kemiskinan": 601104,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Tebo",
+        "provinsi": "Jambi",
+        "persentase_miskin": 6.0,
+        "p1": 0.4,
+        "penduduk": 363894,
+        "garis_kemiskinan": 602105,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Jambi",
+        "provinsi": "Jambi",
+        "persentase_miskin": 7.7,
+        "p1": 1.13,
+        "penduduk": 649260,
+        "garis_kemiskinan": 773124,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Sungai Penuh",
+        "provinsi": "Jambi",
+        "persentase_miskin": 3.2,
+        "p1": 0.16,
+        "penduduk": 102961,
+        "garis_kemiskinan": 622995,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      }
+    ],
+    "Jawa Barat": [
+      {
+        "kabkota": "Kabupaten Bandung",
+        "provinsi": "Jawa Barat",
+        "persentase_miskin": 3.9,
+        "p1": 0.59,
+        "penduduk": 2569102,
+        "garis_kemiskinan": 555000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Bandung Barat",
+        "provinsi": "Jawa Barat",
+        "persentase_miskin": 8.54,
+        "p1": 1.31,
+        "penduduk": 1931072,
+        "garis_kemiskinan": 480000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Bekasi",
+        "provinsi": "Jawa Barat",
+        "persentase_miskin": 4.3,
+        "p1": 0.51,
+        "penduduk": 2652952,
+        "garis_kemiskinan": 480000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Bogor",
+        "provinsi": "Jawa Barat",
+        "persentase_miskin": 6.8,
+        "p1": 0.7,
+        "penduduk": 1089179,
+        "garis_kemiskinan": 525000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Ciamis",
+        "provinsi": "Jawa Barat",
+        "persentase_miskin": 7.74,
+        "p1": 0.71,
+        "penduduk": 1273158,
+        "garis_kemiskinan": 495000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Cianjur",
+        "provinsi": "Jawa Barat",
+        "persentase_miskin": 8.14,
+        "p1": 1.39,
+        "penduduk": 2634844,
+        "garis_kemiskinan": 540000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Cirebon",
+        "provinsi": "Jawa Barat",
+        "persentase_miskin": 4.74,
+        "p1": 0.94,
+        "penduduk": 350130,
+        "garis_kemiskinan": 465000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Garut",
+        "provinsi": "Jawa Barat",
+        "persentase_miskin": 8.94,
+        "p1": 1.38,
+        "penduduk": 2779698,
+        "garis_kemiskinan": 465000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Indramayu",
+        "provinsi": "Jawa Barat",
+        "persentase_miskin": 8.94,
+        "p1": 1.9,
+        "penduduk": 1950316,
+        "garis_kemiskinan": 540000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Karawang",
+        "provinsi": "Jawa Barat",
+        "persentase_miskin": 8.14,
+        "p1": 1.12,
+        "penduduk": 2607281,
+        "garis_kemiskinan": 480000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Kuningan",
+        "provinsi": "Jawa Barat",
+        "persentase_miskin": 8.14,
+        "p1": 1.38,
+        "penduduk": 1236761,
+        "garis_kemiskinan": 510000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Majalengka",
+        "provinsi": "Jawa Barat",
+        "persentase_miskin": 7.74,
+        "p1": 1.16,
+        "penduduk": 1374601,
+        "garis_kemiskinan": 555000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Pangandaran",
+        "provinsi": "Jawa Barat",
+        "persentase_miskin": 8.94,
+        "p1": 0.87,
+        "penduduk": 438741,
+        "garis_kemiskinan": 510000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Purwakarta",
+        "provinsi": "Jawa Barat",
+        "persentase_miskin": 7.74,
+        "p1": 0.97,
+        "penduduk": 1075243,
+        "garis_kemiskinan": 465000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Subang",
+        "provinsi": "Jawa Barat",
+        "persentase_miskin": 9.34,
+        "p1": 1.42,
+        "penduduk": 1687343,
+        "garis_kemiskinan": 555000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Sukabumi",
+        "provinsi": "Jawa Barat",
+        "persentase_miskin": 3.94,
+        "p1": 0.84,
+        "penduduk": 375584,
+        "garis_kemiskinan": 540000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Sumedang",
+        "provinsi": "Jawa Barat",
+        "persentase_miskin": 8.14,
+        "p1": 1.49,
+        "penduduk": 1203722,
+        "garis_kemiskinan": 465000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Tasikmalaya",
+        "provinsi": "Jawa Barat",
+        "persentase_miskin": 3.94,
+        "p1": 1.89,
+        "penduduk": 767854,
+        "garis_kemiskinan": 510000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Bandung",
+        "provinsi": "Jawa Barat",
+        "persentase_miskin": 3.9,
+        "p1": 0.59,
+        "penduduk": 2569102,
+        "garis_kemiskinan": 555000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Banjar",
+        "provinsi": "Jawa Barat",
+        "persentase_miskin": 4.34,
+        "p1": 0.23,
+        "penduduk": 214084,
+        "garis_kemiskinan": 525000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Bekasi",
+        "provinsi": "Jawa Barat",
+        "persentase_miskin": 4.3,
+        "p1": 0.51,
+        "penduduk": 2652952,
+        "garis_kemiskinan": 480000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Bogor",
+        "provinsi": "Jawa Barat",
+        "persentase_miskin": 6.8,
+        "p1": 0.7,
+        "penduduk": 1089179,
+        "garis_kemiskinan": 525000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Cimahi",
+        "provinsi": "Jawa Barat",
+        "persentase_miskin": 5.14,
+        "p1": 0.34,
+        "penduduk": 613954,
+        "garis_kemiskinan": 495000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Cirebon",
+        "provinsi": "Jawa Barat",
+        "persentase_miskin": 4.74,
+        "p1": 0.94,
+        "penduduk": 350130,
+        "garis_kemiskinan": 465000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Depok",
+        "provinsi": "Jawa Barat",
+        "persentase_miskin": 2.3,
+        "p1": 0.31,
+        "penduduk": 2173248,
+        "garis_kemiskinan": 495000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Sukabumi",
+        "provinsi": "Jawa Barat",
+        "persentase_miskin": 3.94,
+        "p1": 0.84,
+        "penduduk": 375584,
+        "garis_kemiskinan": 540000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Tasikmalaya",
+        "provinsi": "Jawa Barat",
+        "persentase_miskin": 3.94,
+        "p1": 1.89,
+        "penduduk": 767854,
+        "garis_kemiskinan": 510000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      }
+    ],
+    "Jawa Tengah": [
+      {
+        "kabkota": "Kabupaten Banjarnegara",
+        "provinsi": "Jawa Tengah",
+        "persentase_miskin": 12.22,
+        "p1": 1.8,
+        "penduduk": 1077335,
+        "garis_kemiskinan": 440000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Banyumas",
+        "provinsi": "Jawa Tengah",
+        "persentase_miskin": 11.42,
+        "p1": 1.8,
+        "penduduk": 1883070,
+        "garis_kemiskinan": 515000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Batang",
+        "provinsi": "Jawa Tengah",
+        "persentase_miskin": 12.22,
+        "p1": 1.12,
+        "penduduk": 855842,
+        "garis_kemiskinan": 425000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Blora",
+        "provinsi": "Jawa Tengah",
+        "persentase_miskin": 10.58,
+        "p1": 1.27,
+        "penduduk": 920104,
+        "garis_kemiskinan": 492105,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Boyolali",
+        "provinsi": "Jawa Tengah",
+        "persentase_miskin": 8.71,
+        "p1": 1.25,
+        "penduduk": 1118557,
+        "garis_kemiskinan": 464627,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Brebes",
+        "provinsi": "Jawa Tengah",
+        "persentase_miskin": 11.82,
+        "p1": 2.2,
+        "penduduk": 2108502,
+        "garis_kemiskinan": 485000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Cilacap",
+        "provinsi": "Jawa Tengah",
+        "persentase_miskin": 13.02,
+        "p1": 1.39,
+        "penduduk": 2064810,
+        "garis_kemiskinan": 500000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Demak",
+        "provinsi": "Jawa Tengah",
+        "persentase_miskin": 11.82,
+        "p1": 1.65,
+        "penduduk": 1276683,
+        "garis_kemiskinan": 455000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Grobogan",
+        "provinsi": "Jawa Tengah",
+        "persentase_miskin": 10.63,
+        "p1": 1.87,
+        "penduduk": 1531863,
+        "garis_kemiskinan": 526238,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Jepara",
+        "provinsi": "Jawa Tengah",
+        "persentase_miskin": 11.42,
+        "p1": 0.53,
+        "penduduk": 1255376,
+        "garis_kemiskinan": 440000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Karanganyar",
+        "provinsi": "Jawa Tengah",
+        "persentase_miskin": 8.48,
+        "p1": 0.91,
+        "penduduk": 974825,
+        "garis_kemiskinan": 523407,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Kebumen",
+        "provinsi": "Jawa Tengah",
+        "persentase_miskin": 12.62,
+        "p1": 1.95,
+        "penduduk": 1448563,
+        "garis_kemiskinan": 455000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Kendal",
+        "provinsi": "Jawa Tengah",
+        "persentase_miskin": 11.82,
+        "p1": 1.47,
+        "penduduk": 1087809,
+        "garis_kemiskinan": 515000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Klaten",
+        "provinsi": "Jawa Tengah",
+        "persentase_miskin": 12.22,
+        "p1": 1.63,
+        "penduduk": 1308775,
+        "garis_kemiskinan": 500000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Kudus",
+        "provinsi": "Jawa Tengah",
+        "persentase_miskin": 13.02,
+        "p1": 0.77,
+        "penduduk": 899832,
+        "garis_kemiskinan": 485000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Magelang",
+        "provinsi": "Jawa Tengah",
+        "persentase_miskin": 5.68,
+        "p1": 0.53,
+        "penduduk": 122903,
+        "garis_kemiskinan": 662129,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Pati",
+        "provinsi": "Jawa Tengah",
+        "persentase_miskin": 8.24,
+        "p1": 1.14,
+        "penduduk": 1392603,
+        "garis_kemiskinan": 598600,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Pekalongan",
+        "provinsi": "Jawa Tengah",
+        "persentase_miskin": 13.02,
+        "p1": 0.97,
+        "penduduk": 1041335,
+        "garis_kemiskinan": 455000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Pemalang",
+        "provinsi": "Jawa Tengah",
+        "persentase_miskin": 12.62,
+        "p1": 2.39,
+        "penduduk": 1576420,
+        "garis_kemiskinan": 485000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Purbalingga",
+        "provinsi": "Jawa Tengah",
+        "persentase_miskin": 11.82,
+        "p1": 1.57,
+        "penduduk": 1057643,
+        "garis_kemiskinan": 425000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Purworejo",
+        "provinsi": "Jawa Tengah",
+        "persentase_miskin": 13.02,
+        "p1": 1.54,
+        "penduduk": 808153,
+        "garis_kemiskinan": 470000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Rembang",
+        "provinsi": "Jawa Tengah",
+        "persentase_miskin": 13.02,
+        "p1": 3.35,
+        "penduduk": 674717,
+        "garis_kemiskinan": 425000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Semarang",
+        "provinsi": "Jawa Tengah",
+        "persentase_miskin": 3.8,
+        "p1": 0.41,
+        "penduduk": 1735503,
+        "garis_kemiskinan": 709785,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Sragen",
+        "provinsi": "Jawa Tengah",
+        "persentase_miskin": 11.22,
+        "p1": 2.18,
+        "penduduk": 1018657,
+        "garis_kemiskinan": 482828,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Sukoharjo",
+        "provinsi": "Jawa Tengah",
+        "persentase_miskin": 12.62,
+        "p1": 0.62,
+        "penduduk": 959018,
+        "garis_kemiskinan": 515000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Tegal",
+        "provinsi": "Jawa Tengah",
+        "persentase_miskin": 11.42,
+        "p1": 1.42,
+        "penduduk": 1713090,
+        "garis_kemiskinan": 470000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Temanggung",
+        "provinsi": "Jawa Tengah",
+        "persentase_miskin": 11.42,
+        "p1": 0.67,
+        "penduduk": 827132,
+        "garis_kemiskinan": 500000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Wonogiri",
+        "provinsi": "Jawa Tengah",
+        "persentase_miskin": 9.59,
+        "p1": 1.39,
+        "penduduk": 1059766,
+        "garis_kemiskinan": 479566,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Wonosobo",
+        "provinsi": "Jawa Tengah",
+        "persentase_miskin": 13.34,
+        "p1": 2.25,
+        "penduduk": 941526,
+        "garis_kemiskinan": 486105,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Magelang",
+        "provinsi": "Jawa Tengah",
+        "persentase_miskin": 5.68,
+        "p1": 0.53,
+        "penduduk": 122903,
+        "garis_kemiskinan": 662129,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Pekalongan",
+        "provinsi": "Jawa Tengah",
+        "persentase_miskin": 13.02,
+        "p1": 0.97,
+        "penduduk": 1041335,
+        "garis_kemiskinan": 455000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Salatiga",
+        "provinsi": "Jawa Tengah",
+        "persentase_miskin": 4.2,
+        "p1": 0.61,
+        "penduduk": 205821,
+        "garis_kemiskinan": 630119,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Semarang",
+        "provinsi": "Jawa Tengah",
+        "persentase_miskin": 3.8,
+        "p1": 0.41,
+        "penduduk": 1735503,
+        "garis_kemiskinan": 709785,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Surakarta",
+        "provinsi": "Jawa Tengah",
+        "persentase_miskin": 7.69,
+        "p1": 1.31,
+        "penduduk": 529966,
+        "garis_kemiskinan": 678315,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Tegal",
+        "provinsi": "Jawa Tengah",
+        "persentase_miskin": 11.42,
+        "p1": 1.42,
+        "penduduk": 1713090,
+        "garis_kemiskinan": 470000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      }
+    ],
+    "Jawa Timur": [
+      {
+        "kabkota": "Kabupaten Bangkalan",
+        "provinsi": "Jawa Timur",
+        "persentase_miskin": 11.65,
+        "p1": 3.14,
+        "penduduk": 1123061,
+        "garis_kemiskinan": 490000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Banyuwangi",
+        "provinsi": "Jawa Timur",
+        "persentase_miskin": 11.65,
+        "p1": 0.41,
+        "penduduk": 1774328,
+        "garis_kemiskinan": 490000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Blitar",
+        "provinsi": "Jawa Timur",
+        "persentase_miskin": 6.1,
+        "p1": 0.84,
+        "penduduk": 157785,
+        "garis_kemiskinan": 535000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Bojonegoro",
+        "provinsi": "Jawa Timur",
+        "persentase_miskin": 11.65,
+        "p1": 1.46,
+        "penduduk": 1335288,
+        "garis_kemiskinan": 460000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Bondowoso",
+        "provinsi": "Jawa Timur",
+        "persentase_miskin": 12.05,
+        "p1": 1.66,
+        "penduduk": 800132,
+        "garis_kemiskinan": 505000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Gresik",
+        "provinsi": "Jawa Timur",
+        "persentase_miskin": 12.05,
+        "p1": 1.92,
+        "penduduk": 1390172,
+        "garis_kemiskinan": 535000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Jember",
+        "provinsi": "Jawa Timur",
+        "persentase_miskin": 12.05,
+        "p1": 0.53,
+        "penduduk": 2635737,
+        "garis_kemiskinan": 520000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Jombang",
+        "provinsi": "Jawa Timur",
+        "persentase_miskin": 12.45,
+        "p1": 0.9,
+        "penduduk": 1384556,
+        "garis_kemiskinan": 520000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Kediri",
+        "provinsi": "Jawa Timur",
+        "persentase_miskin": 5.7,
+        "p1": 0.62,
+        "penduduk": 304129,
+        "garis_kemiskinan": 520000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Lamongan",
+        "provinsi": "Jawa Timur",
+        "persentase_miskin": 11.65,
+        "p1": 1.16,
+        "penduduk": 1394222,
+        "garis_kemiskinan": 520000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Lumajang",
+        "provinsi": "Jawa Timur",
+        "persentase_miskin": 11.65,
+        "p1": 0.68,
+        "penduduk": 1158367,
+        "garis_kemiskinan": 505000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Madiun",
+        "provinsi": "Jawa Timur",
+        "persentase_miskin": 10.85,
+        "p1": 0.38,
+        "penduduk": 763828,
+        "garis_kemiskinan": 490000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Magetan",
+        "provinsi": "Jawa Timur",
+        "persentase_miskin": 10.85,
+        "p1": 0.74,
+        "penduduk": 692785,
+        "garis_kemiskinan": 535000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Malang",
+        "provinsi": "Jawa Timur",
+        "persentase_miskin": 6.5,
+        "p1": 0.39,
+        "penduduk": 886820,
+        "garis_kemiskinan": 445000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Mojokerto",
+        "provinsi": "Jawa Timur",
+        "persentase_miskin": 7.3,
+        "p1": 0.76,
+        "penduduk": 139817,
+        "garis_kemiskinan": 445000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Nganjuk",
+        "provinsi": "Jawa Timur",
+        "persentase_miskin": 12.45,
+        "p1": 1.45,
+        "penduduk": 1145155,
+        "garis_kemiskinan": 505000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Ngawi",
+        "provinsi": "Jawa Timur",
+        "persentase_miskin": 11.25,
+        "p1": 1.65,
+        "penduduk": 889988,
+        "garis_kemiskinan": 445000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Pacitan",
+        "provinsi": "Jawa Timur",
+        "persentase_miskin": 10.85,
+        "p1": 1.77,
+        "penduduk": 589357,
+        "garis_kemiskinan": 505000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Pamekasan",
+        "provinsi": "Jawa Timur",
+        "persentase_miskin": 12.05,
+        "p1": 1.45,
+        "penduduk": 901666,
+        "garis_kemiskinan": 505000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Pasuruan",
+        "provinsi": "Jawa Timur",
+        "persentase_miskin": 7.3,
+        "p1": 1.03,
+        "penduduk": 225257,
+        "garis_kemiskinan": 475000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Ponorogo",
+        "provinsi": "Jawa Timur",
+        "persentase_miskin": 11.25,
+        "p1": 1.22,
+        "penduduk": 968994,
+        "garis_kemiskinan": 520000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Probolinggo",
+        "provinsi": "Jawa Timur",
+        "persentase_miskin": 6.9,
+        "p1": 0.36,
+        "penduduk": 254569,
+        "garis_kemiskinan": 460000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Sampang",
+        "provinsi": "Jawa Timur",
+        "persentase_miskin": 12.05,
+        "p1": 2.06,
+        "penduduk": 1038386,
+        "garis_kemiskinan": 475000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Sidoarjo",
+        "provinsi": "Jawa Timur",
+        "persentase_miskin": 11.65,
+        "p1": 0.63,
+        "penduduk": 2215288,
+        "garis_kemiskinan": 475000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Situbondo",
+        "provinsi": "Jawa Timur",
+        "persentase_miskin": 12.45,
+        "p1": 0.71,
+        "penduduk": 707572,
+        "garis_kemiskinan": 535000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Sumenep",
+        "provinsi": "Jawa Timur",
+        "persentase_miskin": 12.45,
+        "p1": 2.18,
+        "penduduk": 1165227,
+        "garis_kemiskinan": 520000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Trenggalek",
+        "provinsi": "Jawa Timur",
+        "persentase_miskin": 11.65,
+        "p1": 1.09,
+        "penduduk": 750476,
+        "garis_kemiskinan": 535000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Tuban",
+        "provinsi": "Jawa Timur",
+        "persentase_miskin": 11.25,
+        "p1": 1.89,
+        "penduduk": 1237088,
+        "garis_kemiskinan": 505000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Tulungagung",
+        "provinsi": "Jawa Timur",
+        "persentase_miskin": 12.05,
+        "p1": 0.42,
+        "penduduk": 1125005,
+        "garis_kemiskinan": 445000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Batu",
+        "provinsi": "Jawa Timur",
+        "persentase_miskin": 6.1,
+        "p1": 0.37,
+        "penduduk": 227482,
+        "garis_kemiskinan": 475000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Blitar",
+        "provinsi": "Jawa Timur",
+        "persentase_miskin": 6.1,
+        "p1": 0.84,
+        "penduduk": 157785,
+        "garis_kemiskinan": 535000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Kediri",
+        "provinsi": "Jawa Timur",
+        "persentase_miskin": 5.7,
+        "p1": 0.62,
+        "penduduk": 304129,
+        "garis_kemiskinan": 520000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Madiun",
+        "provinsi": "Jawa Timur",
+        "persentase_miskin": 10.85,
+        "p1": 0.38,
+        "penduduk": 763828,
+        "garis_kemiskinan": 490000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Malang",
+        "provinsi": "Jawa Timur",
+        "persentase_miskin": 6.5,
+        "p1": 0.39,
+        "penduduk": 886820,
+        "garis_kemiskinan": 445000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Mojokerto",
+        "provinsi": "Jawa Timur",
+        "persentase_miskin": 7.3,
+        "p1": 0.76,
+        "penduduk": 139817,
+        "garis_kemiskinan": 445000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Pasuruan",
+        "provinsi": "Jawa Timur",
+        "persentase_miskin": 7.3,
+        "p1": 1.03,
+        "penduduk": 225257,
+        "garis_kemiskinan": 475000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Probolinggo",
+        "provinsi": "Jawa Timur",
+        "persentase_miskin": 6.9,
+        "p1": 0.36,
+        "penduduk": 254569,
+        "garis_kemiskinan": 460000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Surabaya",
+        "provinsi": "Jawa Timur",
+        "persentase_miskin": 4.3,
+        "p1": 0.41,
+        "penduduk": 2940265,
+        "garis_kemiskinan": 460000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      }
+    ],
+    "Kalimantan Barat": [
+      {
+        "kabkota": "Kabupaten Bengkayang",
+        "provinsi": "Kalimantan Barat",
+        "persentase_miskin": 7.5,
+        "p1": 0.59,
+        "penduduk": 312147,
+        "garis_kemiskinan": 545000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Kapuas Hulu",
+        "provinsi": "Kalimantan Barat",
+        "persentase_miskin": 7.9,
+        "p1": 1.03,
+        "penduduk": 272260,
+        "garis_kemiskinan": 530000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Kayong Utara",
+        "provinsi": "Kalimantan Barat",
+        "persentase_miskin": 6.7,
+        "p1": 1.03,
+        "penduduk": 139479,
+        "garis_kemiskinan": 515000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Ketapang",
+        "provinsi": "Kalimantan Barat",
+        "persentase_miskin": 7.11,
+        "p1": 1.59,
+        "penduduk": 613999,
+        "garis_kemiskinan": 605000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Kubu Raya",
+        "provinsi": "Kalimantan Barat",
+        "persentase_miskin": 6.7,
+        "p1": 0.26,
+        "penduduk": 670755,
+        "garis_kemiskinan": 560000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Landak",
+        "provinsi": "Kalimantan Barat",
+        "persentase_miskin": 7.9,
+        "p1": 0.85,
+        "penduduk": 429744,
+        "garis_kemiskinan": 560000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Melawi",
+        "provinsi": "Kalimantan Barat",
+        "persentase_miskin": 8.31,
+        "p1": 1.01,
+        "penduduk": 250492,
+        "garis_kemiskinan": 605000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Mempawah",
+        "provinsi": "Kalimantan Barat",
+        "persentase_miskin": 8.31,
+        "p1": 0.47,
+        "penduduk": 324456,
+        "garis_kemiskinan": 575000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Sambas",
+        "provinsi": "Kalimantan Barat",
+        "persentase_miskin": 7.11,
+        "p1": 0.72,
+        "penduduk": 667834,
+        "garis_kemiskinan": 530000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Sanggau",
+        "provinsi": "Kalimantan Barat",
+        "persentase_miskin": 6.7,
+        "p1": 0.35,
+        "penduduk": 522799,
+        "garis_kemiskinan": 590000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Sekadau",
+        "provinsi": "Kalimantan Barat",
+        "persentase_miskin": 8.31,
+        "p1": 0.56,
+        "penduduk": 227866,
+        "garis_kemiskinan": 545000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Sintang",
+        "provinsi": "Kalimantan Barat",
+        "persentase_miskin": 7.5,
+        "p1": 1.34,
+        "penduduk": 454581,
+        "garis_kemiskinan": 515000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Pontianak",
+        "provinsi": "Kalimantan Barat",
+        "persentase_miskin": 3.76,
+        "p1": 0.37,
+        "penduduk": 690969,
+        "garis_kemiskinan": 575000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Singkawang",
+        "provinsi": "Kalimantan Barat",
+        "persentase_miskin": 4.16,
+        "p1": 0.47,
+        "penduduk": 257574,
+        "garis_kemiskinan": 590000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      }
+    ],
+    "Kalimantan Selatan": [
+      {
+        "kabkota": "Kabupaten Balangan",
+        "provinsi": "Kalimantan Selatan",
+        "persentase_miskin": 5.15,
+        "p1": 0.51,
+        "penduduk": 142029,
+        "garis_kemiskinan": 545000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Banjar",
+        "provinsi": "Kalimantan Selatan",
+        "persentase_miskin": 4.35,
+        "p1": 0.23,
+        "penduduk": 618481,
+        "garis_kemiskinan": 590000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Barito Kuala",
+        "provinsi": "Kalimantan Selatan",
+        "persentase_miskin": 4.74,
+        "p1": 0.57,
+        "penduduk": 340257,
+        "garis_kemiskinan": 605000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Hulu Sungai Selatan",
+        "provinsi": "Kalimantan Selatan",
+        "persentase_miskin": 5.55,
+        "p1": 0.48,
+        "penduduk": 244223,
+        "garis_kemiskinan": 635000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Hulu Sungai Tengah",
+        "provinsi": "Kalimantan Selatan",
+        "persentase_miskin": 3.94,
+        "p1": 0.34,
+        "penduduk": 273672,
+        "garis_kemiskinan": 545000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Hulu Sungai Utara",
+        "provinsi": "Kalimantan Selatan",
+        "persentase_miskin": 4.35,
+        "p1": 0.44,
+        "penduduk": 242092,
+        "garis_kemiskinan": 560000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Kotabaru",
+        "provinsi": "Kalimantan Selatan",
+        "persentase_miskin": 1.8,
+        "p1": 1.61,
+        "penduduk": 352736,
+        "garis_kemiskinan": 575000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Tabalong",
+        "provinsi": "Kalimantan Selatan",
+        "persentase_miskin": 4.74,
+        "p1": 0.22,
+        "penduduk": 273602,
+        "garis_kemiskinan": 575000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Tanah Bumbu",
+        "provinsi": "Kalimantan Selatan",
+        "persentase_miskin": 4.74,
+        "p1": 0.43,
+        "penduduk": 352072,
+        "garis_kemiskinan": 635000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Tanah Laut",
+        "provinsi": "Kalimantan Selatan",
+        "persentase_miskin": 5.55,
+        "p1": 0.27,
+        "penduduk": 372716,
+        "garis_kemiskinan": 560000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Tapin",
+        "provinsi": "Kalimantan Selatan",
+        "persentase_miskin": 5.15,
+        "p1": 0.35,
+        "penduduk": 203482,
+        "garis_kemiskinan": 620000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Banjar Baru",
+        "provinsi": "Kalimantan Selatan",
+        "persentase_miskin": 5.2,
+        "p1": 0.38,
+        "penduduk": 250000,
+        "garis_kemiskinan": 520000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Banjarmasin",
+        "provinsi": "Kalimantan Selatan",
+        "persentase_miskin": 3.0,
+        "p1": 0.51,
+        "penduduk": 672668,
+        "garis_kemiskinan": 590000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      }
+    ],
+    "Kalimantan Tengah": [
+      {
+        "kabkota": "Kabupaten Barito Selatan",
+        "provinsi": "Kalimantan Tengah",
+        "persentase_miskin": 6.07,
+        "p1": 0.37,
+        "penduduk": 138163,
+        "garis_kemiskinan": 615000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Barito Timur",
+        "provinsi": "Kalimantan Tengah",
+        "persentase_miskin": 6.47,
+        "p1": 1.16,
+        "penduduk": 121622,
+        "garis_kemiskinan": 600000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Barito Utara",
+        "provinsi": "Kalimantan Tengah",
+        "persentase_miskin": 6.47,
+        "p1": 0.69,
+        "penduduk": 166579,
+        "garis_kemiskinan": 630000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Gunung Mas",
+        "provinsi": "Kalimantan Tengah",
+        "persentase_miskin": 6.47,
+        "p1": 0.87,
+        "penduduk": 150923,
+        "garis_kemiskinan": 555000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Kapuas",
+        "provinsi": "Kalimantan Tengah",
+        "persentase_miskin": 5.66,
+        "p1": 0.57,
+        "penduduk": 439795,
+        "garis_kemiskinan": 600000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Katingan",
+        "provinsi": "Kalimantan Tengah",
+        "persentase_miskin": 6.07,
+        "p1": 0.61,
+        "penduduk": 176764,
+        "garis_kemiskinan": 585000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Kotawaringin Barat",
+        "provinsi": "Kalimantan Tengah",
+        "persentase_miskin": 2.32,
+        "p1": 0.56,
+        "penduduk": 288560,
+        "garis_kemiskinan": 570000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Kotawaringin Timur",
+        "provinsi": "Kalimantan Tengah",
+        "persentase_miskin": 2.72,
+        "p1": 1.0,
+        "penduduk": 457424,
+        "garis_kemiskinan": 585000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Lamandau",
+        "provinsi": "Kalimantan Tengah",
+        "persentase_miskin": 5.27,
+        "p1": 0.42,
+        "penduduk": 106700,
+        "garis_kemiskinan": 555000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Murung Raya",
+        "provinsi": "Kalimantan Tengah",
+        "persentase_miskin": 4.86,
+        "p1": 1.16,
+        "penduduk": 121996,
+        "garis_kemiskinan": 615000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Pulang Pisau",
+        "provinsi": "Kalimantan Tengah",
+        "persentase_miskin": 6.07,
+        "p1": 0.85,
+        "penduduk": 142028,
+        "garis_kemiskinan": 645000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Seruyan",
+        "provinsi": "Kalimantan Tengah",
+        "persentase_miskin": 5.66,
+        "p1": 0.57,
+        "penduduk": 180308,
+        "garis_kemiskinan": 570000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Sukamara",
+        "provinsi": "Kalimantan Tengah",
+        "persentase_miskin": 4.86,
+        "p1": 0.72,
+        "penduduk": 70142,
+        "garis_kemiskinan": 645000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Palangkaraya",
+        "provinsi": "Kalimantan Tengah",
+        "persentase_miskin": 4.9,
+        "p1": 1.89,
+        "penduduk": 250000,
+        "garis_kemiskinan": 520000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      }
+    ],
+    "Kalimantan Timur": [
+      {
+        "kabkota": "Kabupaten Berau",
+        "provinsi": "Kalimantan Timur",
+        "persentase_miskin": 6.01,
+        "p1": 0.55,
+        "penduduk": 268689,
+        "garis_kemiskinan": 770000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Kutai Barat",
+        "provinsi": "Kalimantan Timur",
+        "persentase_miskin": 6.81,
+        "p1": 0.84,
+        "penduduk": 181813,
+        "garis_kemiskinan": 725000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Kutai Kartanegara",
+        "provinsi": "Kalimantan Timur",
+        "persentase_miskin": 7.21,
+        "p1": 0.79,
+        "penduduk": 897918,
+        "garis_kemiskinan": 740000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Kutai Timur",
+        "provinsi": "Kalimantan Timur",
+        "persentase_miskin": 7.61,
+        "p1": 1.2,
+        "penduduk": 477695,
+        "garis_kemiskinan": 755000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Mahakam Hulu",
+        "provinsi": "Kalimantan Timur",
+        "persentase_miskin": 5.6,
+        "p1": 2.02,
+        "penduduk": 250000,
+        "garis_kemiskinan": 520000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Paser",
+        "provinsi": "Kalimantan Timur",
+        "persentase_miskin": 6.41,
+        "p1": 1.47,
+        "penduduk": 292393,
+        "garis_kemiskinan": 815000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Penajam Paser Utara",
+        "provinsi": "Kalimantan Timur",
+        "persentase_miskin": 6.41,
+        "p1": 0.94,
+        "penduduk": 523288,
+        "garis_kemiskinan": 785000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Balikpapan",
+        "provinsi": "Kalimantan Timur",
+        "persentase_miskin": 3.76,
+        "p1": 0.34,
+        "penduduk": 735912,
+        "garis_kemiskinan": 800000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Bontang",
+        "provinsi": "Kalimantan Timur",
+        "persentase_miskin": 4.56,
+        "p1": 0.35,
+        "penduduk": 193097,
+        "garis_kemiskinan": 725000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Samarinda",
+        "provinsi": "Kalimantan Timur",
+        "persentase_miskin": 4.17,
+        "p1": 0.67,
+        "penduduk": 872306,
+        "garis_kemiskinan": 815000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      }
+    ],
+    "Kalimantan Utara": [
+      {
+        "kabkota": "Kabupaten Bulungan",
+        "provinsi": "Kalimantan Utara",
+        "persentase_miskin": 6.88,
+        "p1": 0.84,
+        "penduduk": 164536,
+        "garis_kemiskinan": 745000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Malinau",
+        "provinsi": "Kalimantan Utara",
+        "persentase_miskin": 6.48,
+        "p1": 0.25,
+        "penduduk": 88445,
+        "garis_kemiskinan": 730000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Nunukan",
+        "provinsi": "Kalimantan Utara",
+        "persentase_miskin": 7.68,
+        "p1": 1.26,
+        "penduduk": 216970,
+        "garis_kemiskinan": 775000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Tana Tidung",
+        "provinsi": "Kalimantan Utara",
+        "persentase_miskin": 7.28,
+        "p1": 0.53,
+        "penduduk": 29486,
+        "garis_kemiskinan": 760000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Tarakan",
+        "provinsi": "Kalimantan Utara",
+        "persentase_miskin": 4.83,
+        "p1": 0.04,
+        "penduduk": 259336,
+        "garis_kemiskinan": 790000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      }
+    ],
+    "Kepulauan Bangka Belitung": [
+      {
+        "kabkota": "Kabupaten Bangka",
+        "provinsi": "Kepulauan Bangka Belitung",
+        "persentase_miskin": 4.29,
+        "p1": 0.51,
+        "penduduk": 350006,
+        "garis_kemiskinan": 735000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Bangka Barat",
+        "provinsi": "Kepulauan Bangka Belitung",
+        "persentase_miskin": 5.09,
+        "p1": 0.22,
+        "penduduk": 221628,
+        "garis_kemiskinan": 765000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Bangka Selatan",
+        "provinsi": "Kepulauan Bangka Belitung",
+        "persentase_miskin": 5.89,
+        "p1": 0.5,
+        "penduduk": 213683,
+        "garis_kemiskinan": 795000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Bangka Tengah",
+        "provinsi": "Kepulauan Bangka Belitung",
+        "persentase_miskin": 5.49,
+        "p1": 0.95,
+        "penduduk": 216454,
+        "garis_kemiskinan": 780000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Belitung",
+        "provinsi": "Kepulauan Bangka Belitung",
+        "persentase_miskin": 4.69,
+        "p1": 0.63,
+        "penduduk": 195675,
+        "garis_kemiskinan": 750000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Belitung Timur",
+        "provinsi": "Kepulauan Bangka Belitung",
+        "persentase_miskin": 4.29,
+        "p1": 1.35,
+        "penduduk": 135877,
+        "garis_kemiskinan": 810000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Pangkal Pinang",
+        "provinsi": "Kepulauan Bangka Belitung",
+        "persentase_miskin": 6.0,
+        "p1": 0.64,
+        "penduduk": 250000,
+        "garis_kemiskinan": 520000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      }
+    ],
+    "Kepulauan Riau": [
+      {
+        "kabkota": "Kabupaten Bintan",
+        "provinsi": "Kepulauan Riau",
+        "persentase_miskin": 6.76,
+        "p1": 0.52,
+        "penduduk": 172663,
+        "garis_kemiskinan": 680000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Karimun",
+        "provinsi": "Kepulauan Riau",
+        "persentase_miskin": 6.36,
+        "p1": 0.49,
+        "penduduk": 268590,
+        "garis_kemiskinan": 665000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Kepulauan Anambas",
+        "provinsi": "Kepulauan Riau",
+        "persentase_miskin": 5.96,
+        "p1": 1.02,
+        "penduduk": 50983,
+        "garis_kemiskinan": 725000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Lingga",
+        "provinsi": "Kepulauan Riau",
+        "persentase_miskin": 5.56,
+        "p1": 0.93,
+        "penduduk": 103880,
+        "garis_kemiskinan": 710000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Natuna",
+        "provinsi": "Kepulauan Riau",
+        "persentase_miskin": 7.15,
+        "p1": 0.71,
+        "penduduk": 87825,
+        "garis_kemiskinan": 695000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Batam",
+        "provinsi": "Kepulauan Riau",
+        "persentase_miskin": 3.51,
+        "p1": 0.76,
+        "penduduk": 1316743,
+        "garis_kemiskinan": 740000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Tanjung Pinang",
+        "provinsi": "Kepulauan Riau",
+        "persentase_miskin": 3.91,
+        "p1": 0.47,
+        "penduduk": 242421,
+        "garis_kemiskinan": 755000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      }
+    ],
+    "Lampung": [
+      {
+        "kabkota": "Kabupaten Lampung Barat",
+        "provinsi": "Lampung",
+        "persentase_miskin": 12.91,
+        "p1": 1.52,
+        "penduduk": 322589,
+        "garis_kemiskinan": 510000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Lampung Selatan",
+        "provinsi": "Lampung",
+        "persentase_miskin": 13.71,
+        "p1": 2.04,
+        "penduduk": 1147198,
+        "garis_kemiskinan": 540000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Lampung Tengah",
+        "provinsi": "Lampung",
+        "persentase_miskin": 12.51,
+        "p1": 1.58,
+        "penduduk": 1557290,
+        "garis_kemiskinan": 570000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Lampung Timur",
+        "provinsi": "Lampung",
+        "persentase_miskin": 12.11,
+        "p1": 1.59,
+        "penduduk": 1175365,
+        "garis_kemiskinan": 555000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Lampung Utara",
+        "provinsi": "Lampung",
+        "persentase_miskin": 12.91,
+        "p1": 2.58,
+        "penduduk": 671492,
+        "garis_kemiskinan": 585000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Mesuji",
+        "provinsi": "Lampung",
+        "persentase_miskin": 12.51,
+        "p1": 0.48,
+        "penduduk": 248750,
+        "garis_kemiskinan": 495000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Pesawaran",
+        "provinsi": "Lampung",
+        "persentase_miskin": 12.11,
+        "p1": 1.33,
+        "penduduk": 512164,
+        "garis_kemiskinan": 525000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Pesisir Barat",
+        "provinsi": "Lampung",
+        "persentase_miskin": 12.91,
+        "p1": 1.7,
+        "penduduk": 177385,
+        "garis_kemiskinan": 555000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Pringsewu",
+        "provinsi": "Lampung",
+        "persentase_miskin": 12.11,
+        "p1": 0.58,
+        "penduduk": 434739,
+        "garis_kemiskinan": 585000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Tanggamus",
+        "provinsi": "Lampung",
+        "persentase_miskin": 13.31,
+        "p1": 1.07,
+        "penduduk": 685539,
+        "garis_kemiskinan": 525000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Tulang Bawang",
+        "provinsi": "Lampung",
+        "persentase_miskin": 9.2,
+        "p1": 1.01,
+        "penduduk": 250000,
+        "garis_kemiskinan": 520000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Tulang Bawang Barat",
+        "provinsi": "Lampung",
+        "persentase_miskin": 12.51,
+        "p1": 0.64,
+        "penduduk": 304759,
+        "garis_kemiskinan": 540000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Way Kanan",
+        "provinsi": "Lampung",
+        "persentase_miskin": 13.31,
+        "p1": 1.25,
+        "penduduk": 509245,
+        "garis_kemiskinan": 495000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Bandar Lampung",
+        "provinsi": "Lampung",
+        "persentase_miskin": 7.61,
+        "p1": 1.14,
+        "penduduk": 1237627,
+        "garis_kemiskinan": 570000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Metro",
+        "provinsi": "Lampung",
+        "persentase_miskin": 8.01,
+        "p1": 0.55,
+        "penduduk": 179309,
+        "garis_kemiskinan": 585000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      }
+    ],
+    "Maluku": [
+      {
+        "kabkota": "Kabupaten Buru",
+        "provinsi": "Maluku",
+        "persentase_miskin": 19.0,
+        "p1": 2.42,
+        "penduduk": 145909,
+        "garis_kemiskinan": 715000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Buru Selatan",
+        "provinsi": "Maluku",
+        "persentase_miskin": 19.0,
+        "p1": 1.93,
+        "penduduk": 83587,
+        "garis_kemiskinan": 685000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Kepulauan Aru",
+        "provinsi": "Maluku",
+        "persentase_miskin": 17.4,
+        "p1": 3.36,
+        "penduduk": 112697,
+        "garis_kemiskinan": 625000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Kepulauan Tanimbar",
+        "provinsi": "Maluku",
+        "persentase_miskin": 17.8,
+        "p1": 2.18,
+        "penduduk": 134167,
+        "garis_kemiskinan": 670000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Maluku Barat Daya",
+        "provinsi": "Maluku",
+        "persentase_miskin": 18.6,
+        "p1": 3.88,
+        "penduduk": 89926,
+        "garis_kemiskinan": 670000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Maluku Tengah",
+        "provinsi": "Maluku",
+        "persentase_miskin": 18.6,
+        "p1": 2.54,
+        "penduduk": 450384,
+        "garis_kemiskinan": 700000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Maluku Tenggara",
+        "provinsi": "Maluku",
+        "persentase_miskin": 18.2,
+        "p1": 2.71,
+        "penduduk": 128774,
+        "garis_kemiskinan": 685000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Seram Bagian Barat",
+        "provinsi": "Maluku",
+        "persentase_miskin": 17.8,
+        "p1": 4.23,
+        "penduduk": 233187,
+        "garis_kemiskinan": 640000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Seram Bagian Timur",
+        "provinsi": "Maluku",
+        "persentase_miskin": 18.2,
+        "p1": 3.54,
+        "penduduk": 151788,
+        "garis_kemiskinan": 655000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Ambon",
+        "provinsi": "Maluku",
+        "persentase_miskin": 9.4,
+        "p1": 0.44,
+        "penduduk": 369797,
+        "garis_kemiskinan": 700000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Tual",
+        "provinsi": "Maluku",
+        "persentase_miskin": 9.8,
+        "p1": 3.72,
+        "penduduk": 94992,
+        "garis_kemiskinan": 715000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      }
+    ],
+    "Maluku Utara": [
+      {
+        "kabkota": "Kabupaten Halmahera Barat",
+        "provinsi": "Maluku Utara",
+        "persentase_miskin": 7.16,
+        "p1": 1.04,
+        "penduduk": 140416,
+        "garis_kemiskinan": 535000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Halmahera Selatan",
+        "provinsi": "Maluku Utara",
+        "persentase_miskin": 6.36,
+        "p1": 0.25,
+        "penduduk": 273020,
+        "garis_kemiskinan": 580000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Halmahera Tengah",
+        "provinsi": "Maluku Utara",
+        "persentase_miskin": 7.56,
+        "p1": 1.17,
+        "penduduk": 64429,
+        "garis_kemiskinan": 550000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Halmahera Timur",
+        "provinsi": "Maluku Utara",
+        "persentase_miskin": 7.16,
+        "p1": 2.19,
+        "penduduk": 101451,
+        "garis_kemiskinan": 610000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Halmahera Utara",
+        "provinsi": "Maluku Utara",
+        "persentase_miskin": 6.76,
+        "p1": 0.38,
+        "penduduk": 212742,
+        "garis_kemiskinan": 595000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Kepulauan Sula",
+        "provinsi": "Maluku Utara",
+        "persentase_miskin": 7.96,
+        "p1": 0.65,
+        "penduduk": 111795,
+        "garis_kemiskinan": 565000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Pulau Morotai",
+        "provinsi": "Maluku Utara",
+        "persentase_miskin": 7.56,
+        "p1": 0.59,
+        "penduduk": 82247,
+        "garis_kemiskinan": 625000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Pulau Taliabu",
+        "provinsi": "Maluku Utara",
+        "persentase_miskin": 7.96,
+        "p1": 0.67,
+        "penduduk": 63085,
+        "garis_kemiskinan": 535000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Ternate",
+        "provinsi": "Maluku Utara",
+        "persentase_miskin": 3.16,
+        "p1": 0.23,
+        "penduduk": 219069,
+        "garis_kemiskinan": 550000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Tidore Kepulauan",
+        "provinsi": "Maluku Utara",
+        "persentase_miskin": 3.56,
+        "p1": 0.76,
+        "penduduk": 123454,
+        "garis_kemiskinan": 565000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      }
+    ],
+    "Nusa Tenggara Barat": [
+      {
+        "kabkota": "Kabupaten Bima",
+        "provinsi": "Nusa Tenggara Barat",
+        "persentase_miskin": 8.37,
+        "p1": 0.53,
+        "penduduk": 168060,
+        "garis_kemiskinan": 525000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Dompu",
+        "provinsi": "Nusa Tenggara Barat",
+        "persentase_miskin": 15.27,
+        "p1": 1.31,
+        "penduduk": 258349,
+        "garis_kemiskinan": 555000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Lombok Barat",
+        "provinsi": "Nusa Tenggara Barat",
+        "persentase_miskin": 15.67,
+        "p1": 1.14,
+        "penduduk": 787339,
+        "garis_kemiskinan": 495000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Lombok Tengah",
+        "provinsi": "Nusa Tenggara Barat",
+        "persentase_miskin": 16.07,
+        "p1": 1.51,
+        "penduduk": 1149627,
+        "garis_kemiskinan": 510000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Lombok Timur",
+        "provinsi": "Nusa Tenggara Barat",
+        "persentase_miskin": 16.47,
+        "p1": 2.46,
+        "penduduk": 1460017,
+        "garis_kemiskinan": 525000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Lombok Utara",
+        "provinsi": "Nusa Tenggara Barat",
+        "persentase_miskin": 16.47,
+        "p1": 2.7,
+        "penduduk": 268761,
+        "garis_kemiskinan": 495000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Sumbawa",
+        "provinsi": "Nusa Tenggara Barat",
+        "persentase_miskin": 14.87,
+        "p1": 1.61,
+        "penduduk": 550684,
+        "garis_kemiskinan": 540000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Sumbawa Barat",
+        "provinsi": "Nusa Tenggara Barat",
+        "persentase_miskin": 16.07,
+        "p1": 2.17,
+        "penduduk": 160732,
+        "garis_kemiskinan": 480000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Bima",
+        "provinsi": "Nusa Tenggara Barat",
+        "persentase_miskin": 8.37,
+        "p1": 0.53,
+        "penduduk": 168060,
+        "garis_kemiskinan": 525000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Mataram",
+        "provinsi": "Nusa Tenggara Barat",
+        "persentase_miskin": 7.97,
+        "p1": 1.34,
+        "penduduk": 452410,
+        "garis_kemiskinan": 510000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      }
+    ],
+    "Nusa Tenggara Timur": [
+      {
+        "kabkota": "Kabupaten Alor",
+        "provinsi": "Nusa Tenggara Timur",
+        "persentase_miskin": 18.29,
+        "p1": 1.78,
+        "penduduk": 231970,
+        "garis_kemiskinan": 464871,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Belu",
+        "provinsi": "Nusa Tenggara Timur",
+        "persentase_miskin": 12.79,
+        "p1": 2.05,
+        "penduduk": 240400,
+        "garis_kemiskinan": 490904,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Ende",
+        "provinsi": "Nusa Tenggara Timur",
+        "persentase_miskin": 23.08,
+        "p1": 3.55,
+        "penduduk": 286911,
+        "garis_kemiskinan": 515000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Flores Timur",
+        "provinsi": "Nusa Tenggara Timur",
+        "persentase_miskin": 10.88,
+        "p1": 1.42,
+        "penduduk": 300997,
+        "garis_kemiskinan": 429094,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Kupang",
+        "provinsi": "Nusa Tenggara Timur",
+        "persentase_miskin": 12.74,
+        "p1": 1.01,
+        "penduduk": 490393,
+        "garis_kemiskinan": 485000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Lembata",
+        "provinsi": "Nusa Tenggara Timur",
+        "persentase_miskin": 23.27,
+        "p1": 5.08,
+        "penduduk": 147202,
+        "garis_kemiskinan": 538773,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Malaka",
+        "provinsi": "Nusa Tenggara Timur",
+        "persentase_miskin": 22.28,
+        "p1": 1.56,
+        "penduduk": 198496,
+        "garis_kemiskinan": 455000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Manggarai",
+        "provinsi": "Nusa Tenggara Timur",
+        "persentase_miskin": 22.69,
+        "p1": 3.57,
+        "penduduk": 345826,
+        "garis_kemiskinan": 515000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Manggarai Barat",
+        "provinsi": "Nusa Tenggara Timur",
+        "persentase_miskin": 23.49,
+        "p1": 2.96,
+        "penduduk": 287142,
+        "garis_kemiskinan": 440000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Manggarai Timur",
+        "provinsi": "Nusa Tenggara Timur",
+        "persentase_miskin": 23.08,
+        "p1": 4.68,
+        "penduduk": 306838,
+        "garis_kemiskinan": 500000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Nagekeo",
+        "provinsi": "Nusa Tenggara Timur",
+        "persentase_miskin": 22.28,
+        "p1": 2.21,
+        "penduduk": 172974,
+        "garis_kemiskinan": 470000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Ngada",
+        "provinsi": "Nusa Tenggara Timur",
+        "persentase_miskin": 22.28,
+        "p1": 1.67,
+        "penduduk": 178843,
+        "garis_kemiskinan": 500000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Rote Ndao",
+        "provinsi": "Nusa Tenggara Timur",
+        "persentase_miskin": 23.08,
+        "p1": 3.4,
+        "penduduk": 157788,
+        "garis_kemiskinan": 425000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Sabu Raijua",
+        "provinsi": "Nusa Tenggara Timur",
+        "persentase_miskin": 21.89,
+        "p1": 5.59,
+        "penduduk": 97742,
+        "garis_kemiskinan": 440000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Sikka",
+        "provinsi": "Nusa Tenggara Timur",
+        "persentase_miskin": 22.69,
+        "p1": 1.36,
+        "penduduk": 350343,
+        "garis_kemiskinan": 500000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Sumba Barat",
+        "provinsi": "Nusa Tenggara Timur",
+        "persentase_miskin": 22.69,
+        "p1": 4.41,
+        "penduduk": 160172,
+        "garis_kemiskinan": 470000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Sumba Barat Daya",
+        "provinsi": "Nusa Tenggara Timur",
+        "persentase_miskin": 23.49,
+        "p1": 6.66,
+        "penduduk": 342287,
+        "garis_kemiskinan": 425000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Sumba Tengah",
+        "provinsi": "Nusa Tenggara Timur",
+        "persentase_miskin": 21.89,
+        "p1": 5.72,
+        "penduduk": 96036,
+        "garis_kemiskinan": 455000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Sumba Timur",
+        "provinsi": "Nusa Tenggara Timur",
+        "persentase_miskin": 23.08,
+        "p1": 6.13,
+        "penduduk": 266655,
+        "garis_kemiskinan": 485000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Timor Tengah Selatan",
+        "provinsi": "Nusa Tenggara Timur",
+        "persentase_miskin": 24.5,
+        "p1": 5.03,
+        "penduduk": 487999,
+        "garis_kemiskinan": 454423,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Timor Tengah Utara",
+        "provinsi": "Nusa Tenggara Timur",
+        "persentase_miskin": 20.17,
+        "p1": 4.66,
+        "penduduk": 279637,
+        "garis_kemiskinan": 516059,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Kupang",
+        "provinsi": "Nusa Tenggara Timur",
+        "persentase_miskin": 12.74,
+        "p1": 1.01,
+        "penduduk": 490393,
+        "garis_kemiskinan": 485000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      }
+    ],
+    "Papua": [
+      {
+        "kabkota": "Kabupaten Asmat",
+        "provinsi": "Papua",
+        "persentase_miskin": 27.63,
+        "p1": 3.85,
+        "penduduk": 123246,
+        "garis_kemiskinan": 605000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Biak Numfor",
+        "provinsi": "Papua",
+        "persentase_miskin": 31.42,
+        "p1": 5.64,
+        "penduduk": 144454,
+        "garis_kemiskinan": 745000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Boven Digoel",
+        "provinsi": "Papua",
+        "persentase_miskin": 26.83,
+        "p1": 3.2,
+        "penduduk": 71509,
+        "garis_kemiskinan": 680000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Deiyai",
+        "provinsi": "Papua",
+        "persentase_miskin": 41.55,
+        "p1": 3.54,
+        "penduduk": 110187,
+        "garis_kemiskinan": 750000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Dogiyai",
+        "provinsi": "Papua",
+        "persentase_miskin": 43.15,
+        "p1": 4.34,
+        "penduduk": 129273,
+        "garis_kemiskinan": 735000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Jayapura",
+        "provinsi": "Papua",
+        "persentase_miskin": 16.42,
+        "p1": 2.52,
+        "penduduk": 431482,
+        "garis_kemiskinan": 655000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Jayawijaya",
+        "provinsi": "Papua",
+        "persentase_miskin": 40.62,
+        "p1": 7.73,
+        "penduduk": 286601,
+        "garis_kemiskinan": 700000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Keerom",
+        "provinsi": "Papua",
+        "persentase_miskin": 29.82,
+        "p1": 4.26,
+        "penduduk": 65450,
+        "garis_kemiskinan": 685000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Kepulauan Yapen",
+        "provinsi": "Papua",
+        "persentase_miskin": 31.02,
+        "p1": 8.02,
+        "penduduk": 121653,
+        "garis_kemiskinan": 730000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Mamberamo Raya",
+        "provinsi": "Papua",
+        "persentase_miskin": 31.02,
+        "p1": 5.59,
+        "penduduk": 40887,
+        "garis_kemiskinan": 700000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Mappi",
+        "provinsi": "Papua",
+        "persentase_miskin": 27.23,
+        "p1": 4.69,
+        "penduduk": 118820,
+        "garis_kemiskinan": 695000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Merauke",
+        "provinsi": "Papua",
+        "persentase_miskin": 28.43,
+        "p1": 2.91,
+        "penduduk": 243628,
+        "garis_kemiskinan": 665000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Mimika",
+        "provinsi": "Papua",
+        "persentase_miskin": 42.75,
+        "p1": 3.65,
+        "penduduk": 335373,
+        "garis_kemiskinan": 720000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Nabire",
+        "provinsi": "Papua",
+        "persentase_miskin": 41.95,
+        "p1": 6.73,
+        "penduduk": 178421,
+        "garis_kemiskinan": 765000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Paniai",
+        "provinsi": "Papua",
+        "persentase_miskin": 42.35,
+        "p1": 4.57,
+        "penduduk": 243966,
+        "garis_kemiskinan": 780000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Pegunungan Bintang",
+        "provinsi": "Papua",
+        "persentase_miskin": 41.03,
+        "p1": 2.18,
+        "penduduk": 86070,
+        "garis_kemiskinan": 685000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Sarmi",
+        "provinsi": "Papua",
+        "persentase_miskin": 30.22,
+        "p1": 1.73,
+        "penduduk": 43846,
+        "garis_kemiskinan": 670000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Supiori",
+        "provinsi": "Papua",
+        "persentase_miskin": 30.22,
+        "p1": 12.24,
+        "penduduk": 25524,
+        "garis_kemiskinan": 700000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Waropen",
+        "provinsi": "Papua",
+        "persentase_miskin": 30.62,
+        "p1": 7.7,
+        "penduduk": 36783,
+        "garis_kemiskinan": 685000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Yahukimo",
+        "provinsi": "Papua",
+        "persentase_miskin": 40.62,
+        "p1": 3.74,
+        "penduduk": 382349,
+        "garis_kemiskinan": 670000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Jayapura",
+        "provinsi": "Papua",
+        "persentase_miskin": 16.42,
+        "p1": 2.52,
+        "penduduk": 431482,
+        "garis_kemiskinan": 655000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      }
+    ],
+    "Papua Barat": [
+      {
+        "kabkota": "Kabupaten Fak Fak",
+        "provinsi": "Papua Barat",
+        "persentase_miskin": 4.9,
+        "p1": 1.07,
+        "penduduk": 250000,
+        "garis_kemiskinan": 520000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Kaimana",
+        "provinsi": "Papua Barat",
+        "persentase_miskin": 25.21,
+        "p1": 2.76,
+        "penduduk": 68923,
+        "garis_kemiskinan": 750000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Manokwari",
+        "provinsi": "Papua Barat",
+        "persentase_miskin": 24.41,
+        "p1": 4.69,
+        "penduduk": 211063,
+        "garis_kemiskinan": 690000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Manokwari Selatan",
+        "provinsi": "Papua Barat",
+        "persentase_miskin": 24.41,
+        "p1": 4.12,
+        "penduduk": 40319,
+        "garis_kemiskinan": 720000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Pegunungan Arfak",
+        "provinsi": "Papua Barat",
+        "persentase_miskin": 24.81,
+        "p1": 5.84,
+        "penduduk": 42914,
+        "garis_kemiskinan": 705000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Raja Ampat",
+        "provinsi": "Papua Barat",
+        "persentase_miskin": 21.88,
+        "p1": 2.27,
+        "penduduk": 73137,
+        "garis_kemiskinan": 680000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Sorong",
+        "provinsi": "Papua Barat",
+        "persentase_miskin": 12.63,
+        "p1": 2.56,
+        "penduduk": 306083,
+        "garis_kemiskinan": 650000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Teluk Bintuni",
+        "provinsi": "Papua Barat",
+        "persentase_miskin": 24.01,
+        "p1": 5.75,
+        "penduduk": 92923,
+        "garis_kemiskinan": 675000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Teluk Wondama",
+        "provinsi": "Papua Barat",
+        "persentase_miskin": 23.61,
+        "p1": 6.13,
+        "penduduk": 47619,
+        "garis_kemiskinan": 765000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Sorong",
+        "provinsi": "Papua Barat",
+        "persentase_miskin": 12.63,
+        "p1": 2.56,
+        "penduduk": 306083,
+        "garis_kemiskinan": 650000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      }
+    ],
+    "Papua Barat Daya": [
+      {
+        "kabkota": "Kabupaten Maybrat",
+        "provinsi": "Papua Barat Daya",
+        "persentase_miskin": 21.08,
+        "p1": 6.99,
+        "penduduk": 50059,
+        "garis_kemiskinan": 725000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Raja Ampat",
+        "provinsi": "Papua Barat Daya",
+        "persentase_miskin": 21.88,
+        "p1": 2.27,
+        "penduduk": 73137,
+        "garis_kemiskinan": 680000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Sorong",
+        "provinsi": "Papua Barat Daya",
+        "persentase_miskin": 12.63,
+        "p1": 2.56,
+        "penduduk": 306083,
+        "garis_kemiskinan": 650000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Sorong Selatan",
+        "provinsi": "Papua Barat Daya",
+        "persentase_miskin": 20.67,
+        "p1": 4.09,
+        "penduduk": 58288,
+        "garis_kemiskinan": 710000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Tambrauw",
+        "provinsi": "Papua Barat Daya",
+        "persentase_miskin": 21.48,
+        "p1": 5.01,
+        "penduduk": 32755,
+        "garis_kemiskinan": 635000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Sorong",
+        "provinsi": "Papua Barat Daya",
+        "persentase_miskin": 12.63,
+        "p1": 2.56,
+        "penduduk": 306083,
+        "garis_kemiskinan": 650000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      }
+    ],
+    "Papua Pegunungan": [
+      {
+        "kabkota": "Kabupaten Jayawijaya",
+        "provinsi": "Papua Pegunungan",
+        "persentase_miskin": 40.62,
+        "p1": 7.73,
+        "penduduk": 286601,
+        "garis_kemiskinan": 700000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Lanny Jaya",
+        "provinsi": "Papua Pegunungan",
+        "persentase_miskin": 41.03,
+        "p1": 7.19,
+        "penduduk": 213985,
+        "garis_kemiskinan": 715000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Nduga",
+        "provinsi": "Papua Pegunungan",
+        "persentase_miskin": 40.22,
+        "p1": 4.88,
+        "penduduk": 116376,
+        "garis_kemiskinan": 685000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Pegunungan Bintang",
+        "provinsi": "Papua Pegunungan",
+        "persentase_miskin": 41.03,
+        "p1": 2.18,
+        "penduduk": 86070,
+        "garis_kemiskinan": 685000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Yahukimo",
+        "provinsi": "Papua Pegunungan",
+        "persentase_miskin": 40.62,
+        "p1": 3.74,
+        "penduduk": 382349,
+        "garis_kemiskinan": 670000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Yalimo",
+        "provinsi": "Papua Pegunungan",
+        "persentase_miskin": 40.22,
+        "p1": 6.36,
+        "penduduk": 111371,
+        "garis_kemiskinan": 655000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      }
+    ],
+    "Papua Selatan": [
+      {
+        "kabkota": "Kabupaten Asmat",
+        "provinsi": "Papua Selatan",
+        "persentase_miskin": 27.63,
+        "p1": 3.85,
+        "penduduk": 123246,
+        "garis_kemiskinan": 605000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Boven Digoel",
+        "provinsi": "Papua Selatan",
+        "persentase_miskin": 26.83,
+        "p1": 3.2,
+        "penduduk": 71509,
+        "garis_kemiskinan": 680000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Mappi",
+        "provinsi": "Papua Selatan",
+        "persentase_miskin": 27.23,
+        "p1": 4.69,
+        "penduduk": 118820,
+        "garis_kemiskinan": 695000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Merauke",
+        "provinsi": "Papua Selatan",
+        "persentase_miskin": 28.43,
+        "p1": 2.91,
+        "penduduk": 243628,
+        "garis_kemiskinan": 665000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      }
+    ],
+    "Papua Tengah": [
+      {
+        "kabkota": "Kabupaten Deiyai",
+        "provinsi": "Papua Tengah",
+        "persentase_miskin": 41.55,
+        "p1": 3.54,
+        "penduduk": 110187,
+        "garis_kemiskinan": 750000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Dogiyai",
+        "provinsi": "Papua Tengah",
+        "persentase_miskin": 43.15,
+        "p1": 4.34,
+        "penduduk": 129273,
+        "garis_kemiskinan": 735000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Intan Jaya",
+        "provinsi": "Papua Tengah",
+        "persentase_miskin": 42.75,
+        "p1": 6.64,
+        "penduduk": 147845,
+        "garis_kemiskinan": 795000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Mimika",
+        "provinsi": "Papua Tengah",
+        "persentase_miskin": 42.75,
+        "p1": 3.65,
+        "penduduk": 335373,
+        "garis_kemiskinan": 720000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Nabire",
+        "provinsi": "Papua Tengah",
+        "persentase_miskin": 41.95,
+        "p1": 6.73,
+        "penduduk": 178421,
+        "garis_kemiskinan": 765000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Paniai",
+        "provinsi": "Papua Tengah",
+        "persentase_miskin": 42.35,
+        "p1": 4.57,
+        "penduduk": 243966,
+        "garis_kemiskinan": 780000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Puncak",
+        "provinsi": "Papua Tengah",
+        "persentase_miskin": 43.15,
+        "p1": 4.98,
+        "penduduk": 126152,
+        "garis_kemiskinan": 705000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Puncak Jaya",
+        "provinsi": "Papua Tengah",
+        "persentase_miskin": 41.55,
+        "p1": 8.37,
+        "penduduk": 239596,
+        "garis_kemiskinan": 720000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      }
+    ],
+    "Riau": [
+      {
+        "kabkota": "Kabupaten Bengkalis",
+        "provinsi": "Riau",
+        "persentase_miskin": 6.1,
+        "p1": 0.64,
+        "penduduk": 604531,
+        "garis_kemiskinan": 764542,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Indragiri Hilir",
+        "provinsi": "Riau",
+        "persentase_miskin": 5.0,
+        "p1": 0.35,
+        "penduduk": 699324,
+        "garis_kemiskinan": 642777,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Indragiri Hulu",
+        "provinsi": "Riau",
+        "persentase_miskin": 5.8,
+        "p1": 0.44,
+        "penduduk": 480336,
+        "garis_kemiskinan": 673975,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Kampar",
+        "provinsi": "Riau",
+        "persentase_miskin": 6.3,
+        "p1": 0.94,
+        "penduduk": 921673,
+        "garis_kemiskinan": 600385,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Kepulauan Meranti",
+        "provinsi": "Riau",
+        "persentase_miskin": 20.5,
+        "p1": 3.05,
+        "penduduk": 217407,
+        "garis_kemiskinan": 673296,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Kuantan Singingi",
+        "provinsi": "Riau",
+        "persentase_miskin": 7.0,
+        "p1": 0.74,
+        "penduduk": 356220,
+        "garis_kemiskinan": 751174,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Pelalawan",
+        "provinsi": "Riau",
+        "persentase_miskin": 7.2,
+        "p1": 0.86,
+        "penduduk": 427434,
+        "garis_kemiskinan": 741594,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Rokan Hilir",
+        "provinsi": "Riau",
+        "persentase_miskin": 7.2,
+        "p1": 1.16,
+        "penduduk": 691826,
+        "garis_kemiskinan": 559703,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Rokan Hulu",
+        "provinsi": "Riau",
+        "persentase_miskin": 8.7,
+        "p1": 0.84,
+        "penduduk": 609692,
+        "garis_kemiskinan": 712867,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Siak",
+        "provinsi": "Riau",
+        "persentase_miskin": 4.4,
+        "p1": 0.4,
+        "penduduk": 496891,
+        "garis_kemiskinan": 607601,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Dumai",
+        "provinsi": "Riau",
+        "persentase_miskin": 3.1,
+        "p1": 0.2,
+        "penduduk": 341006,
+        "garis_kemiskinan": 654144,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Pekanbaru",
+        "provinsi": "Riau",
+        "persentase_miskin": 3.2,
+        "p1": 0.34,
+        "penduduk": 1046046,
+        "garis_kemiskinan": 767408,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      }
+    ],
+    "Sulawesi Barat": [
+      {
+        "kabkota": "Kabupaten Majene",
+        "provinsi": "Sulawesi Barat",
+        "persentase_miskin": 12.23,
+        "p1": 1.55,
+        "penduduk": 188857,
+        "garis_kemiskinan": 445000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Mamasa",
+        "provinsi": "Sulawesi Barat",
+        "persentase_miskin": 13.03,
+        "p1": 1.79,
+        "penduduk": 178098,
+        "garis_kemiskinan": 475000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Mamuju",
+        "provinsi": "Sulawesi Barat",
+        "persentase_miskin": 13.43,
+        "p1": 0.73,
+        "penduduk": 306597,
+        "garis_kemiskinan": 385000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Mamuju Tengah",
+        "provinsi": "Sulawesi Barat",
+        "persentase_miskin": 12.23,
+        "p1": 1.4,
+        "penduduk": 150458,
+        "garis_kemiskinan": 415000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Pasangkayu",
+        "provinsi": "Sulawesi Barat",
+        "persentase_miskin": 13.83,
+        "p1": 1.42,
+        "penduduk": 210278,
+        "garis_kemiskinan": 400000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Polewali Mandar",
+        "provinsi": "Sulawesi Barat",
+        "persentase_miskin": 12.63,
+        "p1": 2.02,
+        "penduduk": 513066,
+        "garis_kemiskinan": 460000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      }
+    ],
+    "Sulawesi Selatan": [
+      {
+        "kabkota": "Kabupaten Bantaeng",
+        "provinsi": "Sulawesi Selatan",
+        "persentase_miskin": 10.49,
+        "p1": 0.83,
+        "penduduk": 209844,
+        "garis_kemiskinan": 470000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Barru",
+        "provinsi": "Sulawesi Selatan",
+        "persentase_miskin": 10.09,
+        "p1": 0.94,
+        "penduduk": 191690,
+        "garis_kemiskinan": 485000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Bone",
+        "provinsi": "Sulawesi Selatan",
+        "persentase_miskin": 10.49,
+        "p1": 1.08,
+        "penduduk": 844021,
+        "garis_kemiskinan": 395000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Bulukumba",
+        "provinsi": "Sulawesi Selatan",
+        "persentase_miskin": 10.09,
+        "p1": 0.7,
+        "penduduk": 463164,
+        "garis_kemiskinan": 455000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Enrekang",
+        "provinsi": "Sulawesi Selatan",
+        "persentase_miskin": 8.89,
+        "p1": 1.4,
+        "penduduk": 245256,
+        "garis_kemiskinan": 425000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Gowa",
+        "provinsi": "Sulawesi Selatan",
+        "persentase_miskin": 9.69,
+        "p1": 1.09,
+        "penduduk": 839803,
+        "garis_kemiskinan": 410000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Jeneponto",
+        "provinsi": "Sulawesi Selatan",
+        "persentase_miskin": 8.89,
+        "p1": 1.18,
+        "penduduk": 427667,
+        "garis_kemiskinan": 485000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Luwu",
+        "provinsi": "Sulawesi Selatan",
+        "persentase_miskin": 8.89,
+        "p1": 1.49,
+        "penduduk": 394206,
+        "garis_kemiskinan": 410000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Luwu Timur",
+        "provinsi": "Sulawesi Selatan",
+        "persentase_miskin": 8.89,
+        "p1": 1.2,
+        "penduduk": 321021,
+        "garis_kemiskinan": 395000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Luwu Utara",
+        "provinsi": "Sulawesi Selatan",
+        "persentase_miskin": 9.29,
+        "p1": 2.29,
+        "penduduk": 345321,
+        "garis_kemiskinan": 425000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Maros",
+        "provinsi": "Sulawesi Selatan",
+        "persentase_miskin": 10.49,
+        "p1": 1.54,
+        "penduduk": 424592,
+        "garis_kemiskinan": 440000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Pangkajene Kepulauan",
+        "provinsi": "Sulawesi Selatan",
+        "persentase_miskin": 11.2,
+        "p1": 2.18,
+        "penduduk": 250000,
+        "garis_kemiskinan": 520000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Pinrang",
+        "provinsi": "Sulawesi Selatan",
+        "persentase_miskin": 10.49,
+        "p1": 1.24,
+        "penduduk": 435066,
+        "garis_kemiskinan": 410000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Selayar",
+        "provinsi": "Sulawesi Selatan",
+        "persentase_miskin": 7.9,
+        "p1": 2.12,
+        "penduduk": 250000,
+        "garis_kemiskinan": 520000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Sidenreng Rappang",
+        "provinsi": "Sulawesi Selatan",
+        "persentase_miskin": 10.09,
+        "p1": 0.74,
+        "penduduk": 336245,
+        "garis_kemiskinan": 395000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Sinjai",
+        "provinsi": "Sulawesi Selatan",
+        "persentase_miskin": 10.09,
+        "p1": 0.95,
+        "penduduk": 276173,
+        "garis_kemiskinan": 425000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Soppeng",
+        "provinsi": "Sulawesi Selatan",
+        "persentase_miskin": 9.29,
+        "p1": 0.94,
+        "penduduk": 241460,
+        "garis_kemiskinan": 470000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Takalar",
+        "provinsi": "Sulawesi Selatan",
+        "persentase_miskin": 9.29,
+        "p1": 0.82,
+        "penduduk": 325192,
+        "garis_kemiskinan": 395000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Tana Toraja",
+        "provinsi": "Sulawesi Selatan",
+        "persentase_miskin": 9.29,
+        "p1": 1.13,
+        "penduduk": 298208,
+        "garis_kemiskinan": 440000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Toraja Utara",
+        "provinsi": "Sulawesi Selatan",
+        "persentase_miskin": 9.29,
+        "p1": 1.58,
+        "penduduk": 286668,
+        "garis_kemiskinan": 410000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Wajo",
+        "provinsi": "Sulawesi Selatan",
+        "persentase_miskin": 9.69,
+        "p1": 0.82,
+        "penduduk": 393747,
+        "garis_kemiskinan": 485000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Makassar",
+        "provinsi": "Sulawesi Selatan",
+        "persentase_miskin": 4.5,
+        "p1": 0.52,
+        "penduduk": 1482753,
+        "garis_kemiskinan": 455000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Palopo",
+        "provinsi": "Sulawesi Selatan",
+        "persentase_miskin": 6.19,
+        "p1": 1.25,
+        "penduduk": 201386,
+        "garis_kemiskinan": 485000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Pare-pare",
+        "provinsi": "Sulawesi Selatan",
+        "persentase_miskin": 12.6,
+        "p1": 1.12,
+        "penduduk": 250000,
+        "garis_kemiskinan": 520000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      }
+    ],
+    "Sulawesi Tengah": [
+      {
+        "kabkota": "Kabupaten Banggai",
+        "provinsi": "Sulawesi Tengah",
+        "persentase_miskin": 14.46,
+        "p1": 0.74,
+        "penduduk": 385116,
+        "garis_kemiskinan": 550000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Banggai Kepulauan",
+        "provinsi": "Sulawesi Tengah",
+        "persentase_miskin": 14.06,
+        "p1": 2.14,
+        "penduduk": 126865,
+        "garis_kemiskinan": 535000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Banggai Laut",
+        "provinsi": "Sulawesi Tengah",
+        "persentase_miskin": 13.66,
+        "p1": 1.44,
+        "penduduk": 75832,
+        "garis_kemiskinan": 520000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Buol",
+        "provinsi": "Sulawesi Tengah",
+        "persentase_miskin": 14.46,
+        "p1": 1.62,
+        "penduduk": 155929,
+        "garis_kemiskinan": 520000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Donggala",
+        "provinsi": "Sulawesi Tengah",
+        "persentase_miskin": 13.66,
+        "p1": 2.71,
+        "penduduk": 316206,
+        "garis_kemiskinan": 595000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Morowali",
+        "provinsi": "Sulawesi Tengah",
+        "persentase_miskin": 14.86,
+        "p1": 1.07,
+        "penduduk": 178654,
+        "garis_kemiskinan": 565000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Morowali Utara",
+        "provinsi": "Sulawesi Tengah",
+        "persentase_miskin": 13.66,
+        "p1": 1.54,
+        "penduduk": 131353,
+        "garis_kemiskinan": 565000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Parigi Moutong",
+        "provinsi": "Sulawesi Tengah",
+        "persentase_miskin": 14.86,
+        "p1": 2.93,
+        "penduduk": 469668,
+        "garis_kemiskinan": 535000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Poso",
+        "provinsi": "Sulawesi Tengah",
+        "persentase_miskin": 13.26,
+        "p1": 2.22,
+        "penduduk": 258768,
+        "garis_kemiskinan": 580000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Sigi",
+        "provinsi": "Sulawesi Tengah",
+        "persentase_miskin": 13.26,
+        "p1": 1.77,
+        "penduduk": 276556,
+        "garis_kemiskinan": 505000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Tajo Una-una",
+        "provinsi": "Sulawesi Tengah",
+        "persentase_miskin": 10.2,
+        "p1": 2.11,
+        "penduduk": 250000,
+        "garis_kemiskinan": 520000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Toli Toli",
+        "provinsi": "Sulawesi Tengah",
+        "persentase_miskin": 7.3,
+        "p1": 0.91,
+        "penduduk": 250000,
+        "garis_kemiskinan": 520000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Palu",
+        "provinsi": "Sulawesi Tengah",
+        "persentase_miskin": 7.86,
+        "p1": 0.67,
+        "penduduk": 402417,
+        "garis_kemiskinan": 580000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      }
+    ],
+    "Sulawesi Tenggara": [
+      {
+        "kabkota": "Kabupaten Bombana",
+        "provinsi": "Sulawesi Tenggara",
+        "persentase_miskin": 13.48,
+        "p1": 1.82,
+        "penduduk": 165590,
+        "garis_kemiskinan": 435000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Buton",
+        "provinsi": "Sulawesi Tenggara",
+        "persentase_miskin": 13.48,
+        "p1": 1.69,
+        "penduduk": 125654,
+        "garis_kemiskinan": 465000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Buton Selatan",
+        "provinsi": "Sulawesi Tenggara",
+        "persentase_miskin": 12.28,
+        "p1": 1.49,
+        "penduduk": 104395,
+        "garis_kemiskinan": 435000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Buton Tengah",
+        "provinsi": "Sulawesi Tenggara",
+        "persentase_miskin": 11.88,
+        "p1": 1.86,
+        "penduduk": 124926,
+        "garis_kemiskinan": 420000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Buton Utara",
+        "provinsi": "Sulawesi Tenggara",
+        "persentase_miskin": 12.68,
+        "p1": 1.46,
+        "penduduk": 71406,
+        "garis_kemiskinan": 480000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Kolaka",
+        "provinsi": "Sulawesi Tenggara",
+        "persentase_miskin": 12.68,
+        "p1": 1.65,
+        "penduduk": 254270,
+        "garis_kemiskinan": 405000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Kolaka Timur",
+        "provinsi": "Sulawesi Tenggara",
+        "persentase_miskin": 13.08,
+        "p1": 2.6,
+        "penduduk": 131041,
+        "garis_kemiskinan": 450000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Kolaka Utara",
+        "provinsi": "Sulawesi Tenggara",
+        "persentase_miskin": 12.28,
+        "p1": 2.33,
+        "penduduk": 154176,
+        "garis_kemiskinan": 465000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Konawe",
+        "provinsi": "Sulawesi Tenggara",
+        "persentase_miskin": 12.28,
+        "p1": 2.75,
+        "penduduk": 282999,
+        "garis_kemiskinan": 495000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Konawe Kepulauan",
+        "provinsi": "Sulawesi Tenggara",
+        "persentase_miskin": 13.08,
+        "p1": 1.66,
+        "penduduk": 41021,
+        "garis_kemiskinan": 495000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Konawe Selatan",
+        "provinsi": "Sulawesi Tenggara",
+        "persentase_miskin": 13.08,
+        "p1": 1.67,
+        "penduduk": 340022,
+        "garis_kemiskinan": 420000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Konawe Utara",
+        "provinsi": "Sulawesi Tenggara",
+        "persentase_miskin": 12.68,
+        "p1": 2.1,
+        "penduduk": 76966,
+        "garis_kemiskinan": 435000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Muna",
+        "provinsi": "Sulawesi Tenggara",
+        "persentase_miskin": 11.88,
+        "p1": 1.74,
+        "penduduk": 234539,
+        "garis_kemiskinan": 480000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Muna Barat",
+        "provinsi": "Sulawesi Tenggara",
+        "persentase_miskin": 13.48,
+        "p1": 1.92,
+        "penduduk": 94305,
+        "garis_kemiskinan": 405000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Wakatobi",
+        "provinsi": "Sulawesi Tenggara",
+        "persentase_miskin": 11.88,
+        "p1": 2.46,
+        "penduduk": 121788,
+        "garis_kemiskinan": 450000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Bau-bau",
+        "provinsi": "Sulawesi Tenggara",
+        "persentase_miskin": 9.2,
+        "p1": 1.29,
+        "penduduk": 250000,
+        "garis_kemiskinan": 520000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Kendari",
+        "provinsi": "Sulawesi Tenggara",
+        "persentase_miskin": 7.08,
+        "p1": 0.55,
+        "penduduk": 383708,
+        "garis_kemiskinan": 450000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      }
+    ],
+    "Sulawesi Utara": [
+      {
+        "kabkota": "Kabupaten Bolaang Mongondow",
+        "provinsi": "Sulawesi Utara",
+        "persentase_miskin": 8.08,
+        "p1": 0.74,
+        "penduduk": 261398,
+        "garis_kemiskinan": 430000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Bolaang Mongondow Selatan",
+        "provinsi": "Sulawesi Utara",
+        "persentase_miskin": 7.28,
+        "p1": 1.51,
+        "penduduk": 74490,
+        "garis_kemiskinan": 505000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Bolaang Mongondow Timur",
+        "provinsi": "Sulawesi Utara",
+        "persentase_miskin": 7.68,
+        "p1": 0.6,
+        "penduduk": 94242,
+        "garis_kemiskinan": 415000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Bolaang Mongondow Utara",
+        "provinsi": "Sulawesi Utara",
+        "persentase_miskin": 8.48,
+        "p1": 0.86,
+        "penduduk": 89348,
+        "garis_kemiskinan": 415000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Kepulauan Sangihe",
+        "provinsi": "Sulawesi Utara",
+        "persentase_miskin": 8.88,
+        "p1": 1.05,
+        "penduduk": 144408,
+        "garis_kemiskinan": 460000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Kepulauan Talaud",
+        "provinsi": "Sulawesi Utara",
+        "persentase_miskin": 7.28,
+        "p1": 1.37,
+        "penduduk": 100244,
+        "garis_kemiskinan": 475000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Minahasa",
+        "provinsi": "Sulawesi Utara",
+        "persentase_miskin": 8.48,
+        "p1": 1.04,
+        "penduduk": 356624,
+        "garis_kemiskinan": 445000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Minahasa Selatan",
+        "provinsi": "Sulawesi Utara",
+        "persentase_miskin": 7.68,
+        "p1": 1.41,
+        "penduduk": 243684,
+        "garis_kemiskinan": 490000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Minahasa Tenggara",
+        "provinsi": "Sulawesi Utara",
+        "persentase_miskin": 7.28,
+        "p1": 1.82,
+        "penduduk": 122605,
+        "garis_kemiskinan": 445000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Minahasa Utara",
+        "provinsi": "Sulawesi Utara",
+        "persentase_miskin": 8.08,
+        "p1": 0.88,
+        "penduduk": 237708,
+        "garis_kemiskinan": 505000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Siau Tagulandang Biaro",
+        "provinsi": "Sulawesi Utara",
+        "persentase_miskin": 8.88,
+        "p1": 0.7,
+        "penduduk": 74938,
+        "garis_kemiskinan": 430000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Bitung",
+        "provinsi": "Sulawesi Utara",
+        "persentase_miskin": 4.48,
+        "p1": 0.68,
+        "penduduk": 239840,
+        "garis_kemiskinan": 475000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Kotamobagu",
+        "provinsi": "Sulawesi Utara",
+        "persentase_miskin": 5.28,
+        "p1": 0.47,
+        "penduduk": 131721,
+        "garis_kemiskinan": 505000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Manado",
+        "provinsi": "Sulawesi Utara",
+        "persentase_miskin": 4.08,
+        "p1": 0.88,
+        "penduduk": 463564,
+        "garis_kemiskinan": 460000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Tomohon",
+        "provinsi": "Sulawesi Utara",
+        "persentase_miskin": 4.88,
+        "p1": 0.69,
+        "penduduk": 105651,
+        "garis_kemiskinan": 490000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      }
+    ],
+    "Sumatera Barat": [
+      {
+        "kabkota": "Kabupaten Agam",
+        "provinsi": "Sumatera Barat",
+        "persentase_miskin": 6.0,
+        "p1": 0.67,
+        "penduduk": 574226,
+        "garis_kemiskinan": 570317,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Dharmasraya",
+        "provinsi": "Sumatera Barat",
+        "persentase_miskin": 4.61,
+        "p1": 0.55,
+        "penduduk": 252149,
+        "garis_kemiskinan": 633451,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Kepulauan Mentawai",
+        "provinsi": "Sumatera Barat",
+        "persentase_miskin": 13.22,
+        "p1": 1.88,
+        "penduduk": 95323,
+        "garis_kemiskinan": 474879,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Lima Puluh Kota",
+        "provinsi": "Sumatera Barat",
+        "persentase_miskin": 6.1,
+        "p1": 0.63,
+        "penduduk": 410327,
+        "garis_kemiskinan": 593402,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Padang Pariaman",
+        "provinsi": "Sumatera Barat",
+        "persentase_miskin": 5.9,
+        "p1": 0.8,
+        "penduduk": 474990,
+        "garis_kemiskinan": 590495,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Pasaman",
+        "provinsi": "Sumatera Barat",
+        "persentase_miskin": 6.0,
+        "p1": 0.66,
+        "penduduk": 327768,
+        "garis_kemiskinan": 524533,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Pasaman Barat",
+        "provinsi": "Sumatera Barat",
+        "persentase_miskin": 6.3,
+        "p1": 0.85,
+        "penduduk": 468987,
+        "garis_kemiskinan": 669360,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Pesisir Selatan",
+        "provinsi": "Sumatera Barat",
+        "persentase_miskin": 6.52,
+        "p1": 0.97,
+        "penduduk": 547763,
+        "garis_kemiskinan": 600161,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Sijunjung",
+        "provinsi": "Sumatera Barat",
+        "persentase_miskin": 5.2,
+        "p1": 0.66,
+        "penduduk": 252768,
+        "garis_kemiskinan": 574991,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Solok",
+        "provinsi": "Sumatera Barat",
+        "persentase_miskin": 2.9,
+        "p1": 0.35,
+        "penduduk": 82654,
+        "garis_kemiskinan": 593520,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Solok Selatan",
+        "provinsi": "Sumatera Barat",
+        "persentase_miskin": 6.0,
+        "p1": 0.93,
+        "penduduk": 201979,
+        "garis_kemiskinan": 558817,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Tanah Datar",
+        "provinsi": "Sumatera Barat",
+        "persentase_miskin": 3.6,
+        "p1": 0.21,
+        "penduduk": 397235,
+        "garis_kemiskinan": 564372,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Bukittinggi",
+        "provinsi": "Sumatera Barat",
+        "persentase_miskin": 3.8,
+        "p1": 0.44,
+        "penduduk": 126764,
+        "garis_kemiskinan": 685824,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Padang",
+        "provinsi": "Sumatera Barat",
+        "persentase_miskin": 3.6,
+        "p1": 0.6,
+        "penduduk": 975548,
+        "garis_kemiskinan": 767616,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Padang Panjang",
+        "provinsi": "Sumatera Barat",
+        "persentase_miskin": 5.0,
+        "p1": 0.43,
+        "penduduk": 61072,
+        "garis_kemiskinan": 660705,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Pariaman",
+        "provinsi": "Sumatera Barat",
+        "persentase_miskin": 3.83,
+        "p1": 0.44,
+        "penduduk": 100516,
+        "garis_kemiskinan": 634304,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Payakumbuh",
+        "provinsi": "Sumatera Barat",
+        "persentase_miskin": 5.0,
+        "p1": 0.54,
+        "penduduk": 150446,
+        "garis_kemiskinan": 674813,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Sawah Lunto",
+        "provinsi": "Sumatera Barat",
+        "persentase_miskin": 8.6,
+        "p1": 0.33,
+        "penduduk": 250000,
+        "garis_kemiskinan": 520000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Solok",
+        "provinsi": "Sumatera Barat",
+        "persentase_miskin": 2.9,
+        "p1": 0.35,
+        "penduduk": 82654,
+        "garis_kemiskinan": 593520,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      }
+    ],
+    "Sumatera Selatan": [
+      {
+        "kabkota": "Kabupaten Banyuasin",
+        "provinsi": "Sumatera Selatan",
+        "persentase_miskin": 11.6,
+        "p1": 0.99,
+        "penduduk": 250000,
+        "garis_kemiskinan": 520000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Empat Lawang",
+        "provinsi": "Sumatera Selatan",
+        "persentase_miskin": 10.5,
+        "p1": 1.44,
+        "penduduk": 352187,
+        "garis_kemiskinan": 440405,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Lahat",
+        "provinsi": "Sumatera Selatan",
+        "persentase_miskin": 13.69,
+        "p1": 2.55,
+        "penduduk": 460814,
+        "garis_kemiskinan": 606881,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Muara Enim",
+        "provinsi": "Sumatera Selatan",
+        "persentase_miskin": 9.45,
+        "p1": 1.28,
+        "penduduk": 654720,
+        "garis_kemiskinan": 512439,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Musi Banyuasin",
+        "provinsi": "Sumatera Selatan",
+        "persentase_miskin": 9.97,
+        "p1": 1.49,
+        "penduduk": 666458,
+        "garis_kemiskinan": 627094,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Musi Rawas",
+        "provinsi": "Sumatera Selatan",
+        "persentase_miskin": 12.67,
+        "p1": 1.33,
+        "penduduk": 419572,
+        "garis_kemiskinan": 616298,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Musi Rawas Utara",
+        "provinsi": "Sumatera Selatan",
+        "persentase_miskin": 15.25,
+        "p1": 2.22,
+        "penduduk": 203119,
+        "garis_kemiskinan": 666294,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Ogan Ilir",
+        "provinsi": "Sumatera Selatan",
+        "persentase_miskin": 11.7,
+        "p1": 1.45,
+        "penduduk": 446141,
+        "garis_kemiskinan": 614656,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Ogan Komering Ilir",
+        "provinsi": "Sumatera Selatan",
+        "persentase_miskin": 11.84,
+        "p1": 1.36,
+        "penduduk": 825692,
+        "garis_kemiskinan": 493783,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Ogan Komering Ulu",
+        "provinsi": "Sumatera Selatan",
+        "persentase_miskin": 10.08,
+        "p1": 1.48,
+        "penduduk": 390470,
+        "garis_kemiskinan": 588225,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Ogan Komering Ulu Selatan",
+        "provinsi": "Sumatera Selatan",
+        "persentase_miskin": 9.17,
+        "p1": 1.27,
+        "penduduk": 439948,
+        "garis_kemiskinan": 456280,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Ogan Komering Ulu Timur",
+        "provinsi": "Sumatera Selatan",
+        "persentase_miskin": 8.86,
+        "p1": 0.97,
+        "penduduk": 685776,
+        "garis_kemiskinan": 453488,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Penukal Abab Lematang Ilir",
+        "provinsi": "Sumatera Selatan",
+        "persentase_miskin": 9.27,
+        "p1": 1.01,
+        "penduduk": 210633,
+        "garis_kemiskinan": 530583,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Lubuk Linggau",
+        "provinsi": "Sumatera Selatan",
+        "persentase_miskin": 4.9,
+        "p1": 1.73,
+        "penduduk": 250000,
+        "garis_kemiskinan": 520000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Pagar Alam",
+        "provinsi": "Sumatera Selatan",
+        "persentase_miskin": 7.7,
+        "p1": 0.82,
+        "penduduk": 151820,
+        "garis_kemiskinan": 444962,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Palembang",
+        "provinsi": "Sumatera Selatan",
+        "persentase_miskin": 10.2,
+        "p1": 1.4,
+        "penduduk": 1740559,
+        "garis_kemiskinan": 575000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Prabumulih",
+        "provinsi": "Sumatera Selatan",
+        "persentase_miskin": 7.54,
+        "p1": 1.19,
+        "penduduk": 208461,
+        "garis_kemiskinan": 485000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      }
+    ],
+    "Sumatera Utara": [
+      {
+        "kabkota": "Kabupaten Asahan",
+        "provinsi": "Sumatera Utara",
+        "persentase_miskin": 7.18,
+        "p1": 1.1,
+        "penduduk": 835180,
+        "garis_kemiskinan": 469559,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Batu Bara",
+        "provinsi": "Sumatera Utara",
+        "persentase_miskin": 10.1,
+        "p1": 1.13,
+        "penduduk": 450421,
+        "garis_kemiskinan": 613493,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Dairi",
+        "provinsi": "Sumatera Utara",
+        "persentase_miskin": 6.98,
+        "p1": 0.56,
+        "penduduk": 342229,
+        "garis_kemiskinan": 521738,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Deli Serdang",
+        "provinsi": "Sumatera Utara",
+        "persentase_miskin": 3.11,
+        "p1": 0.55,
+        "penduduk": 2106860,
+        "garis_kemiskinan": 525433,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Humbang Hasundutan",
+        "provinsi": "Sumatera Utara",
+        "persentase_miskin": 7.8,
+        "p1": 1.01,
+        "penduduk": 211870,
+        "garis_kemiskinan": 503769,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Karo",
+        "provinsi": "Sumatera Utara",
+        "persentase_miskin": 6.66,
+        "p1": 0.62,
+        "penduduk": 437547,
+        "garis_kemiskinan": 678885,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Labuhan Batu",
+        "provinsi": "Sumatera Utara",
+        "persentase_miskin": 5.7,
+        "p1": 0.66,
+        "penduduk": 250000,
+        "garis_kemiskinan": 520000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Labuhanbatu Selatan",
+        "provinsi": "Sumatera Utara",
+        "persentase_miskin": 7.73,
+        "p1": 1.89,
+        "penduduk": 347767,
+        "garis_kemiskinan": 550141,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Labuhanbatu Utara",
+        "provinsi": "Sumatera Utara",
+        "persentase_miskin": 8.42,
+        "p1": 1.55,
+        "penduduk": 422072,
+        "garis_kemiskinan": 629870,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Langkat",
+        "provinsi": "Sumatera Utara",
+        "persentase_miskin": 8.42,
+        "p1": 1.14,
+        "penduduk": 1100570,
+        "garis_kemiskinan": 528073,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Mandailing Natal",
+        "provinsi": "Sumatera Utara",
+        "persentase_miskin": 7.91,
+        "p1": 0.75,
+        "penduduk": 521528,
+        "garis_kemiskinan": 537240,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Nias",
+        "provinsi": "Sumatera Utara",
+        "persentase_miskin": 14.5,
+        "p1": 1.95,
+        "penduduk": 159325,
+        "garis_kemiskinan": 541016,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Nias Barat",
+        "provinsi": "Sumatera Utara",
+        "persentase_miskin": 22.47,
+        "p1": 2.23,
+        "penduduk": 100960,
+        "garis_kemiskinan": 564416,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Nias Selatan",
+        "provinsi": "Sumatera Utara",
+        "persentase_miskin": 16.16,
+        "p1": 2.23,
+        "penduduk": 404325,
+        "garis_kemiskinan": 428859,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Nias Utara",
+        "provinsi": "Sumatera Utara",
+        "persentase_miskin": 20.79,
+        "p1": 4.0,
+        "penduduk": 164166,
+        "garis_kemiskinan": 551434,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Padang Lawas",
+        "provinsi": "Sumatera Utara",
+        "persentase_miskin": 7.89,
+        "p1": 0.75,
+        "penduduk": 290481,
+        "garis_kemiskinan": 499761,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Padang Lawas Utara",
+        "provinsi": "Sumatera Utara",
+        "persentase_miskin": 8.04,
+        "p1": 0.94,
+        "penduduk": 290671,
+        "garis_kemiskinan": 519411,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Pakpak Bharat",
+        "provinsi": "Sumatera Utara",
+        "persentase_miskin": 6.4,
+        "p1": 0.71,
+        "penduduk": 58261,
+        "garis_kemiskinan": 426571,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Samosir",
+        "provinsi": "Sumatera Utara",
+        "persentase_miskin": 10.79,
+        "p1": 0.84,
+        "penduduk": 146539,
+        "garis_kemiskinan": 473942,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Serdang Bedagai",
+        "provinsi": "Sumatera Utara",
+        "persentase_miskin": 6.18,
+        "p1": 0.62,
+        "penduduk": 708267,
+        "garis_kemiskinan": 535422,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Simalungun",
+        "provinsi": "Sumatera Utara",
+        "persentase_miskin": 6.91,
+        "p1": 1.01,
+        "penduduk": 1082872,
+        "garis_kemiskinan": 513793,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Tapanuli Selatan",
+        "provinsi": "Sumatera Utara",
+        "persentase_miskin": 6.16,
+        "p1": 0.61,
+        "penduduk": 324079,
+        "garis_kemiskinan": 527232,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Tapanuli Tengah",
+        "provinsi": "Sumatera Utara",
+        "persentase_miskin": 11.0,
+        "p1": 1.89,
+        "penduduk": 410849,
+        "garis_kemiskinan": 546223,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Tapanuli Utara",
+        "provinsi": "Sumatera Utara",
+        "persentase_miskin": 7.47,
+        "p1": 0.9,
+        "penduduk": 334715,
+        "garis_kemiskinan": 549677,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kabupaten Toba Samosir",
+        "provinsi": "Sumatera Utara",
+        "persentase_miskin": 8.8,
+        "p1": 0.88,
+        "penduduk": 250000,
+        "garis_kemiskinan": 520000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Binjai",
+        "provinsi": "Sumatera Utara",
+        "persentase_miskin": 4.71,
+        "p1": 0.68,
+        "penduduk": 314552,
+        "garis_kemiskinan": 600451,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Gunung Sitoli",
+        "provinsi": "Sumatera Utara",
+        "persentase_miskin": 8.8,
+        "p1": 1.49,
+        "penduduk": 250000,
+        "garis_kemiskinan": 520000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Medan",
+        "provinsi": "Sumatera Utara",
+        "persentase_miskin": 7.25,
+        "p1": 1.31,
+        "penduduk": 2510147,
+        "garis_kemiskinan": 721547,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Padang Sidempuan",
+        "provinsi": "Sumatera Utara",
+        "persentase_miskin": 5.6,
+        "p1": 0.88,
+        "penduduk": 250000,
+        "garis_kemiskinan": 520000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Pematang Siantar",
+        "provinsi": "Sumatera Utara",
+        "persentase_miskin": 10.0,
+        "p1": 0.43,
+        "penduduk": 250000,
+        "garis_kemiskinan": 520000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Sibolga",
+        "provinsi": "Sumatera Utara",
+        "persentase_miskin": 10.28,
+        "p1": 1.29,
+        "penduduk": 92774,
+        "garis_kemiskinan": 637141,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Tanjung Balai",
+        "provinsi": "Sumatera Utara",
+        "persentase_miskin": 4.5,
+        "p1": 1.61,
+        "penduduk": 250000,
+        "garis_kemiskinan": 520000,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      },
+      {
+        "kabkota": "Kota Tebing Tinggi",
+        "provinsi": "Sumatera Utara",
+        "persentase_miskin": 8.74,
+        "p1": 1.06,
+        "penduduk": 184883,
+        "garis_kemiskinan": 691270,
+        "sumber": "BPS Susenas 2024 / Rilis BPS 2025"
+      }
+    ]
+  }
+}

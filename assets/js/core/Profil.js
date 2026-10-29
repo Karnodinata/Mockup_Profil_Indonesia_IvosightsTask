@@ -442,6 +442,15 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
+        if (currentPaneId === 'tab-ekonomi') {
+            setTimeout(() => {
+                try { renderKemiskinanKuadran(r); } catch (e) {}
+                try { renderPdrbSektor(r); } catch (e) {}
+                try { renderEkosistemUsaha(r); } catch (e) {}
+                try { renderIndustriBesarSedang(r); } catch (e) {}
+            }, 50);
+        }
+
         if (idx === 1) {
             setTimeout(() => {
                 initMap();
@@ -522,6 +531,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Render Fase 2 & Fase 4 Widgets (BKPM Investasi, Bandara, Darurat Bencana, Kondisi Jalan)
     try { renderInvestasiSektor(r); } catch (e) { console.error('renderInvestasiSektor error:', e); }
+    try { renderInvestasiKuadran(r); } catch (e) { console.error('renderInvestasiKuadran error:', e); }
+    try { renderInvestasiRanking(r); } catch (e) { console.error('renderInvestasiRanking error:', e); }
+    try { renderPasarKerja(r); } catch (e) { console.error('renderPasarKerja error:', e); }
     try { renderBandara(r); } catch (e) { console.error('renderBandara error:', e); }
     try { renderDarurat(r); } catch (e) { console.error('renderDarurat error:', e); }
     try { renderJalan(r); } catch (e) { console.error('renderJalan error:', e); }
@@ -1450,6 +1462,11 @@ function renderPenduduk(r) {
    TAB 5: EKONOMI
    ============================================================ */
 function renderEkonomi(r) {
+    try { renderKemiskinanKuadran(r); } catch(e) { console.error('renderKemiskinanKuadran error:', e); }
+    try { renderPdrbSektor(r); } catch(e) { console.error('renderPdrbSektor error:', e); }
+    try { renderEkosistemUsaha(r); } catch(e) { console.error('renderEkosistemUsaha error:', e); }
+    try { renderIndustriBesarSedang(r); } catch(e) { console.error('renderIndustriBesarSedang error:', e); }
+
     const ekoKpis = document.getElementById('ekoKpis');
     if (ekoKpis) {
         ekoKpis.innerHTML = `
@@ -4511,5 +4528,2248 @@ function renderInvestasiSektor(r) {
     }
 
     // Trigger initial render
+    renderView();
+}
+
+
+/* ============================================================
+   FITUR 02: PETA POSISI INVESTASI KABUPATEN/KOTA (KUADRAN BKPM)
+   - Sumbu X: Proporsi PMA (%) (0 - 100%)
+   - Sumbu Y: Total Investasi (Rp) (Dynamic 0 - Max)
+   - Batas Vertikal: 50% PMA
+   - Batas Horizontal: Median Total Investasi Provinsi
+   - 4 Kuadran (I, II, III, IV) dengan warna & interpretasi
+   - Interactive Tooltip, Table Sortable, Zoom & Download
+   ============================================================ */
+function renderInvestasiKuadran(r) {
+    const rawData = window.INVESTASI_SEKTOR_DATA;
+    if (!rawData || !rawData.data_by_region) return;
+
+    const provSelect = document.getElementById('bkpmQuadProvSelect');
+    const svg = document.getElementById('bkpmQuadSvg');
+    const container = document.getElementById('bkpmQuadContainer');
+    const tooltip = document.getElementById('bkpmQuadTooltip');
+    const tableBody = document.getElementById('bkpmQuadTableBody');
+    const tableTitle = document.getElementById('bkpmQuadTableTitle');
+    const btnZoom = document.getElementById('btnQuadZoom');
+    const btnReset = document.getElementById('btnQuadReset');
+    const btnDownload = document.getElementById('btnQuadDownload');
+    const bubbleLabelBesar = document.getElementById('bubbleLabelBesar');
+    const bubbleLabelMenengah = document.getElementById('bubbleLabelMenengah');
+    const bubbleLabelKecil = document.getElementById('bubbleLabelKecil');
+
+    if (!provSelect || !svg) return;
+
+    let currentProv = '';
+    let zoomLevel = 1.0;
+    let tableSortCol = 'total_rp';
+    let tableSortAsc = false;
+    let selectedKab = null;
+
+    // Helpers
+    function formatRupiah(num) {
+        if (num === null || num === undefined || isNaN(num)) return 'Rp0';
+        return 'Rp' + Math.round(num).toLocaleString('id-ID');
+    }
+
+    function formatCompactRp(num) {
+        if (!num || isNaN(num) || num <= 0) return 'Rp0';
+        if (num >= 1e12) {
+            return `Rp${(num / 1e12).toLocaleString('id-ID', { minimumFractionDigits: 1, maximumFractionDigits: 2 })} T`;
+        }
+        if (num >= 1e9) {
+            return `Rp${(num / 1e9).toLocaleString('id-ID', { minimumFractionDigits: 1, maximumFractionDigits: 2 })} M`;
+        }
+        if (num >= 1e6) {
+            return `Rp${(num / 1e6).toLocaleString('id-ID', { minimumFractionDigits: 0, maximumFractionDigits: 1 })} Jt`;
+        }
+        return `Rp${Math.round(num).toLocaleString('id-ID')}`;
+    }
+
+    // Populate Province Select
+    const provList = rawData.provinces || [];
+    let initialProv = provList[0] || 'Jawa Barat';
+    if (r && r.prov) {
+        const found = provList.find(p => p.toLowerCase().trim() === r.prov.toLowerCase().trim() ||
+            p.toLowerCase().includes(r.prov.toLowerCase()) || r.prov.toLowerCase().includes(p.toLowerCase()));
+        if (found) initialProv = found;
+    }
+    currentProv = initialProv;
+    provSelect.innerHTML = provList.map(p => `<option value="${escapeHtml(p)}" ${p === currentProv ? 'selected' : ''}>${escapeHtml(p)}</option>`).join('');
+
+    provSelect.addEventListener('change', () => {
+        currentProv = provSelect.value;
+        zoomLevel = 1.0;
+        selectedKab = null;
+        renderQuadrantView();
+    });
+
+    if (btnZoom) {
+        btnZoom.addEventListener('click', () => {
+            zoomLevel = zoomLevel < 2.2 ? zoomLevel + 0.3 : 1.0;
+            applyZoom();
+        });
+    }
+
+    if (btnReset) {
+        btnReset.addEventListener('click', () => {
+            zoomLevel = 1.0;
+            applyZoom();
+        });
+    }
+
+    function applyZoom() {
+        if (!svg) return;
+        const gPlot = svg.querySelector('#quadPlotArea');
+        if (gPlot) {
+            if (zoomLevel === 1.0) {
+                gPlot.removeAttribute('transform');
+            } else {
+                gPlot.setAttribute('transform', `scale(${zoomLevel}) translate(${(-340 * (zoomLevel - 1)) / zoomLevel}, ${(-200 * (zoomLevel - 1)) / zoomLevel})`);
+            }
+        }
+    }
+
+    if (btnDownload) {
+        btnDownload.addEventListener('click', () => {
+            try {
+                const serializer = new XMLSerializer();
+                const svgStr = serializer.serializeToString(svg);
+                const blob = new Blob([svgStr], { type: 'image/svg+xml;charset=utf-8' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `peta-posisi-investasi-${currentProv.toLowerCase().replace(/[^a-z0-9]/g, '-')}.svg`;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+            } catch (err) {
+                console.error('Download SVG error:', err);
+            }
+        });
+    }
+
+    function renderQuadrantView() {
+        if (tableTitle) {
+            tableTitle.textContent = `Data Realisasi – ${currentProv}`;
+        }
+
+        // Gather all regions in current province
+        const allEntries = Object.values(rawData.data_by_region);
+        const provItems = allEntries.filter(item => item.provinsi && item.provinsi.toLowerCase() === currentProv.toLowerCase());
+
+        const dataset = provItems.map(item => {
+            const pma = item.summary?.total_pma_rp || 0;
+            const pmdn = item.summary?.total_pmdn_rp || 0;
+            const total = pma + pmdn;
+            const proporsi = total > 0 ? (pma / total) * 100 : 0;
+            const shortNama = item.kabupaten.replace(/^(kabupaten|kota adm\.|kota)\s+/i, '').trim();
+
+            return {
+                id: item.id || '',
+                kabupaten: item.kabupaten,
+                shortNama: shortNama,
+                pma_rp: pma,
+                pmdn_rp: pmdn,
+                total_rp: total,
+                proporsi_pma: proporsi
+            };
+        });
+
+        // Calculate Median of positive investment
+        const positiveTotals = dataset.filter(d => d.total_rp > 0).map(d => d.total_rp).sort((a, b) => a - b);
+        let median = 0;
+        if (positiveTotals.length > 0) {
+            const mid = Math.floor(positiveTotals.length / 2);
+            median = positiveTotals.length % 2 !== 0 ? positiveTotals[mid] : (positiveTotals[mid - 1] + positiveTotals[mid]) / 2;
+        }
+
+        const maxTotal = Math.max(...dataset.map(d => d.total_rp), 0);
+
+        // Assign Kuadran and Bubble Size
+        const thresholdHigh = maxTotal * 0.6;
+        const thresholdMid = maxTotal * 0.25;
+
+        if (bubbleLabelBesar) bubbleLabelBesar.textContent = `Total investasi tinggi (≥ ${formatCompactRp(thresholdHigh)})`;
+        if (bubbleLabelMenengah) bubbleLabelMenengah.textContent = `Total investasi sedang (${formatCompactRp(thresholdMid)} – ${formatCompactRp(thresholdHigh)})`;
+        if (bubbleLabelKecil) bubbleLabelKecil.textContent = `Total investasi rendah (< ${formatCompactRp(thresholdMid)})`;
+
+        dataset.forEach(d => {
+            const isHigh = d.total_rp >= median;
+            const isPmaDom = d.proporsi_pma >= 50;
+
+            if (isHigh && isPmaDom) {
+                d.kuadran = 'I';
+                d.kuadranClass = 'q1';
+                d.kuadranLabel = 'I – Investasi Tinggi, PMA Dominan';
+                d.color = '#10b981';
+            } else if (isHigh && !isPmaDom) {
+                d.kuadran = 'II';
+                d.kuadranClass = 'q2';
+                d.kuadranLabel = 'II – Investasi Tinggi, PMDN Dominan';
+                d.color = '#3b82f6';
+            } else if (!isHigh && !isPmaDom) {
+                d.kuadran = 'III';
+                d.kuadranClass = 'q3';
+                d.kuadranLabel = 'III – Investasi Rendah, PMDN Dominan';
+                d.color = '#f59e0b';
+            } else {
+                d.kuadran = 'IV';
+                d.kuadranClass = 'q4';
+                d.kuadranLabel = 'IV – Investasi Rendah, PMA Dominan';
+                d.color = '#8b5cf6';
+            }
+
+            if (d.total_rp >= thresholdHigh) d.radius = 16;
+            else if (d.total_rp >= thresholdMid) d.radius = 12;
+            else d.radius = 8;
+        });
+
+        // Dynamic Y-axis scale
+        let divisor = 1;
+        let unitLabel = '';
+        if (maxTotal >= 1e12) { divisor = 1e12; unitLabel = 'T'; }
+        else if (maxTotal >= 1e9) { divisor = 1e9; unitLabel = 'M'; }
+        else if (maxTotal >= 1e6) { divisor = 1e6; unitLabel = 'Jt'; }
+
+        const maxUnits = maxTotal > 0 ? (maxTotal / divisor) : 10;
+        let niceMax = Math.ceil(maxUnits);
+        if (niceMax <= 5) niceMax = 5;
+        else if (niceMax <= 10) niceMax = 10;
+        else if (niceMax <= 15) niceMax = 15;
+        else if (niceMax <= 20) niceMax = 20;
+        else if (niceMax <= 25) niceMax = 25;
+        else if (niceMax <= 30) niceMax = 30;
+        else if (niceMax <= 50) niceMax = 50;
+        else {
+            const step = Math.pow(10, Math.floor(Math.log10(niceMax)));
+            niceMax = Math.ceil(niceMax / step) * step;
+        }
+
+        // Render SVG Scatter
+        renderSvg(dataset, median, niceMax, divisor, unitLabel);
+
+        // Render Table
+        renderTableRows(dataset);
+    }
+
+    function renderSvg(dataset, median, niceMax, divisor, unitLabel) {
+        const svgW = 680;
+        const svgH = 390;
+        const padT = 36;
+        const padB = 44;
+        const padL = 76;
+        const padR = 30;
+        const plotW = svgW - padL - padR; // 574
+        const plotH = svgH - padT - padB; // 310
+
+        const xMid = padL + 0.5 * plotW; // 363 (50% PMA)
+        const medRatio = niceMax > 0 ? (median / (niceMax * divisor)) : 0.5;
+        const clampedRatio = Math.max(0.08, Math.min(0.92, medRatio));
+        const yMid = padT + (1 - clampedRatio) * plotH;
+
+        let defsHtml = `
+            <defs>
+                <filter id="quadBubbleGlow" x="-30%" y="-30%" width="160%" height="160%">
+                    <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.25"/>
+                </filter>
+            </defs>
+        `;
+
+        // Quadrant Background Rectangles
+        let quadsHtml = `
+            <!-- Kuadran II: Kiri Atas (Biru Muda) -->
+            <rect x="${padL}" y="${padT}" width="${xMid - padL}" height="${yMid - padT}" fill="#eff6ff" opacity="0.6"/>
+            <!-- Kuadran I: Kanan Atas (Hijau Muda) -->
+            <rect x="${xMid}" y="${padT}" width="${svgW - padR - xMid}" height="${yMid - padT}" fill="#f0fdf4" opacity="0.65"/>
+            <!-- Kuadran III: Kiri Bawah (Oranye Muda) -->
+            <rect x="${padL}" y="${yMid}" width="${xMid - padL}" height="${padT + plotH - yMid}" fill="#fff7ed" opacity="0.65"/>
+            <!-- Kuadran IV: Kanan Bawah (Ungu Muda) -->
+            <rect x="${xMid}" y="${yMid}" width="${svgW - padR - xMid}" height="${padT + plotH - yMid}" fill="#faf5ff" opacity="0.65"/>
+
+            <!-- Corner Badge Pills -->
+            <g font-family="var(--sans)" font-size="10.5" font-weight="700">
+                <rect x="${padL + 8}" y="${padT + 8}" width="205" height="20" rx="4" fill="#dbeafe" stroke="#bfdbfe"/>
+                <text x="${padL + 14}" y="${padT + 22}" fill="#1e40af">Kuadran II – Investasi Tinggi, PMDN Dominan</text>
+
+                <rect x="${svgW - padR - 200}" y="${padT + 8}" width="192" height="20" rx="4" fill="#dcfce7" stroke="#bbf7d0"/>
+                <text x="${svgW - padR - 194}" y="${padT + 22}" fill="#15803d">Kuadran I – Investasi Tinggi, PMA Dominan</text>
+
+                <rect x="${padL + 8}" y="${padT + plotH - 26}" width="205" height="20" rx="4" fill="#ffedd5" stroke="#fed7aa"/>
+                <text x="${padL + 14}" y="${padT + plotH - 12}" fill="#c2410c">Kuadran III – Investasi Rendah, PMDN Dominan</text>
+
+                <rect x="${svgW - padR - 198}" y="${padT + plotH - 26}" width="190" height="20" rx="4" fill="#f3e8ff" stroke="#e9d5ff"/>
+                <text x="${svgW - padR - 192}" y="${padT + plotH - 12}" fill="#7e22ce">Kuadran IV – Investasi Rendah, PMA Dominan</text>
+            </g>
+        `;
+
+        // Threshold dashed lines
+        let thresholdHtml = `
+            <!-- Batas Proporsi PMA 50% -->
+            <line x1="${xMid}" y1="${padT}" x2="${xMid}" y2="${padT + plotH}" stroke="#64748b" stroke-width="1.2" stroke-dasharray="4 4"/>
+            <text x="${xMid}" y="${padT - 10}" text-anchor="middle" font-family="var(--sans)" font-size="11" font-weight="700" fill="#334155">
+                Batas Proporsi PMA 50%
+            </text>
+
+            <!-- Batas Median Total Investasi -->
+            <line x1="${padL}" y1="${yMid}" x2="${svgW - padR}" y2="${yMid}" stroke="#64748b" stroke-width="1.2" stroke-dasharray="4 4"/>
+            <text x="${svgW - padR - 8}" y="${yMid - 7}" text-anchor="end" font-family="var(--mono)" font-size="10" font-weight="700" fill="#334155">
+                Batas Median Total Investasi: ${formatCompactRp(median)}
+            </text>
+        `;
+
+        // Grid & Ticks
+        let gridHtml = '';
+        const yTickCount = 5;
+        for (let i = 0; i <= yTickCount; i++) {
+            const tickVal = (niceMax / yTickCount) * i;
+            const yPos = padT + plotH - (i / yTickCount) * plotH;
+            gridHtml += `
+                <line x1="${padL}" y1="${yPos}" x2="${svgW - padR}" y2="${yPos}" stroke="var(--line-soft)" stroke-dasharray="2 3"/>
+                <text x="${padL - 10}" y="${yPos + 3.5}" text-anchor="end" font-family="var(--mono)" font-size="10" font-weight="600" fill="var(--muted)">
+                    Rp${tickVal % 1 === 0 ? tickVal : tickVal.toFixed(1)}${unitLabel ? ' ' + unitLabel : ''}
+                </text>
+            `;
+        }
+
+        const xTicks = [0, 20, 40, 60, 80, 100];
+        xTicks.forEach(pct => {
+            const xPos = padL + (pct / 100) * plotW;
+            gridHtml += `
+                <line x1="${xPos}" y1="${padT}" x2="${xPos}" y2="${padT + plotH}" stroke="var(--line-soft)" stroke-dasharray="2 3"/>
+                <text x="${xPos}" y="${padT + plotH + 16}" text-anchor="middle" font-family="var(--mono)" font-size="10" font-weight="600" fill="var(--muted)">
+                    ${pct}%
+                </text>
+            `;
+        });
+
+        // Axis Titles
+        gridHtml += `
+            <text x="${padL + plotW / 2}" y="${padT + plotH + 34}" text-anchor="middle" font-family="var(--sans)" font-size="11.5" font-weight="700" fill="var(--text)">
+                Proporsi PMA (%)
+            </text>
+            <text transform="translate(18, ${padT + plotH / 2}) rotate(-90)" text-anchor="middle" font-family="var(--sans)" font-size="11.5" font-weight="700" fill="var(--text)">
+                Total Investasi (Rp)
+            </text>
+        `;
+
+        // Bubbles / Points
+        let pointsHtml = '<g id="quadPlotArea">';
+        dataset.forEach((d, idx) => {
+            const cx = padL + (Math.min(100, Math.max(0, d.proporsi_pma)) / 100) * plotW;
+            const ratioY = niceMax > 0 ? Math.min(1, Math.max(0, d.total_rp / (niceMax * divisor))) : 0;
+            const cy = padT + plotH - ratioY * plotH;
+            const isSelected = selectedKab && selectedKab.kabupaten === d.kabupaten;
+
+            pointsHtml += `
+                <g class="bkpm-bubble-item" data-idx="${idx}" style="cursor:pointer">
+                    <circle cx="${cx}" cy="${cy}" r="${d.radius}" fill="${d.color}" fill-opacity="${isSelected ? '0.95' : '0.75'}" stroke="#ffffff" stroke-width="${isSelected ? '3' : '1.8'}" filter="url(#quadBubbleGlow)"/>
+                    <text x="${cx + d.radius + 4}" y="${cy + 4}" font-family="var(--sans)" font-size="10.5" font-weight="700" fill="var(--text)" style="pointer-events:none;text-shadow:0 1px 3px #ffffff">
+                        ${escapeHtml(d.shortNama)}
+                    </text>
+                </g>
+            `;
+        });
+        pointsHtml += '</g>';
+
+        svg.innerHTML = defsHtml + quadsHtml + thresholdHtml + gridHtml + pointsHtml;
+
+        // Interaction on bubbles
+        svg.querySelectorAll('.bkpm-bubble-item').forEach(el => {
+            const idx = parseInt(el.dataset.idx, 10);
+            const item = dataset[idx];
+            if (!item) return;
+
+            el.addEventListener('mouseenter', e => {
+                const circle = el.querySelector('circle');
+                if (circle) {
+                    circle.setAttribute('fill-opacity', '1');
+                    circle.setAttribute('stroke-width', '3');
+                }
+
+                if (tooltip) {
+                    tooltip.innerHTML = `
+                        <div class="tt-title">${escapeHtml(item.kabupaten)}</div>
+                        <div class="tt-row"><span class="tt-k">PMA</span><span class="tt-v mono">${formatRupiah(item.pma_rp)}</span></div>
+                        <div class="tt-row"><span class="tt-k">PMDN</span><span class="tt-v mono">${formatRupiah(item.pmdn_rp)}</span></div>
+                        <div class="tt-row"><span class="tt-k">Total Investasi</span><span class="tt-v mono" style="color:#2563eb">${formatRupiah(item.total_rp)}</span></div>
+                        <div class="tt-row"><span class="tt-k">Proporsi PMA</span><span class="tt-v mono">${item.proporsi_pma.toFixed(1)}%</span></div>
+                        <div style="margin-top:5px;padding-top:4px;border-top:1px dashed var(--line);font-size:10.5px">
+                            <span class="kuadran-pill ${item.kuadranClass}">Kuadran ${item.kuadran}</span>
+                        </div>
+                    `;
+                    tooltip.style.display = 'block';
+                    positionTooltip(e);
+                }
+            });
+
+            el.addEventListener('mousemove', e => {
+                positionTooltip(e);
+            });
+
+            el.addEventListener('mouseleave', () => {
+                const circle = el.querySelector('circle');
+                const isSelected = selectedKab && selectedKab.kabupaten === item.kabupaten;
+                if (circle && !isSelected) {
+                    circle.setAttribute('fill-opacity', '0.75');
+                    circle.setAttribute('stroke-width', '1.8');
+                }
+                if (tooltip) tooltip.style.display = 'none';
+            });
+
+            el.addEventListener('click', () => {
+                selectedKab = item;
+                renderQuadrantView();
+                if (tableBody) {
+                    const tr = tableBody.querySelector(`tr[data-kab="${CSS.escape(item.kabupaten)}"]`);
+                    if (tr) {
+                        tableBody.querySelectorAll('tr').forEach(r => r.classList.remove('active'));
+                        tr.classList.add('active');
+                        tr.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                    }
+                }
+            });
+        });
+    }
+
+    function positionTooltip(e) {
+        if (!tooltip || !container) return;
+        const rect = container.getBoundingClientRect();
+        let left = e.clientX - rect.left + 14;
+        let top = e.clientY - rect.top - 20;
+
+        if (left + 250 > rect.width) {
+            left = e.clientX - rect.left - 250 - 10;
+        }
+        tooltip.style.left = `${Math.max(8, left)}px`;
+        tooltip.style.top = `${Math.max(8, top)}px`;
+    }
+
+    function renderTableRows(dataset) {
+        if (!tableBody) return;
+
+        const sorted = [...dataset].sort((a, b) => {
+            let valA = a[tableSortCol];
+            let valB = b[tableSortCol];
+            if (typeof valA === 'string') {
+                return tableSortAsc ? valA.localeCompare(valB, 'id') : valB.localeCompare(valA, 'id');
+            }
+            return tableSortAsc ? valA - valB : valB - valA;
+        });
+
+        tableBody.innerHTML = sorted.map(item => {
+            const isSelected = selectedKab && selectedKab.kabupaten === item.kabupaten;
+            return `
+                <tr class="${isSelected ? 'active' : ''}" data-kab="${escapeHtml(item.kabupaten)}">
+                    <td><b>${escapeHtml(item.kabupaten)}</b></td>
+                    <td style="text-align:right" class="mono">${formatCompactRp(item.pma_rp)}</td>
+                    <td style="text-align:right" class="mono">${formatCompactRp(item.pmdn_rp)}</td>
+                    <td style="text-align:right;font-weight:700;color:#2563eb" class="mono">${formatCompactRp(item.total_rp)}</td>
+                    <td style="text-align:right" class="mono">${item.proporsi_pma.toFixed(1)}%</td>
+                    <td style="text-align:center">
+                        <span class="kuadran-pill ${item.kuadranClass}">Kuadran ${item.kuadran}</span>
+                    </td>
+                </tr>
+            `;
+        }).join('');
+
+        tableBody.querySelectorAll('tr').forEach(tr => {
+            tr.addEventListener('click', () => {
+                const kab = tr.dataset.kab;
+                const found = dataset.find(d => d.kabupaten === kab);
+                if (found) {
+                    selectedKab = found;
+                    renderQuadrantView();
+                }
+            });
+        });
+    }
+
+    // Attach table sorting listeners
+    const thEls = document.querySelectorAll('#bkpmQuadTable thead th[data-sort]');
+    thEls.forEach(th => {
+        th.addEventListener('click', () => {
+            const col = th.dataset.sort;
+            if (col === 'kabupaten') tableSortCol = 'kabupaten';
+            else if (col === 'pma') tableSortCol = 'pma_rp';
+            else if (col === 'pmdn') tableSortCol = 'pmdn_rp';
+            else if (col === 'total') tableSortCol = 'total_rp';
+            else if (col === 'proporsi') tableSortCol = 'proporsi_pma';
+            else if (col === 'kuadran') tableSortCol = 'kuadran';
+
+            tableSortAsc = !tableSortAsc;
+            renderQuadrantView();
+        });
+    });
+
+    renderQuadrantView();
+}
+
+/* ============================================================
+   FITUR 03: PERINGKAT KABUPATEN/KOTA BERDASARKAN INVESTASI
+   - Ranking list dengan progress bar
+   - Filter Jenis: Semua, PMA, PMDN
+   - Search input filter nama wilayah
+   - Top 1, 2, 3 Badges (Gold, Silver, Bronze)
+   - 3 Summary Dossier Cards di kanan
+   ============================================================ */
+function renderInvestasiRanking(r) {
+    const rawData = window.INVESTASI_SEKTOR_DATA;
+    if (!rawData || !rawData.data_by_region) return;
+
+    const provSelect = document.getElementById('bkpmRankProvSelect');
+    const btnSemua = document.getElementById('btnRankSemua');
+    const btnPma = document.getElementById('btnRankPma');
+    const btnPmdn = document.getElementById('btnRankPmdn');
+    const searchInput = document.getElementById('bkpmRankSearchInput');
+    const listContainer = document.getElementById('bkpmRankingListContainer');
+
+    // Sidebar card elements
+    const topWilayahEl = document.getElementById('bkpmRankTopWilayah');
+    const topNilaiEl = document.getElementById('bkpmRankTopNilai');
+    const totalWilayahEl = document.getElementById('bkpmRankTotalWilayah');
+    const activeProvEl = document.getElementById('bkpmRankActiveProv');
+    const activeTypeEl = document.getElementById('bkpmRankActiveType');
+    const detailTitleEl = document.getElementById('bkpmRankDetailTitle');
+    const detailSubEl = document.getElementById('bkpmRankDetailSub');
+    const detailPmaEl = document.getElementById('bkpmRankDetailPma');
+    const detailPmdnEl = document.getElementById('bkpmRankDetailPmdn');
+    const detailTotalEl = document.getElementById('bkpmRankDetailTotal');
+
+    if (!provSelect || !listContainer) return;
+
+    let currentProv = '';
+    let activeType = 'Semua'; // 'Semua' | 'PMA' | 'PMDN'
+    let searchQuery = '';
+    let selectedItem = null;
+
+    function formatRupiah(num) {
+        if (num === null || num === undefined || isNaN(num)) return 'Rp0';
+        return 'Rp' + Math.round(num).toLocaleString('id-ID');
+    }
+
+    function formatCompactRp(num) {
+        if (!num || isNaN(num) || num <= 0) return 'Rp0';
+        if (num >= 1e12) {
+            return `Rp${(num / 1e12).toLocaleString('id-ID', { minimumFractionDigits: 1, maximumFractionDigits: 2 })} T`;
+        }
+        if (num >= 1e9) {
+            return `Rp${(num / 1e9).toLocaleString('id-ID', { minimumFractionDigits: 1, maximumFractionDigits: 2 })} M`;
+        }
+        if (num >= 1e6) {
+            return `Rp${(num / 1e6).toLocaleString('id-ID', { minimumFractionDigits: 0, maximumFractionDigits: 1 })} Jt`;
+        }
+        return `Rp${Math.round(num).toLocaleString('id-ID')}`;
+    }
+
+    // Populate Province Select
+    const provList = rawData.provinces || [];
+    let initialProv = provList[0] || 'Jawa Barat';
+    if (r && r.prov) {
+        const found = provList.find(p => p.toLowerCase().trim() === r.prov.toLowerCase().trim() ||
+            p.toLowerCase().includes(r.prov.toLowerCase()) || r.prov.toLowerCase().includes(p.toLowerCase()));
+        if (found) initialProv = found;
+    }
+    currentProv = initialProv;
+    provSelect.innerHTML = provList.map(p => `<option value="${escapeHtml(p)}" ${p === currentProv ? 'selected' : ''}>${escapeHtml(p)}</option>`).join('');
+
+    provSelect.addEventListener('change', () => {
+        currentProv = provSelect.value;
+        selectedItem = null;
+        renderRankingView();
+    });
+
+    const filterBtns = [btnSemua, btnPma, btnPmdn].filter(Boolean);
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            activeType = btn.dataset.type || 'Semua';
+            renderRankingView();
+        });
+    });
+
+    if (searchInput) {
+        searchInput.addEventListener('input', e => {
+            searchQuery = (e.target.value || '').toLowerCase().trim();
+            renderRankingListOnly();
+        });
+    }
+
+    let currentDataset = [];
+
+    function renderRankingView() {
+        if (activeProvEl) activeProvEl.textContent = currentProv;
+        if (activeTypeEl) {
+            activeTypeEl.textContent = activeType;
+            activeTypeEl.style.color = activeType === 'PMA' ? '#0d9488' : activeType === 'PMDN' ? '#d97706' : '#2563eb';
+        }
+
+        const allEntries = Object.values(rawData.data_by_region);
+        const provItems = allEntries.filter(item => item.provinsi && item.provinsi.toLowerCase() === currentProv.toLowerCase());
+
+        currentDataset = provItems.map(item => {
+            const pma = item.summary?.total_pma_rp || 0;
+            const pmdn = item.summary?.total_pmdn_rp || 0;
+            const total = pma + pmdn;
+
+            let metricVal = total;
+            if (activeType === 'PMA') metricVal = pma;
+            else if (activeType === 'PMDN') metricVal = pmdn;
+
+            const shortNama = item.kabupaten.replace(/^(kabupaten|kota adm\.|kota)\s+/i, '').trim();
+
+            return {
+                kabupaten: item.kabupaten,
+                shortNama: shortNama,
+                pma_rp: pma,
+                pmdn_rp: pmdn,
+                total_rp: total,
+                metricVal: metricVal
+            };
+        });
+
+        // Sort descending by metricVal
+        currentDataset.sort((a, b) => b.metricVal - a.metricVal);
+
+        // Assign standard ranking (equal values get equal rank)
+        let curRank = 1;
+        currentDataset.forEach((d, idx) => {
+            if (idx > 0 && d.metricVal < currentDataset[idx - 1].metricVal) {
+                curRank = idx + 1;
+            }
+            d.rank = curRank;
+        });
+
+        // Update Ringkasan Card
+        const topOne = currentDataset[0] || { shortNama: '–', metricVal: 0 };
+        if (topWilayahEl) topWilayahEl.textContent = topOne.shortNama;
+        if (topNilaiEl) topNilaiEl.textContent = formatCompactRp(topOne.metricVal);
+        if (totalWilayahEl) totalWilayahEl.textContent = String(currentDataset.length);
+
+        // Preselect Rank 1 or preserve selected
+        if (!selectedItem || !currentDataset.some(d => d.kabupaten === selectedItem.kabupaten)) {
+            selectedItem = currentDataset[0] || null;
+        }
+        updateDetailCard(selectedItem);
+
+        renderRankingListOnly();
+    }
+
+    function updateDetailCard(item) {
+        if (!item) {
+            if (detailTitleEl) detailTitleEl.textContent = 'Pilih Wilayah';
+            if (detailSubEl) detailSubEl.textContent = 'Kabupaten / Kota';
+            if (detailPmaEl) detailPmaEl.textContent = 'Rp0';
+            if (detailPmdnEl) detailPmdnEl.textContent = 'Rp0';
+            if (detailTotalEl) detailTotalEl.textContent = 'Rp0';
+            return;
+        }
+        if (detailTitleEl) detailTitleEl.textContent = item.shortNama;
+        if (detailSubEl) detailSubEl.textContent = item.kabupaten;
+        if (detailPmaEl) detailPmaEl.textContent = formatCompactRp(item.pma_rp);
+        if (detailPmdnEl) detailPmdnEl.textContent = formatCompactRp(item.pmdn_rp);
+        if (detailTotalEl) detailTotalEl.textContent = formatCompactRp(item.total_rp);
+    }
+
+    function renderRankingListOnly() {
+        if (!listContainer) return;
+
+        let filtered = currentDataset;
+        if (searchQuery) {
+            filtered = currentDataset.filter(d => d.kabupaten.toLowerCase().includes(searchQuery) || d.shortNama.toLowerCase().includes(searchQuery));
+        }
+
+        if (filtered.length === 0) {
+            listContainer.innerHTML = `<div style="text-align:center;padding:24px;color:var(--muted);font-size:12px">Tidak ditemukan kabupaten/kota yang sesuai dengan pencarian "${escapeHtml(searchQuery)}".</div>`;
+            return;
+        }
+
+        const maxVal = Math.max(...currentDataset.map(d => d.metricVal), 1);
+
+        listContainer.innerHTML = filtered.map(item => {
+            const isSelected = selectedItem && selectedItem.kabupaten === item.kabupaten;
+            const isRank1 = item.rank === 1;
+            let rankClass = 'top-n';
+            if (item.rank === 1) rankClass = 'top-1';
+            else if (item.rank === 2) rankClass = 'top-2';
+            else if (item.rank === 3) rankClass = 'top-3';
+
+            const pctWidth = Math.max(3, (item.metricVal / maxVal) * 100);
+
+            return `
+                <div class="bkpm-rank-row ${isRank1 ? 'rank-1-row' : ''} ${isSelected ? 'active' : ''}" data-kab="${escapeHtml(item.kabupaten)}">
+                    <div>
+                        <div class="bkpm-rank-badge ${rankClass}">${item.rank}</div>
+                    </div>
+                    <div class="bkpm-rank-name" title="${escapeHtml(item.kabupaten)}">
+                        ${escapeHtml(item.shortNama)}
+                    </div>
+                    <div class="bkpm-rank-bar-wrap">
+                        <div class="bkpm-rank-bar-track">
+                            <div class="bkpm-rank-bar-fill" style="width:${pctWidth}%"></div>
+                        </div>
+                        <div class="bkpm-rank-val-text">${formatCompactRp(item.metricVal)}</div>
+                    </div>
+                    <div style="text-align:center">
+                        <button type="button" class="bkpm-btn-lihat">Lihat &gt;</button>
+                    </div>
+                </div>
+            `;
+        }).join('');
+
+        listContainer.querySelectorAll('.bkpm-rank-row').forEach(row => {
+            row.addEventListener('click', () => {
+                const kab = row.dataset.kab;
+                const found = currentDataset.find(d => d.kabupaten === kab);
+                if (found) {
+                    selectedItem = found;
+                    updateDetailCard(found);
+                    listContainer.querySelectorAll('.bkpm-rank-row').forEach(r => r.classList.remove('active'));
+                    row.classList.add('active');
+                }
+            });
+        });
+    }
+
+    renderRankingView();
+}
+
+
+/* ============================================================
+   04 PETA POSISI PASAR TENAGA KERJA KABUPATEN/KOTA DALAM PROVINSI
+   - 4-Quadrant Scatter Plot UMK vs TPT
+   - Sumbu X: Nilai UMK / upah minimum (Juta Rp), dynamic range
+   - Sumbu Y: TPT (%), batas bawah 0%, dynamic top range
+   - Thresholds: Garis Vertikal (Median UMK) & Garis Horizontal (Median TPT)
+   - 4 Kuadran:
+     * Kuadran I: UMK Tinggi, TPT Tinggi (Kanan Atas)
+     * Kuadran II: UMK Rendah, TPT Tinggi (Kiri Atas)
+     * Kuadran III: UMK Rendah, TPT Rendah (Kiri Bawah)
+     * Kuadran IV: UMK Tinggi, TPT Rendah (Kanan Bawah)
+   - Ukuran Bubble: Proporsional dengan Angkatan Kerja (min 8px, max 24px)
+   - Interactive Speech-Bubble Tooltip
+   - 3 Sidebar Cards: Ringkasan Provinsi, Interpretasi Kuadran, Keterangan Ukuran
+   - Interactive Sortable & Searchable Table
+   - Zoom, Reset & Download
+   ============================================================ */
+function renderPasarKerja(r) {
+    const rawData = window.PASAR_KERJA_DATA;
+    if (!rawData || !rawData.data_by_prov) return;
+
+    const provSelect = document.getElementById('bkpmNakerProvSelect');
+    const svg = document.getElementById('bkpmNakerSvg');
+    const container = document.getElementById('bkpmNakerContainer');
+    const tooltip = document.getElementById('bkpmNakerTooltip');
+    const tableBody = document.getElementById('bkpmNakerTableBody');
+    const tableTitle = document.getElementById('bkpmNakerTableTitle');
+    const searchInput = document.getElementById('bkpmNakerSearchInput');
+    const btnZoom = document.getElementById('btnNakerZoom');
+    const btnReset = document.getElementById('btnNakerReset');
+    const btnDownload = document.getElementById('btnNakerDownload');
+
+    const nakerMedianUmk = document.getElementById('nakerMedianUmk');
+    const nakerMedianTpt = document.getElementById('nakerMedianTpt');
+    const nakerTotalWilayah = document.getElementById('nakerTotalWilayah');
+    const nakerBubbleBesar = document.getElementById('nakerBubbleBesar');
+    const nakerBubbleMenengah = document.getElementById('nakerBubbleMenengah');
+    const nakerBubbleKecil = document.getElementById('nakerBubbleKecil');
+
+    if (!provSelect || !svg) return;
+
+    let currentProv = '';
+    let zoomLevel = 1.0;
+    let tableSortCol = 'umk';
+    let tableSortAsc = false;
+    let selectedKabId = null;
+    let searchQuery = '';
+    let currentDataset = [];
+
+    // Formatting Helpers
+    function formatRupiah(num) {
+        if (num === null || num === undefined || isNaN(num)) return 'Rp0';
+        return 'Rp' + Math.round(num).toLocaleString('id-ID');
+    }
+
+    function formatCompactRp(num) {
+        if (!num || isNaN(num) || num <= 0) return 'Rp0';
+        if (num >= 1e12) {
+            return `Rp${(num / 1e12).toLocaleString('id-ID', { minimumFractionDigits: 1, maximumFractionDigits: 2 })} T`;
+        }
+        if (num >= 1e9) {
+            return `Rp${(num / 1e9).toLocaleString('id-ID', { minimumFractionDigits: 1, maximumFractionDigits: 2 })} M`;
+        }
+        if (num >= 1e6) {
+            return `Rp${(num / 1e6).toLocaleString('id-ID', { minimumFractionDigits: 1, maximumFractionDigits: 2 })} Jt`;
+        }
+        return `Rp${Math.round(num).toLocaleString('id-ID')}`;
+    }
+
+    function formatNumber(num) {
+        if (num === null || num === undefined || isNaN(num)) return '0';
+        return Math.round(num).toLocaleString('id-ID');
+    }
+
+    // Populate Province Select
+    const provList = rawData.provinces || [];
+    let initialProv = provList[0] || 'Jawa Barat';
+    if (r && r.prov) {
+        const found = provList.find(p => p.toLowerCase().trim() === r.prov.toLowerCase().trim() ||
+            p.toLowerCase().includes(r.prov.toLowerCase()) || r.prov.toLowerCase().includes(p.toLowerCase()));
+        if (found) initialProv = found;
+    }
+    currentProv = initialProv;
+    provSelect.innerHTML = provList.map(p => `<option value="${escapeHtml(p)}" ${p === currentProv ? 'selected' : ''}>${escapeHtml(p)}</option>`).join('');
+
+    provSelect.addEventListener('change', () => {
+        currentProv = provSelect.value;
+        zoomLevel = 1.0;
+        selectedKabId = null;
+        if (searchInput) searchInput.value = '';
+        searchQuery = '';
+        renderNakerView();
+    });
+
+    if (btnZoom) {
+        btnZoom.addEventListener('click', () => {
+            zoomLevel = zoomLevel === 1.0 ? 1.35 : (zoomLevel === 1.35 ? 1.7 : 1.0);
+            applyZoom();
+            if (btnZoom.querySelector('span')) {
+                btnZoom.querySelector('span').textContent = zoomLevel > 1.0 ? `Zoom ${zoomLevel}x` : 'Zoom';
+            }
+        });
+    }
+
+    if (btnReset) {
+        btnReset.addEventListener('click', () => {
+            zoomLevel = 1.0;
+            selectedKabId = null;
+            if (searchInput) searchInput.value = '';
+            searchQuery = '';
+            if (btnZoom && btnZoom.querySelector('span')) {
+                btnZoom.querySelector('span').textContent = 'Zoom';
+            }
+            applyZoom();
+            renderNakerView();
+        });
+    }
+
+    function applyZoom() {
+        if (!svg) return;
+        const gPlot = svg.querySelector('#nakerPlotArea');
+        if (gPlot) {
+            if (zoomLevel === 1.0) {
+                gPlot.removeAttribute('transform');
+            } else {
+                gPlot.setAttribute('transform', `scale(${zoomLevel}) translate(${(-340 * (zoomLevel - 1)) / zoomLevel}, ${(-200 * (zoomLevel - 1)) / zoomLevel})`);
+            }
+        }
+    }
+
+    if (btnDownload) {
+        btnDownload.addEventListener('click', () => {
+            try {
+                // Export SVG
+                const serializer = new XMLSerializer();
+                const svgStr = serializer.serializeToString(svg);
+                const blob = new Blob([svgStr], { type: 'image/svg+xml;charset=utf-8' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `peta-pasar-kerja-${currentProv.toLowerCase().replace(/[^a-z0-9]/g, '-')}.svg`;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+            } catch (err) {
+                console.error('Download SVG error:', err);
+            }
+        });
+    }
+
+    if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+            searchQuery = e.target.value.toLowerCase().trim();
+            renderTableRows(currentDataset);
+            highlightSearchOnSvg();
+        });
+    }
+
+    function positionTooltip(e) {
+        if (!tooltip || !container) return;
+        const rect = container.getBoundingClientRect();
+        let left = e.clientX - rect.left + 14;
+        let top = e.clientY - rect.top - 20;
+
+        if (left + 260 > rect.width) {
+            left = e.clientX - rect.left - 260 - 10;
+        }
+        tooltip.style.left = `${Math.max(8, left)}px`;
+        tooltip.style.top = `${Math.max(8, top)}px`;
+    }
+
+    function highlightSearchOnSvg() {
+        if (!svg) return;
+        svg.querySelectorAll('.naker-bubble').forEach(b => {
+            const kab = (b.dataset.kab || '').toLowerCase();
+            if (searchQuery && !kab.includes(searchQuery)) {
+                b.style.opacity = '0.2';
+            } else {
+                b.style.opacity = '1.0';
+            }
+        });
+    }
+
+    function renderTableRows(dataset) {
+        if (!tableBody) return;
+
+        let filtered = [...dataset];
+        if (searchQuery) {
+            filtered = filtered.filter(item => item.kabkota.toLowerCase().includes(searchQuery));
+        }
+
+        const sorted = filtered.sort((a, b) => {
+            let valA = a[tableSortCol];
+            let valB = b[tableSortCol];
+            if (typeof valA === 'string') {
+                return tableSortAsc ? valA.localeCompare(valB, 'id') : valB.localeCompare(valA, 'id');
+            }
+            return tableSortAsc ? valA - valB : valB - valA;
+        });
+
+        if (sorted.length === 0) {
+            tableBody.innerHTML = `<tr><td colspan="6" style="text-align:center;padding:24px;color:#94a3b8">Tidak ada data kabupaten/kota yang sesuai filter.</td></tr>`;
+            return;
+        }
+
+        tableBody.innerHTML = sorted.map(item => `
+            <tr data-id="${item.id}" data-kab="${escapeHtml(item.kabkota)}" class="${selectedKabId === item.id ? 'selected-row' : ''}" style="cursor:pointer">
+                <td style="font-weight:600;color:var(--text)">${escapeHtml(item.kabkota)}</td>
+                <td style="text-align:right" class="mono">${formatRupiah(item.umk)}</td>
+                <td style="text-align:center">
+                    <span class="chip-badge" style="background:${item.jenis_upah === 'UMK' ? '#dbeafe' : '#fef3c7'};color:${item.jenis_upah === 'UMK' ? '#1d4ed8' : '#b45309'};padding:2px 7px;border-radius:4px;font-size:11px;font-weight:700">${escapeHtml(item.jenis_upah)}</span>
+                </td>
+                <td style="text-align:right" class="mono">${item.tpt.toLocaleString('id-ID', { minimumFractionDigits: 1, maximumFractionDigits: 2 })}%</td>
+                <td style="text-align:right" class="mono">${formatNumber(item.angkatan_kerja)}</td>
+                <td style="text-align:center">
+                    <span class="bkpm-quad-badge ${item.kuadranClass}">${escapeHtml(item.kuadran)}</span>
+                </td>
+            </tr>
+        `).join('');
+
+        tableBody.querySelectorAll('tr').forEach(row => {
+            row.addEventListener('click', () => {
+                const id = row.dataset.id;
+                selectedKabId = selectedKabId === id ? null : id;
+                tableBody.querySelectorAll('tr').forEach(r => r.classList.remove('selected-row'));
+                if (selectedKabId) row.classList.add('selected-row');
+
+                // Trigger SVG circle highlight
+                svg.querySelectorAll('.naker-bubble').forEach(b => {
+                    if (!selectedKabId || b.dataset.id === selectedKabId) {
+                        b.setAttribute('stroke', '#ffffff');
+                        b.setAttribute('stroke-width', b.dataset.id === selectedKabId ? '3.5' : '2');
+                        b.style.opacity = '1.0';
+                        if (b.dataset.id === selectedKabId) {
+                            const foundItem = dataset.find(d => d.id === selectedKabId);
+                            if (foundItem) {
+                                const cx = parseFloat(b.getAttribute('cx'));
+                                const cy = parseFloat(b.getAttribute('cy'));
+                                showBubbleTooltip(foundItem, { clientX: container.getBoundingClientRect().left + cx, clientY: container.getBoundingClientRect().top + cy });
+                            }
+                        }
+                    } else {
+                        b.style.opacity = '0.3';
+                    }
+                });
+            });
+        });
+    }
+
+    function showBubbleTooltip(item, e) {
+        if (!tooltip) return;
+        tooltip.innerHTML = `
+            <div class="tt-title">${escapeHtml(item.kabkota)}</div>
+            <div class="tt-row"><span class="tt-k">Upah Minimum</span><span class="tt-v mono" style="color:#2563eb">${formatRupiah(item.umk)} <small style="font-weight:600;color:#64748b">(${item.jenis_upah})</small></span></div>
+            <div class="tt-row"><span class="tt-k">TPT</span><span class="tt-v mono">${item.tpt.toLocaleString('id-ID', { minimumFractionDigits: 1, maximumFractionDigits: 2 })}%</span></div>
+            <div class="tt-row"><span class="tt-k">Angkatan Kerja</span><span class="tt-v mono">${formatNumber(item.angkatan_kerja)} orang</span></div>
+            <div class="tt-row"><span class="tt-k">Kuadran</span><span class="bkpm-quad-badge ${item.kuadranClass}">${escapeHtml(item.kuadranName)}</span></div>
+        `;
+        tooltip.style.display = 'block';
+        positionTooltip(e);
+    }
+
+    // Attach table sort handlers
+    const ths = document.querySelectorAll('#bkpmNakerTable th[data-sort]');
+    ths.forEach(th => {
+        th.addEventListener('click', () => {
+            const sortKey = th.dataset.sort;
+            if (tableSortCol === sortKey) {
+                tableSortAsc = !tableSortAsc;
+            } else {
+                tableSortCol = sortKey;
+                tableSortAsc = (sortKey === 'kabupaten' || sortKey === 'jenis');
+            }
+            ths.forEach(t => {
+                const baseText = t.textContent.replace(/[↕↑↓]/g, '').trim();
+                t.textContent = baseText + ' ↕';
+            });
+            const arrow = tableSortAsc ? ' ↑' : ' ↓';
+            th.textContent = th.textContent.replace(' ↕', '') + arrow;
+            renderTableRows(currentDataset);
+        });
+    });
+
+    function renderNakerView() {
+        const rawProvItems = rawData.data_by_prov[currentProv] || [];
+        const items = rawProvItems.filter(i => i.umk > 0 && i.tpt > 0);
+
+        if (tableTitle) {
+            tableTitle.textContent = `Data Pasar Tenaga Kerja – ${currentProv}`;
+        }
+
+        if (items.length === 0) {
+            svg.innerHTML = `
+                <text x="340" y="200" text-anchor="middle" fill="#94a3b8" font-size="14" font-family="var(--font)">
+                    Data tenaga kerja untuk ${escapeHtml(currentProv)} belum tersedia.
+                </text>
+            `;
+            if (tableBody) tableBody.innerHTML = `<tr><td colspan="6" style="text-align:center;padding:20px;color:#94a3b8">Data tidak tersedia</td></tr>`;
+            if (nakerMedianUmk) nakerMedianUmk.textContent = 'Rp0';
+            if (nakerMedianTpt) nakerMedianTpt.textContent = '0,00%';
+            if (nakerTotalWilayah) nakerTotalWilayah.textContent = '0 Kab/Kota';
+            return;
+        }
+
+        // 1. Calculate Provincial Medians
+        const sortedUmk = [...items.map(i => i.umk)].sort((a, b) => a - b);
+        const midU = Math.floor(sortedUmk.length / 2);
+        const medianUmk = sortedUmk.length % 2 !== 0 ? sortedUmk[midU] : (sortedUmk[midU - 1] + sortedUmk[midU]) / 2;
+
+        const sortedTpt = [...items.map(i => i.tpt)].sort((a, b) => a - b);
+        const midT = Math.floor(sortedTpt.length / 2);
+        const medianTpt = sortedTpt.length % 2 !== 0 ? sortedTpt[midT] : (sortedTpt[midT - 1] + sortedTpt[midT]) / 2;
+
+        const allSameUmk = items.every(i => Math.abs(i.umk - items[0].umk) < 1);
+
+        // 2. Classify Quadrant for each item
+        items.forEach(item => {
+            if (allSameUmk) {
+                if (item.tpt > medianTpt) {
+                    item.kuadran = 'TPT Tinggi';
+                    item.kuadranName = 'TPT Tinggi (Upah Seragam UMP)';
+                    item.kuadranClass = 'q2';
+                    item.color = '#3b82f6';
+                } else if (item.tpt < medianTpt) {
+                    item.kuadran = 'TPT Rendah';
+                    item.kuadranName = 'TPT Rendah (Upah Seragam UMP)';
+                    item.kuadranClass = 'q3';
+                    item.color = '#f97316';
+                } else {
+                    item.kuadran = 'Batas Median';
+                    item.kuadranName = 'Seimbang pada Median TPT';
+                    item.kuadranClass = 'q-neutral';
+                    item.color = '#64748b';
+                }
+            } else if (item.umk > medianUmk && item.tpt > medianTpt) {
+                item.kuadran = 'Kuadran I';
+                item.kuadranName = 'I – UMK Tinggi, TPT Tinggi';
+                item.kuadranClass = 'q1';
+                item.color = '#10b981';
+            } else if (item.umk < medianUmk && item.tpt > medianTpt) {
+                item.kuadran = 'Kuadran II';
+                item.kuadranName = 'II – UMK Rendah, TPT Tinggi';
+                item.kuadranClass = 'q2';
+                item.color = '#3b82f6';
+            } else if (item.umk < medianUmk && item.tpt < medianTpt) {
+                item.kuadran = 'Kuadran III';
+                item.kuadranName = 'III – UMK Rendah, TPT Rendah';
+                item.kuadranClass = 'q3';
+                item.color = '#f97316';
+            } else if (item.umk > medianUmk && item.tpt < medianTpt) {
+                item.kuadran = 'Kuadran IV';
+                item.kuadranName = 'IV – UMK Tinggi, TPT Rendah';
+                item.kuadranClass = 'q4';
+                item.color = '#a855f7';
+            } else {
+                item.kuadran = 'Batas Median';
+                item.kuadranName = 'Seimbang pada Garis Batas';
+                item.kuadranClass = 'q-neutral';
+                item.color = '#64748b';
+            }
+        });
+
+        currentDataset = items;
+
+        // 3. Update Sidebar Cards
+        if (nakerMedianUmk) nakerMedianUmk.textContent = formatCompactRp(medianUmk);
+        if (nakerMedianTpt) nakerMedianTpt.textContent = `${medianTpt.toFixed(2)}%`;
+        if (nakerTotalWilayah) nakerTotalWilayah.textContent = `${items.length} Kab/Kota`;
+
+        const sortedAk = [...items.map(i => i.angkatan_kerja)].sort((a, b) => a - b);
+        const minAk = sortedAk[0] || 100000;
+        const maxAk = sortedAk[sortedAk.length - 1] || 1000000;
+
+        if (nakerBubbleBesar) nakerBubbleBesar.textContent = `Angkatan kerja ≥ ${(maxAk * 0.7 / 1e6).toFixed(1)} Juta`;
+        if (nakerBubbleMenengah) nakerBubbleMenengah.textContent = `Angkatan kerja ${(maxAk * 0.3 / 1e6).toFixed(1)} Jt – ${(maxAk * 0.7 / 1e6).toFixed(1)} Jt`;
+        if (nakerBubbleKecil) nakerBubbleKecil.textContent = `Angkatan kerja < ${(maxAk * 0.3 / 1e6).toFixed(1)} Juta`;
+
+        // 4. Render Bottom Table
+        renderTableRows(items);
+
+        // 5. Render SVG Scatter Plot
+        renderNakerSvg(items, medianUmk, medianTpt, allSameUmk, minAk, maxAk);
+    }
+
+    function renderNakerSvg(items, medianUmk, medianTpt, allSameUmk, minAk, maxAk) {
+        // SVG dimensions
+        const svgW = 680;
+        const svgH = 400;
+        const padLeft = 65;
+        const padRight = 35;
+        const padTop = 35;
+        const padBottom = 45;
+        const chartW = svgW - padLeft - padRight;
+        const chartH = svgH - padTop - padBottom;
+
+        // Dynamic X-Axis (UMK in Juta Rp)
+        const umkValuesJuta = items.map(i => i.umk / 1e6);
+        const minUmkJuta = Math.min(...umkValuesJuta);
+        const maxUmkJuta = Math.max(...umkValuesJuta);
+
+        let xMin, xMax;
+        if (allSameUmk || maxUmkJuta === minUmkJuta) {
+            xMin = Math.max(0, Math.floor((minUmkJuta - 1.0) * 10) / 10);
+            xMax = Math.ceil((maxUmkJuta + 1.0) * 10) / 10;
+        } else {
+            const spread = maxUmkJuta - minUmkJuta;
+            xMin = Math.max(0, Math.floor((minUmkJuta - spread * 0.15) * 10) / 10);
+            xMax = Math.ceil((maxUmkJuta + spread * 0.15) * 10) / 10;
+            if (xMax - xMin < 1.0) {
+                xMin = Math.max(0, xMin - 0.5);
+                xMax = xMax + 0.5;
+            }
+        }
+
+        // Dynamic Y-Axis (TPT in %, bottom fixed at 0%)
+        const yMin = 0;
+        const maxTpt = Math.max(...items.map(i => i.tpt));
+        const yMax = Math.max(8, Math.ceil((maxTpt * 1.25) / 2) * 2);
+
+        function scaleX(valJuta) {
+            return padLeft + ((valJuta - xMin) / (xMax - xMin)) * chartW;
+        }
+
+        function scaleY(valTpt) {
+            return padTop + chartH - ((valTpt - yMin) / (yMax - yMin)) * chartH;
+        }
+
+        const medX = scaleX(medianUmk / 1e6);
+        const medY = scaleY(medianTpt);
+
+        // Clamped quadrant boxes
+        const qLeftW = Math.max(0, medX - padLeft);
+        const qRightW = Math.max(0, (padLeft + chartW) - medX);
+        const qTopH = Math.max(0, medY - padTop);
+        const qBottomH = Math.max(0, (padTop + chartH) - medY);
+
+        // Bubble Radius scaling
+        function getRadius(ak) {
+            const minR = 8;
+            const maxR = 24;
+            if (maxAk === minAk) return 13;
+            const norm = (Math.sqrt(ak) - Math.sqrt(minAk)) / (Math.sqrt(maxAk) - Math.sqrt(minAk));
+            return Math.round((minR + norm * (maxR - minR)) * 10) / 10;
+        }
+
+        // SVG string construction
+        let svgHtml = `
+            <defs>
+                <filter id="nakerShadow" x="-30%" y="-30%" width="160%" height="160%">
+                    <feDropShadow dx="0" dy="2.5" stdDeviation="3.5" flood-color="#0f172a" flood-opacity="0.18"/>
+                </filter>
+            </defs>
+            <g id="nakerPlotArea">
+                <!-- Quadrant Background Panels -->
+                <!-- Q2 (Kiri Atas): UMK Rendah, TPT Tinggi (Soft Blue) -->
+                <rect x="${padLeft}" y="${padTop}" width="${qLeftW}" height="${qTopH}" fill="#eff6ff" opacity="0.6"/>
+                <!-- Q1 (Kanan Atas): UMK Tinggi, TPT Tinggi (Soft Green) -->
+                <rect x="${medX}" y="${padTop}" width="${qRightW}" height="${qTopH}" fill="#f0fdf4" opacity="0.6"/>
+                <!-- Q3 (Kiri Bawah): UMK Rendah, TPT Rendah (Soft Orange) -->
+                <rect x="${padLeft}" y="${medY}" width="${qLeftW}" height="${qBottomH}" fill="#fff7ed" opacity="0.6"/>
+                <!-- Q4 (Kanan Bawah): UMK Tinggi, TPT Rendah (Soft Purple) -->
+                <rect x="${medX}" y="${medY}" width="${qRightW}" height="${qBottomH}" fill="#faf5ff" opacity="0.6"/>
+
+                <!-- Chart Grid Borders -->
+                <rect x="${padLeft}" y="${padTop}" width="${chartW}" height="${chartH}" fill="none" stroke="#e2e8f0" stroke-width="1.2"/>
+
+                <!-- Quadrant Header Badges/Pills inside chart -->
+                <g opacity="0.85" font-family="var(--font)" font-size="10" font-weight="700">
+                    <!-- Q2 Header -->
+                    <rect x="${padLeft + 10}" y="${padTop + 10}" width="180" height="20" rx="4" fill="#dbeafe"/>
+                    <text x="${padLeft + 16}" y="${padTop + 24}" fill="#1d4ed8">Kuadran II – UMK Rendah, TPT Tinggi</text>
+
+                    <!-- Q1 Header -->
+                    <rect x="${Math.max(medX + 10, padLeft + chartW - 190)}" y="${padTop + 10}" width="180" height="20" rx="4" fill="#dcfce7"/>
+                    <text x="${Math.max(medX + 16, padLeft + chartW - 184)}" y="${padTop + 24}" fill="#15803d">Kuadran I – UMK Tinggi, TPT Tinggi</text>
+
+                    <!-- Q3 Header -->
+                    <rect x="${padLeft + 10}" y="${padTop + chartH - 26}" width="180" height="20" rx="4" fill="#ffedd5"/>
+                    <text x="${padLeft + 16}" y="${padTop + chartH - 12}" fill="#c2410c">Kuadran III – UMK Rendah, TPT Rendah</text>
+
+                    <!-- Q4 Header -->
+                    <rect x="${Math.max(medX + 10, padLeft + chartW - 190)}" y="${padTop + chartH - 26}" width="180" height="20" rx="4" fill="#f3e8ff"/>
+                    <text x="${Math.max(medX + 16, padLeft + chartW - 184)}" y="${padTop + chartH - 12}" fill="#7e22ce">Kuadran IV – UMK Tinggi, TPT Rendah</text>
+                </g>
+
+                <!-- Dashed Median Lines -->
+                <!-- Vertical Median Line (Median UMK) -->
+                <line x1="${medX}" y1="${padTop}" x2="${medX}" y2="${padTop + chartH}" stroke="#64748b" stroke-width="1.6" stroke-dasharray="4,4"/>
+                <g transform="translate(${medX}, ${padTop - 6})">
+                    <text text-anchor="middle" font-family="var(--font)" font-size="9.5" font-weight="700" fill="#475569">
+                        Batas Median UMK (Rp${(medianUmk / 1e6).toLocaleString('id-ID', { minimumFractionDigits: 1, maximumFractionDigits: 2 })} Jt)
+                    </text>
+                </g>
+
+                <!-- Horizontal Median Line (Median TPT) -->
+                <line x1="${padLeft}" y1="${medY}" x2="${padLeft + chartW}" y2="${medY}" stroke="#64748b" stroke-width="1.6" stroke-dasharray="4,4"/>
+                <g transform="translate(${padLeft + chartW - 6}, ${medY - 6})">
+                    <text text-anchor="end" font-family="var(--font)" font-size="9.5" font-weight="700" fill="#475569">
+                        Batas Median TPT (${medianTpt.toLocaleString('id-ID', { minimumFractionDigits: 1, maximumFractionDigits: 2 })}%)
+                    </text>
+                </g>
+
+                <!-- X-Axis Labels (UMK Juta Rp) -->
+                <g font-family="var(--font)" font-size="10" fill="#64748b" text-anchor="middle">
+        `;
+
+        // Generate X ticks
+        const xStep = (xMax - xMin) / 4;
+        for (let i = 0; i <= 4; i++) {
+            const val = xMin + i * xStep;
+            const xPos = scaleX(val);
+            svgHtml += `
+                <line x1="${xPos}" y1="${padTop + chartH}" x2="${xPos}" y2="${padTop + chartH + 5}" stroke="#cbd5e1" stroke-width="1"/>
+                <text x="${xPos}" y="${padTop + chartH + 18}">Rp${val.toLocaleString('id-ID', { minimumFractionDigits: 1, maximumFractionDigits: 1 })} Jt</text>
+            `;
+        }
+
+        // X-Axis Title
+        svgHtml += `
+            <text x="${padLeft + chartW / 2}" y="${padTop + chartH + 36}" font-weight="700" font-size="11" fill="#334155">
+                Upah Minimum yang Berlaku (Juta Rupiah / Bulan)
+            </text>
+            </g>
+
+            <!-- Y-Axis Labels (TPT %) -->
+            <g font-family="var(--font)" font-size="10" fill="#64748b" text-anchor="end">
+        `;
+
+        // Generate Y ticks
+        const yStep = (yMax - yMin) / 4;
+        for (let i = 0; i <= 4; i++) {
+            const val = yMin + i * yStep;
+            const yPos = scaleY(val);
+            svgHtml += `
+                <line x1="${padLeft - 5}" y1="${yPos}" x2="${padLeft}" y2="${yPos}" stroke="#cbd5e1" stroke-width="1"/>
+                <text x="${padLeft - 8}" y="${yPos + 3.5}">${val.toFixed(0)}%</text>
+            `;
+        }
+
+        // Y-Axis Title (Rotated)
+        svgHtml += `
+            </g>
+            <text transform="rotate(-90)" x="${-(padTop + chartH / 2)}" y="18" text-anchor="middle" font-family="var(--font)" font-weight="700" font-size="11" fill="#334155">
+                Tingkat Pengangguran Terbuka – TPT (%)
+            </text>
+
+            <!-- Bubbles (Kabupaten/Kota) -->
+            <g id="nakerBubblesGroup">
+        `;
+
+        // Render each region bubble
+        items.forEach(item => {
+            const cx = Math.max(padLeft + 12, Math.min(padLeft + chartW - 12, scaleX(item.umk / 1e6)));
+            const cy = Math.max(padTop + 12, Math.min(padTop + chartH - 12, scaleY(item.tpt)));
+            const r = getRadius(item.angkatan_kerja);
+            const shortName = item.kabkota.replace(/^(KABUPATEN|KOTA|KAB\.|KODYA)\s+/i, '');
+
+            svgHtml += `
+                <g class="naker-bubble" data-id="${item.id}" data-kab="${escapeHtml(item.kabkota)}" style="cursor:pointer;transition:transform 0.2s, opacity 0.2s">
+                    <circle cx="${cx}" cy="${cy}" r="${r}" fill="${item.color}" fill-opacity="0.84" stroke="#ffffff" stroke-width="2" filter="url(#nakerShadow)"/>
+                    <text x="${cx}" y="${cy - r - 4}" text-anchor="middle" font-family="var(--font)" font-size="9.5" font-weight="600" fill="#1e293b" style="pointer-events:none;text-shadow:0 1px 2px rgba(255,255,255,0.85)">
+                        ${escapeHtml(shortName)}
+                    </text>
+                </g>
+            `;
+        });
+
+        // Special Notice banner if allSameUmk
+        if (allSameUmk) {
+            svgHtml += `
+                <g transform="translate(${padLeft + 10}, ${padTop - 24})">
+                    <rect x="0" y="0" width="${chartW - 20}" height="18" rx="4" fill="#fef3c7" stroke="#fde68a" stroke-width="1"/>
+                    <text x="${(chartW - 20) / 2}" y="12.5" text-anchor="middle" font-family="var(--font)" font-size="9.5" font-weight="600" fill="#92400e">
+                        ℹ️ Seluruh kabupaten/kota di provinsi ini memiliki upah seragam (UMP: ${formatRupiah(medianUmk)}). Garis median vertikal merupakan acuan tunggal.
+                    </text>
+                </g>
+            `;
+        }
+
+        svgHtml += `
+                </g>
+            </g>
+        `;
+
+        svg.innerHTML = svgHtml;
+
+        // Attach Bubble Events (Hover & Click)
+        svg.querySelectorAll('.naker-bubble').forEach(b => {
+            const id = b.dataset.id;
+            const item = items.find(d => d.id === id);
+            if (!item) return;
+
+            b.addEventListener('mouseenter', (e) => {
+                showBubbleTooltip(item, e);
+                b.querySelector('circle').setAttribute('stroke-width', '3');
+            });
+
+            b.addEventListener('mousemove', (e) => {
+                positionTooltip(e);
+            });
+
+            b.addEventListener('mouseleave', () => {
+                if (selectedKabId !== id && tooltip) {
+                    tooltip.style.display = 'none';
+                }
+                if (selectedKabId !== id) {
+                    b.querySelector('circle').setAttribute('stroke-width', '2');
+                }
+            });
+
+            b.addEventListener('click', (e) => {
+                selectedKabId = selectedKabId === id ? null : id;
+                showBubbleTooltip(item, e);
+
+                // Highlight table row and scroll into view
+                if (tableBody) {
+                    tableBody.querySelectorAll('tr').forEach(r => r.classList.remove('selected-row'));
+                    if (selectedKabId) {
+                        const targetRow = tableBody.querySelector(`tr[data-id="${selectedKabId}"]`);
+                        if (targetRow) {
+                            targetRow.classList.add('selected-row');
+                            targetRow.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                        }
+                    }
+                }
+
+                // Fade other bubbles if selected
+                svg.querySelectorAll('.naker-bubble').forEach(other => {
+                    if (!selectedKabId || other.dataset.id === selectedKabId) {
+                        other.style.opacity = '1.0';
+                        other.querySelector('circle').setAttribute('stroke-width', other.dataset.id === selectedKabId ? '3.5' : '2');
+                    } else {
+                        other.style.opacity = '0.3';
+                        other.querySelector('circle').setAttribute('stroke-width', '2');
+                    }
+                });
+            });
+        });
+
+        // Hide tooltip when clicking blank SVG area
+        svg.addEventListener('click', (e) => {
+            if (e.target.tagName === 'svg' || e.target.id === 'nakerPlotArea' || e.target.tagName === 'rect') {
+                selectedKabId = null;
+                if (tooltip) tooltip.style.display = 'none';
+                svg.querySelectorAll('.naker-bubble').forEach(b => {
+                    b.style.opacity = '1.0';
+                    b.querySelector('circle').setAttribute('stroke-width', '2');
+                });
+                if (tableBody) {
+                    tableBody.querySelectorAll('tr').forEach(r => r.classList.remove('selected-row'));
+                }
+            }
+        });
+    }
+
+    // Trigger initial render
+    renderNakerView();
+}
+
+
+/* ============================================================
+   WIDGET 11: PETA KONDISI KEMISKINAN KABUPATEN/KOTA (SCATTER PLOT)
+   - Sumbu X: Persentase Penduduk Miskin (%)
+   - Sumbu Y: Indeks Kedalaman Kemiskinan (P1)
+   - 4 Kuadran dengan garis median se-provinsi
+   - Detail Wilayah Terpilih & Rekomendasi Kebijakan Pemda
+   ============================================================ */
+function renderKemiskinanKuadran(r) {
+    const rawData = window.KEMISKINAN_DATA;
+    if (!rawData || !rawData.data_by_prov) return;
+
+    const provSelect = document.getElementById('kemiskinanProvSelect');
+    const svg = document.getElementById('kemiskinanSvg');
+    const container = document.getElementById('kemiskinanContainer');
+    const tooltip = document.getElementById('kemiskinanTooltip');
+
+    const statKabCount = document.getElementById('kmStatKabCount');
+    const statMedMiskin = document.getElementById('kmStatMedMiskin');
+    const statMedP1 = document.getElementById('kmStatMedP1');
+
+    const detailKab = document.getElementById('kmDetailKab');
+    const detailBadge = document.getElementById('kmDetailBadge');
+    const detailPct = document.getElementById('kmDetailPct');
+    const detailP1 = document.getElementById('kmDetailP1');
+    const detailInsight = document.getElementById('kmDetailInsight');
+    const detailPolicy = document.getElementById('kmDetailPolicy');
+    const infoProv = document.getElementById('kmInfoProv');
+    const infoKab = document.getElementById('kmInfoKab');
+    const infoPosisi = document.getElementById('kmInfoPosisi');
+    const btnReset = document.getElementById('btnKmReset');
+
+    if (!provSelect || !svg) return;
+
+    const provList = rawData.provinces || [];
+    let currentProv = provList[0] || 'Jawa Tengah';
+    if (r && r.prov) {
+        const found = provList.find(p => p.toLowerCase().trim() === r.prov.toLowerCase().trim() ||
+            p.toLowerCase().includes(r.prov.toLowerCase()) || r.prov.toLowerCase().includes(p.toLowerCase()));
+        if (found) currentProv = found;
+    }
+
+    provSelect.innerHTML = provList.map(p => `<option value="${escapeHtml(p)}" ${p === currentProv ? 'selected' : ''}>${escapeHtml(p)}</option>`).join('');
+
+    provSelect.addEventListener('change', () => {
+        currentProv = provSelect.value;
+        renderView();
+    });
+
+    let selectedKab = null;
+
+    if (btnReset) {
+        btnReset.addEventListener('click', () => {
+            selectedKab = null;
+            if (tooltip) tooltip.style.display = 'none';
+            svg.querySelectorAll('.km-dot').forEach(d => {
+                d.querySelector('circle').setAttribute('r', '5.5');
+                d.querySelector('circle').setAttribute('stroke-width', '2');
+            });
+            resetDetailToProvince();
+        });
+    }
+
+    function positionTooltip(e) {
+        if (!tooltip || !container) return;
+        const rect = container.getBoundingClientRect();
+        let left = e.clientX - rect.left + 14;
+        let top = e.clientY - rect.top - 20;
+        if (left + 220 > rect.width) left = e.clientX - rect.left - 230;
+        tooltip.style.left = `${Math.max(6, left)}px`;
+        tooltip.style.top = `${Math.max(6, top)}px`;
+    }
+
+    function resetDetailToProvince() {
+        const items = rawData.data_by_prov[currentProv] || [];
+        if (detailKab) detailKab.textContent = `Ringkasan ${currentProv}`;
+        if (detailBadge) {
+            detailBadge.className = 'bkpm-quad-badge q1';
+            detailBadge.textContent = `${items.length} Wilayah`;
+        }
+        if (detailInsight) {
+            detailInsight.textContent = `Klik salah satu titik pada scatter plot untuk melihat evaluasi kedalaman kemiskinan dan karakteristik beban pengeluaran masyarakat miskin di wilayah tersebut.`;
+        }
+        if (detailPolicy) {
+            detailPolicy.textContent = `Arah kebijakan terpadu disusun berdasarkan kombinasi persentase kemiskinan dan indeks kedalaman kemiskinan (P1).`;
+        }
+        if (infoProv) infoProv.textContent = currentProv;
+        if (infoKab) infoKab.textContent = 'Semua Wilayah';
+        if (infoPosisi) infoPosisi.textContent = 'Agregat Provinsi';
+    }
+
+    function updateDetail(item, medPct, medP1) {
+        if (detailKab) detailKab.textContent = item.kabkota;
+        if (detailPct) detailPct.textContent = `${item.persentase_miskin.toFixed(1)}%`;
+        if (detailP1) detailP1.textContent = item.p1.toFixed(2);
+        if (infoProv) infoProv.textContent = item.provinsi;
+        if (infoKab) infoKab.textContent = item.kabkota;
+
+        let qName = '';
+        let qBadgeClass = '';
+        let insightTxt = '';
+        let policyTxt = '';
+
+        if (item.persentase_miskin >= medPct && item.p1 >= medP1) {
+            qName = 'Kuadran I – Miskin tinggi, P1 tinggi';
+            qBadgeClass = 'q1';
+            insightTxt = 'Persentase kemiskinan dan kedalaman kemiskinan sama-sama tinggi. Penduduk miskin relatif banyak dan memiliki kesenjangan pengeluaran yang dalam terhadap garis kemiskinan.';
+            policyTxt = 'Prioritaskan penanganan terpadu melalui perlindungan sosial intensif, pemenuhan pangan & kesehatan dasar, serta pemberdayaan ekonomi masyarakat dan perluasan kesempatan kerja lokal.';
+        } else if (item.persentase_miskin < medPct && item.p1 >= medP1) {
+            qName = 'Kuadran II – Miskin rendah, P1 tinggi';
+            qBadgeClass = 'q2';
+            insightTxt = 'Persentase penduduk miskin relatif rendah, tetapi kedalaman kemiskinan masih tinggi. Penduduk miskin yang tersisa cenderung memiliki kesenjangan pengeluaran lebih besar terhadap garis kemiskinan.';
+            policyTxt = 'Perkuat bantuan yang tepat sasaran dan dukungan pemenuhan kebutuhan dasar bagi rumah tangga miskin kronis yang tertinggal jauh di bawah garis kemiskinan.';
+        } else if (item.persentase_miskin < medPct && item.p1 < medP1) {
+            qName = 'Kuadran III – Miskin rendah, P1 rendah';
+            qBadgeClass = 'q3';
+            insightTxt = 'Capaian pengentasan kemiskinan relatif baik dengan persentase miskin dan indeks kedalaman rendah. Kesenjangan pengeluaran penduduk miskin terhadap garis kemiskinan relatif kecil.';
+            policyTxt = 'Pertahankan capaian pengentasan kemiskinan, perkuat jaring pengaman sosial, dan cegah kelompok rentan (near-poor) jatuh kembali ke bawah garis kemiskinan.';
+        } else {
+            qName = 'Kuadran IV – Miskin tinggi, P1 rendah';
+            qBadgeClass = 'q4';
+            insightTxt = 'Persentase penduduk miskin cukup tinggi, namun rata-rata kesenjangan pengeluaran terhadap garis kemiskinan relatif rendah (berada dekat di sekitar garis kemiskinan).';
+            policyTxt = 'Perluas jangkauan program bantalan sosial, bantuan modal usaha mikro, dan fasilitasi peningkatan pendapatan agar penduduk di dekat garis kemiskinan cepat terentaskan.';
+        }
+
+        if (detailBadge) {
+            detailBadge.className = `bkpm-quad-badge ${qBadgeClass}`;
+            detailBadge.textContent = qName;
+        }
+        if (infoPosisi) infoPosisi.textContent = qName;
+        if (detailInsight) detailInsight.textContent = insightTxt;
+        if (detailPolicy) detailPolicy.textContent = policyTxt;
+    }
+
+    function renderView() {
+        const items = rawData.data_by_prov[currentProv] || [];
+        if (items.length === 0) return;
+
+        // Medians
+        const sortedPct = [...items.map(i => i.persentase_miskin)].sort((a,b) => a - b);
+        const midPct = Math.floor(sortedPct.length / 2);
+        const medPct = sortedPct.length % 2 !== 0 ? sortedPct[midPct] : (sortedPct[midPct - 1] + sortedPct[midPct]) / 2;
+
+        const sortedP1 = [...items.map(i => i.p1)].sort((a,b) => a - b);
+        const midP1 = Math.floor(sortedP1.length / 2);
+        const medP1 = sortedP1.length % 2 !== 0 ? sortedP1[midP1] : (sortedP1[midP1 - 1] + sortedP1[midP1]) / 2;
+
+        // KPI chips
+        if (statKabCount) statKabCount.textContent = items.length;
+        if (statMedMiskin) statMedMiskin.textContent = `${medPct.toFixed(1)}%`;
+        if (statMedP1) statMedP1.textContent = medP1.toFixed(2);
+
+        // Chart dimensions
+        const svgW = 680;
+        const svgH = 430;
+        const padL = 55;
+        const padR = 40;
+        const padT = 30;
+        const padB = 45;
+        const chartW = svgW - padL - padR;
+        const chartH = svgH - padT - padB;
+
+        // Dynamic ranges
+        const minP = Math.min(...sortedPct);
+        const maxP = Math.max(...sortedPct);
+        const xMin = Math.max(0, Math.floor(minP - 1.0));
+        const xMax = Math.ceil(maxP + 1.5);
+
+        const minP1Val = Math.min(...sortedP1);
+        const maxP1Val = Math.max(...sortedP1);
+        const yMin = Math.max(0, Math.floor((minP1Val - 0.2) * 10) / 10);
+        const yMax = Math.ceil((maxP1Val + 0.3) * 10) / 10;
+
+        function scaleX(val) {
+            return padL + ((val - xMin) / (xMax - xMin)) * chartW;
+        }
+        function scaleY(val) {
+            return padT + chartH - ((val - yMin) / (yMax - yMin)) * chartH;
+        }
+
+        const medX = scaleX(medPct);
+        const medY = scaleY(medP1);
+
+        const qLeftW = Math.max(0, medX - padL);
+        const qRightW = Math.max(0, (padL + chartW) - medX);
+        const qTopH = Math.max(0, medY - padT);
+        const qBottomH = Math.max(0, (padT + chartH) - medY);
+
+        let svgHtml = `
+            <g id="kmPlotArea">
+                <!-- Quadrants Background -->
+                <!-- Q2 Kiri Atas: Miskin rendah, P1 tinggi (soft red) -->
+                <rect x="${padL}" y="${padT}" width="${qLeftW}" height="${qTopH}" fill="#fef2f2" opacity="0.75"/>
+                <!-- Q1 Kanan Atas: Miskin tinggi, P1 tinggi (soft amber) -->
+                <rect x="${medX}" y="${padT}" width="${qRightW}" height="${qTopH}" fill="#fffbeb" opacity="0.75"/>
+                <!-- Q3 Kiri Bawah: Miskin rendah, P1 rendah (soft green) -->
+                <rect x="${padL}" y="${medY}" width="${qLeftW}" height="${qBottomH}" fill="#f0fdf4" opacity="0.75"/>
+                <!-- Q4 Kanan Bawah: Miskin tinggi, P1 rendah (soft blue) -->
+                <rect x="${medX}" y="${medY}" width="${qRightW}" height="${qBottomH}" fill="#eff6ff" opacity="0.75"/>
+
+                <!-- Grid Outer Frame -->
+                <rect x="${padL}" y="${padT}" width="${chartW}" height="${chartH}" fill="none" stroke="#e2e8f0" stroke-width="1.2"/>
+
+                <!-- Quadrant Labels Inside Plot -->
+                <g font-family="var(--font)" font-size="10.5" font-weight="700">
+                    <text x="${padL + 12}" y="${padT + 22}" fill="#dc2626">Miskin rendah, P1 tinggi</text>
+                    <text x="${Math.max(medX + 12, padL + chartW - 160)}" y="${padT + 22}" fill="#d97706">Miskin tinggi, P1 tinggi</text>
+                    <text x="${padL + 12}" y="${padT + chartH - 12}" fill="#16a34a">Miskin rendah, P1 rendah</text>
+                    <text x="${Math.max(medX + 12, padL + chartW - 160)}" y="${padT + chartH - 12}" fill="#2563eb">Miskin tinggi, P1 rendah</text>
+                </g>
+
+                <!-- Dashed Median Lines -->
+                <line x1="${medX}" y1="${padT}" x2="${medX}" y2="${padT + chartH}" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="4,4"/>
+                <line x1="${padL}" y1="${medY}" x2="${padL + chartW}" y2="${medY}" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="4,4"/>
+
+                <!-- Median Value Badges -->
+                <text x="${medX}" y="${padT + chartH + 16}" text-anchor="middle" font-family="var(--mono)" font-size="10.5" font-weight="800" fill="#2563eb">
+                    ${medPct.toFixed(1)}%
+                </text>
+                <text x="${padL + chartW + 6}" y="${medY + 4}" font-family="var(--mono)" font-size="10.5" font-weight="800" fill="#2563eb">
+                    ${medP1.toFixed(2)}
+                </text>
+
+                <!-- Sumbu X Ticks & Labels -->
+                <g font-family="var(--font)" font-size="10" fill="#64748b" text-anchor="middle">
+        `;
+
+        const xStep = Math.max(1, Math.round((xMax - xMin) / 6));
+        for (let v = xMin; v <= xMax; v += xStep) {
+            const px = scaleX(v);
+            svgHtml += `
+                <line x1="${px}" y1="${padT + chartH}" x2="${px}" y2="${padT + chartH + 4}" stroke="#cbd5e1"/>
+                <text x="${px}" y="${padT + chartH + 15}">${v}%</text>
+            `;
+        }
+
+        svgHtml += `
+            <text x="${padL + chartW / 2}" y="${padT + chartH + 34}" font-weight="700" font-size="11" fill="#334155">
+                Persentase Penduduk Miskin (%)
+            </text>
+            </g>
+
+            <!-- Sumbu Y Ticks & Labels -->
+            <g font-family="var(--font)" font-size="10" fill="#64748b" text-anchor="end">
+        `;
+
+        const yStep = (yMax - yMin) / 5;
+        for (let i = 0; i <= 5; i++) {
+            const v = yMin + i * yStep;
+            const py = scaleY(v);
+            svgHtml += `
+                <line x1="${padL - 4}" y1="${py}" x2="${padL}" y2="${py}" stroke="#cbd5e1"/>
+                <text x="${padL - 8}" y="${py + 3.5}">${v.toFixed(1)}</text>
+            `;
+        }
+
+        svgHtml += `
+            </g>
+            <text transform="rotate(-90)" x="${-(padT + chartH / 2)}" y="16" text-anchor="middle" font-family="var(--font)" font-weight="700" font-size="11" fill="#334155">
+                Indeks Kedalaman Kemiskinan (P1)
+            </text>
+
+            <!-- Dots (Kabupaten / Kota) -->
+            <g id="kmDotsGroup">
+        `;
+
+        items.forEach(item => {
+            const cx = scaleX(item.persentase_miskin);
+            const cy = scaleY(item.p1);
+            const shortName = item.kabkota.replace(/^(KABUPATEN|KOTA|KAB\.|KODYA)\s+/i, '');
+
+            svgHtml += `
+                <g class="km-dot" data-kab="${escapeHtml(item.kabkota)}" style="cursor:pointer">
+                    <circle cx="${cx}" cy="${cy}" r="5.5" fill="#2563eb" stroke="#ffffff" stroke-width="2" filter="drop-shadow(0 1px 2px rgba(0,0,0,0.15))"/>
+                    <text x="${cx + 8}" y="${cy + 3.5}" font-family="var(--font)" font-size="9.5" font-weight="600" fill="#1e293b" style="pointer-events:none">
+                        ${escapeHtml(shortName)}
+                    </text>
+                </g>
+            `;
+        });
+
+        svgHtml += `
+                </g>
+            </g>
+        `;
+
+        svg.innerHTML = svgHtml;
+
+        // Events
+        svg.querySelectorAll('.km-dot').forEach(dot => {
+            const kName = dot.dataset.kab;
+            const item = items.find(d => d.kabkota === kName);
+            if (!item) return;
+
+            dot.addEventListener('mouseenter', (e) => {
+                if (tooltip) {
+                    tooltip.innerHTML = `
+                        <div class="tt-title">${escapeHtml(item.kabkota)}</div>
+                        <div class="tt-row"><span class="tt-k">Persentase Miskin</span><span class="tt-v mono">${item.persentase_miskin.toFixed(1)}%</span></div>
+                        <div class="tt-row"><span class="tt-k">Indeks P1</span><span class="tt-v mono">${item.p1.toFixed(2)}</span></div>
+                        <div class="tt-row"><span class="tt-k">Garis Kemiskinan</span><span class="tt-v mono">Rp${item.garis_kemiskinan.toLocaleString('id-ID')}</span></div>
+                    `;
+                    tooltip.style.display = 'block';
+                    positionTooltip(e);
+                }
+                dot.querySelector('circle').setAttribute('r', '7.5');
+            });
+
+            dot.addEventListener('mousemove', (e) => positionTooltip(e));
+
+            dot.addEventListener('mouseleave', () => {
+                if (tooltip) tooltip.style.display = 'none';
+                if (selectedKab !== item.kabkota) {
+                    dot.querySelector('circle').setAttribute('r', '5.5');
+                }
+            });
+
+            dot.addEventListener('click', () => {
+                selectedKab = item.kabkota;
+                svg.querySelectorAll('.km-dot').forEach(d => {
+                    const isSel = d.dataset.kab === selectedKab;
+                    d.querySelector('circle').setAttribute('r', isSel ? '8' : '5.5');
+                    d.querySelector('circle').setAttribute('stroke-width', isSel ? '3' : '2');
+                });
+                updateDetail(item, medPct, medP1);
+            });
+        });
+
+        // Set default initial detail
+        if (items.length > 0) {
+            updateDetail(items[0], medPct, medP1);
+        }
+    }
+
+    renderView();
+}
+
+
+/* ============================================================
+   WIDGET 13: PERKEMBANGAN PDRB ADHB MENURUT LAPANGAN USAHA
+   - Paired bar chart 2024 vs 2025
+   - 3 KPI summary cards
+   - Tooltip pertumbuhan & unduh CSV
+   ============================================================ */
+function renderPdrbSektor(r) {
+    const rawData = window.PDRB_SEKTOR_DATA;
+    if (!rawData || !rawData.data) return;
+
+    const provSelect = document.getElementById('pdrbProvSelect');
+    const kabSelect = document.getElementById('pdrbKabSelect');
+    const svg = document.getElementById('pdrbSvg');
+    const container = document.getElementById('pdrbSvgContainer');
+    const tooltip = document.getElementById('pdrbTooltip');
+    const chartSubtitle = document.getElementById('pdrbChartSubtitle');
+    const btnDownload = document.getElementById('btnPdrbDownload');
+
+    const topSektorEl = document.getElementById('pdrbTopSektor');
+    const avgGrowthEl = document.getElementById('pdrbAvgGrowth');
+    const lowSektorEl = document.getElementById('pdrbLowSektor');
+
+    if (!provSelect || !kabSelect || !svg) return;
+
+    const provList = rawData.provinces || [];
+    let currentProv = provList[0] || 'Jawa Tengah';
+    if (r && r.prov) {
+        const found = provList.find(p => p.toLowerCase().trim() === r.prov.toLowerCase().trim() ||
+            p.toLowerCase().includes(r.prov.toLowerCase()) || r.prov.toLowerCase().includes(p.toLowerCase()));
+        if (found) currentProv = found;
+    }
+
+    provSelect.innerHTML = provList.map(p => `<option value="${escapeHtml(p)}" ${p === currentProv ? 'selected' : ''}>${escapeHtml(p)}</option>`).join('');
+
+    function populateKabDropdown() {
+        const kabs = rawData.kab_by_prov[currentProv] || [];
+        let curKab = kabs[0] || '';
+        if (r && r.kabkota) {
+            const found = kabs.find(k => k.toLowerCase().includes(r.kabkota.toLowerCase()) || r.kabkota.toLowerCase().includes(k.toLowerCase()));
+            if (found) curKab = found;
+        }
+        kabSelect.innerHTML = kabs.map(k => `<option value="${escapeHtml(k)}" ${k === curKab ? 'selected' : ''}>${escapeHtml(k)}</option>`).join('');
+    }
+
+    populateKabDropdown();
+
+    provSelect.addEventListener('change', () => {
+        currentProv = provSelect.value;
+        populateKabDropdown();
+        renderView();
+    });
+
+    kabSelect.addEventListener('change', () => {
+        renderView();
+    });
+
+    if (btnDownload) {
+        btnDownload.addEventListener('click', () => {
+            const curKab = kabSelect.value;
+            const sectors = (rawData.data[currentProv] || {})[curKab] || [];
+            let csv = "Sektor,PDRB 2024 (Miliar Rp),PDRB 2025 (Miliar Rp),Pertumbuhan (%)\n";
+            sectors.forEach(s => {
+                csv += `"${s.sektor}",${s.tahun_2024},${s.tahun_2025},${s.pertumbuhan}
+`;
+            });
+            const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `pdrb-${curKab.toLowerCase().replace(/[^a-z0-9]/g, '-')}-2024-2025.csv`;
+            a.click();
+            URL.revokeObjectURL(url);
+        });
+    }
+
+    function positionTooltip(e) {
+        if (!tooltip || !container) return;
+        const rect = container.getBoundingClientRect();
+        let left = e.clientX - rect.left + 14;
+        let top = e.clientY - rect.top - 20;
+        if (left + 230 > rect.width) left = e.clientX - rect.left - 240;
+        tooltip.style.left = `${Math.max(6, left)}px`;
+        tooltip.style.top = `${Math.max(6, top)}px`;
+    }
+
+    function renderView() {
+        const curKab = kabSelect.value;
+        const allSectors = (rawData.data[currentProv] || {})[curKab] || [];
+
+        if (chartSubtitle) {
+            chartSubtitle.textContent = `Nilai PDRB ADHB menurut Lapangan Usaha (${curKab}, 2024 vs 2025)`;
+        }
+
+        if (allSectors.length === 0) return;
+
+        // Group into Top 9 + Lainnya (8 sektor)
+        const top9 = allSectors.slice(0, 9);
+        const others = allSectors.slice(9);
+        const sumOther2024 = others.reduce((acc, c) => acc + c.tahun_2024, 0);
+        const sumOther2025 = others.reduce((acc, c) => acc + c.tahun_2025, 0);
+        const otherGrowth = sumOther2024 > 0 ? ((sumOther2025 - sumOther2024) / sumOther2024 * 100) : 0;
+
+        const displayItems = [
+            ...top9,
+            {
+                sektor: "Lainnya (8 sektor)",
+                tahun_2024: Math.round(sumOther2024),
+                tahun_2025: Math.round(sumOther2025),
+                pertumbuhan: Math.round(otherGrowth * 100) / 100
+            }
+        ];
+
+        // Summary KPIs
+        const sortedByGrowth = [...allSectors].sort((a,b) => b.pertumbuhan - a.pertumbuhan);
+        const topG = sortedByGrowth[0];
+        const lowG = sortedByGrowth[sortedByGrowth.length - 1];
+        const avgG = allSectors.reduce((a,c) => a + c.pertumbuhan, 0) / allSectors.length;
+
+        if (topSektorEl) topSektorEl.textContent = `${topG.sektor} (+${topG.pertumbuhan.toFixed(2)}%)`;
+        if (avgGrowthEl) avgGrowthEl.textContent = `${avgG >= 0 ? '+' : ''}${avgG.toFixed(2)}%`;
+        if (lowSektorEl) lowSektorEl.textContent = `${lowG.sektor} (${lowG.pertumbuhan.toFixed(2)}%)`;
+
+        // Render SVG Paired Bars
+        const svgW = 880;
+        const svgH = 380;
+        const padL = 60;
+        const padR = 25;
+        const padT = 45;
+        const padB = 75;
+        const chartW = svgW - padL - padR;
+        const chartH = svgH - padT - padB;
+
+        const maxVal = Math.max(...displayItems.map(i => Math.max(i.tahun_2024, i.tahun_2025)));
+        const yMax = Math.ceil((maxVal * 1.25) / 1000) * 1000;
+
+        function scaleY(val) {
+            return padT + chartH - (val / yMax) * chartH;
+        }
+
+        const groupCount = displayItems.length;
+        const groupW = chartW / groupCount;
+        const barW = Math.max(8, Math.min(22, (groupW - 24) / 2));
+
+        let svgHtml = `
+            <g id="pdrbPlotArea">
+                <!-- Y-Axis Grid Lines & Labels -->
+                <g font-family="var(--mono)" font-size="9.5" fill="#94a3b8" text-anchor="end">
+        `;
+
+        for (let i = 0; i <= 5; i++) {
+            const v = (yMax / 5) * i;
+            const py = scaleY(v);
+            svgHtml += `
+                <line x1="${padL}" y1="${py}" x2="${padL + chartW}" y2="${py}" stroke="${i === 0 ? '#cbd5e1' : '#f1f5f9'}" stroke-width="${i === 0 ? '1.2' : '1'}"/>
+                <text x="${padL - 8}" y="${py + 3.5}">${Math.round(v).toLocaleString('id-ID')}</text>
+            `;
+        }
+
+        svgHtml += `
+            </g>
+            <!-- Groups of paired bars -->
+            <g id="pdrbBars">
+        `;
+
+        displayItems.forEach((item, idx) => {
+            const groupX = padL + idx * groupW;
+            const centerX = groupX + groupW / 2;
+            const x2024 = centerX - barW - 2;
+            const x2025 = centerX + 2;
+
+            const y2024 = scaleY(item.tahun_2024);
+            const h2024 = Math.max(2, (padT + chartH) - y2024);
+
+            const y2025 = scaleY(item.tahun_2025);
+            const h2025 = Math.max(2, (padT + chartH) - y2025);
+
+            const topY = Math.min(y2024, y2025);
+            const growthPos = item.pertumbuhan >= 0;
+            const badgeFill = growthPos ? '#dcfce7' : '#fee2e2';
+            const badgeText = growthPos ? '#15803d' : '#b91c1c';
+            const growthLabel = `${growthPos ? '+' : ''}${item.pertumbuhan.toFixed(2)}%`;
+
+            // Truncate name for X axis
+            let shortLabel = item.sektor;
+            if (shortLabel.length > 16) {
+                shortLabel = shortLabel.substring(0, 15) + '…';
+            }
+
+            svgHtml += `
+                <g class="pdrb-group" data-idx="${idx}" style="cursor:pointer">
+                    <!-- Growth Badge on top -->
+                    <rect x="${centerX - 24}" y="${topY - 24}" width="48" height="17" rx="3.5" fill="${badgeFill}"/>
+                    <text x="${centerX}" y="${topY - 12}" text-anchor="middle" font-family="var(--mono)" font-size="9" font-weight="700" fill="${badgeText}">
+                        ${growthLabel}
+                    </text>
+
+                    <!-- Bar 2024 (Light Blue) -->
+                    <rect x="${x2024}" y="${y2024}" width="${barW}" height="${h2024}" rx="2" fill="#93c5fd" opacity="0.9"/>
+                    <!-- Bar 2025 (Dark Blue) -->
+                    <rect x="${x2025}" y="${y2025}" width="${barW}" height="${h2025}" rx="2" fill="#1d4ed8"/>
+
+                    <!-- X-Axis Sector Label (slanted or 2 lines) -->
+                    <text x="${centerX}" y="${padT + chartH + 18}" text-anchor="middle" font-family="var(--font)" font-size="9" font-weight="600" fill="#475569">
+                        ${escapeHtml(shortLabel)}
+                    </text>
+                </g>
+            `;
+        });
+
+        svgHtml += `
+                </g>
+            </g>
+        `;
+
+        svg.innerHTML = svgHtml;
+
+        // Tooltip events
+        svg.querySelectorAll('.pdrb-group').forEach(grp => {
+            const idx = parseInt(grp.dataset.idx, 10);
+            const item = displayItems[idx];
+            if (!item) return;
+
+            grp.addEventListener('mouseenter', (e) => {
+                if (tooltip) {
+                    tooltip.innerHTML = `
+                        <div class="tt-title">${escapeHtml(item.sektor)}</div>
+                        <div class="tt-row"><span class="tt-k">Tahun 2024</span><span class="tt-v mono">${item.tahun_2024.toLocaleString('id-ID')} Miliar</span></div>
+                        <div class="tt-row"><span class="tt-k">Tahun 2025</span><span class="tt-v mono" style="color:#1d4ed8;font-weight:700">${item.tahun_2025.toLocaleString('id-ID')} Miliar</span></div>
+                        <div class="tt-row"><span class="tt-k">Pertumbuhan</span><span class="tt-v mono" style="color:${item.pertumbuhan >= 0 ? '#15803d' : '#b91c1c'};font-weight:800">${item.pertumbuhan >= 0 ? '+' : ''}${item.pertumbuhan.toFixed(2)}%</span></div>
+                    `;
+                    tooltip.style.display = 'block';
+                    positionTooltip(e);
+                }
+            });
+
+            grp.addEventListener('mousemove', (e) => positionTooltip(e));
+
+            grp.addEventListener('mouseleave', () => {
+                if (tooltip) tooltip.style.display = 'none';
+            });
+        });
+    }
+
+    renderView();
+}
+
+
+/* ============================================================
+   WIDGET 16-17: EKOSISTEM INDUSTRI & PERDAGANGAN (TREEMAP)
+   - Filter tahun (2021-2025)
+   - KPI wisatawan
+   - Treemap visual (Restoran, Minimarket, Hotel/Kamar, dll)
+   ============================================================ */
+function renderEkosistemUsaha(r) {
+    const rawData = window.EKOSISTEM_USAHA_DATA;
+    if (!rawData || !rawData.data) return;
+
+    const yearSelect = document.getElementById('ekoYearSelect');
+    const wisatawanVal = document.getElementById('ekoWisatawanVal');
+    const svg = document.getElementById('ekoTreemapSvg');
+    const container = document.getElementById('ekoTreemapContainer');
+    const tooltip = document.getElementById('ekoTreemapTooltip');
+
+    if (!yearSelect || !svg) return;
+
+    let currentYear = yearSelect.value || '2025';
+    let currentProv = rawData.provinces[0] || 'Jawa Tengah';
+    let currentKab = '';
+
+    if (r && r.prov) {
+        const found = rawData.provinces.find(p => p.toLowerCase().includes(r.prov.toLowerCase()) || r.prov.toLowerCase().includes(p.toLowerCase()));
+        if (found) currentProv = found;
+    }
+    const kabs = rawData.kab_by_prov[currentProv] || [];
+    currentKab = kabs[0] || '';
+    if (r && r.kabkota) {
+        const foundK = kabs.find(k => k.toLowerCase().includes(r.kabkota.toLowerCase()) || r.kabkota.toLowerCase().includes(k.toLowerCase()));
+        if (foundK) currentKab = foundK;
+    }
+
+    yearSelect.addEventListener('change', () => {
+        currentYear = yearSelect.value;
+        renderTreemap();
+    });
+
+    function positionTooltip(e) {
+        if (!tooltip || !container) return;
+        const rect = container.getBoundingClientRect();
+        let left = e.clientX - rect.left + 14;
+        let top = e.clientY - rect.top - 20;
+        if (left + 220 > rect.width) left = e.clientX - rect.left - 230;
+        tooltip.style.left = `${Math.max(6, left)}px`;
+        tooltip.style.top = `${Math.max(6, top)}px`;
+    }
+
+    function renderTreemap() {
+        const kabData = ((rawData.data[currentProv] || {})[currentKab] || {})[currentYear];
+        if (!kabData) return;
+
+        if (wisatawanVal) wisatawanVal.textContent = kabData.wisatawan_display || '1,2 Jt';
+
+        const cats = kabData.categories || [];
+        const totalUnits = cats.reduce((acc, c) => acc + c.unit, 0);
+
+        // Treemap bounds
+        const svgW = 880;
+        const svgH = 380;
+        const pad = 4;
+
+        // Squarified/Slice layout for 7 categories:
+        // Left column (Big block: Restoran ~ 45% width)
+        // Middle column (Minimarket, Hotel ~ 30% width)
+        // Right column (Industri, Koperasi, Pasar, Bank ~ 25% width)
+        const wLeft = Math.round(svgW * 0.44);
+        const wMid = Math.round(svgW * 0.31);
+        const wRight = svgW - wLeft - wMid;
+
+        // Rect definitions matching mockup layout:
+        // 1. Restoran: left full height
+        // 2. Minimarket: mid top (60% height)
+        // 3. Hotel: mid bottom (40% height)
+        // 4. Industri: right top (60% height)
+        // 5. Koperasi, Pasar, Bank: right bottom
+        const hTop = Math.round(svgH * 0.60);
+        const hBottom = svgH - hTop;
+
+        const boxes = [
+            { ...cats[0], x: 0, y: 0, w: wLeft - pad, h: svgH }, // Restoran
+            { ...cats[1], x: wLeft, y: 0, w: wMid - pad, h: hTop - pad }, // Minimarket
+            { ...cats[3], x: wLeft, y: hTop, w: wMid - pad, h: hBottom }, // Hotel
+            { ...cats[2], x: wLeft + wMid, y: 0, w: wRight, h: hTop - pad }, // Industri
+            { ...cats[4], x: wLeft + wMid, y: hTop, w: Math.round(wRight * 0.42), h: hBottom }, // Koperasi
+            { ...cats[5], x: wLeft + wMid + Math.round(wRight * 0.42) + pad, y: hTop, w: Math.round(wRight * 0.30), h: hBottom }, // Pasar
+            { ...cats[6], x: wLeft + wMid + Math.round(wRight * 0.42) + pad + Math.round(wRight * 0.30) + pad, y: hTop, w: wRight - (Math.round(wRight * 0.42) + Math.round(wRight * 0.30) + pad * 2), h: hBottom } // Bank
+        ];
+
+        let svgHtml = '';
+        boxes.forEach(b => {
+            svgHtml += `
+                <g class="eko-treemap-box" data-name="${escapeHtml(b.kategori)}" data-unit="${b.unit}" data-kamar="${b.kamar || ''}" style="cursor:pointer">
+                    <rect x="${b.x}" y="${b.y}" width="${b.w}" height="${b.h}" rx="6" fill="${b.color}" opacity="0.9" stroke="#ffffff" stroke-width="2"/>
+                    <text x="${b.x + 12}" y="${b.y + 22}" font-family="var(--font)" font-size="12" font-weight="700" fill="#1e293b">
+                        ${escapeHtml(b.kategori)}
+                    </text>
+                    <text x="${b.x + 12}" y="${b.y + b.h - 14}" font-family="var(--mono)" font-size="20" font-weight="800" fill="#1e293b">
+                        ${b.unit.toLocaleString('id-ID')}
+                    </text>
+                </g>
+            `;
+        });
+
+        svg.innerHTML = svgHtml;
+
+        // Tooltip
+        svg.querySelectorAll('.eko-treemap-box').forEach(box => {
+            const name = box.dataset.name;
+            const unit = parseInt(box.dataset.unit, 10);
+            const kamar = box.dataset.kamar;
+
+            box.addEventListener('mouseenter', (e) => {
+                if (tooltip) {
+                    let extra = '';
+                    if (kamar) {
+                        extra = `<div class="tt-row"><span class="tt-k">Jumlah Kamar</span><span class="tt-v mono" style="color:#059669;font-weight:700">${parseInt(kamar, 10).toLocaleString('id-ID')} unit</span></div>`;
+                    }
+                    tooltip.innerHTML = `
+                        <div class="tt-title">${escapeHtml(name)}</div>
+                        <div class="tt-row"><span class="tt-k">Jumlah Fasilitas</span><span class="tt-v mono" style="font-weight:700">${unit.toLocaleString('id-ID')} unit</span></div>
+                        ${extra}
+                    `;
+                    tooltip.style.display = 'block';
+                    positionTooltip(e);
+                }
+                box.querySelector('rect').setAttribute('opacity', '1.0');
+            });
+
+            box.addEventListener('mousemove', (e) => positionTooltip(e));
+
+            box.addEventListener('mouseleave', () => {
+                if (tooltip) tooltip.style.display = 'none';
+                box.querySelector('rect').setAttribute('opacity', '0.9');
+            });
+        });
+    }
+
+    renderTreemap();
+}
+
+
+/* ============================================================
+   WIDGET 21: INDUSTRI BESAR DAN SEDANG (KBLI)
+   - 3 KPI Triliun Rp (Output, Input, Nilai Tambah)
+   - Horizontal bar chart per kelompok industri
+   - Toggle Top 5 vs Semua
+   - Right detail panel rincian klasifikasi KBLI
+   ============================================================ */
+function renderIndustriBesarSedang(r) {
+    const rawData = window.INDUSTRI_BESAR_SEDANG_DATA;
+    if (!rawData || !rawData.data) return;
+
+    const yearSelect = document.getElementById('indYearSelect');
+    const filterGroup = document.getElementById('indFilterGroup');
+    const barsContainer = document.getElementById('indBarsContainer');
+
+    const kpiOutput = document.getElementById('indKpiOutput');
+    const kpiInput = document.getElementById('indKpiInput');
+    const kpiAdded = document.getElementById('indKpiAdded');
+
+    const detailIcon = document.getElementById('indDetailIcon');
+    const detailTitle = document.getElementById('indDetailTitle');
+    const detailKode = document.getElementById('indDetailKode');
+    const detailSubList = document.getElementById('indDetailSubList');
+    const detailOut = document.getElementById('indDetailOut');
+    const detailIn = document.getElementById('indDetailIn');
+    const detailVa = document.getElementById('indDetailVa');
+
+    if (!yearSelect || !barsContainer) return;
+
+    let currentYear = yearSelect.value || '2025';
+    let currentFilter = 'top5'; // 'top5' or 'semua'
+    let currentProv = rawData.provinces[0] || 'Jawa Tengah';
+    let currentKab = '';
+
+    if (r && r.prov) {
+        const found = rawData.provinces.find(p => p.toLowerCase().includes(r.prov.toLowerCase()) || r.prov.toLowerCase().includes(p.toLowerCase()));
+        if (found) currentProv = found;
+    }
+    const kabs = rawData.kab_by_prov[currentProv] || [];
+    currentKab = kabs[0] || '';
+    if (r && r.kabkota) {
+        const foundK = kabs.find(k => k.toLowerCase().includes(r.kabkota.toLowerCase()) || r.kabkota.toLowerCase().includes(k.toLowerCase()));
+        if (foundK) currentKab = foundK;
+    }
+
+    yearSelect.addEventListener('change', () => {
+        currentYear = yearSelect.value;
+        renderView();
+    });
+
+    if (filterGroup) {
+        filterGroup.querySelectorAll('.bkpm-toggle-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterGroup.querySelectorAll('.bkpm-toggle-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentFilter = btn.dataset.filter;
+                renderView();
+            });
+        });
+    }
+
+    function formatRupiahFull(num) {
+        return 'Rp ' + Math.round(num).toLocaleString('id-ID');
+    }
+
+    function updateDetailPanel(group) {
+        if (!group) return;
+        if (detailTitle) detailTitle.textContent = group.nama;
+        if (detailKode) detailKode.textContent = group.kode;
+        if (detailOut) detailOut.textContent = `Rp ${group.output_triliun.toFixed(2)} T`;
+        if (detailIn) detailIn.textContent = `Rp ${group.input_triliun.toFixed(2)} T`;
+        if (detailVa) detailVa.textContent = `Rp ${group.nilai_tambah_triliun.toFixed(2)} T`;
+
+        if (detailSubList) {
+            detailSubList.innerHTML = (group.sub || []).map(s => `<li>${escapeHtml(s)}</li>`).join('');
+        }
+    }
+
+    function renderView() {
+        const kabData = ((rawData.data[currentProv] || {})[currentKab] || {})[currentYear];
+        if (!kabData) return;
+
+        // KPI Cards
+        if (kpiOutput) kpiOutput.textContent = formatRupiahFull(kabData.total_output_rp);
+        if (kpiInput) kpiInput.textContent = formatRupiahFull(kabData.total_input_rp);
+        if (kpiAdded) kpiAdded.textContent = formatRupiahFull(kabData.total_nilai_tambah_rp);
+
+        let groups = kabData.groups || [];
+        if (currentFilter === 'top5') {
+            groups = groups.slice(0, 5);
+        }
+
+        const maxVa = Math.max(...groups.map(g => g.nilai_tambah_triliun));
+        const axisMax = Math.ceil(maxVa * 1.15);
+
+        // Icons for categories
+        const iconMap = {
+            'logam_mesin': '⚙️',
+            'makanan_minuman': '🍽️',
+            'tekstil_kulit': '👕',
+            'kayu_kertas': '📦',
+            'kimia_farmasi': '🧪'
+        };
+
+        barsContainer.innerHTML = groups.map((g, idx) => {
+            const pct = Math.max(8, Math.round((g.nilai_tambah_triliun / axisMax) * 100));
+            const icon = iconMap[g.id] || '🏭';
+
+            return `
+                <div class="ind-bar-item ${idx === 0 ? 'active' : ''}" data-id="${g.id}">
+                    <div class="ind-bar-avatar" style="background:${g.color}">
+                        ${icon}
+                    </div>
+                    <div style="width:220px;min-width:180px">
+                        <div style="font-size:12.5px;font-weight:700;color:var(--text);line-height:1.2">${escapeHtml(g.nama)}</div>
+                        <div style="font-size:10px;color:var(--muted);font-family:var(--mono)">${escapeHtml(g.kode)}</div>
+                    </div>
+                    <div class="ind-bar-track">
+                        <div class="ind-bar-fill" style="width:${pct}%;background:${g.color}"></div>
+                        <div class="ind-bar-val">Rp ${g.nilai_tambah_triliun.toFixed(2)} T</div>
+                    </div>
+                </div>
+            `;
+        }).join('');
+
+        // Initial detail
+        if (groups.length > 0) {
+            updateDetailPanel(groups[0]);
+        }
+
+        // Attach click & hover events
+        barsContainer.querySelectorAll('.ind-bar-item').forEach(item => {
+            const id = item.dataset.id;
+            const grp = groups.find(g => g.id === id);
+
+            item.addEventListener('click', () => {
+                barsContainer.querySelectorAll('.ind-bar-item').forEach(b => b.classList.remove('active'));
+                item.classList.add('active');
+                updateDetailPanel(grp);
+            });
+
+            item.addEventListener('mouseenter', () => {
+                updateDetailPanel(grp);
+            });
+        });
+    }
+
     renderView();
 }

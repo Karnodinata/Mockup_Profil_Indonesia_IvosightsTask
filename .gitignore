@@ -20,3 +20,4 @@ scratch/
 scripts/local/
 data-mentah/fase1/
 *.local.py
+data-mentah/bkpm/*.json
