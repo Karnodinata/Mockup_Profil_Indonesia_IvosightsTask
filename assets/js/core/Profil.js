@@ -55,6 +55,196 @@ function normProv(s) {
     return clean;
 }
 
+function matchProvinceName(provList, targetProv) {
+    if (!provList || !provList.length || !targetProv) return (provList && provList[0]) || '';
+    const tClean = normProv(targetProv);
+    // 1. Exact normalized match
+    let found = provList.find(p => normProv(p) === tClean);
+    if (found) return found;
+    // 2. Substring normalized match
+    found = provList.find(p => {
+        const pNorm = normProv(p);
+        return pNorm.includes(tClean) || tClean.includes(pNorm);
+    });
+    if (found) return found;
+    // 3. Fallback standard substring
+    const tRaw = targetProv.toLowerCase().trim();
+    found = provList.find(p => {
+        const pRaw = p.toLowerCase().trim();
+        return pRaw === tRaw || pRaw.includes(tRaw) || tRaw.includes(pRaw);
+    });
+    return found || provList[0];
+}
+
+/**
+ * Helper palet warna dinamis untuk efek highlight bubble kuadran
+ * Menghasilkan filter glow, ring neon, dan badge yang serasi dengan warna asli titik kuadran
+ */
+function getHighlightPalette(hex, prefix = '') {
+    const c = (hex || '').toLowerCase();
+    const pfx = prefix ? `${prefix}-` : '';
+    if (c.includes('10b981') || c.includes('16a34a') || c.includes('059669') || c.includes('green')) {
+        return {
+            filterId: `${pfx}neonGlow-green`,
+            ringColor: '#10b981',
+            ringColorLight: '#34d399',
+            badgeBg: '#047857',
+            badgeBorder: '#34d399',
+            badgeShadow: 'rgba(4,120,87,0.35)'
+        };
+    }
+    if (c.includes('3b82f6') || c.includes('2563eb') || c.includes('1d4ed8') || c.includes('blue')) {
+        return {
+            filterId: `${pfx}neonGlow-blue`,
+            ringColor: '#3b82f6',
+            ringColorLight: '#60a5fa',
+            badgeBg: '#1d4ed8',
+            badgeBorder: '#60a5fa',
+            badgeShadow: 'rgba(29,78,216,0.35)'
+        };
+    }
+    if (c.includes('f59e0b') || c.includes('d97706') || c.includes('b45309') || c.includes('amber') || c.includes('orange')) {
+        return {
+            filterId: `${pfx}neonGlow-amber`,
+            ringColor: '#f59e0b',
+            ringColorLight: '#fbbf24',
+            badgeBg: '#b45309',
+            badgeBorder: '#fbbf24',
+            badgeShadow: 'rgba(180,83,9,0.35)'
+        };
+    }
+    if (c.includes('8b5cf6') || c.includes('a855f7') || c.includes('7e22ce') || c.includes('purple')) {
+        return {
+            filterId: `${pfx}neonGlow-purple`,
+            ringColor: '#8b5cf6',
+            ringColorLight: '#a78bfa',
+            badgeBg: '#6d28d9',
+            badgeBorder: '#a78bfa',
+            badgeShadow: 'rgba(109,40,217,0.35)'
+        };
+    }
+    if (c.includes('ef4444') || c.includes('dc2626') || c.includes('b91c1c') || c.includes('red')) {
+        return {
+            filterId: `${pfx}neonGlow-red`,
+            ringColor: '#ef4444',
+            ringColorLight: '#f87171',
+            badgeBg: '#b91c1c',
+            badgeBorder: '#f87171',
+            badgeShadow: 'rgba(185,28,28,0.35)'
+        };
+    }
+    return {
+        filterId: `${pfx}neonGlow-green`,
+        ringColor: '#10b981',
+        ringColorLight: '#34d399',
+        badgeBg: '#047857',
+        badgeBorder: '#34d399',
+        badgeShadow: 'rgba(4,120,87,0.35)'
+    };
+}
+
+/**
+ * Helper penentu posisi badge highlight tanpa menabrak titik lain (Anti-Collision Placement)
+ * Menguji arah (Right, Top, Bottom, Left) dan memilih ruang kosong yang tidak menutupi titik tetangga
+ */
+function findCollisionFreeBadgePosition(target, allItems, badgeW, badgeH, bounds) {
+    const cx = target.cx;
+    const cy = target.cy;
+    const r = target.bubbleRadius || target.dotR || 12;
+
+    const candidates = [
+        { dir: 'right', x: cx + r + 8, y: cy - badgeH / 2 },
+        { dir: 'top', x: cx - badgeW / 2, y: cy - r - badgeH - 6 },
+        { dir: 'bottom', x: cx - badgeW / 2, y: cy + r + 6 },
+        { dir: 'left', x: cx - r - badgeW - 8, y: cy - badgeH / 2 },
+        { dir: 'top-right', x: cx + r + 4, y: cy - r - badgeH },
+        { dir: 'top-left', x: cx - r - badgeW - 4, y: cy - r - badgeH }
+    ];
+
+    let bestCand = candidates[0];
+    let minScore = Infinity;
+
+    // Corner exclusion zones (e.g. corner quadrant title pills)
+    const corners = [
+        { x1: bounds.minX, x2: bounds.minX + 215, y1: bounds.minY, y2: bounds.minY + 32 }, // Q2
+        { x1: bounds.maxX - 215, x2: bounds.maxX, y1: bounds.minY, y2: bounds.minY + 32 }, // Q1
+        { x1: bounds.minX, x2: bounds.minX + 215, y1: bounds.maxY - 32, y2: bounds.maxY }, // Q3
+        { x1: bounds.maxX - 215, x2: bounds.maxX, y1: bounds.maxY - 32, y2: bounds.maxY }  // Q4
+    ];
+
+    for (const cand of candidates) {
+        let outOfBounds = 0;
+        if (cand.x < bounds.minX) outOfBounds += (bounds.minX - cand.x) * 4;
+        if (cand.x + badgeW > bounds.maxX) outOfBounds += (cand.x + badgeW - bounds.maxX) * 4;
+        if (cand.y < bounds.minY) outOfBounds += (bounds.minY - cand.y) * 4;
+        if (cand.y + badgeH > bounds.maxY) outOfBounds += (cand.y + badgeH - bounds.maxY) * 4;
+
+        let collisionScore = 0;
+        for (const it of allItems) {
+            if (it === target || it.isTarget || it.isSelected) continue;
+            const margin = 8;
+            const inX = it.cx >= cand.x - margin && it.cx <= cand.x + badgeW + margin;
+            const inY = it.cy >= cand.y - margin && it.cy <= cand.y + badgeH + margin;
+            if (inX && inY) {
+                collisionScore += 1000;
+            }
+        }
+
+        // Avoid corner pills
+        for (const c of corners) {
+            const overlapX = cand.x < c.x2 && (cand.x + badgeW) > c.x1;
+            const overlapY = cand.y < c.y2 && (cand.y + badgeH) > c.y1;
+            if (overlapX && overlapY) {
+                collisionScore += 600;
+            }
+        }
+
+        const prefPenalty = (cand.dir === 'right' ? 0 : cand.dir === 'top' ? 2 : cand.dir === 'bottom' ? 3 : 5);
+        const totalScore = outOfBounds + collisionScore + prefPenalty;
+
+        if (totalScore < minScore) {
+            minScore = totalScore;
+            bestCand = cand;
+        }
+    }
+
+    const finalX = Math.max(bounds.minX + 4, Math.min(bounds.maxX - badgeW - 4, bestCand.x));
+    const finalY = Math.max(bounds.minY + 4, Math.min(bounds.maxY - badgeH - 4, bestCand.y));
+
+    return { x: finalX, y: finalY, dir: bestCand.dir };
+}
+
+function getNeonGlowFiltersSvg(prefix = '') {
+    const pfx = prefix ? `${prefix}-` : '';
+    return `
+        <filter id="${pfx}neonGlow-green" x="-60%" y="-60%" width="220%" height="220%">
+            <feDropShadow dx="0" dy="0" stdDeviation="3.5" flood-color="#10b981" flood-opacity="0.95"/>
+            <feDropShadow dx="0" dy="0" stdDeviation="7" flood-color="#34d399" flood-opacity="0.6"/>
+            <feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#6ee7b7" flood-opacity="0.3"/>
+        </filter>
+        <filter id="${pfx}neonGlow-blue" x="-60%" y="-60%" width="220%" height="220%">
+            <feDropShadow dx="0" dy="0" stdDeviation="3.5" flood-color="#3b82f6" flood-opacity="0.95"/>
+            <feDropShadow dx="0" dy="0" stdDeviation="7" flood-color="#60a5fa" flood-opacity="0.6"/>
+            <feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#93c5fd" flood-opacity="0.3"/>
+        </filter>
+        <filter id="${pfx}neonGlow-amber" x="-60%" y="-60%" width="220%" height="220%">
+            <feDropShadow dx="0" dy="0" stdDeviation="3.5" flood-color="#f59e0b" flood-opacity="0.95"/>
+            <feDropShadow dx="0" dy="0" stdDeviation="7" flood-color="#fbbf24" flood-opacity="0.6"/>
+            <feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#fde68a" flood-opacity="0.3"/>
+        </filter>
+        <filter id="${pfx}neonGlow-purple" x="-60%" y="-60%" width="220%" height="220%">
+            <feDropShadow dx="0" dy="0" stdDeviation="3.5" flood-color="#8b5cf6" flood-opacity="0.95"/>
+            <feDropShadow dx="0" dy="0" stdDeviation="7" flood-color="#a78bfa" flood-opacity="0.6"/>
+            <feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#ddd6fe" flood-opacity="0.3"/>
+        </filter>
+        <filter id="${pfx}neonGlow-red" x="-60%" y="-60%" width="220%" height="220%">
+            <feDropShadow dx="0" dy="0" stdDeviation="3.5" flood-color="#ef4444" flood-opacity="0.95"/>
+            <feDropShadow dx="0" dy="0" stdDeviation="7" flood-color="#f87171" flood-opacity="0.6"/>
+            <feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#fca5a5" flood-opacity="0.3"/>
+        </filter>
+    `;
+}
+
 function isWaterBodyName(name) {
     if (!name) return false;
     const clean = name.replace(/^(Kabupaten|Kota|Kab\.|Kota\.)\s+/i, '').trim();
@@ -3534,10 +3724,7 @@ function renderDarurat(r) {
     const provList = [...new Set(allDarurat.map(d => d.provinsi).filter(Boolean))].sort((a, b) => a.localeCompare(b, 'id'));
 
     // Match province from active region
-    let currentProv = (r && r.prov ? r.prov : 'Daerah Istimewa Yogyakarta');
-    const matchedProv = provList.find(p => p.toLowerCase().includes(currentProv.toLowerCase()) || currentProv.toLowerCase().includes(p.toLowerCase()));
-    if (matchedProv) currentProv = matchedProv;
-    else if (!provList.includes(currentProv)) currentProv = 'Daerah Istimewa Yogyakarta';
+    let currentProv = matchProvinceName(provList, r ? r.prov : '');
 
     provSelect.innerHTML = `<option value="">Semua Provinsi</option>` + provList.map(p => `
         <option value="${escapeHtml(p)}" ${p.toLowerCase() === currentProv.toLowerCase() ? 'selected' : ''}>${escapeHtml(p)}</option>
@@ -4099,12 +4286,7 @@ function renderInvestasiSektor(r) {
 
     // Initialize initial Province & Kab
     const provList = rawData.provinces || [];
-    let initialProv = provList[0] || 'Jawa Barat';
-    if (r && r.prov) {
-        const found = provList.find(p => p.toLowerCase().trim() === r.prov.toLowerCase().trim() ||
-            p.toLowerCase().includes(r.prov.toLowerCase()) || r.prov.toLowerCase().includes(p.toLowerCase()));
-        if (found) initialProv = found;
-    }
+    let initialProv = matchProvinceName(provList, r ? r.prov : '');
     currentProv = initialProv;
 
     // Fill Province dropdown
@@ -4552,6 +4734,45 @@ function renderInvestasiSektor(r) {
    - 4 Kuadran (I, II, III, IV) dengan warna & interpretasi
    - Interactive Tooltip, Table Sortable, Zoom & Download
    ============================================================ */
+/**
+ * Helper pembuat efek lingkaran spidol / hand-drawn marker (lingkaran merah/oranye sketch)
+ * Menghasilkan garis oval spiral dengan tumpang tindih natural seperti coretan tangan/penghighlight
+ */
+function createSketchCircleMarkup(cx, cy, rx, ry, strokeColor = '#ea580c', strokeWidth = 2.8) {
+    const angles = [25, 75, 125, 175, 220, 265, 310, 355, 395];
+    const radiusFactors = [0.96, 1.03, 0.98, 1.04, 0.97, 1.02, 0.99, 1.05, 0.94];
+    const tiltRad = -6 * (Math.PI / 180);
+    const cosT = Math.cos(tiltRad);
+    const sinT = Math.sin(tiltRad);
+
+    const pts = angles.map((deg, i) => {
+        const theta = deg * (Math.PI / 180);
+        const rf = radiusFactors[i];
+        const xRaw = (rx * rf) * Math.cos(theta);
+        const yRaw = (ry * rf) * Math.sin(theta);
+        const xr = xRaw * cosT - yRaw * sinT;
+        const yr = xRaw * sinT + yRaw * cosT;
+        return [Math.round((cx + xr) * 100) / 100, Math.round((cy + yr) * 100) / 100];
+    });
+
+    let dParts = [`M ${pts[0][0]} ${pts[0][1]}`];
+    for (let i = 0; i < pts.length - 1; i++) {
+        const p0 = i > 0 ? pts[i - 1] : pts[0];
+        const p1 = pts[i];
+        const p2 = pts[i + 1];
+        const p3 = i + 2 < pts.length ? pts[i + 2] : p2;
+
+        const cp1x = p1[0] + (p2[0] - p0[0]) / 6.0;
+        const cp1y = p1[1] + (p2[1] - p0[1]) / 6.0;
+        const cp2x = p2[0] - (p3[0] - p1[0]) / 6.0;
+        const cp2y = p2[1] - (p3[1] - p1[1]) / 6.0;
+
+        dParts.push(`C ${Math.round(cp1x * 100) / 100} ${Math.round(cp1y * 100) / 100}, ${Math.round(cp2x * 100) / 100} ${Math.round(cp2y * 100) / 100}, ${p2[0]} ${p2[1]}`);
+    }
+
+    return `<path d="${dParts.join(' ')}" fill="none" stroke="${strokeColor}" stroke-width="${strokeWidth}" stroke-linecap="round" stroke-linejoin="round" opacity="0.95" style="filter:drop-shadow(0 1.5px 3px rgba(234,88,12,0.35));pointer-events:none"/>`;
+}
+
 function renderInvestasiKuadran(r) {
     const rawData = window.INVESTASI_SEKTOR_DATA;
     if (!rawData || !rawData.data_by_region) return;
@@ -4597,14 +4818,17 @@ function renderInvestasiKuadran(r) {
         return `Rp${Math.round(num).toLocaleString('id-ID')}`;
     }
 
+    // Helper matching nama kab/kota dengan toleransi prefiks
+    function isSameKabInvestasi(itemKab, targetKab) {
+        if (!itemKab || !targetKab) return false;
+        const cA = itemKab.toLowerCase().replace(/^(kabupaten|kota adm\.|kota|kab\.|kodya)\s+/i, '').replace(/[^a-z0-9]/g, '');
+        const cB = targetKab.toLowerCase().replace(/^(kabupaten|kota adm\.|kota|kab\.|kodya)\s+/i, '').replace(/[^a-z0-9]/g, '');
+        return cA === cB;
+    }
+
     // Populate Province Select
     const provList = rawData.provinces || [];
-    let initialProv = provList[0] || 'Jawa Barat';
-    if (r && r.prov) {
-        const found = provList.find(p => p.toLowerCase().trim() === r.prov.toLowerCase().trim() ||
-            p.toLowerCase().includes(r.prov.toLowerCase()) || r.prov.toLowerCase().includes(p.toLowerCase()));
-        if (found) initialProv = found;
-    }
+    let initialProv = matchProvinceName(provList, r ? r.prov : '');
     currentProv = initialProv;
     provSelect.innerHTML = provList.map(p => `<option value="${escapeHtml(p)}" ${p === currentProv ? 'selected' : ''}>${escapeHtml(p)}</option>`).join('');
 
@@ -4626,6 +4850,29 @@ function renderInvestasiKuadran(r) {
         btnReset.addEventListener('click', () => {
             zoomLevel = 1.0;
             applyZoom();
+            // Kembalikan seleksi ke wilayah profil aktif jika ada
+            if (r && r.kabkota) {
+                const allEntries = Object.values(rawData.data_by_region);
+                const provItems = allEntries.filter(item => item.provinsi && item.provinsi.toLowerCase() === currentProv.toLowerCase());
+                const defTarget = provItems.find(it => isSameKabInvestasi(it.kabupaten, r.kabkota));
+                if (defTarget) {
+                    selectedKab = {
+                        id: defTarget.id || '',
+                        kabupaten: defTarget.kabupaten,
+                        shortNama: defTarget.kabupaten.replace(/^(kabupaten|kota adm\.|kota)\s+/i, '').trim(),
+                        pma_rp: defTarget.summary?.total_pma_rp || 0,
+                        pmdn_rp: defTarget.summary?.total_pmdn_rp || 0,
+                        total_rp: (defTarget.summary?.total_pma_rp || 0) + (defTarget.summary?.total_pmdn_rp || 0),
+                        proporsi_pma: ((defTarget.summary?.total_pma_rp || 0) + (defTarget.summary?.total_pmdn_rp || 0)) > 0
+                            ? ((defTarget.summary?.total_pma_rp || 0) / ((defTarget.summary?.total_pma_rp || 0) + (defTarget.summary?.total_pmdn_rp || 0))) * 100 : 0
+                    };
+                } else {
+                    selectedKab = null;
+                }
+            } else {
+                selectedKab = null;
+            }
+            renderQuadrantView();
         });
     }
 
@@ -4669,6 +4916,25 @@ function renderInvestasiKuadran(r) {
         // Gather all regions in current province
         const allEntries = Object.values(rawData.data_by_region);
         const provItems = allEntries.filter(item => item.provinsi && item.provinsi.toLowerCase() === currentProv.toLowerCase());
+
+        // Inisialisasi auto-select ke kabupaten/kota aktif jika belum ada pilihan manual
+        if (!selectedKab && r && r.kabkota) {
+            const foundTarget = provItems.find(it => isSameKabInvestasi(it.kabupaten, r.kabkota));
+            if (foundTarget) {
+                const pmaT = foundTarget.summary?.total_pma_rp || 0;
+                const pmdnT = foundTarget.summary?.total_pmdn_rp || 0;
+                const totalT = pmaT + pmdnT;
+                selectedKab = {
+                    id: foundTarget.id || '',
+                    kabupaten: foundTarget.kabupaten,
+                    shortNama: foundTarget.kabupaten.replace(/^(kabupaten|kota adm\.|kota)\s+/i, '').trim(),
+                    pma_rp: pmaT,
+                    pmdn_rp: pmdnT,
+                    total_rp: totalT,
+                    proporsi_pma: totalT > 0 ? (pmaT / totalT) * 100 : 0
+                };
+            }
+        }
 
         const dataset = provItems.map(item => {
             const pma = item.summary?.total_pma_rp || 0;
@@ -4785,6 +5051,7 @@ function renderInvestasiKuadran(r) {
                 <filter id="quadBubbleGlow" x="-30%" y="-30%" width="160%" height="160%">
                     <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.25"/>
                 </filter>
+                ${getNeonGlowFiltersSvg('inv')}
             </defs>
         `;
 
@@ -4865,26 +5132,116 @@ function renderInvestasiKuadran(r) {
             </text>
         `;
 
-        // Bubbles / Points
-        let pointsHtml = '<g id="quadPlotArea">';
-        dataset.forEach((d, idx) => {
+        // Hitung posisi seluruh bubble terlebih dahulu
+        const hasSelection = Boolean(selectedKab);
+        let targetBubble = null;
+        const calculatedDataset = dataset.map((d, idx) => {
             const cx = padL + (Math.min(100, Math.max(0, d.proporsi_pma)) / 100) * plotW;
             const ratioY = niceMax > 0 ? Math.min(1, Math.max(0, d.total_rp / (niceMax * divisor))) : 0;
             const cy = padT + plotH - ratioY * plotH;
-            const isSelected = selectedKab && selectedKab.kabupaten === d.kabupaten;
+            const isSelected = selectedKab && isSameKabInvestasi(selectedKab.kabupaten, d.kabupaten);
+            const bubbleRadius = isSelected ? (d.radius + 4) : d.radius;
+            const cleanShort = d.kabupaten.replace(/^(kabupaten adm\.|kota adm\.|kabupaten|kota|kab\.|kodya)\s+/i, '').trim();
 
-            pointsHtml += `
-                <g class="bkpm-bubble-item" data-idx="${idx}" style="cursor:pointer">
-                    <circle cx="${cx}" cy="${cy}" r="${d.radius}" fill="${d.color}" fill-opacity="${isSelected ? '0.95' : '0.75'}" stroke="#ffffff" stroke-width="${isSelected ? '3' : '1.8'}" filter="url(#quadBubbleGlow)"/>
-                    <text x="${cx + d.radius + 4}" y="${cy + 4}" font-family="var(--sans)" font-size="10.5" font-weight="700" fill="var(--text)" style="pointer-events:none;text-shadow:0 1px 3px #ffffff">
-                        ${escapeHtml(d.shortNama)}
+            const itemObj = {
+                ...d,
+                idx,
+                cx,
+                cy,
+                bubbleRadius,
+                cleanShort,
+                isSelected
+            };
+            if (isSelected) targetBubble = itemObj;
+            return itemObj;
+        });
+
+        // Hitung posisi badge anti-tabrakan untuk target jika ada
+        let targetBadgePos = null;
+        let badgeW = 0;
+        const invBounds = { minX: padL, maxX: padL + plotW, minY: padT, maxY: padT + plotH };
+        if (targetBubble) {
+            badgeW = targetBubble.cleanShort.length * 7.5 + 28;
+            targetBadgePos = findCollisionFreeBadgePosition(targetBubble, calculatedDataset, badgeW, 22, invBounds);
+        }
+
+        // Layer 1: Titik-titik non-target (latar)
+        let basePointsHtml = '<g id="quadPlotArea">';
+        calculatedDataset.forEach(d => {
+            if (d.isSelected) return; // Digambar terpisah di top layer
+
+            // Cek tabrakan teks dengan badge target
+            let hideLabel = false;
+            if (targetBadgePos) {
+                const inBadgeArea = d.cx >= targetBadgePos.x - 6 && d.cx <= targetBadgePos.x + badgeW + 6 &&
+                                    d.cy >= targetBadgePos.y - 6 && d.cy <= targetBadgePos.y + 28;
+                if (inBadgeArea) hideLabel = true;
+            }
+
+            const fillOpacity = hasSelection ? 0.35 : 0.75;
+            const labelColor = hasSelection ? '#64748b' : 'var(--text)';
+            const labelOpacity = hideLabel ? '0.1' : (hasSelection ? '0.5' : '1');
+
+            basePointsHtml += `
+                <g class="bkpm-bubble-item" data-idx="${d.idx}" style="cursor:pointer">
+                    <circle class="main-bubble-circle" cx="${d.cx}" cy="${d.cy}" r="${d.bubbleRadius}" fill="${d.color}" fill-opacity="${fillOpacity}" stroke="#ffffff" stroke-width="1.8" filter="url(#quadBubbleGlow)"/>
+                    <text x="${d.cx + d.bubbleRadius + 4}" y="${d.cy + 3.5}" font-family="var(--sans)" font-size="10" font-weight="600" fill="${labelColor}" opacity="${labelOpacity}" style="pointer-events:none;text-shadow:0 1px 2px #ffffff">
+                        ${escapeHtml(d.cleanShort)}
                     </text>
                 </g>
             `;
         });
-        pointsHtml += '</g>';
+        basePointsHtml += '</g>';
 
-        svg.innerHTML = defsHtml + quadsHtml + thresholdHtml + gridHtml + pointsHtml;
+        // Layer 2: Top Highlight Layer (HANYA target aktif, dijamin SELALU berada di lapisan teratas)
+        let topTargetHtml = '';
+        if (targetBubble && targetBadgePos) {
+            const tb = targetBubble;
+            const pal = getHighlightPalette(tb.color, 'inv');
+            const baseR = tb.bubbleRadius + 3;
+            const maxR = tb.bubbleRadius + 11;
+
+            // Halo ganda berdenyut (Native SVG SMIL) dengan pointer-events:none agar klik tembus
+            const haloSvg = `
+                <circle cx="${tb.cx}" cy="${tb.cy}" r="${baseR}" fill="none" stroke="${pal.ringColor}" stroke-width="2.8" filter="url(#${pal.filterId})" style="pointer-events:none;">
+                    <animate attributeName="r" values="${baseR};${maxR};${baseR}" dur="2s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1; 0.4 0 0.2 1"/>
+                    <animate attributeName="stroke-opacity" values="0.95;0.25;0.95" dur="2s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1; 0.4 0 0.2 1"/>
+                    <animate attributeName="stroke-width" values="3.2;1.5;3.2" dur="2s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1; 0.4 0 0.2 1"/>
+                </circle>
+                <circle cx="${tb.cx}" cy="${tb.cy}" r="${baseR - 1.5}" fill="none" stroke="${pal.ringColorLight}" stroke-width="1.8" opacity="0.85" filter="url(#${pal.filterId})" style="pointer-events:none;">
+                    <animate attributeName="opacity" values="0.9;0.35;0.9" dur="2s" repeatCount="indefinite"/>
+                </circle>
+            `;
+
+            
+            // Leader line pin jika badge tidak tepat di samping titik
+            let leaderLineSvg = '';
+            const badgeCenterX = targetBadgePos.x + badgeW / 2;
+            const badgeCenterY = targetBadgePos.y + 11;
+            const distToBadge = Math.hypot(badgeCenterX - tb.cx, badgeCenterY - tb.cy);
+            if (distToBadge > tb.bubbleRadius + 18) {
+                const angle = Math.atan2(badgeCenterY - tb.cy, badgeCenterX - tb.cx);
+                const dotEdgeX = tb.cx + Math.cos(angle) * (tb.bubbleRadius + 4);
+                const dotEdgeY = tb.cy + Math.sin(angle) * (tb.bubbleRadius + 4);
+                const badgeEdgeX = targetBadgePos.x > tb.cx ? targetBadgePos.x : (targetBadgePos.x + badgeW < tb.cx ? targetBadgePos.x + badgeW : badgeCenterX);
+                const badgeEdgeY = targetBadgePos.y > tb.cy ? targetBadgePos.y : (targetBadgePos.y + 22 < tb.cy ? targetBadgePos.y + 22 : badgeCenterY);
+                leaderLineSvg = `<line x1="${dotEdgeX}" y1="${dotEdgeY}" x2="${badgeEdgeX}" y2="${badgeEdgeY}" stroke="${pal.badgeBorder}" stroke-width="1.6" stroke-dasharray="2,2" opacity="0.85" style="pointer-events:none;"/>`;
+            }
+
+            topTargetHtml = `
+                <g id="invTopHighlightLayer" class="bkpm-bubble-item highlighted-target" data-idx="${tb.idx}">
+                    ${haloSvg}
+                    ${leaderLineSvg}
+                    <circle class="main-bubble-circle" cx="${tb.cx}" cy="${tb.cy}" r="${tb.bubbleRadius}" fill="${tb.color}" fill-opacity="1.0" stroke="#ffffff" stroke-width="3.2" filter="url(#${pal.filterId})" style="cursor:pointer;"/>
+                    <rect x="${targetBadgePos.x}" y="${targetBadgePos.y}" width="${badgeW}" height="22" rx="6" fill="${pal.badgeBg}" stroke="${pal.badgeBorder}" stroke-width="1.4" opacity="0.98" filter="drop-shadow(0 2.5px 5px ${pal.badgeShadow})" style="pointer-events:none;"/>
+                    <text x="${targetBadgePos.x + badgeW/2}" y="${targetBadgePos.y + 14.5}" text-anchor="middle" font-family="var(--sans)" font-size="11" font-weight="800" fill="#ffffff" style="pointer-events:none;">
+                        ${escapeHtml(tb.cleanShort)} ★
+                    </text>
+                </g>
+            `;
+        }
+
+        svg.innerHTML = defsHtml + quadsHtml + thresholdHtml + gridHtml + basePointsHtml + topTargetHtml;
 
         // Interaction on bubbles
         svg.querySelectorAll('.bkpm-bubble-item').forEach(el => {
@@ -4893,7 +5250,7 @@ function renderInvestasiKuadran(r) {
             if (!item) return;
 
             el.addEventListener('mouseenter', e => {
-                const circle = el.querySelector('circle');
+                const circle = el.querySelector('.main-bubble-circle') || el.querySelector('circle');
                 if (circle) {
                     circle.setAttribute('fill-opacity', '1');
                     circle.setAttribute('stroke-width', '3');
@@ -4920,7 +5277,7 @@ function renderInvestasiKuadran(r) {
             });
 
             el.addEventListener('mouseleave', () => {
-                const circle = el.querySelector('circle');
+                const circle = el.querySelector('.main-bubble-circle') || el.querySelector('circle');
                 const isSelected = selectedKab && selectedKab.kabupaten === item.kabupaten;
                 if (circle && !isSelected) {
                     circle.setAttribute('fill-opacity', '0.75');
@@ -5076,12 +5433,7 @@ function renderInvestasiRanking(r) {
 
     // Populate Province Select
     const provList = rawData.provinces || [];
-    let initialProv = provList[0] || 'Jawa Barat';
-    if (r && r.prov) {
-        const found = provList.find(p => p.toLowerCase().trim() === r.prov.toLowerCase().trim() ||
-            p.toLowerCase().includes(r.prov.toLowerCase()) || r.prov.toLowerCase().includes(p.toLowerCase()));
-        if (found) initialProv = found;
-    }
+    let initialProv = matchProvinceName(provList, r ? r.prov : '');
     currentProv = initialProv;
     provSelect.innerHTML = provList.map(p => `<option value="${escapeHtml(p)}" ${p === currentProv ? 'selected' : ''}>${escapeHtml(p)}</option>`).join('');
 
@@ -5324,12 +5676,7 @@ function renderPasarKerja(r) {
 
     // Populate Province Select
     const provList = rawData.provinces || [];
-    let initialProv = provList[0] || 'Jawa Barat';
-    if (r && r.prov) {
-        const found = provList.find(p => p.toLowerCase().trim() === r.prov.toLowerCase().trim() ||
-            p.toLowerCase().includes(r.prov.toLowerCase()) || r.prov.toLowerCase().includes(p.toLowerCase()));
-        if (found) initialProv = found;
-    }
+    let initialProv = matchProvinceName(provList, r ? r.prov : '');
     currentProv = initialProv;
     provSelect.innerHTML = provList.map(p => `<option value="${escapeHtml(p)}" ${p === currentProv ? 'selected' : ''}>${escapeHtml(p)}</option>`).join('');
 
@@ -5942,18 +6289,25 @@ function renderKemiskinanKuadran(r) {
 
     if (!provSelect || !svg) return;
 
-    const provList = rawData.provinces || [];
-    let currentProv = provList[0] || 'Jawa Tengah';
-    if (r && r.prov) {
-        const found = provList.find(p => p.toLowerCase().trim() === r.prov.toLowerCase().trim() ||
-            p.toLowerCase().includes(r.prov.toLowerCase()) || r.prov.toLowerCase().includes(p.toLowerCase()));
-        if (found) currentProv = found;
+    // Helper pencocokan nama kab/kota dengan toleransi prefiks
+    function isSameKabKemiskinan(itemKab, targetKab) {
+        if (!itemKab || !targetKab) return false;
+        const isKotaA = /\bkota\b/i.test(itemKab);
+        const isKotaB = /\bkota\b/i.test(targetKab);
+        if (isKotaA !== isKotaB) return false;
+        const cA = itemKab.toLowerCase().replace(/^(kabupaten adm\.|kota adm\.|kabupaten|kota|kab\.|kodya)\s+/i, '').replace(/[^a-z0-9]/g, '');
+        const cB = targetKab.toLowerCase().replace(/^(kabupaten adm\.|kota adm\.|kabupaten|kota|kab\.|kodya)\s+/i, '').replace(/[^a-z0-9]/g, '');
+        return cA === cB;
     }
+
+    const provList = rawData.provinces || [];
+    let currentProv = matchProvinceName(provList, r ? r.prov : '');
 
     provSelect.innerHTML = provList.map(p => `<option value="${escapeHtml(p)}" ${p === currentProv ? 'selected' : ''}>${escapeHtml(p)}</option>`).join('');
 
     provSelect.addEventListener('change', () => {
         currentProv = provSelect.value;
+        selectedKab = null;
         renderView();
     });
 
@@ -5961,13 +6315,21 @@ function renderKemiskinanKuadran(r) {
 
     if (btnReset) {
         btnReset.addEventListener('click', () => {
-            selectedKab = null;
             if (tooltip) tooltip.style.display = 'none';
-            svg.querySelectorAll('.km-dot').forEach(d => {
-                d.querySelector('circle').setAttribute('r', '5.5');
-                d.querySelector('circle').setAttribute('stroke-width', '2');
-            });
-            resetDetailToProvince();
+            // Kembalikan seleksi ke kabupaten aktif profil jika tersedia
+            const items = rawData.data_by_prov[currentProv] || [];
+            let defaultTarget = null;
+            if (r && r.kabkota) {
+                defaultTarget = items.find(it => isSameKabKemiskinan(it.kabkota, r.kabkota));
+            }
+            if (defaultTarget) {
+                selectedKab = defaultTarget.kabkota;
+                renderView();
+            } else {
+                selectedKab = null;
+                renderView();
+                resetDetailToProvince();
+            }
         });
     }
 
@@ -6097,6 +6459,9 @@ function renderKemiskinanKuadran(r) {
         const qBottomH = Math.max(0, (padT + chartH) - medY);
 
         let svgHtml = `
+            <defs>
+                ${getNeonGlowFiltersSvg('km')}
+            </defs>
             <g id="kmPlotArea">
                 <!-- Quadrants Background -->
                 <!-- Q2 Kiri Atas: Miskin rendah, P1 tinggi (soft red) -->
@@ -6170,24 +6535,146 @@ function renderKemiskinanKuadran(r) {
                 Indeks Kedalaman Kemiskinan (P1)
             </text>
 
-            <!-- Dots (Kabupaten / Kota) -->
+            <!-- Dots (Kabupaten / Kota) dengan Highlight Visual Daerah Aktif -->
             <g id="kmDotsGroup">
         `;
 
-        items.forEach(item => {
+        // Tentukan target yang sedang aktif (apakah dipilih pengguna atau default wilayah r)
+        let activeTarget = null;
+        if (selectedKab) {
+            activeTarget = items.find(it => isSameKabKemiskinan(it.kabkota, selectedKab));
+        } else if (r && r.kabkota) {
+            activeTarget = items.find(it => isSameKabKemiskinan(it.kabkota, r.kabkota));
+            if (!activeTarget) {
+                // Fallback pencocokan fleksibel jika terdapat sedikit perbedaan nama
+                const cleanR = r.kabkota.toLowerCase().replace(/^(kabupaten adm\.|kota adm\.|kabupaten|kota|kab\.|kodya)\s+/i, '').replace(/[^a-z0-9]/g, '');
+                activeTarget = items.find(it => {
+                    const cleanIt = it.kabkota.toLowerCase().replace(/^(kabupaten adm\.|kota adm\.|kabupaten|kota|kab\.|kodya)\s+/i, '').replace(/[^a-z0-9]/g, '');
+                    return cleanIt === cleanR;
+                });
+            }
+            if (activeTarget) selectedKab = activeTarget.kabkota;
+        }
+
+        const hasActiveSelection = Boolean(activeTarget);
+
+        // Pra-kalkulasi posisi titik dan warna kuadran
+        let targetItemObj = null;
+        const calculatedItems = items.map((item, idx) => {
             const cx = scaleX(item.persentase_miskin);
             const cy = scaleY(item.p1);
-            const shortName = item.kabkota.replace(/^(KABUPATEN|KOTA|KAB\.|KODYA)\s+/i, '');
+            const cleanShort = item.kabkota.replace(/^(kabupaten adm\.|kota adm\.|kabupaten|kota|kab\.|kodya)\s+/i, '').trim();
+            const isTarget = activeTarget && isSameKabKemiskinan(item.kabkota, activeTarget.kabkota);
+
+            // Tentukan warna asli titik berdasarkan 4 kuadran kemiskinan
+            let itemColor = '#10b981'; // Kuadran Q3: Miskin R, P1 R (Hijau)
+            if (item.persentase_miskin >= medPct && item.p1 < medP1) {
+                itemColor = '#3b82f6'; // Kuadran Q4: Miskin T, P1 R (Biru)
+            } else if (item.persentase_miskin < medPct && item.p1 >= medP1) {
+                itemColor = '#ef4444'; // Kuadran Q2: Miskin R, P1 T (Merah)
+            } else if (item.persentase_miskin >= medPct && item.p1 >= medP1) {
+                itemColor = '#f59e0b'; // Kuadran Q1: Miskin T, P1 T (Oranye)
+            }
+
+            // Ukuran titik: Target diperbesar menjadi 12px (paritas skala dengan Deck Investasi)
+            const dotR = isTarget ? 12.0 : 6.0;
+
+            const itemObj = {
+                ...item,
+                idx,
+                cx,
+                cy,
+                cleanShort,
+                isTarget,
+                itemColor,
+                dotR
+            };
+            if (isTarget) targetItemObj = itemObj;
+            return itemObj;
+        });
+
+        // Hitung posisi badge anti-tabrakan untuk target kemiskinan
+        let kmBadgePos = null;
+        let kmBadgeW = 0;
+        const kmBounds = { minX: padL, maxX: padL + chartW, minY: padT, maxY: padT + chartH };
+        if (targetItemObj) {
+            kmBadgeW = targetItemObj.cleanShort.length * 7.5 + 28;
+            kmBadgePos = findCollisionFreeBadgePosition(targetItemObj, calculatedItems, kmBadgeW, 22, kmBounds);
+        }
+
+        // Layer 1: Render semua titik non-target (latar)
+        svgHtml += '<g id="kmDotsBaseLayer">';
+        calculatedItems.forEach(item => {
+            if (item.isTarget) return; // Dirender terpisah di top layer
+
+            // Cek tabrakan teks dengan badge target
+            let hideLabel = false;
+            if (kmBadgePos) {
+                const inBadgeArea = item.cx >= kmBadgePos.x - 6 && item.cx <= kmBadgePos.x + kmBadgeW + 6 &&
+                                    item.cy >= kmBadgePos.y - 6 && item.cy <= kmBadgePos.y + 28;
+                if (inBadgeArea) hideLabel = true;
+            }
+
+            const fillOpacity = hasActiveSelection ? 0.35 : 0.85;
+            const labelOpacity = hideLabel ? '0.1' : (hasActiveSelection ? '0.45' : '0.85');
 
             svgHtml += `
                 <g class="km-dot" data-kab="${escapeHtml(item.kabkota)}" style="cursor:pointer">
-                    <circle cx="${cx}" cy="${cy}" r="5.5" fill="#2563eb" stroke="#ffffff" stroke-width="2" filter="drop-shadow(0 1px 2px rgba(0,0,0,0.15))"/>
-                    <text x="${cx + 8}" y="${cy + 3.5}" font-family="var(--font)" font-size="9.5" font-weight="600" fill="#1e293b" style="pointer-events:none">
-                        ${escapeHtml(shortName)}
+                    <circle class="main-dot-circle" cx="${item.cx}" cy="${item.cy}" r="${item.dotR}" fill="${item.itemColor}" fill-opacity="${fillOpacity}" stroke="#ffffff" stroke-width="1.8" filter="drop-shadow(0 1px 2px rgba(0,0,0,0.2))"/>
+                    <text x="${item.cx + 8}" y="${item.cy + 3.5}" font-family="var(--font)" font-size="9.5" font-weight="600" fill="#334155" opacity="${labelOpacity}" style="pointer-events:none;text-shadow:0 1px 2px #ffffff">
+                        ${escapeHtml(item.cleanShort)}
                     </text>
                 </g>
             `;
         });
+        svgHtml += '</g>';
+
+        // Layer 2: Render Top Target Layer (titik terpilih + pulsing backlight + badge nama bebas tabrakan)
+        if (targetItemObj && kmBadgePos) {
+            const tb = targetItemObj;
+            const pal = getHighlightPalette(tb.itemColor, 'km');
+            const baseDotR = tb.dotR + 4;
+            const maxDotR = tb.dotR + 12;
+
+            // Halo ganda berdenyut dengan pointer-events:none agar klik tembus ke titik di bawahnya jika ada
+            const haloMarkup = `
+                <circle cx="${tb.cx}" cy="${tb.cy}" r="${baseDotR}" fill="none" stroke="${pal.ringColor}" stroke-width="2.8" filter="url(#${pal.filterId})" style="pointer-events:none;">
+                    <animate attributeName="r" values="${baseDotR};${maxDotR};${baseDotR}" dur="2s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1; 0.4 0 0.2 1"/>
+                    <animate attributeName="stroke-opacity" values="0.95;0.2;0.95" dur="2s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1; 0.4 0 0.2 1"/>
+                    <animate attributeName="stroke-width" values="3.2;1.5;3.2" dur="2s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1; 0.4 0 0.2 1"/>
+                </circle>
+                <circle cx="${tb.cx}" cy="${tb.cy}" r="${baseDotR - 2}" fill="none" stroke="${pal.ringColorLight}" stroke-width="1.8" opacity="0.85" filter="url(#${pal.filterId})" style="pointer-events:none;">
+                    <animate attributeName="opacity" values="0.9;0.35;0.9" dur="2s" repeatCount="indefinite"/>
+                </circle>
+            `;
+
+            
+            // Leader line pin jika badge tidak menempel langsung di titik
+            let kmLeaderLineSvg = '';
+            const kmBadgeCenterX = kmBadgePos.x + kmBadgeW / 2;
+            const kmBadgeCenterY = kmBadgePos.y + 11;
+            const kmDistToBadge = Math.hypot(kmBadgeCenterX - tb.cx, kmBadgeCenterY - tb.cy);
+            if (kmDistToBadge > tb.dotR + 18) {
+                const angle = Math.atan2(kmBadgeCenterY - tb.cy, kmBadgeCenterX - tb.cx);
+                const dotEdgeX = tb.cx + Math.cos(angle) * (tb.dotR + 4);
+                const dotEdgeY = tb.cy + Math.sin(angle) * (tb.dotR + 4);
+                const badgeEdgeX = kmBadgePos.x > tb.cx ? kmBadgePos.x : (kmBadgePos.x + kmBadgeW < tb.cx ? kmBadgePos.x + kmBadgeW : kmBadgeCenterX);
+                const badgeEdgeY = kmBadgePos.y > tb.cy ? kmBadgePos.y : (kmBadgePos.y + 22 < tb.cy ? kmBadgePos.y + 22 : kmBadgeCenterY);
+                kmLeaderLineSvg = `<line x1="${dotEdgeX}" y1="${dotEdgeY}" x2="${badgeEdgeX}" y2="${badgeEdgeY}" stroke="${pal.badgeBorder}" stroke-width="1.6" stroke-dasharray="2,2" opacity="0.85" style="pointer-events:none;"/>`;
+            }
+
+            svgHtml += `
+                <g id="kmTopHighlightLayer" class="km-dot km-dot-active" data-kab="${escapeHtml(tb.kabkota)}">
+                    ${haloMarkup}
+                    ${kmLeaderLineSvg}
+                    <circle class="main-dot-circle" cx="${tb.cx}" cy="${tb.cy}" r="${tb.dotR}" fill="${tb.itemColor}" fill-opacity="1.0" stroke="#ffffff" stroke-width="3.2" filter="url(#${pal.filterId})" style="cursor:pointer;"/>
+                    <rect x="${kmBadgePos.x}" y="${kmBadgePos.y}" width="${kmBadgeW}" height="22" rx="6" fill="${pal.badgeBg}" stroke="${pal.badgeBorder}" stroke-width="1.4" opacity="0.98" filter="drop-shadow(0 2.5px 5px ${pal.badgeShadow})" style="pointer-events:none;"/>
+                    <text x="${kmBadgePos.x + kmBadgeW/2}" y="${kmBadgePos.y + 14.5}" text-anchor="middle" font-family="var(--font)" font-size="11" font-weight="800" fill="#ffffff" style="pointer-events:none;">
+                        ${escapeHtml(tb.cleanShort)} ★
+                    </text>
+                </g>
+            `;
+        }
 
         svgHtml += `
                 </g>
@@ -6213,32 +6700,36 @@ function renderKemiskinanKuadran(r) {
                     tooltip.style.display = 'block';
                     positionTooltip(e);
                 }
-                dot.querySelector('circle').setAttribute('r', '7.5');
+                dot.querySelector('.main-dot-circle').setAttribute('r', '7.5');
             });
 
             dot.addEventListener('mousemove', (e) => positionTooltip(e));
 
             dot.addEventListener('mouseleave', () => {
                 if (tooltip) tooltip.style.display = 'none';
-                if (selectedKab !== item.kabkota) {
-                    dot.querySelector('circle').setAttribute('r', '5.5');
+                if (dot.classList.contains('km-dot-active') || dot.id === 'kmTopHighlightLayer') return;
+                const mainCircle = dot.querySelector('.main-dot-circle');
+                if (mainCircle) {
+                    mainCircle.setAttribute('r', '6');
                 }
             });
 
             dot.addEventListener('click', () => {
                 selectedKab = item.kabkota;
-                svg.querySelectorAll('.km-dot').forEach(d => {
-                    const isSel = d.dataset.kab === selectedKab;
-                    d.querySelector('circle').setAttribute('r', isSel ? '8' : '5.5');
-                    d.querySelector('circle').setAttribute('stroke-width', isSel ? '3' : '2');
-                });
-                updateDetail(item, medPct, medP1);
+                renderView();
             });
         });
 
-        // Set default initial detail
+        // Set default detail: prioritaskan wilayah aktif profil r, fallback ke items[0]
         if (items.length > 0) {
-            updateDetail(items[0], medPct, medP1);
+            let defaultTarget = null;
+            if (selectedKab) {
+                defaultTarget = items.find(it => isSameKabKemiskinan(it.kabkota, selectedKab));
+            } else if (r && r.kabkota) {
+                defaultTarget = items.find(it => isSameKabKemiskinan(it.kabkota, r.kabkota));
+            }
+            if (!defaultTarget) defaultTarget = items[0];
+            updateDetail(defaultTarget, medPct, medP1);
         }
     }
 
@@ -6271,12 +6762,7 @@ function renderPdrbSektor(r) {
     if (!provSelect || !kabSelect || !svg) return;
 
     const provList = rawData.provinces || [];
-    let currentProv = provList[0] || 'Jawa Tengah';
-    if (r && r.prov) {
-        const found = provList.find(p => p.toLowerCase().trim() === r.prov.toLowerCase().trim() ||
-            p.toLowerCase().includes(r.prov.toLowerCase()) || r.prov.toLowerCase().includes(p.toLowerCase()));
-        if (found) currentProv = found;
-    }
+    let currentProv = matchProvinceName(provList, r ? r.prov : '');
 
     provSelect.innerHTML = provList.map(p => `<option value="${escapeHtml(p)}" ${p === currentProv ? 'selected' : ''}>${escapeHtml(p)}</option>`).join('');
 
@@ -6512,13 +6998,8 @@ function renderEkosistemUsaha(r) {
     if (!yearSelect || !svg) return;
 
     let currentYear = yearSelect.value || '2025';
-    let currentProv = rawData.provinces[0] || 'Jawa Tengah';
+    let currentProv = matchProvinceName(rawData.provinces, r ? r.prov : '');
     let currentKab = '';
-
-    if (r && r.prov) {
-        const found = rawData.provinces.find(p => p.toLowerCase().includes(r.prov.toLowerCase()) || r.prov.toLowerCase().includes(p.toLowerCase()));
-        if (found) currentProv = found;
-    }
     const kabs = rawData.kab_by_prov[currentProv] || [];
     currentKab = kabs[0] || '';
     if (r && r.kabkota) {
@@ -6666,13 +7147,8 @@ function renderIndustriBesarSedang(r) {
 
     let currentYear = yearSelect.value || '2025';
     let currentFilter = 'top5'; // 'top5' or 'semua'
-    let currentProv = rawData.provinces[0] || 'Jawa Tengah';
+    let currentProv = matchProvinceName(rawData.provinces, r ? r.prov : '');
     let currentKab = '';
-
-    if (r && r.prov) {
-        const found = rawData.provinces.find(p => p.toLowerCase().includes(r.prov.toLowerCase()) || r.prov.toLowerCase().includes(p.toLowerCase()));
-        if (found) currentProv = found;
-    }
     const kabs = rawData.kab_by_prov[currentProv] || [];
     currentKab = kabs[0] || '';
     if (r && r.kabkota) {
