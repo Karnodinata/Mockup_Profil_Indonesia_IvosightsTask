@@ -15,9 +15,9 @@ window.PotensiData = {
     {
       "id": "bali",
       "name": "BALI",
-      "poi": 41,
-      "ver": 26,
-      "pot": 4.49,
+      "poi": 373,
+      "ver": 196,
+      "pot": 24.31,
       "lat": -8.428422222222222,
       "lng": 115.1877,
       "zoom": 9,
@@ -3701,9 +3701,9 @@ window.PotensiData = {
       "id": "jembrana",
       "provId": "bali",
       "name": "JEMBRANA",
-      "poi": 5,
-      "ver": 3,
-      "pot": 0.68,
+      "poi": 7,
+      "ver": 4,
+      "pot": 0.39,
       "lat": -8.3,
       "lng": 114.6667,
       "zoom": 12,
@@ -3713,9 +3713,9 @@ window.PotensiData = {
       "id": "tabanan",
       "provId": "bali",
       "name": "TABANAN",
-      "poi": 4,
-      "ver": 2,
-      "pot": 0.39,
+      "poi": 12,
+      "ver": 6,
+      "pot": 0.66,
       "lat": -8.4333,
       "lng": 115.0667,
       "zoom": 12,
@@ -3725,9 +3725,9 @@ window.PotensiData = {
       "id": "badung",
       "provId": "bali",
       "name": "BADUNG",
-      "poi": 5,
-      "ver": 3,
-      "pot": 0.36,
+      "poi": 149,
+      "ver": 79,
+      "pot": 10.77,
       "lat": -8.5167,
       "lng": 115.2,
       "zoom": 12,
@@ -3737,9 +3737,9 @@ window.PotensiData = {
       "id": "gianyar",
       "provId": "bali",
       "name": "GIANYAR",
-      "poi": 4,
-      "ver": 2,
-      "pot": 0.45,
+      "poi": 29,
+      "ver": 16,
+      "pot": 1.67,
       "lat": -8.4667,
       "lng": 115.2833,
       "zoom": 12,
@@ -3749,9 +3749,9 @@ window.PotensiData = {
       "id": "klungkung",
       "provId": "bali",
       "name": "KLUNGKUNG",
-      "poi": 5,
-      "ver": 4,
-      "pot": 0.6,
+      "poi": 2,
+      "ver": 0,
+      "pot": 0.12,
       "lat": -8.55,
       "lng": 115.4,
       "zoom": 12,
@@ -3761,9 +3761,9 @@ window.PotensiData = {
       "id": "bangli",
       "provId": "bali",
       "name": "BANGLI",
-      "poi": 4,
-      "ver": 4,
-      "pot": 0.38,
+      "poi": 13,
+      "ver": 5,
+      "pot": 0.74,
       "lat": -8.2833,
       "lng": 115.35,
       "zoom": 12,
@@ -3773,9 +3773,9 @@ window.PotensiData = {
       "id": "karangasem",
       "provId": "bali",
       "name": "KARANGASEM",
-      "poi": 5,
-      "ver": 3,
-      "pot": 0.55,
+      "poi": 23,
+      "ver": 10,
+      "pot": 1.15,
       "lat": -8.3891,
       "lng": 115.5393,
       "zoom": 12,
@@ -3785,9 +3785,9 @@ window.PotensiData = {
       "id": "buleleng",
       "provId": "bali",
       "name": "BULELENG",
-      "poi": 4,
-      "ver": 2,
-      "pot": 0.48,
+      "poi": 5,
+      "ver": 3,
+      "pot": 0.2,
       "lat": -8.25,
       "lng": 114.9667,
       "zoom": 12,
@@ -3797,9 +3797,9 @@ window.PotensiData = {
       "id": "kota-denpasar",
       "provId": "bali",
       "name": "KOTA DENPASAR",
-      "poi": 5,
-      "ver": 3,
-      "pot": 0.6,
+      "poi": 133,
+      "ver": 73,
+      "pot": 8.61,
       "lat": -8.6667,
       "lng": 115.2166,
       "zoom": 14,
@@ -95705,1933 +95705,6 @@ window.PotensiData = {
         }
       ]
     },
-    "OBJ-REK-JEMBRANA-001": {
-      "id": "OBJ-REK-JEMBRANA-001",
-      "name": "VIDEOTRON DIGITAL MEGASCREEN JEMBRANA",
-      "cityId": "jembrana",
-      "category": "rek",
-      "catName": "Billboard / Reklame",
-      "lat": -8.295906,
-      "lng": 114.659827,
-      "owner": "PT JEMBRANA Sarana Komunika",
-      "op": "Pengelola Billboard / Reklame JEMBRANA",
-      "w": 10,
-      "h": 5,
-      "sisi": 1,
-      "jenis": "LED Megatron Outdoor",
-      "periode": "12 Bulan (Periode 2026/2027)",
-      "regStatus": "Penetapan SKPD/Surat Ketetapan",
-      "izinUsaha": "Terverifikasi",
-      "izinRek": "Izin Lengkap",
-      "addr": "Jl. Basuki Rahmat No. 25, JEMBRANA",
-      "coord": "-8.295906, 114.659827",
-      "taxType": "Pajak Reklame Elektronik",
-      "estimatedValue": "Rp 94.000.000 / tahun",
-      "potValJt": 94,
-      "formula": "Luas Layar × Durasi Tayang × Tarif LED 25%",
-      "stage": 4,
-      "requested": true,
-      "hist": [
-        [
-          "01 Okt 2026",
-          "Hasil penyisiran lapangan koridor Jl. Basuki Rahmat",
-          "Tim Satgas PAD360 JEMBRANA · GPS ±3 m"
-        ],
-        [
-          "21 Sep 2026",
-          "Pencatatan data titik koordinat & verifikasi visual",
-          "Analis Pajak Daerah Bapenda"
-        ]
-      ],
-      "related": [
-        {
-          "id": "OBJ-REK-JEMBRANA-001",
-          "title": "LED Megatron Outdoor (10×5m)",
-          "type": "Pajak Reklame Elektronik",
-          "badge": "teal"
-        }
-      ]
-    },
-    "OBJ-PKR-JEMBRANA-002": {
-      "id": "OBJ-PKR-JEMBRANA-002",
-      "name": "GEDUNG PARKIR KHUSUS KOMERSIAL JEMBRANA 2",
-      "cityId": "jembrana",
-      "category": "pkr",
-      "catName": "Parkir Komersial",
-      "lat": -8.307249,
-      "lng": 114.658426,
-      "owner": "PT JEMBRANA Sarana Komunika",
-      "op": "Pengelola Parkir Komersial JEMBRANA",
-      "w": 40,
-      "h": 25,
-      "sisi": 1,
-      "jenis": "Gedung Parkir Bertingkat",
-      "periode": "12 Bulan (Periode 2026/2027)",
-      "regStatus": "Lunas / Terbit Validasi",
-      "izinUsaha": "Terverifikasi",
-      "izinRek": "Izin Lengkap",
-      "addr": "Jl. Teuku Umar No. 50, JEMBRANA",
-      "coord": "-8.307249, 114.658426",
-      "taxType": "PBJT Jasa Parkir",
-      "estimatedValue": "Rp 121.000.000 / tahun",
-      "potValJt": 121,
-      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
-      "stage": 5,
-      "requested": true,
-      "hist": [
-        [
-          "02 Okt 2026",
-          "Hasil penyisiran lapangan koridor Jl. Basuki Rahmat",
-          "Tim Satgas PAD360 JEMBRANA · GPS ±3 m"
-        ],
-        [
-          "22 Sep 2026",
-          "Pencatatan data titik koordinat & verifikasi visual",
-          "Analis Pajak Daerah Bapenda"
-        ]
-      ],
-      "related": [
-        {
-          "id": "OBJ-PKR-JEMBRANA-002",
-          "title": "Gedung Parkir Bertingkat (40×25m)",
-          "type": "PBJT Jasa Parkir",
-          "badge": "amber"
-        }
-      ]
-    },
-    "OBJ-MALL-JEMBRANA-003": {
-      "id": "OBJ-MALL-JEMBRANA-003",
-      "name": "LIFESTYLE MALL & HYPERMARKET JEMBRANA 3",
-      "cityId": "jembrana",
-      "category": "mall",
-      "catName": "Mall & Pusat Belanja",
-      "lat": -8.312866,
-      "lng": 114.67222,
-      "owner": "PT JEMBRANA Sarana Komunika",
-      "op": "Pengelola Mall & Pusat Belanja JEMBRANA",
-      "w": 70,
-      "h": 45,
-      "sisi": 1,
-      "jenis": "Pusat Perbelanjaan Terpadu",
-      "periode": "12 Bulan (Periode 2026/2027)",
-      "regStatus": "Audit Kepatuhan & Monitoring",
-      "izinUsaha": "Terverifikasi",
-      "izinRek": "Izin Lengkap",
-      "addr": "Jl. Yos Sudarso No. 75, JEMBRANA",
-      "coord": "-8.312866, 114.67222",
-      "taxType": "PBB-P2 & PBJT Terpadu",
-      "estimatedValue": "Rp 190.000.000 / tahun",
-      "potValJt": 190,
-      "formula": "NJOP Total Komersial × Tarif PBB-P2 0.2%",
-      "stage": 6,
-      "requested": true,
-      "hist": [
-        [
-          "03 Okt 2026",
-          "Hasil penyisiran lapangan koridor Jl. Basuki Rahmat",
-          "Tim Satgas PAD360 JEMBRANA · GPS ±3 m"
-        ],
-        [
-          "23 Sep 2026",
-          "Pencatatan data titik koordinat & verifikasi visual",
-          "Analis Pajak Daerah Bapenda"
-        ]
-      ],
-      "related": [
-        {
-          "id": "OBJ-MALL-JEMBRANA-003",
-          "title": "Pusat Perbelanjaan Terpadu (70×45m)",
-          "type": "PBB-P2 & PBJT Terpadu",
-          "badge": "purple"
-        }
-      ]
-    },
-    "OBJ-PAB-JEMBRANA-004": {
-      "id": "OBJ-PAB-JEMBRANA-004",
-      "name": "KOMPLEK PERGUDANGAN & LOGISTIK JEMBRANA 4",
-      "cityId": "jembrana",
-      "category": "pab",
-      "catName": "Pabrik & Pergudangan",
-      "lat": -8.299545,
-      "lng": 114.671679,
-      "owner": "PT JEMBRANA Sarana Komunika",
-      "op": "Pengelola Pabrik & Pergudangan JEMBRANA",
-      "w": 80,
-      "h": 50,
-      "sisi": 1,
-      "jenis": "Gudang Distribusi Baja Ringan",
-      "periode": "12 Bulan (Periode 2026/2027)",
-      "regStatus": "Kandidat belum terdaftar",
-      "izinUsaha": "Dalam Penelaahan",
-      "izinRek": "Belum Terdaftar",
-      "addr": "Jl. Kartini No. 100, JEMBRANA",
-      "coord": "-8.299545, 114.671679",
-      "taxType": "PBB-P2 Industri & Pergudangan",
-      "estimatedValue": "Rp 74.000.000 / tahun",
-      "potValJt": 74,
-      "formula": "Luas Lahan × NJOP Kawasan Industri",
-      "stage": 1,
-      "requested": false,
-      "hist": [
-        [
-          "04 Okt 2026",
-          "Hasil penyisiran lapangan koridor Jl. Basuki Rahmat",
-          "Tim Satgas PAD360 JEMBRANA · GPS ±3 m"
-        ],
-        [
-          "24 Sep 2026",
-          "Pencatatan data titik koordinat & verifikasi visual",
-          "Analis Pajak Daerah Bapenda"
-        ]
-      ],
-      "related": [
-        {
-          "id": "OBJ-PAB-JEMBRANA-004",
-          "title": "Gudang Distribusi Baja Ringan (80×50m)",
-          "type": "PBB-P2 Industri & Pergudangan",
-          "badge": "blue"
-        }
-      ]
-    },
-    "OBJ-TMN-JEMBRANA-005": {
-      "id": "OBJ-TMN-JEMBRANA-005",
-      "name": "HOTEL & RESORT PENGINAPAN JEMBRANA 5",
-      "cityId": "jembrana",
-      "category": "tmn",
-      "catName": "Ruang Publik / Fasum",
-      "lat": -8.292198,
-      "lng": 114.668469,
-      "owner": "PT JEMBRANA Sarana Komunika",
-      "op": "Pengelola Ruang Publik / Fasum JEMBRANA",
-      "w": 45,
-      "h": 30,
-      "sisi": 1,
-      "jenis": "Hotel Akomodasi Komersial",
-      "periode": "12 Bulan (Periode 2026/2027)",
-      "regStatus": "Perlu pencocokan register",
-      "izinUsaha": "Terverifikasi",
-      "izinRek": "Dokumen tersedia",
-      "addr": "Jl. Gajah Mada No. 125, JEMBRANA",
-      "coord": "-8.292198, 114.668469",
-      "taxType": "PBJT Jasa Perhotelan",
-      "estimatedValue": "Rp 200.000.000 / tahun",
-      "potValJt": 200,
-      "formula": "Kapasitas Kamar × Okupansi × Tarif PBJT 10%",
-      "stage": 2,
-      "requested": false,
-      "hist": [
-        [
-          "05 Okt 2026",
-          "Hasil penyisiran lapangan koridor Jl. Basuki Rahmat",
-          "Tim Satgas PAD360 JEMBRANA · GPS ±3 m"
-        ],
-        [
-          "25 Sep 2026",
-          "Pencatatan data titik koordinat & verifikasi visual",
-          "Analis Pajak Daerah Bapenda"
-        ]
-      ],
-      "related": [
-        {
-          "id": "OBJ-TMN-JEMBRANA-005",
-          "title": "Hotel Akomodasi Komersial (45×30m)",
-          "type": "PBJT Jasa Perhotelan",
-          "badge": "blue"
-        }
-      ]
-    },
-    "OBJ-REK-TABANAN-001": {
-      "id": "OBJ-REK-TABANAN-001",
-      "name": "BALIHO PROMOSI KOMERSIAL TABANAN",
-      "cityId": "tabanan",
-      "category": "rek",
-      "catName": "Billboard / Reklame",
-      "lat": -8.435083,
-      "lng": 115.055846,
-      "owner": "PT TABANAN Sarana Komunika",
-      "op": "Pengelola Billboard / Reklame TABANAN",
-      "w": 6,
-      "h": 3,
-      "sisi": 2,
-      "jenis": "Papan Baliho Rangka Baja",
-      "periode": "12 Bulan (Periode 2026/2027)",
-      "regStatus": "Lunas / Terbit Validasi",
-      "izinUsaha": "Terverifikasi",
-      "izinRek": "Izin Lengkap",
-      "addr": "Jl. R.E. Martadinata No. 25, TABANAN",
-      "coord": "-8.435083, 115.055846",
-      "taxType": "Pajak Reklame",
-      "estimatedValue": "Rp 40.000.000 / tahun",
-      "potValJt": 40,
-      "formula": "NSR × Sudut Pandang × Tarif 25%",
-      "stage": 5,
-      "requested": true,
-      "hist": [
-        [
-          "01 Okt 2026",
-          "Hasil penyisiran lapangan koridor Jl. R.E. Martadinata",
-          "Tim Satgas PAD360 TABANAN · GPS ±3 m"
-        ],
-        [
-          "21 Sep 2026",
-          "Pencatatan data titik koordinat & verifikasi visual",
-          "Analis Pajak Daerah Bapenda"
-        ]
-      ],
-      "related": [
-        {
-          "id": "OBJ-REK-TABANAN-001",
-          "title": "Papan Baliho Rangka Baja (6×3m)",
-          "type": "Pajak Reklame",
-          "badge": "teal"
-        }
-      ]
-    },
-    "OBJ-PKR-TABANAN-002": {
-      "id": "OBJ-PKR-TABANAN-002",
-      "name": "OFF-STREET PARKING KAWASAN KULINER TABANAN 2",
-      "cityId": "tabanan",
-      "category": "pkr",
-      "catName": "Parkir Komersial",
-      "lat": -8.447115,
-      "lng": 115.06897,
-      "owner": "PT TABANAN Sarana Komunika",
-      "op": "Pengelola Parkir Komersial TABANAN",
-      "w": 25,
-      "h": 12,
-      "sisi": 1,
-      "jenis": "Parkir Off-Street Pintu Gerbang",
-      "periode": "12 Bulan (Periode 2026/2027)",
-      "regStatus": "Audit Kepatuhan & Monitoring",
-      "izinUsaha": "Terverifikasi",
-      "izinRek": "Izin Lengkap",
-      "addr": "Jl. Sisingamangaraja No. 50, TABANAN",
-      "coord": "-8.447115, 115.06897",
-      "taxType": "PBJT Jasa Parkir",
-      "estimatedValue": "Rp 29.000.000 / tahun",
-      "potValJt": 29,
-      "formula": "Omzet Tiket Harian × 365 × 10%",
-      "stage": 6,
-      "requested": true,
-      "hist": [
-        [
-          "02 Okt 2026",
-          "Hasil penyisiran lapangan koridor Jl. R.E. Martadinata",
-          "Tim Satgas PAD360 TABANAN · GPS ±3 m"
-        ],
-        [
-          "22 Sep 2026",
-          "Pencatatan data titik koordinat & verifikasi visual",
-          "Analis Pajak Daerah Bapenda"
-        ]
-      ],
-      "related": [
-        {
-          "id": "OBJ-PKR-TABANAN-002",
-          "title": "Parkir Off-Street Pintu Gerbang (25×12m)",
-          "type": "PBJT Jasa Parkir",
-          "badge": "amber"
-        }
-      ]
-    },
-    "OBJ-MALL-TABANAN-003": {
-      "id": "OBJ-MALL-TABANAN-003",
-      "name": "PLAZA PUSAT PERBELANJAAN DAERAH TABANAN 3",
-      "cityId": "tabanan",
-      "category": "mall",
-      "catName": "Mall & Pusat Belanja",
-      "lat": -8.432489,
-      "lng": 115.071634,
-      "owner": "PT TABANAN Sarana Komunika",
-      "op": "Pengelola Mall & Pusat Belanja TABANAN",
-      "w": 60,
-      "h": 40,
-      "sisi": 1,
-      "jenis": "Bangunan Mall Modern 3 Lantai",
-      "periode": "12 Bulan (Periode 2026/2027)",
-      "regStatus": "Kandidat belum terdaftar",
-      "izinUsaha": "Dalam Penelaahan",
-      "izinRek": "Belum Terdaftar",
-      "addr": "Jl. Raden Inten No. 75, TABANAN",
-      "coord": "-8.432489, 115.071634",
-      "taxType": "PBB-P2 & PBJT Hiburan/Makan",
-      "estimatedValue": "Rp 216.000.000 / tahun",
-      "potValJt": 216,
-      "formula": "NJOP Tanah + NJOP Bangunan Komersial",
-      "stage": 1,
-      "requested": false,
-      "hist": [
-        [
-          "03 Okt 2026",
-          "Hasil penyisiran lapangan koridor Jl. R.E. Martadinata",
-          "Tim Satgas PAD360 TABANAN · GPS ±3 m"
-        ],
-        [
-          "23 Sep 2026",
-          "Pencatatan data titik koordinat & verifikasi visual",
-          "Analis Pajak Daerah Bapenda"
-        ]
-      ],
-      "related": [
-        {
-          "id": "OBJ-MALL-TABANAN-003",
-          "title": "Bangunan Mall Modern 3 Lantai (60×40m)",
-          "type": "PBB-P2 & PBJT Hiburan/Makan",
-          "badge": "purple"
-        }
-      ]
-    },
-    "OBJ-PAB-TABANAN-004": {
-      "id": "OBJ-PAB-TABANAN-004",
-      "name": "PABRIK PENGOLAHAN DAN MANUFAKTUR TABANAN 4",
-      "cityId": "tabanan",
-      "category": "pab",
-      "catName": "Pabrik & Pergudangan",
-      "lat": -8.425406,
-      "lng": 115.065403,
-      "owner": "PT TABANAN Sarana Komunika",
-      "op": "Pengelola Pabrik & Pergudangan TABANAN",
-      "w": 100,
-      "h": 60,
-      "sisi": 1,
-      "jenis": "Pabrik Pengolahan Sentra Produksi",
-      "periode": "12 Bulan (Periode 2026/2027)",
-      "regStatus": "Perlu pencocokan register",
-      "izinUsaha": "Terverifikasi",
-      "izinRek": "Dokumen tersedia",
-      "addr": "Jl. Jenderal Sudirman No. 100, TABANAN",
-      "coord": "-8.425406, 115.065403",
-      "taxType": "PBB-P2 Industri",
-      "estimatedValue": "Rp 105.000.000 / tahun",
-      "potValJt": 105,
-      "formula": "NJOP Industri + Pajak Air Tanah (PAT)",
-      "stage": 2,
-      "requested": false,
-      "hist": [
-        [
-          "04 Okt 2026",
-          "Hasil penyisiran lapangan koridor Jl. R.E. Martadinata",
-          "Tim Satgas PAD360 TABANAN · GPS ±3 m"
-        ],
-        [
-          "24 Sep 2026",
-          "Pencatatan data titik koordinat & verifikasi visual",
-          "Analis Pajak Daerah Bapenda"
-        ]
-      ],
-      "related": [
-        {
-          "id": "OBJ-PAB-TABANAN-004",
-          "title": "Pabrik Pengolahan Sentra Produksi (100×60m)",
-          "type": "PBB-P2 Industri",
-          "badge": "blue"
-        }
-      ]
-    },
-    "OBJ-REK-BADUNG-001": {
-      "id": "OBJ-REK-BADUNG-001",
-      "name": "NEON BOX PERTOKOAN STRATEGIS BADUNG",
-      "cityId": "badung",
-      "category": "rek",
-      "catName": "Billboard / Reklame",
-      "lat": -8.527336,
-      "lng": 115.190896,
-      "owner": "PT BADUNG Sarana Komunika",
-      "op": "Pengelola Billboard / Reklame BADUNG",
-      "w": 5,
-      "h": 2.5,
-      "sisi": 2,
-      "jenis": "Neon Box Acrylic Outdoor",
-      "periode": "12 Bulan (Periode 2026/2027)",
-      "regStatus": "Audit Kepatuhan & Monitoring",
-      "izinUsaha": "Terverifikasi",
-      "izinRek": "Izin Lengkap",
-      "addr": "Jl. Teuku Umar No. 25, BADUNG",
-      "coord": "-8.527336, 115.190896",
-      "taxType": "Pajak Reklame Papan",
-      "estimatedValue": "Rp 29.000.000 / tahun",
-      "potValJt": 29,
-      "formula": "Luas Bidang Reklame × Tarif Dasar 25%",
-      "stage": 6,
-      "requested": true,
-      "hist": [
-        [
-          "01 Okt 2026",
-          "Hasil penyisiran lapangan koridor Jl. Teuku Umar",
-          "Tim Satgas PAD360 BADUNG · GPS ±3 m"
-        ],
-        [
-          "21 Sep 2026",
-          "Pencatatan data titik koordinat & verifikasi visual",
-          "Analis Pajak Daerah Bapenda"
-        ]
-      ],
-      "related": [
-        {
-          "id": "OBJ-REK-BADUNG-001",
-          "title": "Neon Box Acrylic Outdoor (5×2.5m)",
-          "type": "Pajak Reklame Papan",
-          "badge": "teal"
-        }
-      ]
-    },
-    "OBJ-PKR-BADUNG-002": {
-      "id": "OBJ-PKR-BADUNG-002",
-      "name": "PARKIR PELATARAN RUKO PUSAT BISNIS BADUNG 2",
-      "cityId": "badung",
-      "category": "pkr",
-      "catName": "Parkir Komersial",
-      "lat": -8.520966,
-      "lng": 115.202608,
-      "owner": "PT BADUNG Sarana Komunika",
-      "op": "Pengelola Parkir Komersial BADUNG",
-      "w": 30,
-      "h": 15,
-      "sisi": 1,
-      "jenis": "Pelataran Parkir Aspal / Paving",
-      "periode": "12 Bulan (Periode 2026/2027)",
-      "regStatus": "Kandidat belum terdaftar",
-      "izinUsaha": "Dalam Penelaahan",
-      "izinRek": "Belum Terdaftar",
-      "addr": "Jl. Yos Sudarso No. 50, BADUNG",
-      "coord": "-8.520966, 115.202608",
-      "taxType": "PBJT Jasa Parkir",
-      "estimatedValue": "Rp 36.000.000 / tahun",
-      "potValJt": 36,
-      "formula": "Estimasi SRP × Kapasitas Kendaraan × Tarif PBJT 10%",
-      "stage": 1,
-      "requested": false,
-      "hist": [
-        [
-          "02 Okt 2026",
-          "Hasil penyisiran lapangan koridor Jl. Teuku Umar",
-          "Tim Satgas PAD360 BADUNG · GPS ±3 m"
-        ],
-        [
-          "22 Sep 2026",
-          "Pencatatan data titik koordinat & verifikasi visual",
-          "Analis Pajak Daerah Bapenda"
-        ]
-      ],
-      "related": [
-        {
-          "id": "OBJ-PKR-BADUNG-002",
-          "title": "Pelataran Parkir Aspal / Paving (30×15m)",
-          "type": "PBJT Jasa Parkir",
-          "badge": "amber"
-        }
-      ]
-    },
-    "OBJ-MALL-BADUNG-003": {
-      "id": "OBJ-MALL-BADUNG-003",
-      "name": "GRAND TRADE CENTER & SUPERMARKET BADUNG 3",
-      "cityId": "badung",
-      "category": "mall",
-      "catName": "Mall & Pusat Belanja",
-      "lat": -8.514841,
-      "lng": 115.207781,
-      "owner": "PT BADUNG Sarana Komunika",
-      "op": "Pengelola Mall & Pusat Belanja BADUNG",
-      "w": 50,
-      "h": 35,
-      "sisi": 1,
-      "jenis": "Pusat Grosir & Retail Modern",
-      "periode": "12 Bulan (Periode 2026/2027)",
-      "regStatus": "Perlu pencocokan register",
-      "izinUsaha": "Terverifikasi",
-      "izinRek": "Dokumen tersedia",
-      "addr": "Jl. Kartini No. 75, BADUNG",
-      "coord": "-8.514841, 115.207781",
-      "taxType": "PBB-P2 Komersial",
-      "estimatedValue": "Rp 131.000.000 / tahun",
-      "potValJt": 131,
-      "formula": "NJOP Bangunan Bertingkat + PBJT Reklame Interior",
-      "stage": 2,
-      "requested": false,
-      "hist": [
-        [
-          "03 Okt 2026",
-          "Hasil penyisiran lapangan koridor Jl. Teuku Umar",
-          "Tim Satgas PAD360 BADUNG · GPS ±3 m"
-        ],
-        [
-          "23 Sep 2026",
-          "Pencatatan data titik koordinat & verifikasi visual",
-          "Analis Pajak Daerah Bapenda"
-        ]
-      ],
-      "related": [
-        {
-          "id": "OBJ-MALL-BADUNG-003",
-          "title": "Pusat Grosir & Retail Modern (50×35m)",
-          "type": "PBB-P2 Komersial",
-          "badge": "purple"
-        }
-      ]
-    },
-    "OBJ-PAB-BADUNG-004": {
-      "id": "OBJ-PAB-BADUNG-004",
-      "name": "KOMPLEK PERGUDANGAN & LOGISTIK BADUNG 4",
-      "cityId": "badung",
-      "category": "pab",
-      "catName": "Pabrik & Pergudangan",
-      "lat": -8.505735,
-      "lng": 115.200875,
-      "owner": "PT BADUNG Sarana Komunika",
-      "op": "Pengelola Pabrik & Pergudangan BADUNG",
-      "w": 80,
-      "h": 50,
-      "sisi": 1,
-      "jenis": "Gudang Distribusi Baja Ringan",
-      "periode": "12 Bulan (Periode 2026/2027)",
-      "regStatus": "Tervalidasi (Perlu Update Tarif)",
-      "izinUsaha": "Terverifikasi",
-      "izinRek": "Izin Tayang Aktif",
-      "addr": "Jl. Gajah Mada No. 100, BADUNG",
-      "coord": "-8.505735, 115.200875",
-      "taxType": "PBB-P2 Industri & Pergudangan",
-      "estimatedValue": "Rp 88.000.000 / tahun",
-      "potValJt": 88,
-      "formula": "Luas Lahan × NJOP Kawasan Industri",
-      "stage": 3,
-      "requested": true,
-      "hist": [
-        [
-          "04 Okt 2026",
-          "Hasil penyisiran lapangan koridor Jl. Teuku Umar",
-          "Tim Satgas PAD360 BADUNG · GPS ±3 m"
-        ],
-        [
-          "24 Sep 2026",
-          "Pencatatan data titik koordinat & verifikasi visual",
-          "Analis Pajak Daerah Bapenda"
-        ]
-      ],
-      "related": [
-        {
-          "id": "OBJ-PAB-BADUNG-004",
-          "title": "Gudang Distribusi Baja Ringan (80×50m)",
-          "type": "PBB-P2 Industri & Pergudangan",
-          "badge": "blue"
-        }
-      ]
-    },
-    "OBJ-TMN-BADUNG-005": {
-      "id": "OBJ-TMN-BADUNG-005",
-      "name": "HOTEL & RESORT PENGINAPAN BADUNG 5",
-      "cityId": "badung",
-      "category": "tmn",
-      "catName": "Ruang Publik / Fasum",
-      "lat": -8.511328,
-      "lng": 115.187072,
-      "owner": "PT BADUNG Sarana Komunika",
-      "op": "Pengelola Ruang Publik / Fasum BADUNG",
-      "w": 45,
-      "h": 30,
-      "sisi": 1,
-      "jenis": "Hotel Akomodasi Komersial",
-      "periode": "12 Bulan (Periode 2026/2027)",
-      "regStatus": "Penetapan SKPD/Surat Ketetapan",
-      "izinUsaha": "Terverifikasi",
-      "izinRek": "Izin Lengkap",
-      "addr": "Jl. Diponegoro No. 125, BADUNG",
-      "coord": "-8.511328, 115.187072",
-      "taxType": "PBJT Jasa Perhotelan",
-      "estimatedValue": "Rp 73.000.000 / tahun",
-      "potValJt": 73,
-      "formula": "Kapasitas Kamar × Okupansi × Tarif PBJT 10%",
-      "stage": 4,
-      "requested": true,
-      "hist": [
-        [
-          "05 Okt 2026",
-          "Hasil penyisiran lapangan koridor Jl. Teuku Umar",
-          "Tim Satgas PAD360 BADUNG · GPS ±3 m"
-        ],
-        [
-          "25 Sep 2026",
-          "Pencatatan data titik koordinat & verifikasi visual",
-          "Analis Pajak Daerah Bapenda"
-        ]
-      ],
-      "related": [
-        {
-          "id": "OBJ-TMN-BADUNG-005",
-          "title": "Hotel Akomodasi Komersial (45×30m)",
-          "type": "PBJT Jasa Perhotelan",
-          "badge": "blue"
-        }
-      ]
-    },
-    "OBJ-REK-GIANYAR-001": {
-      "id": "OBJ-REK-GIANYAR-001",
-      "name": "BILLBOARD SIMPANG UTAMA GIANYAR",
-      "cityId": "gianyar",
-      "category": "rek",
-      "catName": "Billboard / Reklame",
-      "lat": -8.4717,
-      "lng": 115.28326,
-      "owner": "PT GIANYAR Sarana Komunika",
-      "op": "Pengelola Billboard / Reklame GIANYAR",
-      "w": 8,
-      "h": 4,
-      "sisi": 2,
-      "jenis": "Papan Billboard Lampu LED",
-      "periode": "12 Bulan (Periode 2026/2027)",
-      "regStatus": "Kandidat belum terdaftar",
-      "izinUsaha": "Dalam Penelaahan",
-      "izinRek": "Belum Terdaftar",
-      "addr": "Jl. Sisingamangaraja No. 25, GIANYAR",
-      "coord": "-8.4717, 115.28326",
-      "taxType": "Pajak Reklame",
-      "estimatedValue": "Rp 63.000.000 / tahun",
-      "potValJt": 63,
-      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
-      "stage": 1,
-      "requested": false,
-      "hist": [
-        [
-          "01 Okt 2026",
-          "Hasil penyisiran lapangan koridor Jl. Sisingamangaraja",
-          "Tim Satgas PAD360 GIANYAR · GPS ±3 m"
-        ],
-        [
-          "21 Sep 2026",
-          "Pencatatan data titik koordinat & verifikasi visual",
-          "Analis Pajak Daerah Bapenda"
-        ]
-      ],
-      "related": [
-        {
-          "id": "OBJ-REK-GIANYAR-001",
-          "title": "Papan Billboard Lampu LED (8×4m)",
-          "type": "Pajak Reklame",
-          "badge": "teal"
-        }
-      ]
-    },
-    "OBJ-PKR-GIANYAR-002": {
-      "id": "OBJ-PKR-GIANYAR-002",
-      "name": "GEDUNG PARKIR KHUSUS KOMERSIAL GIANYAR 2",
-      "cityId": "gianyar",
-      "category": "pkr",
-      "catName": "Parkir Komersial",
-      "lat": -8.466764,
-      "lng": 115.2913,
-      "owner": "PT GIANYAR Sarana Komunika",
-      "op": "Pengelola Parkir Komersial GIANYAR",
-      "w": 40,
-      "h": 25,
-      "sisi": 1,
-      "jenis": "Gedung Parkir Bertingkat",
-      "periode": "12 Bulan (Periode 2026/2027)",
-      "regStatus": "Perlu pencocokan register",
-      "izinUsaha": "Terverifikasi",
-      "izinRek": "Dokumen tersedia",
-      "addr": "Jl. Raden Inten No. 50, GIANYAR",
-      "coord": "-8.466764, 115.2913",
-      "taxType": "PBJT Jasa Parkir",
-      "estimatedValue": "Rp 61.000.000 / tahun",
-      "potValJt": 61,
-      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
-      "stage": 2,
-      "requested": false,
-      "hist": [
-        [
-          "02 Okt 2026",
-          "Hasil penyisiran lapangan koridor Jl. Sisingamangaraja",
-          "Tim Satgas PAD360 GIANYAR · GPS ±3 m"
-        ],
-        [
-          "22 Sep 2026",
-          "Pencatatan data titik koordinat & verifikasi visual",
-          "Analis Pajak Daerah Bapenda"
-        ]
-      ],
-      "related": [
-        {
-          "id": "OBJ-PKR-GIANYAR-002",
-          "title": "Gedung Parkir Bertingkat (40×25m)",
-          "type": "PBJT Jasa Parkir",
-          "badge": "amber"
-        }
-      ]
-    },
-    "OBJ-MALL-GIANYAR-003": {
-      "id": "OBJ-MALL-GIANYAR-003",
-      "name": "LIFESTYLE MALL & HYPERMARKET GIANYAR 3",
-      "cityId": "gianyar",
-      "category": "mall",
-      "catName": "Mall & Pusat Belanja",
-      "lat": -8.4557,
-      "lng": 115.283387,
-      "owner": "PT GIANYAR Sarana Komunika",
-      "op": "Pengelola Mall & Pusat Belanja GIANYAR",
-      "w": 70,
-      "h": 45,
-      "sisi": 1,
-      "jenis": "Pusat Perbelanjaan Terpadu",
-      "periode": "12 Bulan (Periode 2026/2027)",
-      "regStatus": "Tervalidasi (Perlu Update Tarif)",
-      "izinUsaha": "Terverifikasi",
-      "izinRek": "Izin Tayang Aktif",
-      "addr": "Jl. Jenderal Sudirman No. 75, GIANYAR",
-      "coord": "-8.4557, 115.283387",
-      "taxType": "PBB-P2 & PBJT Terpadu",
-      "estimatedValue": "Rp 211.000.000 / tahun",
-      "potValJt": 211,
-      "formula": "NJOP Total Komersial × Tarif PBB-P2 0.2%",
-      "stage": 3,
-      "requested": true,
-      "hist": [
-        [
-          "03 Okt 2026",
-          "Hasil penyisiran lapangan koridor Jl. Sisingamangaraja",
-          "Tim Satgas PAD360 GIANYAR · GPS ±3 m"
-        ],
-        [
-          "23 Sep 2026",
-          "Pencatatan data titik koordinat & verifikasi visual",
-          "Analis Pajak Daerah Bapenda"
-        ]
-      ],
-      "related": [
-        {
-          "id": "OBJ-MALL-GIANYAR-003",
-          "title": "Pusat Perbelanjaan Terpadu (70×45m)",
-          "type": "PBB-P2 & PBJT Terpadu",
-          "badge": "purple"
-        }
-      ]
-    },
-    "OBJ-PAB-GIANYAR-004": {
-      "id": "OBJ-PAB-GIANYAR-004",
-      "name": "PABRIK PENGOLAHAN DAN MANUFAKTUR GIANYAR 4",
-      "cityId": "gianyar",
-      "category": "pab",
-      "catName": "Pabrik & Pergudangan",
-      "lat": -8.466589,
-      "lng": 115.2693,
-      "owner": "PT GIANYAR Sarana Komunika",
-      "op": "Pengelola Pabrik & Pergudangan GIANYAR",
-      "w": 100,
-      "h": 60,
-      "sisi": 1,
-      "jenis": "Pabrik Pengolahan Sentra Produksi",
-      "periode": "12 Bulan (Periode 2026/2027)",
-      "regStatus": "Penetapan SKPD/Surat Ketetapan",
-      "izinUsaha": "Terverifikasi",
-      "izinRek": "Izin Lengkap",
-      "addr": "Jl. Ahmad Yani No. 100, GIANYAR",
-      "coord": "-8.466589, 115.2693",
-      "taxType": "PBB-P2 Industri",
-      "estimatedValue": "Rp 119.000.000 / tahun",
-      "potValJt": 119,
-      "formula": "NJOP Industri + Pajak Air Tanah (PAT)",
-      "stage": 4,
-      "requested": true,
-      "hist": [
-        [
-          "04 Okt 2026",
-          "Hasil penyisiran lapangan koridor Jl. Sisingamangaraja",
-          "Tim Satgas PAD360 GIANYAR · GPS ±3 m"
-        ],
-        [
-          "24 Sep 2026",
-          "Pencatatan data titik koordinat & verifikasi visual",
-          "Analis Pajak Daerah Bapenda"
-        ]
-      ],
-      "related": [
-        {
-          "id": "OBJ-PAB-GIANYAR-004",
-          "title": "Pabrik Pengolahan Sentra Produksi (100×60m)",
-          "type": "PBB-P2 Industri",
-          "badge": "blue"
-        }
-      ]
-    },
-    "OBJ-REK-KLUNGKUNG-001": {
-      "id": "OBJ-REK-KLUNGKUNG-001",
-      "name": "VIDEOTRON DIGITAL MEGASCREEN KLUNGKUNG",
-      "cityId": "klungkung",
-      "category": "rek",
-      "catName": "Billboard / Reklame",
-      "lat": -8.55616,
-      "lng": 115.405105,
-      "owner": "PT KLUNGKUNG Sarana Komunika",
-      "op": "Pengelola Billboard / Reklame KLUNGKUNG",
-      "w": 10,
-      "h": 5,
-      "sisi": 1,
-      "jenis": "LED Megatron Outdoor",
-      "periode": "12 Bulan (Periode 2026/2027)",
-      "regStatus": "Perlu pencocokan register",
-      "izinUsaha": "Terverifikasi",
-      "izinRek": "Dokumen tersedia",
-      "addr": "Jl. Yos Sudarso No. 25, KLUNGKUNG",
-      "coord": "-8.55616, 115.405105",
-      "taxType": "Pajak Reklame Elektronik",
-      "estimatedValue": "Rp 122.000.000 / tahun",
-      "potValJt": 122,
-      "formula": "Luas Layar × Durasi Tayang × Tarif LED 25%",
-      "stage": 2,
-      "requested": false,
-      "hist": [
-        [
-          "01 Okt 2026",
-          "Hasil penyisiran lapangan koridor Jl. Yos Sudarso",
-          "Tim Satgas PAD360 KLUNGKUNG · GPS ±3 m"
-        ],
-        [
-          "21 Sep 2026",
-          "Pencatatan data titik koordinat & verifikasi visual",
-          "Analis Pajak Daerah Bapenda"
-        ]
-      ],
-      "related": [
-        {
-          "id": "OBJ-REK-KLUNGKUNG-001",
-          "title": "LED Megatron Outdoor (10×5m)",
-          "type": "Pajak Reklame Elektronik",
-          "badge": "teal"
-        }
-      ]
-    },
-    "OBJ-PKR-KLUNGKUNG-002": {
-      "id": "OBJ-PKR-KLUNGKUNG-002",
-      "name": "OFF-STREET PARKING KAWASAN KULINER KLUNGKUNG 2",
-      "cityId": "klungkung",
-      "category": "pkr",
-      "catName": "Parkir Komersial",
-      "lat": -8.545941,
-      "lng": 115.410224,
-      "owner": "PT KLUNGKUNG Sarana Komunika",
-      "op": "Pengelola Parkir Komersial KLUNGKUNG",
-      "w": 25,
-      "h": 12,
-      "sisi": 1,
-      "jenis": "Parkir Off-Street Pintu Gerbang",
-      "periode": "12 Bulan (Periode 2026/2027)",
-      "regStatus": "Tervalidasi (Perlu Update Tarif)",
-      "izinUsaha": "Terverifikasi",
-      "izinRek": "Izin Tayang Aktif",
-      "addr": "Jl. Kartini No. 50, KLUNGKUNG",
-      "coord": "-8.545941, 115.410224",
-      "taxType": "PBJT Jasa Parkir",
-      "estimatedValue": "Rp 50.000.000 / tahun",
-      "potValJt": 50,
-      "formula": "Omzet Tiket Harian × 365 × 10%",
-      "stage": 3,
-      "requested": true,
-      "hist": [
-        [
-          "02 Okt 2026",
-          "Hasil penyisiran lapangan koridor Jl. Yos Sudarso",
-          "Tim Satgas PAD360 KLUNGKUNG · GPS ±3 m"
-        ],
-        [
-          "22 Sep 2026",
-          "Pencatatan data titik koordinat & verifikasi visual",
-          "Analis Pajak Daerah Bapenda"
-        ]
-      ],
-      "related": [
-        {
-          "id": "OBJ-PKR-KLUNGKUNG-002",
-          "title": "Parkir Off-Street Pintu Gerbang (25×12m)",
-          "type": "PBJT Jasa Parkir",
-          "badge": "amber"
-        }
-      ]
-    },
-    "OBJ-MALL-KLUNGKUNG-003": {
-      "id": "OBJ-MALL-KLUNGKUNG-003",
-      "name": "PLAZA PUSAT PERBELANJAAN DAERAH KLUNGKUNG 3",
-      "cityId": "klungkung",
-      "category": "mall",
-      "catName": "Mall & Pusat Belanja",
-      "lat": -8.536028,
-      "lng": 115.399108,
-      "owner": "PT KLUNGKUNG Sarana Komunika",
-      "op": "Pengelola Mall & Pusat Belanja KLUNGKUNG",
-      "w": 60,
-      "h": 40,
-      "sisi": 1,
-      "jenis": "Bangunan Mall Modern 3 Lantai",
-      "periode": "12 Bulan (Periode 2026/2027)",
-      "regStatus": "Penetapan SKPD/Surat Ketetapan",
-      "izinUsaha": "Terverifikasi",
-      "izinRek": "Izin Lengkap",
-      "addr": "Jl. Gajah Mada No. 75, KLUNGKUNG",
-      "coord": "-8.536028, 115.399108",
-      "taxType": "PBB-P2 & PBJT Hiburan/Makan",
-      "estimatedValue": "Rp 237.000.000 / tahun",
-      "potValJt": 237,
-      "formula": "NJOP Tanah + NJOP Bangunan Komersial",
-      "stage": 4,
-      "requested": true,
-      "hist": [
-        [
-          "03 Okt 2026",
-          "Hasil penyisiran lapangan koridor Jl. Yos Sudarso",
-          "Tim Satgas PAD360 KLUNGKUNG · GPS ±3 m"
-        ],
-        [
-          "23 Sep 2026",
-          "Pencatatan data titik koordinat & verifikasi visual",
-          "Analis Pajak Daerah Bapenda"
-        ]
-      ],
-      "related": [
-        {
-          "id": "OBJ-MALL-KLUNGKUNG-003",
-          "title": "Bangunan Mall Modern 3 Lantai (60×40m)",
-          "type": "PBB-P2 & PBJT Hiburan/Makan",
-          "badge": "purple"
-        }
-      ]
-    },
-    "OBJ-PAB-KLUNGKUNG-004": {
-      "id": "OBJ-PAB-KLUNGKUNG-004",
-      "name": "KOMPLEK PERGUDANGAN & LOGISTIK KLUNGKUNG 4",
-      "cityId": "klungkung",
-      "category": "pab",
-      "catName": "Pabrik & Pergudangan",
-      "lat": -8.548761,
-      "lng": 115.395156,
-      "owner": "PT KLUNGKUNG Sarana Komunika",
-      "op": "Pengelola Pabrik & Pergudangan KLUNGKUNG",
-      "w": 80,
-      "h": 50,
-      "sisi": 1,
-      "jenis": "Gudang Distribusi Baja Ringan",
-      "periode": "12 Bulan (Periode 2026/2027)",
-      "regStatus": "Lunas / Terbit Validasi",
-      "izinUsaha": "Terverifikasi",
-      "izinRek": "Izin Lengkap",
-      "addr": "Jl. Diponegoro No. 100, KLUNGKUNG",
-      "coord": "-8.548761, 115.395156",
-      "taxType": "PBB-P2 Industri & Pergudangan",
-      "estimatedValue": "Rp 102.000.000 / tahun",
-      "potValJt": 102,
-      "formula": "Luas Lahan × NJOP Kawasan Industri",
-      "stage": 5,
-      "requested": true,
-      "hist": [
-        [
-          "04 Okt 2026",
-          "Hasil penyisiran lapangan koridor Jl. Yos Sudarso",
-          "Tim Satgas PAD360 KLUNGKUNG · GPS ±3 m"
-        ],
-        [
-          "24 Sep 2026",
-          "Pencatatan data titik koordinat & verifikasi visual",
-          "Analis Pajak Daerah Bapenda"
-        ]
-      ],
-      "related": [
-        {
-          "id": "OBJ-PAB-KLUNGKUNG-004",
-          "title": "Gudang Distribusi Baja Ringan (80×50m)",
-          "type": "PBB-P2 Industri & Pergudangan",
-          "badge": "blue"
-        }
-      ]
-    },
-    "OBJ-TMN-KLUNGKUNG-005": {
-      "id": "OBJ-TMN-KLUNGKUNG-005",
-      "name": "HOTEL & RESORT PENGINAPAN KLUNGKUNG 5",
-      "cityId": "klungkung",
-      "category": "tmn",
-      "catName": "Ruang Publik / Fasum",
-      "lat": -8.556758,
-      "lng": 115.395719,
-      "owner": "PT KLUNGKUNG Sarana Komunika",
-      "op": "Pengelola Ruang Publik / Fasum KLUNGKUNG",
-      "w": 45,
-      "h": 30,
-      "sisi": 1,
-      "jenis": "Hotel Akomodasi Komersial",
-      "periode": "12 Bulan (Periode 2026/2027)",
-      "regStatus": "Audit Kepatuhan & Monitoring",
-      "izinUsaha": "Terverifikasi",
-      "izinRek": "Izin Lengkap",
-      "addr": "Jl. Pahlawan No. 125, KLUNGKUNG",
-      "coord": "-8.556758, 115.395719",
-      "taxType": "PBJT Jasa Perhotelan",
-      "estimatedValue": "Rp 87.000.000 / tahun",
-      "potValJt": 87,
-      "formula": "Kapasitas Kamar × Okupansi × Tarif PBJT 10%",
-      "stage": 6,
-      "requested": true,
-      "hist": [
-        [
-          "05 Okt 2026",
-          "Hasil penyisiran lapangan koridor Jl. Yos Sudarso",
-          "Tim Satgas PAD360 KLUNGKUNG · GPS ±3 m"
-        ],
-        [
-          "25 Sep 2026",
-          "Pencatatan data titik koordinat & verifikasi visual",
-          "Analis Pajak Daerah Bapenda"
-        ]
-      ],
-      "related": [
-        {
-          "id": "OBJ-TMN-KLUNGKUNG-005",
-          "title": "Hotel Akomodasi Komersial (45×30m)",
-          "type": "PBJT Jasa Perhotelan",
-          "badge": "blue"
-        }
-      ]
-    },
-    "OBJ-REK-BANGLI-001": {
-      "id": "OBJ-REK-BANGLI-001",
-      "name": "BALIHO PROMOSI KOMERSIAL BANGLI",
-      "cityId": "bangli",
-      "category": "rek",
-      "catName": "Billboard / Reklame",
-      "lat": -8.285256,
-      "lng": 115.360825,
-      "owner": "PT BANGLI Sarana Komunika",
-      "op": "Pengelola Billboard / Reklame BANGLI",
-      "w": 6,
-      "h": 3,
-      "sisi": 2,
-      "jenis": "Papan Baliho Rangka Baja",
-      "periode": "12 Bulan (Periode 2026/2027)",
-      "regStatus": "Tervalidasi (Perlu Update Tarif)",
-      "izinUsaha": "Terverifikasi",
-      "izinRek": "Izin Tayang Aktif",
-      "addr": "Jl. Raden Inten No. 25, BANGLI",
-      "coord": "-8.285256, 115.360825",
-      "taxType": "Pajak Reklame",
-      "estimatedValue": "Rp 42.000.000 / tahun",
-      "potValJt": 42,
-      "formula": "NSR × Sudut Pandang × Tarif 25%",
-      "stage": 3,
-      "requested": true,
-      "hist": [
-        [
-          "01 Okt 2026",
-          "Hasil penyisiran lapangan koridor Jl. Raden Inten",
-          "Tim Satgas PAD360 BANGLI · GPS ±3 m"
-        ],
-        [
-          "21 Sep 2026",
-          "Pencatatan data titik koordinat & verifikasi visual",
-          "Analis Pajak Daerah Bapenda"
-        ]
-      ],
-      "related": [
-        {
-          "id": "OBJ-REK-BANGLI-001",
-          "title": "Papan Baliho Rangka Baja (6×3m)",
-          "type": "Pajak Reklame",
-          "badge": "teal"
-        }
-      ]
-    },
-    "OBJ-PKR-BANGLI-002": {
-      "id": "OBJ-PKR-BANGLI-002",
-      "name": "PARKIR PELATARAN RUKO PUSAT BISNIS BANGLI 2",
-      "cityId": "bangli",
-      "category": "pkr",
-      "catName": "Parkir Komersial",
-      "lat": -8.269523,
-      "lng": 115.352489,
-      "owner": "PT BANGLI Sarana Komunika",
-      "op": "Pengelola Parkir Komersial BANGLI",
-      "w": 30,
-      "h": 15,
-      "sisi": 1,
-      "jenis": "Pelataran Parkir Aspal / Paving",
-      "periode": "12 Bulan (Periode 2026/2027)",
-      "regStatus": "Penetapan SKPD/Surat Ketetapan",
-      "izinUsaha": "Terverifikasi",
-      "izinRek": "Izin Lengkap",
-      "addr": "Jl. Jenderal Sudirman No. 50, BANGLI",
-      "coord": "-8.269523, 115.352489",
-      "taxType": "PBJT Jasa Parkir",
-      "estimatedValue": "Rp 57.000.000 / tahun",
-      "potValJt": 57,
-      "formula": "Estimasi SRP × Kapasitas Kendaraan × Tarif PBJT 10%",
-      "stage": 4,
-      "requested": true,
-      "hist": [
-        [
-          "02 Okt 2026",
-          "Hasil penyisiran lapangan koridor Jl. Raden Inten",
-          "Tim Satgas PAD360 BANGLI · GPS ±3 m"
-        ],
-        [
-          "22 Sep 2026",
-          "Pencatatan data titik koordinat & verifikasi visual",
-          "Analis Pajak Daerah Bapenda"
-        ]
-      ],
-      "related": [
-        {
-          "id": "OBJ-PKR-BANGLI-002",
-          "title": "Pelataran Parkir Aspal / Paving (30×15m)",
-          "type": "PBJT Jasa Parkir",
-          "badge": "amber"
-        }
-      ]
-    },
-    "OBJ-MALL-BANGLI-003": {
-      "id": "OBJ-MALL-BANGLI-003",
-      "name": "GRAND TRADE CENTER & SUPERMARKET BANGLI 3",
-      "cityId": "bangli",
-      "category": "mall",
-      "catName": "Mall & Pusat Belanja",
-      "lat": -8.282411,
-      "lng": 115.34508,
-      "owner": "PT BANGLI Sarana Komunika",
-      "op": "Pengelola Mall & Pusat Belanja BANGLI",
-      "w": 50,
-      "h": 35,
-      "sisi": 1,
-      "jenis": "Pusat Grosir & Retail Modern",
-      "periode": "12 Bulan (Periode 2026/2027)",
-      "regStatus": "Lunas / Terbit Validasi",
-      "izinUsaha": "Terverifikasi",
-      "izinRek": "Izin Lengkap",
-      "addr": "Jl. Ahmad Yani No. 75, BANGLI",
-      "coord": "-8.282411, 115.34508",
-      "taxType": "PBB-P2 Komersial",
-      "estimatedValue": "Rp 152.000.000 / tahun",
-      "potValJt": 152,
-      "formula": "NJOP Bangunan Bertingkat + PBJT Reklame Interior",
-      "stage": 5,
-      "requested": true,
-      "hist": [
-        [
-          "03 Okt 2026",
-          "Hasil penyisiran lapangan koridor Jl. Raden Inten",
-          "Tim Satgas PAD360 BANGLI · GPS ±3 m"
-        ],
-        [
-          "23 Sep 2026",
-          "Pencatatan data titik koordinat & verifikasi visual",
-          "Analis Pajak Daerah Bapenda"
-        ]
-      ],
-      "related": [
-        {
-          "id": "OBJ-MALL-BANGLI-003",
-          "title": "Pusat Grosir & Retail Modern (50×35m)",
-          "type": "PBB-P2 Komersial",
-          "badge": "purple"
-        }
-      ]
-    },
-    "OBJ-PAB-BANGLI-004": {
-      "id": "OBJ-PAB-BANGLI-004",
-      "name": "PABRIK PENGOLAHAN DAN MANUFAKTUR BANGLI 4",
-      "cityId": "bangli",
-      "category": "pab",
-      "catName": "Pabrik & Pergudangan",
-      "lat": -8.291173,
-      "lng": 115.348578,
-      "owner": "PT BANGLI Sarana Komunika",
-      "op": "Pengelola Pabrik & Pergudangan BANGLI",
-      "w": 100,
-      "h": 60,
-      "sisi": 1,
-      "jenis": "Pabrik Pengolahan Sentra Produksi",
-      "periode": "12 Bulan (Periode 2026/2027)",
-      "regStatus": "Audit Kepatuhan & Monitoring",
-      "izinUsaha": "Terverifikasi",
-      "izinRek": "Izin Lengkap",
-      "addr": "Jl. Gatot Subroto No. 100, BANGLI",
-      "coord": "-8.291173, 115.348578",
-      "taxType": "PBB-P2 Industri",
-      "estimatedValue": "Rp 133.000.000 / tahun",
-      "potValJt": 133,
-      "formula": "NJOP Industri + Pajak Air Tanah (PAT)",
-      "stage": 6,
-      "requested": true,
-      "hist": [
-        [
-          "04 Okt 2026",
-          "Hasil penyisiran lapangan koridor Jl. Raden Inten",
-          "Tim Satgas PAD360 BANGLI · GPS ±3 m"
-        ],
-        [
-          "24 Sep 2026",
-          "Pencatatan data titik koordinat & verifikasi visual",
-          "Analis Pajak Daerah Bapenda"
-        ]
-      ],
-      "related": [
-        {
-          "id": "OBJ-PAB-BANGLI-004",
-          "title": "Pabrik Pengolahan Sentra Produksi (100×60m)",
-          "type": "PBB-P2 Industri",
-          "badge": "blue"
-        }
-      ]
-    },
-    "OBJ-REK-KARANGASEM-001": {
-      "id": "OBJ-REK-KARANGASEM-001",
-      "name": "NEON BOX PERTOKOAN STRATEGIS KARANGASEM",
-      "cityId": "karangasem",
-      "category": "rek",
-      "catName": "Billboard / Reklame",
-      "lat": -8.382128,
-      "lng": 115.551441,
-      "owner": "PT KARANGASEM Sarana Komunika",
-      "op": "Pengelola Billboard / Reklame KARANGASEM",
-      "w": 5,
-      "h": 2.5,
-      "sisi": 2,
-      "jenis": "Neon Box Acrylic Outdoor",
-      "periode": "12 Bulan (Periode 2026/2027)",
-      "regStatus": "Penetapan SKPD/Surat Ketetapan",
-      "izinUsaha": "Terverifikasi",
-      "izinRek": "Izin Lengkap",
-      "addr": "Jl. Kartini No. 25, KARANGASEM",
-      "coord": "-8.382128, 115.551441",
-      "taxType": "Pajak Reklame Papan",
-      "estimatedValue": "Rp 15.000.000 / tahun",
-      "potValJt": 15,
-      "formula": "Luas Bidang Reklame × Tarif Dasar 25%",
-      "stage": 4,
-      "requested": true,
-      "hist": [
-        [
-          "01 Okt 2026",
-          "Hasil penyisiran lapangan koridor Jl. Kartini",
-          "Tim Satgas PAD360 KARANGASEM · GPS ±3 m"
-        ],
-        [
-          "21 Sep 2026",
-          "Pencatatan data titik koordinat & verifikasi visual",
-          "Analis Pajak Daerah Bapenda"
-        ]
-      ],
-      "related": [
-        {
-          "id": "OBJ-REK-KARANGASEM-001",
-          "title": "Neon Box Acrylic Outdoor (5×2.5m)",
-          "type": "Pajak Reklame Papan",
-          "badge": "teal"
-        }
-      ]
-    },
-    "OBJ-PKR-KARANGASEM-002": {
-      "id": "OBJ-PKR-KARANGASEM-002",
-      "name": "GEDUNG PARKIR KHUSUS KOMERSIAL KARANGASEM 2",
-      "cityId": "karangasem",
-      "category": "pkr",
-      "catName": "Parkir Komersial",
-      "lat": -8.384207,
-      "lng": 115.538272,
-      "owner": "PT KARANGASEM Sarana Komunika",
-      "op": "Pengelola Parkir Komersial KARANGASEM",
-      "w": 40,
-      "h": 25,
-      "sisi": 1,
-      "jenis": "Gedung Parkir Bertingkat",
-      "periode": "12 Bulan (Periode 2026/2027)",
-      "regStatus": "Lunas / Terbit Validasi",
-      "izinUsaha": "Terverifikasi",
-      "izinRek": "Izin Lengkap",
-      "addr": "Jl. Gajah Mada No. 50, KARANGASEM",
-      "coord": "-8.384207, 115.538272",
-      "taxType": "PBJT Jasa Parkir",
-      "estimatedValue": "Rp 82.000.000 / tahun",
-      "potValJt": 82,
-      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
-      "stage": 5,
-      "requested": true,
-      "hist": [
-        [
-          "02 Okt 2026",
-          "Hasil penyisiran lapangan koridor Jl. Kartini",
-          "Tim Satgas PAD360 KARANGASEM · GPS ±3 m"
-        ],
-        [
-          "22 Sep 2026",
-          "Pencatatan data titik koordinat & verifikasi visual",
-          "Analis Pajak Daerah Bapenda"
-        ]
-      ],
-      "related": [
-        {
-          "id": "OBJ-PKR-KARANGASEM-002",
-          "title": "Gedung Parkir Bertingkat (40×25m)",
-          "type": "PBJT Jasa Parkir",
-          "badge": "amber"
-        }
-      ]
-    },
-    "OBJ-MALL-KARANGASEM-003": {
-      "id": "OBJ-MALL-KARANGASEM-003",
-      "name": "LIFESTYLE MALL & HYPERMARKET KARANGASEM 3",
-      "cityId": "karangasem",
-      "category": "mall",
-      "catName": "Mall & Pusat Belanja",
-      "lat": -8.388245,
-      "lng": 115.531346,
-      "owner": "PT KARANGASEM Sarana Komunika",
-      "op": "Pengelola Mall & Pusat Belanja KARANGASEM",
-      "w": 70,
-      "h": 45,
-      "sisi": 1,
-      "jenis": "Pusat Perbelanjaan Terpadu",
-      "periode": "12 Bulan (Periode 2026/2027)",
-      "regStatus": "Audit Kepatuhan & Monitoring",
-      "izinUsaha": "Terverifikasi",
-      "izinRek": "Izin Lengkap",
-      "addr": "Jl. Diponegoro No. 75, KARANGASEM",
-      "coord": "-8.388245, 115.531346",
-      "taxType": "PBB-P2 & PBJT Terpadu",
-      "estimatedValue": "Rp 232.000.000 / tahun",
-      "potValJt": 232,
-      "formula": "NJOP Total Komersial × Tarif PBB-P2 0.2%",
-      "stage": 6,
-      "requested": true,
-      "hist": [
-        [
-          "03 Okt 2026",
-          "Hasil penyisiran lapangan koridor Jl. Kartini",
-          "Tim Satgas PAD360 KARANGASEM · GPS ±3 m"
-        ],
-        [
-          "23 Sep 2026",
-          "Pencatatan data titik koordinat & verifikasi visual",
-          "Analis Pajak Daerah Bapenda"
-        ]
-      ],
-      "related": [
-        {
-          "id": "OBJ-MALL-KARANGASEM-003",
-          "title": "Pusat Perbelanjaan Terpadu (70×45m)",
-          "type": "PBB-P2 & PBJT Terpadu",
-          "badge": "purple"
-        }
-      ]
-    },
-    "OBJ-PAB-KARANGASEM-004": {
-      "id": "OBJ-PAB-KARANGASEM-004",
-      "name": "KOMPLEK PERGUDANGAN & LOGISTIK KARANGASEM 4",
-      "cityId": "karangasem",
-      "category": "pab",
-      "catName": "Pabrik & Pergudangan",
-      "lat": -8.399138,
-      "lng": 115.534802,
-      "owner": "PT KARANGASEM Sarana Komunika",
-      "op": "Pengelola Pabrik & Pergudangan KARANGASEM",
-      "w": 80,
-      "h": 50,
-      "sisi": 1,
-      "jenis": "Gudang Distribusi Baja Ringan",
-      "periode": "12 Bulan (Periode 2026/2027)",
-      "regStatus": "Kandidat belum terdaftar",
-      "izinUsaha": "Dalam Penelaahan",
-      "izinRek": "Belum Terdaftar",
-      "addr": "Jl. Pahlawan No. 100, KARANGASEM",
-      "coord": "-8.399138, 115.534802",
-      "taxType": "PBB-P2 Industri & Pergudangan",
-      "estimatedValue": "Rp 116.000.000 / tahun",
-      "potValJt": 116,
-      "formula": "Luas Lahan × NJOP Kawasan Industri",
-      "stage": 1,
-      "requested": false,
-      "hist": [
-        [
-          "04 Okt 2026",
-          "Hasil penyisiran lapangan koridor Jl. Kartini",
-          "Tim Satgas PAD360 KARANGASEM · GPS ±3 m"
-        ],
-        [
-          "24 Sep 2026",
-          "Pencatatan data titik koordinat & verifikasi visual",
-          "Analis Pajak Daerah Bapenda"
-        ]
-      ],
-      "related": [
-        {
-          "id": "OBJ-PAB-KARANGASEM-004",
-          "title": "Gudang Distribusi Baja Ringan (80×50m)",
-          "type": "PBB-P2 Industri & Pergudangan",
-          "badge": "blue"
-        }
-      ]
-    },
-    "OBJ-TMN-KARANGASEM-005": {
-      "id": "OBJ-TMN-KARANGASEM-005",
-      "name": "HOTEL & RESORT PENGINAPAN KARANGASEM 5",
-      "cityId": "karangasem",
-      "category": "tmn",
-      "catName": "Ruang Publik / Fasum",
-      "lat": -8.398492,
-      "lng": 115.549682,
-      "owner": "PT KARANGASEM Sarana Komunika",
-      "op": "Pengelola Ruang Publik / Fasum KARANGASEM",
-      "w": 45,
-      "h": 30,
-      "sisi": 1,
-      "jenis": "Hotel Akomodasi Komersial",
-      "periode": "12 Bulan (Periode 2026/2027)",
-      "regStatus": "Perlu pencocokan register",
-      "izinUsaha": "Terverifikasi",
-      "izinRek": "Dokumen tersedia",
-      "addr": "Jl. Veteran No. 125, KARANGASEM",
-      "coord": "-8.398492, 115.549682",
-      "taxType": "PBJT Jasa Perhotelan",
-      "estimatedValue": "Rp 101.000.000 / tahun",
-      "potValJt": 101,
-      "formula": "Kapasitas Kamar × Okupansi × Tarif PBJT 10%",
-      "stage": 2,
-      "requested": false,
-      "hist": [
-        [
-          "05 Okt 2026",
-          "Hasil penyisiran lapangan koridor Jl. Kartini",
-          "Tim Satgas PAD360 KARANGASEM · GPS ±3 m"
-        ],
-        [
-          "25 Sep 2026",
-          "Pencatatan data titik koordinat & verifikasi visual",
-          "Analis Pajak Daerah Bapenda"
-        ]
-      ],
-      "related": [
-        {
-          "id": "OBJ-TMN-KARANGASEM-005",
-          "title": "Hotel Akomodasi Komersial (45×30m)",
-          "type": "PBJT Jasa Perhotelan",
-          "badge": "blue"
-        }
-      ]
-    },
-    "OBJ-REK-BULELENG-001": {
-      "id": "OBJ-REK-BULELENG-001",
-      "name": "BILLBOARD SIMPANG UTAMA BULELENG",
-      "cityId": "buleleng",
-      "category": "rek",
-      "catName": "Billboard / Reklame",
-      "lat": -8.245302,
-      "lng": 114.968412,
-      "owner": "PT BULELENG Sarana Komunika",
-      "op": "Pengelola Billboard / Reklame BULELENG",
-      "w": 8,
-      "h": 4,
-      "sisi": 2,
-      "jenis": "Papan Billboard Lampu LED",
-      "periode": "12 Bulan (Periode 2026/2027)",
-      "regStatus": "Lunas / Terbit Validasi",
-      "izinUsaha": "Terverifikasi",
-      "izinRek": "Izin Lengkap",
-      "addr": "Jl. Jenderal Sudirman No. 25, BULELENG",
-      "coord": "-8.245302, 114.968412",
-      "taxType": "Pajak Reklame",
-      "estimatedValue": "Rp 35.000.000 / tahun",
-      "potValJt": 35,
-      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
-      "stage": 5,
-      "requested": true,
-      "hist": [
-        [
-          "01 Okt 2026",
-          "Hasil penyisiran lapangan koridor Jl. Jenderal Sudirman",
-          "Tim Satgas PAD360 BULELENG · GPS ±3 m"
-        ],
-        [
-          "21 Sep 2026",
-          "Pencatatan data titik koordinat & verifikasi visual",
-          "Analis Pajak Daerah Bapenda"
-        ]
-      ],
-      "related": [
-        {
-          "id": "OBJ-REK-BULELENG-001",
-          "title": "Papan Billboard Lampu LED (8×4m)",
-          "type": "Pajak Reklame",
-          "badge": "teal"
-        }
-      ]
-    },
-    "OBJ-PKR-BULELENG-002": {
-      "id": "OBJ-PKR-BULELENG-002",
-      "name": "OFF-STREET PARKING KAWASAN KULINER BULELENG 2",
-      "cityId": "buleleng",
-      "category": "pkr",
-      "catName": "Parkir Komersial",
-      "lat": -8.24726,
-      "lng": 114.959184,
-      "owner": "PT BULELENG Sarana Komunika",
-      "op": "Pengelola Parkir Komersial BULELENG",
-      "w": 25,
-      "h": 12,
-      "sisi": 1,
-      "jenis": "Parkir Off-Street Pintu Gerbang",
-      "periode": "12 Bulan (Periode 2026/2027)",
-      "regStatus": "Audit Kepatuhan & Monitoring",
-      "izinUsaha": "Terverifikasi",
-      "izinRek": "Izin Lengkap",
-      "addr": "Jl. Ahmad Yani No. 50, BULELENG",
-      "coord": "-8.24726, 114.959184",
-      "taxType": "PBJT Jasa Parkir",
-      "estimatedValue": "Rp 40.000.000 / tahun",
-      "potValJt": 40,
-      "formula": "Omzet Tiket Harian × 365 × 10%",
-      "stage": 6,
-      "requested": true,
-      "hist": [
-        [
-          "02 Okt 2026",
-          "Hasil penyisiran lapangan koridor Jl. Jenderal Sudirman",
-          "Tim Satgas PAD360 BULELENG · GPS ±3 m"
-        ],
-        [
-          "22 Sep 2026",
-          "Pencatatan data titik koordinat & verifikasi visual",
-          "Analis Pajak Daerah Bapenda"
-        ]
-      ],
-      "related": [
-        {
-          "id": "OBJ-PKR-BULELENG-002",
-          "title": "Parkir Off-Street Pintu Gerbang (25×12m)",
-          "type": "PBJT Jasa Parkir",
-          "badge": "amber"
-        }
-      ]
-    },
-    "OBJ-MALL-BULELENG-003": {
-      "id": "OBJ-MALL-BULELENG-003",
-      "name": "PLAZA PUSAT PERBELANJAAN DAERAH BULELENG 3",
-      "cityId": "buleleng",
-      "category": "mall",
-      "catName": "Mall & Pusat Belanja",
-      "lat": -8.260335,
-      "lng": 114.962933,
-      "owner": "PT BULELENG Sarana Komunika",
-      "op": "Pengelola Mall & Pusat Belanja BULELENG",
-      "w": 60,
-      "h": 40,
-      "sisi": 1,
-      "jenis": "Bangunan Mall Modern 3 Lantai",
-      "periode": "12 Bulan (Periode 2026/2027)",
-      "regStatus": "Kandidat belum terdaftar",
-      "izinUsaha": "Dalam Penelaahan",
-      "izinRek": "Belum Terdaftar",
-      "addr": "Jl. Gatot Subroto No. 75, BULELENG",
-      "coord": "-8.260335, 114.962933",
-      "taxType": "PBB-P2 & PBJT Hiburan/Makan",
-      "estimatedValue": "Rp 258.000.000 / tahun",
-      "potValJt": 258,
-      "formula": "NJOP Tanah + NJOP Bangunan Komersial",
-      "stage": 1,
-      "requested": false,
-      "hist": [
-        [
-          "03 Okt 2026",
-          "Hasil penyisiran lapangan koridor Jl. Jenderal Sudirman",
-          "Tim Satgas PAD360 BULELENG · GPS ±3 m"
-        ],
-        [
-          "23 Sep 2026",
-          "Pencatatan data titik koordinat & verifikasi visual",
-          "Analis Pajak Daerah Bapenda"
-        ]
-      ],
-      "related": [
-        {
-          "id": "OBJ-MALL-BULELENG-003",
-          "title": "Bangunan Mall Modern 3 Lantai (60×40m)",
-          "type": "PBB-P2 & PBJT Hiburan/Makan",
-          "badge": "purple"
-        }
-      ]
-    },
-    "OBJ-PAB-BULELENG-004": {
-      "id": "OBJ-PAB-BULELENG-004",
-      "name": "PABRIK PENGOLAHAN DAN MANUFAKTUR BULELENG 4",
-      "cityId": "buleleng",
-      "category": "pab",
-      "catName": "Pabrik & Pergudangan",
-      "lat": -8.254795,
-      "lng": 114.979853,
-      "owner": "PT BULELENG Sarana Komunika",
-      "op": "Pengelola Pabrik & Pergudangan BULELENG",
-      "w": 100,
-      "h": 60,
-      "sisi": 1,
-      "jenis": "Pabrik Pengolahan Sentra Produksi",
-      "periode": "12 Bulan (Periode 2026/2027)",
-      "regStatus": "Perlu pencocokan register",
-      "izinUsaha": "Terverifikasi",
-      "izinRek": "Dokumen tersedia",
-      "addr": "Jl. Merdeka No. 100, BULELENG",
-      "coord": "-8.254795, 114.979853",
-      "taxType": "PBB-P2 Industri",
-      "estimatedValue": "Rp 147.000.000 / tahun",
-      "potValJt": 147,
-      "formula": "NJOP Industri + Pajak Air Tanah (PAT)",
-      "stage": 2,
-      "requested": false,
-      "hist": [
-        [
-          "04 Okt 2026",
-          "Hasil penyisiran lapangan koridor Jl. Jenderal Sudirman",
-          "Tim Satgas PAD360 BULELENG · GPS ±3 m"
-        ],
-        [
-          "24 Sep 2026",
-          "Pencatatan data titik koordinat & verifikasi visual",
-          "Analis Pajak Daerah Bapenda"
-        ]
-      ],
-      "related": [
-        {
-          "id": "OBJ-PAB-BULELENG-004",
-          "title": "Pabrik Pengolahan Sentra Produksi (100×60m)",
-          "type": "PBB-P2 Industri",
-          "badge": "blue"
-        }
-      ]
-    },
-    "OBJ-REK-KOTA_DENPASAR-001": {
-      "id": "OBJ-REK-KOTA_DENPASAR-001",
-      "name": "VIDEOTRON DIGITAL MEGASCREEN DENPASAR",
-      "cityId": "kota-denpasar",
-      "category": "rek",
-      "catName": "Billboard / Reklame",
-      "lat": -8.659186,
-      "lng": 115.213853,
-      "owner": "PT DENPASAR Sarana Komunika",
-      "op": "Pengelola Billboard / Reklame DENPASAR",
-      "w": 10,
-      "h": 5,
-      "sisi": 1,
-      "jenis": "LED Megatron Outdoor",
-      "periode": "12 Bulan (Periode 2026/2027)",
-      "regStatus": "Audit Kepatuhan & Monitoring",
-      "izinUsaha": "Terverifikasi",
-      "izinRek": "Izin Lengkap",
-      "addr": "Jl. Gajah Mada No. 25, DENPASAR",
-      "coord": "-8.659186, 115.213853",
-      "taxType": "Pajak Reklame Elektronik",
-      "estimatedValue": "Rp 150.000.000 / tahun",
-      "potValJt": 150,
-      "formula": "Luas Layar × Durasi Tayang × Tarif LED 25%",
-      "stage": 6,
-      "requested": true,
-      "hist": [
-        [
-          "01 Okt 2026",
-          "Hasil penyisiran lapangan koridor Jl. Gajah Mada",
-          "Tim Satgas PAD360 DENPASAR · GPS ±3 m"
-        ],
-        [
-          "21 Sep 2026",
-          "Pencatatan data titik koordinat & verifikasi visual",
-          "Analis Pajak Daerah Bapenda"
-        ]
-      ],
-      "related": [
-        {
-          "id": "OBJ-REK-KOTA_DENPASAR-001",
-          "title": "LED Megatron Outdoor (10×5m)",
-          "type": "Pajak Reklame Elektronik",
-          "badge": "teal"
-        }
-      ]
-    },
-    "OBJ-PKR-KOTA_DENPASAR-002": {
-      "id": "OBJ-PKR-KOTA_DENPASAR-002",
-      "name": "PARKIR PELATARAN RUKO PUSAT BISNIS DENPASAR 2",
-      "cityId": "kota-denpasar",
-      "category": "pkr",
-      "catName": "Parkir Komersial",
-      "lat": -8.667099,
-      "lng": 115.205607,
-      "owner": "PT DENPASAR Sarana Komunika",
-      "op": "Pengelola Parkir Komersial DENPASAR",
-      "w": 30,
-      "h": 15,
-      "sisi": 1,
-      "jenis": "Pelataran Parkir Aspal / Paving",
-      "periode": "12 Bulan (Periode 2026/2027)",
-      "regStatus": "Kandidat belum terdaftar",
-      "izinUsaha": "Dalam Penelaahan",
-      "izinRek": "Belum Terdaftar",
-      "addr": "Jl. Diponegoro No. 50, DENPASAR",
-      "coord": "-8.667099, 115.205607",
-      "taxType": "PBJT Jasa Parkir",
-      "estimatedValue": "Rp 37.000.000 / tahun",
-      "potValJt": 37,
-      "formula": "Estimasi SRP × Kapasitas Kendaraan × Tarif PBJT 10%",
-      "stage": 1,
-      "requested": false,
-      "hist": [
-        [
-          "02 Okt 2026",
-          "Hasil penyisiran lapangan koridor Jl. Gajah Mada",
-          "Tim Satgas PAD360 DENPASAR · GPS ±3 m"
-        ],
-        [
-          "22 Sep 2026",
-          "Pencatatan data titik koordinat & verifikasi visual",
-          "Analis Pajak Daerah Bapenda"
-        ]
-      ],
-      "related": [
-        {
-          "id": "OBJ-PKR-KOTA_DENPASAR-002",
-          "title": "Pelataran Parkir Aspal / Paving (30×15m)",
-          "type": "PBJT Jasa Parkir",
-          "badge": "amber"
-        }
-      ]
-    },
-    "OBJ-MALL-KOTA_DENPASAR-003": {
-      "id": "OBJ-MALL-KOTA_DENPASAR-003",
-      "name": "GRAND TRADE CENTER & SUPERMARKET DENPASAR 3",
-      "cityId": "kota-denpasar",
-      "category": "mall",
-      "catName": "Mall & Pusat Belanja",
-      "lat": -8.680163,
-      "lng": 115.21276,
-      "owner": "PT DENPASAR Sarana Komunika",
-      "op": "Pengelola Mall & Pusat Belanja DENPASAR",
-      "w": 50,
-      "h": 35,
-      "sisi": 1,
-      "jenis": "Pusat Grosir & Retail Modern",
-      "periode": "12 Bulan (Periode 2026/2027)",
-      "regStatus": "Perlu pencocokan register",
-      "izinUsaha": "Terverifikasi",
-      "izinRek": "Dokumen tersedia",
-      "addr": "Jl. Pahlawan No. 75, DENPASAR",
-      "coord": "-8.680163, 115.21276",
-      "taxType": "PBB-P2 Komersial",
-      "estimatedValue": "Rp 173.000.000 / tahun",
-      "potValJt": 173,
-      "formula": "NJOP Bangunan Bertingkat + PBJT Reklame Interior",
-      "stage": 2,
-      "requested": false,
-      "hist": [
-        [
-          "03 Okt 2026",
-          "Hasil penyisiran lapangan koridor Jl. Gajah Mada",
-          "Tim Satgas PAD360 DENPASAR · GPS ±3 m"
-        ],
-        [
-          "23 Sep 2026",
-          "Pencatatan data titik koordinat & verifikasi visual",
-          "Analis Pajak Daerah Bapenda"
-        ]
-      ],
-      "related": [
-        {
-          "id": "OBJ-MALL-KOTA_DENPASAR-003",
-          "title": "Pusat Grosir & Retail Modern (50×35m)",
-          "type": "PBB-P2 Komersial",
-          "badge": "purple"
-        }
-      ]
-    },
-    "OBJ-PAB-KOTA_DENPASAR-004": {
-      "id": "OBJ-PAB-KOTA_DENPASAR-004",
-      "name": "KOMPLEK PERGUDANGAN & LOGISTIK DENPASAR 4",
-      "cityId": "kota-denpasar",
-      "category": "pab",
-      "catName": "Pabrik & Pergudangan",
-      "lat": -8.66949,
-      "lng": 115.220749,
-      "owner": "PT DENPASAR Sarana Komunika",
-      "op": "Pengelola Pabrik & Pergudangan DENPASAR",
-      "w": 80,
-      "h": 50,
-      "sisi": 1,
-      "jenis": "Gudang Distribusi Baja Ringan",
-      "periode": "12 Bulan (Periode 2026/2027)",
-      "regStatus": "Tervalidasi (Perlu Update Tarif)",
-      "izinUsaha": "Terverifikasi",
-      "izinRek": "Izin Tayang Aktif",
-      "addr": "Jl. Veteran No. 100, DENPASAR",
-      "coord": "-8.66949, 115.220749",
-      "taxType": "PBB-P2 Industri & Pergudangan",
-      "estimatedValue": "Rp 130.000.000 / tahun",
-      "potValJt": 130,
-      "formula": "Luas Lahan × NJOP Kawasan Industri",
-      "stage": 3,
-      "requested": true,
-      "hist": [
-        [
-          "04 Okt 2026",
-          "Hasil penyisiran lapangan koridor Jl. Gajah Mada",
-          "Tim Satgas PAD360 DENPASAR · GPS ±3 m"
-        ],
-        [
-          "24 Sep 2026",
-          "Pencatatan data titik koordinat & verifikasi visual",
-          "Analis Pajak Daerah Bapenda"
-        ]
-      ],
-      "related": [
-        {
-          "id": "OBJ-PAB-KOTA_DENPASAR-004",
-          "title": "Gudang Distribusi Baja Ringan (80×50m)",
-          "type": "PBB-P2 Industri & Pergudangan",
-          "badge": "blue"
-        }
-      ]
-    },
-    "OBJ-TMN-KOTA_DENPASAR-005": {
-      "id": "OBJ-TMN-KOTA_DENPASAR-005",
-      "name": "HOTEL & RESORT PENGINAPAN DENPASAR 5",
-      "cityId": "kota-denpasar",
-      "category": "tmn",
-      "catName": "Ruang Publik / Fasum",
-      "lat": -8.661766,
-      "lng": 115.222897,
-      "owner": "PT DENPASAR Sarana Komunika",
-      "op": "Pengelola Ruang Publik / Fasum DENPASAR",
-      "w": 45,
-      "h": 30,
-      "sisi": 1,
-      "jenis": "Hotel Akomodasi Komersial",
-      "periode": "12 Bulan (Periode 2026/2027)",
-      "regStatus": "Penetapan SKPD/Surat Ketetapan",
-      "izinUsaha": "Terverifikasi",
-      "izinRek": "Izin Lengkap",
-      "addr": "Jl. Pemuda No. 125, DENPASAR",
-      "coord": "-8.661766, 115.222897",
-      "taxType": "PBJT Jasa Perhotelan",
-      "estimatedValue": "Rp 115.000.000 / tahun",
-      "potValJt": 115,
-      "formula": "Kapasitas Kamar × Okupansi × Tarif PBJT 10%",
-      "stage": 4,
-      "requested": true,
-      "hist": [
-        [
-          "05 Okt 2026",
-          "Hasil penyisiran lapangan koridor Jl. Gajah Mada",
-          "Tim Satgas PAD360 DENPASAR · GPS ±3 m"
-        ],
-        [
-          "25 Sep 2026",
-          "Pencatatan data titik koordinat & verifikasi visual",
-          "Analis Pajak Daerah Bapenda"
-        ]
-      ],
-      "related": [
-        {
-          "id": "OBJ-TMN-KOTA_DENPASAR-005",
-          "title": "Hotel Akomodasi Komersial (45×30m)",
-          "type": "PBJT Jasa Perhotelan",
-          "badge": "blue"
-        }
-      ]
-    },
     "OBJ-REK-LOMBOK_BARAT-001": {
       "id": "OBJ-REK-LOMBOK_BARAT-001",
       "name": "BALIHO PROMOSI KOMERSIAL LOMBOK BARAT",
@@ -146699,6 +144772,20409 @@ window.PotensiData = {
           "badge": "blue"
         }
       ]
+    },
+    "OBJ-REK-BADUNG-0001": {
+      "id": "OBJ-REK-BADUNG-0001",
+      "name": "VIDEOTRON RAYA CANGGU",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.642263,
+      "lng": 115.154735,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Videotron BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 1,
+      "jenis": "Videotron",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Jalan Raya Canggu (Shortcut Canggu)",
+      "coord": "-8.6422630, 115.1547350",
+      "taxType": "Pajak Reklame Elektronik",
+      "estimatedValue": "Rp 78.000.000 / tahun",
+      "potValJt": 78,
+      "formula": "Luas Layar × Durasi Tayang × Tarif LED 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Videotron dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0001",
+          "title": "Videotron (10×5m, 1 sisi)",
+          "type": "Pajak Reklame Elektronik",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-28",
+      "contractDaysLeft": 48,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628135657224",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.642263,115.154735",
+      "sourceUrl": "https://thebaligen.com/produk/videotron-raya-canggu"
+    },
+    "OBJ-REK-BADUNG-0002": {
+      "id": "OBJ-REK-BADUNG-0002",
+      "name": "VIDEOTRON SIMPANG NAKULA",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6993113,
+      "lng": 115.1780006,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Videotron BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 1,
+      "jenis": "Videotron",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Audit Kepatuhan & Monitoring",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Jl. Sunset Road (Simpang Nakula)",
+      "coord": "-8.6993113, 115.1780006",
+      "taxType": "Pajak Reklame Elektronik",
+      "estimatedValue": "Rp 80.000.000 / tahun",
+      "potValJt": 80,
+      "formula": "Luas Layar × Durasi Tayang × Tarif LED 25%",
+      "stage": 4,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Videotron dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0002",
+          "title": "Videotron (10×5m, 1 sisi)",
+          "type": "Pajak Reklame Elektronik",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-26",
+      "contractDaysLeft": 16,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. I Nyoman Artawan",
+      "contactPhone": "628130989659",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6993113,115.1780006",
+      "sourceUrl": "https://thebaligen.com/produk/videotron-simpang-nakula"
+    },
+    "OBJ-REK-GIANYAR-0003": {
+      "id": "OBJ-REK-GIANYAR-0003",
+      "name": "VIDEOTRON BY PASS IDA BAGUS MANTRA",
+      "cityId": "gianyar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6371365,
+      "lng": 115.2829466,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Videotron GIANYAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 1,
+      "jenis": "Videotron",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Jl. By Pass Ida Bagus Mantra (Perempatan Ketewel)",
+      "coord": "-8.6371365, 115.2829466",
+      "taxType": "Pajak Reklame Elektronik",
+      "estimatedValue": "Rp 84.000.000 / tahun",
+      "potValJt": 84,
+      "formula": "Luas Layar × Durasi Tayang × Tarif LED 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Videotron dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda GIANYAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-GIANYAR-0003",
+          "title": "Videotron (10×5m, 1 sisi)",
+          "type": "Pajak Reklame Elektronik",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-08-02",
+      "contractDaysLeft": 265,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. I Wayan Sudarma",
+      "contactPhone": "628150674012",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6371365,115.2829466",
+      "sourceUrl": "https://thebaligen.com/produk/videotron-by-pass-ida-bagus-mantra"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0004": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0004",
+      "name": "VIDEOTRON SANUR JL DANAU BUYAN",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6823135,
+      "lng": 115.2590861,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Videotron KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 1,
+      "jenis": "Videotron",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Jl. Danau Buyan (Perempatan MCD Sanur)",
+      "coord": "-8.6823135, 115.2590861",
+      "taxType": "Pajak Reklame Elektronik",
+      "estimatedValue": "Rp 95.000.000 / tahun",
+      "potValJt": 95,
+      "formula": "Luas Layar × Durasi Tayang × Tarif LED 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Videotron dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0004",
+          "title": "Videotron (10×5m, 1 sisi)",
+          "type": "Pajak Reklame Elektronik",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-24",
+      "contractDaysLeft": 14,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. Putu Arya Kusuma",
+      "contactPhone": "628180890672",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6823135,115.2590861",
+      "sourceUrl": "https://thebaligen.com/produk/videotron-sanur-jl-danau-buyan"
+    },
+    "OBJ-REK-GIANYAR-0005": {
+      "id": "OBJ-REK-GIANYAR-0005",
+      "name": "VIDEOTRON RAYA UBUD PASAR UBUD",
+      "cityId": "gianyar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.5073813,
+      "lng": 115.2632398,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Videotron GIANYAR",
+      "w": 8,
+      "h": 4,
+      "sisi": 1,
+      "jenis": "Videotron",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Jalan Raya Ubud (Pasar Ubud)",
+      "coord": "-8.5073813, 115.2632398",
+      "taxType": "Pajak Reklame Elektronik",
+      "estimatedValue": "Rp 71.000.000 / tahun",
+      "potValJt": 71,
+      "formula": "Luas Layar × Durasi Tayang × Tarif LED 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Videotron dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda GIANYAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-GIANYAR-0005",
+          "title": "Videotron (8×4m, 1 sisi)",
+          "type": "Pajak Reklame Elektronik",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-15",
+      "contractDaysLeft": 35,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. Putu Arya Kusuma",
+      "contactPhone": "628160567315",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.5073813,115.2632398",
+      "sourceUrl": "https://thebaligen.com/produk/videotron-raya-ubud-pasar-ubud"
+    },
+    "OBJ-REK-TABANAN-0006": {
+      "id": "OBJ-REK-TABANAN-0006",
+      "name": "BALIHO RAYA BEDUGUL",
+      "cityId": "tabanan",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.2579727,
+      "lng": 115.162226,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Baliho TABANAN",
+      "w": 6,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Baliho",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Jl. Raya Bedugul (Depan Indomaret)",
+      "coord": "-8.2579727, 115.1622260",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 62.000.000 / tahun",
+      "potValJt": 62,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Baliho dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda TABANAN"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-TABANAN-0006",
+          "title": "Baliho (6×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-10-27",
+      "contractDaysLeft": -14,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Ibu Ni Made Ayu",
+      "contactPhone": "628163418792",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.2579727,115.162226",
+      "sourceUrl": "https://thebaligen.com/produk/baliho-raya-bedugul-menuju-singaraja"
+    },
+    "OBJ-REK-BADUNG-0007": {
+      "id": "OBJ-REK-BADUNG-0007",
+      "name": "BILLBOARD JL SUNSET ROAD BY PASS NGURAH RAI 1",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7065712,
+      "lng": 115.1824949,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 12,
+      "h": 6,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl. Sunset Road (Perempatan Jl. Raya Kuta)",
+      "coord": "-8.7065712, 115.1824949",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 104.000.000 / tahun",
+      "potValJt": 104,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0007",
+          "title": "Billboard (12×6m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-19",
+      "contractDaysLeft": 39,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Ibu Ni Putu Indah",
+      "contactPhone": "628152545081",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7065712,115.1824949",
+      "sourceUrl": "https://thebaligen.com/produk/billboard-jl-sunset-road-by-pass-ngurah-rai-1"
+    },
+    "OBJ-REK-BADUNG-0008": {
+      "id": "OBJ-REK-BADUNG-0008",
+      "name": "BILLBOARD JL PERERENAN TANAH LOT",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.633045,
+      "lng": 115.13675,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 8,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Jl. Pererenan Tanah Lot (Menuju Tanah Lot )",
+      "coord": "-8.6330450, 115.1367500",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 66.000.000 / tahun",
+      "potValJt": 66,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0008",
+          "title": "Billboard (8×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-27",
+      "contractDaysLeft": 17,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. Putu Arya Kusuma",
+      "contactPhone": "628141734885",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.633045,115.13675",
+      "sourceUrl": "https://thebaligen.com/produk/billboard-jl-pererenan-tanah-lot"
+    },
+    "OBJ-REK-BADUNG-0009": {
+      "id": "OBJ-REK-BADUNG-0009",
+      "name": "BILLBOARD JL GN TANGKUBAN PERAHU",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6718999,
+      "lng": 115.1722496,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Jl. Gn Tangkuban Perahu",
+      "coord": "-8.6718999, 115.1722496",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 67.000.000 / tahun",
+      "potValJt": 67,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0009",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-02-06",
+      "contractDaysLeft": 88,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628188798314",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6718999,115.1722496",
+      "sourceUrl": "https://thebaligen.com/produk/billboard-jl-gn-tangkuban-perahu"
+    },
+    "OBJ-REK-BADUNG-0010": {
+      "id": "OBJ-REK-BADUNG-0010",
+      "name": "BILLBOARD JL SUNSET ROAD (PEREMPATAN JL RAYA KUTA) 2",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7056195,
+      "lng": 115.1824436,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 12,
+      "h": 6,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Jl. Sunset Road (Perempatan Jl. Raya Kuta)",
+      "coord": "-8.7056195, 115.1824436",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 95.000.000 / tahun",
+      "potValJt": 95,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0010",
+          "title": "Billboard (12×6m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-01-08",
+      "contractDaysLeft": 59,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Ibu Ni Luh Gede Sukerti",
+      "contactPhone": "628181268677",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7056195,115.1824436",
+      "sourceUrl": "https://thebaligen.com/produk/billboard-jl-sunset-road-perempatan-jl-raya-kuta"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0011": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0011",
+      "name": "BILLBOARD JL. IMAM BONJOL TRANS STUDIO",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7018811,
+      "lng": 115.1848225,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Jl. Imam Bonjol (Dekat Trans Studio Mall)",
+      "coord": "-8.7018811, 115.1848225",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 76.000.000 / tahun",
+      "potValJt": 76,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0011",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-03-21",
+      "contractDaysLeft": 131,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Ibu Dewi Sartika",
+      "contactPhone": "628159986920",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7018811,115.1848225",
+      "sourceUrl": "https://thebaligen.com/produk/billboard-jl-imam-bonjol-trans-studio"
+    },
+    "OBJ-REK-BADUNG-0012": {
+      "id": "OBJ-REK-BADUNG-0012",
+      "name": "BILLBOARD JL RAYA CANGGU 2",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6403344,
+      "lng": 115.1520736,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Jl. Raya canggu 2",
+      "coord": "-8.6403344, 115.1520736",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 75.000.000 / tahun",
+      "potValJt": 75,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0012",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-10-13",
+      "contractDaysLeft": -28,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Bpk. I Ketut Suardika",
+      "contactPhone": "628160626105",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6403344,115.1520736",
+      "sourceUrl": "https://thebaligen.com/produk/billboard-jl-raya-canggu"
+    },
+    "OBJ-REK-BADUNG-0013": {
+      "id": "OBJ-REK-BADUNG-0013",
+      "name": "BILLBOARD JL BY PASS IB MANTRA",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6495369,
+      "lng": 115.256646,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl. By Pass IB Mantra Ngurah Rai (Pertigaan Kota)",
+      "coord": "-8.6495369, 115.2566460",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 86.000.000 / tahun",
+      "potValJt": 86,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0013",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-10-23",
+      "contractDaysLeft": 347,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. I Wayan Sudarma",
+      "contactPhone": "628183575164",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6495369,115.256646",
+      "sourceUrl": "https://thebaligen.com/produk/billboard-jl-by-pass-ib-mantra"
+    },
+    "OBJ-REK-GIANYAR-0014": {
+      "id": "OBJ-REK-GIANYAR-0014",
+      "name": "VIDEOTRON KEBO IWA GIANYAR",
+      "cityId": "gianyar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.5412806,
+      "lng": 115.3225465,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Videotron GIANYAR",
+      "w": 12,
+      "h": 6,
+      "sisi": 1,
+      "jenis": "Videotron",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Simpang Jalan Ngurah Rai Kebo Iwa, Taman Ciung Wanara Gianyar",
+      "coord": "-8.5412806, 115.3225465",
+      "taxType": "Pajak Reklame Elektronik",
+      "estimatedValue": "Rp 121.000.000 / tahun",
+      "potValJt": 121,
+      "formula": "Luas Layar × Durasi Tayang × Tarif LED 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Videotron dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda GIANYAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-GIANYAR-0014",
+          "title": "Videotron (12×6m, 1 sisi)",
+          "type": "Pajak Reklame Elektronik",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-07",
+      "contractDaysLeft": -3,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Bpk. Made Dananjaya",
+      "contactPhone": "628122591853",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.5412806,115.3225465",
+      "sourceUrl": "https://thebaligen.com/produk/videotron-kebo-iwa-gianyar"
+    },
+    "OBJ-REK-GIANYAR-0015": {
+      "id": "OBJ-REK-GIANYAR-0015",
+      "name": "BILLBOARD JL BY PASS IB MANTRA KETEWEL",
+      "cityId": "gianyar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6366012,
+      "lng": 115.2833071,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Billboard GIANYAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Jl. By Pass IB Mantra (Perempatan Ketewel)",
+      "coord": "-8.6366012, 115.2833071",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 67.000.000 / tahun",
+      "potValJt": 67,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda GIANYAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-GIANYAR-0015",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-17",
+      "contractDaysLeft": 37,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628147000569",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6366012,115.2833071",
+      "sourceUrl": "https://thebaligen.com/produk/billboard-jl-by-pass-ib-mantra-ketewel"
+    },
+    "OBJ-REK-BADUNG-0016": {
+      "id": "OBJ-REK-BADUNG-0016",
+      "name": "BILLBOARD BANDARA NGURAH RAI AIRNAV",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7441275,
+      "lng": 115.1701717,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Jl. Akses Keluar Pintu Bandara Ngurah Rai menuju Tuban",
+      "coord": "-8.7441275, 115.1701717",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 61.000.000 / tahun",
+      "potValJt": 61,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0016",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-10",
+      "contractDaysLeft": 30,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Ibu Kadek Widiastuti",
+      "contactPhone": "628181674651",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7441275,115.1701717",
+      "sourceUrl": "https://thebaligen.com/produk/billboard-bandara-ngurah-rai-airnav"
+    },
+    "OBJ-REK-TABANAN-0017": {
+      "id": "OBJ-REK-TABANAN-0017",
+      "name": "BILLBOARD JL RAYA KAPAL",
+      "cityId": "tabanan",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.57759,
+      "lng": 115.181733,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Billboard TABANAN",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Jl. Raya Kapal Menuju Tabanan",
+      "coord": "-8.5775900, 115.1817330",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 60.000.000 / tahun",
+      "potValJt": 60,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda TABANAN"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-TABANAN-0017",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-29",
+      "contractDaysLeft": 19,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. I Ketut Suardika",
+      "contactPhone": "628155650649",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.57759,115.181733",
+      "sourceUrl": "https://thebaligen.com/produk/billboard-jl-raya-kapal"
+    },
+    "OBJ-REK-BADUNG-0018": {
+      "id": "OBJ-REK-BADUNG-0018",
+      "name": "BILLBOARD JL. RAYA CANGGU T309",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6420718,
+      "lng": 115.1552566,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Jl. Raya Canggu T309",
+      "coord": "-8.6420718, 115.1552566",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 67.000.000 / tahun",
+      "potValJt": 67,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0018",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-28",
+      "contractDaysLeft": 48,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Ibu Ni Luh Gede Sukerti",
+      "contactPhone": "628163032293",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6420718,115.1552566",
+      "sourceUrl": "https://thebaligen.com/produk/billboard-jl-raya-canggu-t309"
+    },
+    "OBJ-REK-BADUNG-0019": {
+      "id": "OBJ-REK-BADUNG-0019",
+      "name": "BILLBOARD JL IMAM BONJOL 1",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7057677,
+      "lng": 115.1830887,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 12,
+      "h": 6,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Jl. Imam Bonjol (Perempatan Jl. Sunset Road)",
+      "coord": "-8.7057677, 115.1830887",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 89.000.000 / tahun",
+      "potValJt": 89,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0019",
+          "title": "Billboard (12×6m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-04-08",
+      "contractDaysLeft": 149,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Ibu Ni Made Ayu",
+      "contactPhone": "628151958418",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7057677,115.1830887",
+      "sourceUrl": "https://thebaligen.com/produk/billboard-jl-imam-bonjol-1"
+    },
+    "OBJ-REK-TABANAN-0020": {
+      "id": "OBJ-REK-TABANAN-0020",
+      "name": "BALIHO JL RAYA BEDUGUL",
+      "cityId": "tabanan",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.2861356,
+      "lng": 115.1697694,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Baliho TABANAN",
+      "w": 6,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Baliho",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Jl. Raya Bedugul 1",
+      "coord": "-8.2861356, 115.1697694",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 65.000.000 / tahun",
+      "potValJt": 65,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Baliho dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda TABANAN"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-TABANAN-0020",
+          "title": "Baliho (6×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-20",
+      "contractDaysLeft": 40,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. I Nyoman Artawan",
+      "contactPhone": "628185002497",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.2861356,115.1697694",
+      "sourceUrl": "https://thebaligen.com/produk/baliho-jl-raya-bedugul-1-menuju-singaraja"
+    },
+    "OBJ-REK-BADUNG-0021": {
+      "id": "OBJ-REK-BADUNG-0021",
+      "name": "BILLBOARD BANDARA NGURAH RAI TUBAN 1",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7434257,
+      "lng": 115.1682069,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl. Akses Keluar Pintu Bandara Ngurah Rai menuju Tuban",
+      "coord": "-8.7434257, 115.1682069",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 81.000.000 / tahun",
+      "potValJt": 81,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0021",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-31",
+      "contractDaysLeft": 51,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. Made Dananjaya",
+      "contactPhone": "628174218723",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7434257,115.1682069",
+      "sourceUrl": "https://thebaligen.com/produk/billboard-bandara-ngurah-rai-tuban-1"
+    },
+    "OBJ-REK-BADUNG-0022": {
+      "id": "OBJ-REK-BADUNG-0022",
+      "name": "BILLBOARD JL BY PASS NGURAH RAI IDO",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7605632,
+      "lng": 115.1789918,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl. By Pass Ngurah Rai (Pertigaan Benoa Square -IDO Wedding)",
+      "coord": "-8.7605632, 115.1789918",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 77.000.000 / tahun",
+      "potValJt": 77,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0022",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-20",
+      "contractDaysLeft": 40,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. Putu Arya Kusuma",
+      "contactPhone": "628149520846",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7605632,115.1789918",
+      "sourceUrl": "https://thebaligen.com/produk/billboard-jl-by-pass-ngurah-rai-ido"
+    },
+    "OBJ-REK-BADUNG-0023": {
+      "id": "OBJ-REK-BADUNG-0023",
+      "name": "BILLBOARD JL RAYA TUBAN 11",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.744759,
+      "lng": 115.179146,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Jl. Raya Tuban (Pertigaan Patung Kuda Pos Polisi)",
+      "coord": "-8.7447590, 115.1791460",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 74.000.000 / tahun",
+      "potValJt": 74,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0023",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-10-28",
+      "contractDaysLeft": -13,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Ibu Ni Luh Gede Sukerti",
+      "contactPhone": "628179818934",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.744759,115.179146",
+      "sourceUrl": "https://thebaligen.com/produk/billboard-jl-raya-tuban-11"
+    },
+    "OBJ-REK-BADUNG-0024": {
+      "id": "OBJ-REK-BADUNG-0024",
+      "name": "BILLBOARD JL. BY PASS NGURAH RAI (SILIGITA 1)",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7931852,
+      "lng": 115.2154098,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Jl. By Pass Ngurah Rai (Perempatan Siligita)",
+      "coord": "-8.7931852, 115.2154098",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 69.000.000 / tahun",
+      "potValJt": 69,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0024",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-10-27",
+      "contractDaysLeft": -14,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Ibu Dewi Sartika",
+      "contactPhone": "628175739708",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7931852,115.2154098",
+      "sourceUrl": "https://thebaligen.com/produk/billboard-jl-by-pass-ngurah-rai-siligita-1"
+    },
+    "OBJ-REK-BADUNG-0025": {
+      "id": "OBJ-REK-BADUNG-0025",
+      "name": "BILLBOARD JL. BY PASS NGURAH RAI (SIMPANG SIUR 1)",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7218402,
+      "lng": 115.182287,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 12,
+      "h": 6,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Audit Kepatuhan & Monitoring",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Jl. By Pass Ngurah Rai (Simpang Siur)",
+      "coord": "-8.7218402, 115.1822870",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 88.000.000 / tahun",
+      "potValJt": 88,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 4,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0025",
+          "title": "Billboard (12×6m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-09-23",
+      "contractDaysLeft": 317,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Ibu Ni Made Ayu",
+      "contactPhone": "628152664059",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7218402,115.182287",
+      "sourceUrl": "https://thebaligen.com/produk/billboard-jl-by-pass-ngurah-rai-simpang-siur-1"
+    },
+    "OBJ-REK-BADUNG-0026": {
+      "id": "OBJ-REK-BADUNG-0026",
+      "name": "BILLBOARD JL RAYA ULUWATU",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.785738,
+      "lng": 115.16598,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 12,
+      "h": 6,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Jl. Raya Uluwatu (Bundaran Simpang Lima)",
+      "coord": "-8.7857380, 115.1659800",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 93.000.000 / tahun",
+      "potValJt": 93,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0026",
+          "title": "Billboard (12×6m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-02-28",
+      "contractDaysLeft": 110,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. I Ketut Suardika",
+      "contactPhone": "628128949058",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.785738,115.16598",
+      "sourceUrl": "https://thebaligen.com/produk/billboard-jl-raya-uluwatu"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0027": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0027",
+      "name": "BILLBOARD JL GATOT SUBROTO TENGAH 1",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.638172,
+      "lng": 115.210174,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Jl. Gatot Subroto Tengan (Dekat Taman Lumintang)",
+      "coord": "-8.6381720, 115.2101740",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 79.000.000 / tahun",
+      "potValJt": 79,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0027",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-06-09",
+      "contractDaysLeft": 211,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628181664171",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.638172,115.210174",
+      "sourceUrl": "https://thebaligen.com/produk/billboard-jl-gatot-subroto-tengah-1"
+    },
+    "OBJ-REK-BADUNG-0028": {
+      "id": "OBJ-REK-BADUNG-0028",
+      "name": "BILLBOARD JL BY PASS NGURAH RAI DESAK",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.72685,
+      "lng": 115.180324,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 12,
+      "h": 6,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Jl. By Pass Ngurah Rai warung Desak Rai",
+      "coord": "-8.7268500, 115.1803240",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 94.000.000 / tahun",
+      "potValJt": 94,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0028",
+          "title": "Billboard (12×6m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-30",
+      "contractDaysLeft": 20,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. I Wayan Sudarma",
+      "contactPhone": "628155558431",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.72685,115.180324",
+      "sourceUrl": "https://thebaligen.com/produk/billboard-jl-by-pass-ngurah-rai-desak-1"
+    },
+    "OBJ-REK-BADUNG-0029": {
+      "id": "OBJ-REK-BADUNG-0029",
+      "name": "BILLBOARD JL. BY PASS NGURAH RAI 1",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7896589,
+      "lng": 115.2114989,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Jl. By Pass Ngurah Rai 1",
+      "coord": "-8.7896589, 115.2114989",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 64.000.000 / tahun",
+      "potValJt": 64,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0029",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-08",
+      "contractDaysLeft": -2,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628145000295",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7896589,115.2114989",
+      "sourceUrl": "https://thebaligen.com/produk/billboard-jl-by-pass-ngurah-rai-1"
+    },
+    "OBJ-REK-BADUNG-0030": {
+      "id": "OBJ-REK-BADUNG-0030",
+      "name": "BILLBOARD JL BY PASS NGURAH RAI 2",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7913448,
+      "lng": 115.2137037,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Jl. By Pass Ngurah Rai 2",
+      "coord": "-8.7913448, 115.2137037",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 71.000.000 / tahun",
+      "potValJt": 71,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0030",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-27",
+      "contractDaysLeft": 17,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Ibu Dewi Sartika",
+      "contactPhone": "628144580097",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7913448,115.2137037",
+      "sourceUrl": "https://thebaligen.com/produk/billboard-jl-by-pass-ngurah-rai-2"
+    },
+    "OBJ-REK-BADUNG-0031": {
+      "id": "OBJ-REK-BADUNG-0031",
+      "name": "BILLBOARD JL. RAYA KUTA SUNSET ROAD 198",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.706294,
+      "lng": 115.1821458,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 12,
+      "h": 6,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Jl. Raya Kuta (Perempatan Jl. Sunset Road)",
+      "coord": "-8.7062940, 115.1821458",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 94.000.000 / tahun",
+      "potValJt": 94,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0031",
+          "title": "Billboard (12×6m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-09-30",
+      "contractDaysLeft": 324,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Ibu Ni Made Ayu",
+      "contactPhone": "628162851934",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.706294,115.1821458",
+      "sourceUrl": "https://thebaligen.com/produk/billboard-jl-raya-kuta-sunset-road-198"
+    },
+    "OBJ-REK-BADUNG-0032": {
+      "id": "OBJ-REK-BADUNG-0032",
+      "name": "BILLBOARD JL. BY PASS NGURAH RAI (SIMPANG SIUR 2)",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7226453,
+      "lng": 115.1817838,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 24,
+      "h": 12,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Jl. By Pass Ngurah Rai (Simpang Siur)",
+      "coord": "-8.7226453, 115.1817838",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 220.000.000 / tahun",
+      "potValJt": 220,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0032",
+          "title": "Billboard (24×12m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-24",
+      "contractDaysLeft": 44,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Ibu Dewi Sartika",
+      "contactPhone": "628125588080",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7226453,115.1817838",
+      "sourceUrl": "https://thebaligen.com/produk/billboard-jl-by-pass-ngurah-rai-simpang-siur-2"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0033": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0033",
+      "name": "BILLBOARD JL GATOT SUBROTO BARAT 1204",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6361439,
+      "lng": 115.1848799,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Jl. Gatot Subroto Barat(Perempatan Kebo Iwa)",
+      "coord": "-8.6361439, 115.1848799",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 83.000.000 / tahun",
+      "potValJt": 83,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0033",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-23",
+      "contractDaysLeft": 13,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Ibu Ni Luh Gede Sukerti",
+      "contactPhone": "628159859192",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6361439,115.1848799",
+      "sourceUrl": "https://thebaligen.com/produk/billboard-jl-gatot-subroto-barat-1204"
+    },
+    "OBJ-REK-BADUNG-0034": {
+      "id": "OBJ-REK-BADUNG-0034",
+      "name": "BILLBOARD JL. BY PASS NGURAH RAI TOLL",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.790093,
+      "lng": 115.212624,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 12,
+      "h": 6,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Audit Kepatuhan & Monitoring",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Jl. By Pass Ngurah Rai (Pertigaan Toll Bali Mandara)",
+      "coord": "-8.7900930, 115.2126240",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 81.000.000 / tahun",
+      "potValJt": 81,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 4,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0034",
+          "title": "Billboard (12×6m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-06-25",
+      "contractDaysLeft": 227,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Ibu Ni Luh Gede Sukerti",
+      "contactPhone": "628152278493",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.790093,115.212624",
+      "sourceUrl": "https://thebaligen.com/produk/billboard-jl-by-pass-ngurah-rai-toll"
+    },
+    "OBJ-REK-BADUNG-0035": {
+      "id": "OBJ-REK-BADUNG-0035",
+      "name": "BILLBOARD JL. RAYA CANGGU 329",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6407874,
+      "lng": 115.1532075,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl. Raya canggu (SMP Pancasila Canggu)",
+      "coord": "-8.6407874, 115.1532075",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 66.000.000 / tahun",
+      "potValJt": 66,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0035",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-02-28",
+      "contractDaysLeft": 110,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. I Nyoman Artawan",
+      "contactPhone": "628154539592",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6407874,115.1532075",
+      "sourceUrl": "https://thebaligen.com/produk/billboard-jl-raya-canggu-329"
+    },
+    "OBJ-REK-BADUNG-0036": {
+      "id": "OBJ-REK-BADUNG-0036",
+      "name": "BILLBOARD JL. BY PASS NGURAH RAI KFC",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.781885,
+      "lng": 115.1793889,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 12,
+      "h": 6,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Audit Kepatuhan & Monitoring",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Jl. By Pass Ngurah Rai (Persimpangan KFC Jimbaran)",
+      "coord": "-8.7818850, 115.1793889",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 103.000.000 / tahun",
+      "potValJt": 103,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 4,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0036",
+          "title": "Billboard (12×6m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-10-23",
+      "contractDaysLeft": -18,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Bpk. Made Dananjaya",
+      "contactPhone": "628141868877",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.781885,115.1793889",
+      "sourceUrl": "https://thebaligen.com/produk/billboard-jl-by-pass-ngurah-rai-kfc"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0037": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0037",
+      "name": "BILLBOARD JL. IMAM BONJOL TRANS STUDIO (SB)",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7023241,
+      "lng": 115.1849659,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 8,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Jl. Imam Bonjol (SebrangTrans Studio Mall)",
+      "coord": "-8.7023241, 115.1849659",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 51.000.000 / tahun",
+      "potValJt": 51,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0037",
+          "title": "Billboard (8×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-28",
+      "contractDaysLeft": 18,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628176478060",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7023241,115.1849659",
+      "sourceUrl": "https://thebaligen.com/produk/billboard-jl-imam-bonjol-trans-studio-sb"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0038": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0038",
+      "name": "BILLBOARD JL GATOT SUBROTO BARAT PHD",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.639207,
+      "lng": 115.205339,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Jl. Gatot Subroto Barat(PHD)",
+      "coord": "-8.6392070, 115.2053390",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 71.000.000 / tahun",
+      "potValJt": 71,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0038",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-25",
+      "contractDaysLeft": 45,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Ibu Ni Putu Indah",
+      "contactPhone": "628171569253",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.639207,115.205339",
+      "sourceUrl": "https://thebaligen.com/produk/billboard-jl-gatot-subroto-barat-phd"
+    },
+    "OBJ-REK-BADUNG-0039": {
+      "id": "OBJ-REK-BADUNG-0039",
+      "name": "BILLBOARD JL. BY PASS NGURAH RAI 22",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7215915,
+      "lng": 115.184923,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 12,
+      "h": 6,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl. By Pass Ngurah Rai 22",
+      "coord": "-8.7215915, 115.1849230",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 95.000.000 / tahun",
+      "potValJt": 95,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0039",
+          "title": "Billboard (12×6m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-01",
+      "contractDaysLeft": -9,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Bpk. Putu Arya Kusuma",
+      "contactPhone": "628159208786",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7215915,115.184923",
+      "sourceUrl": "https://thebaligen.com/produk/billboard-jl-by-pass-ngurah-rai-22"
+    },
+    "OBJ-REK-BADUNG-0040": {
+      "id": "OBJ-REK-BADUNG-0040",
+      "name": "BILLBOARD JL. BY PASS NGURAH RAI 12",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.721613,
+      "lng": 115.1836731,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Jl. By Pass Ngurah Rai 12",
+      "coord": "-8.7216130, 115.1836731",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 86.000.000 / tahun",
+      "potValJt": 86,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0040",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-01-07",
+      "contractDaysLeft": 58,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Ibu Dewi Sartika",
+      "contactPhone": "628131904337",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.721613,115.1836731",
+      "sourceUrl": "https://thebaligen.com/produk/billboard-jl-by-pass-ngurah-rai-12"
+    },
+    "OBJ-REK-BADUNG-0041": {
+      "id": "OBJ-REK-BADUNG-0041",
+      "name": "BILLBOARD JL. RAYA CANGGU ECHO",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6373912,
+      "lng": 115.1481773,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Audit Kepatuhan & Monitoring",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Jl. Raya canggu Kayutulang",
+      "coord": "-8.6373912, 115.1481773",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 64.000.000 / tahun",
+      "potValJt": 64,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 4,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0041",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-01-29",
+      "contractDaysLeft": 80,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Ibu Dewi Sartika",
+      "contactPhone": "628120589420",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6373912,115.1481773",
+      "sourceUrl": "https://thebaligen.com/produk/billboard-jl-raya-canggu-echo"
+    },
+    "OBJ-REK-BADUNG-0042": {
+      "id": "OBJ-REK-BADUNG-0042",
+      "name": "BILLBOARD JL. RAYA CANGGU BPD",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6412777,
+      "lng": 115.1544469,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Jl. Raya canggu BPD",
+      "coord": "-8.6412777, 115.1544469",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 76.000.000 / tahun",
+      "potValJt": 76,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0042",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-30",
+      "contractDaysLeft": 20,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Ibu Ni Made Ayu",
+      "contactPhone": "628163066836",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6412777,115.1544469",
+      "sourceUrl": "https://thebaligen.com/produk/billboard-jl-raya-canggu-bpd"
+    },
+    "OBJ-REK-BADUNG-0043": {
+      "id": "OBJ-REK-BADUNG-0043",
+      "name": "BILLBOARD JL. RAYA CANGGU ULHUS",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6387195,
+      "lng": 115.1502772,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Jl. Raya Canggu 1",
+      "coord": "-8.6387195, 115.1502772",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 88.000.000 / tahun",
+      "potValJt": 88,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0043",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-01-25",
+      "contractDaysLeft": 76,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Putu Arya Kusuma",
+      "contactPhone": "628162611413",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6387195,115.1502772",
+      "sourceUrl": "https://thebaligen.com/produk/billboard-jl-raya-canggu-ulhus-1"
+    },
+    "OBJ-REK-BADUNG-0044": {
+      "id": "OBJ-REK-BADUNG-0044",
+      "name": "BILLBOARD JL. RAYA TUBAN 2",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7438967,
+      "lng": 115.1791291,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl. Raya Tuban 2",
+      "coord": "-8.7438967, 115.1791291",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 83.000.000 / tahun",
+      "potValJt": 83,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0044",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-10-13",
+      "contractDaysLeft": -28,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Bpk. Putu Arya Kusuma",
+      "contactPhone": "628133715407",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7438967,115.1791291",
+      "sourceUrl": "https://thebaligen.com/produk/billboard-jl-raya-tuban-2"
+    },
+    "OBJ-REK-BADUNG-0045": {
+      "id": "OBJ-REK-BADUNG-0045",
+      "name": "BILLBOARD JL. RAYA TUBAN 1",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7438967,
+      "lng": 115.1791291,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Jl. Raya Tuban 1",
+      "coord": "-8.7438967, 115.1791291",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 68.000.000 / tahun",
+      "potValJt": 68,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0045",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-17",
+      "contractDaysLeft": 7,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Ibu Ni Putu Indah",
+      "contactPhone": "628144827706",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7438967,115.1791291",
+      "sourceUrl": "https://thebaligen.com/produk/billboard-jl-raya-tuban-1"
+    },
+    "OBJ-REK-BADUNG-0046": {
+      "id": "OBJ-REK-BADUNG-0046",
+      "name": "BILLBOARD JL. BY PASS NGURAH RAI KEDONGANAN",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7646573,
+      "lng": 115.1783942,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl. By Pass Ngurah Rai Kedonganan 2",
+      "coord": "-8.7646573, 115.1783942",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 80.000.000 / tahun",
+      "potValJt": 80,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0046",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-08",
+      "contractDaysLeft": -2,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628154735221",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7646573,115.1783942",
+      "sourceUrl": "https://thebaligen.com/produk/billboard-jl-by-pass-ngurah-rai-kedonganan-2"
+    },
+    "OBJ-REK-BADUNG-0047": {
+      "id": "OBJ-REK-BADUNG-0047",
+      "name": "VIDEOTRON JL RAYA TUBAN BANJAR",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7444676,
+      "lng": 115.1791693,
+      "owner": "The Bali Gen",
+      "op": "Pengelola Videotron BADUNG",
+      "w": 9,
+      "h": 5,
+      "sisi": 1,
+      "jenis": "Videotron",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Jl. Raya Tuban (Banjar Tuban)",
+      "coord": "-8.7444676, 115.1791693",
+      "taxType": "Pajak Reklame Elektronik",
+      "estimatedValue": "Rp 73.000.000 / tahun",
+      "potValJt": 73,
+      "formula": "Luas Layar × Durasi Tayang × Tarif LED 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Videotron dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0047",
+          "title": "Videotron (9×5m, 1 sisi)",
+          "type": "Pajak Reklame Elektronik",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-13",
+      "contractDaysLeft": 3,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Ibu Dewi Sartika",
+      "contactPhone": "628161580661",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7444676,115.1791693",
+      "sourceUrl": "https://thebaligen.com/produk/videotron-jl-raya-tuban-banjar"
+    },
+    "OBJ-REK-BADUNG-0048": {
+      "id": "OBJ-REK-BADUNG-0048",
+      "name": "PERTIGAAN JL. RAYA ULUWATU - KAMPUS POLTEK",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.798103,
+      "lng": 115.1608548,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 6,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Pertigaan Jl. Raya Uluwatu - Kampus Poltek, Kab. Badung, Bali",
+      "coord": "-8.7981030, 115.1608548",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 57.000.000 / tahun",
+      "potValJt": 57,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0048",
+          "title": "Billboard (6×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-10-12",
+      "contractDaysLeft": -29,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Ibu Kadek Widiastuti",
+      "contactPhone": "628141657328",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.798103,115.1608548",
+      "sourceUrl": "https://billboard.id/spot/sewa-billboard-badung-pertigaan-jl-raya-uluwatu/"
+    },
+    "OBJ-REK-BADUNG-0049": {
+      "id": "OBJ-REK-BADUNG-0049",
+      "name": "JL. RAYA ULUWATU NO.1 (PURI GADING) UNGASAN",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.8040088,
+      "lng": 115.1595446,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 4,
+      "h": 2,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Jl. Raya Uluwatu No.1 (Puri Gading) Ungasan, Kab. Badung, Bali",
+      "coord": "-8.8040088, 115.1595446",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 34.000.000 / tahun",
+      "potValJt": 34,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0049",
+          "title": "Billboard (4×2m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-29",
+      "contractDaysLeft": 49,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. Putu Arya Kusuma",
+      "contactPhone": "628155694163",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.8040088,115.1595446",
+      "sourceUrl": "https://billboard.id/spot/sewa-billboard-badung-jl-raya-uluwatu-puri-gading/"
+    },
+    "OBJ-REK-BADUNG-0050": {
+      "id": "OBJ-REK-BADUNG-0050",
+      "name": "BUNDARAN JL. ULUWATU BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.785428,
+      "lng": 115.1656777,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Bundaran Jl. Uluwatu Bali, Kab. Badung, Bali",
+      "coord": "-8.7854280, 115.1656777",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 85.000.000 / tahun",
+      "potValJt": 85,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0050",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-09-20",
+      "contractDaysLeft": 314,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Made Dananjaya",
+      "contactPhone": "628167418438",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.785428,115.1656777",
+      "sourceUrl": "https://billboard.id/spot/sewa-billboard-badung-bundaran-jl-uluwatu/"
+    },
+    "OBJ-REK-BADUNG-0051": {
+      "id": "OBJ-REK-BADUNG-0051",
+      "name": "BALI JL. BANDARA NGURAH RAI KARTA",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7435896,
+      "lng": 115.1690533,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Bali Jl. Bandara Ngurah Rai Karta, Kab. Badung, Bali",
+      "coord": "-8.7435896, 115.1690533",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 88.000.000 / tahun",
+      "potValJt": 88,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0051",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-14",
+      "contractDaysLeft": 34,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. I Nyoman Artawan",
+      "contactPhone": "628160600128",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7435896,115.1690533",
+      "sourceUrl": "https://billboard.id/spot/billboard-bali-jl-bandara-ngurah-rai-karta/"
+    },
+    "OBJ-REK-BADUNG-0052": {
+      "id": "OBJ-REK-BADUNG-0052",
+      "name": "BALI GATE BANDARA NGURAH RAI HARRYS",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7406401,
+      "lng": 115.1673974,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Bali Gate Bandara Ngurah Rai Harrys, Kab. Badung, Bali",
+      "coord": "-8.7406401, 115.1673974",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 73.000.000 / tahun",
+      "potValJt": 73,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0052",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-09-30",
+      "contractDaysLeft": 324,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628137223176",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7406401,115.1673974",
+      "sourceUrl": "https://billboard.id/spot/billboard-bali-gate-bandara-ngurah-rai-harrys/"
+    },
+    "OBJ-REK-BADUNG-0053": {
+      "id": "OBJ-REK-BADUNG-0053",
+      "name": "BALI GATE BANDARA NGURAH RAI A. RATNADI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7429482,
+      "lng": 115.1677114,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Bali Gate Bandara Ngurah Rai A. Ratnadi, Kab. Badung, Bali",
+      "coord": "-8.7429482, 115.1677114",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 90.000.000 / tahun",
+      "potValJt": 90,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0053",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-10",
+      "contractDaysLeft": 30,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Ibu Kadek Widiastuti",
+      "contactPhone": "628173153792",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7429482,115.1677114",
+      "sourceUrl": "https://billboard.id/spot/billboard-bali-gate-bandara-ngurah-rai-a-ratnadi/"
+    },
+    "OBJ-REK-BADUNG-0054": {
+      "id": "OBJ-REK-BADUNG-0054",
+      "name": "BALI GATE BANDARA NGURAH RAI MARAJAN",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7425385,
+      "lng": 115.1679756,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 16,
+      "h": 8,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Bali Gate Bandara Ngurah Rai Marajan, Kab. Badung, Bali",
+      "coord": "-8.7425385, 115.1679756",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 159.000.000 / tahun",
+      "potValJt": 159,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0054",
+          "title": "Billboard (16×8m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-06",
+      "contractDaysLeft": 26,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Ibu Ni Putu Indah",
+      "contactPhone": "628126837757",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7425385,115.1679756",
+      "sourceUrl": "https://billboard.id/spot/billboard-bali-gate-bandara-ngurah-rai-marajan/"
+    },
+    "OBJ-REK-BADUNG-0055": {
+      "id": "OBJ-REK-BADUNG-0055",
+      "name": "BALI GATE BANDARA NGURAH RAI A WIYAYA",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7423615,
+      "lng": 115.1679906,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 16,
+      "h": 8,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Bali Gate Bandara Ngurah Rai A Wiyaya, Kab. Badung, Bali",
+      "coord": "-8.7423615, 115.1679906",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 148.000.000 / tahun",
+      "potValJt": 148,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0055",
+          "title": "Billboard (16×8m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-07",
+      "contractDaysLeft": 27,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. I Wayan Sudarma",
+      "contactPhone": "628167295461",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7423615,115.1679906",
+      "sourceUrl": "https://billboard.id/spot/billboard-bali-gate-bandara-ngurah-rai-a-wiyaya/"
+    },
+    "OBJ-REK-BADUNG-0056": {
+      "id": "OBJ-REK-BADUNG-0056",
+      "name": "JL LEGIAN, KUTA BADUNG ( DEPAN MONUMEN BOM BALI )",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7172401,
+      "lng": 115.1743753,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 8,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl Legian, Kuta Badung ( Depan Monumen Bom Bali ), Kab. Badung, Bali",
+      "coord": "-8.7172401, 115.1743753",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 57.000.000 / tahun",
+      "potValJt": 57,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0056",
+          "title": "Billboard (8×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-17",
+      "contractDaysLeft": 37,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. Made Dananjaya",
+      "contactPhone": "628143998441",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7172401,115.1743753",
+      "sourceUrl": "https://billboard.id/spot/jl-legian-kuta-badung-depan-monumen-bom-bali/"
+    },
+    "OBJ-REK-BADUNG-0057": {
+      "id": "OBJ-REK-BADUNG-0057",
+      "name": "SIMPANG ULUWATU, BADUNG (PATUNG NAKULA SAHADEWA), BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7857349,
+      "lng": 115.1660543,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 12,
+      "h": 6,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Simpang Uluwatu, Badung (Patung Nakula Sahadewa), Bali, Kab. Badung, Bali",
+      "coord": "-8.7857349, 115.1660543",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 87.000.000 / tahun",
+      "potValJt": 87,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0057",
+          "title": "Billboard (12×6m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-10-30",
+      "contractDaysLeft": -11,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Bpk. I Ketut Suardika",
+      "contactPhone": "628172752083",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7857349,115.1660543",
+      "sourceUrl": "https://billboard.id/spot/simpang-uluwatu-badung-patung-nakula-sahadewa-bali/"
+    },
+    "OBJ-REK-BADUNG-0058": {
+      "id": "OBJ-REK-BADUNG-0058",
+      "name": "SIMPANG JL RAYA KEDIRI - JL KUBU ANYAR, KUTA BADUNG - BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7374069,
+      "lng": 115.1684865,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 5,
+      "h": 3,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Simpang Jl Raya Kediri - Jl Kubu Anyar, Kuta Badung - Bali, Kab. Badung, Bali",
+      "coord": "-8.7374069, 115.1684865",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 52.000.000 / tahun",
+      "potValJt": 52,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0058",
+          "title": "Billboard (5×3m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-17",
+      "contractDaysLeft": 37,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. Putu Arya Kusuma",
+      "contactPhone": "628168140507",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7374069,115.1684865",
+      "sourceUrl": "https://billboard.id/spot/sewa-billboard-bali-simpang-kediri-kubu-anyar/"
+    },
+    "OBJ-REK-BADUNG-0059": {
+      "id": "OBJ-REK-BADUNG-0059",
+      "name": "JL RAYA KUTA (SPBU), BADUNG - BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7210762,
+      "lng": 115.179933,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 12,
+      "h": 6,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl Raya Kuta (SPBU), Badung - Bali, Kab. Badung, Bali",
+      "coord": "-8.7210762, 115.1799330",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 94.000.000 / tahun",
+      "potValJt": 94,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0059",
+          "title": "Billboard (12×6m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-09",
+      "contractDaysLeft": -1,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Ibu Ni Putu Indah",
+      "contactPhone": "628142774845",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7210762,115.179933",
+      "sourceUrl": "https://billboard.id/spot/jl-raya-kuta-spbu-badung-bali/"
+    },
+    "OBJ-REK-BADUNG-0060": {
+      "id": "OBJ-REK-BADUNG-0060",
+      "name": "EXIT TOL BALI MANDARA (MENUJU NUSA DUA), BADUNG - BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7897185,
+      "lng": 115.2124553,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 12,
+      "h": 6,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Exit Tol Bali Mandara (Menuju Nusa Dua), Badung - Bali, Kab. Badung, Bali",
+      "coord": "-8.7897185, 115.2124553",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 97.000.000 / tahun",
+      "potValJt": 97,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0060",
+          "title": "Billboard (12×6m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-08-31",
+      "contractDaysLeft": 294,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628148843613",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7897185,115.2124553",
+      "sourceUrl": "https://billboard.id/spot/sewa-billboard-bali-exit-tol-mandara-badung/"
+    },
+    "OBJ-REK-BADUNG-0061": {
+      "id": "OBJ-REK-BADUNG-0061",
+      "name": "JL KELUAR - MASUK TOL BALI MANDARA (MENUJU PINTU MASUK TOL), BADUNG - BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7897185,
+      "lng": 115.2124553,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 12,
+      "h": 6,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl Keluar - Masuk Tol Bali Mandara (menuju Pintu Masuk TOL), Badung - Bali, Kab. Badung, Bali",
+      "coord": "-8.7897185, 115.2124553",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 102.000.000 / tahun",
+      "potValJt": 102,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0061",
+          "title": "Billboard (12×6m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-04-21",
+      "contractDaysLeft": 162,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628150550962",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7897185,115.2124553",
+      "sourceUrl": "https://billboard.id/spot/jl-keluar-masuk-tol-bali-mandara-menuju-pintu-masuk-tol-badung-bali/"
+    },
+    "OBJ-REK-BADUNG-0062": {
+      "id": "OBJ-REK-BADUNG-0062",
+      "name": "JL ULULWATU II, JIMBARAN - BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.781384,
+      "lng": 115.1782012,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Jl Ululwatu II, Jimbaran - Bali, Kab. Badung, Bali",
+      "coord": "-8.7813840, 115.1782012",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 72.000.000 / tahun",
+      "potValJt": 72,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0062",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-07-07",
+      "contractDaysLeft": 239,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Made Dananjaya",
+      "contactPhone": "628134552915",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.781384,115.1782012",
+      "sourceUrl": "https://billboard.id/spot/jl-ululwatu-ii-jimbaran-bali/"
+    },
+    "OBJ-REK-BADUNG-0063": {
+      "id": "OBJ-REK-BADUNG-0063",
+      "name": "JL SRIWIJAYA (LEGIAN), BADUNG - BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7083366,
+      "lng": 115.1725792,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl Sriwijaya (Legian), Badung - Bali, Kab. Badung, Bali",
+      "coord": "-8.7083366, 115.1725792",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 90.000.000 / tahun",
+      "potValJt": 90,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0063",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-09-12",
+      "contractDaysLeft": 306,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. I Wayan Sudarma",
+      "contactPhone": "628183901391",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7083366,115.1725792",
+      "sourceUrl": "https://billboard.id/spot/jl-sriwijaya-legian-badung-bali/"
+    },
+    "OBJ-REK-BADUNG-0064": {
+      "id": "OBJ-REK-BADUNG-0064",
+      "name": "JL GATOT SUBROTO BARAT (PERTIGAAN JL PADANG LUWIH), BADUNG - BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6371095,
+      "lng": 115.1746077,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Jl Gatot Subroto Barat (Pertigaan Jl Padang Luwih), Badung - Bali, Kab. Badung, Bali",
+      "coord": "-8.6371095, 115.1746077",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 61.000.000 / tahun",
+      "potValJt": 61,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0064",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-29",
+      "contractDaysLeft": 19,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628177080062",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6371095,115.1746077",
+      "sourceUrl": "https://billboard.id/spot/jl-gatot-subroto-barat-pertigaan-jl-padang-luwih-badung-bali/"
+    },
+    "OBJ-REK-BADUNG-0065": {
+      "id": "OBJ-REK-BADUNG-0065",
+      "name": "PERTIGAAN JL DEWI SRI - JL PETIH JELANTIK (KUTA), BADUNG - BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7100284,
+      "lng": 115.1797389,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 8,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Pertigaan Jl Dewi Sri - Jl Petih Jelantik (Kuta), Badung - Bali, Kab. Badung, Bali",
+      "coord": "-8.7100284, 115.1797389",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 59.000.000 / tahun",
+      "potValJt": 59,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0065",
+          "title": "Billboard (8×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-10-06",
+      "contractDaysLeft": -35,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Ibu Kadek Widiastuti",
+      "contactPhone": "628171686206",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7100284,115.1797389",
+      "sourceUrl": "https://billboard.id/spot/pertigaan-jl-dewi-sri-jl-petih-jelantik-kuta-badung-bali/"
+    },
+    "OBJ-REK-BADUNG-0066": {
+      "id": "OBJ-REK-BADUNG-0066",
+      "name": "JL SUNSET ROAD, BADUNG - BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.705622,
+      "lng": 115.1824527,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 12,
+      "h": 6,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Jl Sunset Road, Badung - Bali, Kab. Badung, Bali",
+      "coord": "-8.7056220, 115.1824527",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 103.000.000 / tahun",
+      "potValJt": 103,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0066",
+          "title": "Billboard (12×6m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-25",
+      "contractDaysLeft": 15,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Ibu Dewi Sartika",
+      "contactPhone": "628127752941",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.705622,115.1824527",
+      "sourceUrl": "https://billboard.id/spot/jl-sunset-road-badung-bali/"
+    },
+    "OBJ-REK-BADUNG-0067": {
+      "id": "OBJ-REK-BADUNG-0067",
+      "name": "JL RAYA CANGU (VIEW MENUJU TANAH LOT), BADUNG - BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6401572,
+      "lng": 115.1519043,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Jl Raya Cangu (View menuju Tanah Lot), Badung - Bali, Kab. Badung, Bali",
+      "coord": "-8.6401572, 115.1519043",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 63.000.000 / tahun",
+      "potValJt": 63,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0067",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-07-27",
+      "contractDaysLeft": 259,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Made Dananjaya",
+      "contactPhone": "628153254248",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6401572,115.1519043",
+      "sourceUrl": "https://billboard.id/spot/jl-raya-cangu-view-menuju-tanah-lot-badung-bali/"
+    },
+    "OBJ-REK-BADUNG-0068": {
+      "id": "OBJ-REK-BADUNG-0068",
+      "name": "JL RAYA CANGU (VIEW MENUJU KOTA DENPASAR), BADUNG - BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6401572,
+      "lng": 115.1519043,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Jl Raya Cangu (View Menuju Kota Denpasar), Badung - Bali, Kab. Badung, Bali",
+      "coord": "-8.6401572, 115.1519043",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 73.000.000 / tahun",
+      "potValJt": 73,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0068",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-04-28",
+      "contractDaysLeft": 169,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Ibu Ni Putu Indah",
+      "contactPhone": "628186292782",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6401572,115.1519043",
+      "sourceUrl": "https://billboard.id/spot/jl-raya-cangu-view-menuju-kota-denpasar-badung-bali/"
+    },
+    "OBJ-REK-BADUNG-0069": {
+      "id": "OBJ-REK-BADUNG-0069",
+      "name": "JL TANGKUBAN PERAHU, BADUNG (MENUJU CANGU) - BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6721161,
+      "lng": 115.1722007,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Audit Kepatuhan & Monitoring",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Jl Tangkuban Perahu, Badung (menuju Cangu) - Bali, Kab. Badung, Bali",
+      "coord": "-8.6721161, 115.1722007",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 66.000.000 / tahun",
+      "potValJt": 66,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 4,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0069",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-01-01",
+      "contractDaysLeft": 52,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. Made Dananjaya",
+      "contactPhone": "628160111928",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6721161,115.1722007",
+      "sourceUrl": "https://billboard.id/spot/jl-tangkuban-perahu-badung-menuju-cangu-bali/"
+    },
+    "OBJ-REK-BADUNG-0070": {
+      "id": "OBJ-REK-BADUNG-0070",
+      "name": "JL BY PASS NGURAH RAI (DEPAN CIRCLE K) MENUJU ITDC, BADUNG - BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7867616,
+      "lng": 115.2050707,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Jl By Pass Ngurah Rai (Depan Circle K) Menuju ITDC, Badung - Bali, Kab. Badung, Bali",
+      "coord": "-8.7867616, 115.2050707",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 82.000.000 / tahun",
+      "potValJt": 82,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0070",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-10-18",
+      "contractDaysLeft": -23,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Bpk. I Wayan Sudarma",
+      "contactPhone": "628184207112",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7867616,115.2050707",
+      "sourceUrl": "https://billboard.id/spot/jl-by-pass-ngurah-rai-depan-circle-k-menuju-itdc-badung-bali/"
+    },
+    "OBJ-REK-BADUNG-0071": {
+      "id": "OBJ-REK-BADUNG-0071",
+      "name": "JL BYPASS NGURAH RAI, NUSA DUA (MENUJU NUSA DUA BEACH)- BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7912341,
+      "lng": 115.2134163,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Jl Bypass Ngurah Rai, Nusa Dua (Menuju Nusa Dua Beach)- Bali, Kab. Badung, Bali",
+      "coord": "-8.7912341, 115.2134163",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 77.000.000 / tahun",
+      "potValJt": 77,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0071",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-14",
+      "contractDaysLeft": 4,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Ibu Ni Putu Indah",
+      "contactPhone": "628152678544",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7912341,115.2134163",
+      "sourceUrl": "https://billboard.id/spot/jl-bypass-ngurah-rai-nusa-dua-menuju-nusa-dua-beach-bali/"
+    },
+    "OBJ-REK-BADUNG-0072": {
+      "id": "OBJ-REK-BADUNG-0072",
+      "name": "JL BY PASS NGURAH RAI, NUSA DUA (MENUJU NUSA DUA BEACH) - BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.789893,
+      "lng": 115.2116055,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl By Pass Ngurah Rai, Nusa Dua (Menuju Nusa Dua Beach) - Bali, Kab. Badung, Bali",
+      "coord": "-8.7898930, 115.2116055",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 80.000.000 / tahun",
+      "potValJt": 80,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0072",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-04-20",
+      "contractDaysLeft": 161,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Ibu Ni Made Ayu",
+      "contactPhone": "628135064686",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.789893,115.2116055",
+      "sourceUrl": "https://billboard.id/spot/jl-by-pass-ngurah-rai-nusa-dua-menuju-nusa-dua-beach-bali/"
+    },
+    "OBJ-REK-BADUNG-0073": {
+      "id": "OBJ-REK-BADUNG-0073",
+      "name": "JL RAYA TUBAN - JL AIRPORT NGURAH RAI (PERTIGAAN PATUNG SATRIA GATOT KACA), BADUNG - BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.744762,
+      "lng": 115.1791153,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Jl Raya Tuban - Jl Airport Ngurah Rai (Pertigaan Patung Satria Gatot Kaca), Badung - Bali, Kab. Badung, Bali",
+      "coord": "-8.7447620, 115.1791153",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 70.000.000 / tahun",
+      "potValJt": 70,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0073",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-10-16",
+      "contractDaysLeft": 340,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628160016444",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.744762,115.1791153",
+      "sourceUrl": "https://billboard.id/spot/jl-raya-tuban-jl-airport-ngurah-rai-pertigaan-patung-satria-gatot-kaca-badung-bali/"
+    },
+    "OBJ-REK-BADUNG-0074": {
+      "id": "OBJ-REK-BADUNG-0074",
+      "name": "PINTU KELUAR BANDARA NGURAH RAI DEKAT PINTU LOKET TIKET",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.741953,
+      "lng": 115.1678389,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 16,
+      "h": 8,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Pintu Keluar Bandara Ngurah Rai Dekat Pintu Loket Tiket, Kab. Badung, Bali",
+      "coord": "-8.7419530, 115.1678389",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 130.000.000 / tahun",
+      "potValJt": 130,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0074",
+          "title": "Billboard (16×8m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-16",
+      "contractDaysLeft": 6,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Ibu Ni Luh Gede Sukerti",
+      "contactPhone": "628173666731",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.741953,115.1678389",
+      "sourceUrl": "https://billboard.id/spot/pintu-keluar-bandara-ngurah-rai-dekat-pintu-loket-tiket/"
+    },
+    "OBJ-REK-BADUNG-0075": {
+      "id": "OBJ-REK-BADUNG-0075",
+      "name": "JL AIRPORT NGURAH RAI (TUBAN), BADUNG - BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7446993,
+      "lng": 115.1792121,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Jl Airport Ngurah Rai (Tuban), Badung - Bali, Kab. Badung, Bali",
+      "coord": "-8.7446993, 115.1792121",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 86.000.000 / tahun",
+      "potValJt": 86,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0075",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-04-13",
+      "contractDaysLeft": 154,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. I Nyoman Artawan",
+      "contactPhone": "628133289663",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7446993,115.1792121",
+      "sourceUrl": "https://billboard.id/spot/jl-airport-ngurah-rai-tuban-badung-bali/"
+    },
+    "OBJ-REK-BADUNG-0076": {
+      "id": "OBJ-REK-BADUNG-0076",
+      "name": "JL AIRPORT NGURAH RAI (TUBAN), BADUNG - BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7435781,
+      "lng": 115.1682374,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Jl Airport Ngurah Rai (Tuban), Badung - Bali, Kab. Badung, Bali",
+      "coord": "-8.7435781, 115.1682374",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 82.000.000 / tahun",
+      "potValJt": 82,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0076",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-04-12",
+      "contractDaysLeft": 153,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628178076620",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7435781,115.1682374",
+      "sourceUrl": "https://billboard.id/spot/jl-airport-ngurah-rai-tuban-badung-bali-2/"
+    },
+    "OBJ-REK-BADUNG-0077": {
+      "id": "OBJ-REK-BADUNG-0077",
+      "name": "JL RAYA KEROBOKAN PASAR TAMAN SARI MERTA, KUTA BADUNG ( ARAH MENUJU SIMPANG KEROBOKAN )",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.645892,
+      "lng": 115.1703519,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 6,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl Raya Kerobokan Pasar Taman Sari Merta, Kuta Badung ( Arah Menuju Simpang Kerobokan ), Kab. Badung, Bali",
+      "coord": "-8.6458920, 115.1703519",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 40.000.000 / tahun",
+      "potValJt": 40,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0077",
+          "title": "Billboard (6×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-17",
+      "contractDaysLeft": 37,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Ibu Kadek Widiastuti",
+      "contactPhone": "628182070211",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.645892,115.1703519",
+      "sourceUrl": "https://billboard.id/spot/sewa-billboard-badung-jl-raya-kerobokan-pasar-taman-sari/"
+    },
+    "OBJ-REK-BADUNG-0078": {
+      "id": "OBJ-REK-BADUNG-0078",
+      "name": "JL RAYA KEROBOKAN BANJAR GADON, KUTA BADUNG ( ARAH MENUJU CANGGU )",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6451486,
+      "lng": 115.1686263,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 6,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Jl Raya Kerobokan Banjar Gadon, Kuta Badung ( Arah menuju Canggu ), Kab. Badung, Bali",
+      "coord": "-8.6451486, 115.1686263",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 39.000.000 / tahun",
+      "potValJt": 39,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0078",
+          "title": "Billboard (6×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-07",
+      "contractDaysLeft": -3,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Bpk. Agus Hendrawan",
+      "contactPhone": "628143682652",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6451486,115.1686263",
+      "sourceUrl": "https://billboard.id/spot/sewa-billboard-badung-raya-kerobokan-canggu/"
+    },
+    "OBJ-REK-BADUNG-0079": {
+      "id": "OBJ-REK-BADUNG-0079",
+      "name": "JL DEWI SRI NO. 1, KUTA BADUNG ( SIMPANG SUNSET ROAD - DEWI SRI )",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6998784,
+      "lng": 115.1775952,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 12,
+      "h": 6,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Jl Dewi Sri No. 1, Kuta Badung ( Simpang Sunset Road - Dewi Sri ), Kab. Badung, Bali",
+      "coord": "-8.6998784, 115.1775952",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 99.000.000 / tahun",
+      "potValJt": 99,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0079",
+          "title": "Billboard (12×6m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-30",
+      "contractDaysLeft": 50,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. I Nyoman Artawan",
+      "contactPhone": "628129527340",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6998784,115.1775952",
+      "sourceUrl": "https://billboard.id/spot/sewa-billboard-badung-simpang-sunset-road-dewi-sri/"
+    },
+    "OBJ-REK-BADUNG-0080": {
+      "id": "OBJ-REK-BADUNG-0080",
+      "name": "SIMPANG EMPAT JL RAYA KUTA - JL SUNSET ROAD, KUTA BADUNG ( ARAH RAYA KUTA )",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7063225,
+      "lng": 115.1823758,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Simpang Empat Jl Raya Kuta - Jl Sunset Road, Kuta Badung ( Arah Raya Kuta ), Kab. Badung, Bali",
+      "coord": "-8.7063225, 115.1823758",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 83.000.000 / tahun",
+      "potValJt": 83,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0080",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-10-06",
+      "contractDaysLeft": -35,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Bpk. Agus Hendrawan",
+      "contactPhone": "628155776247",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7063225,115.1823758",
+      "sourceUrl": "https://billboard.id/spot/sewa-billboard-badung-simpang-raya-kuta-sunset-road-bali/"
+    },
+    "OBJ-REK-BADUNG-0081": {
+      "id": "OBJ-REK-BADUNG-0081",
+      "name": "JL RAYA KUTA (SPBU), BADUNG - BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7210762,
+      "lng": 115.179933,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 12,
+      "h": 6,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl Raya Kuta (SPBU), Badung - Bali, Kab. Badung, Bali",
+      "coord": "-8.7210762, 115.1799330",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 83.000.000 / tahun",
+      "potValJt": 83,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0081",
+          "title": "Billboard (12×6m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-10-17",
+      "contractDaysLeft": 341,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. I Wayan Sudarma",
+      "contactPhone": "628143767206",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7210762,115.179933",
+      "sourceUrl": "https://billboard.id/spot/sewa-billboard-bali-jl-raya-kuta-spbu-gelael/"
+    },
+    "OBJ-REK-BADUNG-0082": {
+      "id": "OBJ-REK-BADUNG-0082",
+      "name": "JL SUNSET ROAD, BADUNG - BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7064217,
+      "lng": 115.1826703,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 12,
+      "h": 6,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl Sunset Road, Badung - Bali, Kab. Badung, Bali",
+      "coord": "-8.7064217, 115.1826703",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 110.000.000 / tahun",
+      "potValJt": 110,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0082",
+          "title": "Billboard (12×6m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-05-03",
+      "contractDaysLeft": 174,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Made Dananjaya",
+      "contactPhone": "628160391583",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7064217,115.1826703",
+      "sourceUrl": "https://billboard.id/spot/sewa-billboard-badung-jl-sunset-road-by-pass-ngurah-rai/"
+    },
+    "OBJ-REK-BADUNG-0083": {
+      "id": "OBJ-REK-BADUNG-0083",
+      "name": "JL RAYA UBUD (PASAR SENI UBUD), BADUNG - BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.5072303,
+      "lng": 115.2632985,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 7,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Jl Raya Ubud (Pasar Seni Ubud), Badung - Bali, Kab. Badung, Bali",
+      "coord": "-8.5072303, 115.2632985",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 58.000.000 / tahun",
+      "potValJt": 58,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0083",
+          "title": "Billboard (7×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-29",
+      "contractDaysLeft": 49,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. Made Dananjaya",
+      "contactPhone": "628181249891",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.5072303,115.2632985",
+      "sourceUrl": "https://billboard.id/spot/sewa-billboard-badung-jl-raya-ubud-pasar-ubud/"
+    },
+    "OBJ-REK-BADUNG-0084": {
+      "id": "OBJ-REK-BADUNG-0084",
+      "name": "JL RAYA KAPAL MENUJU TABANAN, BADUNG - BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.5777045,
+      "lng": 115.1817444,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Jl Raya Kapal Menuju Tabanan, Badung - Bali, Kab. Badung, Bali",
+      "coord": "-8.5777045, 115.1817444",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 67.000.000 / tahun",
+      "potValJt": 67,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0084",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-09",
+      "contractDaysLeft": -1,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Bpk. Made Dananjaya",
+      "contactPhone": "628133162891",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.5777045,115.1817444",
+      "sourceUrl": "https://billboard.id/spot/sewa-billboard-badung-jl-raya-kapal/"
+    },
+    "OBJ-REK-GIANYAR-0085": {
+      "id": "OBJ-REK-GIANYAR-0085",
+      "name": "JL PROF. DR. IDA BAGUS MANTRA (PEREMPATAN KETEWEL) GIANYAR - BALI",
+      "cityId": "gianyar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6367162,
+      "lng": 115.2834426,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard GIANYAR",
+      "w": 12,
+      "h": 6,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl Prof. Dr. Ida Bagus Mantra (Perempatan Ketewel) Gianyar - Bali, Kab. Gianyar, Bali",
+      "coord": "-8.6367162, 115.2834426",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 80.000.000 / tahun",
+      "potValJt": 80,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda GIANYAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-GIANYAR-0085",
+          "title": "Billboard (12×6m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-05-11",
+      "contractDaysLeft": 182,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Agus Hendrawan",
+      "contactPhone": "628188653888",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6367162,115.2834426",
+      "sourceUrl": "https://billboard.id/spot/billboard-jl-prof-dr-ida-bagus-mantra-perempatan-ketewel-gianyar-bali/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0086": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0086",
+      "name": "JL GATOT SUBROTO BARAT, DENPASAR - BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6391625,
+      "lng": 115.2054111,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Jl Gatot Subroto Barat, Denpasar - Bali, Kota Denpasar, Bali",
+      "coord": "-8.6391625, 115.2054111",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 71.000.000 / tahun",
+      "potValJt": 71,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0086",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-01-05",
+      "contractDaysLeft": 56,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. Putu Arya Kusuma",
+      "contactPhone": "628156480014",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6391625,115.2054111",
+      "sourceUrl": "https://billboard.id/spot/sewa-billboard-denpasar-gatot-subroto-barat-phd/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0087": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0087",
+      "name": "JL IMAM BONJOL (TRANS STUDIO MALL BALI), DENPASAR - BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7020015,
+      "lng": 115.1849084,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Audit Kepatuhan & Monitoring",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Jl Imam Bonjol (Trans Studio Mall Bali), Denpasar - Bali, Kota Denpasar, Bali",
+      "coord": "-8.7020015, 115.1849084",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 61.000.000 / tahun",
+      "potValJt": 61,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 4,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0087",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-19",
+      "contractDaysLeft": 39,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628179075893",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7020015,115.1849084",
+      "sourceUrl": "https://billboard.id/spot/sewa-billboard-denpasar-jl-imam-bonjol/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0088": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0088",
+      "name": "JL BY PASS IB. MANTRA, DENPASAR - BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6494209,
+      "lng": 115.256979,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Jl By Pass IB. Mantra, Denpasar - Bali, Kota Denpasar, Bali",
+      "coord": "-8.6494209, 115.2569790",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 80.000.000 / tahun",
+      "potValJt": 80,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0088",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-05",
+      "contractDaysLeft": 25,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. Putu Arya Kusuma",
+      "contactPhone": "628131755732",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6494209,115.256979",
+      "sourceUrl": "https://billboard.id/spot/sewa-billboard-denpasar-by-pass-ib-mantra/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0089": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0089",
+      "name": "JL TEUKU UMAR, DENPASAR - BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6737861,
+      "lng": 115.2079269,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Jl Teuku Umar, Denpasar - Bali, Kota Denpasar, Bali",
+      "coord": "-8.6737861, 115.2079269",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 72.000.000 / tahun",
+      "potValJt": 72,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0089",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-24",
+      "contractDaysLeft": 44,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. I Wayan Sudarma",
+      "contactPhone": "628142949745",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6737861,115.2079269",
+      "sourceUrl": "https://billboard.id/provinsi/bali/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0090": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0090",
+      "name": "JL TEUKU UMAR, DENPASAR - BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6796075,
+      "lng": 115.2042299,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 8,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl Teuku Umar, Denpasar - Bali, Kota Denpasar, Bali",
+      "coord": "-8.6796075, 115.2042299",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 72.000.000 / tahun",
+      "potValJt": 72,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0090",
+          "title": "Billboard (8×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-26",
+      "contractDaysLeft": 46,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Ibu Ni Putu Indah",
+      "contactPhone": "628165456946",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6796075,115.2042299",
+      "sourceUrl": "https://billboard.id/spot/sewa-billboard-denpasar-jl-teuku-umar-renon/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0091": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0091",
+      "name": "JL TEUKU UMAR (ISTANA BONEKA), DENPASAR - BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6766353,
+      "lng": 115.2064563,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 8,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl Teuku Umar (Istana Boneka), Denpasar - Bali, Kota Denpasar, Bali",
+      "coord": "-8.6766353, 115.2064563",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 72.000.000 / tahun",
+      "potValJt": 72,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0091",
+          "title": "Billboard (8×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-17",
+      "contractDaysLeft": 37,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628137011402",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6766353,115.2064563",
+      "sourceUrl": "https://billboard.id/spot/sewa-billboard-denpasar-teuku-umar-istana-boneka/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0092": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0092",
+      "name": "JL KARTIKA PLAZA - ARAH DSM (WATERBOM), BADUNG",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7250822,
+      "lng": 115.1712398,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Jl Kartika Plaza - Arah DSM (Waterbom), Badung, Kota Denpasar, Bali",
+      "coord": "-8.7250822, 115.1712398",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 60.000.000 / tahun",
+      "potValJt": 60,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0092",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-11-04",
+      "contractDaysLeft": 359,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. I Nyoman Artawan",
+      "contactPhone": "628185484016",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7250822,115.1712398",
+      "sourceUrl": "https://billboard.id/spot/sewa-billboard-denpasar-kartika-plaza/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0093": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0093",
+      "name": "JL SUNSET ROAD - PEREMPATAN IMAM BONJOL ARAH DENPASAR",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.705857,
+      "lng": 115.1829147,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl Sunset Road - Perempatan Imam Bonjol arah Denpasar, Kota Denpasar, Bali",
+      "coord": "-8.7058570, 115.1829147",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 69.000.000 / tahun",
+      "potValJt": 69,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0093",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-27",
+      "contractDaysLeft": 47,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. I Wayan Sudarma",
+      "contactPhone": "628178137270",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.705857,115.1829147",
+      "sourceUrl": "https://billboard.id/spot/sewa-billboard-denpasar-jl-sunset-road/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0094": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0094",
+      "name": "JL RAYA ULUWATU PECATU - ARAH ULUWATU",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.8307877,
+      "lng": 115.1324933,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 8,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Jl Raya Uluwatu Pecatu - Arah Uluwatu, Kota Denpasar, Bali",
+      "coord": "-8.8307877, 115.1324933",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 59.000.000 / tahun",
+      "potValJt": 59,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0094",
+          "title": "Billboard (8×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-10-27",
+      "contractDaysLeft": -14,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Ibu Ni Putu Indah",
+      "contactPhone": "628145829371",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.8307877,115.1324933",
+      "sourceUrl": "https://billboard.id/spot/sewa-billboard-denpasar-uluwatu-pecatu/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0095": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0095",
+      "name": "JL BY PASS NGURAH RAI - SUWUNG",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7125101,
+      "lng": 115.2255901,
+      "owner": "Billboard.id",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 6,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Jl By Pass Ngurah Rai - Suwung, Kota Denpasar, Bali",
+      "coord": "-8.7125101, 115.2255901",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 44.000.000 / tahun",
+      "potValJt": 44,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0095",
+          "title": "Billboard (6×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-25",
+      "contractDaysLeft": 15,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628160464722",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7125101,115.2255901",
+      "sourceUrl": "https://billboard.id/spot/sewa-billboard-denpasar-ngurah-rai/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0096": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0096",
+      "name": "PER3AN PATUNG KUDA - DAT 3 | BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.744834,
+      "lng": 115.178535,
+      "owner": "IVI (PT. Inti Vision Indonesia)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Per3an Patung Kuda - DAT 3 | BALI, Denpasar",
+      "coord": "-8.7448340, 115.1785350",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 66.000.000 / tahun",
+      "potValJt": 66,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0096",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-09",
+      "contractDaysLeft": -1,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Bpk. Putu Arya Kusuma",
+      "contactPhone": "628160723684",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.744834,115.178535",
+      "sourceUrl": "https://www.ivi.co.id/lokasi/billboard-per3an-patung-kuda-dat-3-bali-upt8g8o7/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0097": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0097",
+      "name": "JL. GATSU BARAT - ASTON 1 (ARAH TOHPATI) | BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.639248,
+      "lng": 115.203964,
+      "owner": "IVI (PT. Inti Vision Indonesia)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "JL. Gatsu Barat - Aston 1 (Arah Tohpati) | BALI, Denpasar",
+      "coord": "-8.6392480, 115.2039640",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 83.000.000 / tahun",
+      "potValJt": 83,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0097",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-02-27",
+      "contractDaysLeft": 109,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. I Wayan Sudarma",
+      "contactPhone": "628155819232",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.639248,115.203964",
+      "sourceUrl": "https://www.ivi.co.id/lokasi/billboard-jl-gatsu-barat-aston-1-arah-tohpati-bali-ydr69cbz/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0098": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0098",
+      "name": "JL. GATOT SUBROTO TENGAH NO. 3-1 - DENPASAR (SIMPANG UBUNG)",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.638713,
+      "lng": 115.208299,
+      "owner": "IVI (PT. Inti Vision Indonesia)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl. Gatot Subroto Tengah No. 3-1 - Denpasar (Simpang Ubung), Bali",
+      "coord": "-8.6387130, 115.2082990",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 60.000.000 / tahun",
+      "potValJt": 60,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0098",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-11",
+      "contractDaysLeft": 31,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. Made Dananjaya",
+      "contactPhone": "628183755916",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.638713,115.208299",
+      "sourceUrl": "https://www.ivi.co.id/lokasi/billboard-jl-gatot-subroto-tengah-no-3-1-denpasar-simpang-sw1injld/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0099": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0099",
+      "name": "JL. SUNSET ROAD -NAKULA1, BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.699204,
+      "lng": 115.178198,
+      "owner": "IVI (PT. Inti Vision Indonesia)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 12,
+      "h": 6,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Jl. Sunset Road -Nakula1, Bali, Denpasar",
+      "coord": "-8.6992040, 115.1781980",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 85.000.000 / tahun",
+      "potValJt": 85,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0099",
+          "title": "Billboard (12×6m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-01-01",
+      "contractDaysLeft": 52,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Ibu Kadek Widiastuti",
+      "contactPhone": "628185371274",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.699204,115.178198",
+      "sourceUrl": "https://www.ivi.co.id/lokasi/billboard-jl-sunset-road-nakula1-bali-cuvde1sg/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0100": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0100",
+      "name": "JI. RAYA TUBAN NO. 01, TUBAN, KUTA KABUPATEN BADUNG, BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.744668,
+      "lng": 115.179431,
+      "owner": "IVI (PT. Inti Vision Indonesia)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "JI. Raya Tuban No. 01, Tuban, Kuta Kabupaten Badung, Bali, Denpasar",
+      "coord": "-8.7446680, 115.1794310",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 65.000.000 / tahun",
+      "potValJt": 65,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0100",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-02-02",
+      "contractDaysLeft": 84,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. I Wayan Sudarma",
+      "contactPhone": "628150343748",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.744668,115.179431",
+      "sourceUrl": "https://www.ivi.co.id/lokasi/billboard-ji-raya-tuban-no-01-tuban-kuta-kabupaten-badung-58vv0qd2/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0101": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0101",
+      "name": "JL. GATSU TIMUR - RATNA 1 (ARAH TOHPATI) | BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.635693,
+      "lng": 115.228459,
+      "owner": "IVI (PT. Inti Vision Indonesia)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "JL. Gatsu Timur - Ratna 1 (Arah Tohpati) | BALI, Denpasar",
+      "coord": "-8.6356930, 115.2284590",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 64.000.000 / tahun",
+      "potValJt": 64,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0101",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-25",
+      "contractDaysLeft": 45,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Ibu Ni Made Ayu",
+      "contactPhone": "628142778359",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.635693,115.228459",
+      "sourceUrl": "https://www.ivi.co.id/lokasi/billboard-jl-gatsu-timur-ratna-1-arah-tohpati-bali-n6wfxpwe/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0102": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0102",
+      "name": "JL. GATSU BARAT - ASTON 1 (ARAH TOHPATI) | BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.639248,
+      "lng": 115.203964,
+      "owner": "IVI (PT. Inti Vision Indonesia)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Audit Kepatuhan & Monitoring",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "JL. Gatsu Barat - Aston 1 (Arah Tohpati) | BALI, Denpasar",
+      "coord": "-8.6392480, 115.2039640",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 85.000.000 / tahun",
+      "potValJt": 85,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 4,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0102",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-08-14",
+      "contractDaysLeft": 277,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Putu Arya Kusuma",
+      "contactPhone": "628120225695",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.639248,115.203964",
+      "sourceUrl": "https://www.ivi.co.id/lokasi/billboard-jl-gatsu-barat-aston-1-arah-tohpati-bali-582m0qd2/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0103": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0103",
+      "name": "JL. GATSU TIMUR DEKAT MALL GATSU 1 ARAH COKRO, UBUNG | BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.635762,
+      "lng": 115.231147,
+      "owner": "IVI (PT. Inti Vision Indonesia)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "JL. Gatsu Timur Dekat Mall Gatsu 1 arah Cokro, Ubung | BALI, Denpasar",
+      "coord": "-8.6357620, 115.2311470",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 74.000.000 / tahun",
+      "potValJt": 74,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0103",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-09",
+      "contractDaysLeft": -1,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Ibu Ni Putu Indah",
+      "contactPhone": "628128746572",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.635762,115.231147",
+      "sourceUrl": "https://www.ivi.co.id/lokasi/billboard-jl-gatsu-timur-dekat-mall-gatsu-1-arah-cokro-k05cfxuh/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0104": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0104",
+      "name": "JL. RAYA TUBAN NO. 1 KUTA - BADUNG, BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.744521,
+      "lng": 115.179104,
+      "owner": "IVI (PT. Inti Vision Indonesia)",
+      "op": "Pengelola Videotron KOTA DENPASAR",
+      "w": 9,
+      "h": 4,
+      "sisi": 1,
+      "jenis": "Videotron",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Jl. Raya Tuban No. 1 Kuta - Badung, Bali, Denpasar",
+      "coord": "-8.7445210, 115.1791040",
+      "taxType": "Pajak Reklame Elektronik",
+      "estimatedValue": "Rp 63.000.000 / tahun",
+      "potValJt": 63,
+      "formula": "Luas Layar × Durasi Tayang × Tarif LED 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Videotron dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0104",
+          "title": "Videotron (9×4m, 1 sisi)",
+          "type": "Pajak Reklame Elektronik",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-15",
+      "contractDaysLeft": 35,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. Agus Hendrawan",
+      "contactPhone": "628178988312",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.744521,115.179104",
+      "sourceUrl": "https://www.ivi.co.id/lokasi/videotron-jl-raya-tuban-no-1-kuta-badung-bali-zxnohcx9/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0105": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0105",
+      "name": "JL. AIRPORT NGURAH RAI, (BUNDARAN PATUNG KUDA), BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.744782,
+      "lng": 115.179213,
+      "owner": "IVI (PT. Inti Vision Indonesia)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Jl. Airport Ngurah Rai, (Bundaran Patung Kuda), Bali, Denpasar",
+      "coord": "-8.7447820, 115.1792130",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 79.000.000 / tahun",
+      "potValJt": 79,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0105",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-31",
+      "contractDaysLeft": 51,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. I Wayan Sudarma",
+      "contactPhone": "628174476119",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.744782,115.179213",
+      "sourceUrl": "https://www.ivi.co.id/lokasi/billboard-jl-airport-ngurah-rai-bundaran-patung-kuda-bali-7babc40o/"
+    },
+    "OBJ-REK-BADUNG-0106": {
+      "id": "OBJ-REK-BADUNG-0106",
+      "name": "JL. RAYA CANGGU (LED CANGGU), KABUPATEN BADUNG, BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.642316,
+      "lng": 115.154636,
+      "owner": "IVI (PT. Inti Vision Indonesia)",
+      "op": "Pengelola Videotron BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 1,
+      "jenis": "Videotron",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Jl. Raya Canggu (LED Canggu), Kabupaten Badung, Bali",
+      "coord": "-8.6423160, 115.1546360",
+      "taxType": "Pajak Reklame Elektronik",
+      "estimatedValue": "Rp 86.000.000 / tahun",
+      "potValJt": 86,
+      "formula": "Luas Layar × Durasi Tayang × Tarif LED 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Videotron dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0106",
+          "title": "Videotron (10×5m, 1 sisi)",
+          "type": "Pajak Reklame Elektronik",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-10-17",
+      "contractDaysLeft": -24,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Bpk. Agus Hendrawan",
+      "contactPhone": "628138619684",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.642316,115.154636",
+      "sourceUrl": "https://www.ivi.co.id/lokasi/videotron-jl-raya-canggu-led-canggu-kabupaten-badung-bali-7b7gc40o/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0107": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0107",
+      "name": "JL. COKROAMINOTO, DENPASAR, BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.631946,
+      "lng": 115.201992,
+      "owner": "IVI (PT. Inti Vision Indonesia)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl. Cokroaminoto, Denpasar, Bali",
+      "coord": "-8.6319460, 115.2019920",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 64.000.000 / tahun",
+      "potValJt": 64,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0107",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-08-02",
+      "contractDaysLeft": 265,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Ibu Ni Luh Gede Sukerti",
+      "contactPhone": "628150527356",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.631946,115.201992",
+      "sourceUrl": "https://www.ivi.co.id/lokasi/billboard-jl-cokroaminoto-denpasar-bali-x6hx1snk/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0108": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0108",
+      "name": "JL. COKROAMINOTO, DENPASAR, BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.623675,
+      "lng": 115.20074,
+      "owner": "IVI (PT. Inti Vision Indonesia)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Jl. Cokroaminoto, Denpasar, Bali",
+      "coord": "-8.6236750, 115.2007400",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 69.000.000 / tahun",
+      "potValJt": 69,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0108",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-04-24",
+      "contractDaysLeft": 165,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Ibu Ni Putu Indah",
+      "contactPhone": "628157881249",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.623675,115.20074",
+      "sourceUrl": "https://www.ivi.co.id/lokasi/billboard-jl-cokroaminoto-denpasar-bali-08f5qkrs/"
+    },
+    "OBJ-REK-BADUNG-0109": {
+      "id": "OBJ-REK-BADUNG-0109",
+      "name": "JL. RAYA CANGGU (LED CANGGU), KABUPATEN BADUNG, BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.642316,
+      "lng": 115.154636,
+      "owner": "IVI (PT. Inti Vision Indonesia)",
+      "op": "Pengelola Videotron BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 1,
+      "jenis": "Videotron",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Jl. Raya Canggu (LED Canggu), Kabupaten Badung, Bali",
+      "coord": "-8.6423160, 115.1546360",
+      "taxType": "Pajak Reklame Elektronik",
+      "estimatedValue": "Rp 104.000.000 / tahun",
+      "potValJt": 104,
+      "formula": "Luas Layar × Durasi Tayang × Tarif LED 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Videotron dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0109",
+          "title": "Videotron (10×5m, 1 sisi)",
+          "type": "Pajak Reklame Elektronik",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-07-29",
+      "contractDaysLeft": 261,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Ibu Kadek Widiastuti",
+      "contactPhone": "628139620141",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.642316,115.154636",
+      "sourceUrl": "https://www.ivi.co.id/lokasi/videotron-jl-raya-canggu-led-canggu-kabupaten-badung-bali-iqiv5b81/"
+    },
+    "OBJ-REK-BADUNG-0110": {
+      "id": "OBJ-REK-BADUNG-0110",
+      "name": "JL. RAYA CANGGU (LED CANGGU), KABUPATEN BADUNG, BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.642316,
+      "lng": 115.154636,
+      "owner": "IVI (PT. Inti Vision Indonesia)",
+      "op": "Pengelola Videotron BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 1,
+      "jenis": "Videotron",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Jl. Raya Canggu (LED Canggu), Kabupaten Badung, Bali",
+      "coord": "-8.6423160, 115.1546360",
+      "taxType": "Pajak Reklame Elektronik",
+      "estimatedValue": "Rp 87.000.000 / tahun",
+      "potValJt": 87,
+      "formula": "Luas Layar × Durasi Tayang × Tarif LED 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Videotron dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0110",
+          "title": "Videotron (10×5m, 1 sisi)",
+          "type": "Pajak Reklame Elektronik",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-02-17",
+      "contractDaysLeft": 99,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. I Wayan Sudarma",
+      "contactPhone": "628154898006",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.642316,115.154636",
+      "sourceUrl": "https://www.ivi.co.id/lokasi/videotron-jl-raya-canggu-led-canggu-kabupaten-badung-bali-acag3ya1/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0111": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0111",
+      "name": "JL. AIRPORT NGURAH RAI (BUNDARAN PATUNG KUDA), BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.744776,
+      "lng": 115.179133,
+      "owner": "IVI (PT. Inti Vision Indonesia)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Audit Kepatuhan & Monitoring",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Jl. Airport Ngurah Rai (Bundaran Patung Kuda), Bali, Denpasar",
+      "coord": "-8.7447760, 115.1791330",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 82.000.000 / tahun",
+      "potValJt": 82,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 4,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0111",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-10",
+      "contractDaysLeft": 30,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. Agus Hendrawan",
+      "contactPhone": "628185285284",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.744776,115.179133",
+      "sourceUrl": "https://www.ivi.co.id/lokasi/billboard-jl-airport-ngurah-rai-bundaran-patung-kuda-bali-js8hzexs/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0112": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0112",
+      "name": "JL. TEUKU UMAR - SIMP 6 RIORIARAH LEVEL 21, BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.67557,
+      "lng": 115.207294,
+      "owner": "IVI (PT. Inti Vision Indonesia)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 12,
+      "h": 6,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Jl. Teuku Umar - Simp 6 Rioriarah Level 21, Bali, Denpasar",
+      "coord": "-8.6755700, 115.2072940",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 106.000.000 / tahun",
+      "potValJt": 106,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0112",
+          "title": "Billboard (12×6m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-28",
+      "contractDaysLeft": 48,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. I Nyoman Artawan",
+      "contactPhone": "628175891677",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.67557,115.207294",
+      "sourceUrl": "https://www.ivi.co.id/lokasi/billboard-jl-teuku-umar-simp-6-rioriarah-level-21-bali-8zoevh9c/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0113": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0113",
+      "name": "JL. BY PASS NR - (KENDEDES) ARAH DPS, BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.731935,
+      "lng": 115.178561,
+      "owner": "IVI (PT. Inti Vision Indonesia)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 12,
+      "h": 6,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Audit Kepatuhan & Monitoring",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Jl. By Pass NR - (Kendedes) Arah DPS, Bali, Denpasar",
+      "coord": "-8.7319350, 115.1785610",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 97.000.000 / tahun",
+      "potValJt": 97,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 4,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0113",
+          "title": "Billboard (12×6m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-01-08",
+      "contractDaysLeft": 59,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628153214040",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.731935,115.178561",
+      "sourceUrl": "https://www.ivi.co.id/lokasi/billboard-jl-by-pass-nr-kendedes-arah-dps-bali-mln2tkr1/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0114": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0114",
+      "name": "JL. SUNSET ROAD - PEREMPATAN IMAM BONJOL, BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.705801,
+      "lng": 115.182945,
+      "owner": "IVI (PT. Inti Vision Indonesia)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Jl. Sunset Road - Perempatan Imam Bonjol, Bali, Denpasar",
+      "coord": "-8.7058010, 115.1829450",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 84.000.000 / tahun",
+      "potValJt": 84,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0114",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-18",
+      "contractDaysLeft": 38,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. I Ketut Suardika",
+      "contactPhone": "628122204024",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.705801,115.182945",
+      "sourceUrl": "https://www.ivi.co.id/lokasi/billboard-jl-sunset-road-perempatan-imam-bonjol-bali-bmz0uwqg/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0115": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0115",
+      "name": "JL. KELUAR BANDARA NGURAH RAI TUBAN, BADUNG - BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.743565,
+      "lng": 115.168275,
+      "owner": "IVI (PT. Inti Vision Indonesia)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Jl. Keluar Bandara Ngurah Rai Tuban, Badung - Bali, Denpasar",
+      "coord": "-8.7435650, 115.1682750",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 60.000.000 / tahun",
+      "potValJt": 60,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0115",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-05-02",
+      "contractDaysLeft": 173,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Ibu Ni Made Ayu",
+      "contactPhone": "628128102116",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.743565,115.168275",
+      "sourceUrl": "https://www.ivi.co.id/lokasi/billboard-jl-keluar-bandara-ngurah-rai-tuban-badung-bali-d5ixktr8/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0116": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0116",
+      "name": "JL. KELUAR BANDARA NGURAH RAI TUBAN, BADUNG - BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.743565,
+      "lng": 115.168275,
+      "owner": "IVI (PT. Inti Vision Indonesia)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Jl. Keluar Bandara Ngurah Rai Tuban, Badung - Bali, Denpasar",
+      "coord": "-8.7435650, 115.1682750",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 73.000.000 / tahun",
+      "potValJt": 73,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0116",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-02",
+      "contractDaysLeft": 22,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Ibu Dewi Sartika",
+      "contactPhone": "628152792297",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.743565,115.168275",
+      "sourceUrl": "https://www.ivi.co.id/lokasi/billboard-jl-keluar-bandara-ngurah-rai-tuban-badung-bali-3bed79pu/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0117": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0117",
+      "name": "JL. BANDARA NR (KARTA) | BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.74359,
+      "lng": 115.169053,
+      "owner": "IVI (PT. Inti Vision Indonesia)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Jl. Bandara NR (Karta) | BALI, Denpasar",
+      "coord": "-8.7435900, 115.1690530",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 76.000.000 / tahun",
+      "potValJt": 76,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0117",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-10-22",
+      "contractDaysLeft": -19,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Bpk. Agus Hendrawan",
+      "contactPhone": "628143407644",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.74359,115.169053",
+      "sourceUrl": "https://www.ivi.co.id/lokasi/billboard-jl-bandara-nr-karta-bali-6c7day3d/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0118": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0118",
+      "name": "JI. KEDIRI - TUBAN (DPN CLANDYS) KE TUBAN - BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.738077,
+      "lng": 115.170106,
+      "owner": "IVI (PT. Inti Vision Indonesia)",
+      "op": "Pengelola Baliho KOTA DENPASAR",
+      "w": 6,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Baliho",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "JI. Kediri - Tuban (Dpn Clandys) ke Tuban - BALI, Denpasar",
+      "coord": "-8.7380770, 115.1701060",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 66.000.000 / tahun",
+      "potValJt": 66,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Baliho dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0118",
+          "title": "Baliho (6×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-28",
+      "contractDaysLeft": 48,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. I Ketut Suardika",
+      "contactPhone": "628150811136",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.738077,115.170106",
+      "sourceUrl": "https://www.ivi.co.id/lokasi/baliho-ji-kediri-tuban-dpn-clandys-ke-tuban-bali-aepr3ya1/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0119": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0119",
+      "name": "JI. KEDIRI - TUBAN (DPN CLANDYS) KE TUBAN - BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.738077,
+      "lng": 115.170106,
+      "owner": "IVI (PT. Inti Vision Indonesia)",
+      "op": "Pengelola Baliho KOTA DENPASAR",
+      "w": 6,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Baliho",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "JI. Kediri - Tuban (Dpn Clandys) ke Tuban - BALI, Denpasar",
+      "coord": "-8.7380770, 115.1701060",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 66.000.000 / tahun",
+      "potValJt": 66,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Baliho dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0119",
+          "title": "Baliho (6×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-10-14",
+      "contractDaysLeft": -27,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Bpk. Putu Arya Kusuma",
+      "contactPhone": "628147176299",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.738077,115.170106",
+      "sourceUrl": "https://www.ivi.co.id/lokasi/baliho-ji-kediri-tuban-dpn-clandys-ke-tuban-bali-i2s65b81/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0120": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0120",
+      "name": "JL. RAYA KUTA 103 SPBU GELAEL, KUTA - BADUNG",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.720992,
+      "lng": 115.179964,
+      "owner": "IVI (PT. Inti Vision Indonesia)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 12,
+      "h": 6,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "JL. Raya Kuta 103 SPBU Gelael, Kuta - Badung, Denpasar, Bali",
+      "coord": "-8.7209920, 115.1799640",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 93.000.000 / tahun",
+      "potValJt": 93,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0120",
+          "title": "Billboard (12×6m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-25",
+      "contractDaysLeft": 45,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. Made Dananjaya",
+      "contactPhone": "628143206144",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.720992,115.179964",
+      "sourceUrl": "https://www.ivi.co.id/lokasi/billboard-jl-raya-kuta-103-spbu-gelael-kuta-badung-vshdjfqn/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0121": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0121",
+      "name": "GATE BANDARA NR - (HARRYS) | BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.74064,
+      "lng": 115.167397,
+      "owner": "IVI (PT. Inti Vision Indonesia)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Gate Bandara NR - (Harrys) | BALI, Denpasar",
+      "coord": "-8.7406400, 115.1673970",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 75.000.000 / tahun",
+      "potValJt": 75,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0121",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-10-20",
+      "contractDaysLeft": -21,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Bpk. I Nyoman Artawan",
+      "contactPhone": "628182141738",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.74064,115.167397",
+      "sourceUrl": "https://www.ivi.co.id/lokasi/billboard-gate-bandara-nr-harrys-bali-emg5b2cy/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0122": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0122",
+      "name": "JL. BANDARA NR (SARJANA), BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.743883,
+      "lng": 115.169615,
+      "owner": "IVI (PT. Inti Vision Indonesia)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Audit Kepatuhan & Monitoring",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Jl. Bandara NR (Sarjana), Bali, Denpasar",
+      "coord": "-8.7438830, 115.1696150",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 75.000.000 / tahun",
+      "potValJt": 75,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 4,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0122",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-10-28",
+      "contractDaysLeft": -13,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Ibu Ni Made Ayu",
+      "contactPhone": "628186261322",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.743883,115.169615",
+      "sourceUrl": "https://www.ivi.co.id/lokasi/billboard-jl-bandara-nr-sarjana-bali-vhy7jfqn/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0123": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0123",
+      "name": "JL. PATIH JELANTIK (DEKAT CENTRAL PARK KUTA), BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.710265,
+      "lng": 115.1803,
+      "owner": "IVI (PT. Inti Vision Indonesia)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 8,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Jl. Patih Jelantik (Dekat Central Park Kuta), Bali, Denpasar",
+      "coord": "-8.7102650, 115.1803000",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 51.000.000 / tahun",
+      "potValJt": 51,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0123",
+          "title": "Billboard (8×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-30",
+      "contractDaysLeft": 20,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. Agus Hendrawan",
+      "contactPhone": "628177447963",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.710265,115.1803",
+      "sourceUrl": "https://www.ivi.co.id/lokasi/billboard-jl-patih-jelantik-dekat-central-park-kuta-bali-w73q6ac1/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0124": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0124",
+      "name": "JL. GATE BANDARA NR -A. RATNADI, BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.742954,
+      "lng": 115.167742,
+      "owner": "IVI (PT. Inti Vision Indonesia)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Jl. Gate Bandara NR -A. Ratnadi, Bali, Denpasar",
+      "coord": "-8.7429540, 115.1677420",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 60.000.000 / tahun",
+      "potValJt": 60,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0124",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-13",
+      "contractDaysLeft": 3,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Ibu Ni Putu Indah",
+      "contactPhone": "628176985354",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.742954,115.167742",
+      "sourceUrl": "https://www.ivi.co.id/lokasi/billboard-jl-gate-bandara-nr-a-ratnadi-bali-1aipwd2o/"
+    },
+    "OBJ-REK-BADUNG-0125": {
+      "id": "OBJ-REK-BADUNG-0125",
+      "name": "JL. RAYA CANGGU ( PASAR TAMAN SARI MERTA ), BADUNG, BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.645849,
+      "lng": 115.169954,
+      "owner": "Nusaka Bali",
+      "op": "Pengelola Baliho BADUNG",
+      "w": 6,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Baliho",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl. Raya Canggu ( Pasar Taman Sari Merta ), Badung, Bali",
+      "coord": "-8.6458490, 115.1699540",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 47.000.000 / tahun",
+      "potValJt": 47,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Baliho dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0125",
+          "title": "Baliho (6×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-10-01",
+      "contractDaysLeft": 325,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Ibu Ni Putu Indah",
+      "contactPhone": "628170952436",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.645849,115.169954",
+      "sourceUrl": "https://nusakabali.com/media/"
+    },
+    "OBJ-REK-BADUNG-0126": {
+      "id": "OBJ-REK-BADUNG-0126",
+      "name": "JL. RAYA ABIANBASE ( ARAH MENUJU RS KAPAL ), BADUNG, BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.602052,
+      "lng": 115.171573,
+      "owner": "Nusaka Bali",
+      "op": "Pengelola Baliho BADUNG",
+      "w": 6,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Baliho",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Jl. Raya Abianbase ( Arah Menuju RS Kapal ), Badung, Bali",
+      "coord": "-8.6020520, 115.1715730",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 42.000.000 / tahun",
+      "potValJt": 42,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Baliho dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0126",
+          "title": "Baliho (6×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-30",
+      "contractDaysLeft": 20,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. I Ketut Suardika",
+      "contactPhone": "628188529262",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.602052,115.171573",
+      "sourceUrl": "https://nusakabali.com/media/"
+    },
+    "OBJ-REK-BADUNG-0127": {
+      "id": "OBJ-REK-BADUNG-0127",
+      "name": "JL. RAYA ABIANBASE ( ARAH MENUJU DALUNG ), BADUNG, BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.602052,
+      "lng": 115.171573,
+      "owner": "Nusaka Bali",
+      "op": "Pengelola Baliho BADUNG",
+      "w": 6,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Baliho",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Jl. Raya Abianbase ( Arah Menuju Dalung ), Badung, Bali",
+      "coord": "-8.6020520, 115.1715730",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 40.000.000 / tahun",
+      "potValJt": 40,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Baliho dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0127",
+          "title": "Baliho (6×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-11-06",
+      "contractDaysLeft": 361,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Ibu Ni Putu Indah",
+      "contactPhone": "628162224636",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.602052,115.171573",
+      "sourceUrl": "https://nusakabali.com/media/"
+    },
+    "OBJ-REK-BADUNG-0128": {
+      "id": "OBJ-REK-BADUNG-0128",
+      "name": "JL. DEWI SRI – SUNSET ROAD, KUTA BADUNG, BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.700056,
+      "lng": 115.173312,
+      "owner": "Nusaka Bali",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 12,
+      "h": 6,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Jl. Dewi Sri – Sunset Road, Kuta Badung, Bali",
+      "coord": "-8.7000560, 115.1733120",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 82.000.000 / tahun",
+      "potValJt": 82,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0128",
+          "title": "Billboard (12×6m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-10-24",
+      "contractDaysLeft": 348,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Agus Hendrawan",
+      "contactPhone": "628175547626",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.700056,115.173312",
+      "sourceUrl": "https://nusakabali.com/media/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0129": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0129",
+      "name": "JL. TEUKU UMAR (KIMIA FARMA 2)",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.681102,
+      "lng": 115.19865,
+      "owner": "Nusaka Bali",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 8,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Jl. Teuku Umar (Kimia Farma 2), Bali",
+      "coord": "-8.6811020, 115.1986500",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 47.000.000 / tahun",
+      "potValJt": 47,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0129",
+          "title": "Billboard (8×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-17",
+      "contractDaysLeft": 7,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. I Nyoman Artawan",
+      "contactPhone": "628167281278",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.681102,115.19865",
+      "sourceUrl": "https://nusakabali.com/media/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0130": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0130",
+      "name": "JL. IMAM BONJOL",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.682153,
+      "lng": 115.19685,
+      "owner": "Nusaka Bali",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 8,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl. Imam Bonjol, Bali",
+      "coord": "-8.6821530, 115.1968500",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 67.000.000 / tahun",
+      "potValJt": 67,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0130",
+          "title": "Billboard (8×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-02",
+      "contractDaysLeft": 22,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628188242866",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.682153,115.19685",
+      "sourceUrl": "https://nusakabali.com/media/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0131": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0131",
+      "name": "JL. TEUKU UMAR (KIMIA FARMA 1)",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.681102,
+      "lng": 115.19865,
+      "owner": "Nusaka Bali",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 8,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Jl. Teuku Umar (Kimia Farma 1), Bali",
+      "coord": "-8.6811020, 115.1986500",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 63.000.000 / tahun",
+      "potValJt": 63,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0131",
+          "title": "Billboard (8×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-08-24",
+      "contractDaysLeft": 287,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. I Wayan Sudarma",
+      "contactPhone": "628186648366",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.681102,115.19865",
+      "sourceUrl": "https://nusakabali.com/media/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0132": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0132",
+      "name": "JL. TEUKU UMAR (TOKO WIJAYA SARI 1)",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.681285,
+      "lng": 115.200416,
+      "owner": "Nusaka Bali",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 8,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl. Teuku Umar (Toko Wijaya Sari 1), Bali",
+      "coord": "-8.6812850, 115.2004160",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 55.000.000 / tahun",
+      "potValJt": 55,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0132",
+          "title": "Billboard (8×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-12",
+      "contractDaysLeft": 32,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628187493841",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.681285,115.200416",
+      "sourceUrl": "https://nusakabali.com/media/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0133": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0133",
+      "name": "JL. TEUKU UMAR (TOKO WIJAYA SARI 2)",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.681285,
+      "lng": 115.200416,
+      "owner": "Nusaka Bali",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 8,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Jl. Teuku Umar (Toko Wijaya Sari 2), Bali",
+      "coord": "-8.6812850, 115.2004160",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 50.000.000 / tahun",
+      "potValJt": 50,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0133",
+          "title": "Billboard (8×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-10-15",
+      "contractDaysLeft": -26,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Ibu Ni Made Ayu",
+      "contactPhone": "628171658158",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.681285,115.200416",
+      "sourceUrl": "https://nusakabali.com/media/"
+    },
+    "OBJ-REK-BADUNG-0134": {
+      "id": "OBJ-REK-BADUNG-0134",
+      "name": "JL. RAYA KUTA 1",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.711537,
+      "lng": 115.181102,
+      "owner": "Nusaka Bali",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 8,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Jl. Raya Kuta 1, Bali",
+      "coord": "-8.7115370, 115.1811020",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 64.000.000 / tahun",
+      "potValJt": 64,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0134",
+          "title": "Billboard (8×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-09-22",
+      "contractDaysLeft": 316,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Agus Hendrawan",
+      "contactPhone": "628145851329",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.711537,115.181102",
+      "sourceUrl": "https://nusakabali.com/media/"
+    },
+    "OBJ-REK-BADUNG-0135": {
+      "id": "OBJ-REK-BADUNG-0135",
+      "name": "JL. RAYA KUTA 2",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.711302,
+      "lng": 115.178552,
+      "owner": "Nusaka Bali",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 8,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Audit Kepatuhan & Monitoring",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Jl. Raya Kuta 2, Bali",
+      "coord": "-8.7113020, 115.1785520",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 66.000.000 / tahun",
+      "potValJt": 66,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 4,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0135",
+          "title": "Billboard (8×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-10-22",
+      "contractDaysLeft": 346,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Ibu Dewi Sartika",
+      "contactPhone": "628152447030",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.711302,115.178552",
+      "sourceUrl": "https://nusakabali.com/media/"
+    },
+    "OBJ-REK-BADUNG-0136": {
+      "id": "OBJ-REK-BADUNG-0136",
+      "name": "JL. RAYA KUTA (SPBU GELAEL)",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.720875,
+      "lng": 115.180221,
+      "owner": "Nusaka Bali",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Jl. Raya Kuta (SPBU Gelael), Bali",
+      "coord": "-8.7208750, 115.1802210",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 84.000.000 / tahun",
+      "potValJt": 84,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0136",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-04-21",
+      "contractDaysLeft": 162,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Ibu Ni Made Ayu",
+      "contactPhone": "628128692142",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.720875,115.180221",
+      "sourceUrl": "https://nusakabali.com/media/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0137": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0137",
+      "name": "JL. GATOT SUBROTO",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.638845,
+      "lng": 115.208429,
+      "owner": "Nusaka Bali",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Jl. Gatot Subroto, Bali",
+      "coord": "-8.6388450, 115.2084290",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 61.000.000 / tahun",
+      "potValJt": 61,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0137",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-10-01",
+      "contractDaysLeft": -40,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Bpk. Made Dananjaya",
+      "contactPhone": "628155546979",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.638845,115.208429",
+      "sourceUrl": "https://nusakabali.com/media/"
+    },
+    "OBJ-REK-BADUNG-0138": {
+      "id": "OBJ-REK-BADUNG-0138",
+      "name": "JL. LEGIAN (GROUND ZERO)",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.717084,
+      "lng": 115.174201,
+      "owner": "Nusaka Bali",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 8,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Jl. Legian (Ground Zero), Bali",
+      "coord": "-8.7170840, 115.1742010",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 47.000.000 / tahun",
+      "potValJt": 47,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0138",
+          "title": "Billboard (8×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-14",
+      "contractDaysLeft": 34,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. I Wayan Sudarma",
+      "contactPhone": "628164931249",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.717084,115.174201",
+      "sourceUrl": "https://nusakabali.com/media/"
+    },
+    "OBJ-REK-BADUNG-0139": {
+      "id": "OBJ-REK-BADUNG-0139",
+      "name": "JL. ULUWATU",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.785633,
+      "lng": 115.166931,
+      "owner": "Nusaka Bali",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 12,
+      "h": 6,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Jl. Uluwatu, Bali",
+      "coord": "-8.7856330, 115.1669310",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 109.000.000 / tahun",
+      "potValJt": 109,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0139",
+          "title": "Billboard (12×6m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-18",
+      "contractDaysLeft": 38,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Ibu Ni Luh Gede Sukerti",
+      "contactPhone": "628162905283",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.785633,115.166931",
+      "sourceUrl": "https://nusakabali.com/media/"
+    },
+    "OBJ-REK-BADUNG-0140": {
+      "id": "OBJ-REK-BADUNG-0140",
+      "name": "JL. RAYA CANGGU (PEPITO)",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.643757,
+      "lng": 115.157773,
+      "owner": "Nusaka Bali",
+      "op": "Pengelola Baliho BADUNG",
+      "w": 6,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Baliho",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Jl. Raya Canggu (Pepito), Bali",
+      "coord": "-8.6437570, 115.1577730",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 48.000.000 / tahun",
+      "potValJt": 48,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Baliho dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0140",
+          "title": "Baliho (6×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-10-01",
+      "contractDaysLeft": -40,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Ibu Ni Putu Indah",
+      "contactPhone": "628160524947",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.643757,115.157773",
+      "sourceUrl": "https://nusakabali.com/media/"
+    },
+    "OBJ-REK-BADUNG-0141": {
+      "id": "OBJ-REK-BADUNG-0141",
+      "name": "JL. KARTIKA PLAZA",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.731958,
+      "lng": 115.167689,
+      "owner": "Nusaka Bali",
+      "op": "Pengelola Baliho BADUNG",
+      "w": 5,
+      "h": 3,
+      "sisi": 2,
+      "jenis": "Baliho",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Jl. Kartika Plaza, Bali",
+      "coord": "-8.7319580, 115.1676890",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 54.000.000 / tahun",
+      "potValJt": 54,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Baliho dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0141",
+          "title": "Baliho (5×3m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-18",
+      "contractDaysLeft": 8,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628163560377",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.731958,115.167689",
+      "sourceUrl": "https://nusakabali.com/media/"
+    },
+    "OBJ-REK-BADUNG-0142": {
+      "id": "OBJ-REK-BADUNG-0142",
+      "name": "JL. RAYA CANGGU (TOKO GUNADI)",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.645065,
+      "lng": 115.168567,
+      "owner": "Nusaka Bali",
+      "op": "Pengelola Baliho BADUNG",
+      "w": 6,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Baliho",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Jl. Raya Canggu (Toko Gunadi), Bali",
+      "coord": "-8.6450650, 115.1685670",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 47.000.000 / tahun",
+      "potValJt": 47,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Baliho dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0142",
+          "title": "Baliho (6×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-03-08",
+      "contractDaysLeft": 118,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. I Ketut Suardika",
+      "contactPhone": "628140738670",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.645065,115.168567",
+      "sourceUrl": "https://nusakabali.com/media/"
+    },
+    "OBJ-REK-BADUNG-0143": {
+      "id": "OBJ-REK-BADUNG-0143",
+      "name": "JL. RAYA CANGGU 1",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.642935,
+      "lng": 115.155365,
+      "owner": "Nusaka Bali",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 8,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Jl. Raya Canggu 1, Bali",
+      "coord": "-8.6429350, 115.1553650",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 53.000.000 / tahun",
+      "potValJt": 53,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0143",
+          "title": "Billboard (8×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-24",
+      "contractDaysLeft": 14,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. Putu Arya Kusuma",
+      "contactPhone": "628180281826",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.642935,115.155365",
+      "sourceUrl": "https://nusakabali.com/media/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0144": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0144",
+      "name": "TEUKU UMAR (SIMPANG ENAM)",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.675799,
+      "lng": 115.206863,
+      "owner": "Nusaka Bali",
+      "op": "Pengelola Videotron KOTA DENPASAR",
+      "w": 6,
+      "h": 4,
+      "sisi": 1,
+      "jenis": "Videotron",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Teuku Umar (Simpang Enam), Bali",
+      "coord": "-8.6757990, 115.2068630",
+      "taxType": "Pajak Reklame Elektronik",
+      "estimatedValue": "Rp 47.000.000 / tahun",
+      "potValJt": 47,
+      "formula": "Luas Layar × Durasi Tayang × Tarif LED 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Videotron dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0144",
+          "title": "Videotron (6×4m, 1 sisi)",
+          "type": "Pajak Reklame Elektronik",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-26",
+      "contractDaysLeft": 16,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. Made Dananjaya",
+      "contactPhone": "628140593907",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.675799,115.206863",
+      "sourceUrl": "https://nusakabali.com/media/"
+    },
+    "OBJ-REK-BADUNG-0145": {
+      "id": "OBJ-REK-BADUNG-0145",
+      "name": "JL. RAYA CANGGU 2",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.642935,
+      "lng": 115.155365,
+      "owner": "Nusaka Bali",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 8,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl. Raya Canggu 2, Bali",
+      "coord": "-8.6429350, 115.1553650",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 62.000.000 / tahun",
+      "potValJt": 62,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0145",
+          "title": "Billboard (8×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-05-03",
+      "contractDaysLeft": 174,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. I Nyoman Artawan",
+      "contactPhone": "628120504472",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.642935,115.155365",
+      "sourceUrl": "https://nusakabali.com/media/"
+    },
+    "OBJ-REK-BADUNG-0146": {
+      "id": "OBJ-REK-BADUNG-0146",
+      "name": "JL. RAYA CANGGU 3",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.641605,
+      "lng": 115.155024,
+      "owner": "Nusaka Bali",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 8,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl. Raya Canggu 3, Bali",
+      "coord": "-8.6416050, 115.1550240",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 51.000.000 / tahun",
+      "potValJt": 51,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0146",
+          "title": "Billboard (8×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-01-03",
+      "contractDaysLeft": 54,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. I Nyoman Artawan",
+      "contactPhone": "628139188068",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.641605,115.155024",
+      "sourceUrl": "https://nusakabali.com/media/"
+    },
+    "OBJ-REK-BADUNG-0147": {
+      "id": "OBJ-REK-BADUNG-0147",
+      "name": "BILLBOARD JL. BYPASS NGURAH SP TOL BALI MANDARA, BENOA, KEC. KUTA SEL., KABUPATEN BADUNG",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7911776,
+      "lng": 115.2135063,
+      "owner": "Lokasi Billboard",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 8,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Premium",
+      "coord": "-8.7911776, 115.2135063",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 62.000.000 / tahun",
+      "potValJt": 62,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0147",
+          "title": "Billboard (8×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-10-22",
+      "contractDaysLeft": -19,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Ibu Ni Putu Indah",
+      "contactPhone": "628147934216",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.791177626197019,115.2135062709536",
+      "sourceUrl": "lokasibillboard.com"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0148": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0148",
+      "name": "BILLBOARD JL. GATOT SUBROTO, KEC. DENPASAR UTARA, KOTA DENPASAR, BALI 4X8V",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.639028,
+      "lng": 115.206028,
+      "owner": "Lokasi Billboard",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 8,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "",
+      "coord": "-8.6390280, 115.2060280",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 51.000.000 / tahun",
+      "potValJt": 51,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0148",
+          "title": "Billboard (8×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-10-20",
+      "contractDaysLeft": 344,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Putu Arya Kusuma",
+      "contactPhone": "628187391505",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.639028,115.206028",
+      "sourceUrl": "lokasibillboard.com"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0149": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0149",
+      "name": "BILLBOARD - JL. BANDARA NR (SARJANA), BALI (5 X 10)",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.743883,
+      "lng": 115.169615,
+      "owner": "EPB (PT. Eka Panca Bersama)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Audit Kepatuhan & Monitoring",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Jl. Bandara NR (Sarjana), Bali",
+      "coord": "-8.7438830, 115.1696150",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 64.000.000 / tahun",
+      "potValJt": 64,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 4,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0149",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-20",
+      "contractDaysLeft": 10,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Ibu Ni Made Ayu",
+      "contactPhone": "628182650841",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.743883,115.169615",
+      "sourceUrl": "https://www.epb.co.id/locations/billboard-jl-bandara-nr-sarjana-bali-5-x-10-qi1mo4sv"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0150": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0150",
+      "name": "BILLBOARD - JL. GATE BANDARA NR -A. RATNADI, BALI (5 X 10)",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.742954,
+      "lng": 115.167742,
+      "owner": "EPB (PT. Eka Panca Bersama)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Audit Kepatuhan & Monitoring",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Jl. Gate Bandara NR -A. Ratnadi, Bali",
+      "coord": "-8.7429540, 115.1677420",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 69.000.000 / tahun",
+      "potValJt": 69,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 4,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0150",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-01-08",
+      "contractDaysLeft": 59,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. I Ketut Suardika",
+      "contactPhone": "628159856786",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.742954,115.167742",
+      "sourceUrl": "https://www.epb.co.id/locations/billboard-jl-gate-bandara-nr-a-ratnadi-bali-5-x-10-bs5dmpjn"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0151": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0151",
+      "name": "BILLBOARD - JL. SUNSET ROAD -NAKULA1, BALI (6 X 12)",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.699204,
+      "lng": 115.178198,
+      "owner": "EPB (PT. Eka Panca Bersama)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 12,
+      "h": 6,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Jl. Sunset Road -Nakula1, Bali",
+      "coord": "-8.6992040, 115.1781980",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 97.000.000 / tahun",
+      "potValJt": 97,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0151",
+          "title": "Billboard (12×6m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-02-13",
+      "contractDaysLeft": 95,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Made Dananjaya",
+      "contactPhone": "628140461744",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.699204,115.178198",
+      "sourceUrl": "https://www.epb.co.id/locations/billboard-jl-sunset-road-nakula1-bali-6-x-12-wf4ka5lf"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0152": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0152",
+      "name": "BILLBOARD - JL. TEUKU UMAR - SIMP 6 RIORIARAH LEVEL 21, BALI (6 X 12)",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.67557,
+      "lng": 115.207294,
+      "owner": "EPB (PT. Eka Panca Bersama)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 12,
+      "h": 6,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Audit Kepatuhan & Monitoring",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Jl. Teuku Umar - Simp 6 Rioriarah Level 21, Bali",
+      "coord": "-8.6755700, 115.2072940",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 91.000.000 / tahun",
+      "potValJt": 91,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 4,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0152",
+          "title": "Billboard (12×6m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-12",
+      "contractDaysLeft": 32,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Ibu Kadek Widiastuti",
+      "contactPhone": "628146756146",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.67557,115.207294",
+      "sourceUrl": "https://www.epb.co.id/locations/billboard-jl-teuku-umar-simp-6-rioriarah-level-21-bali-6-x-12-k5a8cr8q"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0153": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0153",
+      "name": "BILLBOARD - JL. BY PASS NR - (KENDEDES) ARAH DPS, BALI (6 X 12)",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.731935,
+      "lng": 115.178561,
+      "owner": "EPB (PT. Eka Panca Bersama)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 12,
+      "h": 6,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Jl. By Pass NR - (Kendedes) Arah DPS, Bali",
+      "coord": "-8.7319350, 115.1785610",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 108.000.000 / tahun",
+      "potValJt": 108,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0153",
+          "title": "Billboard (12×6m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-01-02",
+      "contractDaysLeft": 53,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Ibu Kadek Widiastuti",
+      "contactPhone": "628123906989",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.731935,115.178561",
+      "sourceUrl": "https://www.epb.co.id/locations/billboard-jl-by-pass-nr-kendedes-arah-dps-bali-6-x-12-vk7uj5b7"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0154": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0154",
+      "name": "BILLBOARD - JL. SUNSET ROAD - PEREMPATAN IMAM BONJOL, BALI (5 X 10)",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.705801,
+      "lng": 115.182945,
+      "owner": "EPB (PT. Eka Panca Bersama)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Jl. Sunset Road - Perempatan Imam Bonjol, Bali",
+      "coord": "-8.7058010, 115.1829450",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 85.000.000 / tahun",
+      "potValJt": 85,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0154",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-15",
+      "contractDaysLeft": 35,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. I Ketut Suardika",
+      "contactPhone": "628122838429",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.705801,115.182945",
+      "sourceUrl": "https://www.epb.co.id/locations/billboard-jl-sunset-road-perempatan-imam-bonjol-bali-5-x-10-1e84dje4"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0155": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0155",
+      "name": "VIDEOTRON - JL. SUDIRMAN (SIMPANG JL RAYA PUPUTAN), BALI (5 X 10)",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.669472,
+      "lng": 115.218222,
+      "owner": "EPB (PT. Eka Panca Bersama)",
+      "op": "Pengelola Videotron KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 1,
+      "jenis": "Videotron",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Jl. Sudirman (simpang Jl Raya Puputan), Bali",
+      "coord": "-8.6694720, 115.2182220",
+      "taxType": "Pajak Reklame Elektronik",
+      "estimatedValue": "Rp 97.000.000 / tahun",
+      "potValJt": 97,
+      "formula": "Luas Layar × Durasi Tayang × Tarif LED 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Videotron dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0155",
+          "title": "Videotron (10×5m, 1 sisi)",
+          "type": "Pajak Reklame Elektronik",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-10-31",
+      "contractDaysLeft": -10,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Ibu Ni Made Ayu",
+      "contactPhone": "628184201736",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.669472,115.218222",
+      "sourceUrl": "https://www.epb.co.id/locations/videotron-jl-sudirman-simpang-jl-raya-puputan-bali-5-x-10-iyjo46es"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0156": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0156",
+      "name": "VIDEOTRON - SIMPANG HASSANUDIN, JL. HASSANUDIN NO. 28, DENPASAR, BALI (5 X 10)",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.658806,
+      "lng": 115.214892,
+      "owner": "EPB (PT. Eka Panca Bersama)",
+      "op": "Pengelola Videotron KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 1,
+      "jenis": "Videotron",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Simpang Hassanudin, Jl. Hassanudin No. 28, Denpasar, Bali",
+      "coord": "-8.6588060, 115.2148920",
+      "taxType": "Pajak Reklame Elektronik",
+      "estimatedValue": "Rp 89.000.000 / tahun",
+      "potValJt": 89,
+      "formula": "Luas Layar × Durasi Tayang × Tarif LED 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Videotron dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0156",
+          "title": "Videotron (10×5m, 1 sisi)",
+          "type": "Pajak Reklame Elektronik",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-23",
+      "contractDaysLeft": 13,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. I Nyoman Artawan",
+      "contactPhone": "628161467675",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.658806,115.214892",
+      "sourceUrl": "https://www.epb.co.id/locations/videotron-simpang-hassanudin-jl-hassanudin-no-28-denpasar-bali-5-x-10-a67ontfn"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0157": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0157",
+      "name": "BILLBOARD - JI. KELUAR BANDARA NGURAH RAI TUBAN, BADUNG - BALI (5 X 10)",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.743565,
+      "lng": 115.168275,
+      "owner": "EPB (PT. Eka Panca Bersama)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "JI. Keluar Bandara Ngurah Rai Tuban, Badung - Bali",
+      "coord": "-8.7435650, 115.1682750",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 60.000.000 / tahun",
+      "potValJt": 60,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0157",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-10-14",
+      "contractDaysLeft": -27,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628124075232",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.743565,115.168275",
+      "sourceUrl": "https://www.epb.co.id/locations/billboard-ji-keluar-bandara-ngurah-rai-tuban-badung-bali-5-x-10-f1wf6l4w"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0158": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0158",
+      "name": "BILLBOARD - JI. KELUAR BANDARA NGURAH RAI TUBAN, BADUNG - BALI (5 X 10)",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.743565,
+      "lng": 115.168275,
+      "owner": "EPB (PT. Eka Panca Bersama)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "JI. Keluar Bandara Ngurah Rai Tuban, Badung - Bali",
+      "coord": "-8.7435650, 115.1682750",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 64.000.000 / tahun",
+      "potValJt": 64,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0158",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-10-21",
+      "contractDaysLeft": -20,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Bpk. Agus Hendrawan",
+      "contactPhone": "628120493299",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.743565,115.168275",
+      "sourceUrl": "https://www.epb.co.id/locations/billboard-ji-keluar-bandara-ngurah-rai-tuban-badung-bali-5-x-10-2uizyu1h"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0159": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0159",
+      "name": "BILLBOARD - JI. KELUAR - MASUK BANDARA NGURAH RAI TUBAN, BADUNG - BALI (8 X 16)",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.741852,
+      "lng": 115.167929,
+      "owner": "EPB (PT. Eka Panca Bersama)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 16,
+      "h": 8,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "JI. Keluar - Masuk Bandara Ngurah Rai Tuban, Badung - Bali",
+      "coord": "-8.7418520, 115.1679290",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 154.000.000 / tahun",
+      "potValJt": 154,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0159",
+          "title": "Billboard (16×8m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-09-07",
+      "contractDaysLeft": 301,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Agus Hendrawan",
+      "contactPhone": "628146586846",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.741852,115.167929",
+      "sourceUrl": "https://www.epb.co.id/locations/billboard-ji-keluar-masuk-bandara-ngurah-rai-tuban-badung-bali-8-x-16-89u9b63a"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0160": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0160",
+      "name": "BILLBOARD - JI. KELUAR - MASUK BANDARA NGURAH RAI TUBAN, BADUNG - BALI (8 X 16)",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.741852,
+      "lng": 115.167929,
+      "owner": "EPB (PT. Eka Panca Bersama)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 16,
+      "h": 8,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Audit Kepatuhan & Monitoring",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "JI. Keluar - Masuk Bandara Ngurah Rai Tuban, Badung - Bali",
+      "coord": "-8.7418520, 115.1679290",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 136.000.000 / tahun",
+      "potValJt": 136,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 4,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0160",
+          "title": "Billboard (16×8m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-01",
+      "contractDaysLeft": -9,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Bpk. Made Dananjaya",
+      "contactPhone": "628148538773",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.741852,115.167929",
+      "sourceUrl": "https://www.epb.co.id/locations/billboard-ji-keluar-masuk-bandara-ngurah-rai-tuban-badung-bali-8-x-16-02qyi4f3"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0161": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0161",
+      "name": "BILLBOARD - JI. AIRPORT NGURAH RAI, TUBAN, BADUNG - BALI (BUNDARAN PATUNG KUDA) (5 X 10)",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.744776,
+      "lng": 115.179133,
+      "owner": "EPB (PT. Eka Panca Bersama)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "JI. Airport Ngurah Rai, Tuban, Badung - Bali (Bundaran Patung Kuda)",
+      "coord": "-8.7447760, 115.1791330",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 60.000.000 / tahun",
+      "potValJt": 60,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0161",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-13",
+      "contractDaysLeft": 3,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. Made Dananjaya",
+      "contactPhone": "628148110612",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.744776,115.179133",
+      "sourceUrl": "https://www.epb.co.id/locations/billboard-ji-airport-ngurah-rai-tuban-badung-bali-bundaran-patung-5-x-10-jcx5tasx"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0162": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0162",
+      "name": "BILLBOARD - JI. AIRPORT NGURAH RAI, TUBAN, BADUNG - BALI (BUNDARAN PATUNG KUDA) (5 X 10)",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.744776,
+      "lng": 115.179279,
+      "owner": "EPB (PT. Eka Panca Bersama)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Audit Kepatuhan & Monitoring",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "JI. Airport Ngurah Rai, Tuban, Badung - Bali (Bundaran Patung Kuda)",
+      "coord": "-8.7447760, 115.1792790",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 64.000.000 / tahun",
+      "potValJt": 64,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 4,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0162",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-01-03",
+      "contractDaysLeft": 54,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Ibu Ni Made Ayu",
+      "contactPhone": "628186691918",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.744776,115.179279",
+      "sourceUrl": "https://www.epb.co.id/locations/billboard-ji-airport-ngurah-rai-tuban-badung-bali-bundaran-patung-5-x-10-iyor46es"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0163": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0163",
+      "name": "BILLBOARD - GATE BANDARA NR - (HARRYS) | BALI (5 X 10)",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.74064,
+      "lng": 115.167397,
+      "owner": "EPB (PT. Eka Panca Bersama)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Gate Bandara NR - (Harrys) | BALI",
+      "coord": "-8.7406400, 115.1673970",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 74.000.000 / tahun",
+      "potValJt": 74,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0163",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-10-20",
+      "contractDaysLeft": -21,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628150075417",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.74064,115.167397",
+      "sourceUrl": "https://www.epb.co.id/locations/billboard-gate-bandara-nr-harrys-bali-5-x-10-xtp5vulh"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0164": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0164",
+      "name": "BILLBOARD - PER3AN PATUNG KUDA - DAT 3 | BALI (5 X 10)",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.744834,
+      "lng": 115.178535,
+      "owner": "EPB (PT. Eka Panca Bersama)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Per3an Patung Kuda - DAT 3 | BALI",
+      "coord": "-8.7448340, 115.1785350",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 86.000.000 / tahun",
+      "potValJt": 86,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0164",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-01-01",
+      "contractDaysLeft": 52,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. Made Dananjaya",
+      "contactPhone": "628149769442",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.744834,115.178535",
+      "sourceUrl": "https://www.epb.co.id/locations/billboard-per3an-patung-kuda-dat-3-bali-5-x-10-pv1hewhp"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0165": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0165",
+      "name": "VIDEOTRON - BANJAR TUBAN GRIYA, JL. RAYA TUBAN NO. 1 KUTA - BADUNG, BALI (4 X 9)",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.744521,
+      "lng": 115.179104,
+      "owner": "EPB (PT. Eka Panca Bersama)",
+      "op": "Pengelola Videotron KOTA DENPASAR",
+      "w": 9,
+      "h": 4,
+      "sisi": 1,
+      "jenis": "Videotron",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Banjar Tuban Griya, Jl. Raya Tuban No. 1 Kuta - Badung, Bali",
+      "coord": "-8.7445210, 115.1791040",
+      "taxType": "Pajak Reklame Elektronik",
+      "estimatedValue": "Rp 81.000.000 / tahun",
+      "potValJt": 81,
+      "formula": "Luas Layar × Durasi Tayang × Tarif LED 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Videotron dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0165",
+          "title": "Videotron (9×4m, 1 sisi)",
+          "type": "Pajak Reklame Elektronik",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-05",
+      "contractDaysLeft": 25,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Ibu Ni Luh Gede Sukerti",
+      "contactPhone": "628127495753",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.744521,115.179104",
+      "sourceUrl": "https://www.epb.co.id/locations/videotron-banjar-tuban-griya-jl-raya-tuban-no-1-kuta-badung-bali-4-x-9-ubywrdwk"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0166": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0166",
+      "name": "BILLBOARD - JI. COKROAMINOTO, DENPASAR (DEPAN TERMINAL UBUNG) - BALI (5 X 10)",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.635563,
+      "lng": 115.206895,
+      "owner": "EPB (PT. Eka Panca Bersama)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "JI. Cokroaminoto, Denpasar (Depan Terminal Ubung) - Bali",
+      "coord": "-8.6355630, 115.2068950",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 78.000.000 / tahun",
+      "potValJt": 78,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0166",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-11",
+      "contractDaysLeft": 31,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. I Ketut Suardika",
+      "contactPhone": "628158385787",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.635563,115.206895",
+      "sourceUrl": "https://www.epb.co.id/locations/billboard-ji-cokroaminoto-denpasar-depan-terminal-ubung-bali-5-x-10-dx1ap0jv"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0167": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0167",
+      "name": "BILLBOARD - JI. TEUKU UMAR, DENPASAR - BALI (5 X 10)",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.673827,
+      "lng": 115.207955,
+      "owner": "EPB (PT. Eka Panca Bersama)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "JI. Teuku Umar, Denpasar - Bali",
+      "coord": "-8.6738270, 115.2079550",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 62.000.000 / tahun",
+      "potValJt": 62,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0167",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-02",
+      "contractDaysLeft": 22,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628174405496",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.673827,115.207955",
+      "sourceUrl": "https://www.epb.co.id/locations/billboard-ji-teuku-umar-denpasar-bali-5-x-10-1eladje4"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0168": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0168",
+      "name": "BILLBOARD - JI. TEUKU UMAR, DENPASAR - BALI (5 X 10)",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.673827,
+      "lng": 115.207955,
+      "owner": "EPB (PT. Eka Panca Bersama)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "JI. Teuku Umar, Denpasar - Bali",
+      "coord": "-8.6738270, 115.2079550",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 89.000.000 / tahun",
+      "potValJt": 89,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0168",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-01-03",
+      "contractDaysLeft": 54,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Ibu Ni Luh Gede Sukerti",
+      "contactPhone": "628122818202",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.673827,115.207955",
+      "sourceUrl": "https://www.epb.co.id/locations/billboard-ji-teuku-umar-denpasar-bali-5-x-10-6dfwl2sg"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0169": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0169",
+      "name": "BILLBOARD - JI. BY PASS NGURAH RAI PAMOGAN, DENPASAR SELATAN ( RUMAH KHODAM, VIKI FURNITURE ] (5 X 10)",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.716832,
+      "lng": 115.205363,
+      "owner": "EPB (PT. Eka Panca Bersama)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "JI. By Pass Ngurah Rai Pamogan, Denpasar Selatan ( Rumah Khodam, Viki Furniture ]",
+      "coord": "-8.7168320, 115.2053630",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 70.000.000 / tahun",
+      "potValJt": 70,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0169",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-12",
+      "contractDaysLeft": 2,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628127986112",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.716832,115.205363",
+      "sourceUrl": "https://www.epb.co.id/locations/billboard-ji-by-pass-ngurah-rai-pamogan-denpasar-selatan-rumah-khodam-5-x-10-4zio25sp"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0170": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0170",
+      "name": "BILLBOARD - JI. BY PASS NGURAH RAI PAMOGAN, DENPASAR SELATAN ( RUMAH KHODAM, VIKI FURNITURE ] (5 X 10)",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.716832,
+      "lng": 115.205363,
+      "owner": "EPB (PT. Eka Panca Bersama)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "JI. By Pass Ngurah Rai Pamogan, Denpasar Selatan ( Rumah Khodam, Viki Furniture ]",
+      "coord": "-8.7168320, 115.2053630",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 69.000.000 / tahun",
+      "potValJt": 69,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0170",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-18",
+      "contractDaysLeft": 8,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. I Nyoman Artawan",
+      "contactPhone": "628122670917",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.716832,115.205363",
+      "sourceUrl": "https://www.epb.co.id/locations/billboard-ji-by-pass-ngurah-rai-pamogan-denpasar-selatan-rumah-khodam-5-x-10-pvd1ewhp"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0171": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0171",
+      "name": "BILLBOARD - JI. IMAM BONJOL, PERTIGAAN KUTA - DENPASAR (5 X 10)",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.696236,
+      "lng": 115.186649,
+      "owner": "EPB (PT. Eka Panca Bersama)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Audit Kepatuhan & Monitoring",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "JI. Imam Bonjol, Pertigaan Kuta - Denpasar",
+      "coord": "-8.6962360, 115.1866490",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 66.000.000 / tahun",
+      "potValJt": 66,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 4,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0171",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-22",
+      "contractDaysLeft": 42,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. Agus Hendrawan",
+      "contactPhone": "628160155606",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.696236,115.186649",
+      "sourceUrl": "https://www.epb.co.id/locations/billboard-ji-imam-bonjol-pertigaan-kuta-denpasar-5-x-10-5ohhgbv7"
+    },
+    "OBJ-REK-GIANYAR-0172": {
+      "id": "OBJ-REK-GIANYAR-0172",
+      "name": "SEWA TITIK BILLBOARD DAN BALIHO DI BALI, JL. GOA GAJAH - BEDULU GIANYAR, BALI",
+      "cityId": "gianyar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.5237828,
+      "lng": 115.2920521,
+      "owner": "Utama Mega Karya (Karyaku.co.id)",
+      "op": "Pengelola Billboard GIANYAR",
+      "w": 6,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Jl. Goa Gajah – Bedulu Gianyar, Bali",
+      "coord": "-8.5237828, 115.2920521",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 57.000.000 / tahun",
+      "potValJt": 57,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda GIANYAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-GIANYAR-0172",
+          "title": "Billboard (6×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-10-22",
+      "contractDaysLeft": -19,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Ibu Ni Made Ayu",
+      "contactPhone": "628158469316",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.5237827944018,115.29205211884",
+      "sourceUrl": "https://karyaku.co.id/item/sewa-titik-billboard-dan-baliho-di-bali-jl-goa-gajah-bedulu-gianyar-bali/"
+    },
+    "OBJ-REK-GIANYAR-0173": {
+      "id": "OBJ-REK-GIANYAR-0173",
+      "name": "SEWA TITIK BILLBOARD DAN BALIHO DI BALI, JL. RAYA ANDONG, GIANYAR - BALI",
+      "cityId": "gianyar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.5116375,
+      "lng": 115.270936,
+      "owner": "Utama Mega Karya (Karyaku.co.id)",
+      "op": "Pengelola Billboard GIANYAR",
+      "w": 8,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl. Raya Andong, Gianyar – Bali",
+      "coord": "-8.5116375, 115.2709360",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 51.000.000 / tahun",
+      "potValJt": 51,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda GIANYAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-GIANYAR-0173",
+          "title": "Billboard (8×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-04-14",
+      "contractDaysLeft": 155,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628184543312",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.5116375195022,115.27093596394",
+      "sourceUrl": "https://karyaku.co.id/item/sewa-titik-billboard-dan-baliho-di-bali-jl-raya-andong-gianyar-bali/"
+    },
+    "OBJ-REK-GIANYAR-0174": {
+      "id": "OBJ-REK-GIANYAR-0174",
+      "name": "SEWA TITIK BILLBOARD DAN BALIHO DI BALI, JL. BY PASS IB MANTRA - PANTAI LEBIH, GIANYAR - BALI",
+      "cityId": "gianyar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.5799265,
+      "lng": 115.3552095,
+      "owner": "Utama Mega Karya (Karyaku.co.id)",
+      "op": "Pengelola Billboard GIANYAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl. By Pass IB Mantra – Pantai Lebih, Gianyar – Bali",
+      "coord": "-8.5799265, 115.3552095",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 75.000.000 / tahun",
+      "potValJt": 75,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda GIANYAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-GIANYAR-0174",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-05-10",
+      "contractDaysLeft": 181,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. I Ketut Suardika",
+      "contactPhone": "628153770500",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.5799265180131,115.35520947736",
+      "sourceUrl": "https://karyaku.co.id/item/sewa-titik-billboard-dan-baliho-di-bali-jl-by-pass-ib-mantra-pantai-lebih-gianyar-bali/"
+    },
+    "OBJ-REK-BADUNG-0175": {
+      "id": "OBJ-REK-BADUNG-0175",
+      "name": "SEWA TITIK BILLBOARD DAN BALIHO DI BALI, JL. RAYA ULUWATU - BUNDARAN SIMPANG JIMBARAN, BALI.",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.785773,
+      "lng": 115.1659334,
+      "owner": "Utama Mega Karya (Karyaku.co.id)",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 12,
+      "h": 6,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Jl. Raya Uluwatu – Bundaran Simpang Jimbaran, Bali",
+      "coord": "-8.7857730, 115.1659334",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 102.000.000 / tahun",
+      "potValJt": 102,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0175",
+          "title": "Billboard (12×6m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-14",
+      "contractDaysLeft": 4,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. Made Dananjaya",
+      "contactPhone": "628166852001",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7857730033987,115.16593337059",
+      "sourceUrl": "https://karyaku.co.id/item/sewa-titik-billboard-dan-baliho-di-bali-jl-raya-uluwatu-bundaran-simpang-jimbaran-bali/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0176": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0176",
+      "name": "SEWA TITIK BILLBOARD DAN BALIHO DI BALI, JL. SUTOYO - DAUN PURI, DENPASAR - BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6614427,
+      "lng": 115.2165398,
+      "owner": "Utama Mega Karya (Karyaku.co.id)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 8,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Jl. Sutoyo – Daun Puri, Denpasar – Bali",
+      "coord": "-8.6614427, 115.2165398",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 54.000.000 / tahun",
+      "potValJt": 54,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0176",
+          "title": "Billboard (8×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-07-03",
+      "contractDaysLeft": 235,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Putu Arya Kusuma",
+      "contactPhone": "628125388669",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6614427,115.2165398",
+      "sourceUrl": "https://karyaku.co.id/item/sewa-titik-billboard-dan-baliho-di-bali-jl-sutoyo-daun-puri-denpasar-bali/"
+    },
+    "OBJ-REK-BADUNG-0177": {
+      "id": "OBJ-REK-BADUNG-0177",
+      "name": "SEWA TITIK BILLBOARD DAN BALIHO DI BALI, JL. RAYA CANGGU - PEPITO MARKET, BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.644297,
+      "lng": 115.1580316,
+      "owner": "Utama Mega Karya (Karyaku.co.id)",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 8,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl. Raya Canggu – Pepito Market, Bali",
+      "coord": "-8.6442970, 115.1580316",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 54.000.000 / tahun",
+      "potValJt": 54,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0177",
+          "title": "Billboard (8×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-05-09",
+      "contractDaysLeft": 180,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628153535470",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6442969569746,115.15803158283",
+      "sourceUrl": "https://karyaku.co.id/item/sewa-titik-billboard-dan-baliho-di-bali-jl-raya-canggu-pepito-market-bali/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0178": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0178",
+      "name": "SEWA TITIK BILLBOARD DAN BALIHO DI BALI, JL. IMAM BONJOL - JL. GN SOPUTAN, DENPASAR - BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6892525,
+      "lng": 115.1918328,
+      "owner": "Utama Mega Karya (Karyaku.co.id)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 8,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Jl. Imam Bonjol – Jl. Gn Soputan, Denpasar – Bali",
+      "coord": "-8.6892525, 115.1918328",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 58.000.000 / tahun",
+      "potValJt": 58,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0178",
+          "title": "Billboard (8×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-13",
+      "contractDaysLeft": 3,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Ibu Dewi Sartika",
+      "contactPhone": "628157671353",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6892524576712,115.19183278084",
+      "sourceUrl": "https://karyaku.co.id/item/sewa-titik-billboard-dan-baliho-di-bali-jl-imam-bonjol-jl-gn-soputan-denpasar-bali/"
+    },
+    "OBJ-REK-BADUNG-0179": {
+      "id": "OBJ-REK-BADUNG-0179",
+      "name": "SEWA TITIK VIDEOTRON DI BALI, JL. SUNSET ROAD - IMAM BONOL (SIMPANG 4), BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.705988,
+      "lng": 115.182441,
+      "owner": "Utama Mega Karya (Karyaku.co.id)",
+      "op": "Pengelola Videotron BADUNG",
+      "w": 8,
+      "h": 4,
+      "sisi": 1,
+      "jenis": "Videotron",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "jl sunset road",
+      "coord": "-8.7059880, 115.1824410",
+      "taxType": "Pajak Reklame Elektronik",
+      "estimatedValue": "Rp 70.000.000 / tahun",
+      "potValJt": 70,
+      "formula": "Luas Layar × Durasi Tayang × Tarif LED 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Videotron dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0179",
+          "title": "Videotron (8×4m, 1 sisi)",
+          "type": "Pajak Reklame Elektronik",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-05-10",
+      "contractDaysLeft": 181,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. I Nyoman Artawan",
+      "contactPhone": "628161087592",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.705988,115.182441",
+      "sourceUrl": "https://karyaku.co.id/item/sewa-titik-videotron-di-bali-jl-sunset-road-imam-bonol-simpang-4-bali/"
+    },
+    "OBJ-REK-BADUNG-0180": {
+      "id": "OBJ-REK-BADUNG-0180",
+      "name": "SEWA TITIK BILLBOARD DAN BALIHO DI BALI, JL. PETITENGET (HOTEL BALI KARMA SAJTRA), BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.671641,
+      "lng": 115.161288,
+      "owner": "Utama Mega Karya (Karyaku.co.id)",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 8,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl Petitenget No. 10",
+      "coord": "-8.6716410, 115.1612880",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 45.000.000 / tahun",
+      "potValJt": 45,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0180",
+          "title": "Billboard (8×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-25",
+      "contractDaysLeft": 15,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Ibu Ni Luh Gede Sukerti",
+      "contactPhone": "628172600125",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.671641,115.161288",
+      "sourceUrl": "https://karyaku.co.id/item/sewa-titik-billboard-dan-baliho-di-bali-jl-petitenget-hotel-bali-karma-sajtra-bali/"
+    },
+    "OBJ-REK-BADUNG-0181": {
+      "id": "OBJ-REK-BADUNG-0181",
+      "name": "SEWA TITIK BILLBOARD DAN BALIHO DI BALI, JL. PETITENGET (FELICIA SPA), BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.67369,
+      "lng": 115.157751,
+      "owner": "Utama Mega Karya (Karyaku.co.id)",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 8,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl. Petingetet No. 75",
+      "coord": "-8.6736900, 115.1577510",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 71.000.000 / tahun",
+      "potValJt": 71,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0181",
+          "title": "Billboard (8×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-10-13",
+      "contractDaysLeft": -28,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Ibu Dewi Sartika",
+      "contactPhone": "628130311209",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.67369,115.157751",
+      "sourceUrl": "https://karyaku.co.id/item/sewa-titik-billboard-dan-baliho-di-bali-jl-petitenget-felicia-spa-bali/"
+    },
+    "OBJ-REK-BADUNG-0182": {
+      "id": "OBJ-REK-BADUNG-0182",
+      "name": "SEWA TITIK BILLBOARD DAN BALIHO DI BALI, JL. BATU BELIG (ARAH KEROBOKAN), BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.672921,
+      "lng": 115.152205,
+      "owner": "Utama Mega Karya (Karyaku.co.id)",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 8,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Jl. Batu Belig (Arah Kerobokan), Bali",
+      "coord": "-8.6729210, 115.1522050",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 61.000.000 / tahun",
+      "potValJt": 61,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0182",
+          "title": "Billboard (8×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-05-12",
+      "contractDaysLeft": 183,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. I Ketut Suardika",
+      "contactPhone": "628138099669",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.672921,115.152205",
+      "sourceUrl": "https://karyaku.co.id/item/sewa-titik-billboard-dan-baliho-di-bali-jl-batu-belig-arah-kerobokan-bali/"
+    },
+    "OBJ-REK-BADUNG-0183": {
+      "id": "OBJ-REK-BADUNG-0183",
+      "name": "SEWA TITIK BILLBOARD DAN BALIHO DI BALI, JL. RAYA CANGGU (TOKO KASUR CAHAYA NATURAL), BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.641274,
+      "lng": 115.154285,
+      "owner": "Utama Mega Karya (Karyaku.co.id)",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Jl. Raya Canggu",
+      "coord": "-8.6412740, 115.1542850",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 66.000.000 / tahun",
+      "potValJt": 66,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0183",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-01-07",
+      "contractDaysLeft": 58,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Ibu Kadek Widiastuti",
+      "contactPhone": "628126725162",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.641274,115.154285",
+      "sourceUrl": "https://karyaku.co.id/item/sewa-titik-billboard-dan-baliho-di-bali-jl-raya-canggu-toko-kasur-cahaya-natural-bali/"
+    },
+    "OBJ-REK-TABANAN-0184": {
+      "id": "OBJ-REK-TABANAN-0184",
+      "name": "SEWA TITIK BILLBOARD DAN BALIHO DI BALI, JL. PAHLAWAN (LPD DESA ADAT TABANAN), BALI",
+      "cityId": "tabanan",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.538917,
+      "lng": 115.129792,
+      "owner": "Utama Mega Karya (Karyaku.co.id)",
+      "op": "Pengelola Billboard TABANAN",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Jl. Pahlawan No. 111",
+      "coord": "-8.5389170, 115.1297920",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 65.000.000 / tahun",
+      "potValJt": 65,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda TABANAN"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-TABANAN-0184",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-07",
+      "contractDaysLeft": 27,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Ibu Kadek Widiastuti",
+      "contactPhone": "628169596610",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.538917,115.129792",
+      "sourceUrl": "https://karyaku.co.id/item/sewa-titik-billboard-dan-baliho-di-bali-jl-pahlawan-lpd-desa-adat-tabanan-bali/"
+    },
+    "OBJ-REK-TABANAN-0185": {
+      "id": "OBJ-REK-TABANAN-0185",
+      "name": "SEWA TITIK BILLBOARD DAN BALIHO DI BALI, JL. GAJAHMADA, TABANAN, BALI",
+      "cityId": "tabanan",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.538629,
+      "lng": 115.124173,
+      "owner": "Utama Mega Karya (Karyaku.co.id)",
+      "op": "Pengelola Billboard TABANAN",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Jl. Gajahmada, Delod Peken, Tabanan, Bali",
+      "coord": "-8.5386290, 115.1241730",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 62.000.000 / tahun",
+      "potValJt": 62,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda TABANAN"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-TABANAN-0185",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-05-02",
+      "contractDaysLeft": 173,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Made Dananjaya",
+      "contactPhone": "628150338509",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.538629,115.124173",
+      "sourceUrl": "https://karyaku.co.id/item/sewa-titik-billboard-dan-baliho-di-bali-jl-gajahmada-tabanan-bali/"
+    },
+    "OBJ-REK-BADUNG-0186": {
+      "id": "OBJ-REK-BADUNG-0186",
+      "name": "SEWA TITIK BILLBOARD DI BALI, JL. KEMAYORAN (GATE BANDARA NGURAH RAI - HARRIS HOTEL) - BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.740663,
+      "lng": 115.167349,
+      "owner": "Utama Mega Karya (Karyaku.co.id)",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Bali, Jl. Kemayoran (Gate Bandara Ngurah Rai-Harris Hotel)",
+      "coord": "-8.7406630, 115.1673490",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 67.000.000 / tahun",
+      "potValJt": 67,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0186",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-18",
+      "contractDaysLeft": 38,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. Putu Arya Kusuma",
+      "contactPhone": "628177683195",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.740663,115.167349",
+      "sourceUrl": "https://karyaku.co.id/item/sewa-titik-billboard-di-bali-jl-kemayoran-gate-bandara-ngurah-rai-harris-hotel-bali/"
+    },
+    "OBJ-REK-BADUNG-0187": {
+      "id": "OBJ-REK-BADUNG-0187",
+      "name": "SEWA TITIK BILLBOARD DI BALI, JL. RAYA CANGGU (MINI MART CG 2) - BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.641527,
+      "lng": 115.154792,
+      "owner": "Utama Mega Karya (Karyaku.co.id)",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 8,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Bali, Jl. Raya Canggu (Mini Mart CG2)",
+      "coord": "-8.6415270, 115.1547920",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 69.000.000 / tahun",
+      "potValJt": 69,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0187",
+          "title": "Billboard (8×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-06-13",
+      "contractDaysLeft": 215,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628122246646",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.641527,115.154792",
+      "sourceUrl": "https://karyaku.co.id/item/sewa-titik-billboard-di-bali-jl-raya-canggu-mini-mart-cg-2-bali/"
+    },
+    "OBJ-REK-BADUNG-0188": {
+      "id": "OBJ-REK-BADUNG-0188",
+      "name": "SEWA TITIK BILLBOARD DI BALI, JL. RAYA CANGGU (PEREMPATAN BATU BOLONG) - BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.636535,
+      "lng": 115.146923,
+      "owner": "Utama Mega Karya (Karyaku.co.id)",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 8,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Audit Kepatuhan & Monitoring",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Bali, Jl. Raya Canggu (Perempatan Batu Bolong)",
+      "coord": "-8.6365350, 115.1469230",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 65.000.000 / tahun",
+      "potValJt": 65,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 4,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0188",
+          "title": "Billboard (8×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-03-15",
+      "contractDaysLeft": 125,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Agus Hendrawan",
+      "contactPhone": "628162970101",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.636535,115.146923",
+      "sourceUrl": "https://karyaku.co.id/item/sewa-titik-billboard-di-bali-jl-raya-canggu-perempatan-batu-bolong-bali/"
+    },
+    "OBJ-REK-BADUNG-0189": {
+      "id": "OBJ-REK-BADUNG-0189",
+      "name": "SEWA TITIK BILLBOARD DI BALI, JL. RAYA CANGGU (PEREMPATAN WATU BOLONG) - BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.63673,
+      "lng": 115.147112,
+      "owner": "Utama Mega Karya (Karyaku.co.id)",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 6,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Bali, Jl. Raya Canggu (Perempatan Watu Bolong)",
+      "coord": "-8.6367300, 115.1471120",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 61.000.000 / tahun",
+      "potValJt": 61,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0189",
+          "title": "Billboard (6×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-18",
+      "contractDaysLeft": 8,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Ibu Ni Made Ayu",
+      "contactPhone": "628129939580",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.63673,115.147112",
+      "sourceUrl": "https://karyaku.co.id/item/sewa-titik-billboard-di-bali-jl-raya-canggu-perempatan-watu-bolong-bali/"
+    },
+    "OBJ-REK-BADUNG-0190": {
+      "id": "OBJ-REK-BADUNG-0190",
+      "name": "SEWA TITIK BILLBOARD DI BALI, JL. RAYA PADANG LUWIH - DALUNG, BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.629855,
+      "lng": 115.175526,
+      "owner": "Utama Mega Karya (Karyaku.co.id)",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 6,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Bali, Jl. Raya Padang Luwih – Dalung, Bali",
+      "coord": "-8.6298550, 115.1755260",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 64.000.000 / tahun",
+      "potValJt": 64,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0190",
+          "title": "Billboard (6×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-04-09",
+      "contractDaysLeft": 150,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Putu Arya Kusuma",
+      "contactPhone": "628150978337",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.629855,115.175526",
+      "sourceUrl": "https://karyaku.co.id/item/sewa-titik-billboard-di-bali-jl-raya-padang-luwih-dalung-bali/"
+    },
+    "OBJ-REK-BADUNG-0191": {
+      "id": "OBJ-REK-BADUNG-0191",
+      "name": "SEWA TITIK BILLBOARD BALI, JL. BY PASS NGURAH RAI (UNDERPASS TUBAN) - BADUNG BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7447164,
+      "lng": 115.1822766,
+      "owner": "Utama Mega Karya (Karyaku.co.id)",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Badung Bali, Jl. By Pass Ngurah Rai (Underpass Tuban)",
+      "coord": "-8.7447164, 115.1822766",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 85.000.000 / tahun",
+      "potValJt": 85,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0191",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-08",
+      "contractDaysLeft": 28,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. I Wayan Sudarma",
+      "contactPhone": "628175198342",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7447164416225,115.18227655543",
+      "sourceUrl": "https://karyaku.co.id/item/sewa-titik-billboard-bali-jl-by-pass-ngurah-rai-underpass-tuban-badung-bali/"
+    },
+    "OBJ-REK-BADUNG-0192": {
+      "id": "OBJ-REK-BADUNG-0192",
+      "name": "SEWA TITIK VIDEO TRON DI BALI, JL. DEWI SARTIKA (TUBAN) BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.737954,
+      "lng": 115.168353,
+      "owner": "Utama Mega Karya (Karyaku.co.id)",
+      "op": "Pengelola Videotron BADUNG",
+      "w": 5,
+      "h": 3,
+      "sisi": 1,
+      "jenis": "Videotron",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Bali, Jl. Dewi Sartika (Tuban)",
+      "coord": "-8.7379540, 115.1683530",
+      "taxType": "Pajak Reklame Elektronik",
+      "estimatedValue": "Rp 49.000.000 / tahun",
+      "potValJt": 49,
+      "formula": "Luas Layar × Durasi Tayang × Tarif LED 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Videotron dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0192",
+          "title": "Videotron (5×3m, 1 sisi)",
+          "type": "Pajak Reklame Elektronik",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-27",
+      "contractDaysLeft": 17,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. I Wayan Sudarma",
+      "contactPhone": "628153408875",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.737954,115.168353",
+      "sourceUrl": "https://karyaku.co.id/item/sewa-titik-video-tron-di-bali-jl-dewi-sartika-tuban-bali/"
+    },
+    "OBJ-REK-BADUNG-0193": {
+      "id": "OBJ-REK-BADUNG-0193",
+      "name": "SEWA TITIK VIDEO TRON DI BALI JL. KARTIKA PLAZA - BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.728881,
+      "lng": 115.168694,
+      "owner": "Utama Mega Karya (Karyaku.co.id)",
+      "op": "Pengelola Videotron BADUNG",
+      "w": 3,
+      "h": 1.5,
+      "sisi": 1,
+      "jenis": "Videotron",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Bali, Jl. Kartika Plaza",
+      "coord": "-8.7288810, 115.1686940",
+      "taxType": "Pajak Reklame Elektronik",
+      "estimatedValue": "Rp 22.000.000 / tahun",
+      "potValJt": 22,
+      "formula": "Luas Layar × Durasi Tayang × Tarif LED 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Videotron dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0193",
+          "title": "Videotron (3×1.5m, 1 sisi)",
+          "type": "Pajak Reklame Elektronik",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-09-20",
+      "contractDaysLeft": 314,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628167372974",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.728881,115.168694",
+      "sourceUrl": "https://karyaku.co.id/item/sewa-titik-video-tron-di-bali-jl-kartika-plaza-bali/"
+    },
+    "OBJ-REK-BADUNG-0194": {
+      "id": "OBJ-REK-BADUNG-0194",
+      "name": "HIGH-IMPACT ADVERTISING AT JL. RAYA ULUWATU – BADUNG BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.786494,
+      "lng": 115.1651879,
+      "owner": "Petraco (Petraco Media)",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Audit Kepatuhan & Monitoring",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Jl. Raya Uluwatu – Badung Bali",
+      "coord": "-8.7864940, 115.1651879",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 62.000.000 / tahun",
+      "potValJt": 62,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 4,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0194",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-01-08",
+      "contractDaysLeft": 59,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. I Ketut Suardika",
+      "contactPhone": "628151884164",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.786494,115.1651879",
+      "sourceUrl": "https://petraco.id/product/high-impact-advertising-at-jl-raya-uluwatu-badung-bali-2/"
+    },
+    "OBJ-REK-BADUNG-0195": {
+      "id": "OBJ-REK-BADUNG-0195",
+      "name": "HIGH-IMPACT ADVERTISING AT JL. RAYA ULUWATU – BADUNG BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.786494,
+      "lng": 115.1651879,
+      "owner": "Petraco (Petraco Media)",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 6,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Audit Kepatuhan & Monitoring",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Jl. Raya Uluwatu – Badung Bali",
+      "coord": "-8.7864940, 115.1651879",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 62.000.000 / tahun",
+      "potValJt": 62,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 4,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0195",
+          "title": "Billboard (6×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-02-25",
+      "contractDaysLeft": 107,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Agus Hendrawan",
+      "contactPhone": "628128820563",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.786494,115.1651879",
+      "sourceUrl": "https://petraco.id/product/high-impact-advertising-at-jl-raya-uluwatu-badung-bali/"
+    },
+    "OBJ-REK-BADUNG-0196": {
+      "id": "OBJ-REK-BADUNG-0196",
+      "name": "HIGH-IMPACT ADVERTISING AT JL. RAYA CANGGU – BADUNG BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6403209,
+      "lng": 115.1522882,
+      "owner": "Petraco (Petraco Media)",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 6,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Jl. Raya Canggu – Badung Bali",
+      "coord": "-8.6403209, 115.1522882",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 39.000.000 / tahun",
+      "potValJt": 39,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0196",
+          "title": "Billboard (6×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-10-10",
+      "contractDaysLeft": -31,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Bpk. Agus Hendrawan",
+      "contactPhone": "628133846176",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.640320899999999,115.1522882",
+      "sourceUrl": "https://petraco.id/product/high-impact-advertising-at-jl-raya-canggu-badung-bali/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0197": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0197",
+      "name": "HIGH-IMPACT ADVERTISING AT JL. WAHIDIN – DENPASAR BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6546534,
+      "lng": 115.2095614,
+      "owner": "Petraco (Petraco Media)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl. Wahidin – Denpasar Bali",
+      "coord": "-8.6546534, 115.2095614",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 73.000.000 / tahun",
+      "potValJt": 73,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0197",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-02-09",
+      "contractDaysLeft": 91,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. I Wayan Sudarma",
+      "contactPhone": "628162398695",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.654653399999999,115.2095614",
+      "sourceUrl": "https://petraco.id/product/high-impact-advertising-at-jl-wahidin-denpasar-bali/"
+    },
+    "OBJ-REK-GIANYAR-0198": {
+      "id": "OBJ-REK-GIANYAR-0198",
+      "name": "HIGH-IMPACT BILLBOARD ON JL. RAYA MAS – GIANYAR, BALI",
+      "cityId": "gianyar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.5468054,
+      "lng": 115.2723531,
+      "owner": "Petraco (Petraco Media)",
+      "op": "Pengelola Billboard GIANYAR",
+      "w": 8,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Jl. Raya Mas, Gianyar, Bali",
+      "coord": "-8.5468054, 115.2723531",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 48.000.000 / tahun",
+      "potValJt": 48,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda GIANYAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-GIANYAR-0198",
+          "title": "Billboard (8×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-03-04",
+      "contractDaysLeft": 114,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Ibu Ni Putu Indah",
+      "contactPhone": "628128642013",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.5468054,115.2723531",
+      "sourceUrl": "https://petraco.id/product/high-impact-billboard-on-jl-raya-mas-gianyar-bali/"
+    },
+    "OBJ-REK-GIANYAR-0199": {
+      "id": "OBJ-REK-GIANYAR-0199",
+      "name": "STRATEGICALLY POSITIONED BILLBOARD ON JL. PATIH JELANTIK – GIANYAR, BALI",
+      "cityId": "gianyar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.5356146,
+      "lng": 115.32641,
+      "owner": "Petraco (Petraco Media)",
+      "op": "Pengelola Billboard GIANYAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Jl. Patih Jelantik, Gianyar, Bali",
+      "coord": "-8.5356146, 115.3264100",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 67.000.000 / tahun",
+      "potValJt": 67,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda GIANYAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-GIANYAR-0199",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-26",
+      "contractDaysLeft": 16,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. Putu Arya Kusuma",
+      "contactPhone": "628185180683",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.535614599999999,115.32641",
+      "sourceUrl": "https://petraco.id/product/strategically-positioned-billboard-on-jl-patih-jelantik-gianyar-bali/"
+    },
+    "OBJ-REK-BADUNG-0200": {
+      "id": "OBJ-REK-BADUNG-0200",
+      "name": "HIGH-IMPACT BILLBOARD ON JL SUNSET ROAD – BADUNG, BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7005438,
+      "lng": 115.1786548,
+      "owner": "Petraco (Petraco Media)",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 12,
+      "h": 6,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "JL Sunset Road, Badung, Bali",
+      "coord": "-8.7005438, 115.1786548",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 96.000.000 / tahun",
+      "potValJt": 96,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0200",
+          "title": "Billboard (12×6m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-10-06",
+      "contractDaysLeft": 330,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Ibu Ni Putu Indah",
+      "contactPhone": "628176962391",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7005438,115.1786548",
+      "sourceUrl": "https://petraco.id/product/high-impact-billboard-on-jl-sunset-road-badung-bali/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0201": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0201",
+      "name": "HIGH-VISIBILITY BILLBOARD ON JL. BYPASS NGURAH RAI, BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7171282,
+      "lng": 115.2179413,
+      "owner": "Petraco (Petraco Media)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Jl. Bypass Ngurah Rai, Bali",
+      "coord": "-8.7171282, 115.2179413",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 61.000.000 / tahun",
+      "potValJt": 61,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0201",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-08-07",
+      "contractDaysLeft": 270,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Agus Hendrawan",
+      "contactPhone": "628182621418",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7171282,115.2179413",
+      "sourceUrl": "https://petraco.id/product/high-visibility-billboard-on-jl-bypass-ngurah-rai-bali/"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0202": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0202",
+      "name": "STRATEGIC ADVERTISING ON JL CARGO PERMAI, DENPASAR – BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6272344,
+      "lng": 115.1952503,
+      "owner": "Petraco (Petraco Media)",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Jl Cargo Permai, Denpasar, Bali",
+      "coord": "-8.6272344, 115.1952503",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 62.000.000 / tahun",
+      "potValJt": 62,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0202",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-10-31",
+      "contractDaysLeft": -10,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Ibu Ni Made Ayu",
+      "contactPhone": "628180597743",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.627234399999999,115.1952503",
+      "sourceUrl": "https://petraco.id/product/strategic-advertising-on-jl-cargo-permai-denpasar-bali/"
+    },
+    "OBJ-REK-BADUNG-0203": {
+      "id": "OBJ-REK-BADUNG-0203",
+      "name": "BIKE BILLBOARD ADVERTISING",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.718,
+      "lng": 115.169,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Transit Ad BADUNG",
+      "w": 2,
+      "h": 1.5,
+      "sisi": 1,
+      "jenis": "Transit Ad",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "DKI Jakarta",
+      "coord": "-8.7180000, 115.1690000",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 26.000.000 / tahun",
+      "potValJt": 26,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Transit Ad dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0203",
+          "title": "Transit Ad (2×1.5m, 1 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-10-01",
+      "contractDaysLeft": 325,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Agus Hendrawan",
+      "contactPhone": "628167859554",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.718,115.169",
+      "sourceUrl": "https://www.lestariads.com/space/bike-billboard-advertising.html"
+    },
+    "OBJ-REK-BADUNG-0204": {
+      "id": "OBJ-REK-BADUNG-0204",
+      "name": "LED AIRPORT EXIT BANDARA I GUSTI NGURAH RAI, BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7440539,
+      "lng": 115.1700105,
+      "owner": "Lestari Ads",
+      "op": "Pengelola LED Billboard BADUNG",
+      "w": 8,
+      "h": 4,
+      "sisi": 1,
+      "jenis": "LED Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Kecamatan Kuta, Kabupaten Badung, Bali",
+      "coord": "-8.7440539, 115.1700105",
+      "taxType": "Pajak Reklame Elektronik",
+      "estimatedValue": "Rp 55.000.000 / tahun",
+      "potValJt": 55,
+      "formula": "Luas Layar × Durasi Tayang × Tarif LED 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor LED Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0204",
+          "title": "LED Billboard (8×4m, 1 sisi)",
+          "type": "Pajak Reklame Elektronik",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-11",
+      "contractDaysLeft": 31,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Ibu Ni Putu Indah",
+      "contactPhone": "628183431288",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7440539,115.1700105",
+      "sourceUrl": "https://www.lestariads.com/space/led-airport-exit-bandara-i-gusti-ngurah-rai-bali.html"
+    },
+    "OBJ-REK-BADUNG-0205": {
+      "id": "OBJ-REK-BADUNG-0205",
+      "name": "LED MAL BALI GALERIA, BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7229394,
+      "lng": 115.1819301,
+      "owner": "Lestari Ads",
+      "op": "Pengelola LED Billboard BADUNG",
+      "w": 8,
+      "h": 4,
+      "sisi": 1,
+      "jenis": "LED Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Kecamatan Kuta, Kabupaten Badung, Bali",
+      "coord": "-8.7229394, 115.1819301",
+      "taxType": "Pajak Reklame Elektronik",
+      "estimatedValue": "Rp 80.000.000 / tahun",
+      "potValJt": 80,
+      "formula": "Luas Layar × Durasi Tayang × Tarif LED 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor LED Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0205",
+          "title": "LED Billboard (8×4m, 1 sisi)",
+          "type": "Pajak Reklame Elektronik",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-09-11",
+      "contractDaysLeft": 305,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628146984410",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7229394,115.1819301",
+      "sourceUrl": "https://www.lestariads.com/space/led-mal-bali-galeria-bali.html"
+    },
+    "OBJ-REK-BADUNG-0206": {
+      "id": "OBJ-REK-BADUNG-0206",
+      "name": "LED NAKULA INTERSECTION, BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6991678,
+      "lng": 115.1770702,
+      "owner": "Lestari Ads",
+      "op": "Pengelola LED Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 1,
+      "jenis": "LED Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Kecamatan Kuta, Kabupaten Badung, Bali",
+      "coord": "-8.6991678, 115.1770702",
+      "taxType": "Pajak Reklame Elektronik",
+      "estimatedValue": "Rp 97.000.000 / tahun",
+      "potValJt": 97,
+      "formula": "Luas Layar × Durasi Tayang × Tarif LED 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor LED Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0206",
+          "title": "LED Billboard (10×5m, 1 sisi)",
+          "type": "Pajak Reklame Elektronik",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-08",
+      "contractDaysLeft": 28,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. Made Dananjaya",
+      "contactPhone": "628157355404",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6991678,115.1770702",
+      "sourceUrl": "https://www.lestariads.com/space/led-nakula-intersection-bali.html"
+    },
+    "OBJ-REK-BADUNG-0207": {
+      "id": "OBJ-REK-BADUNG-0207",
+      "name": "LED SEMINYAK SQUARE, BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6835334,
+      "lng": 115.1570486,
+      "owner": "Lestari Ads",
+      "op": "Pengelola LED Billboard BADUNG",
+      "w": 8,
+      "h": 4,
+      "sisi": 1,
+      "jenis": "LED Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Kecamatan Kuta, Kabupaten Badung, Bali",
+      "coord": "-8.6835334, 115.1570486",
+      "taxType": "Pajak Reklame Elektronik",
+      "estimatedValue": "Rp 72.000.000 / tahun",
+      "potValJt": 72,
+      "formula": "Luas Layar × Durasi Tayang × Tarif LED 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor LED Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0207",
+          "title": "LED Billboard (8×4m, 1 sisi)",
+          "type": "Pajak Reklame Elektronik",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-10",
+      "contractDaysLeft": 30,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. I Ketut Suardika",
+      "contactPhone": "628129164969",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6835334,115.1570486",
+      "sourceUrl": "https://www.lestariads.com/space/led-seminyak-square-bali.html"
+    },
+    "OBJ-REK-BADUNG-0208": {
+      "id": "OBJ-REK-BADUNG-0208",
+      "name": "LED SUNSET ROAD 99S, BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7053457,
+      "lng": 115.1821864,
+      "owner": "Lestari Ads",
+      "op": "Pengelola LED Billboard BADUNG",
+      "w": 8,
+      "h": 4,
+      "sisi": 1,
+      "jenis": "LED Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Kecamatan Kuta, Kabupaten Badung, Bali",
+      "coord": "-8.7053457, 115.1821864",
+      "taxType": "Pajak Reklame Elektronik",
+      "estimatedValue": "Rp 75.000.000 / tahun",
+      "potValJt": 75,
+      "formula": "Luas Layar × Durasi Tayang × Tarif LED 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor LED Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0208",
+          "title": "LED Billboard (8×4m, 1 sisi)",
+          "type": "Pajak Reklame Elektronik",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-23",
+      "contractDaysLeft": 43,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628181338581",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7053457,115.1821864",
+      "sourceUrl": "https://www.lestariads.com/space/led-sunset-road-99s-bali.html"
+    },
+    "OBJ-REK-BADUNG-0209": {
+      "id": "OBJ-REK-BADUNG-0209",
+      "name": "SEWA IKLAN BUS BALI AIRPORT CONNEXION (BAC), BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.748152,
+      "lng": 115.167172,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Transit Ad BADUNG",
+      "w": 7.5,
+      "h": 2.1,
+      "sisi": 1,
+      "jenis": "Transit Ad",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Audit Kepatuhan & Monitoring",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Bali",
+      "coord": "-8.7481520, 115.1671720",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 29.000.000 / tahun",
+      "potValJt": 29,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 4,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Transit Ad dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0209",
+          "title": "Transit Ad (7.5×2.1m, 1 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-01-18",
+      "contractDaysLeft": 69,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Ibu Kadek Widiastuti",
+      "contactPhone": "628159186775",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.748152,115.167172",
+      "sourceUrl": "https://www.lestariads.com/space/sewa-iklan-bus-bali-airport-connexion-bac-bali.html"
+    },
+    "OBJ-REK-BADUNG-0210": {
+      "id": "OBJ-REK-BADUNG-0210",
+      "name": "SEWA IKLAN DI BANDARA INTERNASIONAL I GUSTI NGURAH RAI, BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.748152,
+      "lng": 115.167172,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Transit Ad BADUNG",
+      "w": 8,
+      "h": 4,
+      "sisi": 1,
+      "jenis": "Transit Ad",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Bali",
+      "coord": "-8.7481520, 115.1671720",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 46.000.000 / tahun",
+      "potValJt": 46,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Transit Ad dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0210",
+          "title": "Transit Ad (8×4m, 1 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-23",
+      "contractDaysLeft": 43,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. Agus Hendrawan",
+      "contactPhone": "628139583119",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.748152,115.167172",
+      "sourceUrl": "https://www.lestariads.com/space/sewa-iklan-di-bandara-internasional-i-gusti-ngurah-rai-bali.html"
+    },
+    "OBJ-REK-BADUNG-0211": {
+      "id": "OBJ-REK-BADUNG-0211",
+      "name": "SEWA VIDEOTRON NUSA DUA BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7936384,
+      "lng": 115.2158755,
+      "owner": "Lestari Ads",
+      "op": "Pengelola LED Billboard BADUNG",
+      "w": 4,
+      "h": 2,
+      "sisi": 1,
+      "jenis": "LED Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Kecamatan Kuta Selatan, Kabupaten Badung, Bali",
+      "coord": "-8.7936384, 115.2158755",
+      "taxType": "Pajak Reklame Elektronik",
+      "estimatedValue": "Rp 45.000.000 / tahun",
+      "potValJt": 45,
+      "formula": "Luas Layar × Durasi Tayang × Tarif LED 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor LED Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0211",
+          "title": "LED Billboard (4×2m, 1 sisi)",
+          "type": "Pajak Reklame Elektronik",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-19",
+      "contractDaysLeft": 9,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. Agus Hendrawan",
+      "contactPhone": "628165626877",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7936384,115.2158755",
+      "sourceUrl": "https://www.lestariads.com/space/sewa-videotron-nusa-dua-bali.html"
+    },
+    "OBJ-REK-BADUNG-0212": {
+      "id": "OBJ-REK-BADUNG-0212",
+      "name": "SEWA VIDEOTRON SUNSET ROAD BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7060611,
+      "lng": 115.1826391,
+      "owner": "Lestari Ads",
+      "op": "Pengelola LED Billboard BADUNG",
+      "w": 8,
+      "h": 4,
+      "sisi": 1,
+      "jenis": "LED Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Kecamatan Kuta, Kabupaten Badung, Bali",
+      "coord": "-8.7060611, 115.1826391",
+      "taxType": "Pajak Reklame Elektronik",
+      "estimatedValue": "Rp 59.000.000 / tahun",
+      "potValJt": 59,
+      "formula": "Luas Layar × Durasi Tayang × Tarif LED 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor LED Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0212",
+          "title": "LED Billboard (8×4m, 1 sisi)",
+          "type": "Pajak Reklame Elektronik",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-07",
+      "contractDaysLeft": -3,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Bpk. I Wayan Sudarma",
+      "contactPhone": "628169969553",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7060611,115.1826391",
+      "sourceUrl": "https://www.lestariads.com/space/sewa-videotron-sunset-road-bali.html"
+    },
+    "OBJ-REK-BANGLI-0213": {
+      "id": "OBJ-REK-BANGLI-0213",
+      "name": "SEWA BILLBOARD JL BRIGJEN NGURAH RAI, BANGLI, BALI",
+      "cityId": "bangli",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.460947,
+      "lng": 115.3526696,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Billboard BANGLI",
+      "w": 8,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Kabupaten Bangli, Bali",
+      "coord": "-8.4609470, 115.3526696",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 63.000.000 / tahun",
+      "potValJt": 63,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BANGLI"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BANGLI-0213",
+          "title": "Billboard (8×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-24",
+      "contractDaysLeft": 44,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Ibu Ni Putu Indah",
+      "contactPhone": "628170338278",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.460947,115.3526696",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-baliho-jalan-brigjen-ngurah-rai-patung-catur-muka-kecamatan-bangli-bangli-bali.html"
+    },
+    "OBJ-REK-GIANYAR-0214": {
+      "id": "OBJ-REK-GIANYAR-0214",
+      "name": "SEWA BILLBOARD JL BYPASS IDA BAGUS MANTRA, GIANYAR, BALI",
+      "cityId": "gianyar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.5958777,
+      "lng": 115.3335213,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Baliho GIANYAR",
+      "w": 6,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Baliho",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Kabupaten Gianyar, Bali",
+      "coord": "-8.5958777, 115.3335213",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 62.000.000 / tahun",
+      "potValJt": 62,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Baliho dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda GIANYAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-GIANYAR-0214",
+          "title": "Baliho (6×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-14",
+      "contractDaysLeft": 4,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. I Nyoman Artawan",
+      "contactPhone": "628148345863",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.5958777,115.3335213",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-baliho-jalan-bypass-ida-bagus-mantra-pantai-keramas-blahbatuh-gianyar-bali.html"
+    },
+    "OBJ-REK-GIANYAR-0215": {
+      "id": "OBJ-REK-GIANYAR-0215",
+      "name": "SEWA BILLBOARD JL BYPASS IDA BAGUS MANTRA, GIANYAR, BALI",
+      "cityId": "gianyar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.608102,
+      "lng": 115.3156115,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Baliho GIANYAR",
+      "w": 6,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Baliho",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Kabupaten Gianyar, Bali",
+      "coord": "-8.6081020, 115.3156115",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 37.000.000 / tahun",
+      "potValJt": 37,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Baliho dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda GIANYAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-GIANYAR-0215",
+          "title": "Baliho (6×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-02-16",
+      "contractDaysLeft": 98,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. I Ketut Suardika",
+      "contactPhone": "628177792809",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.608102,115.3156115",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-baliho-jalan-bypass-ida-bagus-mantra-pantai-saba-blahbatuh-gianyar-bali.html"
+    },
+    "OBJ-REK-GIANYAR-0216": {
+      "id": "OBJ-REK-GIANYAR-0216",
+      "name": "SEWA BILLBOARD JALAN COK GEDE RAI, UBUD, GIANYAR, BALI",
+      "cityId": "gianyar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.5093336,
+      "lng": 115.2712451,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Baliho GIANYAR",
+      "w": 6,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Baliho",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Kabupaten Gianyar, Bali",
+      "coord": "-8.5093336, 115.2712451",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 43.000.000 / tahun",
+      "potValJt": 43,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Baliho dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda GIANYAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-GIANYAR-0216",
+          "title": "Baliho (6×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-05",
+      "contractDaysLeft": -5,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Ibu Ni Made Ayu",
+      "contactPhone": "628178446354",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.5093336,115.2712451",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-baliho-jalan-cok-gede-rai-patung-arjuna-ubud-gianyar-bali.html"
+    },
+    "OBJ-REK-GIANYAR-0217": {
+      "id": "OBJ-REK-GIANYAR-0217",
+      "name": "SEWA BILLBOARD JALAN COK GEDE RAI, UBUD, GIANYAR, BALI",
+      "cityId": "gianyar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.5125248,
+      "lng": 115.2706607,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Baliho GIANYAR",
+      "w": 6,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Baliho",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Kabupaten Gianyar, Bali",
+      "coord": "-8.5125248, 115.2706607",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 56.000.000 / tahun",
+      "potValJt": 56,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Baliho dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda GIANYAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-GIANYAR-0217",
+          "title": "Baliho (6×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-24",
+      "contractDaysLeft": 14,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. Made Dananjaya",
+      "contactPhone": "628184716940",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.5125248,115.2706607",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-baliho-jalan-cok-gede-rai-ubud-gianyar-bali.html"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0218": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0218",
+      "name": "SEWA BILLBOARD JL HAYAM WURUK, DENPASAR TIMUR, DENPASAR, BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6571621,
+      "lng": 115.2385878,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Baliho KOTA DENPASAR",
+      "w": 6,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Baliho",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Kota Denpasar, Bali",
+      "coord": "-8.6571621, 115.2385878",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 43.000.000 / tahun",
+      "potValJt": 43,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Baliho dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0218",
+          "title": "Baliho (6×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-11",
+      "contractDaysLeft": 31,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. I Ketut Suardika",
+      "contactPhone": "628125019724",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6571621,115.2385878",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-baliho-jalan-hayam-wuruk-pertigaan-akasia-denpasar-timur-denpasar-bali.html"
+    },
+    "OBJ-REK-BANGLI-0219": {
+      "id": "OBJ-REK-BANGLI-0219",
+      "name": "SEWA BILLBOARD JL KAYU AMBUA SELATAN, KINTAMANI, BANGLI, BALI",
+      "cityId": "bangli",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.2865804,
+      "lng": 115.364661,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Baliho BANGLI",
+      "w": 6,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Baliho",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Kabupaten Bangli, Bali",
+      "coord": "-8.2865804, 115.3646610",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 54.000.000 / tahun",
+      "potValJt": 54,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Baliho dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BANGLI"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BANGLI-0219",
+          "title": "Baliho (6×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-28",
+      "contractDaysLeft": 18,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. Agus Hendrawan",
+      "contactPhone": "628182674322",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.2865804,115.364661",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-baliho-jalan-kayu-ambua-selatan-minimarket-eka-kayu-kintamani-bangli-bali.html"
+    },
+    "OBJ-REK-BANGLI-0220": {
+      "id": "OBJ-REK-BANGLI-0220",
+      "name": "SEWA BILLBOARD JALAN KESUMAYUDHA, KEC. BANGLI, BANGLI, BALI",
+      "cityId": "bangli",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.4540415,
+      "lng": 115.3533506,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Billboard BANGLI",
+      "w": 8,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Kabupaten Bangli, Bali",
+      "coord": "-8.4540415, 115.3533506",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 54.000.000 / tahun",
+      "potValJt": 54,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BANGLI"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BANGLI-0220",
+          "title": "Billboard (8×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-08-16",
+      "contractDaysLeft": 279,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Ibu Ni Putu Indah",
+      "contactPhone": "628170640664",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.4540415,115.3533506",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-baliho-jalan-kesumayudha-pertigaan-kesumayudha-kec-bangli-bangli-bali.html"
+    },
+    "OBJ-REK-JEMBRANA-0221": {
+      "id": "OBJ-REK-JEMBRANA-0221",
+      "name": "SEWA BILLBOARD JL. NGURAH RAI, KEC. JEMBRANA, JEMBRANA, BALI",
+      "cityId": "jembrana",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.3610756,
+      "lng": 114.6349741,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Baliho JEMBRANA",
+      "w": 6,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Baliho",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Kabupaten Jembrana, Bali",
+      "coord": "-8.3610756, 114.6349741",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 60.000.000 / tahun",
+      "potValJt": 60,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Baliho dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda JEMBRANA"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-JEMBRANA-0221",
+          "title": "Baliho (6×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-01-01",
+      "contractDaysLeft": 52,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. I Nyoman Artawan",
+      "contactPhone": "628145921452",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.3610756,114.6349741",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-baliho-jalan-ngurah-rai-kua-jembrana-kec-jembrana-jembrana-bali.html"
+    },
+    "OBJ-REK-GIANYAR-0222": {
+      "id": "OBJ-REK-GIANYAR-0222",
+      "name": "SEWA BILLBOARD JALAN RAYA BATUBULAN, SUKAWATI, GIANYAR, BALI",
+      "cityId": "gianyar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6320874,
+      "lng": 115.2601037,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Baliho GIANYAR",
+      "w": 6,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Baliho",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Kabupaten Gianyar, Bali",
+      "coord": "-8.6320874, 115.2601037",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 53.000.000 / tahun",
+      "potValJt": 53,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Baliho dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda GIANYAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-GIANYAR-0222",
+          "title": "Baliho (6×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-09-11",
+      "contractDaysLeft": 305,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Ibu Ni Putu Indah",
+      "contactPhone": "628184938071",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6320874,115.2601037",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-baliho-jalan-raya-batubulan-pertigaan-batubulan-sukawati-gianyar-bali.html"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0223": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0223",
+      "name": "SEWA BILLBOARD JL RAYA DENPASAR - GILIMANUK, JEMBRANA, BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.2738297,
+      "lng": 114.4966809,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Baliho KOTA DENPASAR",
+      "w": 6,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Baliho",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Kecamatan Melaya, Kabupaten Jembrana, Bali",
+      "coord": "-8.2738297, 114.4966809",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 53.000.000 / tahun",
+      "potValJt": 53,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Baliho dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0223",
+          "title": "Baliho (6×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-10-14",
+      "contractDaysLeft": 338,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Ibu Kadek Widiastuti",
+      "contactPhone": "628133475370",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.2738297,114.4966809",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-baliho-jalan-raya-denpasar-gilimanuk-pasar-melaya-kec-melaya-jembrana-bali.html"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0224": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0224",
+      "name": "SEWA BILLBOARD JL. RAYA DENPASAR - GILIMANUK, JEMBRANA, BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.3775009,
+      "lng": 114.6850855,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Baliho KOTA DENPASAR",
+      "w": 6,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Baliho",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Kecamatan Mendoyo, Kabupaten Jembrana, Bali",
+      "coord": "-8.3775009, 114.6850855",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 51.000.000 / tahun",
+      "potValJt": 51,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Baliho dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0224",
+          "title": "Baliho (6×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-25",
+      "contractDaysLeft": 15,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Ibu Ni Putu Indah",
+      "contactPhone": "628133823150",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.3775009,114.6850855",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-baliho-jalan-raya-denpasar-gilimanuk-pasar-tegal-cangkring-kec-mendoyo-jembrana-bali.html"
+    },
+    "OBJ-REK-GIANYAR-0225": {
+      "id": "OBJ-REK-GIANYAR-0225",
+      "name": "SEWA BILLBOARD JL RAYA GOA GAJAH, BLAHBATU, GIANYAR, BALI",
+      "cityId": "gianyar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.5232371,
+      "lng": 115.2890279,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Baliho GIANYAR",
+      "w": 6,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Baliho",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Kabupaten Gianyar, Bali",
+      "coord": "-8.5232371, 115.2890279",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 37.000.000 / tahun",
+      "potValJt": 37,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Baliho dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda GIANYAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-GIANYAR-0225",
+          "title": "Baliho (6×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-10-10",
+      "contractDaysLeft": 334,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Putu Arya Kusuma",
+      "contactPhone": "628162698825",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.5232371,115.2890279",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-baliho-jalan-raya-goa-gajah-kecamatan-blahbatu-gianyar-bali.html"
+    },
+    "OBJ-REK-BANGLI-0226": {
+      "id": "OBJ-REK-BANGLI-0226",
+      "name": "SEWA BILLBOARD JALAN RAYA KINTAMANI, BANGLI, BALI",
+      "cityId": "bangli",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.2571996,
+      "lng": 115.3368049,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Baliho BANGLI",
+      "w": 6,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Baliho",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Audit Kepatuhan & Monitoring",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Kabupaten Bangli, Bali",
+      "coord": "-8.2571996, 115.3368049",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 38.000.000 / tahun",
+      "potValJt": 38,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 4,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Baliho dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BANGLI"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BANGLI-0226",
+          "title": "Baliho (6×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-10-05",
+      "contractDaysLeft": -36,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Bpk. Made Dananjaya",
+      "contactPhone": "628161734447",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.2571996,115.3368049",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-baliho-jalan-raya-kintamani-pura-ulun-danu-batur-kintamani-bangli-bali.html"
+    },
+    "OBJ-REK-BANGLI-0227": {
+      "id": "OBJ-REK-BANGLI-0227",
+      "name": "SEWA BILLBOARD JALAN RAYA KINTAMANI, KINTAMANI, BANGLI, BALI",
+      "cityId": "bangli",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.2590495,
+      "lng": 115.3374606,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Baliho BANGLI",
+      "w": 6,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Baliho",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Kabupaten Bangli, Bali",
+      "coord": "-8.2590495, 115.3374606",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 63.000.000 / tahun",
+      "potValJt": 63,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Baliho dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BANGLI"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BANGLI-0227",
+          "title": "Baliho (6×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-07-12",
+      "contractDaysLeft": 244,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Ibu Ni Made Ayu",
+      "contactPhone": "628160141184",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.2590495,115.3374606",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-baliho-jalan-raya-kintamani-tamarilo-cafe-kintamani-bangli-bali.html"
+    },
+    "OBJ-REK-BANGLI-0228": {
+      "id": "OBJ-REK-BANGLI-0228",
+      "name": "SEWA BILLBOARD JL RAYA PENELOKAN, KINTAMANI, BANGLI, BALI",
+      "cityId": "bangli",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.2605834,
+      "lng": 115.3387985,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Baliho BANGLI",
+      "w": 6,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Baliho",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Kabupaten Bangli, Bali",
+      "coord": "-8.2605834, 115.3387985",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 37.000.000 / tahun",
+      "potValJt": 37,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Baliho dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BANGLI"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BANGLI-0228",
+          "title": "Baliho (6×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-22",
+      "contractDaysLeft": 42,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Ibu Ni Putu Indah",
+      "contactPhone": "628143467371",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.2605834,115.3387985",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-baliho-jalan-raya-penelokan-kintamani-bangli-bali.html"
+    },
+    "OBJ-REK-BANGLI-0229": {
+      "id": "OBJ-REK-BANGLI-0229",
+      "name": "SEWA BILLBOARD JALAN RAYA PENELOKAN, KINTAMANI, BANGLI, BALI",
+      "cityId": "bangli",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.2695431,
+      "lng": 115.3434719,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Baliho BANGLI",
+      "w": 6,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Baliho",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Kabupaten Bangli, Bali",
+      "coord": "-8.2695431, 115.3434719",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 48.000.000 / tahun",
+      "potValJt": 48,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Baliho dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BANGLI"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BANGLI-0229",
+          "title": "Baliho (6×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-07-12",
+      "contractDaysLeft": 244,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Ibu Ni Made Ayu",
+      "contactPhone": "628186861081",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.2695431,115.3434719",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-baliho-jalan-raya-penelokan-warung-jowet-kintamani-bangli-bali.html"
+    },
+    "OBJ-REK-BADUNG-0230": {
+      "id": "OBJ-REK-BADUNG-0230",
+      "name": "SEWA BILLBOARD JALAN BATU BELIG, KUTA UTARA, BADUNG, BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6715518,
+      "lng": 115.159848,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Kabupaten Badung, Bali",
+      "coord": "-8.6715518, 115.1598480",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 70.000.000 / tahun",
+      "potValJt": 70,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0230",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-01",
+      "contractDaysLeft": 21,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. Made Dananjaya",
+      "contactPhone": "628152123887",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6715518,115.159848",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-billboard-jalan-batu-belig-kuta-utara-badung-bali.html"
+    },
+    "OBJ-REK-BADUNG-0231": {
+      "id": "OBJ-REK-BADUNG-0231",
+      "name": "SEWA BILLBOARD JL BYPASS NGURAH RAI, BADUNG, BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.717106,
+      "lng": 115.2151255,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 12,
+      "h": 6,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Kabupaten Badung, Bali",
+      "coord": "-8.7171060, 115.2151255",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 89.000.000 / tahun",
+      "potValJt": 89,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0231",
+          "title": "Billboard (12×6m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-10-24",
+      "contractDaysLeft": -17,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Bpk. Agus Hendrawan",
+      "contactPhone": "628125951191",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.717106,115.2151255",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-billboard-jalan-bypass-ngurah-rai-kuta-selatan-badung-bali.html"
+    },
+    "OBJ-REK-BADUNG-0232": {
+      "id": "OBJ-REK-BADUNG-0232",
+      "name": "SEWA BILLBOARD JL BYPASS NGURAH RAI, KUTA SELATAN, BADUNG, BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7123947,
+      "lng": 115.2258268,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Kabupaten Badung, Bali",
+      "coord": "-8.7123947, 115.2258268",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 85.000.000 / tahun",
+      "potValJt": 85,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0232",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-03-14",
+      "contractDaysLeft": 124,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Made Dananjaya",
+      "contactPhone": "628169833789",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7123947,115.2258268",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-billboard-jalan-bypass-ngurah-rai-lampu-merah-suwung-kuta-selatan-badung-bali.html"
+    },
+    "OBJ-REK-BADUNG-0233": {
+      "id": "OBJ-REK-BADUNG-0233",
+      "name": "SEWA BILLBOARD JALAN BYPASS NGURAH RAI, BADUNG, BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7899216,
+      "lng": 115.2122696,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 12,
+      "h": 6,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Kabupaten Badung, Bali",
+      "coord": "-8.7899216, 115.2122696",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 97.000.000 / tahun",
+      "potValJt": 97,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0233",
+          "title": "Billboard (12×6m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-17",
+      "contractDaysLeft": 7,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Ibu Ni Putu Indah",
+      "contactPhone": "628156563239",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7899216,115.2122696",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-billboard-jalan-bypass-ngurah-rai-pintu-masuk-tol-nusa-dua-kuta-selatan-badung-bali.html"
+    },
+    "OBJ-REK-BADUNG-0234": {
+      "id": "OBJ-REK-BADUNG-0234",
+      "name": "SEWA BILLBOARD JL BYPASS NGURAH RAI, BADUNG, BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7042975,
+      "lng": 115.2476707,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Kabupaten Badung, Bali",
+      "coord": "-8.7042975, 115.2476707",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 68.000.000 / tahun",
+      "potValJt": 68,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0234",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-04-15",
+      "contractDaysLeft": 156,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Ibu Ni Luh Gede Sukerti",
+      "contactPhone": "628125334363",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7042975,115.2476707",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-billboard-jalan-bypass-ngurah-rai-simpang-pesanggaran-kuta-selatan-badung-bali.html"
+    },
+    "OBJ-REK-GIANYAR-0235": {
+      "id": "OBJ-REK-GIANYAR-0235",
+      "name": "SEWA BILLBOARD JALAN COK GEDE RAI, UBUD, GIANYAR, BALI",
+      "cityId": "gianyar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.512036,
+      "lng": 115.2708532,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Billboard GIANYAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Kabupaten Gianyar, Bali",
+      "coord": "-8.5120360, 115.2708532",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 65.000.000 / tahun",
+      "potValJt": 65,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda GIANYAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-GIANYAR-0235",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-09-21",
+      "contractDaysLeft": 315,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. I Nyoman Artawan",
+      "contactPhone": "628125500385",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.512036,115.2708532",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-billboard-jalan-cok-gede-rai-ubud-gianyar-bali.html"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0236": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0236",
+      "name": "SEWA BILLBOARD JL IMAM BONJOL, DENPASAR BARAT, DENPASAR, BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.69535,
+      "lng": 115.187237,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 8,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Kota Denpasar, Bali",
+      "coord": "-8.6953500, 115.1872370",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 59.000.000 / tahun",
+      "potValJt": 59,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0236",
+          "title": "Billboard (8×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-01-05",
+      "contractDaysLeft": 56,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. I Wayan Sudarma",
+      "contactPhone": "628185793125",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.69535,115.187237",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-billboard-jalan-imam-bonjol-denpasar-barat-denpasar-bali.html"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0237": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0237",
+      "name": "SEWA BILLBOARD JALAN IMAM BONJOL, DENPASAR, BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6892424,
+      "lng": 115.1916452,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 8,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Kota Denpasar, Bali",
+      "coord": "-8.6892424, 115.1916452",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 49.000.000 / tahun",
+      "potValJt": 49,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0237",
+          "title": "Billboard (8×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-01",
+      "contractDaysLeft": 21,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628131071364",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6892424,115.1916452",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-billboard-jalan-imam-bonjol-pertigaan-soputan-denpasar-barat-denpasar-bali.html"
+    },
+    "OBJ-REK-BADUNG-0238": {
+      "id": "OBJ-REK-BADUNG-0238",
+      "name": "SEWA BILLBOARD JALAN KEMAYORAN, KUTA, BADUNG, BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7406614,
+      "lng": 115.1672444,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 12,
+      "h": 6,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Kabupaten Badung, Bali",
+      "coord": "-8.7406614, 115.1672444",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 100.000.000 / tahun",
+      "potValJt": 100,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0238",
+          "title": "Billboard (12×6m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-10-17",
+      "contractDaysLeft": -24,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Ibu Ni Made Ayu",
+      "contactPhone": "628179807010",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7406614,115.1672444",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-billboard-jalan-kemayoran-pintu-masuk-bandara-kuta-badung-bali.html"
+    },
+    "OBJ-REK-JEMBRANA-0239": {
+      "id": "OBJ-REK-JEMBRANA-0239",
+      "name": "SEWA BILLBOARD JL NGURAH RAI, KEC. JEMBRANA, JEMBRANA, BALI",
+      "cityId": "jembrana",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.3607095,
+      "lng": 114.625718,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Billboard JEMBRANA",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Kabupaten Jembrana, Bali",
+      "coord": "-8.3607095, 114.6257180",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 74.000.000 / tahun",
+      "potValJt": 74,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda JEMBRANA"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-JEMBRANA-0239",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-09-12",
+      "contractDaysLeft": 306,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628170609208",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.3607095,114.625718",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-billboard-jalan-ngurah-rai-kecamatan-jembrana-jembrana-bali.html"
+    },
+    "OBJ-REK-JEMBRANA-0240": {
+      "id": "OBJ-REK-JEMBRANA-0240",
+      "name": "SEWA BILLBOARD JALAN PAHLAWAN, KEC. JEMBRANA, JEMBRANA, BALI",
+      "cityId": "jembrana",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.3577136,
+      "lng": 114.6255243,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Billboard JEMBRANA",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Kabupaten Jembrana, Bali",
+      "coord": "-8.3577136, 114.6255243",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 70.000.000 / tahun",
+      "potValJt": 70,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda JEMBRANA"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-JEMBRANA-0240",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-03-20",
+      "contractDaysLeft": 130,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Putu Arya Kusuma",
+      "contactPhone": "628155298012",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.3577136,114.6255243",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-billboard-jalan-pahlawan-sdn-3-pendem-kecamatan-jembrana-jembrana-bali.html"
+    },
+    "OBJ-REK-GIANYAR-0241": {
+      "id": "OBJ-REK-GIANYAR-0241",
+      "name": "SEWA BILLBOARD JL. PROF. DR. IDA BAGUS MANTRA, GIANYAR, BALI",
+      "cityId": "gianyar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6483415,
+      "lng": 115.2692394,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Billboard GIANYAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Kabupaten Gianyar, Bali",
+      "coord": "-8.6483415, 115.2692394",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 90.000.000 / tahun",
+      "potValJt": 90,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda GIANYAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-GIANYAR-0241",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-10-18",
+      "contractDaysLeft": -23,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Ibu Ni Putu Indah",
+      "contactPhone": "628133780027",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6483415,115.2692394",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-billboard-jalan-prof-dr-ida-bagus-mantra-sukawati-gianyar-bali.html"
+    },
+    "OBJ-REK-KARANGASEM-0242": {
+      "id": "OBJ-REK-KARANGASEM-0242",
+      "name": "SEWA BILLBOARD JALAN RAYA BESAKIH, KARANGASEM, BALI",
+      "cityId": "karangasem",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.4286781,
+      "lng": 115.4183354,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Baliho KARANGASEM",
+      "w": 6,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Baliho",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Kecamatan Rendang, Kabupaten Karangasem, Bali",
+      "coord": "-8.4286781, 115.4183354",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 64.000.000 / tahun",
+      "potValJt": 64,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Baliho dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KARANGASEM"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KARANGASEM-0242",
+          "title": "Baliho (6×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-23",
+      "contractDaysLeft": 43,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. Made Dananjaya",
+      "contactPhone": "628181544931",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.4286781,115.4183354",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-billboard-jalan-raya-besakih-rendang-karang-asem-bali.html"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0243": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0243",
+      "name": "SEWA BILLBOARD JALAN RAYA DENPASAR-GILIMANUK, JEMBRANA, BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.5011718,
+      "lng": 115.0611817,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Kabupaten Jembrana, Bali",
+      "coord": "-8.5011718, 115.0611817",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 62.000.000 / tahun",
+      "potValJt": 62,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0243",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-21",
+      "contractDaysLeft": 41,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628129418709",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.5011718,115.0611817",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-billboard-jalan-raya-denpasar-gilimanuk-pekutatan-jembrana-bali.html"
+    },
+    "OBJ-REK-KARANGASEM-0244": {
+      "id": "OBJ-REK-KARANGASEM-0244",
+      "name": "SEWA BILLBOARD JALAN RAYA SELAT DUDA TIMUR, KARANGASEM, BALI",
+      "cityId": "karangasem",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.4475155,
+      "lng": 115.5052971,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Baliho KARANGASEM",
+      "w": 6,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Baliho",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Audit Kepatuhan & Monitoring",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Kecamatan Selat, Kabupaten Karangasem, Bali",
+      "coord": "-8.4475155, 115.5052971",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 39.000.000 / tahun",
+      "potValJt": 39,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 4,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Baliho dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KARANGASEM"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KARANGASEM-0244",
+          "title": "Baliho (6×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-21",
+      "contractDaysLeft": 41,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. I Nyoman Artawan",
+      "contactPhone": "628135953689",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.4475155,115.5052971",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-billboard-jalan-raya-selat-duda-timur-selat-karangasem-bali.html"
+    },
+    "OBJ-REK-KARANGASEM-0245": {
+      "id": "OBJ-REK-KARANGASEM-0245",
+      "name": "SEWA BILLBOARD JL RAYA ULAKAN, KEC MANGGIS, KARANGASEM, BALI",
+      "cityId": "karangasem",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.5199044,
+      "lng": 115.4977816,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Baliho KARANGASEM",
+      "w": 6,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Baliho",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Kecamatan Manggis, Kabupaten Karangasem, Bali",
+      "coord": "-8.5199044, 115.4977816",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 67.000.000 / tahun",
+      "potValJt": 67,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Baliho dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KARANGASEM"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KARANGASEM-0245",
+          "title": "Baliho (6×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-06-03",
+      "contractDaysLeft": 205,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Ibu Dewi Sartika",
+      "contactPhone": "628184426180",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.5199044,115.4977816",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-billboard-jalan-raya-ulakan-manggis-karang-asem-bali-1.html"
+    },
+    "OBJ-REK-KARANGASEM-0246": {
+      "id": "OBJ-REK-KARANGASEM-0246",
+      "name": "SEWA BILLBOARD JALAN RAYA ULAKAN, KARANGASEM, BALI",
+      "cityId": "karangasem",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.5032531,
+      "lng": 115.5075469,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Baliho KARANGASEM",
+      "w": 6,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Baliho",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Kecamatan Manggis, Kabupaten Karangasem, Bali",
+      "coord": "-8.5032531, 115.5075469",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 52.000.000 / tahun",
+      "potValJt": 52,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Baliho dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KARANGASEM"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KARANGASEM-0246",
+          "title": "Baliho (6×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-05-29",
+      "contractDaysLeft": 200,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Ibu Kadek Widiastuti",
+      "contactPhone": "628144960432",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.5032531,115.5075469",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-billboard-jalan-raya-ulakan-manggis-karang-asem-bali.html"
+    },
+    "OBJ-REK-BADUNG-0247": {
+      "id": "OBJ-REK-BADUNG-0247",
+      "name": "SEWA BILLBOARD JALAN SUNSET ROAD, KUTA, BADUNG, BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6984577,
+      "lng": 115.1774455,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Kabupaten Badung, Bali",
+      "coord": "-8.6984577, 115.1774455",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 62.000.000 / tahun",
+      "potValJt": 62,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0247",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-21",
+      "contractDaysLeft": 41,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Ibu Dewi Sartika",
+      "contactPhone": "628120795650",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6984577,115.1774455",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-billboard-jalan-sunset-road-kuta-badung-bali.html"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0248": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0248",
+      "name": "SEWA BILLBOARD JALAN TEUKU UMAR BARAT, DENPASAR, BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6810689,
+      "lng": 115.1887969,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 8,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Kota Denpasar, Bali",
+      "coord": "-8.6810689, 115.1887969",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 48.000.000 / tahun",
+      "potValJt": 48,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0248",
+          "title": "Billboard (8×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-09-24",
+      "contractDaysLeft": 318,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Ibu Ni Made Ayu",
+      "contactPhone": "628172377700",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6810689,115.1887969",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-billboard-jalan-teuku-umar-barat-denpasar-barat-denpasar-bali.html"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0249": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0249",
+      "name": "SEWA IKLAN BILLBOARD JALAN WATURENGGONG, DENPASAR, BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6768154,
+      "lng": 115.2175424,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Billboard KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Kota Denpasar, Bali",
+      "coord": "-8.6768154, 115.2175424",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 80.000.000 / tahun",
+      "potValJt": 80,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0249",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-06-08",
+      "contractDaysLeft": 210,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. I Ketut Suardika",
+      "contactPhone": "628163603344",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6768154,115.2175424",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-billboard-jalan-waturenggong-pertigaan-sudirman-denpasar-selatan-denpasar-bali.html"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0250": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0250",
+      "name": "SEWA BILLBOARD JL. BEDUGUL, KOTA DENPASAR, BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6948219,
+      "lng": 115.2270205,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Baliho KOTA DENPASAR",
+      "w": 6,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Baliho",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Kecamatan Denpasar Selatan, Kota Denpasar, Bali",
+      "coord": "-8.6948219, 115.2270205",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 43.000.000 / tahun",
+      "potValJt": 43,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Baliho dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0250",
+          "title": "Baliho (6×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-14",
+      "contractDaysLeft": 34,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Ibu Ni Luh Gede Sukerti",
+      "contactPhone": "628187172337",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6948219,115.2270205",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-billboard-jl-bedugul-sidakarya-denpasar-selatan-denpasar-bali.html"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0251": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0251",
+      "name": "SEWA BILLBOARD JL. BYPASS NGURAH RAI, KOTA DENPASAR, BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6568208,
+      "lng": 115.2537008,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Baliho KOTA DENPASAR",
+      "w": 6,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Baliho",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Audit Kepatuhan & Monitoring",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Kecamatan Denpasar Selatan, Kota Denpasar, Bali",
+      "coord": "-8.6568208, 115.2537008",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 53.000.000 / tahun",
+      "potValJt": 53,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 4,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Baliho dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0251",
+          "title": "Baliho (6×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-26",
+      "contractDaysLeft": 16,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Ibu Ni Luh Gede Sukerti",
+      "contactPhone": "628132200707",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6568208,115.2537008",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-billboard-jl-bypass-ngurah-rai-sanur-kaja-denpasar-selatan-kota-denpasar-bali.html"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0252": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0252",
+      "name": "SEWA BILLBOARD JL. PATIMURA, DENPASAR UTARA, DENPASAR, BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6492227,
+      "lng": 115.2224723,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Baliho KOTA DENPASAR",
+      "w": 6,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Baliho",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Audit Kepatuhan & Monitoring",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Kecamatan Denpasar Utara, Kota Denpasar, Bali",
+      "coord": "-8.6492227, 115.2224723",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 50.000.000 / tahun",
+      "potValJt": 50,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 4,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Baliho dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0252",
+          "title": "Baliho (6×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-06-03",
+      "contractDaysLeft": 205,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628183087724",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6492227,115.2224723",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-billboard-jl-patimura-dangin-puri-kangin-denpasar-utara-kota-denpasar-bali.html"
+    },
+    "OBJ-REK-BADUNG-0253": {
+      "id": "OBJ-REK-BADUNG-0253",
+      "name": "SEWA BILLBOARD JL. RAYA KEROBOKAN, KUTA UTARA, BADUNG, BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6461404,
+      "lng": 115.1717952,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Baliho BADUNG",
+      "w": 6,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Baliho",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Kecamatan Kuta Utara, Kabupaten Badung, Bali",
+      "coord": "-8.6461404, 115.1717952",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 47.000.000 / tahun",
+      "potValJt": 47,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Baliho dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0253",
+          "title": "Baliho (6×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-10-17",
+      "contractDaysLeft": -24,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Ibu Ni Putu Indah",
+      "contactPhone": "628187320509",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6461404,115.1717952",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-billboard-jl-raya-kerobokan-kerobokan-kuta-utara-badung-bali.html"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0254": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0254",
+      "name": "SEWA BILLBOARD JL. RAYA SESETAN, DENPASAR, BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6936095,
+      "lng": 115.2184628,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Baliho KOTA DENPASAR",
+      "w": 6,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Baliho",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Belum Ada",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Kecamatan Denpasar Selatan, Kota Denpasar, Bali",
+      "coord": "-8.6936095, 115.2184628",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 58.000.000 / tahun",
+      "potValJt": 58,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Baliho dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0254",
+          "title": "Baliho (6×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-01-03",
+      "contractDaysLeft": 54,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. Agus Hendrawan",
+      "contactPhone": "628125425903",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6936095,115.2184628",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-billboard-jl-raya-sesetan-denpasar-selatan-denpasar-bali.html"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0255": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0255",
+      "name": "SEWA BILLBOARD JL. RAYA SESETAN, KOTA DENPASAR, BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.710895,
+      "lng": 115.2202753,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Baliho KOTA DENPASAR",
+      "w": 6,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Baliho",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Kecamatan Denpasar Selatan, Kota Denpasar, Bali",
+      "coord": "-8.7108950, 115.2202753",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 60.000.000 / tahun",
+      "potValJt": 60,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Baliho dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0255",
+          "title": "Baliho (6×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-01",
+      "contractDaysLeft": 21,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. Putu Arya Kusuma",
+      "contactPhone": "628144119023",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.710895,115.2202753",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-billboard-jl-raya-sesetan-sesetan-denpasar-selatan-kota-denpasar-bali.html"
+    },
+    "OBJ-REK-BADUNG-0256": {
+      "id": "OBJ-REK-BADUNG-0256",
+      "name": "SEWA BILLBOARD JL. RAYA SIBANGGEDE, KABUPATEN BADUNG, BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.5815282,
+      "lng": 115.2166091,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Baliho BADUNG",
+      "w": 6,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Baliho",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Kecamatan Abiansemal, Kabupaten Badung, Bali",
+      "coord": "-8.5815282, 115.2166091",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 56.000.000 / tahun",
+      "potValJt": 56,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Baliho dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0256",
+          "title": "Baliho (6×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-04",
+      "contractDaysLeft": 24,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Ibu Ni Luh Gede Sukerti",
+      "contactPhone": "628121709351",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.5815282,115.2166091",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-billboard-jl-raya-sibanggede-abiansemal-kabupaten-badung-bali.html"
+    },
+    "OBJ-REK-KARANGASEM-0257": {
+      "id": "OBJ-REK-KARANGASEM-0257",
+      "name": "SEWA BILLBOARD JALAN TEUKU UMAR, KABUPATEN KARANGASEM, BALI",
+      "cityId": "karangasem",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.4466368,
+      "lng": 115.6116296,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Baliho KARANGASEM",
+      "w": 6,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Baliho",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Kecamatan Karangasem (Karang Asem), Kabupaten Karangasem, Bali",
+      "coord": "-8.4466368, 115.6116296",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 51.000.000 / tahun",
+      "potValJt": 51,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Baliho dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KARANGASEM"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KARANGASEM-0257",
+          "title": "Baliho (6×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-22",
+      "contractDaysLeft": 42,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. I Wayan Sudarma",
+      "contactPhone": "628185835199",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.4466368,115.6116296",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-billboard-jl-teuku-umar-no-12-karangasem-kabupaten-karangasem-bali.html"
+    },
+    "OBJ-REK-JEMBRANA-0258": {
+      "id": "OBJ-REK-JEMBRANA-0258",
+      "name": "SEWA BILLBOARD PELABUHAN GILIMANUK, MELAYA, JEMBRANA, BALI",
+      "cityId": "jembrana",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.1635503,
+      "lng": 114.4365234,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Bando Jalan JEMBRANA",
+      "w": 10,
+      "h": 5,
+      "sisi": 1,
+      "jenis": "Bando Jalan",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Audit Kepatuhan & Monitoring",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Kabupaten Jembrana, Bali",
+      "coord": "-8.1635503, 114.4365234",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 48.000.000 / tahun",
+      "potValJt": 48,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 4,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Bando Jalan dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda JEMBRANA"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-JEMBRANA-0258",
+          "title": "Bando Jalan (10×5m, 1 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-06",
+      "contractDaysLeft": 26,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Ibu Dewi Sartika",
+      "contactPhone": "628181611923",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.1635503,114.4365234",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-billboard-pelabuhan-gilimanuk-pintu-masuk-kecamatan-melaya-jembrana-bali.html"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0259": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0259",
+      "name": "SEWA NEON BOX JL RAYA PELABUHAN BENOA, DENPASAR, BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7263681,
+      "lng": 115.2136818,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Neon Box KOTA DENPASAR",
+      "w": 4,
+      "h": 2,
+      "sisi": 2,
+      "jenis": "Neon Box",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Kecamatan Denpasar Selatan, Kota Denpasar, Bali",
+      "coord": "-8.7263681, 115.2136818",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 42.000.000 / tahun",
+      "potValJt": 42,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Neon Box dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0259",
+          "title": "Neon Box (4×2m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-10-12",
+      "contractDaysLeft": 336,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Putu Arya Kusuma",
+      "contactPhone": "628174632206",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7263681,115.2136818",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-neon-box-jalan-raya-pelabuhan-benoa-tol-bali-mandara-kec-denpasar-selatan-denpasar-bali.html"
+    },
+    "OBJ-REK-BADUNG-0260": {
+      "id": "OBJ-REK-BADUNG-0260",
+      "name": "SEWA IKLAN SCOOTER BILLBOARD, BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.683,
+      "lng": 115.157,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Transit Ad BADUNG",
+      "w": 8,
+      "h": 4,
+      "sisi": 1,
+      "jenis": "Transit Ad",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Bali",
+      "coord": "-8.6830000, 115.1570000",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 44.000.000 / tahun",
+      "potValJt": 44,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Transit Ad dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0260",
+          "title": "Transit Ad (8×4m, 1 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-10-13",
+      "contractDaysLeft": -28,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Ibu Ni Made Ayu",
+      "contactPhone": "628154718929",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.683,115.157",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-scooter-trailer-billboard-bali.html"
+    },
+    "OBJ-REK-BADUNG-0261": {
+      "id": "OBJ-REK-BADUNG-0261",
+      "name": "SEWA IKLAN SCOOTER DIGITAL BILLBOARD, BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.683,
+      "lng": 115.157,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Transit Ad BADUNG",
+      "w": 8,
+      "h": 4,
+      "sisi": 1,
+      "jenis": "Transit Ad",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Audit Kepatuhan & Monitoring",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Bali",
+      "coord": "-8.6830000, 115.1570000",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 47.000.000 / tahun",
+      "potValJt": 47,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 4,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Transit Ad dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0261",
+          "title": "Transit Ad (8×4m, 1 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-10-28",
+      "contractDaysLeft": -13,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Bpk. Putu Arya Kusuma",
+      "contactPhone": "628180587487",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.683,115.157",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-scooter-trailer-digital-billboard-bali.html"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0262": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0262",
+      "name": "SEWA IKLAN BUS TRANS METRO DEWATA, KOTA DENPASAR, BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.629334,
+      "lng": 115.196551,
+      "owner": "Lestari Ads",
+      "op": "Pengelola Transit Ad KOTA DENPASAR",
+      "w": 7.5,
+      "h": 2.1,
+      "sisi": 1,
+      "jenis": "Transit Ad",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Kota Denpasar, Bali",
+      "coord": "-8.6293340, 115.1965510",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 23.000.000 / tahun",
+      "potValJt": 23,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Transit Ad dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0262",
+          "title": "Transit Ad (7.5×2.1m, 1 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-29",
+      "contractDaysLeft": 19,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. Agus Hendrawan",
+      "contactPhone": "628158019478",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.629334,115.196551",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-transit-trans-metro-dewata-kota-denpasar-bali.html"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0263": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0263",
+      "name": "SEWA VIDEOTRON JALAN TEUKU UMAR, SIMPANG 6, DENPASAR, BALI",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6760697,
+      "lng": 115.2070596,
+      "owner": "Lestari Ads",
+      "op": "Pengelola LED Billboard KOTA DENPASAR",
+      "w": 8,
+      "h": 4,
+      "sisi": 1,
+      "jenis": "LED Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Kota Denpasar, Bali",
+      "coord": "-8.6760697, 115.2070596",
+      "taxType": "Pajak Reklame Elektronik",
+      "estimatedValue": "Rp 69.000.000 / tahun",
+      "potValJt": 69,
+      "formula": "Luas Layar × Durasi Tayang × Tarif LED 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor LED Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda KOTA DENPASAR"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0263",
+          "title": "LED Billboard (8×4m, 1 sisi)",
+          "type": "Pajak Reklame Elektronik",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-27",
+      "contractDaysLeft": 47,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Ibu Ni Luh Gede Sukerti",
+      "contactPhone": "628157323624",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6760697,115.2070596",
+      "sourceUrl": "https://www.lestariads.com/space/space-iklan-videotron-jalan-teuku-umar-simpang-6-denpasar-bali.html"
+    },
+    "OBJ-REK-BADUNG-0264": {
+      "id": "OBJ-REK-BADUNG-0264",
+      "name": "BILLBOARD 5 X 10 M JL RAYA CANGGU",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6363056,
+      "lng": 115.1466944,
+      "owner": "CV Bali Media",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Masa Tenggang",
+      "addr": "Jl Raya Canggu, Bali",
+      "coord": "-8.6363056, 115.1466944",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 84.000.000 / tahun",
+      "potValJt": 84,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0264",
+          "title": "Billboard (10×5m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-20",
+      "contractDaysLeft": 40,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628159772572",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6363056,115.1466944",
+      "sourceUrl": "https://www.cvbalimedia.com/billboard"
+    },
+    "OBJ-REK-BADUNG-0265": {
+      "id": "OBJ-REK-BADUNG-0265",
+      "name": "BILLBOARD 4 X 8 M JL RAYA CANGGU",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6152145,
+      "lng": 115.1154888,
+      "owner": "CV Bali Media",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 8,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Wajib Pajak Patuh",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Jl Raya Canggu, Bali",
+      "coord": "-8.6152145, 115.1154888",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 60.000.000 / tahun",
+      "potValJt": 60,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 5,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0265",
+          "title": "Billboard (8×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-11-23",
+      "contractDaysLeft": 13,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Ibu Ni Putu Indah",
+      "contactPhone": "628170156639",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6152145,115.1154888",
+      "sourceUrl": "https://www.cvbalimedia.com/billboard"
+    },
+    "OBJ-REK-BADUNG-0266": {
+      "id": "OBJ-REK-BADUNG-0266",
+      "name": "BILLBOARD 4 X 8 M MUNGGU",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6292074,
+      "lng": 115.1262016,
+      "owner": "CV Bali Media",
+      "op": "Pengelola Billboard BADUNG",
+      "w": 8,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Billboard",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen Tersedia",
+      "addr": "Munggu, Bali",
+      "coord": "-8.6292074, 115.1262016",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 69.000.000 / tahun",
+      "potValJt": 69,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Sinkronisasi titik media outdoor Billboard dari inventaris vendor",
+          "Sistem Monitoring PAD360"
+        ],
+        [
+          "15 Okt 2026",
+          "Verifikasi lapangan & geolokasi GPS",
+          "Satgas Bapenda BADUNG"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0266",
+          "title": "Billboard (8×4m, 2 sisi)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-10-01",
+      "contractDaysLeft": -40,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Bpk. I Ketut Suardika",
+      "contactPhone": "628146482035",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6292074,115.1262016",
+      "sourceUrl": "https://www.cvbalimedia.com/billboard"
+    },
+    "OBJ-REK-BADUNG-0267": {
+      "id": "OBJ-REK-BADUNG-0267",
+      "name": "IKLAN VIDEOTRON JL DEWI SARTIKA",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7380887,
+      "lng": 115.1684386,
+      "owner": "PT Media Videotron BADUNG",
+      "op": "Pengelola Videotron BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 1,
+      "jenis": "LED Megatron Outdoor",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Jl. Dewi Sartika No.20, Kuta, Kec. Kuta, Kabupaten Badung, Bali 80361",
+      "coord": "-8.7380887, 115.1684386",
+      "taxType": "Pajak Reklame Elektronik",
+      "estimatedValue": "Rp 100.000.000 / tahun",
+      "potValJt": 100,
+      "formula": "Luas Layar × Durasi Tayang × Tarif LED 25%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Injeksi data videotron komersial lapangan",
+          "Satgas Bapenda Bali"
+        ],
+        [
+          "20 Okt 2026",
+          "Pencatatan koordinat titik GPS",
+          "Tim Lapangan"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0267",
+          "title": "LED Megatron Outdoor (10×5m)",
+          "type": "Pajak Reklame Elektronik",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2026-12-17",
+      "contractDaysLeft": 37,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Ibu Kadek Widiastuti",
+      "contactPhone": "628154888964",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7380887,115.1684386"
+    },
+    "OBJ-REK-BADUNG-0268": {
+      "id": "OBJ-REK-BADUNG-0268",
+      "name": "VIDEOTRON 7199 - BDG, BALI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6991756,
+      "lng": 115.1776038,
+      "owner": "PT Media Videotron BADUNG",
+      "op": "Pengelola Videotron BADUNG",
+      "w": 10,
+      "h": 5,
+      "sisi": 1,
+      "jenis": "LED Megatron Outdoor",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "852H+82H, Jl. Sunset Road, Legian, Kec. Kuta, Kabupaten Badung, Bali 80361",
+      "coord": "-8.6991756, 115.1776038",
+      "taxType": "Pajak Reklame Elektronik",
+      "estimatedValue": "Rp 95.000.000 / tahun",
+      "potValJt": 95,
+      "formula": "Luas Layar × Durasi Tayang × Tarif LED 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Injeksi data videotron komersial lapangan",
+          "Satgas Bapenda Bali"
+        ],
+        [
+          "20 Okt 2026",
+          "Pencatatan koordinat titik GPS",
+          "Tim Lapangan"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0268",
+          "title": "LED Megatron Outdoor (10×5m)",
+          "type": "Pajak Reklame Elektronik",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-05-21",
+      "contractDaysLeft": 192,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628129526262",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6991756,115.1776038"
+    },
+    "OBJ-REK-KOTA-DENPASAR-0269": {
+      "id": "OBJ-REK-KOTA-DENPASAR-0269",
+      "name": "VIDEOTRON VDO-01 DPS CA",
+      "cityId": "kota-denpasar",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.6589927,
+      "lng": 115.214567,
+      "owner": "PT Media Videotron KOTA DENPASAR",
+      "op": "Pengelola Videotron KOTA DENPASAR",
+      "w": 10,
+      "h": 5,
+      "sisi": 1,
+      "jenis": "LED Megatron Outdoor",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Jl. Hasanuddin No.30, Dauh Puri Kangin, Kec. Denpasar Bar., Kota Denpasar, Bali 80112",
+      "coord": "-8.6589927, 115.2145670",
+      "taxType": "Pajak Reklame Elektronik",
+      "estimatedValue": "Rp 112.000.000 / tahun",
+      "potValJt": 112,
+      "formula": "Luas Layar × Durasi Tayang × Tarif LED 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Injeksi data videotron komersial lapangan",
+          "Satgas Bapenda Bali"
+        ],
+        [
+          "20 Okt 2026",
+          "Pencatatan koordinat titik GPS",
+          "Tim Lapangan"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-KOTA-DENPASAR-0269",
+          "title": "LED Megatron Outdoor (10×5m)",
+          "type": "Pajak Reklame Elektronik",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-07-24",
+      "contractDaysLeft": 256,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. I Wayan Sudarma",
+      "contactPhone": "628139883683",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6589927,115.214567"
+    },
+    "OBJ-REK-BADUNG-0270": {
+      "id": "OBJ-REK-BADUNG-0270",
+      "name": "BILLBOARD NUSAKA DEWI SRI",
+      "cityId": "badung",
+      "category": "rek",
+      "catName": "Billboard / Reklame",
+      "lat": -8.7002534,
+      "lng": 115.1776315,
+      "owner": "Nusaka Bali Advertising",
+      "op": "Pengelola Billboard Kuta",
+      "w": 8,
+      "h": 4,
+      "sisi": 2,
+      "jenis": "Papan Billboard Lampu Sorot",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Izin Lengkap",
+      "addr": "Jl. Dewi Sri No.101, Legian, Kec. Kuta, Kabupaten Badung, Bali 80361",
+      "coord": "-8.7002534, 115.1776315",
+      "taxType": "Pajak Reklame",
+      "estimatedValue": "Rp 65.000.000 / tahun",
+      "potValJt": 65,
+      "formula": "NSR (Nilai Sewa Reklame) × Tarif 25%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Integrasi titik billboard Dewi Sri Kuta",
+          "Satgas Bapenda Badung"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-REK-BADUNG-0270",
+          "title": "Papan Billboard Lampu Sorot (8×4m)",
+          "type": "Pajak Reklame",
+          "badge": "teal"
+        }
+      ],
+      "contractEnd": "2027-01-01",
+      "contractDaysLeft": 52,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. Agus Hendrawan",
+      "contactPhone": "628184079343",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7002534,115.1776315"
+    },
+    "OBJ-PKR-JEMBRANA-0271": {
+      "id": "OBJ-PKR-JEMBRANA-0271",
+      "name": "PARKIR PEMKAB JEMBRANA",
+      "cityId": "jembrana",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.3564626,
+      "lng": 114.6381055,
+      "owner": "Pengelola Parkir Pemkab Jembrana",
+      "op": "Operator Parkir Komersial JEMBRANA",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Belum Terdaftar",
+      "addr": "JJVQ+C69, Dauhwaru, Kec. Jembrana, Kabupaten Jembrana, Bali 82218",
+      "coord": "-8.3564626, 114.6381055",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 26.000.000 / tahun",
+      "potValJt": 26,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan JEMBRANA",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-JEMBRANA-0271",
+          "title": "Area Parkir Komersial (parkir pemkab jembrana)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-11-14",
+      "contractDaysLeft": 4,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. I Ketut Suardika",
+      "contactPhone": "628120354168",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.3564626,114.6381055"
+    },
+    "OBJ-PKR-JEMBRANA-0272": {
+      "id": "OBJ-PKR-JEMBRANA-0272",
+      "name": "PARKIRAN SIRKUIT MAKEPUNG MERTASARI, JEMBRANA BALI",
+      "cityId": "jembrana",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.3726809,
+      "lng": 114.6272932,
+      "owner": "Pengelola Parkiran Sirkuit Makepung Mertasari, Jembrana Bali",
+      "op": "Operator Parkir Komersial JEMBRANA",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Audit Kepatuhan & Monitoring",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen tersedia",
+      "addr": "JJGG+WWF, Banjar Mertasari, Loloan Tim., Kec. Jembrana, Kabupaten Jembrana, Bali 82218",
+      "coord": "-8.3726809, 114.6272932",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 65.000.000 / tahun",
+      "potValJt": 65,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 4,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan JEMBRANA",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-JEMBRANA-0272",
+          "title": "Area Parkir Komersial (Parkiran Sirkuit Makepung Mertasari, Jembrana Bali)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-12-24",
+      "contractDaysLeft": 44,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Ibu Ni Putu Indah",
+      "contactPhone": "628122048355",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.3726809,114.6272932"
+    },
+    "OBJ-PKR-JEMBRANA-0273": {
+      "id": "OBJ-PKR-JEMBRANA-0273",
+      "name": "PARKIR TRUK CARGO NEGARA",
+      "cityId": "jembrana",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.3472602,
+      "lng": 114.6062589,
+      "owner": "Pengelola Parkir Truk Cargo Negara",
+      "op": "Operator Parkir Komersial JEMBRANA",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen tersedia",
+      "addr": "MJ34+3GR, Jl. Desa Kaliakah, Kaliakah, Kec. Negara, Kabupaten Jembrana, Bali 82212",
+      "coord": "-8.3472602, 114.6062589",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 48.000.000 / tahun",
+      "potValJt": 48,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan JEMBRANA",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-JEMBRANA-0273",
+          "title": "Area Parkir Komersial (Parkir truk cargo negara)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-10-01",
+      "contractDaysLeft": -40,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Ibu Ni Putu Indah",
+      "contactPhone": "628121476545",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.3472602,114.6062589"
+    },
+    "OBJ-PKR-TABANAN-0274": {
+      "id": "OBJ-PKR-TABANAN-0274",
+      "name": "PARKIR BUS",
+      "cityId": "tabanan",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.6163238,
+      "lng": 115.0885714,
+      "owner": "Pengelola Parkir Bus",
+      "op": "Operator Parkir Komersial TABANAN",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Belum Terdaftar",
+      "addr": "93MQ+FCG, Jl. Tanah Lot, Beraban, Kec. Kediri, Kabupaten Tabanan, Bali 82121",
+      "coord": "-8.6163238, 115.0885714",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 39.000.000 / tahun",
+      "potValJt": 39,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan TABANAN",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-TABANAN-0274",
+          "title": "Area Parkir Komersial (Parkir bus)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2027-01-02",
+      "contractDaysLeft": 53,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. Agus Hendrawan",
+      "contactPhone": "628122617004",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6163238,115.0885714"
+    },
+    "OBJ-PKR-TABANAN-0275": {
+      "id": "OBJ-PKR-TABANAN-0275",
+      "name": "TEMPAT PARKIR MUSEUM SUBAK SASANA BUDAYA SANGGULAN",
+      "cityId": "tabanan",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.5438583,
+      "lng": 115.1394311,
+      "owner": "Pengelola Tempat Parkir Museum Subak Sasana Budaya Sanggulan",
+      "op": "Operator Parkir Komersial TABANAN",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Belum Terdaftar",
+      "addr": "F44Q+FQ3, Banjar Anyar, Kec. Kediri, Kabupaten Tabanan, Bali 82121",
+      "coord": "-8.5438583, 115.1394311",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 37.000.000 / tahun",
+      "potValJt": 37,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan TABANAN",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-TABANAN-0275",
+          "title": "Area Parkir Komersial (Tempat Parkir Museum Subak Sasana Budaya Sanggulan)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2027-02-03",
+      "contractDaysLeft": 85,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Ibu Dewi Sartika",
+      "contactPhone": "628173762975",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.5438583,115.1394311"
+    },
+    "OBJ-PKR-TABANAN-0276": {
+      "id": "OBJ-PKR-TABANAN-0276",
+      "name": "PARKIR TIMUR PURA TANAH LOT",
+      "cityId": "tabanan",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.6177875,
+      "lng": 115.0878594,
+      "owner": "Pengelola Parkir Timur Pura Tanah Lot",
+      "op": "Operator Parkir Komersial TABANAN",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen tersedia",
+      "addr": "93JQ+V4Q, Unnamed Road, Beraban, Kec. Qswswa12wwawawaKediri, Tabanan Regency, Bali 82121",
+      "coord": "-8.6177875, 115.0878594",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 73.000.000 / tahun",
+      "potValJt": 73,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan TABANAN",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-TABANAN-0276",
+          "title": "Area Parkir Komersial (Parkir timur pura tanah lot)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-12-10",
+      "contractDaysLeft": 30,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. I Wayan Sudarma",
+      "contactPhone": "628173679067",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6177875,115.0878594"
+    },
+    "OBJ-PKR-TABANAN-0277": {
+      "id": "OBJ-PKR-TABANAN-0277",
+      "name": "PARKIRAN",
+      "cityId": "tabanan",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.4929781,
+      "lng": 115.0478471,
+      "owner": "Pengelola Parkiran",
+      "op": "Operator Parkir Komersial TABANAN",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Belum Terdaftar",
+      "addr": "G25X+357, Bantas, Kec. Selemadeg Tim., Kabupaten Tabanan, Bali 82162",
+      "coord": "-8.4929781, 115.0478471",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 64.000.000 / tahun",
+      "potValJt": 64,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan TABANAN",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-TABANAN-0277",
+          "title": "Area Parkir Komersial (Parkiran)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-12-31",
+      "contractDaysLeft": 51,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Ibu Ni Made Ayu",
+      "contactPhone": "628178807602",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.4929781,115.0478471"
+    },
+    "OBJ-PKR-TABANAN-0278": {
+      "id": "OBJ-PKR-TABANAN-0278",
+      "name": "TEMPAT PARKIR TRANSIT DALAM KOTA TABANAN",
+      "cityId": "tabanan",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.5387782,
+      "lng": 115.12683,
+      "owner": "Pengelola Tempat Parkir Transit Dalam Kota Tabanan",
+      "op": "Operator Parkir Komersial TABANAN",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl. Gunung Semeru Baturiti No.5, Delod Peken, Kec. Tabanan, Kabupaten Tabanan, Bali 82121",
+      "coord": "-8.5387782, 115.1268300",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 59.000.000 / tahun",
+      "potValJt": 59,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan TABANAN",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-TABANAN-0278",
+          "title": "Area Parkir Komersial (Tempat Parkir Transit Dalam Kota Tabanan)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-11-15",
+      "contractDaysLeft": 5,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Ibu Ni Putu Indah",
+      "contactPhone": "628179327938",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.5387782,115.12683"
+    },
+    "OBJ-PKR-TABANAN-0279": {
+      "id": "OBJ-PKR-TABANAN-0279",
+      "name": "PARKIRAN BUS PARIWISATA",
+      "cityId": "tabanan",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.2760446,
+      "lng": 115.1644977,
+      "owner": "Pengelola Parkiran Bus Pariwisata",
+      "op": "Operator Parkir Komersial TABANAN",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Audit Kepatuhan & Monitoring",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen tersedia",
+      "addr": "P5F7+JQV, Jl. Raya Bedugul, Candikuning, Kec. Baturiti, Kabupaten Tabanan, Bali 82191",
+      "coord": "-8.2760446, 115.1644977",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 46.000.000 / tahun",
+      "potValJt": 46,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 4,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan TABANAN",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-TABANAN-0279",
+          "title": "Area Parkir Komersial (Parkiran Bus Pariwisata)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2027-08-12",
+      "contractDaysLeft": 275,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. I Ketut Suardika",
+      "contactPhone": "628128626458",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.2760446,115.1644977"
+    },
+    "OBJ-PKR-KOTA-DENPASAR-0280": {
+      "id": "OBJ-PKR-KOTA-DENPASAR-0280",
+      "name": "CENTRAL PARKIR SOKA INDAH REST AREA",
+      "cityId": "kota-denpasar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.5285969,
+      "lng": 114.9968526,
+      "owner": "Pengelola Central Parkir Soka Indah Rest Area",
+      "op": "Operator Parkir Komersial KOTA DENPASAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl. Raya Denpasar - Gilimanuk No.2, Antap, Kec. Selemadeg, Kabupaten Tabanan, Bali 82162",
+      "coord": "-8.5285969, 114.9968526",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 40.000.000 / tahun",
+      "potValJt": 40,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KOTA DENPASAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KOTA-DENPASAR-0280",
+          "title": "Area Parkir Komersial (Central Parkir Soka Indah Rest Area)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2027-03-08",
+      "contractDaysLeft": 118,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. I Ketut Suardika",
+      "contactPhone": "628161322765",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.5285969,114.9968526"
+    },
+    "OBJ-PKR-TABANAN-0281": {
+      "id": "OBJ-PKR-TABANAN-0281",
+      "name": "PARKIRAN RIA",
+      "cityId": "tabanan",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.5474081,
+      "lng": 115.1374389,
+      "owner": "Pengelola Parkiran Ria",
+      "op": "Operator Parkir Komersial TABANAN",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen tersedia",
+      "addr": "Jl. Gatot Subroto II No.16, Banjar Anyar, Kec. Kediri, Kabupaten Tabanan, Bali 82121",
+      "coord": "-8.5474081, 115.1374389",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 28.000.000 / tahun",
+      "potValJt": 28,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan TABANAN",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-TABANAN-0281",
+          "title": "Area Parkir Komersial (Parkiran Ria)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2027-01-02",
+      "contractDaysLeft": 53,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628183216536",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.5474081,115.1374389"
+    },
+    "OBJ-PKR-BADUNG-0282": {
+      "id": "OBJ-PKR-BADUNG-0282",
+      "name": "PARKIRAN PERANCAK",
+      "cityId": "badung",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.6626244,
+      "lng": 115.1370775,
+      "owner": "Pengelola Parkiran Perancak",
+      "op": "Operator Parkir Komersial BADUNG",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen tersedia",
+      "addr": "84PP+XR4, Jl. Pemelisan Agung, Tibubeneng, Kec. Kuta Utara, Kabupaten Badung, Bali 80361",
+      "coord": "-8.6626244, 115.1370775",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 30.000.000 / tahun",
+      "potValJt": 30,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan BADUNG",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-BADUNG-0282",
+          "title": "Area Parkir Komersial (Parkiran Perancak)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-12-15",
+      "contractDaysLeft": 35,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. Made Dananjaya",
+      "contactPhone": "628136313867",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6626244,115.1370775"
+    },
+    "OBJ-PKR-BADUNG-0283": {
+      "id": "OBJ-PKR-BADUNG-0283",
+      "name": "SENTRAL PARKIR CANGGU",
+      "cityId": "badung",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.6516943,
+      "lng": 115.1335192,
+      "owner": "Pengelola Sentral Parkir Canggu",
+      "op": "Operator Parkir Komersial BADUNG",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Audit Kepatuhan & Monitoring",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen tersedia",
+      "addr": "84XM+8CC, Jl. Pantai Batu Mejan, Canggu, Kec. Kuta Utara, Kabupaten Badung, Bali 80351",
+      "coord": "-8.6516943, 115.1335192",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 71.000.000 / tahun",
+      "potValJt": 71,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 4,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan BADUNG",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-BADUNG-0283",
+          "title": "Area Parkir Komersial (Sentral Parkir Canggu)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-10-20",
+      "contractDaysLeft": -21,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Bpk. I Wayan Sudarma",
+      "contactPhone": "628182625084",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6516943,115.1335192"
+    },
+    "OBJ-PKR-BADUNG-0284": {
+      "id": "OBJ-PKR-BADUNG-0284",
+      "name": "PARKIRAN TRUK",
+      "cityId": "badung",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.5508968,
+      "lng": 115.2245886,
+      "owner": "Pengelola Parkiran Truk",
+      "op": "Operator Parkir Komersial BADUNG",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl. Raya Mambal No.5, Mekar Bhuwana, Kec. Abiansemal, Kabupaten Badung, Bali 80352",
+      "coord": "-8.5508968, 115.2245886",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 50.000.000 / tahun",
+      "potValJt": 50,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan BADUNG",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-BADUNG-0284",
+          "title": "Area Parkir Komersial (Parkiran truk)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2027-10-01",
+      "contractDaysLeft": 325,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Ibu Dewi Sartika",
+      "contactPhone": "628163923731",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.5508968,115.2245886"
+    },
+    "OBJ-PKR-BADUNG-0285": {
+      "id": "OBJ-PKR-BADUNG-0285",
+      "name": "PARKING",
+      "cityId": "badung",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.717541,
+      "lng": 115.1741288,
+      "owner": "Pengelola Parking",
+      "op": "Operator Parkir Komersial BADUNG",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Audit Kepatuhan & Monitoring",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen tersedia",
+      "addr": "Jl. Raya Legian No.66, Kuta, Kec. Kuta, Kabupaten Badung, Bali 80361",
+      "coord": "-8.7175410, 115.1741288",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 71.000.000 / tahun",
+      "potValJt": 71,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 4,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan BADUNG",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-BADUNG-0285",
+          "title": "Area Parkir Komersial (Parking)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2027-01-04",
+      "contractDaysLeft": 55,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Ibu Ni Putu Indah",
+      "contactPhone": "628182512807",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.717541,115.1741288"
+    },
+    "OBJ-PKR-BADUNG-0286": {
+      "id": "OBJ-PKR-BADUNG-0286",
+      "name": "PARKIRAN EKSPEDISI",
+      "cityId": "badung",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.5508949,
+      "lng": 115.2245574,
+      "owner": "Pengelola Parkiran Ekspedisi",
+      "op": "Operator Parkir Komersial BADUNG",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl. Raya Mambal No.5, Mekar Bhuwana, Kec. Abiansemal, Kabupaten Badung, Bali 80352",
+      "coord": "-8.5508949, 115.2245574",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 55.000.000 / tahun",
+      "potValJt": 55,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan BADUNG",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-BADUNG-0286",
+          "title": "Area Parkir Komersial (Parkiran ekspedisi)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2027-06-17",
+      "contractDaysLeft": 219,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Putu Arya Kusuma",
+      "contactPhone": "628165051497",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.5508949,115.2245574"
+    },
+    "OBJ-PKR-BADUNG-0287": {
+      "id": "OBJ-PKR-BADUNG-0287",
+      "name": "PARKIRAN MOBIL LATU",
+      "cityId": "badung",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.5421942,
+      "lng": 115.2128234,
+      "owner": "Pengelola Parkiran Mobil Latu",
+      "op": "Operator Parkir Komersial BADUNG",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen tersedia",
+      "addr": "Jl. G Semeru Gg. 2 No.a5, Abiansemal, Kec. Abiansemal, Kabupaten Badung, Bali 80352",
+      "coord": "-8.5421942, 115.2128234",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 39.000.000 / tahun",
+      "potValJt": 39,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan BADUNG",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-BADUNG-0287",
+          "title": "Area Parkir Komersial (Parkiran Mobil Latu)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2027-02-15",
+      "contractDaysLeft": 97,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. I Wayan Sudarma",
+      "contactPhone": "628173952373",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.5421942,115.2128234"
+    },
+    "OBJ-PKR-BADUNG-0288": {
+      "id": "OBJ-PKR-BADUNG-0288",
+      "name": "PARKIR",
+      "cityId": "badung",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.7139332,
+      "lng": 115.1677942,
+      "owner": "Pengelola Parkir",
+      "op": "Operator Parkir Komersial BADUNG",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Belum Terdaftar",
+      "addr": "75P9+C4F, Jl. Pantai Kuta, Kuta, Kec Tuban, Tuban, Bali 80361",
+      "coord": "-8.7139332, 115.1677942",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 60.000.000 / tahun",
+      "potValJt": 60,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan BADUNG",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-BADUNG-0288",
+          "title": "Area Parkir Komersial (Parkir)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2027-06-23",
+      "contractDaysLeft": 225,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. I Ketut Suardika",
+      "contactPhone": "628153276319",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7139332,115.1677942"
+    },
+    "OBJ-PKR-BADUNG-0289": {
+      "id": "OBJ-PKR-BADUNG-0289",
+      "name": "PARKIRAN PADANG TEGAL",
+      "cityId": "badung",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.6206291,
+      "lng": 115.1709416,
+      "owner": "Pengelola Parkiran Padang Tegal",
+      "op": "Operator Parkir Komersial BADUNG",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl. Padang Tegal III No.5, Dalung, Kec. Kuta Utara, Kabupaten Badung, Bali 80361",
+      "coord": "-8.6206291, 115.1709416",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 65.000.000 / tahun",
+      "potValJt": 65,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan BADUNG",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-BADUNG-0289",
+          "title": "Area Parkir Komersial (Parkiran Padang Tegal)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-11-27",
+      "contractDaysLeft": 17,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. Made Dananjaya",
+      "contactPhone": "628176238346",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6206291,115.1709416"
+    },
+    "OBJ-PKR-BADUNG-0290": {
+      "id": "OBJ-PKR-BADUNG-0290",
+      "name": "DISEWAKAN PARKIRAN WANA ASRI ABIANBASE",
+      "cityId": "badung",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.5985762,
+      "lng": 115.1719954,
+      "owner": "Pengelola Disewakan Parkiran Wana Asri Abianbase",
+      "op": "Operator Parkir Komersial BADUNG",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen tersedia",
+      "addr": "Jl. Raya Abianbase perumahan wana asri No.mor 74, Abianbase, Kec. Mengwi, Kabupaten Badung, Bali 80351",
+      "coord": "-8.5985762, 115.1719954",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 69.000.000 / tahun",
+      "potValJt": 69,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan BADUNG",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-BADUNG-0290",
+          "title": "Area Parkir Komersial (Disewakan Parkiran Wana Asri Abianbase)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-12-22",
+      "contractDaysLeft": 42,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Ibu Ni Luh Gede Sukerti",
+      "contactPhone": "628174277627",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.5985762,115.1719954"
+    },
+    "OBJ-PKR-BADUNG-0291": {
+      "id": "OBJ-PKR-BADUNG-0291",
+      "name": "PARKIRAN SAYYIDI",
+      "cityId": "badung",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.6504885,
+      "lng": 115.1339414,
+      "owner": "Pengelola Parkiran Sayyidi",
+      "op": "Operator Parkir Komersial BADUNG",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl. Tanah Barak No.7B, Canggu, Kec. Kuta Utara, Kabupaten Badung, Bali 80351",
+      "coord": "-8.6504885, 115.1339414",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 30.000.000 / tahun",
+      "potValJt": 30,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan BADUNG",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-BADUNG-0291",
+          "title": "Area Parkir Komersial (Parkiran sayyidi)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2027-10-21",
+      "contractDaysLeft": 345,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Agus Hendrawan",
+      "contactPhone": "628176396494",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6504885,115.1339414"
+    },
+    "OBJ-PKR-GIANYAR-0292": {
+      "id": "OBJ-PKR-GIANYAR-0292",
+      "name": "SENTRA PARKIR MONKEY FOREST UBUD",
+      "cityId": "gianyar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.5194041,
+      "lng": 115.2606926,
+      "owner": "Pengelola Sentra Parkir Monkey Forest Ubud",
+      "op": "Operator Parkir Komersial GIANYAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Monkey Forest Cental Parking, Ubud, Gianyar Regency, Bali 80571",
+      "coord": "-8.5194041, 115.2606926",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 33.000.000 / tahun",
+      "potValJt": 33,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan GIANYAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-GIANYAR-0292",
+          "title": "Area Parkir Komersial (Sentra Parkir Monkey Forest Ubud)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-10-29",
+      "contractDaysLeft": -12,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Bpk. Putu Arya Kusuma",
+      "contactPhone": "628174643562",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.5194041,115.2606926"
+    },
+    "OBJ-PKR-GIANYAR-0293": {
+      "id": "OBJ-PKR-GIANYAR-0293",
+      "name": "PARKIR UMUM UBUD",
+      "cityId": "gianyar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.5028689,
+      "lng": 115.263779,
+      "owner": "Pengelola Parkir Umum Ubud",
+      "op": "Operator Parkir Komersial GIANYAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Audit Kepatuhan & Monitoring",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen tersedia",
+      "addr": "Jl. Suweta No.18, Ubud, Kecamatan Ubud, Kabupaten Gianyar, Bali 80571",
+      "coord": "-8.5028689, 115.2637790",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 28.000.000 / tahun",
+      "potValJt": 28,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 4,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan GIANYAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-GIANYAR-0293",
+          "title": "Area Parkir Komersial (Parkir Umum Ubud)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-11-04",
+      "contractDaysLeft": -6,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Ibu Ni Luh Gede Sukerti",
+      "contactPhone": "628139298531",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.5028689,115.263779"
+    },
+    "OBJ-PKR-GIANYAR-0294": {
+      "id": "OBJ-PKR-GIANYAR-0294",
+      "name": "PARKIR BEBEK BENGIL",
+      "cityId": "gianyar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.5171078,
+      "lng": 115.2642447,
+      "owner": "Pengelola Parkir Bebek Bengil",
+      "op": "Operator Parkir Komersial GIANYAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Belum Terdaftar",
+      "addr": "F7M7+5M5, Ubud, Kecamatan Ubud, Kabupaten Gianyar, Bali 80571",
+      "coord": "-8.5171078, 115.2642447",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 59.000.000 / tahun",
+      "potValJt": 59,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan GIANYAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-GIANYAR-0294",
+          "title": "Area Parkir Komersial (Parkir bebek bengil)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-12-07",
+      "contractDaysLeft": 27,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. Putu Arya Kusuma",
+      "contactPhone": "628168352863",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.5171078,115.2642447"
+    },
+    "OBJ-PKR-GIANYAR-0295": {
+      "id": "OBJ-PKR-GIANYAR-0295",
+      "name": "PARKIRAN MOBIL",
+      "cityId": "gianyar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.5056344,
+      "lng": 115.2570205,
+      "owner": "Pengelola Parkiran Mobil",
+      "op": "Operator Parkir Komersial GIANYAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Belum Terdaftar",
+      "addr": "F7V4+PRR, Ubud, Kecamatan Ubud, Kabupaten Gianyar, Bali 80571",
+      "coord": "-8.5056344, 115.2570205",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 72.000.000 / tahun",
+      "potValJt": 72,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan GIANYAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-GIANYAR-0295",
+          "title": "Area Parkir Komersial (Parkiran mobil)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-10-18",
+      "contractDaysLeft": -23,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Ibu Dewi Sartika",
+      "contactPhone": "628186584324",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.5056344,115.2570205"
+    },
+    "OBJ-PKR-GIANYAR-0296": {
+      "id": "OBJ-PKR-GIANYAR-0296",
+      "name": "PARKING BUILDING MONKEY FOREST UBUD",
+      "cityId": "gianyar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.5215954,
+      "lng": 115.2604061,
+      "owner": "Pengelola Parking Building Monkey Forest Ubud",
+      "op": "Operator Parkir Komersial GIANYAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Audit Kepatuhan & Monitoring",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen tersedia",
+      "addr": "F7H6+956, Ubud, Kecamatan Ubud, Kabupaten Gianyar, Bali 80571",
+      "coord": "-8.5215954, 115.2604061",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 37.000.000 / tahun",
+      "potValJt": 37,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 4,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan GIANYAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-GIANYAR-0296",
+          "title": "Area Parkir Komersial (Parking Building Monkey Forest Ubud)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-10-09",
+      "contractDaysLeft": -32,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Ibu Dewi Sartika",
+      "contactPhone": "628124693518",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.5215954,115.2604061"
+    },
+    "OBJ-PKR-GIANYAR-0297": {
+      "id": "OBJ-PKR-GIANYAR-0297",
+      "name": "PARKIRAN PENGLUKATAN SEBATU",
+      "cityId": "gianyar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.3998925,
+      "lng": 115.2958693,
+      "owner": "Pengelola Parkiran Penglukatan Sebatu",
+      "op": "Operator Parkir Komersial GIANYAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Audit Kepatuhan & Monitoring",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen tersedia",
+      "addr": "J72W+28X, Sebatu, Kec. Tegallalang, Kabupaten Gianyar, Bali 80561",
+      "coord": "-8.3998925, 115.2958693",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 57.000.000 / tahun",
+      "potValJt": 57,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 4,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan GIANYAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-GIANYAR-0297",
+          "title": "Area Parkir Komersial (Parkiran Penglukatan Sebatu)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-11-14",
+      "contractDaysLeft": 4,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. Putu Arya Kusuma",
+      "contactPhone": "628135943640",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.3998925,115.2958693"
+    },
+    "OBJ-PKR-GIANYAR-0298": {
+      "id": "OBJ-PKR-GIANYAR-0298",
+      "name": "LAPANGAN PARKIR UBUD",
+      "cityId": "gianyar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.5102713,
+      "lng": 115.2616027,
+      "owner": "Pengelola Lapangan Parkir Ubud",
+      "op": "Operator Parkir Komersial GIANYAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Belum Terdaftar",
+      "addr": "F7V6+7X5, Ubud, Kecamatan Ubud, Kabupaten Gianyar, Bali 80571",
+      "coord": "-8.5102713, 115.2616027",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 61.000.000 / tahun",
+      "potValJt": 61,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan GIANYAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-GIANYAR-0298",
+          "title": "Area Parkir Komersial (Lapangan Parkir Ubud)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-12-29",
+      "contractDaysLeft": 49,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. I Ketut Suardika",
+      "contactPhone": "628128001709",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.5102713,115.2616027"
+    },
+    "OBJ-PKR-GIANYAR-0299": {
+      "id": "OBJ-PKR-GIANYAR-0299",
+      "name": "PARKIRAN BIMC UBUD",
+      "cityId": "gianyar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.4869319,
+      "lng": 115.2530652,
+      "owner": "Pengelola Parkiran Bimc Ubud",
+      "op": "Operator Parkir Komersial GIANYAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen tersedia",
+      "addr": "Jl. Raya Lungsiakan No.101b, Kedewatan, Kecamatan Ubud, Kabupaten Gianyar, Bali 80561",
+      "coord": "-8.4869319, 115.2530652",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 27.000.000 / tahun",
+      "potValJt": 27,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan GIANYAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-GIANYAR-0299",
+          "title": "Area Parkir Komersial (Parkiran BIMC Ubud)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-11-07",
+      "contractDaysLeft": -3,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Ibu Ni Made Ayu",
+      "contactPhone": "628129410537",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.4869319,115.2530652"
+    },
+    "OBJ-PKR-GIANYAR-0300": {
+      "id": "OBJ-PKR-GIANYAR-0300",
+      "name": "LAPANGAN ASTINA UBUD",
+      "cityId": "gianyar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.5100561,
+      "lng": 115.2613727,
+      "owner": "Pengelola Lapangan Astina Ubud",
+      "op": "Operator Parkir Komersial GIANYAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen tersedia",
+      "addr": "F7Q6+XGH, Ubud, Kecamatan Ubud, Kabupaten Gianyar, Bali 80571",
+      "coord": "-8.5100561, 115.2613727",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 29.000.000 / tahun",
+      "potValJt": 29,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan GIANYAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-GIANYAR-0300",
+          "title": "Area Parkir Komersial (Lapangan Astina Ubud)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-12-05",
+      "contractDaysLeft": 25,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. I Ketut Suardika",
+      "contactPhone": "628180884458",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.5100561,115.2613727"
+    },
+    "OBJ-PKR-GIANYAR-0301": {
+      "id": "OBJ-PKR-GIANYAR-0301",
+      "name": "CAR PARKED",
+      "cityId": "gianyar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.5105873,
+      "lng": 115.2615915,
+      "owner": "Pengelola Car Parked",
+      "op": "Operator Parkir Komersial GIANYAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl. Monkey Forest No.16, Ubud, Kecamatan Ubud, Kabupaten Gianyar, Bali 80571",
+      "coord": "-8.5105873, 115.2615915",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 61.000.000 / tahun",
+      "potValJt": 61,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan GIANYAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-GIANYAR-0301",
+          "title": "Area Parkir Komersial (Car parked)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-11-14",
+      "contractDaysLeft": 4,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. I Nyoman Artawan",
+      "contactPhone": "628164021680",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.5105873,115.2615915"
+    },
+    "OBJ-PKR-GIANYAR-0302": {
+      "id": "OBJ-PKR-GIANYAR-0302",
+      "name": "PARKIRAN PAK TAYA",
+      "cityId": "gianyar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.4853831,
+      "lng": 115.249158,
+      "owner": "Pengelola Parkiran Pak Taya",
+      "op": "Operator Parkir Komersial GIANYAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen tersedia",
+      "addr": "Jl. Mpu Tantular No.46, Kedewatan, Kecamatan Ubud, Kabupaten Gianyar, Bali 80571",
+      "coord": "-8.4853831, 115.2491580",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 43.000.000 / tahun",
+      "potValJt": 43,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan GIANYAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-GIANYAR-0302",
+          "title": "Area Parkir Komersial (Parkiran pak taya)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2027-01-12",
+      "contractDaysLeft": 63,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. I Ketut Suardika",
+      "contactPhone": "628175037567",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.4853831,115.249158"
+    },
+    "OBJ-PKR-BADUNG-0303": {
+      "id": "OBJ-PKR-BADUNG-0303",
+      "name": "PARKIR MOBIL DIAMOND DAN ATUH",
+      "cityId": "badung",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.7748463,
+      "lng": 115.6193511,
+      "owner": "Pengelola Parkir Mobil Diamond Dan Atuh",
+      "op": "Operator Parkir Komersial BADUNG",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Belum Terdaftar",
+      "addr": "6JG9+3P9, Pejukutan, Kec. Nusa Penida, Kabupaten Klungkung, Bali 80771",
+      "coord": "-8.7748463, 115.6193511",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 31.000.000 / tahun",
+      "potValJt": 31,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan BADUNG",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-BADUNG-0303",
+          "title": "Area Parkir Komersial (Parkir mobil Diamond dan Atuh)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-12-30",
+      "contractDaysLeft": 50,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. Putu Arya Kusuma",
+      "contactPhone": "628135726227",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7748463,115.6193511"
+    },
+    "OBJ-PKR-KLUNGKUNG-0304": {
+      "id": "OBJ-PKR-KLUNGKUNG-0304",
+      "name": "PARKIRAN PERAHU NELAYAN",
+      "cityId": "klungkung",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.6756834,
+      "lng": 115.5691955,
+      "owner": "Pengelola Parkiran Perahu Nelayan",
+      "op": "Operator Parkir Komersial KLUNGKUNG",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Belum Terdaftar",
+      "addr": "8HF9+PMV, Batununggul, Kec. Nusa Penida, Kabupaten Klungkung, Bali 80771",
+      "coord": "-8.6756834, 115.5691955",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 60.000.000 / tahun",
+      "potValJt": 60,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KLUNGKUNG",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KLUNGKUNG-0304",
+          "title": "Area Parkir Komersial (Parkiran perahu nelayan)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-11-26",
+      "contractDaysLeft": 16,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628157742983",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6756834,115.5691955"
+    },
+    "OBJ-PKR-KLUNGKUNG-0305": {
+      "id": "OBJ-PKR-KLUNGKUNG-0305",
+      "name": "PARKIR SISSI HERITAGE",
+      "cityId": "klungkung",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.5346831,
+      "lng": 115.4036267,
+      "owner": "Pengelola Parkir Sissi Heritage",
+      "op": "Operator Parkir Komersial KLUNGKUNG",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Belum Terdaftar",
+      "addr": "FC83+4C9, Semarapura Tengah, Kec. Klungkung, Kabupaten Klungkung, Bali 80761",
+      "coord": "-8.5346831, 115.4036267",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 56.000.000 / tahun",
+      "potValJt": 56,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KLUNGKUNG",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KLUNGKUNG-0305",
+          "title": "Area Parkir Komersial (Parkir Sissi Heritage)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2027-04-13",
+      "contractDaysLeft": 154,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Ibu Ni Luh Gede Sukerti",
+      "contactPhone": "628152559095",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.5346831,115.4036267"
+    },
+    "OBJ-PKR-BANGLI-0306": {
+      "id": "OBJ-PKR-BANGLI-0306",
+      "name": "PARKIRAN XPEDISY BUAH",
+      "cityId": "bangli",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.2078553,
+      "lng": 115.3294801,
+      "owner": "Pengelola Parkiran Xpedisy Buah",
+      "op": "Operator Parkir Komersial BANGLI",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Q8VH+2P4, Sukawana, Kec. Kintamani, Kabupaten Bangli, Bali 80652",
+      "coord": "-8.2078553, 115.3294801",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 54.000.000 / tahun",
+      "potValJt": 54,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan BANGLI",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-BANGLI-0306",
+          "title": "Area Parkir Komersial (parkiran xpedisy buah)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-12-24",
+      "contractDaysLeft": 44,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. I Nyoman Artawan",
+      "contactPhone": "628172446680",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.2078553,115.3294801"
+    },
+    "OBJ-PKR-BANGLI-0307": {
+      "id": "OBJ-PKR-BANGLI-0307",
+      "name": "PARKIRAN KE3",
+      "cityId": "bangli",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.3191133,
+      "lng": 115.2954683,
+      "owner": "Pengelola Parkiran Ke3",
+      "op": "Operator Parkir Komersial BANGLI",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Belum Terdaftar",
+      "addr": "M7JW+954, Banjar, Katung, Kec. Kintamani, Kabupaten Bangli, Bali 80572",
+      "coord": "-8.3191133, 115.2954683",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 61.000.000 / tahun",
+      "potValJt": 61,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan BANGLI",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-BANGLI-0307",
+          "title": "Area Parkir Komersial (Parkiran ke3)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2027-04-12",
+      "contractDaysLeft": 153,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Agus Hendrawan",
+      "contactPhone": "628162026642",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.3191133,115.2954683"
+    },
+    "OBJ-PKR-BANGLI-0308": {
+      "id": "OBJ-PKR-BANGLI-0308",
+      "name": "PARKIR LAMA TOUR BATUR",
+      "cityId": "bangli",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.2498267,
+      "lng": 115.3975833,
+      "owner": "Pengelola Parkir Lama Tour Batur",
+      "op": "Operator Parkir Komersial BANGLI",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Q92X+328, Jl. Pendakian Gn. Batur, Batur Tengah, Kec. Kintamani, Kabupaten Bangli, Bali 80652",
+      "coord": "-8.2498267, 115.3975833",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 66.000.000 / tahun",
+      "potValJt": 66,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan BANGLI",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-BANGLI-0308",
+          "title": "Area Parkir Komersial (parkir lama tour batur)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2027-10-31",
+      "contractDaysLeft": 355,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Ibu Ni Putu Indah",
+      "contactPhone": "628163231631",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.2498267,115.3975833"
+    },
+    "OBJ-PKR-BANGLI-0309": {
+      "id": "OBJ-PKR-BANGLI-0309",
+      "name": "PARKIR AIR TERJUN KUNING",
+      "cityId": "bangli",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.491892,
+      "lng": 115.3572073,
+      "owner": "Pengelola Parkir Air Terjun Kuning",
+      "op": "Operator Parkir Komersial BANGLI",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Belum Terdaftar",
+      "addr": "G954+6VW, Taman Bali, Kec. Bangli, Kabupaten Bangli, Bali 80752",
+      "coord": "-8.4918920, 115.3572073",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 71.000.000 / tahun",
+      "potValJt": 71,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan BANGLI",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-BANGLI-0309",
+          "title": "Area Parkir Komersial (Parkir Air Terjun Kuning)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2027-03-24",
+      "contractDaysLeft": 134,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628128510326",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.491892,115.3572073"
+    },
+    "OBJ-PKR-BANGLI-0310": {
+      "id": "OBJ-PKR-BANGLI-0310",
+      "name": "PARKIRAN JEMPANA CAMP",
+      "cityId": "bangli",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.2334956,
+      "lng": 115.4109153,
+      "owner": "Pengelola Parkiran Jempana Camp",
+      "op": "Operator Parkir Komersial BANGLI",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Belum Terdaftar",
+      "addr": "QC86+86M, Songan A, Kec. Kintamani, Kabupaten Bangli, Bali",
+      "coord": "-8.2334956, 115.4109153",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 67.000.000 / tahun",
+      "potValJt": 67,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan BANGLI",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-BANGLI-0310",
+          "title": "Area Parkir Komersial (Parkiran Jempana Camp)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-10-25",
+      "contractDaysLeft": -16,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628131911980",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.2334956,115.4109153"
+    },
+    "OBJ-PKR-BANGLI-0311": {
+      "id": "OBJ-PKR-BANGLI-0311",
+      "name": "LAKE HILL VIEW PARKING",
+      "cityId": "bangli",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.2454592,
+      "lng": 115.4018984,
+      "owner": "Pengelola Lake Hill View Parking",
+      "op": "Operator Parkir Komersial BANGLI",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen tersedia",
+      "addr": "QC32+RQ6, Songan A, Kec. Kintamani, Kabupaten Bangli, Bali 80652",
+      "coord": "-8.2454592, 115.4018984",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 63.000.000 / tahun",
+      "potValJt": 63,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan BANGLI",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-BANGLI-0311",
+          "title": "Area Parkir Komersial (Lake hill view Parking)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-11-13",
+      "contractDaysLeft": 3,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Ibu Kadek Widiastuti",
+      "contactPhone": "628132937107",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.2454592,115.4018984"
+    },
+    "OBJ-PKR-KARANGASEM-0312": {
+      "id": "OBJ-PKR-KARANGASEM-0312",
+      "name": "PARKIR ATAS",
+      "cityId": "karangasem",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.3746924,
+      "lng": 115.4482777,
+      "owner": "Pengelola Parkir Atas",
+      "op": "Operator Parkir Komersial KARANGASEM",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Audit Kepatuhan & Monitoring",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen tersedia",
+      "addr": "JCGX+48C, Besakih, Kec. Rendang, Kabupaten Karangasem, Bali 80863",
+      "coord": "-8.3746924, 115.4482777",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 74.000.000 / tahun",
+      "potValJt": 74,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 4,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KARANGASEM",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KARANGASEM-0312",
+          "title": "Area Parkir Komersial (Parkir Atas)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-11-30",
+      "contractDaysLeft": 20,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. Agus Hendrawan",
+      "contactPhone": "628165312607",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.3746924,115.4482777"
+    },
+    "OBJ-PKR-KARANGASEM-0313": {
+      "id": "OBJ-PKR-KARANGASEM-0313",
+      "name": "TERMINAL AREA PARKIR MANIK MAS",
+      "cityId": "karangasem",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.3796565,
+      "lng": 115.4461451,
+      "owner": "Pengelola Terminal Area Parkir Manik Mas",
+      "op": "Operator Parkir Komersial KARANGASEM",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Belum Terdaftar",
+      "addr": "JCCW+4FJ, Besakih, Kec. Rendang, Kabupaten Karangasem, Bali 80863",
+      "coord": "-8.3796565, 115.4461451",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 28.000.000 / tahun",
+      "potValJt": 28,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KARANGASEM",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KARANGASEM-0313",
+          "title": "Area Parkir Komersial (TERMINAL AREA PARKIR MANIK MAS)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-12-26",
+      "contractDaysLeft": 46,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. I Nyoman Artawan",
+      "contactPhone": "628175032342",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.3796565,115.4461451"
+    },
+    "OBJ-PKR-KARANGASEM-0314": {
+      "id": "OBJ-PKR-KARANGASEM-0314",
+      "name": "AREA PARKIR PURA BESAKIH",
+      "cityId": "karangasem",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.3794301,
+      "lng": 115.4462739,
+      "owner": "Pengelola Area Parkir Pura Besakih",
+      "op": "Operator Parkir Komersial KARANGASEM",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen tersedia",
+      "addr": "JCCW+6GC, Pempatan, Kec. Rendang, Kabupaten Karangasem, Bali 80863",
+      "coord": "-8.3794301, 115.4462739",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 52.000.000 / tahun",
+      "potValJt": 52,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KARANGASEM",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KARANGASEM-0314",
+          "title": "Area Parkir Komersial (Area Parkir Pura Besakih)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-12-10",
+      "contractDaysLeft": 30,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628128399464",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.3794301,115.4462739"
+    },
+    "OBJ-PKR-KARANGASEM-0315": {
+      "id": "OBJ-PKR-KARANGASEM-0315",
+      "name": "PARKIRAN PURA BESAKIH",
+      "cityId": "karangasem",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.376515,
+      "lng": 115.4541059,
+      "owner": "Pengelola Parkiran Pura Besakih",
+      "op": "Operator Parkir Komersial KARANGASEM",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Belum Terdaftar",
+      "addr": "JFF3+9JX, Besakih, Kec. Rendang, Kabupaten Karangasem, Bali 80863",
+      "coord": "-8.3765150, 115.4541059",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 35.000.000 / tahun",
+      "potValJt": 35,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KARANGASEM",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KARANGASEM-0315",
+          "title": "Area Parkir Komersial (Parkiran pura besakih)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2027-05-12",
+      "contractDaysLeft": 183,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Ibu Ni Luh Gede Sukerti",
+      "contactPhone": "628172514196",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.376515,115.4541059"
+    },
+    "OBJ-PKR-KARANGASEM-0316": {
+      "id": "OBJ-PKR-KARANGASEM-0316",
+      "name": "GEDUNG PARKIR MANIK MAS",
+      "cityId": "karangasem",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.3802732,
+      "lng": 115.4464713,
+      "owner": "Pengelola Gedung Parkir Manik Mas",
+      "op": "Operator Parkir Komersial KARANGASEM",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Belum Terdaftar",
+      "addr": "JC9W+VHX, Jalan Gunung Agung, Besakih, Kec. Rendang, Kabupaten Karangasem, Bali 80863",
+      "coord": "-8.3802732, 115.4464713",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 72.000.000 / tahun",
+      "potValJt": 72,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KARANGASEM",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KARANGASEM-0316",
+          "title": "Area Parkir Komersial (Gedung parkir Manik Mas)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-11-02",
+      "contractDaysLeft": -8,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Bpk. Agus Hendrawan",
+      "contactPhone": "628185795421",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.3802732,115.4464713"
+    },
+    "OBJ-PKR-KARANGASEM-0317": {
+      "id": "OBJ-PKR-KARANGASEM-0317",
+      "name": "PARKIRAN PURA LEMPUYANG (LEMPUYANG TEMPLE PARKING LOT)",
+      "cityId": "karangasem",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.3921335,
+      "lng": 115.6195529,
+      "owner": "Pengelola Parkiran Pura Lempuyang (Lempuyang Temple Parking Lot)",
+      "op": "Operator Parkir Komersial KARANGASEM",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Belum Terdaftar",
+      "addr": "JJ59+4Q9, Tri Buana, Kec. Abang, Kabupaten Karangasem, Bali 80852",
+      "coord": "-8.3921335, 115.6195529",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 61.000.000 / tahun",
+      "potValJt": 61,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KARANGASEM",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KARANGASEM-0317",
+          "title": "Area Parkir Komersial (Parkiran Pura Lempuyang (Lempuyang Temple Parking Lot))",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2027-06-15",
+      "contractDaysLeft": 217,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Ibu Ni Luh Gede Sukerti",
+      "contactPhone": "628131438735",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.3921335,115.6195529"
+    },
+    "OBJ-PKR-KARANGASEM-0318": {
+      "id": "OBJ-PKR-KARANGASEM-0318",
+      "name": "PARKIRAN PURA LINGGA YONI",
+      "cityId": "karangasem",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.4650498,
+      "lng": 115.6321999,
+      "owner": "Pengelola Parkiran Pura Lingga Yoni",
+      "op": "Operator Parkir Komersial KARANGASEM",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Audit Kepatuhan & Monitoring",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen tersedia",
+      "addr": "GJMJ+XVP, Jl. Karangasem - Seraya, Tumbu, Kec. Karangasem, Kabupaten Karangasem, Bali 80811",
+      "coord": "-8.4650498, 115.6321999",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 38.000.000 / tahun",
+      "potValJt": 38,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 4,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KARANGASEM",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KARANGASEM-0318",
+          "title": "Area Parkir Komersial (Parkiran Pura Lingga Yoni)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2027-03-17",
+      "contractDaysLeft": 127,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628173507074",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.4650498,115.6321999"
+    },
+    "OBJ-PKR-KARANGASEM-0319": {
+      "id": "OBJ-PKR-KARANGASEM-0319",
+      "name": "PARKIR MOBIL",
+      "cityId": "karangasem",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.5166337,
+      "lng": 115.4895801,
+      "owner": "Pengelola Parkir Mobil",
+      "op": "Operator Parkir Komersial KARANGASEM",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen tersedia",
+      "addr": "FFMQ+8QX Jalan Pura Andakasa, Kelod, Antiga, Kec. Manggis, Kabupaten Karangasem, Bali 80871",
+      "coord": "-8.5166337, 115.4895801",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 50.000.000 / tahun",
+      "potValJt": 50,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KARANGASEM",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KARANGASEM-0319",
+          "title": "Area Parkir Komersial (Parkir mobil)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2027-10-05",
+      "contractDaysLeft": 329,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Putu Arya Kusuma",
+      "contactPhone": "628168923924",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.5166337,115.4895801"
+    },
+    "OBJ-PKR-KARANGASEM-0320": {
+      "id": "OBJ-PKR-KARANGASEM-0320",
+      "name": "PARKIR PURA BESAKIH ᬧᬃᬓᬶᬃ ᬧᬸᬭ ᬩᬾᬲᬓᬶᬄ",
+      "cityId": "karangasem",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.3800267,
+      "lng": 115.446416,
+      "owner": "Pengelola Parkir Pura Besakih ᬧᬃᬓᬶᬃ ᬧᬸᬭ ᬩᬾᬲᬓᬶᬄ",
+      "op": "Operator Parkir Komersial KARANGASEM",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen tersedia",
+      "addr": "JCCW+3PG, Jl. Raya Besakih, Besakih, Kec. Rendang, Kabupaten Karangasem, Bali 80863",
+      "coord": "-8.3800267, 115.4464160",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 40.000.000 / tahun",
+      "potValJt": 40,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KARANGASEM",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KARANGASEM-0320",
+          "title": "Area Parkir Komersial (Parkir pura Besakih ᬧᬃᬓᬶᬃ ᬧᬸᬭ ᬩᬾᬲᬓᬶᬄ)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2027-01-28",
+      "contractDaysLeft": 79,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Putu Arya Kusuma",
+      "contactPhone": "628141185758",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.3800267,115.446416"
+    },
+    "OBJ-PKR-KARANGASEM-0321": {
+      "id": "OBJ-PKR-KARANGASEM-0321",
+      "name": "PARKIRAN PURA LEMPUYANG MADIA",
+      "cityId": "karangasem",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.3966283,
+      "lng": 115.639015,
+      "owner": "Pengelola Parkiran Pura Lempuyang Madia",
+      "op": "Operator Parkir Komersial KARANGASEM",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Belum Terdaftar",
+      "addr": "JJ3Q+8HX, Bukit, Kec. Karangasem, Kabupaten Karangasem, Bali 80852",
+      "coord": "-8.3966283, 115.6390150",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 44.000.000 / tahun",
+      "potValJt": 44,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KARANGASEM",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KARANGASEM-0321",
+          "title": "Area Parkir Komersial (Parkiran Pura Lempuyang Madia)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2027-02-26",
+      "contractDaysLeft": 108,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Ibu Dewi Sartika",
+      "contactPhone": "628121078698",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.3966283,115.639015"
+    },
+    "OBJ-PKR-KARANGASEM-0322": {
+      "id": "OBJ-PKR-KARANGASEM-0322",
+      "name": "KASYARA : PARKIR SEPEDA MOTOR DAN MOBIL",
+      "cityId": "karangasem",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.4525361,
+      "lng": 115.5989874,
+      "owner": "Pengelola Kasyara : Parkir Sepeda Motor Dan Mobil",
+      "op": "Operator Parkir Komersial KARANGASEM",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl. Bukit Catu Subagan, Subagan, Kec. Karangasem, Kabupaten Karangasem, Bali 80811",
+      "coord": "-8.4525361, 115.5989874",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 26.000.000 / tahun",
+      "potValJt": 26,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KARANGASEM",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KARANGASEM-0322",
+          "title": "Area Parkir Komersial (Kasyara : Parkir Sepeda Motor dan Mobil)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2027-03-27",
+      "contractDaysLeft": 137,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. I Nyoman Artawan",
+      "contactPhone": "628145963709",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.4525361,115.5989874"
+    },
+    "OBJ-PKR-KARANGASEM-0323": {
+      "id": "OBJ-PKR-KARANGASEM-0323",
+      "name": "PARKIRAN SHUTTLE LAHAHANGAN SWETT",
+      "cityId": "karangasem",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.3863767,
+      "lng": 115.6181867,
+      "owner": "Pengelola Parkiran Shuttle Lahahangan Swett",
+      "op": "Operator Parkir Komersial KARANGASEM",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen tersedia",
+      "addr": "JJ79+227, Tri Buana, Kec. Abang, Kabupaten Karangasem, Bali 80852",
+      "coord": "-8.3863767, 115.6181867",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 57.000.000 / tahun",
+      "potValJt": 57,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KARANGASEM",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KARANGASEM-0323",
+          "title": "Area Parkir Komersial (Parkiran shuttle lahahangan swett)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-10-08",
+      "contractDaysLeft": -33,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Bpk. I Ketut Suardika",
+      "contactPhone": "628171501596",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.3863767,115.6181867"
+    },
+    "OBJ-PKR-KARANGASEM-0324": {
+      "id": "OBJ-PKR-KARANGASEM-0324",
+      "name": "PARKPLATZ",
+      "cityId": "karangasem",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.5307981,
+      "lng": 115.5089669,
+      "owner": "Pengelola Parkplatz",
+      "op": "Operator Parkir Komersial KARANGASEM",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen tersedia",
+      "addr": "FG95+MHP, Padangbai, Kec. Manggis, Kabupaten Karangasem, Bali 80871",
+      "coord": "-8.5307981, 115.5089669",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 68.000.000 / tahun",
+      "potValJt": 68,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KARANGASEM",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KARANGASEM-0324",
+          "title": "Area Parkir Komersial (Parkplatz)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-11-03",
+      "contractDaysLeft": -7,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628185511600",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.5307981,115.5089669"
+    },
+    "OBJ-PKR-KARANGASEM-0325": {
+      "id": "OBJ-PKR-KARANGASEM-0325",
+      "name": "PADANG BAI PARKING (SNAPPARKING)",
+      "cityId": "karangasem",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.5298189,
+      "lng": 115.5083303,
+      "owner": "Pengelola Padang Bai Parking (Snapparking)",
+      "op": "Operator Parkir Komersial KARANGASEM",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Belum Terdaftar",
+      "addr": "FGC5+38G, Padangbai, Kec. Manggis, Kabupaten Karangasem, Bali 80871",
+      "coord": "-8.5298189, 115.5083303",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 26.000.000 / tahun",
+      "potValJt": 26,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KARANGASEM",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KARANGASEM-0325",
+          "title": "Area Parkir Komersial (Padang Bai Parking (Snapparking))",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2027-11-03",
+      "contractDaysLeft": 358,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. I Wayan Sudarma",
+      "contactPhone": "628125111240",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.5298189,115.5083303"
+    },
+    "OBJ-PKR-KARANGASEM-0326": {
+      "id": "OBJ-PKR-KARANGASEM-0326",
+      "name": "CENTRAL PARKING",
+      "cityId": "karangasem",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.5297012,
+      "lng": 115.508862,
+      "owner": "Pengelola Central Parking",
+      "op": "Operator Parkir Komersial KARANGASEM",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Belum Terdaftar",
+      "addr": "FGC5+4G9, Padangbai, Kec. Manggis, Kabupaten Karangasem, Bali 80871",
+      "coord": "-8.5297012, 115.5088620",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 37.000.000 / tahun",
+      "potValJt": 37,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KARANGASEM",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KARANGASEM-0326",
+          "title": "Area Parkir Komersial (Central Parking)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2027-06-18",
+      "contractDaysLeft": 220,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628152088751",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.5297012,115.508862"
+    },
+    "OBJ-PKR-KARANGASEM-0327": {
+      "id": "OBJ-PKR-KARANGASEM-0327",
+      "name": "GDP2",
+      "cityId": "karangasem",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.3797186,
+      "lng": 115.44394,
+      "owner": "Pengelola Gdp2",
+      "op": "Operator Parkir Komersial KARANGASEM",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Belum Terdaftar",
+      "addr": "JCCV+4H8, Jl. Raya Menanga, Besakih, Kec. Rendang, Kabupaten Karangasem, Bali 80863",
+      "coord": "-8.3797186, 115.4439400",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 64.000.000 / tahun",
+      "potValJt": 64,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KARANGASEM",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KARANGASEM-0327",
+          "title": "Area Parkir Komersial (GDP2)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-10-19",
+      "contractDaysLeft": -22,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Bpk. Made Dananjaya",
+      "contactPhone": "628157496201",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.3797186,115.44394"
+    },
+    "OBJ-PKR-KARANGASEM-0328": {
+      "id": "OBJ-PKR-KARANGASEM-0328",
+      "name": "PASAR AGUNG BESAKIH TEMPLE PARKING LOT",
+      "cityId": "karangasem",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.3706532,
+      "lng": 115.5029446,
+      "owner": "Pengelola Pasar Agung Besakih Temple Parking Lot",
+      "op": "Operator Parkir Komersial KARANGASEM",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Belum Terdaftar",
+      "addr": "JGH3+P5P, Jl. Ps. Agung, Sebudi, Kec. Selat, Kabupaten Karangasem, Bali 80853",
+      "coord": "-8.3706532, 115.5029446",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 67.000.000 / tahun",
+      "potValJt": 67,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KARANGASEM",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KARANGASEM-0328",
+          "title": "Area Parkir Komersial (Pasar Agung Besakih Temple Parking Lot)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-11-24",
+      "contractDaysLeft": 14,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. Agus Hendrawan",
+      "contactPhone": "628132921916",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.3706532,115.5029446"
+    },
+    "OBJ-PKR-KARANGASEM-0329": {
+      "id": "OBJ-PKR-KARANGASEM-0329",
+      "name": "PROYEK GEDUNG PARKIR MANIK MAS",
+      "cityId": "karangasem",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.3748999,
+      "lng": 115.4497676,
+      "owner": "Pengelola Proyek Gedung Parkir Manik Mas",
+      "op": "Operator Parkir Komersial KARANGASEM",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Belum Terdaftar",
+      "addr": "JCGX+2WR, Besakih, Kec. Rendang, Kabupaten Karangasem, Bali 80863",
+      "coord": "-8.3748999, 115.4497676",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 40.000.000 / tahun",
+      "potValJt": 40,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KARANGASEM",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KARANGASEM-0329",
+          "title": "Area Parkir Komersial (Proyek Gedung Parkir Manik Mas)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-10-24",
+      "contractDaysLeft": -17,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Ibu Ni Luh Gede Sukerti",
+      "contactPhone": "628132197658",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.3748999,115.4497676"
+    },
+    "OBJ-PKR-BULELENG-0330": {
+      "id": "OBJ-PKR-BULELENG-0330",
+      "name": "PARKIR PP",
+      "cityId": "buleleng",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.1214248,
+      "lng": 115.0651963,
+      "owner": "Pengelola Parkir Pp",
+      "op": "Operator Parkir Komersial BULELENG",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Belum Terdaftar",
+      "addr": "V3H8+C3P, Jl. Pura Segara Penimbangan, Baktiseraga, Kec. Buleleng, Kabupaten Buleleng, Bali 81119",
+      "coord": "-8.1214248, 115.0651963",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 58.000.000 / tahun",
+      "potValJt": 58,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan BULELENG",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-BULELENG-0330",
+          "title": "Area Parkir Komersial (Parkir PP)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-10-08",
+      "contractDaysLeft": -33,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628146003587",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.1214248,115.0651963"
+    },
+    "OBJ-PKR-BULELENG-0331": {
+      "id": "OBJ-PKR-BULELENG-0331",
+      "name": "PARKIRAN SAI SHIVA PUNYA PAVITRAM PENDAKIAN GUNUNG SANGHYANG (JALUR BARU)",
+      "cityId": "buleleng",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.3057793,
+      "lng": 115.0850109,
+      "owner": "Pengelola Parkiran Sai Shiva Punya Pavitram Pendakian Gunung Sanghyang (Jalur Baru)",
+      "op": "Operator Parkir Komersial BULELENG",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen tersedia",
+      "addr": "Jalan Prashanthi Nilayam, Zona Parkiran Sai Shiva Punya Pavitram, Mangku Sorga Gesing Haus land zone, Tiyingtali Sanghyang M3VM+MXH Desa Gesing, Dusun Waru, Gesing, Kec. Banjar, Kabupaten Buleleng, Bali 81152",
+      "coord": "-8.3057793, 115.0850109",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 40.000.000 / tahun",
+      "potValJt": 40,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan BULELENG",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-BULELENG-0331",
+          "title": "Area Parkir Komersial (Parkiran Sai Shiva Punya Pavitram Pendakian Gunung Sanghyang (Jalur Baru))",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-12-03",
+      "contractDaysLeft": 23,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. Putu Arya Kusuma",
+      "contactPhone": "628137613331",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.3057793,115.0850109"
+    },
+    "OBJ-PKR-BULELENG-0332": {
+      "id": "OBJ-PKR-BULELENG-0332",
+      "name": "PARKIRAN PENDAKIAN GUNUNG SANGHYANG",
+      "cityId": "buleleng",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.2948882,
+      "lng": 115.0971438,
+      "owner": "Pengelola Parkiran Pendakian Gunung Sanghyang",
+      "op": "Operator Parkir Komersial BULELENG",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Audit Kepatuhan & Monitoring",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen tersedia",
+      "addr": "P34W+2V, Gesing, Kec. Banjar, Kabupaten Buleleng, Bali 81152",
+      "coord": "-8.2948882, 115.0971438",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 34.000.000 / tahun",
+      "potValJt": 34,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 4,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan BULELENG",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-BULELENG-0332",
+          "title": "Area Parkir Komersial (Parkiran Pendakian Gunung Sanghyang)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-11-18",
+      "contractDaysLeft": 8,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628178712678",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.2948882,115.0971438"
+    },
+    "OBJ-PKR-BULELENG-0333": {
+      "id": "OBJ-PKR-BULELENG-0333",
+      "name": "GITGIT WATERFALL PARKING AREA",
+      "cityId": "buleleng",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.1879198,
+      "lng": 115.1365537,
+      "owner": "Pengelola Gitgit Waterfall Parking Area",
+      "op": "Operator Parkir Komersial BULELENG",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Gitgit, Kec. Sukasada, Kabupaten Buleleng, Bali 81161",
+      "coord": "-8.1879198, 115.1365537",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 36.000.000 / tahun",
+      "potValJt": 36,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan BULELENG",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-BULELENG-0333",
+          "title": "Area Parkir Komersial (Gitgit Waterfall Parking Area)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2027-08-05",
+      "contractDaysLeft": 268,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Ibu Dewi Sartika",
+      "contactPhone": "628159024609",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.1879198,115.1365537"
+    },
+    "OBJ-PKR-BULELENG-0334": {
+      "id": "OBJ-PKR-BULELENG-0334",
+      "name": "PARKIRAN PURA TIRTHA CUDHAMALA",
+      "cityId": "buleleng",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.1438633,
+      "lng": 115.1252684,
+      "owner": "Pengelola Parkiran Pura Tirtha Cudhamala",
+      "op": "Operator Parkir Komersial BULELENG",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Audit Kepatuhan & Monitoring",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen tersedia",
+      "addr": "V44G+F42, Petandakan, Kec. Buleleng, Kabupaten Buleleng, Bali 81161",
+      "coord": "-8.1438633, 115.1252684",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 35.000.000 / tahun",
+      "potValJt": 35,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 4,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan BULELENG",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-BULELENG-0334",
+          "title": "Area Parkir Komersial (Parkiran Pura Tirtha Cudhamala)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-11-14",
+      "contractDaysLeft": 4,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628152665276",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.1438633,115.1252684"
+    },
+    "OBJ-PKR-KOTA-DENPASAR-0335": {
+      "id": "OBJ-PKR-KOTA-DENPASAR-0335",
+      "name": "PD. PARKIR KOTA DENPASAR",
+      "cityId": "kota-denpasar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.6736352,
+      "lng": 115.2400338,
+      "owner": "Pengelola Pd. Parkir Kota Denpasar",
+      "op": "Operator Parkir Komersial KOTA DENPASAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl. Raya Puputan Niti Mandala No.188, Sumerta Kelod, Kec. Denpasar Tim., Kota Denpasar, Bali 80239",
+      "coord": "-8.6736352, 115.2400338",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 30.000.000 / tahun",
+      "potValJt": 30,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KOTA DENPASAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KOTA-DENPASAR-0335",
+          "title": "Area Parkir Komersial (PD. Parkir Kota Denpasar)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-10-26",
+      "contractDaysLeft": -15,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628180878127",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6736352,115.2400338"
+    },
+    "OBJ-PKR-KOTA-DENPASAR-0336": {
+      "id": "OBJ-PKR-KOTA-DENPASAR-0336",
+      "name": "PARKIRAN BR. BALER GERIA",
+      "cityId": "kota-denpasar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.6633208,
+      "lng": 115.2083854,
+      "owner": "Pengelola Parkiran Br. Baler Geria",
+      "op": "Operator Parkir Komersial KOTA DENPASAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Audit Kepatuhan & Monitoring",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen tersedia",
+      "addr": "Jl. Mandalawangi No.79, Pemecutan Klod, Kec. Denpasar Bar., Kota Denpasar, Bali 80112",
+      "coord": "-8.6633208, 115.2083854",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 34.000.000 / tahun",
+      "potValJt": 34,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 4,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KOTA DENPASAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KOTA-DENPASAR-0336",
+          "title": "Area Parkir Komersial (Parkiran Br. Baler Geria)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-11-04",
+      "contractDaysLeft": -6,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Bpk. Putu Arya Kusuma",
+      "contactPhone": "628164157306",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6633208,115.2083854"
+    },
+    "OBJ-PKR-KOTA-DENPASAR-0337": {
+      "id": "OBJ-PKR-KOTA-DENPASAR-0337",
+      "name": "PARKIRAN PAK WAYAN",
+      "cityId": "kota-denpasar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.6768769,
+      "lng": 115.1891231,
+      "owner": "Pengelola Parkiran Pak Wayan",
+      "op": "Operator Parkir Komersial KOTA DENPASAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen tersedia",
+      "addr": "85FQ+6JX, Padangsambian, Kec. Denpasar Bar., Kota Denpasar, Bali 80119",
+      "coord": "-8.6768769, 115.1891231",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 68.000.000 / tahun",
+      "potValJt": 68,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KOTA DENPASAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KOTA-DENPASAR-0337",
+          "title": "Area Parkir Komersial (Parkiran pak wayan)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2027-06-27",
+      "contractDaysLeft": 229,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Made Dananjaya",
+      "contactPhone": "628174622314",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6768769,115.1891231"
+    },
+    "OBJ-PKR-KOTA-DENPASAR-0338": {
+      "id": "OBJ-PKR-KOTA-DENPASAR-0338",
+      "name": "PARKIR TIMUR LAPANGAN RENON",
+      "cityId": "kota-denpasar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.672068,
+      "lng": 115.2357536,
+      "owner": "Pengelola Parkir Timur Lapangan Renon",
+      "op": "Operator Parkir Komersial KOTA DENPASAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen tersedia",
+      "addr": "86HP+58C, Tim., Kota DenpasarDenpasar Sel.,, Jl. Juanda Karta Wijaya, Sumerta Kelod, Kec. Denpasar Tim., Kota Denpasar, Bali 80234",
+      "coord": "-8.6720680, 115.2357536",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 60.000.000 / tahun",
+      "potValJt": 60,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KOTA DENPASAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KOTA-DENPASAR-0338",
+          "title": "Area Parkir Komersial (Parkir Timur Lapangan Renon)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-12-29",
+      "contractDaysLeft": 49,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. I Wayan Sudarma",
+      "contactPhone": "628147247454",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.672068,115.2357536"
+    },
+    "OBJ-PKR-KOTA-DENPASAR-0339": {
+      "id": "OBJ-PKR-KOTA-DENPASAR-0339",
+      "name": "PARKIR WARGA UNUD",
+      "cityId": "kota-denpasar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.6716792,
+      "lng": 115.2177149,
+      "owner": "Pengelola Parkir Warga Unud",
+      "op": "Operator Parkir Komersial KOTA DENPASAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Belum Terdaftar",
+      "addr": "86H9+83G, Jl. P.B. Sudirman, Dauh Puri Klod, Kec. Denpasar Bar., Kota Denpasar, Bali 80234",
+      "coord": "-8.6716792, 115.2177149",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 31.000.000 / tahun",
+      "potValJt": 31,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KOTA DENPASAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KOTA-DENPASAR-0339",
+          "title": "Area Parkir Komersial (Parkir Warga Unud)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-10-09",
+      "contractDaysLeft": -32,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Ibu Ni Putu Indah",
+      "contactPhone": "628150323200",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6716792,115.2177149"
+    },
+    "OBJ-PKR-KOTA-DENPASAR-0340": {
+      "id": "OBJ-PKR-KOTA-DENPASAR-0340",
+      "name": "AKARI & AKENG",
+      "cityId": "kota-denpasar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.6328917,
+      "lng": 115.2323083,
+      "owner": "Pengelola Akari & Akeng",
+      "op": "Operator Parkir Komersial KOTA DENPASAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl. Noja Saraswati No.20-18, Tonja, Kec. Denpasar Utara, Kota Denpasar, Bali 80237",
+      "coord": "-8.6328917, 115.2323083",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 57.000.000 / tahun",
+      "potValJt": 57,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KOTA DENPASAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KOTA-DENPASAR-0340",
+          "title": "Area Parkir Komersial (AKARI & AKENG)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-12-27",
+      "contractDaysLeft": 47,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. Agus Hendrawan",
+      "contactPhone": "628139454169",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6328917,115.2323083"
+    },
+    "OBJ-PKR-BADUNG-0341": {
+      "id": "OBJ-PKR-BADUNG-0341",
+      "name": "SENTRA PARKIR KUTA",
+      "cityId": "badung",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.7127733,
+      "lng": 115.1803852,
+      "owner": "Pengelola Sentra Parkir Kuta",
+      "op": "Operator Parkir Komersial BADUNG",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen tersedia",
+      "addr": "Jl. Raya Kuta No.58e, Kuta, Kec. Kuta, Kabupaten Badung, Bali 80361",
+      "coord": "-8.7127733, 115.1803852",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 39.000.000 / tahun",
+      "potValJt": 39,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan BADUNG",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-BADUNG-0341",
+          "title": "Area Parkir Komersial (Sentra Parkir Kuta)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-12-23",
+      "contractDaysLeft": 43,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. I Wayan Sudarma",
+      "contactPhone": "628123335784",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7127733,115.1803852"
+    },
+    "OBJ-PKR-KOTA-DENPASAR-0342": {
+      "id": "OBJ-PKR-KOTA-DENPASAR-0342",
+      "name": "PARKIRAN PAK DODEK",
+      "cityId": "kota-denpasar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.631348,
+      "lng": 115.2138292,
+      "owner": "Pengelola Parkiran Pak Dodek",
+      "op": "Operator Parkir Komersial KOTA DENPASAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Belum Terdaftar",
+      "addr": "9697+FGP, Peguyangan, Kec. Denpasar Utara, Kota Denpasar, Bali 80233",
+      "coord": "-8.6313480, 115.2138292",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 65.000.000 / tahun",
+      "potValJt": 65,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KOTA DENPASAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KOTA-DENPASAR-0342",
+          "title": "Area Parkir Komersial (Parkiran Pak Dodek)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2027-09-21",
+      "contractDaysLeft": 315,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Agus Hendrawan",
+      "contactPhone": "628189887601",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.631348,115.2138292"
+    },
+    "OBJ-PKR-KOTA-DENPASAR-0343": {
+      "id": "OBJ-PKR-KOTA-DENPASAR-0343",
+      "name": "PARKIR LEVEL 21 MALL",
+      "cityId": "kota-denpasar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.6708749,
+      "lng": 115.2134703,
+      "owner": "Pengelola Parkir Level 21 Mall",
+      "op": "Operator Parkir Komersial KOTA DENPASAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Belum Terdaftar",
+      "addr": "86H7+M95, Dauh Puri Klod, Kec. Denpasar Bar., Kota Denpasar, Bali 80113",
+      "coord": "-8.6708749, 115.2134703",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 44.000.000 / tahun",
+      "potValJt": 44,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KOTA DENPASAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KOTA-DENPASAR-0343",
+          "title": "Area Parkir Komersial (Parkir Level 21 Mall)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2027-01-02",
+      "contractDaysLeft": 53,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. Agus Hendrawan",
+      "contactPhone": "628179331368",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6708749,115.2134703"
+    },
+    "OBJ-PKR-KOTA-DENPASAR-0344": {
+      "id": "OBJ-PKR-KOTA-DENPASAR-0344",
+      "name": "PARKIRAN PGRI 8",
+      "cityId": "kota-denpasar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.6322345,
+      "lng": 115.2004267,
+      "owner": "Pengelola Parkiran Pgri 8",
+      "op": "Operator Parkir Komersial KOTA DENPASAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl. Angsoka Cargo Permai No.12, Ubung, Kec. Denpasar Utara, Kota Denpasar, Bali 80111",
+      "coord": "-8.6322345, 115.2004267",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 51.000.000 / tahun",
+      "potValJt": 51,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KOTA DENPASAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KOTA-DENPASAR-0344",
+          "title": "Area Parkir Komersial (Parkiran PGRI 8)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-12-12",
+      "contractDaysLeft": 32,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. I Ketut Suardika",
+      "contactPhone": "628148716414",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6322345,115.2004267"
+    },
+    "OBJ-PKR-KOTA-DENPASAR-0345": {
+      "id": "OBJ-PKR-KOTA-DENPASAR-0345",
+      "name": "PARKIRAN TRUK MAHENDRADATTA",
+      "cityId": "kota-denpasar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.6730547,
+      "lng": 115.1905302,
+      "owner": "Pengelola Parkiran Truk Mahendradatta",
+      "op": "Operator Parkir Komersial KOTA DENPASAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl. Mahendradatta No.97, Padangsambian, Kec. Denpasar Bar., Kota Denpasar, Bali 80119",
+      "coord": "-8.6730547, 115.1905302",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 37.000.000 / tahun",
+      "potValJt": 37,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KOTA DENPASAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KOTA-DENPASAR-0345",
+          "title": "Area Parkir Komersial (Parkiran truk Mahendradatta)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2027-07-17",
+      "contractDaysLeft": 249,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Ibu Ni Putu Indah",
+      "contactPhone": "628168789777",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6730547,115.1905302"
+    },
+    "OBJ-PKR-KOTA-DENPASAR-0346": {
+      "id": "OBJ-PKR-KOTA-DENPASAR-0346",
+      "name": "PARKIRAN MOTOR",
+      "cityId": "kota-denpasar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.6323073,
+      "lng": 115.2008489,
+      "owner": "Pengelola Parkiran Motor",
+      "op": "Operator Parkir Komersial KOTA DENPASAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Belum Terdaftar",
+      "addr": "9692+38H Smp Pgri 8 Denpasar, Ubung, Kec. Denpasar Utara, Kota Denpasar, Bali 80111",
+      "coord": "-8.6323073, 115.2008489",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 68.000.000 / tahun",
+      "potValJt": 68,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KOTA DENPASAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KOTA-DENPASAR-0346",
+          "title": "Area Parkir Komersial (Parkiran Motor)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2027-07-09",
+      "contractDaysLeft": 241,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Made Dananjaya",
+      "contactPhone": "628175690271",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6323073,115.2008489"
+    },
+    "OBJ-PKR-KOTA-DENPASAR-0347": {
+      "id": "OBJ-PKR-KOTA-DENPASAR-0347",
+      "name": "PARKIRAN PSR",
+      "cityId": "kota-denpasar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.6561757,
+      "lng": 115.20292,
+      "owner": "Pengelola Parkiran Psr",
+      "op": "Operator Parkir Komersial KOTA DENPASAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Gg. V No.45, Pemecutan, Kec. Denpasar Bar., Kota Denpasar, Bali 80111",
+      "coord": "-8.6561757, 115.2029200",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 59.000.000 / tahun",
+      "potValJt": 59,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KOTA DENPASAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KOTA-DENPASAR-0347",
+          "title": "Area Parkir Komersial (PARKIRAN PSR)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-12-13",
+      "contractDaysLeft": 33,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. Putu Arya Kusuma",
+      "contactPhone": "628188842132",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6561757,115.20292"
+    },
+    "OBJ-PKR-KOTA-DENPASAR-0348": {
+      "id": "OBJ-PKR-KOTA-DENPASAR-0348",
+      "name": "PARKIRAN TRUK HAJI MATT ARI",
+      "cityId": "kota-denpasar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.6330683,
+      "lng": 115.1987587,
+      "owner": "Pengelola Parkiran Truk Haji Matt Ari",
+      "op": "Operator Parkir Komersial KOTA DENPASAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl. Angsoka Cargo Permai I No.1466, Ubung, Kec. Denpasar Utara, Kota Denpasar, Bali 80115, Ubung, Kec. Denpasar Utara, Kota Denpasar, Bali 80116",
+      "coord": "-8.6330683, 115.1987587",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 54.000.000 / tahun",
+      "potValJt": 54,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KOTA DENPASAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KOTA-DENPASAR-0348",
+          "title": "Area Parkir Komersial (Parkiran truk haji matt ari)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2027-01-02",
+      "contractDaysLeft": 53,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Ibu Kadek Widiastuti",
+      "contactPhone": "628152492898",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6330683,115.1987587"
+    },
+    "OBJ-PKR-KOTA-DENPASAR-0349": {
+      "id": "OBJ-PKR-KOTA-DENPASAR-0349",
+      "name": "BASEMENT ISI DENPASAR",
+      "cityId": "kota-denpasar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.6540261,
+      "lng": 115.23352,
+      "owner": "Pengelola Basement Isi Denpasar",
+      "op": "Operator Parkir Komersial KOTA DENPASAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Institut Seni Indonesia, Sumerta, Kec. Denpasar Tim., Kota Denpasar, Bali 80236",
+      "coord": "-8.6540261, 115.2335200",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 67.000.000 / tahun",
+      "potValJt": 67,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KOTA DENPASAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KOTA-DENPASAR-0349",
+          "title": "Area Parkir Komersial (Basement ISI Denpasar)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-12-25",
+      "contractDaysLeft": 45,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Ibu Dewi Sartika",
+      "contactPhone": "628147496637",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6540261,115.23352"
+    },
+    "OBJ-PKR-KOTA-DENPASAR-0350": {
+      "id": "OBJ-PKR-KOTA-DENPASAR-0350",
+      "name": "TEMPAT PARKIR RIAU MOTOR",
+      "cityId": "kota-denpasar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.6588034,
+      "lng": 115.2097633,
+      "owner": "Pengelola Tempat Parkir Riau Motor",
+      "op": "Operator Parkir Komersial KOTA DENPASAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Belum Terdaftar",
+      "addr": "86R5+FWC, Jl. Imam Bonjol, Pemecutan Klod, Kec. Denpasar Bar., Kota Denpasar, Bali 80112",
+      "coord": "-8.6588034, 115.2097633",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 56.000.000 / tahun",
+      "potValJt": 56,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KOTA DENPASAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KOTA-DENPASAR-0350",
+          "title": "Area Parkir Komersial (Tempat Parkir Riau Motor)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-11-16",
+      "contractDaysLeft": 6,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. I Wayan Sudarma",
+      "contactPhone": "628175809707",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6588034,115.2097633"
+    },
+    "OBJ-PKR-KOTA-DENPASAR-0351": {
+      "id": "OBJ-PKR-KOTA-DENPASAR-0351",
+      "name": "PARKIRAN P1 - GMS DENPASAR",
+      "cityId": "kota-denpasar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.6716584,
+      "lng": 115.1924234,
+      "owner": "Pengelola Parkiran P1 - Gms Denpasar",
+      "op": "Operator Parkir Komersial KOTA DENPASAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen tersedia",
+      "addr": "85HR+8XM, Jl. Pura Demak Barat, Tegal Harum, Kec. Denpasar Bar., Kota Denpasar, Bali 80119",
+      "coord": "-8.6716584, 115.1924234",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 54.000.000 / tahun",
+      "potValJt": 54,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KOTA DENPASAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KOTA-DENPASAR-0351",
+          "title": "Area Parkir Komersial (Parkiran P1 - GMS Denpasar)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2027-05-16",
+      "contractDaysLeft": 187,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Ibu Ni Putu Indah",
+      "contactPhone": "628149282663",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6716584,115.1924234"
+    },
+    "OBJ-PKR-KOTA-DENPASAR-0352": {
+      "id": "OBJ-PKR-KOTA-DENPASAR-0352",
+      "name": "PARKIRAN TRUK SRAGEN GENK",
+      "cityId": "kota-denpasar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.6725373,
+      "lng": 115.1942012,
+      "owner": "Pengelola Parkiran Truk Sragen Genk",
+      "op": "Operator Parkir Komersial KOTA DENPASAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Belum Terdaftar",
+      "addr": "85GV+XMP gg pelangi, Pure Demak, jl, Tegal Harum, Kec. Denpasar Bar., Kota Denpasar, Bali 80119",
+      "coord": "-8.6725373, 115.1942012",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 56.000.000 / tahun",
+      "potValJt": 56,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KOTA DENPASAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KOTA-DENPASAR-0352",
+          "title": "Area Parkir Komersial (Parkiran truk sragen Genk)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-11-11",
+      "contractDaysLeft": 1,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. I Ketut Suardika",
+      "contactPhone": "628135877696",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6725373,115.1942012"
+    },
+    "OBJ-PKR-KOTA-DENPASAR-0353": {
+      "id": "OBJ-PKR-KOTA-DENPASAR-0353",
+      "name": "PARKIRAN GURU",
+      "cityId": "kota-denpasar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.6841768,
+      "lng": 115.2150154,
+      "owner": "Pengelola Parkiran Guru",
+      "op": "Operator Parkir Komersial KOTA DENPASAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Belum Terdaftar",
+      "addr": "8687+9XF, Sesetan, Denpasar Selatan, Kota Denpasar, Bali 80114",
+      "coord": "-8.6841768, 115.2150154",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 48.000.000 / tahun",
+      "potValJt": 48,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KOTA DENPASAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KOTA-DENPASAR-0353",
+          "title": "Area Parkir Komersial (parkiran guru)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-10-17",
+      "contractDaysLeft": -24,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Bpk. Putu Arya Kusuma",
+      "contactPhone": "628139210805",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6841768,115.2150154"
+    },
+    "OBJ-PKR-KOTA-DENPASAR-0354": {
+      "id": "OBJ-PKR-KOTA-DENPASAR-0354",
+      "name": "GEDUNG PARKIR UNIVERSITAS UDAYANA SUDIRMAN",
+      "cityId": "kota-denpasar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.6731449,
+      "lng": 115.2193965,
+      "owner": "Pengelola Gedung Parkir Universitas Udayana Sudirman",
+      "op": "Operator Parkir Komersial KOTA DENPASAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen tersedia",
+      "addr": "Jl. Dr. Goris Gg. Teknik III No.10, Dangin Puri Klod, Kec. Denpasar Tim., Kota Denpasar, Bali 80234",
+      "coord": "-8.6731449, 115.2193965",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 47.000.000 / tahun",
+      "potValJt": 47,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KOTA DENPASAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KOTA-DENPASAR-0354",
+          "title": "Area Parkir Komersial (Gedung Parkir Universitas Udayana Sudirman)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-10-26",
+      "contractDaysLeft": -15,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Ibu Dewi Sartika",
+      "contactPhone": "628120171813",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6731449,115.2193965"
+    },
+    "OBJ-PKR-KOTA-DENPASAR-0355": {
+      "id": "OBJ-PKR-KOTA-DENPASAR-0355",
+      "name": "PARKIRAN TRUK DENPASR",
+      "cityId": "kota-denpasar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.6204442,
+      "lng": 115.1877342,
+      "owner": "Pengelola Parkiran Truk Denpasr",
+      "op": "Operator Parkir Komersial KOTA DENPASAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Belum Terdaftar",
+      "addr": "95HQ+R3R Pasar, Jl. Cargo Permai Jl. Anyar Sari, Ubung Kaja, Kec. Denpasar Utara, Kota Denpasar, Bali 80116",
+      "coord": "-8.6204442, 115.1877342",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 69.000.000 / tahun",
+      "potValJt": 69,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KOTA DENPASAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KOTA-DENPASAR-0355",
+          "title": "Area Parkir Komersial (Parkiran truk denpasr)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2027-08-17",
+      "contractDaysLeft": 280,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Ibu Ni Luh Gede Sukerti",
+      "contactPhone": "628180169984",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6204442,115.1877342"
+    },
+    "OBJ-PKR-KOTA-DENPASAR-0356": {
+      "id": "OBJ-PKR-KOTA-DENPASAR-0356",
+      "name": "PARKIRAN",
+      "cityId": "kota-denpasar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.621581,
+      "lng": 115.192085,
+      "owner": "Pengelola Parkiran",
+      "op": "Operator Parkir Komersial KOTA DENPASAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen tersedia",
+      "addr": "95HR+9V6, Ubung Kaja, Kec. Denpasar Utara, Kota Denpasar, Bali 80116",
+      "coord": "-8.6215810, 115.1920850",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 48.000.000 / tahun",
+      "potValJt": 48,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KOTA DENPASAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KOTA-DENPASAR-0356",
+          "title": "Area Parkir Komersial (parkiran)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-11-09",
+      "contractDaysLeft": -1,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Bpk. I Wayan Sudarma",
+      "contactPhone": "628151249622",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.621581,115.192085"
+    },
+    "OBJ-PKR-KOTA-DENPASAR-0357": {
+      "id": "OBJ-PKR-KOTA-DENPASAR-0357",
+      "name": "PARKIRAN BALI",
+      "cityId": "kota-denpasar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.6297374,
+      "lng": 115.195262,
+      "owner": "Pengelola Parkiran Bali",
+      "op": "Operator Parkir Komersial KOTA DENPASAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl. Pd. Indah No.9x, Ubung, Kec. Denpasar Utara, Kota Denpasar, Bali 80116",
+      "coord": "-8.6297374, 115.1952620",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 31.000.000 / tahun",
+      "potValJt": 31,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KOTA DENPASAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KOTA-DENPASAR-0357",
+          "title": "Area Parkir Komersial (Parkiran bali)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-11-19",
+      "contractDaysLeft": 9,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Ibu Ni Made Ayu",
+      "contactPhone": "628185641917",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6297374,115.195262"
+    },
+    "OBJ-PKR-KOTA-DENPASAR-0358": {
+      "id": "OBJ-PKR-KOTA-DENPASAR-0358",
+      "name": "PARKIRAN PURA SAKENAN",
+      "cityId": "kota-denpasar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.7270981,
+      "lng": 115.2305622,
+      "owner": "Pengelola Parkiran Pura Sakenan",
+      "op": "Operator Parkir Komersial KOTA DENPASAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen tersedia",
+      "addr": "Jl. Tukad Punggawa No.10, Serangan, Denpasar Selatan, Kota Denpasar, Bali 80229",
+      "coord": "-8.7270981, 115.2305622",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 74.000.000 / tahun",
+      "potValJt": 74,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KOTA DENPASAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KOTA-DENPASAR-0358",
+          "title": "Area Parkir Komersial (Parkiran Pura Sakenan)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-12-24",
+      "contractDaysLeft": 44,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. I Nyoman Artawan",
+      "contactPhone": "628172664137",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7270981,115.2305622"
+    },
+    "OBJ-PKR-KOTA-DENPASAR-0359": {
+      "id": "OBJ-PKR-KOTA-DENPASAR-0359",
+      "name": "PARKIR",
+      "cityId": "kota-denpasar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.7100316,
+      "lng": 115.207636,
+      "owner": "Pengelola Parkir",
+      "op": "Operator Parkir Komersial KOTA DENPASAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl. Mekar II No.53 blok E, Pemogan, Denpasar Selatan, Kota Denpasar, Bali 80221",
+      "coord": "-8.7100316, 115.2076360",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 55.000.000 / tahun",
+      "potValJt": 55,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KOTA DENPASAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KOTA-DENPASAR-0359",
+          "title": "Area Parkir Komersial (Parkir)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2027-02-28",
+      "contractDaysLeft": 110,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. Komang Triadi",
+      "contactPhone": "628176043978",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7100316,115.207636"
+    },
+    "OBJ-PKR-KOTA-DENPASAR-0360": {
+      "id": "OBJ-PKR-KOTA-DENPASAR-0360",
+      "name": "TEMPAT PARKIR PICKUP CARGO",
+      "cityId": "kota-denpasar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.6810613,
+      "lng": 115.1895636,
+      "owner": "Pengelola Tempat Parkir Pickup Cargo",
+      "op": "Operator Parkir Komersial KOTA DENPASAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Belum Terdaftar",
+      "addr": "859Q+HRG, Jl. Mahendradatta, Padangsambian, Kec. Denpasar Bar., Kota Denpasar, Bali 80119",
+      "coord": "-8.6810613, 115.1895636",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 50.000.000 / tahun",
+      "potValJt": 50,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KOTA DENPASAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KOTA-DENPASAR-0360",
+          "title": "Area Parkir Komersial (Tempat parkir pickup cargo)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-11-21",
+      "contractDaysLeft": 11,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. I Wayan Sudarma",
+      "contactPhone": "628141598394",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6810613,115.1895636"
+    },
+    "OBJ-PKR-KOTA-DENPASAR-0361": {
+      "id": "OBJ-PKR-KOTA-DENPASAR-0361",
+      "name": "PARKIRAN BELAKANG KANTOR GRAB",
+      "cityId": "kota-denpasar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.6386064,
+      "lng": 115.1999609,
+      "owner": "Pengelola Parkiran Belakang Kantor Grab",
+      "op": "Operator Parkir Komersial KOTA DENPASAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Audit Kepatuhan & Monitoring",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen tersedia",
+      "addr": "Jl. Bung Tomo IA No.29, Pemecutan Kaja, Kec. Denpasar Utara, Kota Denpasar, Bali 80111",
+      "coord": "-8.6386064, 115.1999609",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 42.000.000 / tahun",
+      "potValJt": 42,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 4,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KOTA DENPASAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KOTA-DENPASAR-0361",
+          "title": "Area Parkir Komersial (Parkiran belakang kantor grab)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-10-26",
+      "contractDaysLeft": -15,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Bpk. I Wayan Sudarma",
+      "contactPhone": "628189497867",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6386064,115.1999609"
+    },
+    "OBJ-PKR-KOTA-DENPASAR-0362": {
+      "id": "OBJ-PKR-KOTA-DENPASAR-0362",
+      "name": "PARKIR MOTOR",
+      "cityId": "kota-denpasar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.6550105,
+      "lng": 115.2085124,
+      "owner": "Pengelola Parkir Motor",
+      "op": "Operator Parkir Komersial KOTA DENPASAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Audit Kepatuhan & Monitoring",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen tersedia",
+      "addr": "Jl. Gunung Merapi No.32b, Pemecutan, Kec. Denpasar Bar., Kota Denpasar, Bali 80112",
+      "coord": "-8.6550105, 115.2085124",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 30.000.000 / tahun",
+      "potValJt": 30,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 4,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KOTA DENPASAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KOTA-DENPASAR-0362",
+          "title": "Area Parkir Komersial (Parkir motor)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-10-30",
+      "contractDaysLeft": -11,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Ibu Ni Made Ayu",
+      "contactPhone": "628133318025",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6550105,115.2085124"
+    },
+    "OBJ-PKR-KOTA-DENPASAR-0363": {
+      "id": "OBJ-PKR-KOTA-DENPASAR-0363",
+      "name": "PARKIRAN MAHENDRA",
+      "cityId": "kota-denpasar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.6732783,
+      "lng": 115.1913013,
+      "owner": "Pengelola Parkiran Mahendra",
+      "op": "Operator Parkir Komersial KOTA DENPASAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen tersedia",
+      "addr": "Jl. Labak V No.27, Tegal Harum, Kec. Denpasar Bar., Kota Denpasar, Bali 80119",
+      "coord": "-8.6732783, 115.1913013",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 68.000.000 / tahun",
+      "potValJt": 68,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KOTA DENPASAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KOTA-DENPASAR-0363",
+          "title": "Area Parkir Komersial (Parkiran Mahendra)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-12-24",
+      "contractDaysLeft": 44,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. Agus Hendrawan",
+      "contactPhone": "628160561934",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6732783,115.1913013"
+    },
+    "OBJ-PKR-KOTA-DENPASAR-0364": {
+      "id": "OBJ-PKR-KOTA-DENPASAR-0364",
+      "name": "KANTOR PENGELOLA PARKIR SENTRYPARK PARKIRAN IMIGRASI",
+      "cityId": "kota-denpasar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.6761084,
+      "lng": 115.2149047,
+      "owner": "Pengelola Kantor Pengelola Parkir Sentrypark Parkiran Imigrasi",
+      "op": "Operator Parkir Komersial KOTA DENPASAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl. Pulau Nias No.1A, Dauh Puri Klod, Kec. Denpasar Bar., Kota Denpasar, Bali 80114",
+      "coord": "-8.6761084, 115.2149047",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 65.000.000 / tahun",
+      "potValJt": 65,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KOTA DENPASAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KOTA-DENPASAR-0364",
+          "title": "Area Parkir Komersial (KANTOR PENGELOLA PARKIR SENTRYPARK PARKIRAN IMIGRASI)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2027-03-04",
+      "contractDaysLeft": 114,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. I Nyoman Artawan",
+      "contactPhone": "628174413115",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6761084,115.2149047"
+    },
+    "OBJ-PKR-KOTA-DENPASAR-0365": {
+      "id": "OBJ-PKR-KOTA-DENPASAR-0365",
+      "name": "PARKIRAN THE ORANGE HOMESTAY",
+      "cityId": "kota-denpasar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.6851834,
+      "lng": 115.2034141,
+      "owner": "Pengelola Parkiran The Orange Homestay",
+      "op": "Operator Parkir Komersial KOTA DENPASAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen tersedia",
+      "addr": "8673+W9F, Pedungan, Denpasar Selatan, Kota Denpasar, Bali 80114",
+      "coord": "-8.6851834, 115.2034141",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 48.000.000 / tahun",
+      "potValJt": 48,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KOTA DENPASAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KOTA-DENPASAR-0365",
+          "title": "Area Parkir Komersial (Parkiran The Orange Homestay)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2027-08-23",
+      "contractDaysLeft": 286,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. I Nyoman Artawan",
+      "contactPhone": "628151740620",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6851834,115.2034141"
+    },
+    "OBJ-PKR-KOTA-DENPASAR-0366": {
+      "id": "OBJ-PKR-KOTA-DENPASAR-0366",
+      "name": "SIM BALI PARKIRAN",
+      "cityId": "kota-denpasar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.6491593,
+      "lng": 115.1827455,
+      "owner": "Pengelola Sim Bali Parkiran",
+      "op": "Operator Parkir Komersial KOTA DENPASAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen tersedia",
+      "addr": "Padangsambian, Kec. Denpasar Bar., Kota Denpasar, Bali 80117",
+      "coord": "-8.6491593, 115.1827455",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 62.000.000 / tahun",
+      "potValJt": 62,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KOTA DENPASAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KOTA-DENPASAR-0366",
+          "title": "Area Parkir Komersial (SIM Bali Parkiran)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2027-10-17",
+      "contractDaysLeft": 341,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Ibu Dewi Sartika",
+      "contactPhone": "628140144325",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6491593,115.1827455"
+    },
+    "OBJ-PKR-KOTA-DENPASAR-0367": {
+      "id": "OBJ-PKR-KOTA-DENPASAR-0367",
+      "name": "PARKIRAN BELAKANG GEDUNG DINKES PROVINSI BALI",
+      "cityId": "kota-denpasar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.6523337,
+      "lng": 115.2225346,
+      "owner": "Pengelola Parkiran Belakang Gedung Dinkes Provinsi Bali",
+      "op": "Operator Parkir Komersial KOTA DENPASAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen tersedia",
+      "addr": "86XF+327, Jl. Melati, Dangin Puri Kangin, Kec. Denpasar Utara, Kota Denpasar, Bali 80234",
+      "coord": "-8.6523337, 115.2225346",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 60.000.000 / tahun",
+      "potValJt": 60,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KOTA DENPASAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KOTA-DENPASAR-0367",
+          "title": "Area Parkir Komersial (Parkiran belakang gedung Dinkes provinsi bali)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-10-20",
+      "contractDaysLeft": -21,
+      "contractStatus": "expired",
+      "contractBadge": "Kadaluarsa",
+      "contactPerson": "Bpk. I Wayan Sudarma",
+      "contactPhone": "628164090371",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6523337,115.2225346"
+    },
+    "OBJ-PKR-KOTA-DENPASAR-0368": {
+      "id": "OBJ-PKR-KOTA-DENPASAR-0368",
+      "name": "PARKIRAN MOBIL",
+      "cityId": "kota-denpasar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.6686719,
+      "lng": 115.1938715,
+      "owner": "Pengelola Parkiran Mobil",
+      "op": "Operator Parkir Komersial KOTA DENPASAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl. Gn. Lebah 4 No.18, Tegal Harum, Kec. Denpasar Bar., Kota Denpasar, Bali 80119",
+      "coord": "-8.6686719, 115.1938715",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 30.000.000 / tahun",
+      "potValJt": 30,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KOTA DENPASAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KOTA-DENPASAR-0368",
+          "title": "Area Parkir Komersial (parkiran mobil)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-11-21",
+      "contractDaysLeft": 11,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Ibu Ni Luh Gede Sukerti",
+      "contactPhone": "628146360550",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6686719,115.1938715"
+    },
+    "OBJ-PKR-KOTA-DENPASAR-0369": {
+      "id": "OBJ-PKR-KOTA-DENPASAR-0369",
+      "name": "TEMPAT PARKIR",
+      "cityId": "kota-denpasar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.6264057,
+      "lng": 115.1926116,
+      "owner": "Pengelola Tempat Parkir",
+      "op": "Operator Parkir Komersial KOTA DENPASAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen tersedia",
+      "addr": "Jl. Sari Dana. I No.20, Ubung Kaja, Kec. Denpasar Utara, Kota Denpasar, Bali 80116",
+      "coord": "-8.6264057, 115.1926116",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 39.000.000 / tahun",
+      "potValJt": 39,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KOTA DENPASAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KOTA-DENPASAR-0369",
+          "title": "Area Parkir Komersial (Tempat parkir)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-12-03",
+      "contractDaysLeft": 23,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. I Wayan Sudarma",
+      "contactPhone": "628134298451",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6264057,115.1926116"
+    },
+    "OBJ-PKR-KOTA-DENPASAR-0370": {
+      "id": "OBJ-PKR-KOTA-DENPASAR-0370",
+      "name": "PARKIR BELAKANG",
+      "cityId": "kota-denpasar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.676019,
+      "lng": 115.213249,
+      "owner": "Pengelola Parkir Belakang",
+      "op": "Operator Parkir Komersial KOTA DENPASAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Kandidat belum terdaftar",
+      "izinUsaha": "Dalam Penelaahan",
+      "izinRek": "Belum Terdaftar",
+      "addr": "denpasar ...........000000, Rumah Sakit Sanglah, Dauh Puri Klod, Kec. Denpasar Bar., Kota Denpasar, Bali 80114",
+      "coord": "-8.6760190, 115.2132490",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 37.000.000 / tahun",
+      "potValJt": 37,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 1,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KOTA DENPASAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KOTA-DENPASAR-0370",
+          "title": "Area Parkir Komersial (Parkir belakang)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2027-09-06",
+      "contractDaysLeft": 300,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. I Ketut Suardika",
+      "contactPhone": "628130869260",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.676019,115.213249"
+    },
+    "OBJ-PKR-KOTA-DENPASAR-0371": {
+      "id": "OBJ-PKR-KOTA-DENPASAR-0371",
+      "name": "PARKIRAN PANTAI SANUR",
+      "cityId": "kota-denpasar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.7038285,
+      "lng": 115.2640905,
+      "owner": "Pengelola Parkiran Pantai Sanur",
+      "op": "Operator Parkir Komersial KOTA DENPASAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Audit Kepatuhan & Monitoring",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen tersedia",
+      "addr": "Jl. Duyung No.160, Sanur, Denpasar Selatan, Kota Denpasar, Bali",
+      "coord": "-8.7038285, 115.2640905",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 60.000.000 / tahun",
+      "potValJt": 60,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 4,
+      "requested": true,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KOTA DENPASAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KOTA-DENPASAR-0371",
+          "title": "Area Parkir Komersial (Parkiran Pantai Sanur)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-12-22",
+      "contractDaysLeft": 42,
+      "contractStatus": "warning_60",
+      "contractBadge": "31-60 Hari",
+      "contactPerson": "Bpk. Made Dananjaya",
+      "contactPhone": "628151407027",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7038285,115.2640905"
+    },
+    "OBJ-PKR-KOTA-DENPASAR-0372": {
+      "id": "OBJ-PKR-KOTA-DENPASAR-0372",
+      "name": "PARKIR",
+      "cityId": "kota-denpasar",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.6544539,
+      "lng": 115.2024068,
+      "owner": "Pengelola Parkir",
+      "op": "Operator Parkir Komersial KOTA DENPASAR",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Perlu pencocokan register",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Belum Terdaftar",
+      "addr": "Jl. Mertajaya No.20, Pemecutan, Kec. Denpasar Bar., Kota Denpasar, Bali 80111",
+      "coord": "-8.6544539, 115.2024068",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 64.000.000 / tahun",
+      "potValJt": 64,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 2,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan KOTA DENPASAR",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-KOTA-DENPASAR-0372",
+          "title": "Area Parkir Komersial (Parkir)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2027-05-16",
+      "contractDaysLeft": 187,
+      "contractStatus": "active",
+      "contractBadge": "Aktif",
+      "contactPerson": "Bpk. I Nyoman Artawan",
+      "contactPhone": "628146050685",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.6544539,115.2024068"
+    },
+    "OBJ-PKR-BADUNG-0373": {
+      "id": "OBJ-PKR-BADUNG-0373",
+      "name": "PARKING LOT - BALANGAN BEACH",
+      "cityId": "badung",
+      "category": "pkr",
+      "catName": "Parkir Komersial",
+      "lat": -8.7915405,
+      "lng": 115.1252654,
+      "owner": "Pengelola Parking Lot - Balangan Beach",
+      "op": "Operator Parkir Komersial BADUNG",
+      "w": 30,
+      "h": 15,
+      "sisi": 1,
+      "jenis": "Pelataran Parkir Komersial / Khusus",
+      "periode": "12 Bulan (Periode 2026/2027)",
+      "regStatus": "Terdaftar - Menunggu Verifikasi",
+      "izinUsaha": "Terverifikasi",
+      "izinRek": "Dokumen tersedia",
+      "addr": "Jl. Pantai Balangan No.54, Jimbaran, Kec. Kuta Sel., Kabupaten Badung, Bali 80361",
+      "coord": "-8.7915405, 115.1252654",
+      "taxType": "PBJT Jasa Parkir",
+      "estimatedValue": "Rp 38.000.000 / tahun",
+      "potValJt": 38,
+      "formula": "Kapasitas Slot × Omzet Bulanan × Tarif PBJT 10%",
+      "stage": 3,
+      "requested": false,
+      "hist": [
+        [
+          "10 Nov 2026",
+          "Penyisiran titik parkir komersial kawasan BADUNG",
+          "Satgas Pendataan PBJT"
+        ],
+        [
+          "12 Okt 2026",
+          "Verifikasi lapangan lokasi & izin operasional",
+          "Dinas Perhubungan & Bapenda"
+        ]
+      ],
+      "related": [
+        {
+          "id": "OBJ-PKR-BADUNG-0373",
+          "title": "Area Parkir Komersial (Parking lot - Balangan Beach)",
+          "type": "PBJT Jasa Parkir",
+          "badge": "amber"
+        }
+      ],
+      "contractEnd": "2026-11-11",
+      "contractDaysLeft": 1,
+      "contractStatus": "expiring_soon",
+      "contractBadge": "Segera Habis (<30 Hari)",
+      "contactPerson": "Bpk. Putu Arya Kusuma",
+      "contactPhone": "628159355788",
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=-8.7915405,115.1252654"
     }
   }
 };
