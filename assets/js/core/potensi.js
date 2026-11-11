@@ -1090,7 +1090,7 @@
                                     cpMarker.on('click', () => {
                                         this.renderCheckpointDetail(cp, c);
                                     });
-                                    cpMarker.bindTooltip(`<b>Checkpoint ${num}</b>: ${label}<br>${isDone ? '✓ Sudah diperiksa' : '⏳ Belum diperiksa'}`, {
+                                    cpMarker.bindTooltip(`<b>Checkpoint ${num}</b>: ${label}<br>${isDone ? 'Sudah diperiksa' : 'Belum diperiksa'}`, {
                                         direction: 'top',
                                         offset: [0, -14]
                                     });
@@ -1340,7 +1340,7 @@
                         </div>
                         <div class="pot-kpi-card ${this.tableState.kpiFilter === 'unverified' ? 'active' : ''}" id="kpiCardUnverified" style="cursor: pointer; transition: all 0.2s; ${this.tableState.kpiFilter === 'unverified' ? 'border: 2px solid #d97706; background: #fffbeb;' : ''}" title="Klik untuk menyaring objek yang perlu verifikasi">
                             <span class="pot-kpi-val" style="color: #d97706;">${fmt(perluVerif)}</span>
-                            <span class="pot-kpi-lbl">${this.tableState.kpiFilter === 'unverified' ? '✓ Perlu Verifikasi' : 'Perlu Verifikasi'}</span>
+                            <span class="pot-kpi-lbl">Perlu Verifikasi</span>
                         </div>
                         <div class="pot-kpi-card wide">
                             <span class="pot-kpi-val" style="color: #0369a1;">${rp(potFinansial)}</span>
@@ -1667,13 +1667,13 @@
             const daysLeft = obj.contractDaysLeft !== undefined ? obj.contractDaysLeft : 999;
             let contractBadgeHtml = '';
             if (daysLeft < 0) {
-                contractBadgeHtml = `<span style="font-size:10px;font-weight:700;padding:2px 7px;background:#fee2e2;color:#b91c1c;border-radius:4px;">🔴 Kadaluarsa (${Math.abs(daysLeft)} hari lalu)</span>`;
+                contractBadgeHtml = `<span style="font-size:10px;font-weight:700;padding:2px 7px;background:#fee2e2;color:#b91c1c;border-radius:4px;">Kadaluarsa (${Math.abs(daysLeft)} hari lalu)</span>`;
             } else if (daysLeft <= 30) {
-                contractBadgeHtml = `<span style="font-size:10px;font-weight:700;padding:2px 7px;background:#fef3c7;color:#b45309;border-radius:4px;">⚠️ Sisa ${daysLeft} Hari</span>`;
+                contractBadgeHtml = `<span style="font-size:10px;font-weight:700;padding:2px 7px;background:#fef3c7;color:#b45309;border-radius:4px;">Sisa ${daysLeft} Hari</span>`;
             } else if (daysLeft <= 60) {
-                contractBadgeHtml = `<span style="font-size:10px;font-weight:600;padding:2px 7px;background:#e0f2fe;color:#0369a1;border-radius:4px;">📅 Sisa ${daysLeft} Hari</span>`;
+                contractBadgeHtml = `<span style="font-size:10px;font-weight:600;padding:2px 7px;background:#e0f2fe;color:#0369a1;border-radius:4px;">Sisa ${daysLeft} Hari</span>`;
             } else {
-                contractBadgeHtml = `<span style="font-size:10px;font-weight:600;padding:2px 7px;background:#d1fae5;color:#065f46;border-radius:4px;">🟢 Aktif (${daysLeft} Hari)</span>`;
+                contractBadgeHtml = `<span style="font-size:10px;font-weight:600;padding:2px 7px;background:#d1fae5;color:#065f46;border-radius:4px;">Aktif (${daysLeft} Hari)</span>`;
             }
 
             // WhatsApp link & message
@@ -1687,7 +1687,7 @@
             const ratingVal = (obj.gmapsRating || 4.7).toFixed(1);
             const totalReviews = obj.gmapsTotalReviews || 84;
             const starCount = Math.round(obj.gmapsRating || 4.7);
-            const starIcons = '★'.repeat(starCount) + '☆'.repeat(5 - starCount);
+            const starIcons = `${ratingVal} / 5.0`;
             const reviewsList = obj.gmapsReviews && obj.gmapsReviews.length > 0 ? obj.gmapsReviews : [
                 {
                     author: 'Rian Pratama',
@@ -1712,7 +1712,7 @@
                             <strong style="color: var(--text-hi); font-size: 11.5px;">${escapeHtml(r.author)}</strong>
                             <span style="font-size: 10px; color: var(--text-mid); margin-left: 4px;">• ${escapeHtml(r.badge || 'Pengunjung')}</span>
                         </div>
-                        <span style="color: #f59e0b; font-size: 11px; letter-spacing: 1px;">${'★'.repeat(r.rating || 5)}</span>
+                        <span style="color: #d97706; font-size: 11px; font-weight: 700; font-family: var(--font-mono);">${(r.rating || 5).toFixed(1)} / 5.0</span>
                     </div>
                     <div style="font-size: 10px; color: var(--text-low); margin-bottom: 4px;">${escapeHtml(r.time || 'Baru saja')}</div>
                     <p style="margin: 0; color: var(--text-mid); line-height: 1.45; font-size: 11px;">"${escapeHtml(r.text)}"</p>
@@ -1743,7 +1743,7 @@
                 <div style="margin: 10px 0 6px; padding: 12px; background: ${daysLeft <= 30 ? '#fffbeb' : '#f0fdf4'}; border: 1px solid ${daysLeft <= 30 ? '#fde68a' : '#bbf7d0'}; border-radius: 8px;">
                     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
                         <span style="font-size: 11px; font-weight: 700; color: ${daysLeft <= 30 ? '#92400e' : '#166534'}; text-transform: uppercase; letter-spacing: 0.5px;">
-                            ${daysLeft < 0 ? '🔴 Kontrak Jatuh Tempo' : daysLeft <= 30 ? '⚠️ Masa Kontrak Segera Habis' : '🟢 Masa Kontrak / Izin'}
+                            ${daysLeft < 0 ? 'Kontrak Jatuh Tempo' : daysLeft <= 30 ? 'Masa Kontrak Segera Habis' : 'Masa Kontrak / Izin'}
                         </span>
                         ${contractBadgeHtml}
                     </div>
@@ -1753,10 +1753,10 @@
                     <div style="display: flex;">
                         ${daysLeft <= 30 ? `
                         <a href="${waUrl}" target="_blank" rel="noopener noreferrer" style="flex: 1; display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 8px 12px; background: #25D366; color: #ffffff; border-radius: 6px; font-size: 12px; font-weight: 700; text-decoration: none; box-shadow: 0 1px 3px rgba(37,211,102,0.3);" title="Hubungi ${obj.contactPerson || 'Pengelola'} via WhatsApp">
-                            💬 Hubungi WA
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg> Hubungi WhatsApp
                         </a>` : `
                         <a href="${waUrl}" target="_blank" rel="noopener noreferrer" style="flex: 1; display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 8px 12px; background: #ffffff; color: #334155; border: 1px solid var(--line); border-radius: 6px; font-size: 12px; font-weight: 600; text-decoration: none;" title="Kirim Pesan WhatsApp">
-                            💬 Hubungi Pengelola
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg> Hubungi Pengelola
                         </a>`}
                     </div>
                 </div>
@@ -1788,7 +1788,7 @@
                             </svg>
                             <b style="font-size: 12px; color: var(--text-hi);">Ulasan &amp; Rating Google Maps</b>
                         </div>
-                        <span style="font-size: 10px; font-weight: 700; color: #166534; background: #dcfce7; padding: 2px 7px; border-radius: 4px;">✓ Terverifikasi Publik</span>
+                        <span style="font-size: 10px; font-weight: 700; color: #166534; background: #dcfce7; padding: 2px 7px; border-radius: 4px;">Terverifikasi Publik</span>
                     </div>
 
                     <!-- Rating Summary -->
@@ -1827,7 +1827,7 @@
                                 const isNow = idx === obj.stage;
                                 return `
                                 <div class="step-item ${isDone ? 'done' : isNow ? 'now' : ''}">
-                                    <span class="step-num">${idx + 1}${isDone ? ' ✓' : ''}</span>
+                                    <span class="step-num">${idx + 1}</span>
                                     <span class="step-lbl">${step}</span>
                                 </div>
                             `;
@@ -2043,7 +2043,7 @@
                 <h2 class="rp-name" style="font-size: 18px; margin-bottom: 6px;">${label}</h2>
 
                 <div class="potensi-spec-card" style="margin-top: 12px;">
-                    <div class="spec-row"><span>Status</span><b>${isDone ? '✓ Sudah Diperiksa' : '⏳ Belum Diperiksa'}</b></div>
+                    <div class="spec-row"><span>Status</span><b>${isDone ? 'Sudah Diperiksa' : 'Belum Diperiksa'}</b></div>
                     <div class="spec-row"><span>Koridor</span><b>${corridor.name}</b></div>
                     <div class="spec-row"><span>Catatan</span><b>${cp.note || 'Tidak ada catatan tambahan.'}</b></div>
                 </div>
@@ -2213,13 +2213,13 @@
             let contractLabel = '';
             if (this.tableState.contractFilter === 'expiring_soon') {
                 filtered = filtered.filter(o => (o.contractDaysLeft >= 0 && o.contractDaysLeft <= 30));
-                contractLabel = ' · ⚠️ Segera Habis (≤ 30 Hari)';
+                contractLabel = ' · Segera Habis (≤ 30 Hari)';
             } else if (this.tableState.contractFilter === 'warning_60') {
                 filtered = filtered.filter(o => (o.contractDaysLeft > 30 && o.contractDaysLeft <= 60));
-                contractLabel = ' · 📅 Sisa 31-60 Hari';
+                contractLabel = ' · Sisa 31-60 Hari';
             } else if (this.tableState.contractFilter === 'expired') {
                 filtered = filtered.filter(o => (o.contractDaysLeft < 0));
-                contractLabel = ' · 🔴 Kadaluarsa';
+                contractLabel = ' · Kadaluarsa';
             }
 
             // Filter Pencarian Teks Objek (Nama Objek, Alamat/Jalan, Pengelola/Pemilik, Jenis, ID)
@@ -2313,13 +2313,13 @@
                 // Status Kontrak Badge
                 let contractBadgeHtml = '';
                 if (daysLeft < 0) {
-                    contractBadgeHtml = `<span style="display:inline-block;font-size:10px;font-weight:700;padding:2px 7px;background:#fee2e2;color:#b91c1c;border-radius:4px;white-space:nowrap;">🔴 Kadaluarsa (${Math.abs(daysLeft)}h lalu)</span>`;
+                    contractBadgeHtml = `<span style="display:inline-block;font-size:10px;font-weight:700;padding:2px 7px;background:#fee2e2;color:#b91c1c;border-radius:4px;white-space:nowrap;">Kadaluarsa (${Math.abs(daysLeft)}h lalu)</span>`;
                 } else if (daysLeft <= 30) {
-                    contractBadgeHtml = `<span style="display:inline-block;font-size:10px;font-weight:700;padding:2px 7px;background:#fef3c7;color:#b45309;border-radius:4px;white-space:nowrap;">⚠️ Sisa ${daysLeft} Hari</span>`;
+                    contractBadgeHtml = `<span style="display:inline-block;font-size:10px;font-weight:700;padding:2px 7px;background:#fef3c7;color:#b45309;border-radius:4px;white-space:nowrap;">Sisa ${daysLeft} Hari</span>`;
                 } else if (daysLeft <= 60) {
-                    contractBadgeHtml = `<span style="display:inline-block;font-size:10px;font-weight:600;padding:2px 7px;background:#e0f2fe;color:#0369a1;border-radius:4px;white-space:nowrap;">📅 Sisa ${daysLeft} Hari</span>`;
+                    contractBadgeHtml = `<span style="display:inline-block;font-size:10px;font-weight:600;padding:2px 7px;background:#e0f2fe;color:#0369a1;border-radius:4px;white-space:nowrap;">Sisa ${daysLeft} Hari</span>`;
                 } else {
-                    contractBadgeHtml = `<span style="display:inline-block;font-size:10px;font-weight:600;padding:2px 7px;background:#d1fae5;color:#065f46;border-radius:4px;white-space:nowrap;">🟢 Aktif (${daysLeft} Hari)</span>`;
+                    contractBadgeHtml = `<span style="display:inline-block;font-size:10px;font-weight:600;padding:2px 7px;background:#d1fae5;color:#065f46;border-radius:4px;white-space:nowrap;">Aktif (${daysLeft} Hari)</span>`;
                 }
 
                 // WhatsApp Action (HANYA MUNCUL JIKA KONTRAK <= 30 HARI ATAU KADALUARSA)
@@ -2332,17 +2332,18 @@
 
                     contactActionHtml = `
                         <div style="display:inline-flex;align-items:center;gap:5px;justify-content:center;">
-                            <a href="${waUrl}" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:3px;padding:5px 8px;background:#25D366;color:#ffffff;border-radius:5px;font-size:11px;font-weight:700;text-decoration:none;box-shadow:0 1px 3px rgba(37,211,102,0.3);white-space:nowrap;" title="Hubungi ${item.contactPerson || 'Pengelola'} via WhatsApp">
-                                💬 Hubungi WA
+                            <a href="${waUrl}" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:4px;padding:5px 8px;background:#25D366;color:#ffffff;border-radius:5px;font-size:11px;font-weight:700;text-decoration:none;box-shadow:0 1px 3px rgba(37,211,102,0.3);white-space:nowrap;" title="Hubungi ${item.contactPerson || 'Pengelola'} via WhatsApp">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                                <span>WhatsApp</span>
                             </a>
-                            <button type="button" class="btn-detail-poi" data-obj-id="${item.id}" style="padding:5px 7px;background:var(--surface);border:1px solid var(--line);border-radius:5px;font-size:11px;cursor:pointer;color:var(--text-hi);" title="Lihat Detail Objek">👁️</button>
+                            <button type="button" class="btn-detail-poi" data-obj-id="${item.id}" style="padding:5px 7px;background:var(--surface);border:1px solid var(--line);border-radius:5px;font-size:11px;cursor:pointer;color:var(--text-hi);display:inline-flex;align-items:center;justify-content:center;" title="Lihat Detail Objek"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="10" r="3"/></svg></button>
                         </div>
                     `;
                 } else {
                     contactActionHtml = `
                         <div style="display:inline-flex;align-items:center;gap:5px;justify-content:center;">
                             <span style="font-size:10.5px;color:var(--text-low);font-weight:600;padding:3px 7px;background:var(--surface);border-radius:4px;border:1px solid var(--line-light);white-space:nowrap;">Kontrak Aktif</span>
-                            <button type="button" class="btn-detail-poi" data-obj-id="${item.id}" style="padding:5px 7px;background:var(--surface);border:1px solid var(--line);border-radius:5px;font-size:11px;cursor:pointer;color:var(--text-hi);" title="Lihat Detail Objek">👁️</button>
+                            <button type="button" class="btn-detail-poi" data-obj-id="${item.id}" style="padding:5px 7px;background:var(--surface);border:1px solid var(--line);border-radius:5px;font-size:11px;cursor:pointer;color:var(--text-hi);display:inline-flex;align-items:center;justify-content:center;" title="Lihat Detail Objek"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="10" r="3"/></svg></button>
                         </div>
                     `;
                 }
@@ -2360,8 +2361,8 @@
                         <td style="text-align:center;font-family:var(--font-mono);color:var(--text-low);font-weight:600;">${no}</td>
                         <td>
                             <div style="font-weight:700;color:var(--text-hi);font-size:12px;line-height:1.35;margin-bottom:3px;">${escapeHtml(item.name)}</div>
-                            <div style="font-size:11px;color:var(--text-mid);line-height:1.35;display:flex;align-items:flex-start;gap:3px;">
-                                <span style="flex-shrink:0;">📍</span>
+                            <div style="font-size:11px;color:var(--text-mid);line-height:1.35;display:flex;align-items:flex-start;gap:4px;">
+                                <span style="flex-shrink:0;color:var(--teal);display:inline-flex;align-items:center;margin-top:1px;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
                                 <span>${escapeHtml(item.addr || '-')} <a href="${gmapsLink}" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:2px;color:var(--merah);font-size:10px;font-weight:700;text-decoration:none;margin-left:3px;padding:0px 4px;background:var(--merah-bg);border-radius:3px;border:1px solid rgba(197,34,31,0.2);white-space:nowrap;" title="Buka Titik Koordinat di Google Maps">Peta ↗</a></span>
                             </div>
                             <div style="font-size:10.5px;color:var(--text-low);margin-top:2px;">Pengelola: <b style="color:var(--text-mid);">${escapeHtml(item.contactPerson || item.owner || '-')}</b></div>

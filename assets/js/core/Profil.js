@@ -536,7 +536,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     map.flyToBounds(mainRegionLayer.getBounds(), { padding: [30, 30], duration: 0.6 });
                 }
             }
-            showMapMessage(`🌊 Batas Maritim / Perairan: ${targetText}`);
+            showMapMessage(`Batas Maritim / Perairan: ${targetText}`);
             return;
         }
 
@@ -1504,12 +1504,12 @@ function renderPenduduk(r) {
             </div>
             <div class="sex-cards" style="margin-bottom:12px">
                 <div class="sex-card">
-                    <div class="sc-icon" style="color:#2E9BD6">♂ Laki-laki</div>
+                    <div class="sc-icon" style="color:#2E9BD6;font-weight:700">Laki-laki</div>
                     <div class="sc-num">${fmt(laki)}</div>
                     <div class="sc-lbl">jiwa (${pl.toFixed(1)}%)</div>
                 </div>
                 <div class="sex-card">
-                    <div class="sc-icon" style="color:#C4568A">♀ Perempuan</div>
+                    <div class="sc-icon" style="color:#C4568A;font-weight:700">Perempuan</div>
                     <div class="sc-num">${fmt(wanita)}</div>
                     <div class="sc-lbl">jiwa (${pw.toFixed(1)}%)</div>
                 </div>
@@ -1814,20 +1814,20 @@ function renderKonsumsi(r) {
 
     // 2. 14 Group Cards
     const standardCategories = [
-        { label: 'Padi-Padian', icon: '🌾', color: '#0FB5A0' },
-        { label: 'Umbi-Umbian', icon: '🥔', color: '#D9962B' },
-        { label: 'Ikan-Ikanan', icon: '🐟', color: '#2E9BD6' },
-        { label: 'Daging', icon: '🥩', color: '#E8604C' },
-        { label: 'Telur & Susu', icon: '🥚', color: '#F59E0B' },
-        { label: 'Sayur-Sayuran', icon: '🥬', color: '#10B981' },
-        { label: 'Kacang-Kacangan', icon: '🥜', color: '#B45309' },
-        { label: 'Buah-Buahan', icon: '🍎', color: '#EC4899' },
-        { label: 'Minyak & Kelapa', icon: '🥥', color: '#6366F1' },
-        { label: 'Bahan Minuman', icon: '☕', color: '#8B5CF6' },
-        { label: 'Bumbu-Bumbuan', icon: '🌶️', color: '#DC2626' },
-        { label: 'Bahan Makanan', icon: '🍜', color: '#14B8A6' },
-        { label: 'Makanan Jadi', icon: '🍲', color: '#F97316' },
-        { label: 'Rokok & Tembakau', icon: '🚬', color: '#64748B' }
+        { label: 'Padi-Padian', color: '#0FB5A0' },
+        { label: 'Umbi-Umbian', color: '#D9962B' },
+        { label: 'Ikan-Ikanan', color: '#2E9BD6' },
+        { label: 'Daging', color: '#E8604C' },
+        { label: 'Telur & Susu', color: '#F59E0B' },
+        { label: 'Sayur-Sayuran', color: '#10B981' },
+        { label: 'Kacang-Kacangan', color: '#B45309' },
+        { label: 'Buah-Buahan', color: '#EC4899' },
+        { label: 'Minyak & Kelapa', color: '#6366F1' },
+        { label: 'Bahan Minuman', color: '#8B5CF6' },
+        { label: 'Bumbu-Bumbuan', color: '#DC2626' },
+        { label: 'Bahan Makanan', color: '#14B8A6' },
+        { label: 'Makanan Jadi', color: '#F97316' },
+        { label: 'Rokok & Tembakau', color: '#64748B' }
     ];
 
     function renderCards(filterQuery = '') {
@@ -1842,7 +1842,7 @@ function renderKonsumsi(r) {
                 return `
                     <div class="grp-card">
                         <div class="gc-header">
-                            <div class="gc-name">${cat.icon} ${cat.label}</div>
+                            <div class="gc-name"><span class="gc-color-dot" style="display:inline-block;width:8px;height:8px;border-radius:2px;background:${cat.color};margin-right:7px;vertical-align:middle"></span>${cat.label}</div>
                         </div>
                         <div class="gc-count" style="color:var(--muted-2)">–</div>
                         <div style="font-size:11px;color:var(--muted)">Belum terdata</div>
@@ -1896,7 +1896,7 @@ function renderKonsumsi(r) {
                     return `
                         <div class="${blockClass}">
                             <div class="gc-sub-title">
-                                <span>${sg.icon || ''} ${sg.label}</span>
+                                <span>${sg.label}</span>
                                 ${sgVolLabel ? `<span class="gc-sub-vol" style="color:${cat.color}">${sgVolLabel}</span>` : ''}
                             </div>
                             <div class="gc-sub-list" style="border-top:none;padding-top:0;margin-top:2px">${itemsHtml || '<div style="font-size:10px;color:var(--muted)">Tidak ada item cocok</div>'}</div>
@@ -1907,7 +1907,7 @@ function renderKonsumsi(r) {
                 return `
                     <div class="grp-card">
                         <div class="gc-header">
-                            <div class="gc-name">${cat.icon} ${cat.label}</div>
+                            <div class="gc-name"><span class="gc-color-dot" style="display:inline-block;width:8px;height:8px;border-radius:2px;background:${cat.color};margin-right:7px;vertical-align:middle"></span>${cat.label}</div>
                             <span style="font-size:10px;font-family:var(--mono);color:var(--muted);background:var(--surface);padding:2px 6px;border-radius:4px">
                                 ${q ? 'Cocok' : `${grpData.all_items_count} item`}
                             </span>
@@ -1946,7 +1946,7 @@ function renderKonsumsi(r) {
             return `
                 <div class="grp-card">
                     <div class="gc-header">
-                        <div class="gc-name">${cat.icon} ${cat.label}</div>
+                        <div class="gc-name"><span class="gc-color-dot" style="display:inline-block;width:8px;height:8px;border-radius:2px;background:${cat.color};margin-right:7px;vertical-align:middle"></span>${cat.label}</div>
                         <span style="font-size:10px;font-family:var(--mono);color:var(--muted);background:var(--surface);padding:2px 6px;border-radius:4px">
                             ${q ? `${displayItems.length} cocok` : `${grpData.all_items_count} item`}
                         </span>
@@ -2012,7 +2012,7 @@ function renderPertanian(r) {
         }
         gridEl.innerHTML = `
             <div style="grid-column: 1 / -1; padding: 36px 20px; text-align: center; background: var(--panel-2); border: 1px dashed var(--line); border-radius: 8px; color: var(--muted);">
-                <div style="font-size: 28px; margin-bottom: 8px;">🚜</div>
+                <div style="display:flex;justify-content:center;margin-bottom:8px;color:var(--muted)"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 0 1 10 10c0 5.52-4.48 10-10 10S2 17.52 2 12A10 10 0 0 1 12 2z"/><path d="M12 6v12"/><path d="M8 10l4-4 4 4"/></svg></div>
                 <div style="font-size: 14px; font-weight: 700; color: var(--text); margin-bottom: 5px;">Tidak Tercatat Aktivitas Produksi Pertanian Signifikan</div>
                 <div style="font-size: 12px; max-width: 540px; margin: 0 auto; line-height: 1.6;">
                     Wilayah <b>${r.kabkota}</b> tidak memiliki catatan produksi komoditas tanaman pangan, hortikultura, perkebunan, maupun peternakan dalam publikasi resmi BPS / Kementerian Pertanian RI (umumnya kawasan perkotaan / non-agraris).
@@ -2108,7 +2108,7 @@ function renderPertanian(r) {
         const cardTp = `
             <div class="grp-card" style="border-top:3px solid #0FB5A0">
                 <div class="gc-header">
-                    <div class="gc-name">🌾 Tanaman Pangan</div>
+                    <div class="gc-name">Tanaman Pangan</div>
                     <span style="font-size:10px;font-family:var(--mono);color:var(--muted);background:var(--surface);padding:2px 6px;border-radius:4px">
                         ${q ? `${filteredTp.length} cocok` : `${tpItems.length} komoditas`}
                     </span>
@@ -2140,7 +2140,7 @@ function renderPertanian(r) {
         const cardKebun = `
             <div class="grp-card" style="border-top:3px solid #D9962B">
                 <div class="gc-header">
-                    <div class="gc-name">🌴 Perkebunan</div>
+                    <div class="gc-name">Perkebunan</div>
                     <span style="font-size:10px;font-family:var(--mono);color:var(--muted);background:var(--surface);padding:2px 6px;border-radius:4px">
                         ${q ? `${filteredKebun.length} cocok` : `${kebunItems.length} komoditas`}
                     </span>
@@ -2172,7 +2172,7 @@ function renderPertanian(r) {
         const cardHorti = `
             <div class="grp-card" style="border-top:3px solid #2FA65E">
                 <div class="gc-header">
-                    <div class="gc-name">🥬 Hortikultura</div>
+                    <div class="gc-name">Hortikultura</div>
                     <span style="font-size:10px;font-family:var(--mono);color:var(--muted);background:var(--surface);padding:2px 6px;border-radius:4px">
                         ${q ? `${filteredHorti.length} cocok` : `${hortiItems.length} komoditas`}
                     </span>
@@ -2204,7 +2204,7 @@ function renderPertanian(r) {
         const cardTernak = `
             <div class="grp-card" style="border-top:3px solid #E8604C">
                 <div class="gc-header">
-                    <div class="gc-name">🐄 Peternakan</div>
+                    <div class="gc-name">Peternakan</div>
                     <span style="font-size:10px;font-family:var(--mono);color:var(--muted);background:var(--surface);padding:2px 6px;border-radius:4px">
                         ${q ? `${matchedTernakTotal} cocok` : `${totalTernakCount} item`}
                     </span>
@@ -2991,7 +2991,7 @@ function renderUhhBenchmark(r) {
 
     // 4. Target Region (Daerah Aktif)
     benchmarkItems.push({
-        name: `${r.kabkota} ★`,
+        name: `${r.kabkota} (Pilihan)`,
         val: uhhDaerah,
         color: '#0FB5A0',
         isTarget: true
@@ -3055,7 +3055,7 @@ function renderUhhBenchmark(r) {
                 fontSize: 11,
                 fontFamily: 'var(--sans)',
                 fontWeight: 600,
-                color: (value) => value.includes('★') ? '#0D9488' : '#475569',
+                color: (value) => value.includes('(Pilihan)') ? '#0D9488' : '#475569',
                 formatter: val => val.length > 16 ? val.slice(0, 14) + '…' : val
             }
         },
@@ -3110,7 +3110,7 @@ function renderLollipopGap(r) {
 
     // Target Region
     list.push({
-        name: `${r.kabkota} ★`,
+        name: `${r.kabkota} (Pilihan)`,
         rls: gapInfo.rls,
         hls: gapInfo.hls,
         gap: gapDaerah,
@@ -3207,7 +3207,7 @@ function renderLollipopGap(r) {
                 fontSize: 11,
                 fontFamily: 'var(--sans)',
                 fontWeight: 600,
-                color: (value) => value.includes('★') ? '#0D9488' : '#475569',
+                color: (value) => value.includes('(Pilihan)') ? '#0D9488' : '#475569',
                 formatter: val => val.length > 16 ? val.slice(0, 14) + '…' : val
             }
         },
@@ -3498,10 +3498,10 @@ function renderBandara(r) {
         if (bdBadge) {
             if (isLocal) {
                 bdBadge.className = 'status-pill bandara-badge-local';
-                bdBadge.textContent = '✓ Bandara Wilayah Ini';
+                bdBadge.textContent = 'Bandara Wilayah Ini';
             } else {
                 bdBadge.className = 'status-pill bandara-badge-nearest';
-                bdBadge.textContent = `✈ Bandara Regional (~${distKm} km)`;
+                bdBadge.textContent = `Bandara Regional (~${distKm} km)`;
             }
         }
 
@@ -3609,8 +3609,8 @@ function renderBandara(r) {
                 const markerShadow = isItemLocal ? '0 3px 10px rgba(13,148,136,0.5)' : '0 3px 8px rgba(0,0,0,0.28)';
 
                 const iconHtml = `
-                    <div style="background:${markerColor};width:${markerSize}px;height:${markerSize}px;border-radius:50%;border:${markerBorder};box-shadow:${markerShadow};display:grid;place-items:center;color:#ffffff;font-size:12px;cursor:pointer;transition:transform .14s ease" title="${escapeHtml(item.nama_bandar_udara)}${isItemLocal ? ' (Bandara Wilayah Ini)' : ''}">
-                        ✈
+                    <div style="background:${markerColor};width:${markerSize}px;height:${markerSize}px;border-radius:50%;border:${markerBorder};box-shadow:${markerShadow};display:grid;place-items:center;color:#ffffff;cursor:pointer;transition:transform .14s ease" title="${escapeHtml(item.nama_bandar_udara)}${isItemLocal ? ' (Bandara Wilayah Ini)' : ''}">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.3c.4-.2.6-.6.5-1.1z"/></svg>
                     </div>
                 `;
                 const customIcon = L.divIcon({
@@ -5235,7 +5235,7 @@ function renderInvestasiKuadran(r) {
                     <circle class="main-bubble-circle" cx="${tb.cx}" cy="${tb.cy}" r="${tb.bubbleRadius}" fill="${tb.color}" fill-opacity="1.0" stroke="#ffffff" stroke-width="3.2" filter="url(#${pal.filterId})" style="cursor:pointer;"/>
                     <rect x="${targetBadgePos.x}" y="${targetBadgePos.y}" width="${badgeW}" height="22" rx="6" fill="${pal.badgeBg}" stroke="${pal.badgeBorder}" stroke-width="1.4" opacity="0.98" filter="drop-shadow(0 2.5px 5px ${pal.badgeShadow})" style="pointer-events:none;"/>
                     <text x="${targetBadgePos.x + badgeW/2}" y="${targetBadgePos.y + 14.5}" text-anchor="middle" font-family="var(--sans)" font-size="11" font-weight="800" fill="#ffffff" style="pointer-events:none;">
-                        ${escapeHtml(tb.cleanShort)} ★
+                        ${escapeHtml(tb.cleanShort)}
                     </text>
                 </g>
             `;
@@ -6670,7 +6670,7 @@ function renderKemiskinanKuadran(r) {
                     <circle class="main-dot-circle" cx="${tb.cx}" cy="${tb.cy}" r="${tb.dotR}" fill="${tb.itemColor}" fill-opacity="1.0" stroke="#ffffff" stroke-width="3.2" filter="url(#${pal.filterId})" style="cursor:pointer;"/>
                     <rect x="${kmBadgePos.x}" y="${kmBadgePos.y}" width="${kmBadgeW}" height="22" rx="6" fill="${pal.badgeBg}" stroke="${pal.badgeBorder}" stroke-width="1.4" opacity="0.98" filter="drop-shadow(0 2.5px 5px ${pal.badgeShadow})" style="pointer-events:none;"/>
                     <text x="${kmBadgePos.x + kmBadgeW/2}" y="${kmBadgePos.y + 14.5}" text-anchor="middle" font-family="var(--font)" font-size="11" font-weight="800" fill="#ffffff" style="pointer-events:none;">
-                        ${escapeHtml(tb.cleanShort)} ★
+                        ${escapeHtml(tb.cleanShort)}
                     </text>
                 </g>
             `;
@@ -7208,16 +7208,17 @@ function renderIndustriBesarSedang(r) {
 
         // Icons for categories
         const iconMap = {
-            'logam_mesin': '⚙️',
-            'makanan_minuman': '🍽️',
-            'tekstil_kulit': '👕',
-            'kayu_kertas': '📦',
-            'kimia_farmasi': '🧪'
+            'logam_mesin': '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>',
+            'makanan_minuman': '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>',
+            'tekstil_kulit': '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.38 3.46L16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg>',
+            'kayu_kertas': '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>',
+            'kimia_farmasi': '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v7.31L4.89 20a1 1 0 0 0 .89 1.45h12.44a1 1 0 0 0 .89-1.45L14 9.31V2"/></svg>'
         };
+        const defaultIcon = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"/><path d="M4 20V10l4 4V10l4 4V4h8v16"/></svg>';
 
         barsContainer.innerHTML = groups.map((g, idx) => {
             const pct = Math.max(8, Math.round((g.nilai_tambah_triliun / axisMax) * 100));
-            const icon = iconMap[g.id] || '🏭';
+            const icon = iconMap[g.id] || defaultIcon;
 
             return `
                 <div class="ind-bar-item ${idx === 0 ? 'active' : ''}" data-id="${g.id}">

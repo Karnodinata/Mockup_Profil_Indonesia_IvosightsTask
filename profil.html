@@ -60,7 +60,18 @@
     padding-bottom: 56px;
   }
   .leaflet-container img{max-width:none !important;max-height:none !important}
-  .wrap{max-width:1280px;margin:0 auto;padding:0 24px}
+  .wrap{
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0 24px;
+    box-sizing: border-box;
+  }
+  @media (max-width: 640px){
+    .wrap{
+      padding: 0 14px;
+    }
+  }
 
   /* topnav back button & region picker */
   .topnav{display:flex;align-items:center;justify-content:space-between;padding:18px 0 10px;gap:14px;flex-wrap:wrap}
@@ -625,33 +636,15 @@
 
   <!-- 9-Tab Navbar -->
   <nav class="tabbar" id="tabbar" role="tablist" aria-label="Bagian profil">
-    <button class="tab" id="tab-btn-investasi" role="tab" aria-selected="true" aria-controls="tab-investasi">
-      <span class="tab-i">★</span> Deck Investasi
-    </button>
-    <button class="tab" id="tab-btn-wilayah" role="tab" aria-selected="false" aria-controls="tab-wilayah">
-      <span class="tab-i">◔</span> Profil Wilayah
-    </button>
-    <button class="tab" id="tab-btn-pemerintahan" role="tab" aria-selected="false" aria-controls="tab-pemerintahan">
-      <span class="tab-i">▣</span> Profil Pemerintahan
-    </button>
-    <button class="tab" id="tab-btn-penduduk" role="tab" aria-selected="false" aria-controls="tab-penduduk">
-      <span class="tab-i">◉</span> Penduduk &amp; SDM
-    </button>
-    <button class="tab" id="tab-btn-ekonomi" role="tab" aria-selected="false" aria-controls="tab-ekonomi">
-      <span class="tab-i">◆</span> Ekonomi
-    </button>
-    <button class="tab" id="tab-btn-konsumsi" role="tab" aria-selected="false" aria-controls="tab-konsumsi">
-      <span class="tab-i">▤</span> Konsumsi
-    </button>
-    <button class="tab" id="tab-btn-pertanian" role="tab" aria-selected="false" aria-controls="tab-pertanian">
-      <span class="tab-i">❦</span> Data Pertanian
-    </button>
-    <button class="tab" id="tab-btn-sosial" role="tab" aria-selected="false" aria-controls="tab-sosial">
-      <span class="tab-i">♥</span> Sosial
-    </button>
-    <button class="tab" id="tab-btn-podes" role="tab" aria-selected="false" aria-controls="tab-podes">
-      <span class="tab-i">▦</span> Data PODES
-    </button>
+    <button class="tab" id="tab-btn-investasi" role="tab" aria-selected="true" aria-controls="tab-investasi">Deck Investasi</button>
+    <button class="tab" id="tab-btn-wilayah" role="tab" aria-selected="false" aria-controls="tab-wilayah">Profil Wilayah</button>
+    <button class="tab" id="tab-btn-pemerintahan" role="tab" aria-selected="false" aria-controls="tab-pemerintahan">Profil Pemerintahan</button>
+    <button class="tab" id="tab-btn-penduduk" role="tab" aria-selected="false" aria-controls="tab-penduduk">Penduduk &amp; SDM</button>
+    <button class="tab" id="tab-btn-ekonomi" role="tab" aria-selected="false" aria-controls="tab-ekonomi">Ekonomi</button>
+    <button class="tab" id="tab-btn-konsumsi" role="tab" aria-selected="false" aria-controls="tab-konsumsi">Konsumsi</button>
+    <button class="tab" id="tab-btn-pertanian" role="tab" aria-selected="false" aria-controls="tab-pertanian">Data Pertanian</button>
+    <button class="tab" id="tab-btn-sosial" role="tab" aria-selected="false" aria-controls="tab-sosial">Sosial</button>
+    <button class="tab" id="tab-btn-podes" role="tab" aria-selected="false" aria-controls="tab-podes">Data PODES</button>
   </nav>
 
   <!-- 1. TAB DECK INVESTASI -->
@@ -695,11 +688,11 @@
           <div class="bkpm-chart-card">
             <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;flex-wrap:wrap;gap:8px">
               <div style="display:flex;align-items:center;gap:8px">
-                <span style="font-size:16px;color:#2563eb">📊</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--teal)"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
                 <h3 style="font-size:13.5px;font-weight:700;margin:0;color:var(--text)" id="bkpmChartTitle">Realisasi Investasi Berdasarkan Sektor Usaha</h3>
               </div>
               <div class="bkpm-scale-pill" title="Skala sumbu Y dinamis menyesuaikan nilai puncak">
-                <span>📊 Skala: dalam Rupiah (<span id="bkpmScaleUnit">M = Miliar</span>)</span>
+                <span>Skala: Rupiah (<span id="bkpmScaleUnit">M = Miliar</span>)</span>
                 <span style="cursor:help;color:var(--muted)">ⓘ</span>
               </div>
             </div>
@@ -719,7 +712,7 @@
           <!-- Card Tabel Ilustrasi -->
           <div class="bkpm-table-card">
             <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px">
-              <span style="font-size:16px;color:#2563eb">📑</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--teal)"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
               <h3 style="font-size:13.5px;font-weight:700;margin:0;color:var(--text)" id="bkpmTableTitle">Data Realisasi Investasi – Kabupaten/Kota</h3>
             </div>
             <div class="bkpm-table-scroll-wrap">
@@ -746,7 +739,7 @@
           <!-- Card 1: Ringkasan -->
           <div class="bkpm-summary-card">
             <div class="bkpm-card-head">
-              <div class="bkpm-card-icon" style="background:#fef3c7;color:#d97706">🏆</div>
+              <div class="bkpm-card-icon" style="background:#fef3c7;color:#d97706"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></div>
               <h3 class="bkpm-card-h3">Ringkasan</h3>
             </div>
             <div class="bkpm-kv-list">
@@ -768,7 +761,7 @@
           <!-- Card 2: Filter Aktif -->
           <div class="bkpm-summary-card">
             <div class="bkpm-card-head">
-              <div class="bkpm-card-icon" style="background:#e0f2fe;color:#0284c7">🌪️</div>
+              <div class="bkpm-card-icon" style="background:#e0f2fe;color:#0284c7"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg></div>
               <h3 class="bkpm-card-h3">Filter Aktif</h3>
             </div>
             <div class="bkpm-kv-list">
@@ -790,7 +783,7 @@
           <!-- Card 3: Detail Sektor -->
           <div class="bkpm-summary-card" id="bkpmDetailSektorCard">
             <div class="bkpm-card-head">
-              <div class="bkpm-card-icon" style="background:#e0e7ff;color:#4f46e5">📋</div>
+              <div class="bkpm-card-icon" style="background:#e0e7ff;color:#4f46e5"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg></div>
               <h3 class="bkpm-card-h3">Detail Sektor</h3>
             </div>
             <div class="bkpm-kv-list">
@@ -931,7 +924,7 @@
       <!-- Data Tabel Bawah -->
       <div class="bkpm-table-card">
         <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px">
-          <span style="font-size:16px;color:#2563eb">📑</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--teal)"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
           <h3 style="font-size:13.5px;font-weight:700;margin:0;color:var(--text)" id="bkpmQuadTableTitle">Data Realisasi – Provinsi</h3>
         </div>
         <div class="bkpm-table-scroll-wrap" style="max-height:300px">
@@ -1011,7 +1004,7 @@
           <!-- Card 1: Ringkasan -->
           <div class="bkpm-summary-card">
             <div class="bkpm-card-head">
-              <div class="bkpm-card-icon" style="background:#e0f2fe;color:#0284c7">📊</div>
+              <div class="bkpm-card-icon" style="background:#e0f2fe;color:#0284c7"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
               <h3 class="bkpm-card-h3">Ringkasan</h3>
             </div>
             <div class="bkpm-kv-list">
@@ -1033,7 +1026,7 @@
           <!-- Card 2: Filter Aktif -->
           <div class="bkpm-summary-card">
             <div class="bkpm-card-head">
-              <div class="bkpm-card-icon" style="background:#e0e7ff;color:#4f46e5">🌪️</div>
+              <div class="bkpm-card-icon" style="background:#e0e7ff;color:#4f46e5"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg></div>
               <h3 class="bkpm-card-h3">Filter Aktif</h3>
             </div>
             <div class="bkpm-kv-list">
@@ -1051,12 +1044,12 @@
           <!-- Card 3: Detail Wilayah -->
           <div class="bkpm-summary-card" id="bkpmRankDetailCard">
             <div class="bkpm-card-head">
-              <div class="bkpm-card-icon" style="background:#dbeafe;color:#2563eb">🏢</div>
+              <div class="bkpm-card-icon" style="background:#dbeafe;color:#2563eb"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M19 21v-4"/><path d="M19 17b2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v4"/><path d="M9 10h6"/><path d="M12 7v6"/><rect x="5" y="3" width="14" height="14" rx="2"/></svg></div>
               <h3 class="bkpm-card-h3">Detail Wilayah</h3>
             </div>
             <div class="bkpm-kv-list">
               <div class="bkpm-kv-row" style="align-items:center">
-                <div style="width:32px;height:32px;border-radius:6px;background:var(--surface);border:1px solid var(--line);display:grid;place-items:center;font-size:16px" id="bkpmRankDetailIcon">📍</div>
+                <div style="width:32px;height:32px;border-radius:6px;background:var(--surface);border:1px solid var(--line);display:grid;place-items:center;font-size:14px;color:var(--teal)" id="bkpmRankDetailIcon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
                 <div style="flex:1;min-width:0">
                   <div style="font-weight:700;font-size:13px;color:var(--text)" id="bkpmRankDetailTitle">Pilih Wilayah</div>
                   <div style="font-size:10.5px;color:var(--muted)" id="bkpmRankDetailSub">Kabupaten / Kota</div>
@@ -1219,7 +1212,7 @@
       <div class="bkpm-table-card">
         <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:12px;flex-wrap:wrap">
           <div style="display:flex;align-items:center;gap:8px">
-            <span style="font-size:16px;color:#2563eb">💼</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--teal)"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
             <h3 style="font-size:13.5px;font-weight:700;margin:0;color:var(--text)" id="bkpmNakerTableTitle">Data Pasar Tenaga Kerja – Provinsi</h3>
           </div>
           <div class="bkpm-search-box" style="margin:0;max-width:240px">
@@ -1370,7 +1363,7 @@
             <select id="bandaraProvSelect" class="feature-select" aria-label="Pilih Provinsi Bandara"></select>
           </div>
           <div class="feature-counter-badge">
-            <div class="feature-counter-icon">✈</div>
+            <div class="feature-counter-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.3c.4-.2.6-.6.5-1.1z"/></svg></div>
             <div>
               <div class="feature-counter-val" id="bandaraCount">0</div>
               <div class="feature-counter-lbl" id="bandaraCountLbl">Bandara Tercatat</div>
@@ -1407,7 +1400,7 @@
           </div>
 
           <div id="bandaraEmptyState" style="text-align:center;padding:24px 12px;color:var(--muted)">
-            <div style="font-size:32px;margin-bottom:8px;opacity:0.6">🛫</div>
+            <div style="display:flex;justify-content:center;margin-bottom:8px;color:var(--muted)"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.3c.4-.2.6-.6.5-1.1z"/></svg></div>
             <div style="font-weight:600;font-size:13px;color:var(--text)">Pilih Bandara di Peta</div>
             <div style="font-size:11.5px;margin-top:4px">Klik salah satu pin biru pada peta untuk memuat spesifikasi dan rute akses.</div>
           </div>
@@ -1482,7 +1475,7 @@
       <div class="feature-controls-row">
         <div>
           <div style="display:flex;align-items:center;gap:8px">
-            <span style="display:grid;place-items:center;width:24px;height:24px;border-radius:6px;background:#ecfdf5;color:#059669;font-size:13px">🛣️</span>
+            <span style="display:grid;place-items:center;width:24px;height:24px;border-radius:6px;background:#ecfdf5;color:#059669;font-size:13px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19L8 5"/><path d="M16 19l4-14"/><line x1="12" y1="8" x2="12" y2="10"/><line x1="12" y1="14" x2="12" y2="16"/></svg></span>
             <h2 class="card-title" style="margin:0">Kualitas Kondisi Jalan Kabupaten/Kota</h2>
           </div>
           <p class="card-desc" style="margin:4px 0 0">Proporsi panjang jalan kewenangan daerah berdasarkan kondisi Baik, Sedang, dan Rusak untuk analisis aksesibilitas dan potensi investasi wilayah.</p>
@@ -1576,7 +1569,7 @@
             </div>
 
             <div style="background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:10px;font-size:11.5px;color:var(--muted)">
-              <div style="font-weight:700;color:var(--text);margin-bottom:3px">💡 Rekomendasi Kebijakan:</div>
+              <div style="font-weight:700;color:var(--text);margin-bottom:3px">Rekomendasi Kebijakan:</div>
               <div id="jalanRekomendasiText">Fokus alokasi pemeliharaan berkala pada ruas jalan penghubung pusat produksi dan pasar komoditas.</div>
             </div>
           </div>
@@ -1716,7 +1709,7 @@
             
             <div class="kemiskinan-chips-row">
               <div class="kemiskinan-chip">
-                <span class="kemiskinan-chip-icon">🏢</span>
+                <span class="kemiskinan-chip-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/></svg></span>
                 <div>
                   <div class="kemiskinan-chip-lbl">Kabupaten/Kota</div>
                   <div class="kemiskinan-chip-val" id="kmStatKabCount">0</div>
@@ -1734,7 +1727,7 @@
               </div>
 
               <div class="kemiskinan-chip">
-                <span class="kemiskinan-chip-icon">📈</span>
+                <span class="kemiskinan-chip-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></span>
                 <div>
                   <div class="kemiskinan-chip-lbl">Median P1</div>
                   <div class="kemiskinan-chip-val" id="kmStatMedP1">0,00</div>
@@ -1766,7 +1759,7 @@
         <div class="kemiskinan-sidebar-col" id="kmDetailPanel">
           <div class="kemiskinan-sidebar-header">
             <div style="display:flex;align-items:center;gap:10px">
-              <div class="kemiskinan-sidebar-avatar">🏢</div>
+              <div class="kemiskinan-sidebar-avatar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/></svg></div>
               <div>
                 <h3 class="kemiskinan-sidebar-title" id="kmDetailKab">Pilih Wilayah</h3>
                 <span class="bkpm-quad-badge q2" id="kmDetailBadge">Kuadran</span>
@@ -1778,14 +1771,14 @@
           <!-- 2 KPI Boxes -->
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px">
             <div class="kemiskinan-kpi-box">
-              <div class="kemiskinan-kpi-icon">👥</div>
+              <div class="kemiskinan-kpi-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
               <div class="kemiskinan-kpi-lbl">Penduduk miskin</div>
               <div class="kemiskinan-kpi-val" id="kmDetailPct">0%</div>
               <div class="kemiskinan-kpi-sub">Persentase</div>
             </div>
 
             <div class="kemiskinan-kpi-box">
-              <div class="kemiskinan-kpi-icon">📈</div>
+              <div class="kemiskinan-kpi-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
               <div class="kemiskinan-kpi-lbl">Indeks P1</div>
               <div class="kemiskinan-kpi-val" id="kmDetailP1">0,00</div>
               <div class="kemiskinan-kpi-sub">Indeks</div>
@@ -1795,7 +1788,7 @@
           <!-- Insight Pemda -->
           <div class="kemiskinan-insight-card">
             <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-              <span style="font-size:16px">💡</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--teal)"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
               <h4 style="font-size:12.5px;font-weight:700;margin:0;color:var(--text)">Insight untuk Pemda</h4>
             </div>
             <p style="font-size:12px;color:var(--text-sec);line-height:1.5;margin:0" id="kmDetailInsight">
@@ -1806,7 +1799,7 @@
           <!-- Arah Kebijakan -->
           <div class="kemiskinan-policy-card">
             <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-              <span style="font-size:16px">🎯</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:#1e40af"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
               <h4 style="font-size:12.5px;font-weight:700;margin:0;color:#1e40af">Arah kebijakan</h4>
             </div>
             <p style="font-size:12px;color:#1e3a8a;line-height:1.5;margin:0" id="kmDetailPolicy">
@@ -1873,7 +1866,7 @@
 
         <!-- Average Growth -->
         <div class="pdrb-kpi-card avg-growth">
-          <div class="pdrb-kpi-icon">📊</div>
+          <div class="pdrb-kpi-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
           <div>
             <div class="pdrb-kpi-lbl">Rata-rata Pertumbuhan Sektor</div>
             <div class="pdrb-kpi-val" id="pdrbAvgGrowth">+0,00%</div>
@@ -1995,7 +1988,7 @@
       <!-- 3 KPI Cards -->
       <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));gap:12px;margin-bottom:16px">
         <div class="ind-kpi-card output">
-          <div class="ind-kpi-icon" style="background:#dbeafe;color:#1d4ed8">🏭</div>
+          <div class="ind-kpi-icon" style="background:#dbeafe;color:#1d4ed8"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"/><path d="M4 20V10l4 4V10l4 4V4h8v16"/></svg></div>
           <div>
             <div class="ind-kpi-lbl">Total Nilai Output</div>
             <div class="ind-kpi-val" id="indKpiOutput">Rp 0</div>
@@ -2004,7 +1997,7 @@
         </div>
 
         <div class="ind-kpi-card input">
-          <div class="ind-kpi-icon" style="background:#ccfbf1;color:#0f766e">👛</div>
+          <div class="ind-kpi-icon" style="background:#ccfbf1;color:#0f766e"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div>
           <div>
             <div class="ind-kpi-lbl">Total Biaya Input</div>
             <div class="ind-kpi-val" id="indKpiInput">Rp 0</div>
@@ -2013,7 +2006,7 @@
         </div>
 
         <div class="ind-kpi-card added">
-          <div class="ind-kpi-icon" style="background:#f3e8ff;color:#7e22ce">📈</div>
+          <div class="ind-kpi-icon" style="background:#f3e8ff;color:#7e22ce"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
           <div>
             <div class="ind-kpi-lbl">Total Nilai Tambah</div>
             <div class="ind-kpi-val" id="indKpiAdded">Rp 0</div>
@@ -2058,7 +2051,7 @@
         <!-- Right Detail Card -->
         <div class="ind-detail-panel" id="indDetailPanel">
           <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">
-            <div class="ind-panel-icon" id="indDetailIcon">⚙️</div>
+            <div class="ind-panel-icon" id="indDetailIcon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div>
             <div>
               <h4 style="font-size:13px;font-weight:700;margin:0;color:var(--text);line-height:1.2" id="indDetailTitle">Logam, Elektronik &amp; Mesin</h4>
               <span style="font-size:10.5px;color:var(--muted);font-family:var(--mono)" id="indDetailKode">KBLI 24–30, 32</span>
@@ -2198,7 +2191,7 @@
       <div class="feature-controls-row">
         <div>
           <div style="display:flex;align-items:center;gap:8px">
-            <span style="display:grid;place-items:center;width:24px;height:24px;border-radius:6px;background:#fee2e2;color:#ef4444;font-size:13px">🛡</span>
+            <span style="display:grid;place-items:center;width:24px;height:24px;border-radius:6px;background:#fee2e2;color:#ef4444;font-size:13px"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
             <h2 class="card-title" style="margin:0">Status Keadaan Darurat Bencana</h2>
           </div>
           <p class="card-desc" style="margin:4px 0 0">Pantau penetapan status keadaan darurat bencana di wilayah terpilih.</p>
@@ -2218,21 +2211,21 @@
       <!-- Ringkasan Info Bencana (3 Mini Cards) -->
       <div class="darurat-summary-grid">
         <div class="darurat-stat-card">
-          <div class="darurat-stat-icon" style="background:var(--merah-bg);color:var(--teal)">📋</div>
+          <div class="darurat-stat-icon" style="background:var(--merah-bg);color:var(--teal)"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
           <div>
             <div class="darurat-stat-val" id="daruratStatSk">0</div>
             <div class="darurat-stat-lbl">Jumlah Penetapan di Wilayah Terpilih</div>
           </div>
         </div>
         <div class="darurat-stat-card">
-          <div class="darurat-stat-icon" style="background:#e0e7ff;color:#4f46e5">⚡</div>
+          <div class="darurat-stat-icon" style="background:#e0e7ff;color:#4f46e5"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
           <div>
             <div class="darurat-stat-val" id="daruratStatJenis">0</div>
             <div class="darurat-stat-lbl">Jenis Bencana Tercatat</div>
           </div>
         </div>
         <div class="darurat-stat-card">
-          <div class="darurat-stat-icon" style="background:#fef3c7;color:#d97706">🚨</div>
+          <div class="darurat-stat-icon" style="background:#fef3c7;color:#d97706"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
           <div>
             <div class="darurat-stat-val" style="font-size:18px" id="daruratStatStatus">–</div>
             <div class="darurat-stat-lbl">Status Terbaru Ditetapkan</div>
@@ -2286,7 +2279,7 @@
           </div>
 
           <div id="daruratEmptyState" style="text-align:center;padding:24px 12px;color:var(--muted)">
-            <div style="font-size:32px;margin-bottom:8px;opacity:0.6">📜</div>
+            <div style="display:flex;justify-content:center;margin-bottom:8px;color:var(--muted)"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
             <div style="font-weight:600;font-size:13px;color:var(--text)">Pilih Sel Heatmap atau Dokumen SK</div>
             <div style="font-size:11.5px;margin-top:4px">Klik sel bulan bencana pada heatmap atau baris tabel untuk meninjau rincian hukum SK.</div>
           </div>
