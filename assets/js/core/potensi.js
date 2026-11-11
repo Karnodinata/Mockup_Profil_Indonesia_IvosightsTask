@@ -1379,7 +1379,7 @@
                     <div class="section-header">
                         <span class="section-tag">7 Wilayah Utama Indonesia</span>
                     </div>
-                    <p style="font-size: 11.5px; color: var(--text-mid); margin: 0 0 8px;">
+                    <p class="sidebar-hint-p">
                         Pilih salah satu wilayah di bawah atau klik pin di peta untuk eksplorasi provinsi:
                     </p>
                     <div class="potensi-object-list" style="display: flex; flex-direction: column; gap: 8px;">
@@ -1411,7 +1411,7 @@
                     <div class="section-header">
                         <span class="section-tag">Provinsi di ${curIsland.name} (${provsInIsland.length})</span>
                     </div>
-                    <p style="font-size: 11.5px; color: var(--text-mid); margin: 0 0 8px;">
+                    <p class="sidebar-hint-p">
                         Pilih provinsi di bawah atau klik titik pin di peta untuk eksplorasi kabupaten/kota:
                     </p>
                     <div class="potensi-object-list" style="display: flex; flex-direction: column; gap: 8px;">
@@ -1441,7 +1441,7 @@
                     <div class="section-header">
                         <span class="section-tag">Kabupaten &amp; Kota (${citiesInProv.length})</span>
                     </div>
-                    <p style="font-size: 11.5px; color: var(--text-mid); margin: 0 0 8px;">
+                    <p class="sidebar-hint-p">
                         Pilih salah satu daerah di bawah atau klik titik pin di peta untuk melihat detail titik POI &amp; koridor:
                     </p>
                     <div class="potensi-object-list" style="display: flex; flex-direction: column; gap: 8px;">
@@ -1470,7 +1470,7 @@
                     <div class="section-header">
                         <span class="section-tag">Koridor Penyisiran Lapangan</span>
                     </div>
-                    <p style="font-size: 11.5px; color: var(--text-mid); margin: 0 0 8px;">
+                    <p class="sidebar-hint-p">
                         Pilih koridor jalan di ${curCity.name} untuk melihat titik pemeriksaan (*checkpoint*):
                     </p>
                     <div class="potensi-corridor-list">
