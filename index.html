@@ -143,7 +143,7 @@
                 <!-- 1. Indikator Tematik Selector -->
                 <div class="sidebar-section">
                     <div class="section-header">
-                        <span class="section-tag">Indikator Tematik</span>
+                        <h2 class="section-title">Indikator Tematik</h2>
                     </div>
                     <div class="metric-category-pills" id="metricCatPills">
                         <button type="button" class="m-cat-pill active" data-cat="all">Semua</button>
@@ -159,7 +159,7 @@
                 <!-- 2. Filter Wilayah & Lokasi -->
                 <div class="sidebar-section">
                     <div class="section-header">
-                        <span class="section-tag">Filter Wilayah &amp; Cakupan</span>
+                        <h2 class="section-title">Filter Wilayah</h2>
                     </div>
                     <div class="filter-grid">
                         <!-- Custom Searchable Province Dropdown -->
@@ -202,26 +202,24 @@
                     </div>
                 </div>
 
-                <!-- 3. National Summary Stats for Active Metric -->
+                <!-- 3. National Summary Stats for Active Metric (De-nested direct layout) -->
                 <div class="sidebar-section">
-                    <div class="benchmark-card">
-                        <div class="bm-title">
-                            <span id="bmMetricName">Kepadatan Penduduk</span>
-                            <span style="font-size:10px; color:var(--text-low); font-weight:600;">Rujukan Nasional</span>
+                    <div class="section-header">
+                        <h2 class="section-title">Rujukan Nasional</h2>
+                        <span class="section-meta" id="bmMetricName">Kepadatan Penduduk</span>
+                    </div>
+                    <div class="bm-grid">
+                        <div class="bm-item">
+                            <span class="val" id="natMin">–</span>
+                            <span class="lbl">Terendah</span>
                         </div>
-                        <div class="bm-grid">
-                            <div class="bm-item">
-                                <span class="val" id="natMin">–</span>
-                                <span class="lbl">Terendah</span>
-                            </div>
-                            <div class="bm-item">
-                                <span class="val" id="natAvg" style="color:var(--merah);">–</span>
-                                <span class="lbl">Rata-Rata</span>
-                            </div>
-                            <div class="bm-item">
-                                <span class="val" id="natMax">–</span>
-                                <span class="lbl">Tertinggi</span>
-                            </div>
+                        <div class="bm-item">
+                            <span class="val" id="natAvg">–</span>
+                            <span class="lbl">Rata-Rata</span>
+                        </div>
+                        <div class="bm-item">
+                            <span class="val" id="natMax">–</span>
+                            <span class="lbl">Tertinggi</span>
                         </div>
                     </div>
                 </div>
@@ -229,7 +227,7 @@
                 <!-- 4. Leaderboard / Top Ranking -->
                 <div class="sidebar-section" style="flex: 1;">
                     <div class="section-header">
-                        <span class="section-tag">Peringkat Daerah</span>
+                        <h2 class="section-title">Peringkat Daerah</h2>
                         <div class="leaderboard-toggle">
                             <button type="button" class="lb-btn active" id="lbTopBtn">Tertinggi</button>
                             <button type="button" class="lb-btn" id="lbBottomBtn">Terendah</button>
@@ -244,7 +242,7 @@
                             <line x1="12" y1="20" x2="12" y2="4"></line>
                             <line x1="6" y1="20" x2="6" y2="14"></line>
                         </svg>
-                        Lihat Seluruh 514 Daerah di Tabel &rarr;
+                        Lihat 514 Daerah di Tabel &rarr;
                     </button>
                 </div>
                 </div><!-- End sidebarProfileView -->
@@ -297,7 +295,7 @@
                     <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; font-size: 11px;">
                         <span><i style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#0E9E9A;margin-right:4px;"></i>Reklame</span>
                         <span><i style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#d97706;margin-right:4px;"></i>Parkir PBJT</span>
-                        <span><i style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#7c3aed;margin-right:4px;"></i>Mall / PBB</span>
+                        <span><i style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#0284c7;margin-right:4px;"></i>Mall / PBB</span>
                         <span><i style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#2563eb;margin-right:4px;"></i>Pabrik/Gudang</span>
                         <span><i style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#059669;margin-right:4px;"></i>Ruang Publik</span>
                         <span><i style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#ef4444;margin-right:4px;"></i>Koridor Sisir</span>

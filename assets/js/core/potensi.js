@@ -1331,7 +1331,7 @@
                 <!-- 2. KPI Potensi Pajak (PAD360) -->
                 <div class="sidebar-section">
                     <div class="section-header">
-                        <span class="section-tag">${curCity ? `Indikasi Potensi: ${curCity.name}` : curProv ? `Indikasi Potensi: Provinsi ${curProv.name}` : curIsland ? `Indikasi Potensi: ${curIsland.name}` : `Indikasi Potensi: Nasional (38 Provinsi)`}</span>
+                        <h2 class="section-title">${curCity ? `Indikasi Potensi: ${curCity.name}` : curProv ? `Indikasi Potensi: Provinsi ${curProv.name}` : curIsland ? `Indikasi Potensi: ${curIsland.name}` : `Indikasi Potensi: Nasional (38 Provinsi)`}</h2>
                     </div>
                     <div class="potensi-kpi-grid">
                         <div class="pot-kpi-card ${this.tableState.kpiFilter === 'all' ? 'active' : ''}" id="kpiCardAllPoi" style="cursor: pointer; transition: all 0.2s;" title="Klik untuk menampilkan semua titik POI">
@@ -1353,7 +1353,7 @@
                 <!-- 4. Filter Kategori Objek / POI -->
                 <div class="sidebar-section">
                     <div class="section-header">
-                        <span class="section-tag">Filter Kategori POI</span>
+                        <h2 class="section-title">Filter Kategori POI</h2>
                     </div>
                     <div class="potensi-cat-pills">
                         <button type="button" class="pot-cat-pill ${this.state.categoryFilter === 'all' ? 'active' : ''}" data-cat="all">
@@ -1377,7 +1377,7 @@
                 <!-- Level 0: 7 Wilayah Utama Indonesia -->
                 <div class="sidebar-section" style="flex: 1;">
                     <div class="section-header">
-                        <span class="section-tag">7 Wilayah Utama Indonesia</span>
+                        <h2 class="section-title">7 Wilayah Utama Indonesia</h2>
                     </div>
                     <p class="sidebar-hint-p">
                         Pilih salah satu wilayah di bawah atau klik pin di peta untuk eksplorasi provinsi:
@@ -1409,7 +1409,7 @@
                 <!-- Level 1: Daftar Provinsi di Wilayah Terpilih -->
                 <div class="sidebar-section" style="flex: 1;">
                     <div class="section-header">
-                        <span class="section-tag">Provinsi di ${curIsland.name} (${provsInIsland.length})</span>
+                        <h2 class="section-title">Provinsi di ${curIsland.name} (${provsInIsland.length})</h2>
                     </div>
                     <p class="sidebar-hint-p">
                         Pilih provinsi di bawah atau klik titik pin di peta untuk eksplorasi kabupaten/kota:
@@ -1439,7 +1439,7 @@
                 <!-- Level 2: Daftar Kabupaten & Kota di Provinsi Terpilih -->
                 <div class="sidebar-section" style="flex: 1;">
                     <div class="section-header">
-                        <span class="section-tag">Kabupaten &amp; Kota (${citiesInProv.length})</span>
+                        <h2 class="section-title">Kabupaten &amp; Kota (${citiesInProv.length})</h2>
                     </div>
                     <p class="sidebar-hint-p">
                         Pilih salah satu daerah di bawah atau klik titik pin di peta untuk melihat detail titik POI &amp; koridor:
@@ -1468,7 +1468,7 @@
                 <!-- Level 3: Antrean Koridor Prioritas & POI Objek di Kota Terpilih -->
                 <div class="sidebar-section">
                     <div class="section-header">
-                        <span class="section-tag">Koridor Penyisiran Lapangan</span>
+                        <h2 class="section-title">Koridor Penyisiran Lapangan</h2>
                     </div>
                     <p class="sidebar-hint-p">
                         Pilih koridor jalan di ${curCity.name} untuk melihat titik pemeriksaan (*checkpoint*):
@@ -1498,7 +1498,7 @@
 
                 <div class="sidebar-section" style="flex: 1;">
                     <div class="section-header">
-                        <span class="section-tag">Titik Objek Terdata (${objectsInCity.length})</span>
+                        <h2 class="section-title">Titik Objek Terdata (${objectsInCity.length})</h2>
                     </div>
                     <div class="potensi-object-list" style="display: flex; flex-direction: column; gap: 8px;">
                         ${objectsInCity
