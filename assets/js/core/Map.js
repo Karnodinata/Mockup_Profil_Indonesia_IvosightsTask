@@ -154,7 +154,107 @@ document.addEventListener('DOMContentLoaded', () => {
         attributionControl: false
     });
 
-    L.control.zoom({ position: 'bottomright' }).addTo(map);
+    // Inisialisasi Zoom Control Leaflet (Perbesar +, Perkecil -, dan Reset Peta)
+    const zoomControl = L.control.zoom({
+        position: 'bottomright',
+        zoomInTitle: 'Perbesar Peta (+)',
+        zoomOutTitle: 'Perkecil Peta (-)'
+    }).addTo(map);
+
+    // Fungsi Global Reset Map ke Tampilan Nasional (Zoom Out)
+    function resetMapToNational() {
+        // 1. Jika dalam Mode Potensi:
+        if (window.PotensiCtrl && window.PotensiCtrl.active) {
+            // Bersihkan input pencarian potensi jika ada
+            const potSearchInp = document.getElementById('potensiSearchInput');
+            if (potSearchInp) potSearchInp.value = '';
+            const potSearchRes = document.getElementById('potensiSearchResults');
+            if (potSearchRes) {
+                potSearchRes.classList.remove('open');
+                potSearchRes.innerHTML = '';
+            }
+            const potSearchClr = document.getElementById('potensiSearchClear');
+            if (potSearchClr) potSearchClr.style.display = 'none';
+
+            if (typeof window.PotensiCtrl.selectIsland === 'function') {
+                window.PotensiCtrl.selectIsland(null, true);
+            } else if (map) {
+                map.flyTo([-1.2, 117.5], 5, { duration: 0.9 });
+            }
+            return;
+        }
+
+        // 2. Jika dalam Mode Profil Daerah:
+        // Tutup panel detail drawer jika sedang terbuka
+        if (typeof closePanel === 'function') {
+            closePanel();
+        }
+
+        // Bersihkan input dan dropdown pencarian profil
+        const sInp = document.getElementById('searchInput');
+        if (sInp) sInp.value = '';
+        const sRes = document.getElementById('searchResults');
+        if (sRes) sRes.hidden = true;
+
+        // Reset filter provinsi ke cakupan Nasional
+        filterProv = '';
+        const provFilterEl = document.getElementById('provFilter');
+        if (provFilterEl) provFilterEl.value = '';
+        const provSelectLabelEl = document.getElementById('provSelectLabel');
+        if (provSelectLabelEl) provSelectLabelEl.textContent = 'Semua Provinsi (Nasional)';
+
+        // Sinkronisasi kelas active pada custom dropdown opsi provinsi
+        document.querySelectorAll('.prov-opt-item').forEach(item => {
+            item.classList.toggle('active', item.getAttribute('data-value') === '');
+        });
+
+        const profilProvSelectEl = document.getElementById('profilProvSelect');
+        if (profilProvSelectEl) profilProvSelectEl.value = '';
+        if (typeof syncHeaderFilterCities === 'function') {
+            syncHeaderFilterCities('');
+        }
+
+        // Reset status tombol filter pulau
+        document.querySelectorAll('.island-pill').forEach(btn => btn.classList.remove('active'));
+
+        // Refresh filter & statistik nasional
+        if (typeof applyFilters === 'function') {
+            applyFilters();
+        }
+
+        // Terbang halus kembali ke koordinat & zoom nasional Indonesia
+        if (map) {
+            map.flyTo([-1.2, 117.5], 5, { duration: 0.9 });
+        }
+    }
+    window.resetMapToNational = resetMapToNational;
+
+    // Suntikkan Tombol Reset Peta (Zoom Out / Tampilan Nasional) ke dalam Stack Zoom Leaflet
+    const zoomContainer = zoomControl.getContainer();
+    if (zoomContainer) {
+        const resetBtn = document.createElement('a');
+        resetBtn.className = 'leaflet-control-zoom-reset';
+        resetBtn.href = '#';
+        resetBtn.title = 'Reset Peta / Tampilan Nasional (Zoom Out)';
+        resetBtn.setAttribute('role', 'button');
+        resetBtn.setAttribute('aria-label', 'Reset Zoom ke Tampilan Nasional');
+        resetBtn.innerHTML = `
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/>
+                <path d="M3 3v5h5"/>
+            </svg>
+        `;
+
+        L.DomEvent.disableClickPropagation(resetBtn);
+        L.DomEvent.disableScrollPropagation(resetBtn);
+        L.DomEvent.on(resetBtn, 'click', L.DomEvent.stop);
+        L.DomEvent.on(resetBtn, 'click', (e) => {
+            e.preventDefault();
+            resetMapToNational();
+        });
+
+        zoomContainer.appendChild(resetBtn);
+    }
 
     // Esri World Dark Gray Canvas: 100% Watermark-free, zero API key required, sleek dark slate GIS theme
     L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
@@ -1514,12 +1614,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         regionPanel.classList.add('open');
+        document.querySelector('.app-body')?.classList.add('panel-open');
     }
 
     function closePanel() {
         if (regionPanel) {
             regionPanel.classList.remove('open');
         }
+        document.querySelector('.app-body')?.classList.remove('panel-open');
         selectedRegion = null;
         if (window.PotensiCtrl && typeof window.PotensiCtrl.closeDetailPanel === 'function') {
             window.PotensiCtrl.closeDetailPanel();

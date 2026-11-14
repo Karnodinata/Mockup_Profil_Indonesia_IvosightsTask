@@ -1445,26 +1445,37 @@ button:active,
 
 .tl-row {
     display: grid;
-    grid-template-columns: 80px 1fr;
-    gap: 8px;
+    grid-template-columns: 82px 1fr;
+    gap: 10px;
+    padding: 7px 10px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    align-items: center;
     font-size: 11.5px;
 }
 
 .tl-date {
-    font-size: 10px;
-    color: var(--text-low);
-    font-weight: 600;
+    font-size: 11px;
+    color: #0f766e;
+    font-weight: 700;
+    font-family: var(--font-mono);
 }
 
 .tl-body b {
     display: block;
-    color: var(--text-hi);
-    line-height: 1.25;
+    color: #0f172a;
+    font-size: 11.5px;
+    font-weight: 600;
+    line-height: 1.35;
 }
 
 .tl-body small {
-    font-size: 10px;
-    color: var(--text-mid);
+    font-size: 11px;
+    color: #475569;
+    font-weight: 500;
+    display: block;
+    margin-top: 2px;
 }
 
 /* ============================================================
@@ -2221,24 +2232,36 @@ button:active,
 
         .section-title,
         .section-tag {
-            font-size: 11.5px;
+            font-size: 11px;
             font-weight: 750;
             text-transform: uppercase;
-            letter-spacing: .05em;
-            color: #1e293b;
-            background: transparent !important;
-            border: none !important;
-            padding: 0 !important;
-            margin: 0;
+            letter-spacing: .06em;
+            color: #ffffff !important;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9), 0 2px 6px rgba(0, 0, 0, 0.7);
+            background: rgba(15, 23, 42, 0.75) !important;
+            border: 1px solid rgba(255, 255, 255, 0.20) !important;
+            border-radius: 6px !important;
+            padding: 3px 9px !important;
+            backdrop-filter: blur(8px) !important;
+            -webkit-backdrop-filter: blur(8px) !important;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3) !important;
             display: inline-flex;
             align-items: center;
             gap: 6px;
         }
 
         .section-meta {
-            font-size: 11.5px;
-            color: #475569;
+            font-size: 11px;
             font-weight: 600;
+            color: #f1f5f9 !important;
+            background: rgba(15, 23, 42, 0.65) !important;
+            border: 1px solid rgba(255, 255, 255, 0.16) !important;
+            border-radius: 6px !important;
+            padding: 3px 8px !important;
+            backdrop-filter: blur(8px) !important;
+            -webkit-backdrop-filter: blur(8px) !important;
+            display: inline-flex;
+            align-items: center;
         }
 
         /* Metric Category Tabs */
@@ -2577,10 +2600,12 @@ button:active,
         .leaderboard-toggle {
             display: flex;
             gap: 4px;
-            background: rgba(255, 255, 255, 0.70);
-            border: 1px solid rgba(255, 255, 255, 0.90);
+            background: rgba(15, 23, 42, 0.70);
+            border: 1px solid rgba(255, 255, 255, 0.20);
             border-radius: 6px;
-            padding: 2px;
+            padding: 3px;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
         }
 
         .lb-btn {
@@ -2591,14 +2616,15 @@ button:active,
             padding: 3px 8px;
             border-radius: 4px;
             cursor: pointer;
-            color: #334155;
+            color: #f1f5f9;
+            transition: all .15s ease;
         }
 
         .lb-btn.active {
             background: #ffffff;
             color: var(--merah);
             font-weight: 700;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.25);
         }
 
         .leaderboard-list {
@@ -2804,17 +2830,18 @@ button:active,
             bottom: 110px;
             left: 398px;
             z-index: 700;
-            background: rgba(255, 255, 255, 0.45);
-            border: 1px solid rgba(255, 255, 255, 0.55);
+            background: rgba(15, 23, 42, 0.84);
+            border: 1px solid rgba(255, 255, 255, 0.20);
             backdrop-filter: blur(14px);
             -webkit-backdrop-filter: blur(14px);
             border-radius: 99px;
             padding: 7px 16px;
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
             display: flex;
             align-items: center;
             gap: 10px;
             font-size: 12px;
+            color: #f8fafc;
             transition: left 0.32s var(--ease);
         }
 
@@ -2826,18 +2853,20 @@ button:active,
             width: 8px;
             height: 8px;
             border-radius: 50%;
-            background: var(--merah);
+            background: #2dd4bf;
             display: inline-block;
         }
 
         .map-context-strip b {
-            color: var(--text-hi);
+            color: #ffffff;
+            font-weight: 750;
         }
 
         .map-context-strip .sub-tag {
-            color: var(--text-mid);
+            color: #cbd5e1;
             padding-left: 8px;
-            border-left: 1px solid var(--line-strong);
+            border-left: 1px solid rgba(255, 255, 255, 0.20);
+            font-weight: 500;
         }
 
         #map {
@@ -2854,14 +2883,15 @@ button:active,
             z-index: 700;
             width: 330px;
             max-width: calc(100% - 36px);
-            background: rgba(255, 255, 255, 0.45);
-            border: 1px solid rgba(255, 255, 255, 0.55);
+            background: rgba(15, 23, 42, 0.84);
+            border: 1px solid rgba(255, 255, 255, 0.20);
             backdrop-filter: blur(14px);
             -webkit-backdrop-filter: blur(14px);
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
             border-radius: var(--radius-m);
             padding: 12px 16px;
             transition: left 0.32s var(--ease);
+            color: #f8fafc;
         }
 
         .sidebar.collapsed ~ .workspace .map-legend {
@@ -2869,16 +2899,17 @@ button:active,
         }
 
         .map-legend .leg-title {
-            font-size: 11px;
-            font-weight: 700;
-            color: var(--text-mid);
+            font-size: 11.5px;
+            font-weight: 750;
+            color: #ffffff;
             margin-bottom: 6px;
+            letter-spacing: .02em;
         }
 
         .map-legend .scale-bar {
             height: 7px;
             border-radius: 99px;
-            background: linear-gradient(90deg, #3b82b8, #cf1e2e, #b0804b);
+            background: linear-gradient(90deg, #38bdf8, #f43f5e, #fbbf24);
             margin-bottom: 5px;
         }
 
@@ -2886,8 +2917,13 @@ button:active,
             display: flex;
             justify-content: space-between;
             font-size: 11.5px;
-            color: var(--text-mid);
+            color: #cbd5e1;
             font-weight: 600;
+        }
+
+        #potensiMapLegend span {
+            color: #e2e8f0;
+            font-weight: 500;
         }
 
         /* ---------------- Table View Container ---------------- */
@@ -3166,18 +3202,18 @@ button:active,
             }
         }
 
-        /* ---------------- Detail Sliding Drawer (Ultra-Transparent Glass) ---------------- */
+        /* ---------------- Detail Sliding Drawer (Pristine Frosted Surface) ---------------- */
         .region-panel {
             position: absolute;
             top: 14px;
             right: 14px;
             bottom: 14px;
             width: 380px;
-            background: rgba(252, 251, 247, 0.42);
-            backdrop-filter: blur(18px) saturate(180%);
-            -webkit-backdrop-filter: blur(18px) saturate(180%);
-            border: 1px solid rgba(255, 255, 255, 0.50);
-            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.95);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
             border-radius: var(--radius-l);
             padding: 0;
             overflow: hidden;
@@ -3461,6 +3497,97 @@ button:active,
 /* Hilangkan watermark / attribution pojok peta */
 .leaflet-control-attribution {
     display: none !important;
+}
+
+/* ============================================================
+   Leaflet Bottom-Right Controls & Dynamic Drawer Offset
+   ============================================================ */
+.leaflet-bottom.leaflet-right {
+    right: 18px !important;
+    bottom: 18px !important;
+    margin: 0 !important;
+    transition: right 0.32s cubic-bezier(0.2, 0.8, 0.4, 1), bottom 0.32s cubic-bezier(0.2, 0.8, 0.4, 1) !important;
+    z-index: 750 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-end !important;
+    gap: 8px !important;
+    pointer-events: none !important;
+}
+
+.leaflet-bottom.leaflet-right .leaflet-control {
+    pointer-events: auto !important;
+    margin: 0 !important;
+}
+
+/* Geser posisi tombol zoom ke sebelah kiri drawer saat drawer kanan terbuka */
+.app-body:has(.region-panel.open) .leaflet-bottom.leaflet-right,
+.app-body.panel-open .leaflet-bottom.leaflet-right {
+    right: 408px !important;
+}
+
+@media (max-width: 860px) {
+    .app-body:has(.region-panel.open) .leaflet-bottom.leaflet-right,
+    .app-body.panel-open .leaflet-bottom.leaflet-right {
+        right: 14px !important;
+        bottom: calc(72vh + 14px) !important;
+    }
+}
+
+/* Dark Glass HUD Zoom Control Stack */
+.leaflet-control-zoom.leaflet-bar {
+    border: 1px solid rgba(255, 255, 255, 0.22) !important;
+    background: rgba(15, 23, 42, 0.85) !important;
+    backdrop-filter: blur(14px) !important;
+    -webkit-backdrop-filter: blur(14px) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35) !important;
+    overflow: hidden !important;
+}
+
+.leaflet-control-zoom.leaflet-bar a {
+    width: 34px !important;
+    height: 34px !important;
+    line-height: 34px !important;
+    background: transparent !important;
+    color: #ffffff !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    cursor: pointer !important;
+    transition: background 0.15s ease, color 0.15s ease, transform 0.15s ease !important;
+}
+
+.leaflet-control-zoom.leaflet-bar a:last-child {
+    border-bottom: none !important;
+}
+
+.leaflet-control-zoom.leaflet-bar a:hover {
+    background: rgba(255, 255, 255, 0.20) !important;
+    color: #2dd4bf !important;
+}
+
+.leaflet-control-zoom.leaflet-bar a:active {
+    background: rgba(255, 255, 255, 0.32) !important;
+}
+
+.leaflet-control-zoom-reset {
+    color: #ffffff !important;
+}
+
+.leaflet-control-zoom-reset svg {
+    width: 15px;
+    height: 15px;
+    stroke: currentColor;
+    transition: transform 0.25s ease;
+}
+
+.leaflet-control-zoom-reset:hover svg {
+    transform: rotate(-45deg);
 }
 
 /* ============================================================

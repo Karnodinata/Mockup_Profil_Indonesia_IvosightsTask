@@ -387,6 +387,7 @@
             if (this.regionPanel) {
                 this.regionPanel.classList.remove('open');
             }
+            document.querySelector('.app-body')?.classList.remove('panel-open');
             this.state.selectedObject = null;
             if (this._rpClearTimer) clearTimeout(this._rpClearTimer);
             if (immediateClear) {
@@ -1886,6 +1887,7 @@
             `;
 
             this.regionPanel.classList.add('open');
+            document.querySelector('.app-body')?.classList.add('panel-open');
 
             document.getElementById('btnOpenUpdateModal')?.addEventListener('click', () => {
                 this.openUpdateModal(obj);
@@ -2054,6 +2056,7 @@
             `;
 
             this.regionPanel.classList.add('open');
+            document.querySelector('.app-body')?.classList.add('panel-open');
         }
 
         initTable() {
